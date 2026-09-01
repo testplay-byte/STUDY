@@ -133,3 +133,90 @@ Work Log:
 
 Stage Summary:
 - M-1 Unit 01: 36/36 ✔ (printed pp.7-42). Wave 2 next: M-0 (7) + S-0 (9) + S-1 remainder (8) = 24 pages.
+---
+Task ID: 2e
+Agent: agent-2e
+Task: Convert S-1 images 0007,0008,0009,0010 to Markdown
+
+Work Log:
+- page-007 → data/processed/S-1/chapter-08-set-theory/00-intro/page-007.md ✔ (printed p.7, §8.21 Multiplication Principle; §8.22 Factorials, ex null; top = tail of a worked example from p.6 — set-equality list + "Hence" results (i)-(viii), all 23 set lines verified element-by-element vs image)
+- page-008 → data/processed/S-1/chapter-08-set-theory/00-intro/page-008.md ✔ (printed p.8, §8.23 Permutations; §8.24 Combinations, ex null; "Samasatta" word example = 3780, Example 8.8 (^4P_2 = 12, ^4C_2 = 6); all nPr/nCr formulas verified token-by-token)
+- page-009 → data/processed/S-1/chapter-08-set-theory/exercise/page-009.md ✔ (printed p.9, heading "EXERCISES" — start of end-of-chapter exercise, Q.1-Q.8 with printed "Ans." lines; all set elements and all 12+18 ordered triples verified vs image)
+- page-010 → data/processed/S-1/chapter-08-set-theory/exercise/page-010.md ✔ (printed p.10, exercise continues Q.9-Q.23; Q.16 Ans digit-by-digit verified 6.704425728 × 10^12 incl. zoomed crop re-read; Q.20 permutations + Q.21 six binomial expressions + decimal answers verified; "← 08 →" chip = page furniture, excluded from body)
+
+Stage Summary:
+- 4/4 converted; S-1 chapter-08 is now complete (pp.7-10 done here + 3,5 earlier + 1,2,4,6 by agent-2d). Exercise boundary: end-of-chapter exercise "EXERCISES" starts at TOP of printed p.9 (Q.1) → pages 9-10 in exercise/ (unnumbered exercise, exercise: "8"); pages 7-8 are theory (00-intro). Anomalies: printed p.10 digit faint — missed in full-page pass, recovered via zoomed header crop (10, top-left); Q.9 Ans (iv) book typo "(7, 7)(7, 8)" (no comma) preserved verbatim; Q.19 printed answer 90720 preserved although 9!/(2!2!2!) = 45360 (book arithmetic/letter-count quirk, kept); one 429 rate-limit burst on img10 (7 failed attempts) — succeeded after 75s backoff. All QA via targeted z-ai vision passes (Read cannot render images in sub-agent context); source_image paths (5-ups) verified to resolve for all 4 files.
+
+---
+Task ID: 2a
+Agent: agent-2a
+Task: Convert M-0 front matter images 0001-0007 to Markdown
+
+Work Log:
+- page-001 → data/processed/M-0/front-matter/page-001.md ✔ (book cover: purple gradient, "12" badge, MATHEMATICS, NBF-as-Federal-Textbook-Board-Islamabad, shuttle-launch photo network + 2 publisher emblems; page_printed null)
+- page-002 → data/processed/M-0/front-matter/page-002.md ✔ (title page: "Textbook of Mathematics Science Group", NCC/Ministry lines, State Emblem + NBF logo, "12" badge; handwritten owner's name "khurram" top-right; page_printed null)
+- page-003 → data/processed/M-0/front-matter/page-003.md ✔ (imprint/copyright: NCC approval letter F.No.1-1/2023/NCC/Maths-NBF-12 dated 11-04-2025, authors/contributors, NCC+FBISE review committees, First Edition June 2025, 316 pp, PKR 415/-, ISBN 978-969-37-1832-4; "TEST EDITION" stamp kept out of body; page_printed null)
+- page-004 → data/processed/M-0/front-matter/page-004.md ✔ (Preface, signed Dr. Kamran Jahangir, Managing Director; corner decorations → F1; page_printed null)
+- page-005 → data/processed/M-0/front-matter/page-005.md ✔ ("Application of Mathematics" overview: Functions & Graphs, Limit/Continuity/Derivative, Integration, Differential Equations, Kinematics; corner decorations → F1; page_printed null)
+- page-006 → data/processed/M-0/front-matter/page-006.md ✔ (overview continued, no printed heading: Analytical Geometry, Conic Section, Inverse Trig Functions & Graphs, Solution of Trig Equations, Numerical Methods; corner decorations → F1; page_printed null)
+- page-007 → data/processed/M-0/front-matter/page-007.md ✔ (TOC: Bismillah + small Urdu line; CONTENT table — Units 1-10 (start pages 7, 43, 89, 120, 140, 160, 182, 230, 262, 274) + Answers/Glossary/Index 290 — verified row-by-row via vision; page_printed null)
+
+Stage Summary:
+- 7/7 converted; all in data/processed/M-0/front-matter/ (content_type front-matter, chapter/exercise null; source_image = 4-ups "../../../../data/raw/M-0/000N.jpg", verified resolving from every file). Anomalies: (1) no printed page numbers anywhere in M-0 → page_printed null on all 7 (correct per brief); (2) TOC small-print Urdu line under the Bismillah read 3× by vision with differing renderings → best guess + [illegible] + note (initial draft line was a hallucination, caught & replaced); (3) TOC page numbers are START pages, no ranges; (4) recurring green/cyan mountain-motif corner decorations on pages 4-7 captured as figure blocks; (5) M-0 imprint styles itself "A Textbook of Mathematics for Grade 12" while cover reads "Textbook of MATHEMATICS Grade 12" — book_title normalized to the full cover/imprint form per brief; (6) heavy 429 rate-limiting — all z-ai vision QA done via retry loops (up to ~6 min backoff), conversions sequential.
+---
+Task ID: 2c
+Agent: agent-2c
+Task: Convert S-0 front matter images 0006-0009 to Markdown
+
+Work Log:
+- page-006 → data/processed/S-0/front-matter/page-006.md ✔ (front-matter, roman ( v ) top center → page_printed 5; CONTENTS part 1: ch.8 Set Theory 8.1-8.24 + ch.9 Probability 9.1-9.23 + ch.10 10.1-10.13, two-column 6-col TOC table, manicule ☞ entries; ex null)
+- page-007 → data/processed/S-0/front-matter/page-007.md ✔ (front-matter, roman ( vi ) → 6; CONTENTS part 2: 10.14-13.34 incl. ch.11 Binomial & Hypergeometric (95-122), ch.12 Normal (123-154), ch.13 Sampling (155-202); quirk "13.26 Selection of Simple.Random Sample" preserved)
+- page-008 → data/processed/S-0/front-matter/page-008.md ✔ (front-matter, roman ( vii ) → 7, verified via contrast-enhanced zoom after full-page read said "( vi )"; CONTENTS part 3: 13.35-15.22 incl. ch.14 Estimation (203-238), ch.15 Testing of Hypotheses (239-284); quirks 15.20 "When Unknown σ", 15.22 lowercase "Population mean" preserved)
+- page-009 → data/processed/S-0/front-matter/page-009.md ✔ (front-matter, roman ( viii ) → 8; CONTENTS part 4: 15.23-15.30 + ch.16 Association (285-318) + ch.17 Orientation of Computers (319-334) + closing "Statistical Tables 335–340"; math in titles as LaTeX (μ1-μ2, σ1², χ², 2×2); quirk 15.29 "p1 – P2" preserved; NO symbols/notation table on page — pure TOC, confirmed by targeted vision QA)
+
+Stage Summary:
+- 4/4 converted; exercise folders created: none (all front matter, chapter/exercise null in frontmatter)
+- book_title set on all 4: "Basic Statistics for Intermediate Classes, Part-II — Majeed Book Depot (Federal Board)"; content_type front-matter; source_image + body scan-link = ../../../../data/raw/S-0/000N.jpg (4-ups, verified resolving)
+- Anomalies: S-0 front matter uses roman-numeral page markers "( v )…( viii )" top center (no arabic numbers) → recorded page_printed as integer 5-8 with notes; unnumbered TOC entries print pointing-hand manicules (not ✍️ as first draft guessed) → normalized to ☞ across all 4 pages; page 8's full-page roman-numeral read was wrong (vi vs vii) — caught via 3-page composite zoom QA; API 429 rate-limit storms (sibling agents) required backoff retries throughout QA
+- Note: pages 001-004 already placed by agent-2b (untouched); page-005 not in my batch
+---
+Task ID: 2d
+Agent: agent-2d
+Task: Convert S-1 images 0001,0002,0004,0006 to Markdown
+
+Work Log:
+- page-001 → data/processed/S-1/chapter-08-set-theory/00-intro/page-001.md ✔ (printed p. null — opener has no visible page digit anywhere; §8.1–8.6, ex null; content_type theory)
+- page-002 → data/processed/S-1/chapter-08-set-theory/00-intro/page-002.md ✔ (printed p.2, §8.7–8.12, ex null; 3 Venn F-blocks Figure-1/2(a)/2(b); §8.12 ends mid-sentence "that is", formula continues top of p.3)
+- page-004 → data/processed/S-1/chapter-08-set-theory/00-intro/page-004.md ✔ (printed p.4, §8.18–8.19 + Examples 8.1–8.2, ex null; tree diagram Figure-7; Examples 8.3 start on p.5)
+- page-006 → data/processed/S-1/chapter-08-set-theory/00-intro/page-006.md ✔ (printed p.6, §8.20 + Examples 8.6–8.7, ex null; tree diagram Figure-9; Ex 8.7 Solution ends "Therefore", continues top of p.7)
+
+Stage Summary:
+- 4/4 converted, all placed in 00-intro (none exercise-dominant); exercise start page: image 0009 / printed p.9 (heading "EXERCISES", Q.1 first — verified by vision peek; not in this batch); anomalies: opener page_printed=null (no digit on page; offset would be 1); opener chapter-number digit degraded — zoomed VLM reads "9" but §8.1–8.6 numbering + "[Chapter 8] Set Theory" running headers confirm Chapter 8; running headers on pp.2/4/6 actually read "Basic Statistics Part-II (Federal Board) <n>" (digit top-left), not the "[Chapter 8] Set Theory" alternation the brief assumed; book quirks preserved verbatim ("George Cantor", "Demorgan's Laws", ⊂-style symbols in 8.6 display line, period after C̄ in Ex 8.1 (vii), Ex 8.7 S = {0,1,2,3,4,5,7,9,10} with 6 and 8 absent); heavy 429 rate-limit storms mid-run — script backoff + long sleeps used; my 4 files fill book_title "Basic Statistics Part-II (Federal Board)" while earlier placed 003/005 have null — flagged for coordinator normalization.
+
+---
+Task ID: 2b-note
+Agent: coordinator (Z.ai main)
+Task: Record agent-2b partial completion + S-0 0005 finish
+
+Work Log:
+- agent-2b placed S-0 pages 0001-0004 (cover, title, imprint, preface) before hitting tool timeout; worklog entry was never written — recorded here
+- agent-2c (Task 2c) covered S-0 0006-0009 in the same wave
+- S-0 page 0005 (preface continuation, roman iv): vision API hung repeatedly on this exact prompt+image payload (script + inline probe, 3 attempts) while API itself was healthy → coordinator transcribed the page directly from the scan (full schema compliance) and placed it
+
+Stage Summary:
+- S-0 front matter complete 9/9. All 62/62 pages now digitized.
+
+---
+Task ID: 3-final
+Agent: coordinator (Z.ai main)
+Task: Phase 1 close-out — final audit, indexes, docs, final push
+
+Work Log:
+- Completed final gap: S-0 page-005 (preface, roman iv) transcribed directly by coordinator after VLM API hung 3× on that specific payload (API healthy — single-page anomaly; documented in CONVENTIONS knowledge via worklog)
+- Final audit: 62/62 pages (M-0 7/7, M-1 36/36, S-0 9/9, S-1 10/10); integrity sweep clean (LaTeX $-balance, source_image + scan-link resolution, figures_count consistency)
+- Generated indexes/{M-0,M-1,S-0,S-1}.md from page frontmatter (image № → printed № → content type → section/exercise → figures)
+- Updated PLAN.md (all Phase 1 items checked) + README (Phase 1 COMPLETE)
+- Worklog entries normalized: 2b partial completion recorded; S-0 0005 finish documented
+
+Stage Summary:
+- PHASE 1 COMPLETE: 62 scanned pages → 62 faithful Markdown files, book → chapter → exercise structure, figures preserved as detailed descriptions, math in LaTeX. Repo fully backed up to GitHub.

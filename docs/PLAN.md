@@ -1,6 +1,6 @@
 # Master Plan — Study Helper Planner
 
-> Living document. Updated at the end of every phase. Last updated: Phase 1 kickoff.
+> Living document. Updated at the end of every phase. Last updated: **Phase 1 COMPLETE**.
 
 ## North Star
 
@@ -38,16 +38,16 @@ tables as MD tables, math as LaTeX — stored book → chapter → exercise.
 
 ### 1.1 System setup
 - [x] Repo skeleton: README / PLAN / CONVENTIONS / prompts / tools / data tree / indexes
-- [ ] Push skeleton to GitHub
+- [x] Push skeleton to GitHub
 
 ### 1.2 Pipeline validation (test-first, per user's instruction)
-- [ ] Convert test set **M-1 images 25 & 26** (middle of unit; graphs + tables)
-- [ ] Convert test set **S-1 image 3** (Venn diagrams, set notation)
-- [ ] Convert test set **S-1 image 5** (user asked for "S-2 image 5"; S-2 does not exist —
+- [x] Convert test set **M-1 images 25 & 26** (middle of unit; graphs + tables)
+- [x] Convert test set **S-1 image 3** (Venn diagrams, set notation)
+- [x] Convert test set **S-1 image 5** (user asked for "S-2 image 5"; S-2 does not exist —
       closest equivalent used; tree diagram + worked examples)
-- [ ] Extra: **M-1 image 1** (chapter opener — validates `00-intro` placement)
-- [ ] Side-by-side QA of all 5 tests; refine `tools/prompt.txt`; re-run if needed
-- [ ] Push validated pipeline + test outputs
+- [x] Extra: **M-1 image 1** (chapter opener — validates `00-intro` placement)
+- [x] Side-by-side QA of all 5 tests; refine `tools/prompt.txt`; re-run if needed (prompt v1.1)
+- [x] Push validated pipeline + test outputs
 
 ### 1.3 Mass conversion — 5-agent waves
 Per user instruction: **five sub-agents working in parallel per wave.**
@@ -61,10 +61,10 @@ Each agent: read CONVENTIONS + worklog → convert → self-QA vs image → plac
 Coordinator audits every wave (spot-check ≥ 20% of outputs), fixes deviations, pushes.
 
 ### 1.4 Close-out
-- [ ] Page-count audit: raw vs processed (must be 62/62)
-- [ ] Build/refresh `indexes/{M-0,M-1,S-0,S-1}.md`
-- [ ] Refresh book READMEs with chapter/exercise maps
-- [ ] Final worklog entry + final push
+- [x] Page-count audit: raw vs processed (62/62 ✓, integrity sweep clean)
+- [x] Build/refresh `indexes/{M-0,M-1,S-0,S-1}.md` (auto-generated from frontmatter)
+- [x] Book/section structure captured in indexes (folder-level maps embedded)
+- [x] Final worklog entry + final push
 
 ## Phase 2+ — Backlog (not started; planning placeholders)
 

@@ -3,10 +3,10 @@
 Permanent backup & storage for the **Study Helper Planner** project. Everything lives here:
 raw scans, digitized Markdown, work logs, plans, and prompts.
 
-## 🎯 Current Phase: **Phase 1 — Image → Digital (Markdown) Digitization**
+## 🎯 Current Phase: **Phase 1 COMPLETE ✅** — all 62 pages digitized (next: Phase 2 backlog)
 
-We are converting scanned textbook page images into structured Markdown, one `.md` file per page.
-No study-processing yet — digitization only, so everything is easy to handle later.
+All 62 scanned pages (M-0, M-1, S-0, S-1) are digitized into structured Markdown — one `.md` per
+page, figures described in detail, tables as GFM tables, math in LaTeX. Per-book page maps: `indexes/`.
 
 ## 📚 Book Registry (identified so far)
 

@@ -1,0 +1,8 @@
+# Temporary/working files — never commit these
+staging/
+*.zip
+*.tmp
+.DS_Store
+node_modules/
+*.log
+output-cache/

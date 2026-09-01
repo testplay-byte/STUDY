@@ -142,11 +142,24 @@ Rules:
   using the exact section template: `---` / `Task ID:` / `Agent:` / `Task:` / `Work Log:` / `Stage Summary:`.
 - Report per-page status lines in the worklog: `page-0NN → <final path> ✔ (printed p.N, §…, ex…)`.
 
-## 6. Known Quirks (from recon)
+## 6. Known Quirks (from recon + pipeline validation)
 
-- M-1 printed page № = image № **+ 6**. S-1 printed page № = image № exactly (1–10).
+- M-1 printed page № = image № **+ 6** (verified: img 1 → printed 7, img 26 → printed 32).
+  S-1 printed page № = image № exactly (1–10). **Agents must still read the printed digit**;
+  the offsets are a cross-check, not a substitute.
+- ⚠️ **page_printed is error-prone when digits are cut off/faint in the scan** (test round:
+  model wrote 17 instead of 31; 9 instead of 5). QA pass MUST verify the printed page number
+  against the image; if unreadable → null + note, never a guess.
+- ⚠️ `section:` must list **all** printed section headings on the page (semicolon-separated),
+  not just the first or none.
 - M-1 running header: `UNIT-01: FUNCTIONS AND GRAPHS`; footer: `GRADE 12 · <page> · National Book Foundation`.
 - S-1 running header: `[Chapter 8] Set Theory` + page №, or `Basic Statistics Part-II (Federal Board)` + page №.
 - S-1 chapter ends with a `← 08 →` navigation chip — it is page furniture.
 - Scans are slightly skewed/aged (esp. S-1); expect some noise marks — don't transcribe scan
   artifacts (dots, speckles) as content.
+
+## 7. API Concurrency (validated)
+
+The vision API rate-limits concurrent calls (~3 succeed simultaneously; excess get HTTP 429).
+`tools/convert-page.mjs` retries with exponential backoff + jitter, so waves of 5 agents are
+safe — but agents must run their own page conversions **sequentially** (one page at a time).

@@ -29,3 +29,4 @@ See `tools/prompt.txt` for the operative text (Parts: frontmatter schema, body s
 | Date | Change | Reason |
 |------|--------|--------|
 | Phase 1 kickoff | v1 created | initial design |
+| Post test-round | v1.1: page_printed "never guess" rule; section completeness rule | test QA caught wrong page numbers (17→31, 9→5) and under-filled section fields |

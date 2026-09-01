@@ -11,10 +11,10 @@ PART 1 — FRONTMATTER (YAML, exact fields)
 book: <book code given to you, e.g. M-1>
 book_title: <full book title if identifiable from page/publisher imprint, else null>
 page_image: <integer image number given to you>
-page_printed: <integer printed page number visible on the page, else null>
+page_printed: <integer printed page number — read ONLY digits actually printed in the page footer or header (running head). NEVER guess or compute it. If no page number is printed or it is unreadable, use null and explain in notes>
 chapter: <integer chapter/unit number printed on page, else null>
 chapter_title: <exact printed chapter/unit title, else null>
-section: <main section heading(s) visible on the page with their numbers, e.g. "1.11 Domain and Range of Transcendental Functions through Graphs", else null>
+section: <ALL printed section headings visible on the page with their numbers, semicolon-separated, e.g. "8.13 Difference of Two Sets; 8.14 Complement Set"; if the page has numbered sections, this must never be null; null only for pages with no printed section headings>
 exercise: <exercise id whose content dominates this page, e.g. "1.1" or "8", else null>
 content_type: <one of: front-matter | chapter-opener | theory | worked-examples | exercise | mixed | summary>
 has_figures: <true|false — any graph/diagram/illustration/photo/table-figure present>
@@ -47,7 +47,7 @@ R5. FIGURES ARE SACRED — NEVER SKIP ANY. For every graph, diagram, illustratio
    - **Description:** exhaustive visual description — axes & labels, scale/ticks, all curves/lines and their shapes/directions, asymptotes, marked/labeled points, intercepts, shaded regions (what exactly is shaded), legend, colors, annotations, sub-panels.
    - **Mathematical meaning:** one line on what it demonstrates (e.g. "y = tanθ has vertical asymptotes at θ = (2n+1)π/2 with period π; range is all reals").
 R6. EXERCISE NUMBERING EXACT: question labels (Q.1, Q.10), sub-parts ((i)…(viii)), MCQ options, marks in brackets — all exactly as printed, never renumbered. Options as a list; sub-parts indented. If an answer line ("Ans.") is printed, transcribe it too.
-R7. PAGE FURNITURE: running headers ("UNIT-01: FUNCTIONS AND GRAPHS", "[Chapter 8] Set Theory"), footers ("GRADE 12", publisher name, printed page number, navigation chips like "← 08 →") do NOT go into the body. They are captured in frontmatter/H1/scan-line only.
+R7. PAGE FURNITURE: running headers ("UNIT-01: FUNCTIONS AND GRAPHS", "[Chapter 8] Set Theory"), footers ("GRADE 12", publisher name, printed page number, navigation chips like "← 08 →") do NOT go into the body. They are captured in frontmatter/H1/scan-line only. For page_printed: transcribe the exact printed digits; never invent them.
 R8. VISUAL EMPHASIS: keep bold as **bold**, colored/display boxes as blockquotes, so emphasis survives.
 R9. ILLEGIBLE: give best guess + `[illegible]` marker, and list it in notes.
 R10. SCAN ARTIFACTS: speckles, stains, skew, page-edge shadows are NOT content — never transcribe them.

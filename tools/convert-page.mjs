@@ -58,6 +58,26 @@ const imageContent = { type: 'image_url', image_url: { url: `data:${mimeType};ba
 
 const zai = await ZAI.create();
 
+async function callVisionWithRetry(messages, round) {
+  const MAX_RETRIES = 7;
+  let delayMs = 15000;
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      return await zai.chat.completions.createVision({
+        messages,
+        thinking: { type: THINKING ? 'enabled' : 'disabled' },
+      });
+    } catch (e) {
+      const is429 = /429|too many/i.test(e.message || '');
+      if (attempt === MAX_RETRIES) die(`vision API failed after ${MAX_RETRIES} attempts (round ${round}): ${e.message}`);
+      const wait = is429 ? delayMs + Math.floor(Math.random() * 5000) : 5000;
+      console.error(`[convert] round ${round} attempt ${attempt} failed (${is429 ? '429 rate-limit' : e.message}); retrying in ${wait}ms`);
+      await new Promise(r => setTimeout(r, wait));
+      delayMs = Math.min(delayMs * 1.6, 90000);
+    }
+  }
+}
+
 let messages = [{ role: 'user', content: [{ type: 'text', text: userPrompt }, imageContent] }];
 
 let full = '';
@@ -66,29 +86,19 @@ const ROUND_LIMIT = 6;
 
 while (round < ROUND_LIMIT) {
   round++;
-  let resp;
-  try {
-    resp = await zai.chat.completions.createVision({
-      messages,
-      thinking: { type: THINKING ? 'enabled' : 'disabled' },
-    });
-  } catch (e) {
-    die(`vision API call failed (round ${round}): ${e.message}`);
-  }
+  const resp = await callVisionWithRetry(messages, round);
   const choice = resp?.choices?.[0];
   const chunk = choice?.message?.content || '';
   const finish = choice?.finish_reason || '';
   full += chunk;
   console.error(`[convert] round ${round}: +${chunk.length} chars (finish=${finish})`);
-  if (finish === 'length' || (finish === 'stop' && round === 1 && chunk.trim() === '')) {
-    if (finish === 'length') {
-      messages = [
-        ...messages,
-        { role: 'assistant', content: chunk },
-        { role: 'user', content: [{ type: 'text', text: 'Continue the EXACT same Markdown document from the precise character where you stopped. Do not repeat any earlier text, do not add commentary, do not re-begin. If the document is complete, output the single line: __DONE__' }] },
-      ];
-      continue;
-    }
+  if (finish === 'length') {
+    messages = [
+      ...messages,
+      { role: 'assistant', content: chunk },
+      { role: 'user', content: [{ type: 'text', text: 'Continue the EXACT same Markdown document from the precise character where you stopped. Do not repeat any earlier text, do not add commentary, do not re-begin. If the document is complete, output the single line: __DONE__' }] },
+    ];
+    continue;
   }
   break;
 }

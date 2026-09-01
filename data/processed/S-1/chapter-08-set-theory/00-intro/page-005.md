@@ -10,7 +10,7 @@ exercise: null
 content_type: worked-examples
 has_figures: true
 figures_count: 1
-source_image: ../../../data/raw/S-1/0005.jpg
+source_image: ../../../../../data/raw/S-1/0005.jpg
 converted_at: "2026-09-01"
 converted_by: "coordinator (glm-vision)"
 notes: "Printed page number in header is partially cut off in scan; verified as 5 (S-1 printed page = image number)."
@@ -18,7 +18,7 @@ notes: "Printed page number in header is partially cut off in scan; verified as 
 
 # Page 5 — Chapter 8: Set Theory
 
-> 📄 Original scan: [0005.jpg](../../../data/raw/S-1/0005.jpg) · printed page 5
+> 📄 Original scan: [0005.jpg](../../../../../data/raw/S-1/0005.jpg) · printed page 5
 
 **Example 8.3.**
 

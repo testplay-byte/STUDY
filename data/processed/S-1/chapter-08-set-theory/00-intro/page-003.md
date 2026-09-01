@@ -10,7 +10,7 @@ exercise: null
 content_type: theory
 has_figures: true
 figures_count: 4
-source_image: ../../../data/raw/S-1/0003.jpg
+source_image: ../../../../../data/raw/S-1/0003.jpg
 converted_at: "2026-09-01"
 converted_by: "coordinator (glm-vision)"
 notes: ""
@@ -18,7 +18,7 @@ notes: ""
 
 # Page 3 — [Chapter 8] Set Theory
 
-> 📄 Original scan: [0003.jpg](../../../data/raw/S-1/0003.jpg) · printed page 3
+> 📄 Original scan: [0003.jpg](../../../../../data/raw/S-1/0003.jpg) · printed page 3
 
 $$A \cap B = \{x / x \in A \text{ and } x \in B\}$$
 

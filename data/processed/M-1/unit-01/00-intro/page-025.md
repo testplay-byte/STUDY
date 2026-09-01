@@ -10,7 +10,7 @@ exercise: null
 content_type: theory
 has_figures: true
 figures_count: 2
-source_image: ../../../data/raw/M-1/0025.jpg
+source_image: ../../../../../data/raw/M-1/0025.jpg
 converted_at: "2026-09-01"
 converted_by: "coordinator (glm-vision)"
 notes: ""
@@ -18,7 +18,7 @@ notes: ""
 
 # Page 25 — Unit 1: Functions and Graphs
 
-> 📄 Original scan: [0025.jpg](../../../data/raw/M-1/0025.jpg) · printed page 31
+> 📄 Original scan: [0025.jpg](../../../../../data/raw/M-1/0025.jpg) · printed page 31
 
 ## 1.11 Domain and Range of Transcendental Functions through Graphs
 

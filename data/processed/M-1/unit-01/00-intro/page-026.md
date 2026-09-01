@@ -10,7 +10,7 @@ exercise: null
 content_type: theory
 has_figures: true
 figures_count: 4
-source_image: ../../../data/raw/M-1/0026.jpg
+source_image: ../../../../../data/raw/M-1/0026.jpg
 converted_at: "2026-09-01"
 converted_by: "coordinator (glm-vision)"
 notes: ""
@@ -18,7 +18,7 @@ notes: ""
 
 # Page 26 — UNIT-01: FUNCTIONS AND GRAPHS
 
-> 📄 Original scan: [0026.jpg](../../../data/raw/M-1/0026.jpg) · printed page 32
+> 📄 Original scan: [0026.jpg](../../../../../data/raw/M-1/0026.jpg) · printed page 32
 
 ## 1.11.2 Graph of $y = \tan\theta$ and $y = \cot\theta$
 

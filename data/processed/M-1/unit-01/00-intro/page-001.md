@@ -10,7 +10,7 @@ exercise: null
 content_type: chapter-opener
 has_figures: true
 figures_count: 1
-source_image: ../../../data/raw/M-1/0001.jpg
+source_image: ../../../../../data/raw/M-1/0001.jpg
 converted_at: "2026-09-01"
 converted_by: "coordinator (glm-vision)"
 notes: ""
@@ -18,7 +18,7 @@ notes: ""
 
 # Page 1 — Unit 01: Functions and Graphs
 
-> 📄 Original scan: [0001.jpg](../../../data/raw/M-1/0001.jpg) · printed page 7
+> 📄 Original scan: [0001.jpg](../../../../../data/raw/M-1/0001.jpg) · printed page 7
 
 **UNIT**
 **01**

@@ -61,19 +61,24 @@ exercise: "1.1"                        # exercise id on this page; null if none
 content_type: theory                   # front-matter | chapter-opener | theory | worked-examples | exercise | mixed | summary
 has_figures: true                      # any figure/graph/diagram/illustration/photo on page?
 figures_count: 2                       # integer count
-source_image: "../../../data/raw/M-1/0025.jpg"   # relative link from the .md file to the raw scan
+source_image: "../../../../../data/raw/M-1/0025.jpg"   # relative link from the .md file to the raw scan (see depth rule below)
 converted_at: "2026-01-01"             # ISO date
 converted_by: "agent-A1 (glm-vision)"  # agent id + engine
 notes: ""                              # anomalies, boundary cases, illegible spots; "" if none
 ---
 ```
 
+> ⚠️ **Relative path depth rule (validated in audit — count carefully!):**
+> - `data/processed/<BOOK>/front-matter/page-0NN.md` (4 dirs below repo root) → `../../../../data/raw/<BOOK>/NNNN.jpg`
+> - `data/processed/<BOOK>/<chapter-folder>/<content-folder>/page-0NN.md` (5 dirs below repo root) → `../../../../../data/raw/<BOOK>/NNNN.jpg`
+> Use the SAME path in the body's scan-link blockquote. Always verify the link resolves after placement.
+
 ### 2.2 Body skeleton
 
 ```markdown
 # Page 25 — Functions and Graphs (Unit 01)
 
-> 📄 Original scan: [0025.jpg](../../../data/raw/M-1/0025.jpg) · printed page 31
+> 📄 Original scan: [0025.jpg](../../../../../data/raw/M-1/0025.jpg) · printed page 31
 
 <!-- faithful transcription of the page content, in original reading order -->
 

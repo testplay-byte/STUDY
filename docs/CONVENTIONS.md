@@ -8,17 +8,22 @@ document the decision in the page's `notes:` frontmatter field, and report it in
 
 ## 1. Codes & Naming
 
-### Book codes
-`M-0`, `M-1`, `S-0`, `S-1` (more will come: `M-2`, `S-2`, …).
+### Subject folders & hierarchy (v2, user-mandated)
+Every path carries an explicit **subject level**: `mathematics/` or `statistics/`
+(add more subjects as new books arrive, kebab-case lowercase).
+Full hierarchy: **subject → book batch → chapter → exercise → page**.
+
+### Book batch codes (second level, under subject)
+`M-0`, `M-1`, `S-0`, `S-1`, `S-2` (more will come: `M-2`, …).
 - `X-0` = front matter of book X ("zero chapter": cover, overview, chapter list).
 - `X-n` = chapter/unit *n* scans of book X.
 
 ### Page images (raw, immutable)
-- Location: `data/raw/<BOOK>/NNNN.jpg` — **never modify, rename or delete** raw images.
+- Location: `data/raw/<subject>/<BOOK>/NNNN.jpg` — **never modify, rename or delete** raw images.
 - `NNNN` is the zero-padded image number (1–4 digits) from the original scan set.
 
 ### Markdown output (processed)
-- Location: `data/processed/<BOOK>/<chapter-folder>/<content-folder>/page-<NNN>.md`
+- Location: `data/processed/<subject>/<BOOK>/<chapter-folder>/<content-folder>/page-<NNN>.md`
   where `<NNN>` = the same image number, zero-padded to 3 digits (`page-025.md`).
 - **One Markdown file per page image. Never merge or split pages.**
 
@@ -26,7 +31,7 @@ document the decision in the page's `notes:` frontmatter field, and report it in
 | Book | Chapter folder |
 |------|----------------|
 | M-0 / S-0 (front matter) | `front-matter/` |
-| M-1 | `unit-01/` (pattern: `unit-0N`) |
+| M-1 | `unit-01-functions-and-graphs/` (pattern: `unit-0N-<kebab-slug>`) |
 | S-1 | `chapter-08-set-theory/` (pattern: `chapter-<NN>-<kebab-slug-of-printed-title>`) |
 
 ### Content folders inside a chapter
@@ -35,6 +40,7 @@ document the decision in the page's `notes:` frontmatter field, and report it in
 | Chapter opener / theory before first exercise | `00-intro/` | opener pages, learning objectives, theory sections |
 | Numbered exercise | `exercise-<ch>.<n>/` e.g. `exercise-1.1`, `exercise-1.2` | pages whose dominant content is that exercise |
 | Single unnumbered chapter exercise | `exercise/` | e.g. S-1 "Set Theory" end-of-chapter questions |
+| Unnumbered review exercise at chapter end | `review-exercise/` | e.g. M-1 "Review Exercise" (pages 034–036) |
 | Chapter summary / misc back-matter | `99-summary-misc/` | summaries, formula sheets, non-exercise end pages |
 
 **Placement rule:** a page goes to the folder of the content that occupies the *majority* (or
@@ -61,16 +67,16 @@ exercise: "1.1"                        # exercise id on this page; null if none
 content_type: theory                   # front-matter | chapter-opener | theory | worked-examples | exercise | mixed | summary
 has_figures: true                      # any figure/graph/diagram/illustration/photo on page?
 figures_count: 2                       # integer count
-source_image: "../../../../../data/raw/M-1/0025.jpg"   # relative link from the .md file to the raw scan (see depth rule below)
+source_image: "../../../../../../data/raw/mathematics/M-1/0025.jpg"   # relative link from the .md file to the raw scan (see depth rule below)
 converted_at: "2026-01-01"             # ISO date
 converted_by: "agent-A1 (glm-vision)"  # agent id + engine
 notes: ""                              # anomalies, boundary cases, illegible spots; "" if none
 ---
 ```
 
-> ⚠️ **Relative path depth rule (validated in audit — count carefully!):**
-> - `data/processed/<BOOK>/front-matter/page-0NN.md` (4 dirs below repo root) → `../../../../data/raw/<BOOK>/NNNN.jpg`
-> - `data/processed/<BOOK>/<chapter-folder>/<content-folder>/page-0NN.md` (5 dirs below repo root) → `../../../../../data/raw/<BOOK>/NNNN.jpg`
+> ⚠️ **Relative path depth rule (v2 subject hierarchy — count carefully!):**
+> - `data/processed/<subject>/<BOOK>/front-matter/page-0NN.md` (5 dirs below repo root) → `../../../../../data/raw/<subject>/<BOOK>/NNNN.jpg`
+> - `data/processed/<subject>/<BOOK>/<chapter-folder>/<content-folder>/page-0NN.md` (6 dirs below repo root) → `../../../../../../data/raw/<subject>/<BOOK>/NNNN.jpg`
 > Use the SAME path in the body's scan-link blockquote. Always verify the link resolves after placement.
 
 ### 2.2 Body skeleton
@@ -78,7 +84,7 @@ notes: ""                              # anomalies, boundary cases, illegible sp
 ```markdown
 # Page 25 — Functions and Graphs (Unit 01)
 
-> 📄 Original scan: [0025.jpg](../../../../../data/raw/M-1/0025.jpg) · printed page 31
+> 📄 Original scan: [0025.jpg](../../../../../../data/raw/mathematics/M-1/0025.jpg) · printed page 31
 
 <!-- faithful transcription of the page content, in original reading order -->
 

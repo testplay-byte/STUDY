@@ -35,16 +35,25 @@ STUDY/
 │   ├── convert-page.mjs       ← VLM conversion script (image → Markdown)
 │   └── prompt.txt             ← canonical conversion prompt (single source of truth)
 ├── data/
-│   ├── raw/                   ← UNPROCESSED: scanned page images, by book
-│   │   ├── M-0/0001.jpg … 
-│   │   ├── M-1/0001.jpg …
-│   │   ├── S-0/0001.jpg …
-│   │   └── S-1/0001.jpg …
-│   └── processed/             ← DIGITAL: one Markdown file per page, book → chapter → exercise
-│       ├── M-0/front-matter/page-001.md …
-│       ├── M-1/unit-01/{00-intro | exercise-1.x | 99-summary}/page-0NN.md
-│       ├── S-0/front-matter/page-001.md …
-│       └── S-1/chapter-08-set-theory/{00-intro | exercise}/page-0NN.md
+│   ├── raw/                   ← UNPROCESSED: scanned page images, subject → book batch
+│   │   ├── mathematics/
+│   │   │   ├── M-0/0001.jpg …
+│   │   │   └── M-1/0001.jpg …
+│   │   └── statistics/
+│   │       ├── S-0/0001.jpg …
+│   │       ├── S-1/0001.jpg …
+│   │       └── S-2/0001.jpg …
+│   └── processed/             ← DIGITAL: subject → book batch → chapter → exercise → page
+│       ├── mathematics/
+│       │   ├── M-0/front-matter/page-001.md …
+│       │   └── M-1/unit-01-functions-and-graphs/
+│       │       ├── 00-intro/page-0NN.md
+│       │       ├── exercise-1.1/  exercise-1.2/  exercise-1.3/
+│       │       └── review-exercise/page-0NN.md
+│       └── statistics/
+│           ├── S-0/front-matter/page-001.md …
+│           ├── S-1/chapter-08-set-theory/{00-intro | exercise}/page-0NN.md
+│           └── S-2/<chapter-folder>/{00-intro | exercise-…}/page-0NN.md
 └── indexes/
     ├── M-0.md  M-1.md  S-0.md  S-1.md   ← page map: image № → printed № → section/exercise → file
 ```
@@ -54,7 +63,7 @@ STUDY/
 1. **Plan & conventions** (this repo's `docs/`)
 2. **Convert**: page image → VLM (vision model) → Markdown draft via `tools/convert-page.mjs`
 3. **QA round**: agent re-reads the image side-by-side with the draft, fixes any mismatch
-4. **Place**: file stored under `data/processed/<book>/<chapter>/<exercise>/`
+4. **Place**: file stored under `data/processed/<subject>/<book>/<chapter>/<exercise>/`
 5. **Index & log**: page recorded in `indexes/<book>.md` + `WORKLOG.md`
 6. **Backup**: commit & push to GitHub after every phase / wave
 

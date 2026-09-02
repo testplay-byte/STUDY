@@ -220,3 +220,25 @@ Work Log:
 
 Stage Summary:
 - PHASE 1 COMPLETE: 62 scanned pages → 62 faithful Markdown files, book → chapter → exercise structure, figures preserved as detailed descriptions, math in LaTeX. Repo fully backed up to GitHub.
+- Updated PLAN.md (all Phase 1 items checked) + README (Phase 1 COMPLETE)
+- Worklog entries normalized: 2b partial completion recorded; S-0 0005 finish documented
+
+Stage Summary:
+- PHASE 1 COMPLETE: 62 scanned pages → 62 faithful Markdown files, book → chapter → exercise structure, figures preserved as detailed descriptions, math in LaTeX. Repo fully backed up to GitHub.
+
+---
+Task ID: 4-restructure
+Agent: coordinator (Z.ai main)
+Task: Restructure repo to user-mandated subject → chapter → exercise hierarchy + prep S-2
+
+Work Log:
+- User feedback: format needs explicit separate folders for subjects, chapters, exercises; new S-2 link received (limewire S-2.zip, 63.7 MB)
+- git mv: data/raw/{M-0,M-1} → data/raw/mathematics/, data/raw/{S-0,S-1} → data/raw/statistics/; same for data/processed/
+- Renamed chapters/exercises: M-1 unit-01 → unit-01-functions-and-graphs; M-1 unnumbered exercise/ → review-exercise/ (034-036)
+- Rewrote all source_image + body scan-links: M-0/S-0 now 5-ups, M-1/S-1 now 6-ups (subject level added); verified 124/124 links resolve
+- Updated indexes/{M-0,M-1,S-0,S-1}.md paths (verified 0 broken); CONVENTIONS.md §1 v2 hierarchy + depth rule + review-exercise row; README structure tree + pipeline step 4; tools/README example
+- Next: download S-2.zip via browser (E2E-encrypted limewire share), unzip, recon, test page, 5-agent wave
+
+Stage Summary:
+- Repo now: data/{raw,processed}/<subject>/<book>/<chapter>/<exercise>/ — exactly the subject/chapter/exercise separation the user asked for
+- All 62 digitized pages intact under new paths; docs updated to v2 conventions

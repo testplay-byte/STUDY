@@ -12,11 +12,11 @@ This is a *draft generator*: the converting agent must still run the §4 QA chec
 cd <repo root>   # study-workspace/STUDY
 
 bun tools/convert-page.mjs \
-  --image data/raw/M-1/0025.jpg \
+  --image data/raw/mathematics/M-1/0025.jpg \
   --book M-1 --page 25 --image-filename 0025.jpg \
   --out /tmp/drafts/page-025.md \
   --agent agent-A1 \
-  --source-image-rel "../../../data/raw/M-1/0025.jpg"
+  --source-image-rel "../../../data/raw/mathematics/M-1/0025.jpg"
 ```
 
 Workflow used by agents: **draft to a scratch dir first** (e.g. `/tmp/drafts/`), review,

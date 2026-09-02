@@ -2,14 +2,14 @@
 /**
  * convert-page.mjs — Study digitization pipeline: one page image → one Markdown file.
  *
- * Usage:
- *   bun tools/convert-page.mjs --image data/raw/M-1/0025.jpg \
- *        --book M-1 --page 25 --image-filename 0025.jpg \
- *        --out data/processed/M-1/unit-01/00-intro/page-025.md \
+ * Usage (v3 layout):
+ *   bun tools/convert-page.mjs --image books/mathematics/raw/M-1/0025.jpg \
+ *        --batch M-1 --page 25 --image-filename 0025.jpg \
+ *        --out /tmp/drafts/page-025.md \
  *        --agent agent-A1 \
- *        --source-image-rel "../../../data/raw/M-1/0025.jpg"
+ *        --source-image-rel "../raw/M-1/0025.jpg" [--subject mathematics]
  *
- * Engine: z-ai-web-dev-sdk (server-side vision model). Prompt: tools/prompt.txt (canonical).
+ * Engine: z-ai-web-dev-sdk (server-side vision model). Prompt: tools/prompt.txt (canonical, v3).
  * Auto-continues when output is truncated. Never place files directly — coordinator/agents
  * review output against the image before accepting it (see docs/CONVENTIONS.md §4).
  */
@@ -24,8 +24,9 @@ function arg(name, def = undefined) {
 }
 
 const IMAGE = arg('image');
-const BOOK = arg('book');
+const BATCH = arg('batch') || arg('book');   // v3 name --batch; --book kept as v2 alias
 const PAGE = arg('page');
+const SUBJECT = arg('subject');              // optional; resolved from batch prefix if omitted
 const IMAGE_FILENAME = arg('image-filename') || path.basename(IMAGE || '');
 const OUT = arg('out');
 const AGENT = arg('agent', 'coordinator');
@@ -33,16 +34,19 @@ const SOURCE_REL = arg('source-image-rel', '');
 const THINKING = process.argv.includes('--thinking');
 
 function die(msg) { console.error('ERROR:', msg); process.exit(1); }
-if (!IMAGE || !BOOK || !PAGE || !OUT) {
-  die('required: --image, --book, --page, --out  (also good: --image-filename, --agent, --source-image-rel)');
+if (!IMAGE || !BATCH || !PAGE || !OUT) {
+  die('required: --image, --batch, --page, --out  (also good: --subject, --image-filename, --agent, --source-image-rel)');
 }
+const RESOLVED_SUBJECT = SUBJECT || (/^M-/.test(BATCH) ? 'mathematics' : /^S-/.test(BATCH) ? 'statistics' : null);
+if (!RESOLVED_SUBJECT) die(`cannot resolve --subject from batch "${BATCH}" — pass --subject explicitly`);
 
 const promptTemplate = fs.readFileSync(path.join(process.cwd(), 'tools/prompt.txt'), 'utf8');
 const today = new Date().toISOString().slice(0, 10);
 
 const injections = [
-  `CONTEXT VALUES FOR FRONTMATTER (use exactly):`,
-  `book: ${BOOK}`,
+  `CONTEXT VALUES FOR FRONTMATTER (use exactly, v3 field names):`,
+  `subject: ${RESOLVED_SUBJECT}`,
+  `batch: ${BATCH}`,
   `page_image: ${PAGE}`,
   `image filename: ${IMAGE_FILENAME}`,
   `source_image: ${SOURCE_REL}`,

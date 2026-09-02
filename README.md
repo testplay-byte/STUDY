@@ -1,82 +1,82 @@
 # STUDY — Study Helper Planner: Knowledge Base
 
-Permanent backup & storage for the **Study Helper Planner** project. Everything lives here:
-raw scans, digitized Markdown, work logs, plans, and prompts.
+Permanent home of the **Study Helper Planner** project: the user's school textbooks digitized
+from scans into a structured Markdown library, plus the tracking data and documentation that
+lets **any AI agent** (or the user, or a future web dashboard) pick up the project with full
+context. The sandbox is disposable — **this repository is the project's memory.**
 
-## 🎯 Current Phase: **Phase 2 COMPLETE ✅** — 112/112 pages digitized (M-0, M-1, S-0, S-1, S-2)
+## 🎯 Current state: **Structure v3 complete** — 112/112 pages digitized & reorganized
 
-All 112 scanned pages digitized into structured Markdown — one `.md` per page, figures described in
-detail, tables as GFM tables, math in LaTeX. Per-book page maps: `indexes/`.
+Two books, five batches, 112 scanned pages → 112 faithful Markdown pages. Every figure
+described in detail, every formula in LaTeX, every table as a GFM table, every page traceable
+to its raw scan. Full status: [`STATUS.md`](STATUS.md).
 
-## 📚 Book Registry (identified so far)
+## 🧭 Start here
 
-| Code | Book | Pages | Content |
-|------|------|-------|---------|
-| `M-0` | Textbook of Mathematics, Grade 12 — National Book Foundation as Federal Textbook Board, Islamabad (Based on National Curriculum of Pakistan 2022-23) | 7 | Front matter ("zero chapter"): cover, book overview, chapter list |
-| `M-1` | Same Mathematics book — **Unit 01: Functions and Graphs** | 36 | Full Unit 1 (printed pages 7–42), multiple exercises |
-| `S-0` | Basic Statistics for Intermediate Classes, Part-II — Muhammad Saleem Akhtar, Majeed Book Depot (Federal Board) | 9 | Front matter ("zero chapter"): cover, preface, chapter list |
-| `S-1` | Same Statistics book — **Chapter 8: Set Theory** | 10 | Full Chapter 8 (printed pages 1–10) incl. chapter exercise |
-| `S-2` | Same Statistics book — **Chapter 9: Probability** | 50 | Full Chapter 9 (printed pages 11–60): theory (36), MCQs 1–112 + ANSWERS, Short Questions Q.1–Q.90, Exercises Q.1–Q.57 |
+| You are… | Read |
+|----------|------|
+| **An AI agent** (new session / fresh sandbox) | [`AGENTS.md`](AGENTS.md) — complete onboarding, then `STATUS.md` → `docs/` |
+| The user (browsing) | `indexes/` for page tables, `books/` for content, `STATUS.md` for progress |
+| Building tooling / the web dashboard | `books/<subject>/book.json` + `books/<subject>/<part>/chapter.json` (generated, stable contracts) |
 
-> ℹ️ S-1 was expected to contain "Chapters 1–2 of Statistics", but the scans show it is
-> **Chapter 8 — Set Theory**; S-2 is **Chapter 9 — Probability** (whose running headers misprint
-> "[Chapter 7]"). We always record what is **actually printed** on the pages; discrepancies are
-> noted in `docs/PLAN.md`.
+## 📚 Library registry
 
-## 📁 Repository Structure
+| Subject | Book | Digitized |
+|---------|------|-----------|
+| Mathematics | *Textbook of Mathematics Grade 12* — National Book Foundation, Federal Textbook Board, Islamabad (National Curriculum of Pakistan 2022-23) | front matter (7) + **Unit 01: Functions and Graphs** (36) = **43 pages** |
+| Statistics | *Basic Statistics for Intermediate Classes, Part-II* — M. Saleem Akhtar, Majeed Book Depot (Federal Board) | front matter (9) + **Ch. 8: Set Theory** (10) + **Ch. 9: Probability** (50) = **69 pages** |
+
+> ℹ️ Scans are digitized **as printed**. The user's brief once said "Statistics chapters 1–2";
+> the scans are actually Ch. 8 (Set Theory) & Ch. 9 (Probability) — recorded as printed, with
+> the discrepancy flagged in `docs/PLAN.md`. S-2 running headers even misprint "[Chapter 7]" —
+> known quirk, data records chapter 9.
+
+## 📁 Repository structure (v3)
 
 ```
 STUDY/
-├── README.md                  ← you are here
-├── WORKLOG.md                 ← master work log (every agent appends here)
+├── AGENTS.md  STATUS.md  WORKLOG.md  README.md
 ├── docs/
-│   ├── PLAN.md                ← master plan: phases, waves, QC policy
-│   ├── CONVENTIONS.md         ← folder/file naming, Markdown schema, QA checklist (READ FIRST)
-│   └── prompts/               ← documented version of the master VLM prompt
-├── tools/
-│   ├── convert-page.mjs       ← VLM conversion script (image → Markdown)
-│   └── prompt.txt             ← canonical conversion prompt (single source of truth)
-├── data/
-│   ├── raw/                   ← UNPROCESSED: scanned page images, subject → book batch
-│   │   ├── mathematics/
-│   │   │   ├── M-0/0001.jpg …
-│   │   │   └── M-1/0001.jpg …
-│   │   └── statistics/
-│   │       ├── S-0/0001.jpg …
-│   │       ├── S-1/0001.jpg …
-│   │       └── S-2/0001.jpg … 0050.jpg
-│   └── processed/             ← DIGITAL: subject → book batch → chapter → exercise → page
-│       ├── mathematics/
-│       │   ├── M-0/front-matter/page-001.md …
-│       │   └── M-1/unit-01-functions-and-graphs/
-│       │       ├── 00-intro/page-0NN.md
-│       │       ├── exercise-1.1/  exercise-1.2/  exercise-1.3/
-│       │       └── review-exercise/page-0NN.md
-│       └── statistics/
-│           ├── S-0/front-matter/page-001.md …
-│           ├── S-1/chapter-08-set-theory/{00-intro | exercise}/page-0NN.md
-│           └── S-2/chapter-09-probability/
-│               ├── 00-intro/page-0NN.md
-│               ├── multiple-choice-questions/page-0NN.md
-│               ├── short-questions/page-0NN.md
-│               └── exercise/page-0NN.md
-└── indexes/
-    ├── M-0.md  M-1.md  S-0.md  S-1.md  S-2.md   ← page map: image № → printed № → section/exercise → file
+│   ├── CONVENTIONS.md          ← binding rules: naming, schemas, QA, quirks (v3)
+│   ├── PIPELINE.md             ← runbook: batch intake → waves → audit (+ sandbox recovery)
+│   ├── PLAN.md                 ← roadmap: done phases & future build-out
+│   ├── prompts/                ← documented VLM prompt + changelog
+│   └── tracking/               ← STUDENT-PROFILE.md + PROGRESS-LOG.md (learner data)
+├── books/
+│   ├── mathematics/
+│   │   ├── book.json           ← machine-readable registry (generated)
+│   │   ├── front-matter/       ← M-0 · page-001..007.md (FLAT)
+│   │   ├── chapter-01-functions-and-graphs/  ← M-1 · page-001..036.md (FLAT) + chapter.json
+│   │   └── raw/                ← M-0/0001-0007.jpg · M-1/0001-0036.jpg (immutable scans)
+│   └── statistics/
+│       ├── book.json
+│       ├── front-matter/       ← S-0 · 9 pages
+│       ├── chapter-08-set-theory/   ← S-1 · 10 pages + chapter.json
+│       ├── chapter-09-probability/  ← S-2 · 50 pages + chapter.json
+│       └── raw/                ← S-0/S-1/S-2 scans (69 images)
+├── indexes/                    ← mathematics.md · statistics.md (generated page tables)
+└── tools/                      ← convert-page.mjs · build-metadata.mjs · prompt.txt
 ```
 
-## 🔁 Digitization Pipeline
+**Design rule (user directive, v3): pages are FLAT inside their chapter folder.** No
+exercise/section sub-folders — exercise & section identity lives in each page's frontmatter and
+in `chapter.json`. Raw scans are kept immutable per batch, fully separated from the digital
+pages, one level up (`raw/<BATCH>/`).
 
-1. **Plan & conventions** (this repo's `docs/`)
-2. **Convert**: page image → VLM (vision model) → Markdown draft via `tools/convert-page.mjs`
-3. **QA round**: agent re-reads the image side-by-side with the draft, fixes any mismatch
-4. **Place**: file stored under `data/processed/<subject>/<book>/<chapter>/<exercise>/`
-5. **Index & log**: page recorded in `indexes/<book>.md` + `WORKLOG.md`
-6. **Backup**: commit & push to GitHub after every phase / wave
+## 🔁 Digitization pipeline (summary)
 
-## 🔐 Credentials Policy
+1. **Conventions** — `docs/CONVENTIONS.md` is binding for every agent
+2. **Intake & recon** — new scans → `books/<subject>/raw/<BATCH>/`, identify book/chapter/offset
+3. **Test-first** — 2–4 representative pages converted & QA'd before any mass run
+4. **Convert** — `tools/convert-page.mjs` (VLM) → draft → side-by-side QA → place
+5. **Waves** — 5 parallel sub-agents for mass conversion; coordinator audits ≥ 20%
+6. **Metadata** — `bun tools/build-metadata.mjs` regenerates book.json / chapter.json / indexes
+7. **Backup** — commit + push after every phase, wave and audit (GitHub is the only permanent home)
+
+## 🔐 Credentials policy
 
 The GitHub token is configured **locally only** (git remote URL in `.git/config`) and is
 **intentionally never committed** to this repository.
 
 ---
-*Maintained by the Study Helper Planner digitization team (Z.ai agents + human oversight).*
+*Maintained by the Study Helper Planner team (user + Z.ai coordinator + agent waves).*

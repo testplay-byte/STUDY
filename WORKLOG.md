@@ -296,3 +296,24 @@ Stage Summary:
 - S-2 COMPLETE: 36 theory + 6 MCQ + 3 short-questions + 5 exercise pages = 50/50
 - indexes/S-2.md generated; PLAN/README updated (Phase 2 COMPLETE, 112 total pages)
 - Total library: M-0 (7) + M-1 (36) + S-0 (9) + S-1 (10) + S-2 (50) = 112 pages digitized
+
+---
+Task ID: 6-v3
+Agent: coordinator (Z.ai main)
+Task: Structure v3 — flatten exercise splits (user directive), raw-data handling, full agent docs, tracking system, metadata contracts
+
+Work Log:
+- User feedback round: (a) M-1 exercise split rejected — pages must stay FLAT in chapter folders, exercises recorded in metadata only; (b) raw data handling + documentation + indexes need to be first-class; (c) repo = permanent context store so ANY new agent can resume with full context; (d) tracking data (strengths/weaknesses/goals) to be stored; (e) naming scheme consistent + future-compatible; (f) future web dashboard planned
+- Cloned repo fresh (origin/main @ b89351c is source of truth; old local clone was stale at ebf55e4)
+- Wrote + ran tools/migrate-v3.mjs: 112/112 pages moved to books/<subject>/<part>/page-NNN.md (FLAT — dissolved 00-intro/exercise-1.1/exercise-1.2/exercise-1.3/review-exercise/multiple-choice-questions/short-questions sub-folders), raw images → books/<subject>/raw/<BATCH>/, frontmatter v3 rewrite (book:→batch:, chapter:→chapter_number:, + subject:, + chapter_folder:, source_image → ../raw/<BATCH>/NNNN.jpg), body scan-links rewritten; verifier: 0 problems, all links resolve, data/ tree removed
+- Content-integrity proof: all 112 page bodies diffed vs git HEAD — byte-identical after normalizing the intentionally-rewritten scan-link line (112/112 ✓)
+- Human spot-check of user-named test pages against scans post-migration: M-1 img25 (sin/cos tables+graphs ✓), S-1 img3 (4 Venn diagrams, §8.13–8.17 ✓); M-1 img26 + S-2 img5 confirmed present with resolving links (QA'd in earlier phases)
+- Wrote + ran tools/build-metadata.mjs → books/mathematics/book.json, books/statistics/book.json, chapter.json in all 5 part folders, indexes/{mathematics,statistics}.md (stale per-batch indexes removed); stats captured: 109 figures, content-type mix, printed ranges (M-1 7–41, S-2 11–60)
+- tools/convert-page.mjs updated to v3 (--batch flag, --subject auto-resolve, v3 frontmatter injections); tools/prompt.txt updated to v3 schema; tools/README.md rewritten
+- Docs written: AGENTS.md (agent onboarding: reading order, 11 ground rules, repo map, task types, credentials policy, quirks that bite), STATUS.md (live snapshot: inventory table, next-action queue, watchlist), docs/CONVENTIONS.md v3 (flat-pages rule + rationale, codes/naming, schema v3, transcription/QA/git rules, quirks, derived-files table, changelog), docs/PIPELINE.md (sandbox recovery + intake→recon→register→test-first→5-agent-wave→audit runbook), docs/PLAN.md (Phases 0–3 done + Phases 4–7 roadmap: more batches, enrichment, web dashboard, active study loop), README.md rewritten as front page
+- Tracking system: docs/tracking/STUDENT-PROFILE.md (learner snapshot, mastery map, strengths/gaps/goals, preferences — chapter-level preference recorded) + docs/tracking/PROGRESS-LOG.md (entry format + first entry)
+
+Stage Summary:
+- STRUCTURE v3 COMPLETE: books/<subject>/{book.json, front-matter/, chapter-NN-slug/ (FLAT pages + chapter.json), raw/<BATCH>/} — exactly the raw/processed separation and chapter-level organization the user asked for
+- 112/112 pages intact and verified; exercise identity preserved in frontmatter/chapter.json (M-1 boundaries flagged approximate pending user's raw info — frontmatter-only fix policy)
+- Repo now self-contained for any future agent: AGENTS.md → STATUS.md → CONVENTIONS → PIPELINE → WORKLOG tail = full context in ~5 minutes; tracking system ready for the study loop; book.json/chapter.json ready for the future web dashboard

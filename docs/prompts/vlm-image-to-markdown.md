@@ -30,3 +30,4 @@ See `tools/prompt.txt` for the operative text (Parts: frontmatter schema, body s
 |------|--------|--------|
 | Phase 1 kickoff | v1 created | initial design |
 | Post test-round | v1.1: page_printed "never guess" rule; section completeness rule | test QA caught wrong page numbers (17→31, 9→5) and under-filled section fields |
+| 2026-09-02 (v3) | Frontmatter schema v3: `subject`, `batch` (was `book`), `chapter_folder`, `chapter_number` (was `chapter`); source_image format `../raw/<BATCH>/NNNN.jpg` | user-directed structure v3 (flat chapter pages); field names now match the actual layout semantics |

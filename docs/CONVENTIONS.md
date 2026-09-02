@@ -1,93 +1,109 @@
-# Conventions — READ BEFORE ANY CONVERSION WORK
+# Conventions — READ BEFORE ANY WORK (v3, 2026-09-02)
 
-These rules are **binding** for every agent converting pages. Consistency here is what makes
-the library usable later. If you ever hit a case not covered here, decide conservatively,
-document the decision in the page's `notes:` frontmatter field, and report it in the worklog.
+These rules are **binding** for every agent (human or AI) working in this repository.
+Consistency here is what makes the library usable by the next agent, by tooling, and by the
+future web dashboard. If you hit a case not covered here: decide conservatively, record the
+decision in the page's `notes:` frontmatter field AND in `WORKLOG.md`.
+
+## 0. Changelog
+
+| Version | Date | Change |
+|---------|------|--------|
+| v1 | Phase 1 | Initial: `data/raw/<BOOK>/` + `data/processed/<BOOK>/<chapter>/<section>/` |
+| v2 | Phase 1 | Subject level added: `data/{raw,processed}/<subject>/...`; exercise sub-folders |
+| **v3** | **2026-09-02** | **User directive: NO exercise/section sub-folders — pages FLAT inside chapter folder.** `books/` tree replaces `data/`; raw images live inside each book (`books/<subject>/raw/<BATCH>/`); frontmatter `book:`→`batch:`, `chapter:`→`chapter_number:`, new `subject:` + `chapter_folder:`; scan links shortened to `../raw/<BATCH>/NNNN.jpg`; machine-readable `book.json`/`chapter.json` added; tracking system added (`docs/tracking/`) |
 
 ---
 
-## 1. Codes & Naming
+## 1. Folder Hierarchy & Naming (v3)
 
-### Subject folders & hierarchy (v2, user-mandated)
-Every path carries an explicit **subject level**: `mathematics/` or `statistics/`
-(add more subjects as new books arrive, kebab-case lowercase).
-Full hierarchy: **subject → book batch → chapter → exercise → page**.
+### 1.1 The tree
 
-### Book batch codes (second level, under subject)
-`M-0`, `M-1`, `S-0`, `S-1`, `S-2` (more will come: `M-2`, …).
-- `X-0` = front matter of book X ("zero chapter": cover, overview, chapter list).
-- `X-n` = chapter/unit *n* scans of book X.
+```
+books/<subject>/                          # subject: kebab-case lowercase (mathematics, statistics, …)
+├── book.json                             # generated registry (see §7)
+├── raw/<BATCH>/NNNN.jpg                  # RAW scans — immutable, never touch
+├── front-matter/page-NNN.md              # "zero chapter" pages, FLAT
+└── <chapter-folder>/                     # e.g. chapter-01-functions-and-graphs
+    ├── chapter.json                      # generated page map (see §7)
+    └── page-NNN.md                       # ALL pages FLAT — no sub-folders, ever
+```
 
-### Page images (raw, immutable)
-- Location: `data/raw/<subject>/<BOOK>/NNNN.jpg` — **never modify, rename or delete** raw images.
-- `NNNN` is the zero-padded image number (1–4 digits) from the original scan set.
+### 1.2 ⚠️ THE FLAT-PAGES RULE (user directive, v3)
 
-### Markdown output (processed)
-- Location: `data/processed/<subject>/<BOOK>/<chapter-folder>/<content-folder>/page-<NNN>.md`
-  where `<NNN>` = the same image number, zero-padded to 3 digits (`page-025.md`).
-- **One Markdown file per page image. Never merge or split pages.**
+**Never create sub-folders inside a chapter/part folder.** No `00-intro/`, no `exercise-1.1/`,
+no `multiple-choice-questions/`. A chapter's pages are `page-001.md … page-NNN.md` side by side.
 
-### Chapter folders (processed only)
-| Book | Chapter folder |
-|------|----------------|
-| M-0 / S-0 (front matter) | `front-matter/` |
-| M-1 | `unit-01-functions-and-graphs/` (pattern: `unit-0N-<kebab-slug>`) |
-| S-1 | `chapter-08-set-theory/` (pattern: `chapter-<NN>-<kebab-slug-of-printed-title>`) |
-| S-2 | `chapter-09-probability/` (same pattern) |
+- Rationale: the user reviewed the v2 M-1 exercise split (exercise-1.1/1.2/1.3, each holding a
+  single page) and rejected it — boundaries were unreliable and split folders hurt navigation.
+- Where does exercise/section info live? In each page's frontmatter (`section:`, `exercise:`,
+  `content_type:`) and aggregated into `chapter.json` → queryable without folder splits.
+- This applies to **future books too**, even if a chapter contains several exercises.
 
-### Content folders inside a chapter
-| Content | Folder | Use when |
-|---------|--------|----------|
-| Chapter opener / theory before first exercise | `00-intro/` | opener pages, learning objectives, theory sections |
-| Numbered exercise | `exercise-<ch>.<n>/` e.g. `exercise-1.1`, `exercise-1.2` | pages whose dominant content is that exercise |
-| Single unnumbered chapter exercise | `exercise/` | e.g. S-1 "Set Theory" end-of-chapter questions; S-2 "EXERCISES" Q.1–Q.57 |
-| Unnumbered review exercise at chapter end | `review-exercise/` | e.g. M-1 "Review Exercise" (pages 034–036) |
-| Printed end-section: MCQ bank | `multiple-choice-questions/` | e.g. S-2 "MULTIPLE-CHOICE QUESTIONS" (1–112 + ANSWERS) |
-| Printed end-section: short-answer bank | `short-questions/` | e.g. S-2 "SHORT QUESTIONS" (Q.1–Q.83, two-column) |
-| Chapter summary / misc back-matter | `99-summary-misc/` | summaries, formula sheets, non-exercise end pages |
+### 1.3 Codes
 
-**Placement rule:** a page goes to the folder of the content that occupies the *majority* (or
-first major block) of the page. A page continuing Exercise 1.1 from the previous page belongs
-to `exercise-1.1` even if a new theory section starts at the very bottom. Record boundary
-details in frontmatter (`section_next:`, `notes:`).
+| Thing | Pattern | Examples |
+|-------|---------|----------|
+| Subject folder | kebab-case lowercase | `mathematics`, `statistics` |
+| Batch code (one uploaded scan package) | `<subject letter>-<n>` | `M-0`, `M-1`, `M-2`, `S-3` … `X-0` = front matter ("zero chapter") of book X; `X-n` = n-th chapter package of book X |
+| Chapter folder | `chapter-<NN>-<kebab-slug-of-printed-title>` | `chapter-08-set-theory`, `chapter-09-probability` |
+| Unit-style books (printed as "Unit") | still `chapter-<NN>-<slug>`; the book's own label ("Unit 01") goes in metadata `chapter_label` | `chapter-01-functions-and-graphs` (label "Unit 01") |
+| Front-matter folder | `front-matter` | one per book |
+| Page file | `page-<NNN>.md`, `NNN` = zero-padded **image number** (3 digits; grow to 4 only past 999 pages) | `page-025.md` |
+| Raw image | `<NNNN>.jpg`, zero-padded 4 digits, copied **unchanged** from the upload | `0025.jpg` |
+
+Rules:
+- slugs: lowercase, kebab-case, keep short (≤ ~40 chars), from the printed title.
+- **Batch ↔ part mapping is recorded in `book.json`/`chapter.json`** (`batch:` field). One batch
+  currently maps to one part; if a future upload spans several chapters, split it at RECON time
+  and record the image ranges per chapter in `chapter.json`.
+- Numbers are zero-padded everywhere so lexical order = logical order.
+
+### 1.4 Raw data (immutable)
+
+- Location: `books/<subject>/raw/<BATCH>/NNNN.jpg`.
+- **Never modify, rename, re-compress or delete** raw images. They are the ground truth.
+- Raw batches mirror the user's uploads exactly (same count, same order).
+- Digitized pages link back via `source_image:` — this is the traceability chain
+  (page .md ⇄ raw jpg ⇄ original upload number).
 
 ---
 
 ## 2. Markdown Page Schema
 
-### 2.1 YAML frontmatter (every file, exact fields)
+### 2.1 YAML frontmatter (every page file, exact fields, v3 order)
 
 ```yaml
 ---
-book: M-1                              # book code
-book_title: "Textbook of Mathematics Grade 12 — National Book Foundation, Federal Textbook Board, Islamabad"
-page_image: 25                         # integer image number (from raw filename)
-page_printed: 31                       # integer printed page number; null if not printed on page
-chapter: 1                             # integer chapter/unit number; null for front matter
-chapter_title: "Functions and Graphs"  # exact printed title; null for front matter
-section: "1.11 Domain and Range of Transcendental Functions through Graphs"  # main section(s) on page; null if none
-exercise: "1.1"                        # exercise id on this page; null if none
-content_type: theory                   # front-matter | chapter-opener | theory | worked-examples | exercise | mixed | summary
-has_figures: true                      # any figure/graph/diagram/illustration/photo on page?
-figures_count: 2                       # integer count
-source_image: "../../../../../../data/raw/mathematics/M-1/0025.jpg"   # relative link from the .md file to the raw scan (see depth rule below)
-converted_at: "2026-01-01"             # ISO date
-converted_by: "agent-A1 (glm-vision)"  # agent id + engine
-notes: ""                              # anomalies, boundary cases, illegible spots; "" if none
+subject: mathematics                     # mathematics | statistics | …
+book_title: "Textbook of Mathematics Grade 12 — National Book Foundation, Federal Textbook Board, Islamabad"   # null if not identifiable
+batch: M-1                               # batch code (was `book:` in v2)
+chapter_folder: chapter-01-functions-and-graphs   # folder slug (new in v3)
+chapter_number: 1                        # integer printed chapter/unit number; null for front matter (was `chapter:` in v2)
+chapter_title: "Functions and Graphs"    # exact printed title; null for front matter
+page_image: 25                           # integer image number (from raw filename)
+page_printed: 31                         # integer printed page number; null if not printed on page
+section: "1.11 Domain and Range of Transcendental Functions through Graphs"  # ALL printed section headings, semicolon-separated; null if none
+exercise: "1.1"                          # exercise id dominant on this page; null if none
+content_type: theory                     # front-matter | chapter-opener | theory | worked-examples | exercise | mixed | summary
+has_figures: true                        # any figure/graph/diagram/illustration/photo?
+figures_count: 2                         # integer, == number of F-blocks in the body
+source_image: ../raw/M-1/0025.jpg        # relative link from the .md to the raw scan (always ../raw/<BATCH>/NNNN.jpg)
+converted_at: "2026-09-01"               # ISO date
+converted_by: "agent-A1 (glm-vision)"    # agent id + engine
+notes: ""                                # anomalies, boundary cases, illegible spots; "" if none
 ---
 ```
 
-> ⚠️ **Relative path depth rule (v2 subject hierarchy — count carefully!):**
-> - `data/processed/<subject>/<BOOK>/front-matter/page-0NN.md` (5 dirs below repo root) → `../../../../../data/raw/<subject>/<BOOK>/NNNN.jpg`
-> - `data/processed/<subject>/<BOOK>/<chapter-folder>/<content-folder>/page-0NN.md` (6 dirs below repo root) → `../../../../../../data/raw/<subject>/<BOOK>/NNNN.jpg`
-> Use the SAME path in the body's scan-link blockquote. Always verify the link resolves after placement.
+> ⚠️ `page_printed` is read **only** from digits actually printed on the page — never computed
+> from offsets. Offsets (§6) are a cross-check, not a substitute. Unreadable → `null` + note.
 
 ### 2.2 Body skeleton
 
 ```markdown
 # Page 25 — Functions and Graphs (Unit 01)
 
-> 📄 Original scan: [0025.jpg](../../../../../../data/raw/mathematics/M-1/0025.jpg) · printed page 31
+> 📄 Original scan: [0025.jpg](../raw/M-1/0025.jpg) · printed page 31
 
 <!-- faithful transcription of the page content, in original reading order -->
 
@@ -104,83 +120,103 @@ notes: ""                              # anomalies, boundary cases, illegible sp
 
 Rules:
 - `# Page <image №> — <chapter/section context>` as the H1.
-- The scan-link blockquote right under H1 (compute the correct relative path!).
+- The scan-link blockquote right under the H1, pointing at `../raw/<BATCH>/NNNN.jpg`.
 - Body = faithful transcription in reading order.
-- Every figure gets a `### Figure F<k>` block **in a "Figures on this page" section** AND is
-  referenced inline at its location with `[Figure F1]` so position is never lost.
+- Every figure gets a `### Figure F<k>` block in the "Figures on this page" section AND an
+  inline `[Figure F1]` marker at its position in the reading flow — position is never lost.
+
+---
 
 ## 3. Transcription Rules (binding)
 
 1. **Verbatim fidelity.** Transcribe all instructional text exactly. Do not solve, simplify,
-   correct, translate, summarize, or add interpretations. Preserve original spelling.
-2. **Math = LaTeX.** Inline `$...$`, display `$$...$$`. Use proper commands (`\theta`, `\neq`,
-   `\in`, `\subseteq`, `\cup`, `\cap`, `\times`, `\phi`, `\bar{A}`, `\frac{a}{b}`, `\binom{n}{r}`,
-   `^nP_r`, `\ldots`). Preserve equation numbering like `(1)`, `(viii)`.
-3. **Tables = GFM tables.** Exact cell values, caption/number above as bold text
-   (e.g. `**Table 1.3 — values of sinθ and cosθ**`). Wide tables: keep all columns anyway.
-4. **Figures/graphs/diagrams/photos are NEVER skipped.** For each: type, caption/number,
-   exhaustive description (axes, labels, scales, ticks, curves & their shape/direction, marked
-   points, shading, legend, colors, annotations), then one line `**Mathematical meaning:**`.
-   Examples from our books: Venn diagrams with shaded regions; sin/cos/tan/sec graphs; tree
-   diagrams; spring-oscillation illustration; cover photos.
-5. **Exercise numbering exact.** `Q.1`, `(i)`, `(viii)`, options `A)`, `B)`… as printed.
-   Never renumber. MCQ options as a list; sub-parts nested with indentation.
-6. **Headers/footers are page furniture** → frontmatter + the H1/scan-line, not body paragraphs
-   (e.g. "UNIT-01: FUNCTIONS AND GRAPHS", "GRADE 12", "National Book Foundation", printed page №,
-   running headers like `[Chapter 8] Set Theory`, navigation chips like `← 08 →`).
-7. **Colors/highlights:** if a heading or box is visually distinguished (colored box, bold),
-   keep it as bold/blockquote so emphasis survives.
-8. **Illegible text:** transcribe best guess + `[illegible]`, and add details to `notes:`.
-9. **Multi-column:** read column 1 fully, then column 2 (textbook is mostly single-column).
-10. **No truncation.** If output risks length, keep going — the script auto-continues.
+   correct, translate, summarize, or add interpretations. Preserve original spelling
+   (e.g. "George Cantor", "Demorgan's Laws" stay as printed).
+2. **Math = LaTeX.** Inline `$...$`, display `$$...$$`. Proper commands (`\theta`, `\neq`,
+   `\in`, `\subseteq`, `\cup`, `\cap`, `\times`, `\phi`, `\bar{A}`, `\frac{a}{b}`,
+   `\binom{n}{r}`, `^nP_r`, `\ldots`). Preserve printed equation numbering like `(1)`, `(viii)`.
+3. **Tables = GFM tables.** Exact cell values; caption/number above as bold text. Wide tables
+   keep all columns (split into two stacked tables only if the book itself prints them split).
+4. **Figures/graphs/diagrams/photos are NEVER skipped.** Type, caption/number, exhaustive
+   description (axes, labels, scales, ticks, curves & shapes, marked points, shading, legend,
+   colors, annotations), then one `**Mathematical meaning:**` line. Known from our books:
+   Venn diagrams, sin/cos/tan graphs, tree diagrams, spring-oscillation illustration, cover photos.
+5. **Exercise numbering exact.** `Q.1`, `(i)`, `(viii)`, options `A)`/`(a)` as printed. Never
+   renumber. MCQ options as a list; sub-parts nested. Printed "Ans." lines are transcribed too.
+6. **Headers/footers are page furniture** → captured in frontmatter + H1/scan-line only, never
+   body paragraphs (running headers, publisher lines, printed page №, navigation chips `← 08 →`).
+7. **Colors/highlights:** visually distinguished headings/boxes survive as bold/blockquote.
+8. **Illegible text:** best guess + `[illegible]`, details in `notes:`.
+9. **Multi-column:** finish column 1, then column 2.
+10. **No truncation.** `tools/convert-page.mjs` auto-continues truncated outputs.
+11. **Book typos are preserved** and noted in `notes:` (e.g. S-2 Ex 9.39 (iii) prints
+    (4/52)(1/52)=1/169 — wrong math, but we digitize what is printed).
 
-## 4. QA Checklist (agent self-review, every page — mandatory second pass)
+---
 
-- [ ] Read the generated `.md` **and** the image side-by-side (use the Read tool on both).
+## 4. QA Checklist (mandatory second pass, every page)
+
+- [ ] Read the generated `.md` **and** the image side-by-side.
 - [ ] Every paragraph/line on the image exists in the `.md` (no skips, no merges).
 - [ ] Every table row/column value matches; header row correct.
-- [ ] Every figure/graph has an F-block; count matches `figures_count`.
-- [ ] Math renders: balanced `$`, valid LaTeX commands.
-- [ ] Frontmatter complete and correct (esp. `page_printed`, `section`, `exercise`,
-      `content_type`, `source_image` relative path resolves).
-- [ ] File saved at the correct conventioned path; `page-0NN.md` number = image number.
-- [ ] Exercise boundary: if exercise X starts mid-page, page goes to the *majority* content
-      folder; boundary noted in `notes:`.
+- [ ] Every figure has an F-block; count == `figures_count`; inline `[Fk]` markers present.
+- [ ] Math renders: balanced `$`, valid LaTeX.
+- [ ] Frontmatter complete & correct — esp. `page_printed` (verified against the printed digit),
+      `section` (ALL headings), `exercise`, `content_type`, `source_image` resolves.
+- [ ] File at `books/<subject>/<part>/page-0NN.md`; number == image number. **No sub-folders.**
+- [ ] Exercise/section boundaries noted in `notes:` (never in folder names).
 
-## 5. Git & Logging Rules
+---
 
-- Agents **never** git-commit/push (coordinator does, to avoid conflicts).
-- Every agent appends its section — identical content — to **both**:
+## 5. Git, Worklog & Coordination Rules
+
+- Only the **coordinator** git-commits/pushes (avoids conflicts). Agents never commit.
+- Every agent appends the **same section** to both:
   1. `/home/z/my-project/worklog.md` (local shared log), and
-  2. `<repo>/WORKLOG.md` (repo log that gets pushed to GitHub)
-  using the exact section template: `---` / `Task ID:` / `Agent:` / `Task:` / `Work Log:` / `Stage Summary:`.
-- Report per-page status lines in the worklog: `page-0NN → <final path> ✔ (printed p.N, §…, ex…)`.
+  2. `<repo>/WORKLOG.md` (repo log that gets pushed to GitHub),
+  using the exact template: `---` / `Task ID:` / `Agent:` / `Task:` / `Work Log:` / `Stage Summary:`.
+- Report per-page status lines: `page-0NN → books/<subject>/<part>/page-0NN.md ✔ (printed p.N, §…, ex…)`.
+- Backup rhythm (coordinator): commit + push after — repo/docs changes, pipeline validation,
+  each conversion wave, every final audit. **GitHub is the only permanent home** (the sandbox
+  can be wiped at any time).
+- New agent starting on a wiped sandbox: clone the repo, read `AGENTS.md` → `STATUS.md` → this
+  file → `docs/PIPELINE.md`, then the tail of `WORKLOG.md`.
 
-## 6. Known Quirks (from recon + pipeline validation)
+## 6. Known Quirks (recon + validated pipeline)
 
-- M-1 printed page № = image № **+ 6** (verified: img 1 → printed 7, img 26 → printed 32).
-  S-1 printed page № = image № exactly (1–10). **Agents must still read the printed digit**;
-  the offsets are a cross-check, not a substitute.
-- ⚠️ **page_printed is error-prone when digits are cut off/faint in the scan** (test round:
-  model wrote 17 instead of 31; 9 instead of 5). QA pass MUST verify the printed page number
-  against the image; if unreadable → null + note, never a guess.
-- ⚠️ `section:` must list **all** printed section headings on the page (semicolon-separated),
-  not just the first or none.
-- M-1 running header: `UNIT-01: FUNCTIONS AND GRAPHS`; footer: `GRADE 12 · <page> · National Book Foundation`.
-- S-1 running header: `[Chapter 8] Set Theory` + page №, or `Basic Statistics Part-II (Federal Board)` + page №.
-- S-1 chapter ends with a `← 08 →` navigation chip — it is page furniture.
-- Scans are slightly skewed/aged (esp. S-1); expect some noise marks — don't transcribe scan
-  artifacts (dots, speckles) as content.
-- **S-2 (Chapter 9 Probability, recon validated):** printed page № = image № **+ 10** (img 1 → 11, img 50 → 60).
-  ⚠️ Running header on odd pages misprints **"[Chapter 7] Probability"** — the chapter is **9**;
-  always record `chapter: 9`, never trust the header digit. Even-page header: `Basic Statistics Part-II ( Federal Board )`.
-  S-2 layout: images 1–36 theory → `00-intro/`; 37–42 `MULTIPLE-CHOICE QUESTIONS` (MCQ 1–112 + ANSWERS table) → `multiple-choice-questions/`;
-  43–45 `SHORT QUESTIONS` (Q.1–Q.83, **two-column**) → `short-questions/`; 46–50 `EXERCISES` (Q.1–Q.57) → `exercise/`.
-  Final page has `← 09 →` navigation chip = page furniture. MCQ/short-Q sections are dense: use `--thinking`
-  and transcribe MCQ options `(a)–(d)` exactly; ANSWERS is a GFM table.
+- **M-1** (Math Unit 01): printed page № = image № **+ 6** (img 1 → 7, img 26 → 32).
+  Running header `UNIT-01: FUNCTIONS AND GRAPHS`; footer `GRADE 12 · <page> · National Book Foundation`.
+  ⚠️ **Exercise boundaries are approximate** (user says the unit holds five exercises 1.1–1.5;
+  frontmatter currently records Ex 1.1 @ img8, 1.2 @ img18, 1.3 @ img24, 1.4 @ img30, Review @
+  imgs 34–36). User may supply raw info to fix boundaries later — fix in frontmatter/`chapter.json`
+  ONLY, never re-split folders.
+- **S-1** (Statistics Ch. 8 Set Theory): printed = image № (1–10). Opener has no printed digit
+  (img 1 → null). Chapter ends with `← 08 →` navigation chip = furniture.
+- **S-2** (Statistics Ch. 9 Probability): printed = image № **+ 10** (img 1 → 11, img 50 → 60).
+  ⚠️ Odd-page running header misprints **"[Chapter 7] Probability"** — the chapter is **9**;
+  always record `chapter_number: 9`. Even-page header: `Basic Statistics Part-II ( Federal Board )`.
+  Layout: imgs 1–36 theory · 37–42 MULTIPLE-CHOICE (MCQ 1–112 + ANSWERS grid) · 43–45 SHORT
+  QUESTIONS (Q.1–Q.90, two-column) · 46–50 EXERCISES (Q.1–Q.57). Final page `← 09 →` chip.
+- **S-0** front matter uses roman-numeral folios `( v )…( viii )` (no arabic numbers) → recorded
+  as integers with notes; TOC uses ☞ manicules. M-0 cover pages carry no printed numbers.
+- Scans are slightly skewed/aged (esp. S-1) — never transcribe speckles/stains as content.
+- Pages legitimately lacking printed numbers → `page_printed: null` (currently: M-1 imgs
+  20, 22, 32, 33, 34, 36; S-1 img 1; all M-0/S-0 front matter except S-0 imgs 4–8 recorded from
+  roman folios). Never guess to "fill the gap".
 
-## 7. API Concurrency (validated)
+## 7. Derived Files (generated — never hand-edit)
+
+| File | Generator | Purpose |
+|------|-----------|---------|
+| `books/<subject>/book.json` | `tools/build-metadata.mjs` | machine-readable book registry (parts, batches, page counts, printed ranges) |
+| `books/<subject>/<part>/chapter.json` | `tools/build-metadata.mjs` | per-part page map (image/printed/type/section/exercise/figures per page) — consumed by tooling & the future web dashboard |
+| `indexes/<subject>.md` | `tools/build-metadata.mjs` | human-readable page tables per part |
+
+After ANY page add/edit: run `bun tools/build-metadata.mjs` from repo root, then commit.
+
+## 8. API Concurrency (validated)
 
 The vision API rate-limits concurrent calls (~3 succeed simultaneously; excess get HTTP 429).
-`tools/convert-page.mjs` retries with exponential backoff + jitter, so waves of 5 agents are
-safe — but agents must run their own page conversions **sequentially** (one page at a time).
+`tools/convert-page.mjs` retries with exponential backoff + jitter, so 5-agent waves are safe,
+but each agent must convert its pages **sequentially** (one at a time). During sustained 429
+storms: back off, then fall back to direct transcription by the coordinator (documented in WORKLOG).

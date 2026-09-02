@@ -1,93 +1,104 @@
 # Master Plan — Study Helper Planner
 
-> Living document. Updated at the end of every phase. Last updated: **Phase 2 (S-2) COMPLETE**.
+> Living document. Updated at the end of every phase. Last updated: **Phase 3 (structure v3) COMPLETE — 2026-09-02**.
 
 ## North Star
 
-Build a complete digital knowledge base of our textbooks (book → chapter → exercise → page),
-then build study-tooling on top of it. **GitHub is the permanent backup**: everything (data,
-work logs, plans, prompts) is committed and pushed after every phase and every wave.
+Build the user's textbooks into a complete **digital knowledge base** (subject → book part →
+flat pages, traceable to raw scans), then build **study tooling** on top: a web dashboard where
+the user can browse pages, questions and answers beautifully, track progress, set goals — with
+the coordinator (or any agent with repo access) keeping both the library and the tracking data
+up to date along the way.
+
+**GitHub is the permanent backup AND the context store**: the sandbox can wipe itself at any
+time; any future AI agent gets the repo + token and continues with full context purely from the
+documentation (start at `AGENTS.md`).
 
 ## Ground Rules
 
 1. **Nothing is skipped.** Every page image must have exactly one Markdown counterpart.
 2. **Fidelity first.** Transcription is verbatim; we never solve, correct, translate or summarize.
-3. **Figures are sacred.** Graphs, diagrams, illustrations get detailed structured descriptions —
-   losing them loses meaning.
-4. **Traceability.** Every page keeps its image number ↔ printed page number ↔ file path mapping.
-5. **Backup rhythm.** Commit + push after: repo skeleton, pipeline validation, each conversion wave, final audit.
+3. **Figures are sacred.** Graphs, diagrams, illustrations get detailed structured descriptions.
+4. **Traceability.** Every page keeps image № ↔ printed № ↔ file ↔ raw scan mapping
+   (frontmatter + chapter.json + indexes).
+5. **Flat chapters (v3, user directive).** Never split pages into exercise/section sub-folders;
+   exercise/section identity lives in frontmatter + chapter.json.
+6. **Test-first.** New batch → 2–4 QA'd test pages → then the 5-agent wave.
+7. **Backup rhythm.** Commit + push after docs changes, pipeline validation, each wave, each audit.
+8. **Docs move with the system.** Every structural improvement updates CONVENTIONS/PIPELINE/STATUS.
 
 ---
 
-## Phase 0 — Intake & Recon ✅ (done)
+## Phase 0 — Intake & Recon ✅
 
-- [x] Received 4 zip archives (`M-0`, `M-1`, `S-0`, `S-1`) → unzipped to staging
-- [x] Inventory: **62 pages**, JPEG, ~2300×3200 px, 0.7–1.6 MB each
-  - M-0: 7 pages, M-1: 36 pages, S-0: 9 pages, S-1: 10 pages
-- [x] Visual recon of key pages: identified both books (see README registry)
-- [x] **Finding:** `S-1` is **Chapter 8 — Set Theory** of *Basic Statistics Part-II* (printed page №
-  = image №, 1–10). User brief said "Statistics chapters 1 & 2"; the scans show Ch. 8. We digitize
-  what is actually printed and flag it here.
-- [x] **Finding:** `M-1` printed page № = image № + 6 (image 1 → printed 7, image 26 → printed 32).
-- [x] GitHub access verified; repo `testplay-byte/STUDY` was empty → initialized here.
+- [x] Batches M-0 (7p), M-1 (36p), S-0 (9p), S-1 (10p) received & unzipped
+- [x] Books identified; S-1 turned out to be **Ch. 8 Set Theory** (brief said "chapters 1–2") —
+      recorded as printed; S-2 later = **Ch. 9 Probability** (headers even misprint "[Chapter 7]")
+- [x] Printed-page offsets established: M-1 = img+6, S-1 = img, S-2 = img+10
 
-## Phase 1 — Digitization (current)
+## Phase 1 — Digitize 62 pages (M-0, M-1, S-0, S-1) ✅
 
-Goal: every one of the 62 pages becomes one faithful Markdown file with figures described,
-tables as MD tables, math as LaTeX — stored book → chapter → exercise.
+- [x] System skeleton (v1 conventions, prompt, tools) pushed
+- [x] Pipeline validated on user-named test pages: M-1 imgs 25 & 26, S-1 img 3, S-1 img 5
+      (user asked "S-2 img5" — S-2 didn't exist yet; closest equivalent used), + M-1 img 1
+- [x] 5-agent waves → 62/62 pages; coordinator audit + fixes
+- [x] Indexes generated; final push
 
-### 1.1 System setup
-- [x] Repo skeleton: README / PLAN / CONVENTIONS / prompts / tools / data tree / indexes
-- [x] Push skeleton to GitHub
+## Phase 2 — S-2: Statistics Ch. 9 "Probability" (50 pages) ✅
 
-### 1.2 Pipeline validation (test-first, per user's instruction)
-- [x] Convert test set **M-1 images 25 & 26** (middle of unit; graphs + tables)
-- [x] Convert test set **S-1 image 3** (Venn diagrams, set notation)
-- [x] Convert test set **S-1 image 5** (user asked for "S-2 image 5"; S-2 does not exist —
-      closest equivalent used; tree diagram + worked examples)
-- [x] Extra: **M-1 image 1** (chapter opener — validates `00-intro` placement)
-- [x] Side-by-side QA of all 5 tests; refine `tools/prompt.txt`; re-run if needed (prompt v1.1)
-- [x] Push validated pipeline + test outputs
+- [x] LimeWire E2E-encrypted share → coordinator reverse-engineered client crypto
+      (PBKDF2 → AES-KW → ECDH → AES-CTR), downloaded 63.7 MB, SHA1-verified
+- [x] Recon validated: theory 1–36 · MCQ 37–42 (Q.1–112 + ANSWERS grid) · short questions
+      43–45 (Q.1–90, two-column) · exercises 46–50 (Q.1–57)
+- [x] Test-first (imgs 1 & 5), then 5-agent wave + coordinator finish through 429 storms
+- [x] 50/50 audited, indexed, pushed
 
-### 1.3 Mass conversion — 5-agent waves
-Per user instruction: **five sub-agents working in parallel per wave.**
+## Phase 3 — Structure v3 + system documentation ✅ (2026-09-02)
 
-| Wave | Agents | Scope |
-|------|--------|-------|
-| 1 | A1–A5 | M-1 images 002–024, 027–036 (33 pages; skip tested 025/026) |
-| 2 | B1–B5 | M-0 (7) + S-0 (9) + S-1 remainder (001–002, 004, 006–010 = 8) → 24 pages |
+User review drove this phase: the M-1 exercise split was rejected; raw handling, docs, indexes
+and future-agent onboarding needed to be first-class.
 
-Each agent: read CONVENTIONS + worklog → convert → self-QA vs image → place file → append worklog.
-Coordinator audits every wave (spot-check ≥ 20% of outputs), fixes deviations, pushes.
+- [x] **Flat-page layout** — all exercise/section sub-folders dissolved; pages live directly in
+      chapter folders (112/112 migrated, verified byte-identical except frontmatter/link rewrites)
+- [x] **`books/` layout** — per-book tree with `raw/<BATCH>/` (immutable) beside digital parts
+- [x] **Frontmatter schema v3** — `subject`, `batch` (was `book`), `chapter_folder`,
+      `chapter_number` (was `chapter`); short scan links `../raw/<BATCH>/NNNN.jpg`
+- [x] **Machine-readable contracts** — `book.json` + `chapter.json` generated by
+      `tools/build-metadata.mjs` (future web dashboard consumes these)
+- [x] **Agent onboarding** — `AGENTS.md` + `STATUS.md` + `docs/PIPELINE.md` (incl. sandbox
+      recovery procedure); `README.md` rewritten; `docs/CONVENTIONS.md` v3 with changelog
+- [x] **Tracking system** — `docs/tracking/STUDENT-PROFILE.md` + `PROGRESS-LOG.md` initialized
+- [x] Re-verified user-named test pages (M-1 25, M-1 26, S-1 3, S-2 5) against scans post-migration
+- [x] Pushed to GitHub
 
-### 1.4 Close-out
-- [x] Page-count audit: raw vs processed (62/62 ✓, integrity sweep clean)
-- [x] Build/refresh `indexes/{M-0,M-1,S-0,S-1}.md` (auto-generated from frontmatter)
-- [x] Book/section structure captured in indexes (folder-level maps embedded)
-- [x] Final worklog entry + final push
+## Phase 4 — More books/chapters (ready, awaiting material)
 
-## Phase 2 — S-2: Statistics Chapter 9 "Probability" ✅ (done 2026-09-02)
+- [ ] User supplies next scan batch(es) → run `docs/PIPELINE.md` §1–§6 end-to-end
+- [ ] Batch codes continue (`M-2`, `S-3`, …); new subjects get new kebab-case folders
+- [ ] If a batch spans multiple chapters: split at recon time, record image ranges in chapter.json
 
-### 2.1 Intake
-- [x] S-2 received as LimeWire E2E-encrypted share (S-2.zip, 63.7 MB); browser-UI download blocked by a Turnstile token that never resolves headless → coordinator reverse-engineered the client crypto (PBKDF2 → AES-KW unwrap → ECDH P-256 → AES-GCM/CTR), downloaded + decrypted, SHA1 verified
-- [x] 50 JPG pages → `data/raw/statistics/S-2/` (immutable)
-- [x] Recon: Chapter 9 Probability, printed pp. 11–60 (offset = image + 10); running-header misprint "[Chapter 7]" noted; boundaries 1–36 theory / 37–42 MCQ / 43–45 Short Questions / 46–50 Exercises
+## Phase 5 — Library enrichment (backlog)
 
-### 2.2 Test-first (per user's standing instruction)
-- [x] Coordinator test pages: image 0005 (user-named; Venn ×3) + 0001 (opener); QA fixes: chapter 7→9, Figure-4 rectangle, book_title, chapter_title normalization
+- [ ] **M-1 exercise boundaries**: user says 5 exercises (1.1–1.5) exist; may share raw info →
+      correct `exercise:` frontmatter + rerun metadata (frontmatter only, never folders)
+- [ ] Figure extraction as standalone image assets (cropped from scans) + links from Markdown
+- [ ] Aggregated views: per-exercise / per-question-bank merged documents (generated, not folders)
+- [ ] Full-text search index over the library
 
-### 2.3 Mass conversion (5-agent wave + coordinator finish)
-- [x] Wave 3a–3e launched in parallel; Task-tool timeouts killed agents mid-run (same as Phase 1) but work continued in background processes; ~35 pages placed by wave
-- [x] Coordinator finished the remainder: QA'd existing drafts (010, 018, 029, 046) + direct transcription of 12 pages when the vision API went into sustained 429s
-- [x] Integrity audit: 50/50 files, frontmatter complete, $-balance clean, figures_count consistent, all source_image links resolve, chapter=9 everywhere
+## Phase 6 — Web dashboard (the user's vision)
 
-### 2.4 Close-out
-- [x] `indexes/S-2.md` generated (image № → printed № → content → exercise → figures → section)
-- [x] README/PLAN updated; worklog consolidated; final push
+A web app where the user browses the library beautifully and studies interactively.
 
-## Phase 3+ — Backlog (not started; planning placeholders)
+- [ ] Data contracts ready today: `book.json`, `chapter.json`, per-page frontmatter,
+      `raw/` images — the dashboard can be built directly on the repo contents
+- [ ] Views: book/chapter browser · page viewer (image ⇄ markdown toggle) · exercise/question
+      views · figure gallery · search
+- [ ] Dashboard layer: progress (from `docs/tracking/`), goals, session history
+- [ ] The coordinator updates the dashboard data as the user progresses; docs stay the source
+      of truth
 
-- Figure extraction as standalone image assets (crop from scans) with links from Markdown
-- Aggregated exercise views (all pages of an exercise merged into one document)
-- Study tooling on top of the digital library (planner, quizzes, search)
-- More books/chapters intake (same pipeline, same conventions)
+## Phase 7 — Active study loop (starts when the user starts)
+
+- [ ] Every study session → `PROGRESS-LOG.md` entry + `STUDENT-PROFILE.md` update (+ dashboard)
+- [ ] Mastery map fills with evidence: quiz results, self-reports, mistakes seen
+- [ ] Coordinator proposes next sessions from profile (weak topics, goals, exam dates)

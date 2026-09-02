@@ -33,14 +33,17 @@ Full hierarchy: **subject → book batch → chapter → exercise → page**.
 | M-0 / S-0 (front matter) | `front-matter/` |
 | M-1 | `unit-01-functions-and-graphs/` (pattern: `unit-0N-<kebab-slug>`) |
 | S-1 | `chapter-08-set-theory/` (pattern: `chapter-<NN>-<kebab-slug-of-printed-title>`) |
+| S-2 | `chapter-09-probability/` (same pattern) |
 
 ### Content folders inside a chapter
 | Content | Folder | Use when |
 |---------|--------|----------|
 | Chapter opener / theory before first exercise | `00-intro/` | opener pages, learning objectives, theory sections |
 | Numbered exercise | `exercise-<ch>.<n>/` e.g. `exercise-1.1`, `exercise-1.2` | pages whose dominant content is that exercise |
-| Single unnumbered chapter exercise | `exercise/` | e.g. S-1 "Set Theory" end-of-chapter questions |
+| Single unnumbered chapter exercise | `exercise/` | e.g. S-1 "Set Theory" end-of-chapter questions; S-2 "EXERCISES" Q.1–Q.57 |
 | Unnumbered review exercise at chapter end | `review-exercise/` | e.g. M-1 "Review Exercise" (pages 034–036) |
+| Printed end-section: MCQ bank | `multiple-choice-questions/` | e.g. S-2 "MULTIPLE-CHOICE QUESTIONS" (1–112 + ANSWERS) |
+| Printed end-section: short-answer bank | `short-questions/` | e.g. S-2 "SHORT QUESTIONS" (Q.1–Q.83, two-column) |
 | Chapter summary / misc back-matter | `99-summary-misc/` | summaries, formula sheets, non-exercise end pages |
 
 **Placement rule:** a page goes to the folder of the content that occupies the *majority* (or
@@ -168,6 +171,13 @@ Rules:
 - S-1 chapter ends with a `← 08 →` navigation chip — it is page furniture.
 - Scans are slightly skewed/aged (esp. S-1); expect some noise marks — don't transcribe scan
   artifacts (dots, speckles) as content.
+- **S-2 (Chapter 9 Probability, recon validated):** printed page № = image № **+ 10** (img 1 → 11, img 50 → 60).
+  ⚠️ Running header on odd pages misprints **"[Chapter 7] Probability"** — the chapter is **9**;
+  always record `chapter: 9`, never trust the header digit. Even-page header: `Basic Statistics Part-II ( Federal Board )`.
+  S-2 layout: images 1–36 theory → `00-intro/`; 37–42 `MULTIPLE-CHOICE QUESTIONS` (MCQ 1–112 + ANSWERS table) → `multiple-choice-questions/`;
+  43–45 `SHORT QUESTIONS` (Q.1–Q.83, **two-column**) → `short-questions/`; 46–50 `EXERCISES` (Q.1–Q.57) → `exercise/`.
+  Final page has `← 09 →` navigation chip = page furniture. MCQ/short-Q sections are dense: use `--thinking`
+  and transcribe MCQ options `(a)–(d)` exactly; ANSWERS is a GFM table.
 
 ## 7. API Concurrency (validated)
 

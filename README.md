@@ -3,10 +3,10 @@
 Permanent backup & storage for the **Study Helper Planner** project. Everything lives here:
 raw scans, digitized Markdown, work logs, plans, and prompts.
 
-## 🎯 Current Phase: **Phase 1 COMPLETE ✅** — all 62 pages digitized (next: Phase 2 backlog)
+## 🎯 Current Phase: **Phase 2 — S-2 (Statistics Ch.9 Probability, 50 pages) IN PROGRESS**
 
-All 62 scanned pages (M-0, M-1, S-0, S-1) are digitized into structured Markdown — one `.md` per
-page, figures described in detail, tables as GFM tables, math in LaTeX. Per-book page maps: `indexes/`.
+Phase 1 complete: all 62 pages of M-0/M-1/S-0/S-1 digitized. Phase 2 adds **S-2 = Chapter 9
+Probability** (50 pages, printed pp. 11–60). Structure v2: subject → book → chapter → exercise folders.
 
 ## 📚 Book Registry (identified so far)
 
@@ -16,6 +16,7 @@ page, figures described in detail, tables as GFM tables, math in LaTeX. Per-book
 | `M-1` | Same Mathematics book — **Unit 01: Functions and Graphs** | 36 | Full Unit 1 (printed pages 7–42), multiple exercises |
 | `S-0` | Basic Statistics for Intermediate Classes, Part-II — Muhammad Saleem Akhtar, Majeed Book Depot (Federal Board) | 9 | Front matter ("zero chapter"): cover, preface, chapter list |
 | `S-1` | Same Statistics book — **Chapter 8: Set Theory** | 10 | Full Chapter 8 (printed pages 1–10) incl. chapter exercise |
+| `S-2` | Same Statistics book — **Chapter 9: Probability** | 50 | Full Chapter 9 (printed pages 11–60): theory, MCQs (112), Short Questions (83), Exercises (57) |
 
 > ℹ️ S-1 was expected to contain "Chapters 1–2 of Statistics", but the scans show it is
 > **Chapter 8 — Set Theory** of Basic Statistics Part-II. We always record what is **actually printed**
@@ -42,7 +43,7 @@ STUDY/
 │   │   └── statistics/
 │   │       ├── S-0/0001.jpg …
 │   │       ├── S-1/0001.jpg …
-│   │       └── S-2/0001.jpg …
+│   │       └── S-2/0001.jpg … 0050.jpg
 │   └── processed/             ← DIGITAL: subject → book batch → chapter → exercise → page
 │       ├── mathematics/
 │       │   ├── M-0/front-matter/page-001.md …
@@ -53,7 +54,11 @@ STUDY/
 │       └── statistics/
 │           ├── S-0/front-matter/page-001.md …
 │           ├── S-1/chapter-08-set-theory/{00-intro | exercise}/page-0NN.md
-│           └── S-2/<chapter-folder>/{00-intro | exercise-…}/page-0NN.md
+│           └── S-2/chapter-09-probability/
+│               ├── 00-intro/page-0NN.md
+│               ├── multiple-choice-questions/page-0NN.md
+│               ├── short-questions/page-0NN.md
+│               └── exercise/page-0NN.md
 └── indexes/
     ├── M-0.md  M-1.md  S-0.md  S-1.md   ← page map: image № → printed № → section/exercise → file
 ```

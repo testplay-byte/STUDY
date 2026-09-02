@@ -3,10 +3,10 @@
 Permanent backup & storage for the **Study Helper Planner** project. Everything lives here:
 raw scans, digitized Markdown, work logs, plans, and prompts.
 
-## 🎯 Current Phase: **Phase 2 — S-2 (Statistics Ch.9 Probability, 50 pages) IN PROGRESS**
+## 🎯 Current Phase: **Phase 2 COMPLETE ✅** — 112/112 pages digitized (M-0, M-1, S-0, S-1, S-2)
 
-Phase 1 complete: all 62 pages of M-0/M-1/S-0/S-1 digitized. Phase 2 adds **S-2 = Chapter 9
-Probability** (50 pages, printed pp. 11–60). Structure v2: subject → book → chapter → exercise folders.
+All 112 scanned pages digitized into structured Markdown — one `.md` per page, figures described in
+detail, tables as GFM tables, math in LaTeX. Per-book page maps: `indexes/`.
 
 ## 📚 Book Registry (identified so far)
 
@@ -16,11 +16,12 @@ Probability** (50 pages, printed pp. 11–60). Structure v2: subject → book �
 | `M-1` | Same Mathematics book — **Unit 01: Functions and Graphs** | 36 | Full Unit 1 (printed pages 7–42), multiple exercises |
 | `S-0` | Basic Statistics for Intermediate Classes, Part-II — Muhammad Saleem Akhtar, Majeed Book Depot (Federal Board) | 9 | Front matter ("zero chapter"): cover, preface, chapter list |
 | `S-1` | Same Statistics book — **Chapter 8: Set Theory** | 10 | Full Chapter 8 (printed pages 1–10) incl. chapter exercise |
-| `S-2` | Same Statistics book — **Chapter 9: Probability** | 50 | Full Chapter 9 (printed pages 11–60): theory, MCQs (112), Short Questions (83), Exercises (57) |
+| `S-2` | Same Statistics book — **Chapter 9: Probability** | 50 | Full Chapter 9 (printed pages 11–60): theory (36), MCQs 1–112 + ANSWERS, Short Questions Q.1–Q.90, Exercises Q.1–Q.57 |
 
 > ℹ️ S-1 was expected to contain "Chapters 1–2 of Statistics", but the scans show it is
-> **Chapter 8 — Set Theory** of Basic Statistics Part-II. We always record what is **actually printed**
-> on the pages; the discrepancy is noted in `docs/PLAN.md`.
+> **Chapter 8 — Set Theory**; S-2 is **Chapter 9 — Probability** (whose running headers misprint
+> "[Chapter 7]"). We always record what is **actually printed** on the pages; discrepancies are
+> noted in `docs/PLAN.md`.
 
 ## 📁 Repository Structure
 
@@ -60,7 +61,7 @@ STUDY/
 │               ├── short-questions/page-0NN.md
 │               └── exercise/page-0NN.md
 └── indexes/
-    ├── M-0.md  M-1.md  S-0.md  S-1.md   ← page map: image № → printed № → section/exercise → file
+    ├── M-0.md  M-1.md  S-0.md  S-1.md  S-2.md   ← page map: image № → printed № → section/exercise → file
 ```
 
 ## 🔁 Digitization Pipeline

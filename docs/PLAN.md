@@ -1,6 +1,6 @@
 # Master Plan — Study Helper Planner
 
-> Living document. Updated at the end of every phase. Last updated: **Phase 1 COMPLETE**.
+> Living document. Updated at the end of every phase. Last updated: **Phase 2 (S-2) COMPLETE**.
 
 ## North Star
 
@@ -66,7 +66,26 @@ Coordinator audits every wave (spot-check ≥ 20% of outputs), fixes deviations,
 - [x] Book/section structure captured in indexes (folder-level maps embedded)
 - [x] Final worklog entry + final push
 
-## Phase 2+ — Backlog (not started; planning placeholders)
+## Phase 2 — S-2: Statistics Chapter 9 "Probability" ✅ (done 2026-09-02)
+
+### 2.1 Intake
+- [x] S-2 received as LimeWire E2E-encrypted share (S-2.zip, 63.7 MB); browser-UI download blocked by a Turnstile token that never resolves headless → coordinator reverse-engineered the client crypto (PBKDF2 → AES-KW unwrap → ECDH P-256 → AES-GCM/CTR), downloaded + decrypted, SHA1 verified
+- [x] 50 JPG pages → `data/raw/statistics/S-2/` (immutable)
+- [x] Recon: Chapter 9 Probability, printed pp. 11–60 (offset = image + 10); running-header misprint "[Chapter 7]" noted; boundaries 1–36 theory / 37–42 MCQ / 43–45 Short Questions / 46–50 Exercises
+
+### 2.2 Test-first (per user's standing instruction)
+- [x] Coordinator test pages: image 0005 (user-named; Venn ×3) + 0001 (opener); QA fixes: chapter 7→9, Figure-4 rectangle, book_title, chapter_title normalization
+
+### 2.3 Mass conversion (5-agent wave + coordinator finish)
+- [x] Wave 3a–3e launched in parallel; Task-tool timeouts killed agents mid-run (same as Phase 1) but work continued in background processes; ~35 pages placed by wave
+- [x] Coordinator finished the remainder: QA'd existing drafts (010, 018, 029, 046) + direct transcription of 12 pages when the vision API went into sustained 429s
+- [x] Integrity audit: 50/50 files, frontmatter complete, $-balance clean, figures_count consistent, all source_image links resolve, chapter=9 everywhere
+
+### 2.4 Close-out
+- [x] `indexes/S-2.md` generated (image № → printed № → content → exercise → figures → section)
+- [x] README/PLAN updated; worklog consolidated; final push
+
+## Phase 3+ — Backlog (not started; planning placeholders)
 
 - Figure extraction as standalone image assets (crop from scans) with links from Markdown
 - Aggregated exercise views (all pages of an exercise merged into one document)

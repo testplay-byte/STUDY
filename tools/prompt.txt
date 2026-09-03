@@ -11,7 +11,7 @@ PART 1 — FRONTMATTER (YAML, exact fields, schema v3)
 subject: <subject given to you, e.g. mathematics | statistics>
 book_title: <full book title if identifiable from page/publisher imprint, else null>
 batch: <batch code given to you, e.g. M-1>
-chapter_folder: <chapter folder slug given to you, e.g. chapter-01-functions-and-graphs>
+chapter_folder: <chapter folder slug given to you, e.g. Chapter-01-Functions-and-Graphs>
 chapter_number: <integer chapter/unit number printed on page, else null>
 chapter_title: <exact printed chapter/unit title, else null>
 page_image: <integer image number given to you>
@@ -21,7 +21,7 @@ exercise: <exercise id whose content dominates this page, e.g. "1.1" or "8", els
 content_type: <one of: front-matter | chapter-opener | theory | worked-examples | exercise | mixed | summary>
 has_figures: <true|false — any graph/diagram/illustration/photo/table-figure present>
 figures_count: <integer count of figure blocks you produce>
-source_image: <the relative path string given to you, unchanged — format ../raw/<batch>/NNNN.jpg>
+source_image: <the relative path string given to you, unchanged — format ../../../Raw/<Subject>/<Chapter-Name>/NNNN.jpg>
 converted_at: <the ISO date string given to you, unchanged>
 converted_by: <the agent id string given to you, unchanged>
 notes: <anomalies: exercise starting/ending mid-page, illegible spots, print defects; else "">

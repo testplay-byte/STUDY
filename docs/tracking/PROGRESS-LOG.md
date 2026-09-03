@@ -28,3 +28,17 @@
   not-started; preference recorded: chapter-level organization).
 - **Next suggested:** Ask the user (next session): exam target/date, current chapter, weak
   topics — then start the study loop (study → log → update profile).
+
+### 2026-09-03 — Structure v4 (three-branch Books/ library)
+- **Context:** User reviewed the v3 layout and directed a full reorganization: `books/` →
+  `Books/` with `Raw/` (original chapter names), `Formatted/` (numbered chapters incl.
+  Chapter 00 front matter) and `Digital/` (HTML test edition). Executed and verified the
+  same day; no study sessions yet.
+- **Observations:** User consistently optimizes for browse-ability and permanence — they think
+  in books → chapters → pages, want originals preserved untouched (Raw), and treat rendered
+  HTML as disposable/test. Learning preference signal: values clean navigation over aggregate
+  views.
+- **Profile changes:** None to mastery (no study yet); preference noted for the future
+  dashboard design (mirror the Raw/Formatted/Digital browsing model).
+- **Next suggested:** same as before — ask exam target/date, current chapter, weak topics;
+  optionally gather user feedback on the Digital test edition reading experience.

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page 23 — Chapter 9: Probability (Basic Statistics for Intermediate Classes, Part-II)</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.querySelector("main"), {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#b45309; --accent-soft:#fef3c7; --bg:#fafaf9; --card:#ffffff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.75 Georgia,'Times New Roman',serif; }
+  .chrome { font-family: system-ui,-apple-system,'Segoe UI',sans-serif; }
+  .banner { background:var(--accent-soft); border-bottom:1px solid var(--line); padding:8px 16px; font-size:13px; color:#92400e; text-align:center; }
+  .banner strong { font-weight:700; }
+  .meta { background:var(--card); border-bottom:1px solid var(--line); padding:14px 20px; }
+  .meta-inner { max-width:880px; margin:0 auto; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+  .badge { font-size:12px; padding:3px 10px; border-radius:999px; background:#f3f4f6; border:1px solid var(--line); color:var(--muted); white-space:nowrap; }
+  .badge.dark { background:var(--ink); color:#fff; border-color:var(--ink); }
+  .meta a { color:var(--accent); text-decoration:none; border-bottom:1px dotted var(--accent); font-size:13px; }
+  .pagenav { max-width:880px; margin:0 auto; display:flex; justify-content:space-between; gap:12px; padding:10px 20px 0; font-family:system-ui,sans-serif; font-size:14px; }
+  .pagenav a { color:var(--accent); text-decoration:none; }
+  .pagenav a:hover { text-decoration:underline; }
+  main { max-width:880px; margin:24px auto 48px; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:40px 48px; }
+  h1 { font-size:1.65em; line-height:1.3; border-bottom:2px solid var(--line); padding-bottom:.4em; }
+  h2 { font-size:1.3em; border-bottom:1px solid var(--line); padding-bottom:.3em; margin-top:1.8em; }
+  h3 { font-size:1.1em; margin-top:1.5em; }
+  blockquote { margin:1em 0; padding:.6em 1em; border-left:4px solid var(--accent); background:#fffbeb; border-radius:0 6px 6px 0; color:#57534e; font-size:.95em; }
+  blockquote p { margin:0; }
+  table { border-collapse:collapse; width:100%; margin:1.2em 0; font-size:.92em; display:block; overflow-x:auto; }
+  th, td { border:1px solid var(--line); padding:6px 10px; text-align:left; vertical-align:top; }
+  th { background:#f9fafb; font-family:system-ui,sans-serif; font-size:.85em; text-transform:uppercase; letter-spacing:.03em; }
+  tbody tr:nth-child(even) { background:#fafafa; }
+  code { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.88em; background:#f3f4f6; padding:1px 5px; border-radius:4px; }
+  pre code { display:block; padding:12px; overflow-x:auto; }
+  .katex-display { overflow-x:auto; overflow-y:hidden; padding:4px 0; }
+  footer { text-align:center; color:var(--muted); font-family:system-ui,sans-serif; font-size:12px; padding:20px 16px 28px; }
+  footer a { color:var(--accent); }
+  @media (max-width:640px){ main{ padding:24px 20px; } h1{ font-size:1.35em; } }
+  @media print { .banner,.meta,.pagenav,footer{ display:none; } main{ border:none; margin:0; max-width:none; } body{ background:#fff; } }
+</style>
+</head>
+<body>
+<div class="banner chrome"><strong>🧪 TEST EDITION — Digital HTML</strong> · auto-generated from the canonical Markdown in <code>Books/Formatted/</code> · not the source of truth · generated 2026-09-03</div>
+<header class="meta chrome"><div class="meta-inner"><span class="badge dark">Basic Statistics for Intermediate Classes, Part-II</span> <span class="badge">batch S-2</span> <span class="badge">image 23</span> <span class="badge">printed p. 33</span> <span class="badge">mixed</span> <span class="badge">figures: 1</span><span style="flex:1"></span><a href="../index.html">↑ Chapter 9 · Probability</a> <a href="../../../../Books/Formatted/Statistics/Chapter-09-Probability/page-023.md">Markdown source</a> <a href="../../../../Books/Raw/Statistics/Chapter-09-Probability/0023.jpg">Original scan ↗</a></div></header>
+<nav class="pagenav chrome" aria-label="Page navigation"><a href="page-022.html">← Page 22</a> <a href="index.html">Chapter index</a> <a href="page-024.html">Page 24 →</a></nav>
+<main><h1>Page 23 — Probability (Chapter 9)</h1>
+<blockquote>
+<p>📄 Original scan: <a href="../../../Raw/Statistics/Chapter-09-Probability/0023.jpg">0023.jpg</a> · printed page 33</p>
+</blockquote>
+<h2>Explanation</h2>
+<p>The event B has already occurred is called &quot;the additional information&quot; about the sample space S. The additional information reduces the size of the sample space S and the remaining part of S is called the reduced sample space which may be denoted by $S_r$. Any probability calculated from the reduced sample space is called conditional probability. When the event B has occurred, then the reduced sample space consists of B. Thus $S_r = \text{B}$. When it is known that B has occurred, then we are concerned with reduced sample space and not with the original sample space. Suppose a die is rolled and the additional information is that the face is even. Now we are interested to find the probability that the face is a complete square. When it is known that the face is even then the sample space $\text{S} = \{1, 2, 3, 4, 5, 6\}$ is reduced to $\{2, 4, 6\}$. Now we are concerned with this reduced sample space. In the original sample space each face has probability of 1/6. Thus in the reduced sample space each face has probability of 1/3. Face 4 is a complete square in the reduced sample space. Thus probability of a complete square when it is known that face is even is 1/3. It is called conditional probability of a complete square when the face is even. If B denotes the even face and A denotes the &quot;complete square&quot; then P(A/B) = 1/3.</p>
+<p>[Figure F1]</p>
+<p>We can show that the conditional probability</p>
+<p>$$P(\text{A/B}) = \frac{P(A \cap B)}{P(B)} \quad \text{when } P(B) \neq 0$$</p>
+<p>Suppose there is a sample space S which contains N outcomes which are equally likely. The event B has n points and there are m points which are common to the event A and B. Thus A ∩ B contains m points. When it is known that B has occurred, then occurrence of A is possible only when any point out of m points occurs. By using classical definition of probability, we have</p>
+<p>$$P(\text{A/B}) = \frac{m}{n} \quad (\text{As B has occurred, therefore B becomes sample space for A})$$</p>
+<p>When both numerator and denominator are divided by N, we get</p>
+<p>$$P(\text{A/B}) = \frac{m}{n} = \frac{m/N}{n/N} = \frac{P(A \cap B)}{P(B)} \quad \text{if } P(B) \neq 0$$</p>
+<p>If $P(B)=0$, then P(A/B) does not exist. If $A \cap B = \phi$ then $P(A \cap B) = 0$, therefore $P(A/B) = 0$</p>
+<p>Similarly, $P(B/A) = \frac{P(A \cap B)}{P(A)}$ if $P(A) \neq 0$</p>
+<p>If $A \cap B = \phi$ then $P(A \cap B) = 0$ and $P(B/A) = 0$</p>
+<p>Thus any conditional probability will be greater than zero only when $A \cap B \neq \phi$, which means that A and B are not mutually exclusive events.</p>
+<p><strong>Example 9.30.</strong>
+A fair die is rolled. Find the probability that
+(i) the face is even given that the face is less than 4.
+(ii) the face is less than 4 given that the face is prime.</p>
+<p><strong>Solution:</strong> We a die is rolled, then the sample space is $\text{S} = \{1, 2, 3, 4, 5, 6\}$, n(S) = 6</p>
+<p>(i) Let A be the event that the face is even, then</p>
+<p>$$A = \{2, 4, 6\}, n(A) = 3, P(A) = \frac{n(A)}{n(S)} = \frac{3}{6}$$</p>
+<p>Let B be the event that the face is less than 4, then</p>
+<p>$$B = \{1, 2, 3\}, n(B) = 3, P(B) = \frac{n(B)}{n(S)} = \frac{3}{6}$$</p>
+<p>$$A \cap B = \{2\}, n(A \cap B) = 1, P(A \cap B) = \frac{n(A \cap B)}{n(S)} = \frac{1}{6}$$</p>
+<p>$$P(A/B) = \frac{P(A \cap B)}{P(B)} = \frac{1/6}{3/6} = \frac{1}{3}$$</p>
+<h2>Figures on this page</h2>
+<h3>Figure F1 — Venn diagram (right side)</h3>
+<ul>
+<li><strong>Type:</strong> venn-diagram</li>
+<li><strong>Caption/Number:</strong> Figue-13 (printed exactly so — book typo for &quot;Figure-13&quot;)</li>
+<li><strong>Description:</strong> A rectangular box representing the universal set S (labeled S on the right with &quot;N points&quot;). Inside are two overlapping circles labeled A (left) and B (right). The intersection region ($A \cap B$) is shaded black. An arrow points from the shaded region down to text reading &quot;$A \cap B$ has m points&quot;. Circle B contains the label &quot;n points&quot;.</li>
+<li><strong>Mathematical meaning:</strong> Illustrates the concept of conditional probability by showing event B as the reduced sample space containing n points, with the intersection $A \cap B$ containing m points where both events occur.</li>
+</ul>
+</main>
+<footer class="chrome">Generated by <code>tools/generate-digital.mjs</code> · Library: <a href="../../../../Books/Formatted/Statistics/book.json">Formatted Markdown</a> · <a href="../../../../Books/Raw/Statistics/Chapter-09-Probability/0023.jpg">original scan</a></footer>
+</body>
+</html>

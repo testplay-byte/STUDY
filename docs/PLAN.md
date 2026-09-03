@@ -1,6 +1,6 @@
 # Master Plan — Study Helper Planner
 
-> Living document. Updated at the end of every phase. Last updated: **Phase 3 (structure v3) COMPLETE — 2026-09-02**.
+> Living document. Updated at the end of every phase. Last updated: **Phase 4 (structure v4) COMPLETE — 2026-09-03**.
 
 ## North Star
 
@@ -23,9 +23,14 @@ documentation (start at `AGENTS.md`).
    (frontmatter + chapter.json + indexes).
 5. **Flat chapters (v3, user directive).** Never split pages into exercise/section sub-folders;
    exercise/section identity lives in frontmatter + chapter.json.
-6. **Test-first.** New batch → 2–4 QA'd test pages → then the 5-agent wave.
-7. **Backup rhythm.** Commit + push after docs changes, pipeline validation, each wave, each audit.
-8. **Docs move with the system.** Every structural improvement updates CONVENTIONS/PIPELINE/STATUS.
+6. **Three-branch library (v4, user directive).** `Books/{Raw, Formatted, Digital}` — Raw =
+   original chapter names (immutable scans), Formatted = canonical numbered-chapter markdown,
+   Digital = HTML test edition only (never hand-edit generated HTML).
+7. **Test-first.** New batch → 2–4 QA'd test pages → then the 5-agent wave.
+8. **Backup rhythm.** Commit + push after docs changes, pipeline validation, each wave, each audit.
+9. **Docs move with the system.** Every structural improvement updates CONVENTIONS/PIPELINE/STATUS.
+10. **Verifiers gate every push.** `bun tools/verify-v4.mjs` + `bun tools/check-digital-links.mjs`
+   must be ALL GREEN before any structural commit.
 
 ---
 
@@ -71,13 +76,40 @@ and future-agent onboarding needed to be first-class.
 - [x] Re-verified user-named test pages (M-1 25, M-1 26, S-1 3, S-2 5) against scans post-migration
 - [x] Pushed to GitHub
 
-## Phase 4 — More books/chapters (ready, awaiting material)
+## Phase 4 — Structure v4: the three-branch `Books/` library ✅ (2026-09-03)
+
+User directive: reorganize the whole library under a capital-B `Books/` with three branches,
+browsable book-by-book.
+
+- [x] **`Books/Raw/<Subject>/<Original-Chapter-Name>/`** — 112/112 scans moved out of
+      `books/<subject>/raw/<BATCH>/` into folders named after the original printed chapter names
+      (`Front-Matter`, `Unit-01-Functions-and-Graphs`, `Chapter-08-Set-Theory`,
+      `Chapter-09-Probability`); images byte-identical
+- [x] **`Books/Formatted/<Subject>/Chapter-NN-<Title>/`** — 112/112 markdown pages moved;
+      uniform numbered chapters, front matter included as `Chapter-00-Front-Matter` (user
+      directive); pages FLAT (v3 rule preserved)
+- [x] **Path rewrites** — `chapter_folder:` frontmatter values + `source_image:` + scan-link
+      lines now `../../../Raw/<Subject>/<Chapter-Name>/NNNN.jpg`; all 112 pages byte-verified
+      against git HEAD (v3) + rewrites by `tools/verify-v4.mjs` — ALL GREEN
+- [x] **`Books/Digital/` HTML test edition** (user: test purposes only) — `tools/generate-digital.mjs`
+      renders every page as HTML (KaTeX math, math-first extraction to survive markdown
+      emphasis rules) + `index.html` navigation at Digital root / book / chapter levels;
+      112/112 pages + 8 indexes; all 1460 relative links verified by `tools/check-digital-links.mjs`
+- [x] **Metadata regenerated** — `book.json` (structure_version v4, `raw_root`, `html_edition`,
+      per-part `raw_folder`) + `chapter.json` ×5 + `indexes/{mathematics,statistics}.md`
+- [x] **Docs & tools updated** — CONVENTIONS v4 (+changelog), PIPELINE, PLAN, README, AGENTS,
+      STATUS, tools/README, prompt.txt (v4 path examples), prompts changelog
+- [x] Migration tooling kept for audit trail: `tools/migrate-v4.mjs`, `tools/fix-v4-casing.mjs`
+- [x] Pushed to GitHub
+
+## Phase 5 — More books/chapters (ready, awaiting material)
 
 - [ ] User supplies next scan batch(es) → run `docs/PIPELINE.md` §1–§6 end-to-end
-- [ ] Batch codes continue (`M-2`, `S-3`, …); new subjects get new kebab-case folders
+- [ ] Batch codes continue (`M-2`, `S-3`, …); Raw folders use original chapter names; Formatted
+      folders use `Chapter-<NN>-<TitleCase-Slug>`; register both in `build-metadata.mjs` `BOOKS`
 - [ ] If a batch spans multiple chapters: split at recon time, record image ranges in chapter.json
 
-## Phase 5 — Library enrichment (backlog)
+## Phase 6 — Library enrichment (backlog)
 
 - [ ] **M-1 exercise boundaries**: user says 5 exercises (1.1–1.5) exist; may share raw info →
       correct `exercise:` frontmatter + rerun metadata (frontmatter only, never folders)
@@ -85,19 +117,20 @@ and future-agent onboarding needed to be first-class.
 - [ ] Aggregated views: per-exercise / per-question-bank merged documents (generated, not folders)
 - [ ] Full-text search index over the library
 
-## Phase 6 — Web dashboard (the user's vision)
+## Phase 7 — Web dashboard (the user's vision)
 
 A web app where the user browses the library beautifully and studies interactively.
 
-- [ ] Data contracts ready today: `book.json`, `chapter.json`, per-page frontmatter,
-      `raw/` images — the dashboard can be built directly on the repo contents
+- [ ] Data contracts ready today: `Books/Formatted/<Subject>/book.json`, `chapter.json`,
+      per-page frontmatter, `Books/Raw/` images — the dashboard can be built directly on the
+      repo contents (the Digital HTML test edition already sketches the reading experience)
 - [ ] Views: book/chapter browser · page viewer (image ⇄ markdown toggle) · exercise/question
       views · figure gallery · search
 - [ ] Dashboard layer: progress (from `docs/tracking/`), goals, session history
 - [ ] The coordinator updates the dashboard data as the user progresses; docs stay the source
       of truth
 
-## Phase 7 — Active study loop (starts when the user starts)
+## Phase 8 — Active study loop (starts when the user starts)
 
 - [ ] Every study session → `PROGRESS-LOG.md` entry + `STUDENT-PROFILE.md` update (+ dashboard)
 - [ ] Mastery map fills with evidence: quiz results, self-reports, mistakes seen

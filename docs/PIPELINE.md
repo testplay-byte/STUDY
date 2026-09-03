@@ -10,8 +10,8 @@
 2. Read, in order: `AGENTS.md` → `STATUS.md` → `docs/CONVENTIONS.md` → this file → tail of
    `WORKLOG.md`.
 3. Verify clone matches `STATUS.md` counts:
-   `find books -name 'page-*.md' | wc -l` and `bun tools/build-metadata.mjs` (should be a no-op
-   diff). If mismatch → stop, investigate `WORKLOG.md` before touching anything.
+   `bun tools/verify-v4.mjs` (must print ALL GREEN) and `bun tools/build-metadata.mjs` (should
+   be a no-op diff). If mismatch → stop, investigate `WORKLOG.md` before touching anything.
 
 ## 1. Intake (new batch arrives)
 
@@ -37,11 +37,14 @@ Append a recon section to `WORKLOG.md` before converting anything.
 
 ## 3. Register the batch
 
-1. `mkdir -p books/<subject>/raw/<BATCH>` → copy all images there (immutable originals).
-2. Add the new part to `tools/build-metadata.mjs` → `BOOKS.<subject>.parts` (folder slug from
-   the printed title: `chapter-<NN>-<kebab-slug>`; label like "Unit 01" goes in `chapter_label`;
+1. `mkdir -p "Books/Raw/<Subject>/<Original-Chapter-Name>"` → copy all images there (immutable
+   originals; folder named after the original printed chapter name, TitleCase-hyphenated, e.g.
+   `Chapter-10-…`, `Unit-02-…`, `Front-Matter`).
+2. Add the new chapter to `tools/build-metadata.mjs` → `BOOKS.<subject>.parts` (`folder:` from
+   the printed title as `Chapter-<NN>-<TitleCase-Slug>` — front matter = `Chapter-00-Front-Matter`;
+   `rawFolder:` = the Raw folder name; label like "Unit 01" goes in `chapter_label`;
    `printed_page_offset` from recon).
-3. Create `books/<subject>/<part>/` (empty is fine until pages arrive).
+3. Create `Books/Formatted/<Subject>/<folder>/` (empty is fine until pages arrive).
 4. Commit + push (skeleton first, so a crash never loses the raw images).
 
 ## 4. Test-first (user's standing directive)
@@ -50,12 +53,12 @@ Before any mass conversion:
 
 1. Convert 2–4 representative pages (include any the user explicitly names; one opener + one
    dense math/figure page is a good default) using:
-   `bun tools/convert-page.mjs --image books/<subject>/raw/<BATCH>/NNNN.jpg --batch <BATCH> ...`
+   `bun tools/convert-page.mjs --image "Books/Raw/<Subject>/<Chapter-Name>/NNNN.jpg" --batch <BATCH> ...`
    (see `tools/README.md` for all flags; draft to a scratch dir first).
 2. QA each draft against its image (CONVENTIONS §4 checklist). Fix issues. Refine
    `tools/prompt.txt` ONLY if the model itself misbehaved — prompt changes are logged in
    `docs/prompts/vlm-image-to-markdown.md` changelog.
-3. Place the passing files at `books/<subject>/<part>/page-NNN.md`.
+3. Place the passing files at `Books/Formatted/<Subject>/<folder>/page-NNN.md`.
 4. Commit + push (validated pipeline + test outputs).
 
 ## 5. Mass conversion — 5-agent wave (user's standing directive)
@@ -83,7 +86,9 @@ Before any mass conversion:
 3. Integrity sweep: frontmatter complete on every file; `$` balance; `figures_count` ==
    F-blocks; every `source_image` resolves; no page uses a sub-folder.
 4. `bun tools/build-metadata.mjs` (regenerates book.json / chapter.json / indexes).
-5. Update `STATUS.md`, `README.md` (counts), `docs/PLAN.md` (checklist), `WORKLOG.md`
+5. `bun tools/generate-digital.mjs` (rebuilds the Books/Digital HTML test edition).
+6. `bun tools/verify-v4.mjs` && `bun tools/check-digital-links.mjs` — must be ALL GREEN.
+7. Update `STATUS.md`, `README.md` (counts), `docs/PLAN.md` (checklist), `WORKLOG.md`
    (final section), then **commit + push**.
 
 ## 7. Tracking upkeep (every phase)
@@ -97,14 +102,18 @@ update `docs/tracking/STUDENT-PROFILE.md` and append a dated entry to
 ```bash
 # one page (draft to scratch, review, then place)
 bun tools/convert-page.mjs \
-  --image books/mathematics/raw/M-1/0025.jpg \
+  --image "Books/Raw/Mathematics/Unit-01-Functions-and-Graphs/0025.jpg" \
   --batch M-1 --page 25 \
   --out /tmp/drafts/page-025.md \
   --agent agent-A1 \
-  --source-image-rel "../raw/M-1/0025.jpg"
+  --source-image-rel "../../../Raw/Mathematics/Unit-01-Functions-and-Graphs/0025.jpg"
 
 # regenerate all metadata + indexes after any page change
 bun tools/build-metadata.mjs
+
+# rebuild the Digital HTML test edition, then verify everything
+bun tools/generate-digital.mjs
+bun tools/verify-v4.mjs && bun tools/check-digital-links.mjs
 ```
 
 `convert-page.mjs` flags: `--thinking` for very dense math pages; auto-continue handles

@@ -1,9 +1,14 @@
 #!/usr/bin/env bun
 /**
- * build-metadata.mjs — regenerates ALL derived metadata from page frontmatter:
- *   books/<subject>/book.json            (book registry, machine-readable)
- *   books/<subject>/<part>/chapter.json  (per-part page map, machine-readable)
- *   indexes/<subject>.md                 (human-readable page tables)
+ * build-metadata.mjs — regenerates ALL derived metadata from page frontmatter (structure v4):
+ *   Books/Formatted/<subject>/book.json            (book registry, machine-readable)
+ *   Books/Formatted/<subject>/<chapter>/chapter.json (per-chapter page map, machine-readable)
+ *   indexes/<subject>.md                            (human-readable page tables)
+ *
+ * v4 layout (user directive, 2026-09-03):
+ *   Books/Raw/<Subject>/<Original-Chapter-Name>/NNNN.jpg   — immutable scans, original chapter names
+ *   Books/Formatted/<Subject>/Chapter-NN-<Title>/page-NNN.md — canonical markdown (source of truth)
+ *   Books/Digital/<Subject>/Chapter-NN-<Title>/page-NNN.html — HTML test edition (generate-digital.mjs)
  *
  * Run from repo root whenever pages are added/edited:  bun tools/build-metadata.mjs
  * The page .md files are the single source of truth; never hand-edit derived files.
@@ -17,33 +22,42 @@ import path from 'node:path';
 
 const ROOT = process.cwd();
 
-/** Book registry — hand-maintained identity data (titles/publishers from recon). */
+/**
+ * Book registry — hand-maintained identity data (titles/publishers from recon).
+ * subject      lowercase identifier, matches frontmatter `subject:`
+ * subjectDir   TitleCase folder under Books/{Raw,Formatted,Digital}/
+ * parts[].folder     Formatted chapter folder (uniform Chapter-NN-<Title>, front matter = Chapter-00)
+ * parts[].rawFolder  Raw folder (ORIGINAL printed chapter name — may differ, e.g. Unit-01-…)
+ * The batch code is the permanent join key across Raw / Formatted / Digital.
+ */
 const BOOKS = {
   mathematics: {
+    subjectDir: 'Mathematics',
     book_title: 'Textbook of Mathematics Grade 12',
     full_title: 'Textbook of Mathematics Grade 12 — National Book Foundation as Federal Textbook Board, Islamabad',
     publisher: 'National Book Foundation as Federal Textbook Board, Islamabad',
     curriculum: 'National Curriculum of Pakistan 2022-23',
     grade: '12',
     parts: [
-      { folder: 'front-matter', batch: 'M-0', kind: 'front-matter', printed_page_offset: null },
-      { folder: 'chapter-01-functions-and-graphs', batch: 'M-1', kind: 'chapter', chapter_number: 1, chapter_label: 'Unit 01', title: 'Functions and Graphs', printed_page_offset: '+6' },
+      { folder: 'Chapter-00-Front-Matter', rawFolder: 'Front-Matter', batch: 'M-0', kind: 'front-matter', printed_page_offset: null },
+      { folder: 'Chapter-01-Functions-and-Graphs', rawFolder: 'Unit-01-Functions-and-Graphs', batch: 'M-1', kind: 'chapter', chapter_number: 1, chapter_label: 'Unit 01', title: 'Functions and Graphs', printed_page_offset: '+6' },
     ],
   },
   statistics: {
+    subjectDir: 'Statistics',
     book_title: 'Basic Statistics for Intermediate Classes, Part-II',
     full_title: 'Basic Statistics for Intermediate Classes, Part-II — M. Saleem Akhtar, Majeed Book Depot (Federal Board)',
     publisher: 'Majeed Book Depot (Federal Board)',
     grade: '12 (Intermediate Part-II)',
     parts: [
-      { folder: 'front-matter', batch: 'S-0', kind: 'front-matter', printed_page_offset: null },
-      { folder: 'chapter-08-set-theory', batch: 'S-1', kind: 'chapter', chapter_number: 8, chapter_label: 'Chapter 8', title: 'Set Theory', printed_page_offset: '0 (printed = image)' },
-      { folder: 'chapter-09-probability', batch: 'S-2', kind: 'chapter', chapter_number: 9, chapter_label: 'Chapter 9', title: 'Probability', printed_page_offset: '+10' },
+      { folder: 'Chapter-00-Front-Matter', rawFolder: 'Front-Matter', batch: 'S-0', kind: 'front-matter', printed_page_offset: null },
+      { folder: 'Chapter-08-Set-Theory', rawFolder: 'Chapter-08-Set-Theory', batch: 'S-1', kind: 'chapter', chapter_number: 8, chapter_label: 'Chapter 8', title: 'Set Theory', printed_page_offset: '0 (printed = image)' },
+      { folder: 'Chapter-09-Probability', rawFolder: 'Chapter-09-Probability', batch: 'S-2', kind: 'chapter', chapter_number: 9, chapter_label: 'Chapter 9', title: 'Probability', printed_page_offset: '+10' },
     ],
   },
 };
 
-/** Parse flat YAML frontmatter (same rules as migrate-v3.mjs). */
+/** Parse flat YAML frontmatter (same rules as the converter/migration tools). */
 function parseFrontmatter(text) {
   const m = text.match(/^---\n([\s\S]*?)\n---\n?/);
   if (!m) throw new Error('no frontmatter');
@@ -68,25 +82,27 @@ function unquote(v) {
 function intOrNull(v) { const n = parseInt(v, 10); return Number.isInteger(n) ? n : null; }
 function boolOrNull(v) { return v === 'true' ? true : v === 'false' ? false : null; }
 function trunc(s, n) { s = s ?? ''; return s.length > n ? s.slice(0, n - 1) + '…' : s; }
-function pad3(n) { return String(n).padStart(3, '0'); }
 
 let allOk = true;
 const summary = [];
 
 for (const [subject, meta] of Object.entries(BOOKS)) {
-  const bookDir = path.join(ROOT, 'books', subject);
+  const bookDir = path.join(ROOT, 'Books', 'Formatted', meta.subjectDir);
   const partsOut = [];
-  const rawBatches = [];
-
-  // raw batches (immutable scans)
-  const rawDir = path.join(bookDir, 'raw');
-  for (const b of fs.readdirSync(rawDir).sort()) {
-    const imgs = fs.readdirSync(path.join(rawDir, b)).filter(f => /\.(jpe?g|png)$/i.test(f)).length;
-    rawBatches.push({ batch: b, folder: `raw/${b}`, images: imgs });
-  }
+  const rawParts = [];
 
   for (const part of meta.parts) {
     const partDir = path.join(bookDir, part.folder);
+    const rawDir = path.join(ROOT, 'Books', 'Raw', meta.subjectDir, part.rawFolder);
+    if (!fs.existsSync(partDir)) { console.error(`ERROR: missing ${partDir}`); allOk = false; continue; }
+
+    // raw images for this batch (immutable scans)
+    const rawImages = fs.existsSync(rawDir)
+      ? fs.readdirSync(rawDir).filter(f => /\.(jpe?g|png)$/i.test(f)).length
+      : 0;
+    if (!rawImages) { console.error(`ERROR: no raw images for ${part.batch} at ${rawDir}`); allOk = false; }
+    rawParts.push({ batch: part.batch, folder: `Books/Raw/${meta.subjectDir}/${part.rawFolder}`, images: rawImages });
+
     const pageFiles = fs.readdirSync(partDir).filter(f => /^page-\d{3}\.md$/.test(f)).sort();
     const pages = [];
     for (const f of pageFiles) {
@@ -112,6 +128,7 @@ for (const [subject, meta] of Object.entries(BOOKS)) {
       subject,
       batch: part.batch,
       folder: part.folder,
+      raw_folder: `Books/Raw/${meta.subjectDir}/${part.rawFolder}`,
       kind: part.kind,
       ...(part.kind === 'chapter' ? {
         chapter_number: part.chapter_number,
@@ -120,16 +137,17 @@ for (const [subject, meta] of Object.entries(BOOKS)) {
       } : {}),
       book_title: meta.full_title,
       page_count: pages.length,
-      digitized_page_count: pages.length,          // == page_count (v3 rule: no gaps allowed)
+      digitized_page_count: pages.length,          // == page_count (no gaps allowed)
       printed_page_offset: part.printed_page_offset,
       printed_page_range: printedRange,
-      note: 'Generated by tools/build-metadata.mjs from page frontmatter — do not hand-edit. Pages are FLAT (no exercise sub-folders, user directive v3).',
+      note: 'Generated by tools/build-metadata.mjs from page frontmatter — do not hand-edit. Pages are FLAT inside the chapter folder (v4). HTML test edition: Books/Digital/' + meta.subjectDir + '/' + part.folder,
       pages,
     };
     fs.writeFileSync(path.join(partDir, 'chapter.json'), JSON.stringify(chapterJson, null, 2) + '\n');
 
     partsOut.push({
       folder: part.folder,
+      raw_folder: chapterJson.raw_folder,
       batch: part.batch,
       kind: part.kind,
       ...(part.kind === 'chapter' ? {
@@ -142,7 +160,7 @@ for (const [subject, meta] of Object.entries(BOOKS)) {
       printed_page_offset: part.printed_page_offset,
     });
 
-    summary.push(`${part.batch} (${part.folder}): ${pages.length} pages, printed ${printedRange ? printedRange.join('–') : 'n/a'}`);
+    summary.push(`${part.batch} (${part.folder}): ${pages.length} pages, ${rawImages} raw images, printed ${printedRange ? printedRange.join('–') : 'n/a'}`);
   }
 
   // ---- book.json ----
@@ -155,9 +173,11 @@ for (const [subject, meta] of Object.entries(BOOKS)) {
     ...(meta.curriculum ? { curriculum: meta.curriculum } : {}),
     grade: meta.grade,
     language: 'en',
-    structure_version: 'v3',
+    structure_version: 'v4',
+    raw_root: `Books/Raw/${meta.subjectDir}`,
+    html_edition: `Books/Digital/${meta.subjectDir}`,
     parts: partsOut,
-    raw_batches: rawBatches,
+    raw_batches: rawParts,
     total_pages_digitized: total,
     note: 'Generated by tools/build-metadata.mjs — do not hand-edit. Machine-readable registry for tooling & the future web dashboard.',
   };
@@ -166,18 +186,19 @@ for (const [subject, meta] of Object.entries(BOOKS)) {
   // ---- indexes/<subject>.md ----
   let idx = `# Index — ${subject}\n\n`;
   idx += `**Book:** ${meta.full_title}  \n`;
-  idx += `**Digitized pages:** ${total} · **Raw images:** ${rawBatches.reduce((s, r) => s + r.images, 0)} · Structure **v3** (flat chapter pages)\n\n`;
-  idx += `> Machine-readable equivalents: \`books/${subject}/book.json\` + \`chapter.json\` in every part folder.\n`;
+  idx += `**Digitized pages:** ${total} · **Raw images:** ${rawParts.reduce((s, r) => s + r.images, 0)} · Structure **v4** (Books/{Raw, Formatted, Digital})\n\n`;
+  idx += `> Machine-readable equivalents: \`Books/Formatted/${meta.subjectDir}/book.json\` + \`chapter.json\` in every chapter folder.\n`;
+  idx += `> HTML test edition: \`Books/Digital/${meta.subjectDir}/\` (generated by \`tools/generate-digital.mjs\` — test purposes only).\n`;
   for (const part of meta.parts) {
     const cj = JSON.parse(fs.readFileSync(path.join(bookDir, part.folder, 'chapter.json'), 'utf8'));
-    const label = part.kind === 'chapter' ? `${part.chapter_label}: ${part.title}` : 'Front matter ("zero chapter")';
+    const label = part.kind === 'chapter' ? `${part.chapter_label}: ${part.title}` : 'Front matter ("zero chapter", Chapter 00)';
     idx += `\n---\n\n## ${part.batch} — ${label}\n\n`;
-    idx += `- Folder: \`books/${subject}/${part.folder}/\` · Raw: \`books/${subject}/raw/${part.batch}/\`\n`;
+    idx += `- Markdown (\`Formatted\`): \`Books/Formatted/${meta.subjectDir}/${part.folder}/\` · Raw scans: \`Books/Raw/${meta.subjectDir}/${part.rawFolder}/\` · HTML (test): \`Books/Digital/${meta.subjectDir}/${part.folder}/\`\n`;
     idx += `- Pages: ${cj.page_count} · Printed range: ${cj.printed_page_range ? cj.printed_page_range.join('–') : 'n/a'} · Offset: ${cj.printed_page_offset ?? 'n/a'}\n\n`;
     idx += `| Image | Printed | File | Type | Exercise | Section(s) | Fig. |\n`;
     idx += `|------:|--------:|------|------|----------|------------|-----:|\n`;
     for (const p of cj.pages) {
-      const link = `../books/${subject}/${part.folder}/${p.file}`;
+      const link = `../Books/Formatted/${meta.subjectDir}/${part.folder}/${p.file}`;
       idx += `| ${p.image} | ${p.printed ?? '—'} | [${p.file}](${link}) | ${p.content_type ?? '—'} | ${p.exercise ?? '—'} | ${trunc(p.section, 60) ?? '—'} | ${p.figures_count ?? 0} |\n`;
     }
   }
@@ -191,6 +212,7 @@ for (const old of ['M-0.md', 'M-1.md', 'S-0.md', 'S-1.md', 'S-2.md']) {
   if (fs.existsSync(p)) { fs.unlinkSync(p); console.log('removed stale index:', old); }
 }
 
-console.log('\n=== build-metadata summary ===');
+console.log('\n=== build-metadata summary (v4) ===');
 summary.forEach(s => console.log(' ' + s));
 console.log(allOk ? 'OK ✅' : 'PROBLEMS ❌');
+process.exit(allOk ? 0 : 1);

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page 25 — Chapter 9: Probability (Basic Statistics for Intermediate Classes, Part-II)</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.querySelector("main"), {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#b45309; --accent-soft:#fef3c7; --bg:#fafaf9; --card:#ffffff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.75 Georgia,'Times New Roman',serif; }
+  .chrome { font-family: system-ui,-apple-system,'Segoe UI',sans-serif; }
+  .banner { background:var(--accent-soft); border-bottom:1px solid var(--line); padding:8px 16px; font-size:13px; color:#92400e; text-align:center; }
+  .banner strong { font-weight:700; }
+  .meta { background:var(--card); border-bottom:1px solid var(--line); padding:14px 20px; }
+  .meta-inner { max-width:880px; margin:0 auto; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+  .badge { font-size:12px; padding:3px 10px; border-radius:999px; background:#f3f4f6; border:1px solid var(--line); color:var(--muted); white-space:nowrap; }
+  .badge.dark { background:var(--ink); color:#fff; border-color:var(--ink); }
+  .meta a { color:var(--accent); text-decoration:none; border-bottom:1px dotted var(--accent); font-size:13px; }
+  .pagenav { max-width:880px; margin:0 auto; display:flex; justify-content:space-between; gap:12px; padding:10px 20px 0; font-family:system-ui,sans-serif; font-size:14px; }
+  .pagenav a { color:var(--accent); text-decoration:none; }
+  .pagenav a:hover { text-decoration:underline; }
+  main { max-width:880px; margin:24px auto 48px; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:40px 48px; }
+  h1 { font-size:1.65em; line-height:1.3; border-bottom:2px solid var(--line); padding-bottom:.4em; }
+  h2 { font-size:1.3em; border-bottom:1px solid var(--line); padding-bottom:.3em; margin-top:1.8em; }
+  h3 { font-size:1.1em; margin-top:1.5em; }
+  blockquote { margin:1em 0; padding:.6em 1em; border-left:4px solid var(--accent); background:#fffbeb; border-radius:0 6px 6px 0; color:#57534e; font-size:.95em; }
+  blockquote p { margin:0; }
+  table { border-collapse:collapse; width:100%; margin:1.2em 0; font-size:.92em; display:block; overflow-x:auto; }
+  th, td { border:1px solid var(--line); padding:6px 10px; text-align:left; vertical-align:top; }
+  th { background:#f9fafb; font-family:system-ui,sans-serif; font-size:.85em; text-transform:uppercase; letter-spacing:.03em; }
+  tbody tr:nth-child(even) { background:#fafafa; }
+  code { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.88em; background:#f3f4f6; padding:1px 5px; border-radius:4px; }
+  pre code { display:block; padding:12px; overflow-x:auto; }
+  .katex-display { overflow-x:auto; overflow-y:hidden; padding:4px 0; }
+  footer { text-align:center; color:var(--muted); font-family:system-ui,sans-serif; font-size:12px; padding:20px 16px 28px; }
+  footer a { color:var(--accent); }
+  @media (max-width:640px){ main{ padding:24px 20px; } h1{ font-size:1.35em; } }
+  @media print { .banner,.meta,.pagenav,footer{ display:none; } main{ border:none; margin:0; max-width:none; } body{ background:#fff; } }
+</style>
+</head>
+<body>
+<div class="banner chrome"><strong>🧪 TEST EDITION — Digital HTML</strong> · auto-generated from the canonical Markdown in <code>Books/Formatted/</code> · not the source of truth · generated 2026-09-03</div>
+<header class="meta chrome"><div class="meta-inner"><span class="badge dark">Basic Statistics for Intermediate Classes, Part-II</span> <span class="badge">batch S-2</span> <span class="badge">image 25</span> <span class="badge">printed p. 35</span> <span class="badge">worked-examples</span> <span class="badge">figures: 0</span><span style="flex:1"></span><a href="../index.html">↑ Chapter 9 · Probability</a> <a href="../../../../Books/Formatted/Statistics/Chapter-09-Probability/page-025.md">Markdown source</a> <a href="../../../../Books/Raw/Statistics/Chapter-09-Probability/0025.jpg">Original scan ↗</a></div></header>
+<nav class="pagenav chrome" aria-label="Page navigation"><a href="page-024.html">← Page 24</a> <a href="index.html">Chapter index</a> <a href="page-026.html">Page 26 →</a></nav>
+<main><h1>Page 25 — Probability (Chapter 9)</h1>
+<blockquote>
+<p>📄 Original scan: <a href="../../../Raw/Statistics/Chapter-09-Probability/0025.jpg">0025.jpg</a> · printed page 35</p>
+</blockquote>
+<p>(i) $P(A/B) = \frac{P(A \cap B)}{P(B)} = \frac{1/8}{4/8} = \frac{1}{4}$</p>
+<p>Hence, $P(A/B) &lt; P(A)$</p>
+<p>(ii) $P(B/A) = \frac{P(A \cap B)}{P(A)} = \frac{1/8}{3/8} = \frac{1}{3}$</p>
+<p>Hence, $P(B/A) &lt; P(B)$</p>
+<p>(iii) $P(B/\bar{A}) = \frac{P(\bar{A} \cap B)}{P(\bar{A})} = \frac{3/8}{5/8} = \frac{3}{5}$</p>
+<p>Hence, $P(B/\bar{A}) &gt; P(B)$</p>
+<p>(iv) $P(\bar{A}/B) = \frac{P(\bar{A} \cap B)}{P(B)} = \frac{3/8}{4/8} = \frac{3}{4}$</p>
+<p>Hence, $P(\bar{A}/B) &gt; P(\bar{A})$</p>
+<p>In (i) and (ii) above, we find that both the conditional probabilities P(A/B) and P(B/A) are less than the ordinary probabilities and in (iii) and (iv) above, both conditional probabilities are greater than the respective ordinary probabilities.</p>
+<p>Thus if A and B are two events then both conditional probabilities P(A/B) and P(B/A) will be greater or both will be less than their ordinary probabilities or both will be equal to their respective ordinary probabilities.</p>
+<p>If P(A/B) = P(A), then P(B/A) = P(B). In a topic on Independence we shall say that the events A and B are independent if P(A/B) = P(A) and P(B/A) = P(B).</p>
+<p>When P(A/B) = P(A), then P(B/A) is always equal to P(B).</p>
+<p><strong>Example 9.33.</strong></p>
+<p>Given S = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, A = {1, 3, 8, 9, 10} and B = {1, 3, 6, 7}. Write the elements of the events A ∩ B and find the probabilities:</p>
+<p>(i) P(A) and P(A/B)</p>
+<p>(ii) P(B) and P(B/A)</p>
+<p><strong>Solution:</strong> Here, S = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, n(S) = 10</p>
+<p>$$A = \{1, 3, 8, 9, 10\}, \quad n(A) = 5, \quad P(A) = \frac{n(A)}{n(S)} = \frac{5}{10} = 0.5$$</p>
+<p>$$B = \{1, 3, 6, 7\}, \quad n(B) = 4, \quad P(B) = \frac{n(B)}{n(S)} = \frac{4}{10} = 0.4$$</p>
+<p>$$A \cap B = \{1, 3\}, \quad n(A \cap B) = 2, \quad P(A \cap B) = \frac{n(A \cap B)}{n(S)} = \frac{2}{10} = 0.2$$</p>
+<p>$$P(A/B) = \frac{P(A \cap B)}{P(B)} = \frac{0.2}{0.4} = 0.5 \quad \text{and} \quad P(B/A) = \frac{P(A \cap B)}{P(A)} = \frac{0.2}{0.5} = 0.4$$</p>
+<p>(i) P(A) = 0.5 and P(A/B) = 0.5. Hence P(A) = P(A/B)</p>
+<p>(ii) P(B) = 0.4 and P(B/A) = 0.4. Hence P(B) = P(B/A)</p>
+<p>Here, P(A/B) = P(A) and P(B/A) = P(B). This is a condition of independence.</p>
+<p><strong>Example 9.34.</strong></p>
+<p>Two coins are tossed. Find the following probabilities,</p>
+<p>(i) both are heads given that at least one is head.</p>
+<p>(ii) the first coin shows head when it is known that one is head and the other is tail.</p>
+<p><strong>Solution:</strong> When two coins are tossed the sample space of 4 possible outcomes is</p>
+<p>$$S = \{\text{HH, HT, TH, TT}\}, \quad n(S) = 4$$</p>
+<p>It is assumed that the four outcomes are equally likely and each outcome has probability of 1/4.</p>
+<p>(i) Let A denote the event &quot;both are heads&quot; and B denote the event &quot;at least one is head&quot;, then</p>
+<p>$$A = \{\text{HH}\}, \quad n(A) = 1, \quad P(A) = \frac{n(A)}{n(S)} = \frac{1}{4}$$</p>
+<p>$$B = \{\text{HH, HT, TH}\}, \quad n(B) = 3, \quad P(B) = \frac{n(B)}{n(S)} = \frac{3}{4}$$</p>
+</main>
+<footer class="chrome">Generated by <code>tools/generate-digital.mjs</code> · Library: <a href="../../../../Books/Formatted/Statistics/book.json">Formatted Markdown</a> · <a href="../../../../Books/Raw/Statistics/Chapter-09-Probability/0025.jpg">original scan</a></footer>
+</body>
+</html>

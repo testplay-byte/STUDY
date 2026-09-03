@@ -317,3 +317,27 @@ Stage Summary:
 - STRUCTURE v3 COMPLETE: books/<subject>/{book.json, front-matter/, chapter-NN-slug/ (FLAT pages + chapter.json), raw/<BATCH>/} — exactly the raw/processed separation and chapter-level organization the user asked for
 - 112/112 pages intact and verified; exercise identity preserved in frontmatter/chapter.json (M-1 boundaries flagged approximate pending user's raw info — frontmatter-only fix policy)
 - Repo now self-contained for any future agent: AGENTS.md → STATUS.md → CONVENTIONS → PIPELINE → WORKLOG tail = full context in ~5 minutes; tracking system ready for the study loop; book.json/chapter.json ready for the future web dashboard
+
+---
+Task ID: 7-v4
+Agent: coordinator (Z.ai main)
+Task: Structure v4 — three-branch Books/ library (user directive): Books/{Raw, Formatted, Digital}, HTML test edition, full docs/tool/metadata sync, verification, push
+
+Work Log:
+- Processed user directive: `books/` → `Books/` (capital B) with (1) `Raw/` = folders named after ORIGINAL chapter names holding the raw uploads, (2) `Formatted/` = book → numbered chapters → flat markdown, front matter included as Chapter 00, (3) `Digital/` = HTML page edition, explicitly TEST PURPOSES ONLY
+- tools/migrate-v4.mjs: moved 112/112 raw images → Books/Raw/{Mathematics,Statistics}/<Original-Chapter-Name>/ and 112/112 markdown pages → Books/Formatted/{Mathematics,Statistics}/Chapter-NN-<Title>/; rewrote chapter_folder frontmatter values (e.g. chapter-01-functions-and-graphs → Chapter-01-Functions-and-Graphs; front-matter → Chapter-00-Front-Matter) and both raw-path occurrences per page (frontmatter source_image + scan-link line) to ../../../Raw/<Subject>/<Chapter-Name>/NNNN.jpg; per-file byte-verification vs git HEAD (v3)+rewrites ran during migration — 0 drift; old books/ tree removed (only generated JSON remained)
+- tools/fix-v4-casing.mjs (one-off follow-up): book folders TitleCase (Mathematics/Statistics) to mirror Raw/Formatted/Digital; 112 files' paths rewritten again (Raw/mathematics → Raw/Mathematics)
+- tools/verify-v4.mjs (new, read-only): tree shape, 7/36/9/10/50 counts per batch, byte-compare every page vs git HEAD with exact rewrites, frontmatter coherence (chapter_folder == folder, batch == mapping, source_image + scan-link resolve, no stale ../raw/ or books/ refs) → ALL GREEN 112/112
+- tools/build-metadata.mjs → v4: BOOKS constant now carries subjectDir/rawFolder per part; emits Books/Formatted/<Subject>/book.json (structure_version v4, raw_root, html_edition, per-part raw_folder), chapter.json ×5 (folder + raw_folder + v4 note), indexes/{mathematics,statistics}.md with Raw/Formatted/Digital paths per batch; regenerated — printed ranges unchanged (M-1 7–41, S-0 4–8, S-1 2–10, S-2 11–60)
+- tools/generate-digital.mjs (new): full rebuild of Books/Digital/ from book.json/chapter.json + page markdown; 112 page-NNN.html + index.html at Digital root/book/chapter levels (8 indexes); KaTeX via CDN; LaTeX $/$$ segments extracted BEFORE markdown parsing (GitHub-style math-first precedence — protects subscripts from emphasis) and restored HTML-escaped; TEST EDITION banner on every page; prev/next page nav; metadata badges (batch/image/printed/type/exercise/figures); links to markdown source + raw scan
+- Bugs caught & fixed during generation: (1) restoreMath dropped $/$$ delimiters → KaTeX had nothing to render (fixed, re-verified page HTML); (2) chapter-index .md links href="undefined" (mdLink not stored in row objects) + book-index up-link depth (../../ → ../) — found by tools/check-digital-links.mjs (new, read-only): 1460 relative links across Books/Digital + indexes → ALL LINKS RESOLVE
+- tools/convert-page.mjs usage header → v4 example; tools/prompt.txt chapter_folder example + source_image format → ../../../Raw/<Subject>/<Chapter-Name>/NNNN.jpg (schema fields unchanged); docs/prompts/vlm-image-to-markdown.md +v4 changelog row
+- Docs updated to v4: docs/CONVENTIONS.md (v4 header + changelog row; §1 tree/codes rewritten incl. §1.5 Digital policy — test only, never hand-edit; §2 examples with v4 paths; §4/§5/§7 paths + verifier gate), docs/PIPELINE.md (register/test/audit steps + cheat-sheet on v4 paths, generate-digital + verifiers in finish flow), docs/PLAN.md (ground rules +6/+10; new Phase 4 v4 COMPLETE; future phases renumbered 5–8), README.md (v4 structure tree, pipeline steps), AGENTS.md (rules 3/4, repo map, contracts paths), STATUS.md (rewritten for v4), tools/README.md (full rewrite incl. new tools + don't-rerun migrations), tracking/PROGRESS-LOG.md entry
+- tools/package.json added (marked dependency for generate-digital; node_modules gitignored)
+- Final state: verify-v4 ALL GREEN (112/112 byte-verified) + check-digital-links ALL RESOLVE (1460/1460) + build-metadata OK + generate-digital OK (112/112 HTML)
+
+Stage Summary:
+- STRUCTURE v4 COMPLETE & PUSHED: Books/Raw (original chapter names, immutable) + Books/Formatted (canonical markdown, Chapter-NN uniform, front matter = Chapter 00) + Books/Digital (HTML test edition, test purposes only per user)
+- Batch codes M-0/M-1/S-0/S-1/S-2 remain the permanent join key across all three branches (frontmatter + book.json/chapter.json record folder + raw_folder)
+- Content untouched: 112/112 pages byte-identical to v3 except intended path/field rewrites; 109 figures, printed offsets, quirks all preserved
+- Pipeline for the future: build-metadata.mjs → generate-digital.mjs → verify-v4.mjs + check-digital-links.mjs must all pass before any push

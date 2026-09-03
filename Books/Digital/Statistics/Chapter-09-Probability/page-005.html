@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page 5 — Chapter 9: Probability (Basic Statistics for Intermediate Classes, Part-II)</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.querySelector("main"), {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#b45309; --accent-soft:#fef3c7; --bg:#fafaf9; --card:#ffffff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.75 Georgia,'Times New Roman',serif; }
+  .chrome { font-family: system-ui,-apple-system,'Segoe UI',sans-serif; }
+  .banner { background:var(--accent-soft); border-bottom:1px solid var(--line); padding:8px 16px; font-size:13px; color:#92400e; text-align:center; }
+  .banner strong { font-weight:700; }
+  .meta { background:var(--card); border-bottom:1px solid var(--line); padding:14px 20px; }
+  .meta-inner { max-width:880px; margin:0 auto; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+  .badge { font-size:12px; padding:3px 10px; border-radius:999px; background:#f3f4f6; border:1px solid var(--line); color:var(--muted); white-space:nowrap; }
+  .badge.dark { background:var(--ink); color:#fff; border-color:var(--ink); }
+  .meta a { color:var(--accent); text-decoration:none; border-bottom:1px dotted var(--accent); font-size:13px; }
+  .pagenav { max-width:880px; margin:0 auto; display:flex; justify-content:space-between; gap:12px; padding:10px 20px 0; font-family:system-ui,sans-serif; font-size:14px; }
+  .pagenav a { color:var(--accent); text-decoration:none; }
+  .pagenav a:hover { text-decoration:underline; }
+  main { max-width:880px; margin:24px auto 48px; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:40px 48px; }
+  h1 { font-size:1.65em; line-height:1.3; border-bottom:2px solid var(--line); padding-bottom:.4em; }
+  h2 { font-size:1.3em; border-bottom:1px solid var(--line); padding-bottom:.3em; margin-top:1.8em; }
+  h3 { font-size:1.1em; margin-top:1.5em; }
+  blockquote { margin:1em 0; padding:.6em 1em; border-left:4px solid var(--accent); background:#fffbeb; border-radius:0 6px 6px 0; color:#57534e; font-size:.95em; }
+  blockquote p { margin:0; }
+  table { border-collapse:collapse; width:100%; margin:1.2em 0; font-size:.92em; display:block; overflow-x:auto; }
+  th, td { border:1px solid var(--line); padding:6px 10px; text-align:left; vertical-align:top; }
+  th { background:#f9fafb; font-family:system-ui,sans-serif; font-size:.85em; text-transform:uppercase; letter-spacing:.03em; }
+  tbody tr:nth-child(even) { background:#fafafa; }
+  code { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.88em; background:#f3f4f6; padding:1px 5px; border-radius:4px; }
+  pre code { display:block; padding:12px; overflow-x:auto; }
+  .katex-display { overflow-x:auto; overflow-y:hidden; padding:4px 0; }
+  footer { text-align:center; color:var(--muted); font-family:system-ui,sans-serif; font-size:12px; padding:20px 16px 28px; }
+  footer a { color:var(--accent); }
+  @media (max-width:640px){ main{ padding:24px 20px; } h1{ font-size:1.35em; } }
+  @media print { .banner,.meta,.pagenav,footer{ display:none; } main{ border:none; margin:0; max-width:none; } body{ background:#fff; } }
+</style>
+</head>
+<body>
+<div class="banner chrome"><strong>🧪 TEST EDITION — Digital HTML</strong> · auto-generated from the canonical Markdown in <code>Books/Formatted/</code> · not the source of truth · generated 2026-09-03</div>
+<header class="meta chrome"><div class="meta-inner"><span class="badge dark">Basic Statistics for Intermediate Classes, Part-II</span> <span class="badge">batch S-2</span> <span class="badge">image 5</span> <span class="badge">printed p. 15</span> <span class="badge">theory</span> <span class="badge">figures: 3</span><span style="flex:1"></span><a href="../index.html">↑ Chapter 9 · Probability</a> <a href="../../../../Books/Formatted/Statistics/Chapter-09-Probability/page-005.md">Markdown source</a> <a href="../../../../Books/Raw/Statistics/Chapter-09-Probability/0005.jpg">Original scan ↗</a></div></header>
+<nav class="pagenav chrome" aria-label="Page navigation"><a href="page-004.html">← Page 4</a> <a href="index.html">Chapter index</a> <a href="page-006.html">Page 6 →</a></nav>
+<main><h1>Page 5 — Probability (Chapter 9)</h1>
+<blockquote>
+<p>📄 Original scan: <a href="../../../Raw/Statistics/Chapter-09-Probability/0005.jpg">0005.jpg</a> · printed page 15</p>
+</blockquote>
+<h2>9.9. NOT MUTUALLY EXCLUSIVE EVENTS</h2>
+<p>The events are called not mutually exclusive if they have at least one outcome common between them. If A and B are not mutually exclusive events, then $A \cap B \neq \phi$. Similarly A, B and C are not mutually exclusive events if $A \cap B \cap C \neq \phi$. Thus they must have at least one common point between them. Consider a sample space :</p>
+<p>$$S = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11\}$$</p>
+<p>Let the event $A = \{\text{prime numbers}\} = \{2, 3, 5, 7, 11\}$</p>
+<p>and $B = \{\text{odd faces}\} = \{1, 3, 5, 7, 9, 11\}$.</p>
+<p>Here $A \cap B = \{3, 5, 7, 11\}$</p>
+<p>Thus $A \cap B \neq \phi$ i.e, $A \cap B$ exists. Here, A and B are not mutually exclusive events. $A \cap B$ consists of outcomes which are common to both A and B. Figure-2 shows a venn diagram in which A and B are not mutually exclusive events. Some area under A is common with B. If the event A is a part of the event B, then $A \cap B = A$. This is shown in Figure-3.</p>
+<p>[Figure F1] [Figure F2]</p>
+<h2>9.10. EXHAUSTIVE EVENTS</h2>
+<p>When a sample space S is partitioned into some mutually exclusive events such that their union is the sample space itself then the events are called <em>exhaustive events</em> or <em>collectively exhaustive events</em>. Suppose a die is rolled and the sample space is</p>
+<p>$S = \{1, 2, 3, 4, 5, 6\}$.</p>
+<p>Let $A = \{1, 2\}$</p>
+<p>$B = \{3, 4, 5\}$</p>
+<p>$C = \{6\}$</p>
+<p>Here the events A, B and C are mutually exclusive because $A \cap B \cap C = \phi$ and $A \cup B \cup C = S$. Figure-4 shows three events A, B and C which are exhaustive.</p>
+<p>[Figure F3]</p>
+<h2>9.11. A or B</h2>
+<p>The term A or B is very important in probability theory. The term &#39;A or B&#39; is used for two events A and B when they are mutually exclusive and we are interested to know the probability of the event &quot;A or B&quot;. For this purpose the symbol $A \cup B$ is used. It must be remembered that the symbol $A \cup B$ is also used for the event &quot;A or B or both&quot;, when A and B are not mutually exclusive.</p>
+<h2>9.12. A and B</h2>
+<p>The term &#39;A and B&#39; is used for the event which consists of the points which are common to both A and B. In set theory language, the symbol $A \cap B$ is used for A and B. The symbol $A \cap B$ means intersection of A and B.</p>
+<h2>Figures on this page</h2>
+<h3>Figure F1 — Venn diagram of non-mutually exclusive events (middle left)</h3>
+<ul>
+<li><strong>Type:</strong> venn-diagram</li>
+<li><strong>Caption/Number:</strong> Figure-2. A and B are Not Mutually Exclusive Events</li>
+<li><strong>Description:</strong> A rectangular box labeled &#39;S&#39; contains two overlapping circles labeled &#39;A&#39; (left) and &#39;B&#39; (right). The overlapping region (intersection) is shaded with diagonal lines. An arrow points down from the shaded intersection to the label &#39;$A \cap B$&#39;.</li>
+<li><strong>Mathematical meaning:</strong> Illustrates that two events A and B are not mutually exclusive because their intersection $A \cap B$ is non-empty ($A \cap B \neq \phi$).</li>
+</ul>
+<h3>Figure F2 — Venn diagram showing event A as part of event B (middle right)</h3>
+<ul>
+<li><strong>Type:</strong> venn-diagram</li>
+<li><strong>Caption/Number:</strong> Figure-3 A and B are Not Mutually Exclusive Events</li>
+<li><strong>Description:</strong> A rectangular box labeled &#39;S&#39; contains two concentric circles. The inner circle is labeled &#39;A&#39;, and the annular region between the inner and outer circles is labeled &#39;B&#39;. Below the diagram is the label &#39;$A \cap B = A$&#39;.</li>
+<li><strong>Mathematical meaning:</strong> Demonstrates that if event A is entirely contained within event B, then the intersection of A and B is simply A ($A \cap B = A$), confirming they are not mutually exclusive.</li>
+</ul>
+<h3>Figure F3 — Partition of sample space into exhaustive events (bottom right)</h3>
+<ul>
+<li><strong>Type:</strong> venn-diagram</li>
+<li><strong>Caption/Number:</strong> Figure-4</li>
+<li><strong>Description:</strong> A rectangular box representing sample space &#39;S&#39; (letter S at the right edge, outside the partition lines). Inside the box, straight lines radiating from a vertex at the top edge partition the rectangle into three regions: the left region is labeled &#39;A&#39; and contains the points 1, 2; the large middle region is labeled &#39;B&#39; and contains the points 3, 4, 5; the right region is labeled &#39;C&#39; (letter C at the top-right corner) and contains the point 6; the letter B also appears at the bottom-right corner of the middle region. Below the box is the printed text &quot;$A \cap B \cap C = \phi$ and $A \cup B \cup C = S$&quot;.</li>
+<li><strong>Mathematical meaning:</strong> Shows three mutually exclusive events A, B, and C whose union covers the entire sample space S, defining them as exhaustive events.</li>
+</ul>
+</main>
+<footer class="chrome">Generated by <code>tools/generate-digital.mjs</code> · Library: <a href="../../../../Books/Formatted/Statistics/book.json">Formatted Markdown</a> · <a href="../../../../Books/Raw/Statistics/Chapter-09-Probability/0005.jpg">original scan</a></footer>
+</body>
+</html>

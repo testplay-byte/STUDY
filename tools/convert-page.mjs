@@ -2,14 +2,14 @@
 /**
  * convert-page.mjs — Study digitization pipeline: one page image → one Markdown file.
  *
- * Usage (v3 layout):
- *   bun tools/convert-page.mjs --image books/mathematics/raw/M-1/0025.jpg \
+ * Usage (v4 layout):
+ *   bun tools/convert-page.mjs --image Books/Raw/Mathematics/Unit-01-Functions-and-Graphs/0025.jpg \
  *        --batch M-1 --page 25 --image-filename 0025.jpg \
  *        --out /tmp/drafts/page-025.md \
  *        --agent agent-A1 \
- *        --source-image-rel "../raw/M-1/0025.jpg" [--subject mathematics]
+ *        --source-image-rel "../../../Raw/Mathematics/Unit-01-Functions-and-Graphs/0025.jpg" [--subject mathematics]
  *
- * Engine: z-ai-web-dev-sdk (server-side vision model). Prompt: tools/prompt.txt (canonical, v3).
+ * Engine: z-ai-web-dev-sdk (server-side vision model). Prompt: tools/prompt.txt (canonical, v4).
  * Auto-continues when output is truncated. Never place files directly — coordinator/agents
  * review output against the image before accepting it (see docs/CONVENTIONS.md §4).
  */

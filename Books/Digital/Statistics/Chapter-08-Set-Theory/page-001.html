@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page 1 — Chapter 8: Set Theory (Basic Statistics for Intermediate Classes, Part-II)</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.querySelector("main"), {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#b45309; --accent-soft:#fef3c7; --bg:#fafaf9; --card:#ffffff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.75 Georgia,'Times New Roman',serif; }
+  .chrome { font-family: system-ui,-apple-system,'Segoe UI',sans-serif; }
+  .banner { background:var(--accent-soft); border-bottom:1px solid var(--line); padding:8px 16px; font-size:13px; color:#92400e; text-align:center; }
+  .banner strong { font-weight:700; }
+  .meta { background:var(--card); border-bottom:1px solid var(--line); padding:14px 20px; }
+  .meta-inner { max-width:880px; margin:0 auto; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+  .badge { font-size:12px; padding:3px 10px; border-radius:999px; background:#f3f4f6; border:1px solid var(--line); color:var(--muted); white-space:nowrap; }
+  .badge.dark { background:var(--ink); color:#fff; border-color:var(--ink); }
+  .meta a { color:var(--accent); text-decoration:none; border-bottom:1px dotted var(--accent); font-size:13px; }
+  .pagenav { max-width:880px; margin:0 auto; display:flex; justify-content:space-between; gap:12px; padding:10px 20px 0; font-family:system-ui,sans-serif; font-size:14px; }
+  .pagenav a { color:var(--accent); text-decoration:none; }
+  .pagenav a:hover { text-decoration:underline; }
+  main { max-width:880px; margin:24px auto 48px; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:40px 48px; }
+  h1 { font-size:1.65em; line-height:1.3; border-bottom:2px solid var(--line); padding-bottom:.4em; }
+  h2 { font-size:1.3em; border-bottom:1px solid var(--line); padding-bottom:.3em; margin-top:1.8em; }
+  h3 { font-size:1.1em; margin-top:1.5em; }
+  blockquote { margin:1em 0; padding:.6em 1em; border-left:4px solid var(--accent); background:#fffbeb; border-radius:0 6px 6px 0; color:#57534e; font-size:.95em; }
+  blockquote p { margin:0; }
+  table { border-collapse:collapse; width:100%; margin:1.2em 0; font-size:.92em; display:block; overflow-x:auto; }
+  th, td { border:1px solid var(--line); padding:6px 10px; text-align:left; vertical-align:top; }
+  th { background:#f9fafb; font-family:system-ui,sans-serif; font-size:.85em; text-transform:uppercase; letter-spacing:.03em; }
+  tbody tr:nth-child(even) { background:#fafafa; }
+  code { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.88em; background:#f3f4f6; padding:1px 5px; border-radius:4px; }
+  pre code { display:block; padding:12px; overflow-x:auto; }
+  .katex-display { overflow-x:auto; overflow-y:hidden; padding:4px 0; }
+  footer { text-align:center; color:var(--muted); font-family:system-ui,sans-serif; font-size:12px; padding:20px 16px 28px; }
+  footer a { color:var(--accent); }
+  @media (max-width:640px){ main{ padding:24px 20px; } h1{ font-size:1.35em; } }
+  @media print { .banner,.meta,.pagenav,footer{ display:none; } main{ border:none; margin:0; max-width:none; } body{ background:#fff; } }
+</style>
+</head>
+<body>
+<div class="banner chrome"><strong>🧪 TEST EDITION — Digital HTML</strong> · auto-generated from the canonical Markdown in <code>Books/Formatted/</code> · not the source of truth · generated 2026-09-03</div>
+<header class="meta chrome"><div class="meta-inner"><span class="badge dark">Basic Statistics for Intermediate Classes, Part-II</span> <span class="badge">batch S-1</span> <span class="badge">image 1</span> <span class="badge">theory</span> <span class="badge">figures: 0</span><span style="flex:1"></span><a href="../index.html">↑ Chapter 8 · Set Theory</a> <a href="../../../../Books/Formatted/Statistics/Chapter-08-Set-Theory/page-001.md">Markdown source</a> <a href="../../../../Books/Raw/Statistics/Chapter-08-Set-Theory/0001.jpg">Original scan ↗</a></div></header>
+<nav class="pagenav chrome" aria-label="Page navigation"><span></span> <a href="index.html">Chapter index</a> <a href="page-002.html">Page 2 →</a></nav>
+<main><h1>Page 1 — Chapter 8: Set Theory</h1>
+<blockquote>
+<p>📄 Original scan: <a href="../../../Raw/Statistics/Chapter-08-Set-Theory/0001.jpg">0001.jpg</a> · printed page n/a (opener)</p>
+</blockquote>
+<p><strong>Chapter 8</strong></p>
+<p><strong>SET THEORY</strong></p>
+<h2>8.1. INTRODUCTION</h2>
+<p>Set theory which was developed by George Cantor ( 1845 – 1918 ) between 1874 – 1895, is a basic mathematical tool that is used by various branches of Mathematics, such as probability theory, calculus and geometry. Cantor was born in Russia in 1845, but moved to Germany in 1858. In 1863, he entered the university of Berlin, where he studied under K. Weierstrass ( 1815 – 1897 ), L. Kronecker ( 1823 – 1891 ), and E.E. Kummer ( 1810 – 1893 ), all of whom are famous mathematicians, and received his Ph. D. in 1867. One of the subsequent main works in set theory is by F. Hausdorff, which was first published in 1914.</p>
+<h2>8.2. SET</h2>
+<p>A set is any well defined collection of distinct objects. The objects of the set are called its members or elements. We shall denote the set &#39;A&#39; whose elements are $a_1$, $a_2$, $a_3$, $\cdots$, $a_n$ by $A = \{ a_1, a_2, a_3, \cdots, a_n \}$. Sets are usually denoted by the capital letters A, B, C or X, Y, Z etc. and the lower case letters a, b, c and x, y, z etc. are used to denote the elements. Sets are always written within pair of brackets. For example the sets A and B are written as $A = \{ 1, 2, 3 \}$, $B = \{ \text{Aslam}, \text{Anwar}, \text{Ali} \}$. The element 1 is member of A is written as $1 \in A$ ( 1 belongs to the set A ), Similarly Aslam $\in$ B, Anwar $\in$ B, etc.</p>
+<p>A set can be defined by actually listing all its elements or by describing some property of all the members. The first is called tabular form or roster method and the second is called property method. For example, a set V of all vowels in English alphabet can be written by tabular form as $V = \{ a, e, i, o, u \}$ and by property method it can be written as $V = \{ x / x \text{ is a vowel} \}$. It is read as the set of all elements x such that x is a vowel. The line / is read as &quot;such that&quot;.</p>
+<h2>8.3. NULL SET ( EMPTY SET OR VOID SET )</h2>
+<p>A set that contains no element is defined as the null set and is usually denoted by $\phi$ that is $\phi = \{ \quad \}$. It is also called empty set or void set.</p>
+<h2>8.4. SINGLETON SET</h2>
+<p>A set which has only one element is called singleton set. For example, $A = \{ \text{Mangla Dam} \}$, $B = \{ \text{Punjab} \}$, $C = \{ \text{The Ravi} \}$.</p>
+<h2>8.5. FINITE AND INFINITE SETS</h2>
+<p>A set is finite if it contains a specific number of different elements that is while counting the members of the set the counting process comes to an end. Otherwise a set is infinite. Examples of finite sets are:</p>
+<p>$$\begin{aligned}
+A &amp;= \{ 1, 2, 5 \} &amp; B &amp;= \{ x, y, z, t, w, v \} &amp; C &amp;= \{ x / x \text{ is a river on the earth} \} \\
+D &amp;= \{ y / y \text{ is a month of the year} \} &amp; E &amp;= \{ z / z \text{ is a vowel in English alphabet} \}
+\end{aligned}$$</p>
+<p>Examples of infinite sets are:</p>
+<p>$$\begin{aligned}
+A &amp;= \{ 2, 4, 6, 8, ... \} &amp; B &amp;= \{ x / 0 \leq x \leq 2 \} &amp; C &amp;= \{ y / y \text{ is a star in the sky} \} \\
+D &amp;= \{ z / z \text{ is a point on a line} \} &amp; E &amp;= \{ w / w \text{ is an odd number} \}
+\end{aligned}$$</p>
+<h2>8.6. SUBSET</h2>
+<p>If every element of a set A is also an element of a set B, then A is called subset of B, and we shall write $A \subseteq B$ or $B \supseteq A$; read as &quot;A is contained in B&quot; or &quot;B contains A&quot;.</p>
+<p>If A is subset of B and B is subset of A, then we write</p>
+<p>$$A \subset B \quad B \subset A \quad \text{or} \quad A = B$$</p>
+<p>If A is subset of B, but A is not equal to B, we say that A is a proper subset of B. For example, if $A = \{ a, i, u \}$ and $B = \{ a, e, i, o, u \}$, then A is proper subset of B.</p>
+</main>
+<footer class="chrome">Generated by <code>tools/generate-digital.mjs</code> · Library: <a href="../../../../Books/Formatted/Statistics/book.json">Formatted Markdown</a> · <a href="../../../../Books/Raw/Statistics/Chapter-08-Set-Theory/0001.jpg">original scan</a></footer>
+</body>
+</html>

@@ -72,15 +72,21 @@ script — update it there when registering a new chapter (see `docs/PIPELINE.md
 
 ## generate-digital.mjs
 
-Generates the **HTML test edition** under `Books/Digital/` from the Formatted markdown —
-pages (`page-NNN.html`) plus navigation `index.html` at root, book, and chapter level.
+Generates the **HTML digital test pages** under `Books/Digital/` from the Formatted markdown.
 
+- **Curated whitelist ONLY (user directive, 2026-09-03):** the `TEST_PAGES` constant at the top
+  of the script lists exactly which pages get an HTML version — currently 8:
+  `M-1` imgs 1, 23, 25 · `S-1` imgs 3, 5, 6 · `S-2` imgs 5, 42. Do not extend it without the
+  user's OK. The script asserts the written set equals the whitelist exactly.
+- **Flat layout:** `Books/Digital/<Subject>/page-<BATCH>-<NNN>.html` (e.g. `page-M1-025.html`,
+  `page-S2-042.html`) — no chapter sub-folders, no `index.html` scaffolding. Batch codes
+  disambiguate same-numbered pages across chapters.
+- **Scan shown directly:** each page embeds the original scan image in a sticky pane (click →
+  full resolution) beside the formatted transcription; Split / Scan / Text view toggle;
+  stacked on mobile. KaTeX math with math-first extraction (GitHub-style precedence).
 - **Test purposes only** (user directive): the canonical library stays `Books/Formatted/`.
   Never hand-edit the generated HTML; re-run the script instead.
 - Requires `build-metadata.mjs` to have run first (consumes `book.json`/`chapter.json`).
-- Math-safe: LaTeX `$…$`/`$$…$$` segments are extracted before markdown parsing (GitHub-style
-  precedence) and restored HTML-escaped; KaTeX auto-renders client-side via CDN (raw LaTeX
-  remains readable offline).
 - Run: `bun tools/generate-digital.mjs` (regenerates `Books/Digital/` from scratch each run).
 
 ## verify-v4.mjs / check-digital-links.mjs — integrity verifiers

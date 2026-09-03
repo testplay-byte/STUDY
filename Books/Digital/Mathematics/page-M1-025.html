@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page 25 — Unit 01: Functions and Graphs · Textbook of Mathematics Grade 12</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.querySelector(".textcard"), {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+window.addEventListener("DOMContentLoaded", () => { 
+(function () {
+  var body = document.body;
+  var buttons = document.querySelectorAll('.viewtoggle button');
+  function setView(v) {
+    body.dataset.view = v;
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.view === v)); });
+  }
+  buttons.forEach(function (b) { b.addEventListener('click', function () { setView(b.dataset.view); }); });
+  setView('split'); // split everywhere: on mobile it stacks (scan on top, text below), keeping the scan directly visible
+})();
+ });
+</script>
+<style>
+  :root {
+    --ink:#24292f; --muted:#6e7278; --line:#e6e2da; --accent:#b45309; --accent-ink:#92400e;
+    --accent-soft:#fdf3e0; --bg:#f7f5f1; --card:#fffdf9; --scanbg:#efece6;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.75 Georgia,'Times New Roman',serif; }
+  .chrome { font-family: system-ui,-apple-system,'Segoe UI',sans-serif; }
+
+  /* ---- top bar ---- */
+  .topbar { position:sticky; top:0; z-index:20; background:rgba(255,253,249,.94); backdrop-filter:blur(6px);
+            border-bottom:1px solid var(--line); }
+  .topbar-inner { max-width:1400px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .brand { font-weight:700; font-size:14px; letter-spacing:.02em; color:var(--accent-ink); }
+  .brand .dot { color:var(--muted); font-weight:400; }
+  .viewtoggle { display:inline-flex; border:1px solid var(--line); border-radius:999px; overflow:hidden; background:#fff; }
+  .viewtoggle button { border:0; background:transparent; padding:6px 14px; font-size:12.5px; cursor:pointer; color:var(--muted); font-family:inherit; }
+  .viewtoggle button[aria-pressed="true"] { background:var(--accent); color:#fff; }
+  .topbar-links { margin-left:auto; display:flex; gap:14px; }
+  .topbar a { color:var(--accent); text-decoration:none; font-size:13px; border-bottom:1px dotted var(--accent); }
+  .banner { background:var(--accent-soft); border-bottom:1px solid var(--line); padding:6px 16px; font-size:12.5px;
+            color:var(--accent-ink); text-align:center; }
+
+  /* ---- header band ---- */
+  .band { max-width:1400px; margin:0 auto; padding:26px 20px 8px; }
+  .band .book { font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); }
+  .band h1 { margin:.15em 0 .2em; font-size:clamp(22px,3vw,32px); line-height:1.25; }
+  .badges { display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding-bottom:14px; }
+  .badge { font-size:12px; padding:3px 11px; border-radius:999px; background:#f1ede5; border:1px solid var(--line); color:#57534e; white-space:nowrap; }
+  .badge.dark { background:var(--ink); color:#fff; border-color:var(--ink); }
+  .badge.accent { background:var(--accent); color:#fff; border-color:var(--accent); }
+
+  /* ---- stage: scan + text ---- */
+  .stage { max-width:1400px; margin:0 auto; padding:8px 20px 40px; display:grid; grid-template-columns:minmax(320px,44%) 1fr; gap:28px; align-items:start; }
+  .scanpane { position:sticky; top:64px; }
+  .scanframe { background:var(--scanbg); border:1px solid var(--line); border-radius:10px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,.05); }
+  .scanframe img { display:block; width:100%; height:auto; border-radius:4px; }
+  .scanhint { font-size:12px; color:var(--muted); text-align:center; padding:8px 4px 2px; }
+  .textpane { min-width:0; }
+  .textcard { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:36px 44px; box-shadow:0 1px 3px rgba(0,0,0,.05); }
+
+  /* view states */
+  body[data-view="scan"] .textpane { display:none; }
+  body[data-view="scan"] .stage { grid-template-columns:1fr; }
+  body[data-view="scan"] .scanframe { max-width:820px; margin:0 auto; }
+  body[data-view="text"] .scanpane { display:none; }
+  body[data-view="text"] .stage { grid-template-columns:1fr; }
+
+  /* ---- rendered content ---- */
+  .textcard h1 { font-size:1.6em; line-height:1.3; border-bottom:2px solid var(--line); padding-bottom:.4em; margin-top:0; }
+  .textcard h2 { font-size:1.28em; border-bottom:1px solid var(--line); padding-bottom:.3em; margin-top:1.8em; }
+  .textcard h3 { font-size:1.08em; margin-top:1.5em; }
+  .textcard blockquote { margin:1em 0; padding:.6em 1em; border-left:4px solid var(--accent); background:#fdf8ec; border-radius:0 6px 6px 0; color:#57534e; font-size:.95em; }
+  .textcard blockquote p { margin:0; }
+  .textcard table { border-collapse:collapse; width:100%; margin:1.2em 0; font-size:.92em; display:block; overflow-x:auto; }
+  .textcard th, .textcard td { border:1px solid var(--line); padding:6px 10px; text-align:left; vertical-align:top; }
+  .textcard th { background:#f5f1e8; font-family:system-ui,sans-serif; font-size:.85em; text-transform:uppercase; letter-spacing:.03em; }
+  .textcard tbody tr:nth-child(even) { background:#faf7f1; }
+  .textcard code { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.88em; background:#f1ede5; padding:1px 5px; border-radius:4px; }
+  .textcard .katex-display { overflow-x:auto; overflow-y:hidden; padding:4px 0; }
+
+  /* ---- footer ---- */
+  footer { text-align:center; color:var(--muted); font-size:12px; padding:18px 16px 30px; }
+  footer a { color:var(--accent); }
+
+  @media (max-width:980px) {
+    .stage { grid-template-columns:1fr; }
+    .scanpane { position:static; }
+    .scanframe img { max-height:78vh; object-fit:contain; margin:0 auto; }
+    .textcard { padding:24px 20px; }
+  }
+  @media print {
+    .topbar, .banner, footer, .scanpane, .scanhint { display:none !important; }
+    .stage { display:block; padding:0; } .textcard { border:none; box-shadow:none; padding:0; }
+    body { background:#fff; }
+  }
+</style>
+</head>
+<body data-view="split">
+<div class="banner chrome"><strong>🧪 Digital format test</strong> · one of 8 curated test pages · generated from the canonical Markdown in <code>Books/Formatted/</code> · generated 2026-09-03</div>
+<header class="topbar chrome">
+  <div class="topbar-inner">
+    <span class="brand">STUDY <span class="dot">·</span> Digital</span>
+    <span class="viewtoggle" role="group" aria-label="View mode">
+      <button type="button" data-view="split" aria-pressed="true">Split</button>
+      <button type="button" data-view="scan" aria-pressed="false">Scan</button>
+      <button type="button" data-view="text" aria-pressed="false">Text</button>
+    </span>
+    <span class="topbar-links">
+      <a href="../../Formatted/Mathematics/Chapter-01-Functions-and-Graphs/page-025.md">Markdown source</a>
+      <a href="../../Raw/Mathematics/Unit-01-Functions-and-Graphs/0025.jpg">Full scan ↗</a>
+    </span>
+  </div>
+</header>
+<section class="band chrome">
+  <div class="book">Textbook of Mathematics Grade 12</div>
+  <h1>Unit 01: Functions and Graphs</h1>
+  <div class="badges"><span class="badge dark">batch M-1</span> <span class="badge accent">theory</span> <span class="badge">page image 25 / 36</span> <span class="badge">printed p. 31</span> <span class="badge">№ 25 in chapter</span> <span class="badge">figures: 2</span></div>
+</section>
+<main class="stage">
+  <aside class="scanpane" aria-label="Original scanned page">
+    <div class="scanframe">
+      <a href="../../Raw/Mathematics/Unit-01-Functions-and-Graphs/0025.jpg" target="_blank" rel="noopener" title="Open the full-resolution scan">
+        <img src="../../Raw/Mathematics/Unit-01-Functions-and-Graphs/0025.jpg" alt="Scanned textbook page — image 25 · printed page 31 · Unit 01: Functions and Graphs" loading="lazy">
+      </a>
+      <div class="scanhint">Original page scan · click to open full resolution</div>
+    </div>
+  </aside>
+  <article class="textpane">
+    <div class="textcard"><h1>Page 25 — Unit 1: Functions and Graphs</h1>
+<blockquote>
+<p>📄 Original scan: <a href="../../Raw/Mathematics/Unit-01-Functions-and-Graphs/0025.jpg">0025.jpg</a> · printed page 31</p>
+</blockquote>
+<h2>1.11 Domain and Range of Transcendental Functions through Graphs</h2>
+<p>If a weight is attached to a spring and the weight is pushed up or pulled down and released, it tends to rise and fall alternately. The weight is said to be oscillating in harmonic motion. If the position of the weight $y$ is graphed over time the result is the graph of a sine or cosine curve.</p>
+<p>[Figure F1]</p>
+<h3>1.11.1 Graph of $y = \sin\theta$ and $y = \cos\theta$</h3>
+<p>To graph the sine or cosine function, we use the horizontal axis for the values of $\theta$ expressed in either degrees or radians and vertical axis for the values of $\sin\theta$ or $\cos\theta$. Ordered pairs for these points are of the form $(\theta, \sin\theta)$ or $(\theta, \cos\theta)$.</p>
+<p><strong>Table — Values of $\sin\theta$ and $\cos\theta$</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">$\theta$</th>
+<th align="left">$0^\circ$</th>
+<th align="left">$15^\circ$</th>
+<th align="left">$30^\circ$</th>
+<th align="left">$45^\circ$</th>
+<th align="left">$60^\circ$</th>
+<th align="left">$75^\circ$</th>
+<th align="left">$90^\circ$</th>
+<th align="left">$105^\circ$</th>
+<th align="left">$120^\circ$</th>
+<th align="left">$135^\circ$</th>
+<th align="left">$150^\circ$</th>
+<th align="left">$165^\circ$</th>
+<th align="left">$180^\circ$</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">$\sin\theta$</td>
+<td align="left">0</td>
+<td align="left">0.3</td>
+<td align="left">0.5</td>
+<td align="left">0.7</td>
+<td align="left">0.87</td>
+<td align="left">0.97</td>
+<td align="left">1</td>
+<td align="left">0.97</td>
+<td align="left">0.87</td>
+<td align="left">0.7</td>
+<td align="left">0.5</td>
+<td align="left">0.3</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">$\cos\theta$</td>
+<td align="left">1</td>
+<td align="left">0.97</td>
+<td align="left">0.87</td>
+<td align="left">0.7</td>
+<td align="left">0.5</td>
+<td align="left">0.3</td>
+<td align="left">0</td>
+<td align="left">-0.3</td>
+<td align="left">-0.5</td>
+<td align="left">-0.7</td>
+<td align="left">-0.87</td>
+<td align="left">-0.97</td>
+<td align="left">-1</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">$\theta$</th>
+<th align="left">$195^\circ$</th>
+<th align="left">$210^\circ$</th>
+<th align="left">$225^\circ$</th>
+<th align="left">$240^\circ$</th>
+<th align="left">$255^\circ$</th>
+<th align="left">$270^\circ$</th>
+<th align="left">$285^\circ$</th>
+<th align="left">$300^\circ$</th>
+<th align="left">$315^\circ$</th>
+<th align="left">$330^\circ$</th>
+<th align="left">$345^\circ$</th>
+<th align="left">$360^\circ$</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">$\sin\theta$</td>
+<td align="left">-0.3</td>
+<td align="left">-0.5</td>
+<td align="left">-0.7</td>
+<td align="left">-0.87</td>
+<td align="left">-0.97</td>
+<td align="left">-1</td>
+<td align="left">-0.97</td>
+<td align="left">-0.87</td>
+<td align="left">-0.7</td>
+<td align="left">-0.5</td>
+<td align="left">-0.3</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">$\cos\theta$</td>
+<td align="left">-0.97</td>
+<td align="left">-0.87</td>
+<td align="left">-0.7</td>
+<td align="left">-0.5</td>
+<td align="left">-0.3</td>
+<td align="left">0</td>
+<td align="left">0.3</td>
+<td align="left">0.5</td>
+<td align="left">0.7</td>
+<td align="left">0.87</td>
+<td align="left">0.97</td>
+<td align="left">1</td>
+</tr>
+</tbody></table>
+<p>[Figure F2]</p>
+<p>From the behavior of graphs of sine and cosine functions, we can easily predict the domain and range of both functions which are:</p>
+<p><strong>Table — Function/Domain/Range</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Function</th>
+<th align="left">Domain</th>
+<th align="left">Range</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">$y = \sin\theta$</td>
+<td align="left">$R = \theta \in (-\infty, \infty) = -\infty &lt; \theta &lt; \infty$</td>
+<td align="left">$y \in [-1, 1] = -1 \leq y \leq 1$</td>
+</tr>
+<tr>
+<td align="left">$y = \cos\theta$</td>
+<td align="left">$R = \theta \in (-\infty, \infty) = -\infty &lt; \theta &lt; \infty$</td>
+<td align="left">$y \in [-1, 1] = -1 \leq y \leq 1$</td>
+</tr>
+</tbody></table>
+<h2>Figures on this page</h2>
+<h3>Figure F1 — Harmonic motion illustration (top right)</h3>
+<ul>
+<li><strong>Type:</strong> illustration</li>
+<li><strong>Caption/Number:</strong> (none printed)</li>
+<li><strong>Description:</strong> An illustration showing five stages (numbered 1 through 5) of a weight attached to a spring oscillating vertically. A semi-circular arc traces the path of the weight&#39;s movement from left to right.</li>
+<li><strong>Mathematical meaning:</strong> Demonstrates that the position of an object in simple harmonic motion follows a sinusoidal pattern over time.</li>
+</ul>
+<h3>Figure F2 — Graphs of y = sinθ and y = cosθ (center)</h3>
+<ul>
+<li><strong>Type:</strong> curve-plot</li>
+<li><strong>Caption/Number:</strong> (none printed)</li>
+<li><strong>Description:</strong> A Cartesian coordinate system with the horizontal axis representing $\theta$ in degrees (from $-360^\circ$ to $360^\circ$) and the vertical axis representing function values (from $-1$ to $1$). Two periodic wave curves are plotted: a black curve labeled &quot;$y = \sin x$&quot; starting at the origin $(0,0)$ and peaking at $(90^\circ, 1)$; and a red curve labeled &quot;$y = \cos x$&quot; starting at $(0,1)$ and crossing the x-axis at $(90^\circ, 0)$. Both curves show their characteristic wave patterns with maxima at $1$, minima at $-1$, and zeros at standard intervals.</li>
+<li><strong>Mathematical meaning:</strong> Visualizes the periodic nature, domain ($-\infty &lt; \theta &lt; \infty$), and range ($[-1, 1]$) of the sine and cosine functions over two full cycles.</li>
+</ul>
+</div>
+  </article>
+</main>
+<footer class="chrome">Digital format <strong>test page</strong> — not the canonical library · <code>tools/generate-digital.mjs</code> · <a href="../../Formatted/Mathematics/Chapter-01-Functions-and-Graphs/page-025.md">Markdown source</a> · <a href="../../Raw/Mathematics/Unit-01-Functions-and-Graphs/0025.jpg">Original scan</a></footer>
+</body>
+</html>

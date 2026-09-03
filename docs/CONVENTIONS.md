@@ -93,13 +93,21 @@ Rules:
 
 ### 1.5 Digital edition (HTML) — TEST PURPOSES ONLY (user directive, v4)
 
-- Location: `Books/Digital/<Subject>/Chapter-NN-<Title>/page-NNN.html` (+ generated
-  `index.html` navigation at Digital root, book, and chapter levels).
-- **Test purposes only.** The canonical library is `Books/Formatted/`; the HTML is a rendered
-  convenience copy. Never hand-edit generated HTML — change the markdown or the generator
-  (`tools/generate-digital.mjs`) and re-run.
-- Regeneration is always full (script wipes `Books/Digital/` and rebuilds from
-  `book.json`/`chapter.json` + page markdown). Run `build-metadata.mjs` first.
+- **Scope is a curated whitelist (user directive, 2026-09-03):** `Books/Digital/<Subject>/`
+  holds the digital test pages DIRECTLY — **no chapter sub-folders, no `index.html`
+  scaffolding, and no per-page generation**. Only the user-selected test pages exist:
+  `M-1` imgs 1, 23, 25 · `S-1` imgs 3, 5, 6 · `S-2` imgs 5, 42 (8 files total).
+- File naming: `page-<BATCH>-<NNN>.html` (batch code without the dash, e.g. `page-M1-025.html`,
+  `page-S2-042.html`) — batch codes disambiguate same-numbered pages across chapters
+  (S-1 p5 vs S-2 p5) and match how the user refers to chapters.
+- **Each digital page shows the original scan image directly** (sticky scan pane, click for
+  full resolution) beside the properly formatted transcription (KaTeX math), with a
+  Split / Scan / Text view toggle; stacked scan-on-top layout on mobile.
+- **Test purposes only.** The canonical library is `Books/Formatted/`. Never hand-edit
+  generated HTML — change `tools/generate-digital.mjs` (its `TEST_PAGES` whitelist is the
+  scope of truth) and re-run. Adding pages beyond the whitelist requires the user's OK.
+- Regeneration is always full (the script wipes `Books/Digital/` and rebuilds exactly the
+  whitelist). Run `build-metadata.mjs` first.
 - Math renders via KaTeX (CDN); LaTeX segments are pre-extracted before markdown parsing so
   subscripts/underscores survive intact (GitHub-style math-first precedence).
 

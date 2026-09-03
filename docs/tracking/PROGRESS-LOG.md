@@ -42,3 +42,18 @@
   dashboard design (mirror the Raw/Formatted/Digital browsing model).
 - **Next suggested:** same as before — ask exam target/date, current chapter, weak topics;
   optionally gather user feedback on the Digital test edition reading experience.
+
+### 2026-09-03 — Digital format feedback (user review round 2)
+- **Context:** User reviewed the v4 library (structure approved: "the structure was good and
+  exactly how I wanted it to be") but rejected the first Digital build: it generated HTML for
+  all 112 pages inside mirrored chapter folders. Directive: Digital is for TESTING the format
+  — only 8 user-selected pages, no extra folders, and the original scan images must be shown
+  directly in the pages.
+- **Observations:** User iterates smallest-first on presentation features (8 test pages before
+  any rollout) and wants the physical scan visible alongside anything digital — trust in the
+  printed page remains the anchor. Consistent with earlier behavior (validated test pages
+  before mass conversion; rejected folder splits).
+- **Profile changes:** Preference recorded for the future dashboard design: minimal curated
+  scope, scan-first presentation, user approves scope before generation.
+- **Next suggested:** Collect the user's verdict on the 8 test pages (layout, Split/Scan/Text
+  views, typography, math rendering) and only then discuss wider rollout or dashboard work.

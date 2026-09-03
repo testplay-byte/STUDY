@@ -1,6 +1,6 @@
 # Master Plan — Study Helper Planner
 
-> Living document. Updated at the end of every phase. Last updated: **Phase 4 (structure v4) COMPLETE — 2026-09-03**.
+> Living document. Updated at the end of every phase. Last updated: **Phase 4b (digital test pages) COMPLETE — 2026-09-03**.
 
 ## North Star
 
@@ -92,15 +92,36 @@ browsable book-by-book.
       lines now `../../../Raw/<Subject>/<Chapter-Name>/NNNN.jpg`; all 112 pages byte-verified
       against git HEAD (v3) + rewrites by `tools/verify-v4.mjs` — ALL GREEN
 - [x] **`Books/Digital/` HTML test edition** (user: test purposes only) — `tools/generate-digital.mjs`
-      renders every page as HTML (KaTeX math, math-first extraction to survive markdown
-      emphasis rules) + `index.html` navigation at Digital root / book / chapter levels;
-      112/112 pages + 8 indexes; all 1460 relative links verified by `tools/check-digital-links.mjs`
+      renders the curated test pages as HTML (KaTeX math, math-first extraction to survive
+      markdown emphasis rules); scope refined after user review — see Phase 4b
 - [x] **Metadata regenerated** — `book.json` (structure_version v4, `raw_root`, `html_edition`,
       per-part `raw_folder`) + `chapter.json` ×5 + `indexes/{mathematics,statistics}.md`
 - [x] **Docs & tools updated** — CONVENTIONS v4 (+changelog), PIPELINE, PLAN, README, AGENTS,
       STATUS, tools/README, prompt.txt (v4 path examples), prompts changelog
 - [x] Migration tooling kept for audit trail: `tools/migrate-v4.mjs`, `tools/fix-v4-casing.mjs`
 - [x] Pushed to GitHub
+
+## Phase 4b — Digital format test pages (user-reviewed scope) ✅ (2026-09-03)
+
+User review of the first Digital build: structure was right, but the digital folder must NOT
+mirror every page — it exists to test what the digital format should look like.
+
+- [x] Removed all Digital chapter sub-folders, `index.html` scaffolding and the 104 extra
+      page files — `Books/Digital/<Subject>/` now holds the HTML files DIRECTLY
+- [x] Exactly **8 user-selected test pages** (`M-1` imgs 1, 23, 25 · `S-1` imgs 3, 5, 6 ·
+      `S-2` imgs 5, 42) named `page-<BATCH>-<NNN>.html` (`page-M1-025.html`, `page-S2-042.html`, …);
+      batch codes disambiguate same-numbered pages (S-1 p5 vs S-2 p5) and match the user's
+      own chapter naming ("Chapter 1" = S-1, "Chapter 2" = S-2)
+- [x] **Scan shown directly in the page** (user directive "directly show the images there"):
+      sticky scan pane at full quality (click → full-resolution JPG) beside the formatted
+      transcription; Split / Scan / Text view toggle; stacked scan-on-top on mobile
+- [x] KaTeX math (math-first extraction), identity header (book · chapter · batch · printed
+      page · position in chapter · figures), links to the Markdown source + full scan
+- [x] `TEST_PAGES` whitelist is the scope of truth in `tools/generate-digital.mjs` — the
+      script asserts the written set equals the whitelist exactly (adding pages needs the user)
+- [x] All 8 pages browser-verified: desktop + mobile widths, KaTeX rendering, scan images
+      loading, view toggle, zero console errors; `check-digital-links.mjs` ALL RESOLVE
+- [x] Docs synced (CONVENTIONS §1.5, README, STATUS, tools/README); pushed to GitHub
 
 ## Phase 5 — More books/chapters (ready, awaiting material)
 

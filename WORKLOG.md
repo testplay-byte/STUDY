@@ -341,3 +341,39 @@ Stage Summary:
 - Batch codes M-0/M-1/S-0/S-1/S-2 remain the permanent join key across all three branches (frontmatter + book.json/chapter.json record folder + raw_folder)
 - Content untouched: 112/112 pages byte-identical to v3 except intended path/field rewrites; 109 figures, printed offsets, quirks all preserved
 - Pipeline for the future: build-metadata.mjs → generate-digital.mjs → verify-v4.mjs + check-digital-links.mjs must all pass before any push
+
+---
+Task ID: 7-v4b (addendum)
+Agent: coordinator (Z.ai main)
+Task: verify-v4 robustness fix after the v4 commit landed
+
+Work Log:
+- Re-running bun tools/verify-v4.mjs after commit 69752a6 failed (0/112 verified): the script
+  compared pages against git show HEAD:books/... but v4 was now HEAD, so old v3 paths only
+  exist in HEAD~2 (377be6e)
+- Fixed: gitShowV3() walks HEAD, HEAD~1 … HEAD~8 until the old path resolves — verifier now
+  usable from any future HEAD
+- Re-run: ALL GREEN 112/112; committed & pushed as 129a342
+
+Stage Summary:
+- verify-v4.mjs is now a permanent CI-style gate (baseline located by history walk, not a
+  fixed rev); verified state: 69752a6 + 129a342 on origin/main
+
+---
+Task ID: 8-digital-scope
+Agent: coordinator (Z.ai main)
+Task: Digital edition scope correction per user review — curated 8 test pages only, flat in subject folders, scan images shown directly in the pages
+
+Work Log:
+- Processed user review: v4 structure approved ("exactly how I wanted it"), but Digital must NOT generate HTML for every page nor mirror chapter folders; only 8 named test pages; the original scan images must be shown directly in the digital pages
+- Interpreted the user's page list (his "Chapter 1"/"Chapter 2" = S-1/S-2): M-1 imgs 1, 23, 25 · S-1 imgs 3, 5, 6 · S-2 imgs 5, 42 → 8 HTML files; "page number 1" of the math book resolved to M-1 img 1 (Unit 01 opener — the only math chapter, consistent with his stats list starting at S-1; flagged in the report)
+- tools/generate-digital.mjs rewritten: TEST_PAGES whitelist is the scope of truth; output flat at Books/Digital/<Subject>/page-<BATCH>-<NNN>.html (batch code disambiguates S-1 p5 vs S-2 p5 and matches the user's own S1/S2 vocabulary); script asserts written set == whitelist exactly (wipes Books/Digital/ first — removed all chapter folders, 8 old index.html files, and the 104 non-test pages)
+- New page design ("properly formatted, properly thought-out"): sticky scan pane showing the original page image directly (click → full-resolution JPG) beside the KaTeX-formatted transcription; Split / Scan / Text view toggle (aria-pressed buttons, no deps); identity header (book · chapter label · badges: batch, content type, page image n/N, printed page, position in chapter, figures); links to Markdown source + full scan; warm paper palette (no blue/indigo); print = text only
+- Fixes during build: book.json parts expose raw_folder (not rawFolder) → resolution corrected; body's embedded scan link (3-ups, md-relative) rewritten to 2-ups for the new page depth (8 broken links caught by check-digital-links, then ALL RESOLVE 168/168); mobile default view changed text→split so the scan stays directly visible (stacked scan-on-top)
+- Browser verification (agent-browser, all 8 pages): image naturalWidth > 0, KaTeX rendered (18–62 nodes/page), toggle works both directions, no console errors; desktop split + 390px mobile screenshots reviewed (M-1 25 trig tables, S-2 42 MCQ+answers, M-1 1 opener with UNIT-01 art); no horizontal overflow
+- Docs synced: CONVENTIONS §1.5 rewritten (whitelist scope, flat naming, scan-first policy), README (tree + design rules + start-here), STATUS (Phase 4b, inventory line "8 curated .html digital test pages"), PLAN (Phase 4b section), tools/README (generate-digital section), tracking/PROGRESS-LOG entry
+
+Stage Summary:
+- Books/Digital/ = exactly 8 files: Mathematics/{page-M1-001,page-M1-023,page-M1-025}.html + Statistics/{page-S1-003,page-S1-005,page-S1-006,page-S2-005,page-S2-042}.html — nothing else (no folders beyond the two subject folders, no indexes)
+- Digital format proposal ready for the user's verdict: scan shown directly + formatted text, three view modes; canonical library untouched (Books/Formatted still 112/112, verify-v4 still ALL GREEN)
+- Whitelist is enforced in tooling: extending Digital beyond the 8 pages requires editing TEST_PAGES (and the user's OK)

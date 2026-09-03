@@ -17,7 +17,7 @@ every page traceable to its raw scan. Full status: [`STATUS.md`](STATUS.md).
 | You are… | Read |
 |----------|------|
 | **An AI agent** (new session / fresh sandbox) | [`AGENTS.md`](AGENTS.md) — complete onboarding, then `STATUS.md` → `docs/` |
-| The user (browsing) | `indexes/` for page tables, `Books/Formatted/` for content, `Books/Digital/index.html` for the HTML test edition, `STATUS.md` for progress |
+| The user (browsing) | `indexes/` for page tables, `Books/Formatted/` for content, `Books/Digital/` for the 8 HTML test pages, `STATUS.md` for progress |
 | Building tooling / the web dashboard | `Books/Formatted/<Subject>/book.json` + `Books/Formatted/<Subject>/<Chapter>/chapter.json` (generated, stable contracts) |
 
 ## 📚 Library registry
@@ -61,9 +61,10 @@ STUDY/
 │   │       ├── Chapter-08-Set-Theory/               ← S-1 · 10 pages + chapter.json
 │   │       └── Chapter-09-Probability/              ← S-2 · 50 pages + chapter.json
 │   └── Digital/                ← HTML TEST EDITION (test purposes only, generated)
-│       ├── index.html          ← navigation (root → books → chapters → pages)
-│       ├── Mathematics/…       ← same Chapter-NN folders, page-NNN.html files
-│       └── Statistics/…
+│       ├── Mathematics/        ← page-M1-001/023/025.html (curated test pages ONLY)
+│       └── Statistics/         ← page-S1-003/005/006.html · page-S2-005/042.html
+│                                  (each page shows the original scan directly + the formatted
+│                                   transcription, with Split / Scan / Text views)
 ├── indexes/                    ← mathematics.md · statistics.md (generated page tables)
 └── tools/                      ← convert-page.mjs · build-metadata.mjs · generate-digital.mjs
                                   · verify-v4.mjs · check-digital-links.mjs · prompt.txt
@@ -74,8 +75,9 @@ STUDY/
   exercise & section identity lives in each page's frontmatter and in `chapter.json`.
 - **v4:** `Books/` splits the library into **Raw** (original chapter names, immutable scans),
   **Formatted** (uniform numbered chapters `Chapter-NN-<Title>`, front matter = Chapter 00)
-  and **Digital** (HTML test edition mirroring Formatted). The batch code (M-0…S-2) is the
-  permanent join key across all three branches.
+  and **Digital** (a *curated set of 8 HTML test pages* — scan shown directly beside the
+  formatted transcription; explicitly test purposes only, never the whole library). The batch
+  code (M-0…S-2) is the permanent join key across all three branches.
 
 ## 🔁 Digitization pipeline (summary)
 

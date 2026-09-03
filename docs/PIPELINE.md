@@ -86,8 +86,10 @@ Before any mass conversion:
 3. Integrity sweep: frontmatter complete on every file; `$` balance; `figures_count` ==
    F-blocks; every `source_image` resolves; no page uses a sub-folder.
 4. `bun tools/build-metadata.mjs` (regenerates book.json / chapter.json / indexes).
-5. `bun tools/generate-digital.mjs` (rebuilds the Books/Digital HTML test edition).
-6. `bun tools/verify-v4.mjs` && `bun tools/check-digital-links.mjs` — must be ALL GREEN.
+5. Digital replica pages (if this batch adds any — user-approved whitelist only) are
+   **hand-typeset**, not generated: crop figures with `python3 tools/crop-figure.py`, write
+   the page per CONVENTIONS §1.5, then `bun tools/check-digital-test.mjs` → ALL GREEN 8/8.
+6. `bun tools/verify-v4.mjs` && `bun tools/check-digital-test.mjs` — must be ALL GREEN.
 7. Update `STATUS.md`, `README.md` (counts), `docs/PLAN.md` (checklist), `WORKLOG.md`
    (final section), then **commit + push**.
 
@@ -111,9 +113,11 @@ bun tools/convert-page.mjs \
 # regenerate all metadata + indexes after any page change
 bun tools/build-metadata.mjs
 
-# rebuild the Digital HTML test edition, then verify everything
-bun tools/generate-digital.mjs
-bun tools/verify-v4.mjs && bun tools/check-digital-links.mjs
+# after any Digital replica page add/edit: verify the 8-page whitelist + links + assets
+bun tools/check-digital-test.mjs
+
+# integrity sweep (both gates must be ALL GREEN before any push)
+bun tools/verify-v4.mjs && bun tools/check-digital-test.mjs
 ```
 
 `convert-page.mjs` flags: `--thinking` for very dense math pages; auto-continue handles

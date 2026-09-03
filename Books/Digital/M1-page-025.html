@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit 01 · Page 31 — Functions and Graphs · Digital Edition</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.body, {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root{
+    --rib-a:#2293fb; --rib-b:#0167ef; --rib-c:#0153d6;
+    --orange:#f26a0a; --orange-2:#f7a233;
+    --lbl:#1560d0; --maroon:#5e0000; --rust:#761600; --kf:#ac0000;
+    --ink:#16130f; --muted:#6d675e; --paper:#ffffff; --back:#e8e4dc;
+  }
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  body{ margin:0; background:var(--back); color:var(--ink);
+        font:16.5px/1.85 Georgia,'Times New Roman',serif; }
+
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+            overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+
+  /* ---------- slim test-edition toolbar (outside the page) ---------- */
+  .toolbar{ font:12.5px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif; color:#8a8377;
+            text-align:center; padding:8px 12px 10px; }
+  .toolbar a{ color:#8a8377; text-decoration:underline; text-underline-offset:2px; }
+  .toolbar a:hover{ color:var(--kf); }
+  .toolbar .sep{ margin:0 8px; color:#c9c2b4; }
+
+  /* ---------- the digital page ---------- */
+  .book-page{ max-width:880px; margin:0 auto 14px; background:var(--paper);
+              box-shadow:0 2px 6px rgba(60,50,30,.14), 0 12px 34px rgba(60,50,30,.10); }
+
+  /* top unit ribbon */
+  .page-ribbon{ position:relative; margin:0; background:linear-gradient(180deg,var(--rib-a) 0%,var(--rib-b) 58%,var(--rib-c) 100%);
+                color:#fff; text-align:center; padding:12px 64px 11px;
+                font:700 15px/1.2 'Trebuchet MS','Arial Narrow',system-ui,sans-serif;
+                letter-spacing:.14em; text-transform:uppercase;
+                box-shadow:inset 0 -4px 0 rgba(0,20,60,.22); }
+  .page-ribbon::before,.page-ribbon::after{ content:""; position:absolute; top:0; bottom:0; width:58px;
+                background:linear-gradient(180deg,var(--orange-2),var(--orange)); }
+  .page-ribbon::before{ left:0; clip-path:polygon(0 0,100% 0,26% 100%,0 100%); }
+  .page-ribbon::after{ right:0; clip-path:polygon(0 0,100% 0,100% 100%,74% 100%); }
+
+  .page-body{ padding:34px 52px 30px; }
+
+  /* ---------- typography ---------- */
+  p{ margin:0 0 14px; text-align:justify; }
+  .lbl{ font-weight:700; color:var(--lbl); }
+  .lbl-line{ font-weight:700; color:var(--lbl); margin:2px 0 8px; }
+
+  ul.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ul.plain li{ margin-bottom:8px; padding-left:.35em; text-align:justify; }
+
+  /* (i)/(ii) enumerations with hanging indent */
+  .it{ padding-left:2.3em; text-indent:0; margin:0 0 10px; text-align:justify; }
+  .it .ro{ display:inline-block; width:2.3em; margin-left:-2.3em; font-style:normal; }
+
+  /* indented continuation lines under an (i) item */
+  .cont{ margin:0 0 10px 2.3em; text-align:justify; }
+  .cont-2{ margin:0 0 10px 3.6em; text-align:justify; }
+
+  /* display equations, left-aligned like the book */
+  .eq{ margin:2px 0 8px 5.2em; overflow-x:auto; }
+  .eq .katex-display{ margin:0; text-align:left; }
+  .eq .katex-display>.katex{ text-align:left; }
+  .eqtag{ display:inline-block; margin-left:1.6em; }
+
+  /* ---------- Key Facts callout (red box) ---------- */
+  .keyfacts{ float:right; width:39%; min-width:240px; margin:6px 0 16px 26px;
+             border:2.5px solid var(--kf); background:#fff; padding:16px 14px 10px 58px;
+             position:relative; }
+  .keyfacts .tab{ position:absolute; top:-13px; right:12px; background:var(--kf); color:#fff;
+                  font:700 12.5px/1.6 system-ui,sans-serif; letter-spacing:.03em; padding:1px 12px; }
+  .keyfacts .icon{ position:absolute; left:-17px; top:50%; transform:translateY(-50%);
+                   width:47px; height:auto; }
+  .keyfacts p{ margin:0; font-size:15.5px; line-height:1.8; }
+
+  /* ---------- figures ---------- */
+  .fig{ margin:16px auto 20px; text-align:center; }
+  .fig img{ max-width:100%; height:auto; }
+  .fig figcaption{ font:12.5px/1.5 system-ui,sans-serif; color:#7a7368; margin-top:7px; }
+  .fig.sm{ max-width:330px; }
+
+  /* ---------- data tables ---------- */
+  table.tbl{ border-collapse:collapse; margin:16px auto 20px; font-size:15.5px; line-height:1.55; }
+  table.tbl th, table.tbl td{ border:1.4px solid #2b2723; padding:6px 12px; text-align:center; }
+  table.tbl th{ font-weight:700; }
+  table.tbl .hrow th{ padding:5px 10px; }
+  table.tbl.wide{ width:100%; }
+  table.tbl td.lead{ font-weight:700; white-space:nowrap; }
+
+  /* ---------- bottom page ribbon ---------- */
+  .page-foot{ position:relative; margin-top:26px; background:linear-gradient(180deg,var(--rib-a) 0%,var(--rib-b) 62%,var(--rib-c) 100%);
+              color:#fff; display:flex; align-items:center; justify-content:space-between;
+              padding:9px 74px; font:700 12.5px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif;
+              letter-spacing:.06em; box-shadow:inset 0 3px 0 rgba(0,20,60,.16); }
+  .page-foot::before,.page-foot::after{ content:""; position:absolute; top:0; bottom:0; width:64px;
+              background:linear-gradient(180deg,var(--orange-2),var(--orange)); }
+  .page-foot::before{ left:0; clip-path:polygon(0 0,100% 0,26% 100%,0 100%); }
+  .page-foot::after{ right:0; clip-path:polygon(0 0,100% 0,100% 100%,74% 100%); }
+  .page-foot .no{ font-size:17px; letter-spacing:0; }
+
+  /* ---------- colophon ---------- */
+  .colophon{ max-width:880px; margin:0 auto; padding:2px 18px 30px; text-align:center;
+             font:12px/1.6 system-ui,sans-serif; color:#98917f; }
+  .colophon code{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11px; }
+
+  @media (max-width:720px){
+    .page-body{ padding:22px 18px 20px; }
+    .page-ribbon{ padding:10px 44px; font-size:12px; letter-spacing:.09em; }
+    .page-ribbon::before,.page-ribbon::after{ width:34px; }
+    .page-foot{ padding:8px 44px; }
+    .page-foot::before,.page-foot::after{ width:36px; }
+    .keyfacts{ float:none; width:100%; min-width:0; margin:14px 0 16px; padding:18px 14px 10px 56px; }
+    .keyfacts .icon{ left:-12px; }
+    .eq{ margin-left:2.6em; }
+    body{ font-size:15.5px; }
+  }
+  @media print{
+    .toolbar,.colophon{ display:none; }
+    body{ background:#fff; }
+    .book-page{ box-shadow:none; max-width:none; }
+  }
+
+  /* ---------- content-specific additions (page 025) ---------- */
+  h2.sec{ color:var(--maroon); font-size:21.5px; line-height:1.45; font-weight:700; margin:0 0 16px; }
+  h3.sub{ color:var(--lbl); font-size:17.5px; line-height:1.5; font-weight:700; margin:20px 0 10px; }
+  .cf::after{ content:""; display:block; clear:both; }
+  .fig.fr{ float:right; width:52%; min-width:280px; margin:4px 0 12px 26px; }
+  .tscroll{ overflow-x:auto; }
+  table.tbl.trig{ width:100%; font-size:12.5px; }
+  table.tbl.trig th, table.tbl.trig td{ padding:5px 3px; }
+  table.tbl.trig .katex{ font-size:1.08em; }
+  table.tbl.dr{ width:96%; }
+  table.tbl.dr td{ padding:10px 16px; }
+  @media (max-width:720px){
+    .fig.fr{ float:none; width:88%; min-width:0; margin:12px auto 16px; }
+    h2.sec{ font-size:18px; }
+  }
+</style>
+</head>
+<body>
+<p class="toolbar"><strong>STUDY · Digital test edition</strong><span class="sep">|</span>Unit 01 — Functions and Graphs<span class="sep">|</span>page 25 (printed 31)<span class="sep">|</span><a href="../Raw/Mathematics/Unit-01-Functions-and-Graphs/0025.jpg">original scan ↗</a><span class="sep">|</span><a href="../Formatted/Mathematics/Chapter-01-Functions-and-Graphs/page-025.md">markdown source ↗</a></p>
+
+<div class="book-page">
+  <header class="page-ribbon">Unit-01: Functions and Graphs</header>
+
+  <main class="page-body">
+    <h1 class="sr-only">Unit 01 · Page 31 (scan 25) — section 1.11 Domain and Range of Transcendental Functions through Graphs; subsection 1.11.1 Graph of y = sinθ and y = cosθ with value tables</h1>
+
+    <h2 class="sec">1.11 Domain and Range of Transcendental Functions through Graphs</h2>
+
+    <div class="cf">
+      <figure class="fig fr">
+        <img src="assets/M1-025-fig-springs.png" alt="Illustration: a weight attached to a spring oscillating through five numbered positions (1 to 5) along a curved path">
+      </figure>
+      <p>If a weight is attached to a spring and the weight is pushed up or pulled down and released, it tends to rise and fall alternately. The weight is said to be oscillating in harmonic motion. If the position of the weight $y$ is graphed over time the result is the graph of a sine or cosine curve.</p>
+    </div>
+
+    <h3 class="sub">1.11.1 Graph of $y = \sin\theta$ and $y = \cos\theta$</h3>
+
+    <p>To graph the sine or cosine function, we use the horizontal axis for the values of $\theta$ expressed in either degrees or radians and vertical axis for the values of $\sin\theta$ or $\cos\theta$. Ordered pairs for these points are of the form $(\theta, \sin\theta)$ or $(\theta, \cos\theta)$.</p>
+
+    <div class="tscroll">
+    <table class="tbl trig">
+      <tr class="hrow">
+        <th>$\theta$</th><th>0°</th><th>15°</th><th>30°</th><th>45°</th><th>60°</th><th>75°</th><th>90°</th><th>105°</th><th>120°</th><th>135°</th><th>150°</th><th>165°</th><th>180°</th>
+      </tr>
+      <tr><td class="lead">$\sin\theta$</td><td>0</td><td>0.3</td><td>0.5</td><td>0.7</td><td>0.87</td><td>0.97</td><td>1</td><td>0.97</td><td>0.87</td><td>0.7</td><td>0.5</td><td>0.3</td><td>0</td></tr>
+      <tr><td class="lead">$\cos\theta$</td><td>1</td><td>0.97</td><td>0.87</td><td>0.7</td><td>0.5</td><td>0.3</td><td>0</td><td>-0.3</td><td>-0.5</td><td>-0.7</td><td>-0.87</td><td>-0.97</td><td>-1</td></tr>
+    </table>
+    </div>
+
+    <div class="tscroll">
+    <table class="tbl trig">
+      <tr class="hrow">
+        <th>$\theta$</th><th>195°</th><th>210°</th><th>225°</th><th>240°</th><th>255°</th><th>270°</th><th>285°</th><th>300°</th><th>315°</th><th>330°</th><th>345°</th><th>360°</th>
+      </tr>
+      <tr><td class="lead">$\sin\theta$</td><td>-0.3</td><td>-0.5</td><td>-0.7</td><td>-0.87</td><td>-0.97</td><td>-1</td><td>-0.97</td><td>-0.87</td><td>-0.7</td><td>-0.5</td><td>-0.3</td><td>0</td></tr>
+      <tr><td class="lead">$\cos\theta$</td><td>-0.97</td><td>-0.87</td><td>-0.7</td><td>-0.5</td><td>-0.3</td><td>0</td><td>0.3</td><td>0.5</td><td>0.7</td><td>0.87</td><td>0.97</td><td>1</td></tr>
+    </table>
+    </div>
+
+    <figure class="fig">
+      <img src="assets/M1-025-fig-sincos.png" alt="Graph on Cartesian axes from -360° to 360°: black curve y = sin x starting at the origin and peaking at 90°, red curve y = cos x starting at (0, 1) and crossing the axis at 90°">
+    </figure>
+
+    <p>From the behavior of graphs of sine and cosine functions, we can easily predict the domain and range of both functions which are:</p>
+
+    <div class="tscroll">
+    <table class="tbl dr">
+      <tr class="hrow"><th>Function</th><th>Domain</th><th>Range</th></tr>
+      <tr>
+        <td class="lead">$y = \sin\theta$</td>
+        <td>$R = \theta \in (-\infty, \infty) = -\infty &lt; \theta &lt; \infty$</td>
+        <td>$y \in [-1, 1] = -1 \leq y \leq 1$</td>
+      </tr>
+      <tr>
+        <td class="lead">$y = \cos\theta$</td>
+        <td>$R = \theta \in (-\infty, \infty) = -\infty &lt; \theta &lt; \infty$</td>
+        <td>$y \in [-1, 1] = -1 \leq y \leq 1$</td>
+      </tr>
+    </table>
+    </div>
+  </main>
+
+  <footer class="page-foot">
+    <span>GRADE 12</span>
+    <span class="no">31</span>
+    <span>National Book Foundation</span>
+  </footer>
+</div>
+
+<p class="colophon">Digital replica test page · typeset from <code>Books/Formatted/Mathematics/Chapter-01-Functions-and-Graphs/page-025.md</code> · figures cropped from the original scan · one of 8 curated format-test pages</p>
+</body>
+</html>

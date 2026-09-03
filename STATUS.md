@@ -1,14 +1,15 @@
 # STATUS — live snapshot
 
-> **Last updated: 2026-09-03** (structure v4 migration). Coordinator updates this after every
-> task. New agents: if reality differs from this file, trust reality, then fix this file.
+> **Last updated: 2026-09-03** (Phase 4c — digital replica test build). Coordinator updates
+> this after every task. New agents: if reality differs from this file, trust reality, then
+> fix this file.
 
 ## One-line state
 
 **Library v4 complete & pushed** — 112/112 pages digitized and organized in the three-branch
 `Books/` library (`Raw/` scans by original chapter name · `Formatted/` canonical markdown ·
-`Digital/` HTML test edition); docs/tracking/metadata systems in place; **ready for the next
-batch or study use**.
+`Digital/` 8 hand-typeset replica pages + figure crops); docs/tracking/metadata systems in
+place; **ready for the next batch or study use**.
 
 ## Library inventory
 
@@ -19,7 +20,7 @@ batch or study use**.
 | S-0 | statistics | `Statistics/Front-Matter` | `Statistics/Chapter-00-Front-Matter` | 9 | roman folios | — | ✅ digitized |
 | S-1 | statistics | `Statistics/Chapter-08-Set-Theory` | `Statistics/Chapter-08-Set-Theory` | 10 | 1–10 | =image | ✅ digitized |
 | S-2 | statistics | `Statistics/Chapter-09-Probability` | `Statistics/Chapter-09-Probability` | 50 | 11–60 | +10 | ✅ digitized |
-| | | | **Total** | **112** | | | **112 raw images ⇄ 112 .md pages · 8 curated .html digital test pages ✓** |
+| | | | **Total** | **112** | | | **112 raw images ⇄ 112 .md pages · 8 hand-typeset digital replica pages ✓** |
 
 Content mix: 32 theory · 28 worked-examples · 21 exercise · 16 front-matter · 12 mixed ·
 2 summary · 1 chapter-opener — with **109 figures** preserved as structured descriptions.
@@ -38,12 +39,23 @@ Content mix: 32 theory · 28 worked-examples · 21 exercise · 16 front-matter �
   for markdown (front matter = Chapter 00), `Books/Digital/` HTML test edition.
   112/112 pages byte-verified vs git HEAD through the migration (`tools/verify-v4.mjs`); all
   relative links verified (`tools/check-digital-links.mjs`); docs/tools/indexes updated.
-- Phase 4b (**this session**): **Digital scope refined per user review** — no chapter folders,
-  no per-page HTML, no index scaffolding. `Books/Digital/<Subject>/` now holds exactly the
-  8 user-selected test pages (`M-1` 1/23/25 · `S-1` 3/5/6 · `S-2` 5/42) named
-  `page-<BATCH>-<NNN>.html`; each page shows the original scan image directly (sticky pane,
-  click for full resolution) beside the formatted transcription, with Split/Scan/Text views.
-  All 8 browser-verified (desktop + mobile, KaTeX, zero console errors).
+- Phase 4b: **Digital scope refined per user review** — no chapter folders, no per-page HTML,
+  no index scaffolding; exactly the 8 user-selected test pages. *(Design superseded by
+  Phase 4c — the scan-pane pages were rejected.)*
+- Phase 4c (**this session**): **Digital replica test build — DONE.** User rejected the
+  generated scan-pane design (commit 26bc1c0) and directed true digital replicas of the
+  printed pages. Result: `Books/Digital/` holds exactly **8 FLAT hand-typeset HTML pages**
+  (`M1-page-001/023/025`, `S1-page-003/005/006`, `S2-page-005/042` — no subfolders, no index)
+  + `assets/` with 14 figure crops from the raw scans (new `tools/crop-figure.py`). Pages are
+  self-contained (inline CSS + KaTeX CDN `$`/`$$`), replicate per-book page furniture
+  (Mathematics: NBF Grade 12 blue ribbon/wedges + red Key-Facts callout; Statistics: cream
+  page, thin-ruled running header incl. the book's own "[Chapter 7]" misprint kept verbatim;
+  `S2-page-042` = MCQs 101–112 + full 112-answer ANSWERS grid as a real table). Obsolete
+  `generate-digital.mjs` + `check-digital-links.mjs` deleted; new gate
+  `tools/check-digital-test.mjs` (8-page whitelist, links, assets, KaTeX/`<main>`).
+  **Verification: check-digital-test ALL GREEN 8/8 (30 links, 14 assets) · verify-v4 ALL
+  GREEN 112/112 (Formatted untouched) · all 8 pages browser-verified (KaTeX renders,
+  figures load, no overflow @1280/390px, zero console errors).**
 
 ## Next actions (queue)
 
@@ -54,10 +66,10 @@ Content mix: 32 theory · 28 worked-examples · 21 exercise · 16 front-matter �
    frontmatter records: Ex 1.1 @ img 8 · 1.2 @ img 18 · 1.3 @ img 24 · 1.4 @ img 30 ·
    Review Exercise @ imgs 34–36. When info arrives: fix `exercise:`/`section:` frontmatter +
    rerun `build-metadata.mjs`. **Never re-split folders (v3 rule, still binding in v4).**
-3. **Digital test edition feedback (awaiting user):** the 8 curated pages (scan + formatted
-   text, Split/Scan/Text views) are the proposal for the digital format — user decides what
-   feels right before any wider rollout (the web dashboard, PLAN Phase 7, would be the
-   production version).
+3. **Digital replica feedback (awaiting user):** the 8 hand-typeset replica pages (real text,
+   KaTeX math, tables, figure crops, per-book page furniture) are the current format proposal
+   — user decides before any wider rollout (the web dashboard, PLAN Phase 7, would be the
+   production version). Adding pages beyond the 8 requires user approval.
 4. When the user starts studying: activate `docs/tracking/` (mastery map + progress log).
 5. Future build-out (user vision): web dashboard to browse pages/chapters/questions and track
    progress — data contracts (`book.json`/`chapter.json`) are ready.
@@ -68,8 +80,9 @@ Content mix: 32 theory · 28 worked-examples · 21 exercise · 16 front-matter �
   legitimate (no digit printed); do not invent numbers.
 - S-2 odd-page running headers misprint "[Chapter 7]" — chapter is 9 everywhere in data ✓
   (audited). Keep it that way.
-- `Books/Digital/` uses a KaTeX CDN — offline, math degrades to readable raw LaTeX (accepted
-  for a test edition; the dashboard will bundle KaTeX locally).
+- `Books/Digital/` pages use a KaTeX CDN — offline, math degrades to readable raw LaTeX
+  (accepted for a test edition; the dashboard will bundle KaTeX locally). Custom page CSS
+  must scope its selectors (bare `span { … }` rules shred KaTeX output — see CONVENTIONS §1.5).
 - Vision API rate-limits (~3 concurrent) — waves must run agents sequentially within each
   agent; expect 429 storms; convert-page.mjs backs off automatically.
 - Task-tool agents can die mid-wave (context deadlines) — coordinator re-scopes `-v2` runs to
@@ -81,5 +94,5 @@ Content mix: 32 theory · 28 worked-examples · 21 exercise · 16 front-matter �
   local-only, never committed.
 - Working clone lives at `/home/z/my-project/study-workspace/STUDY` (or re-clone per
   PIPELINE.md §0). Local shared agent log: `/home/z/my-project/worklog.md`.
-- Integrity commands (run from repo root): `bun tools/verify-v4.mjs` → ALL GREEN;
-  `bun tools/check-digital-links.mjs` → ALL LINKS RESOLVE.
+- Integrity commands (run from repo root): `bun tools/verify-v4.mjs` → ALL GREEN (112/112);
+  `bun tools/check-digital-test.mjs` → ALL GREEN (8/8 replica pages).

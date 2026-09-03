@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 08 · Page 6 — Set Theory · Basic Statistics Part-II · Digital Edition</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.body, {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root{
+    /* Basic Statistics Part-II (Sindh/Federal Board) — monochrome black-on-cream page,
+       thin full-width running-header rule; no coloured bands, no corner wedges */
+    --rib-a:#fffdf9; --rib-b:#fffdf9; --rib-c:#f8f3e9;
+    --ink:#1c1914; --rule:#2a251f; --hairline:#d9d2c2;
+    --lbl:#1c1914; --muted:#6d675e; --paper:#fffdf9; --back:#e8e4dc;
+  }
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  body{ margin:0; background:var(--back); color:var(--ink);
+        font:16.5px/1.85 Georgia,'Times New Roman',serif; }
+
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+            overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+
+  /* ---------- slim test-edition toolbar (outside the page) ---------- */
+  .toolbar{ font:12.5px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif; color:#8a8377;
+            text-align:center; padding:8px 12px 10px; }
+  .toolbar a{ color:#8a8377; text-decoration:underline; text-underline-offset:2px; }
+  .toolbar a:hover{ color:#4a4438; }
+  .toolbar .sep{ margin:0 8px; color:#c9c2b4; }
+
+  /* ---------- the digital page ---------- */
+  .book-page{ max-width:880px; margin:0 auto 14px; background:var(--paper);
+              box-shadow:0 2px 6px rgba(60,50,30,.14), 0 12px 34px rgba(60,50,30,.10); }
+
+  /* running header, exactly as printed (even pages: folio left · book title right) */
+  .page-ribbon{ display:flex; align-items:baseline; justify-content:space-between; gap:18px;
+                background:linear-gradient(180deg,var(--rib-a) 0%,var(--rib-b) 70%,var(--rib-c) 100%);
+                color:var(--ink); padding:14px 52px 10px;
+                border-bottom:2.5px solid var(--rule);
+                font:700 15px/1.3 'Trebuchet MS','Arial Narrow',Arial,sans-serif;
+                letter-spacing:.04em; }
+  .page-ribbon .no{ font-size:16px; letter-spacing:.02em; }
+
+  .page-body{ padding:30px 52px 26px; }
+
+  /* ---------- typography ---------- */
+  p{ margin:0 0 14px; text-align:justify; }
+  .lbl{ font-weight:700; color:var(--lbl); }
+  .lbl-line{ font-weight:700; color:var(--lbl); margin:2px 0 8px; }
+
+  /* "Example 8.6." — bold italic on its own printed line */
+  .exlab{ font-weight:700; font-style:italic; margin:22px 0 8px; }
+  .exlab.first{ margin-top:0; }
+
+  /* numbered (i)/(ii) items with hanging indent */
+  .it{ padding-left:2.6em; text-indent:0; margin:0 0 8px; text-align:justify; }
+  .it .ro{ display:inline-block; width:2.6em; margin-left:-2.6em; font-style:normal; }
+
+  /* items sharing one printed line (pairs) */
+  .run{ margin:0 0 10px; text-align:left; }
+  .run > span{ display:inline-block; margin-right:3.2em; white-space:nowrap; }
+
+  /* section heading: bold caps, black, as printed */
+  h2.sec{ font:700 16.5px/1.5 Georgia,'Times New Roman',serif; letter-spacing:.03em;
+          margin:20px 0 10px; }
+
+  /* algebra-of-sets law groups */
+  .lawname{ font-weight:700; margin:14px 0 4px; }
+  .lawline{ margin:0 0 6px 1.4em; text-align:left; display:flex; flex-wrap:wrap; align-content:flex-start; column-gap:2.4em; row-gap:2px; }
+  .lawline > span{ display:inline-block; white-space:nowrap; }
+
+  /* display equations, left-aligned like the book */
+  .eq{ margin:2px 0 8px 2.2em; overflow-x:auto; }
+  .eq .katex-display{ margin:0; text-align:left; }
+  .eq .katex-display>.katex{ text-align:left; }
+
+  /* ---------- figures ---------- */
+  .fig{ margin:14px auto 18px; text-align:center; }
+  .fig img{ max-width:100%; height:auto; }
+  .fig figcaption{ font:13.5px/1.55 Georgia,'Times New Roman',serif; color:var(--ink);
+                   margin-top:4px; }
+  .fig.tree{ max-width:560px; }
+  .clear{ clear:both; }
+
+  /* ---------- data tables ---------- */
+  table.tbl{ border-collapse:collapse; margin:16px auto 20px; font-size:15.5px; line-height:1.55; }
+  table.tbl th, table.tbl td{ border:1.4px solid var(--rule); padding:6px 12px; text-align:center; }
+  table.tbl th{ font-weight:700; }
+
+  /* ---------- bottom of page (book prints nothing here: quiet rule + folio) ---------- */
+  .page-foot{ border-top:1px solid var(--hairline); background:var(--paper);
+              color:var(--muted); display:flex; align-items:center; justify-content:center;
+              padding:8px 52px; font:12.5px/1.4 Georgia,serif; letter-spacing:.14em; }
+
+  /* ---------- colophon ---------- */
+  .colophon{ max-width:880px; margin:0 auto; padding:2px 18px 30px; text-align:center;
+             font:12px/1.6 system-ui,sans-serif; color:#98917f; }
+  .colophon code{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11px; }
+
+  @media (max-width:720px){
+    .page-body{ padding:20px 16px 16px; }
+    .page-ribbon{ padding:10px 16px 8px; font-size:12.5px; }
+    .page-foot{ padding:7px 16px; }
+    .eq{ margin-left:1em; }
+    .run > span{ margin-right:1.2em; }
+    .lawline{ column-gap:1.2em; }
+    body{ font-size:15.5px; }
+  }
+  @media print{
+    .toolbar,.colophon{ display:none; }
+    body{ background:#fff; }
+    .book-page{ box-shadow:none; max-width:none; }
+  }
+</style>
+</head>
+<body>
+<p class="toolbar"><strong>STUDY · Digital test edition</strong><span class="sep">|</span>Basic Statistics Part-II — Chapter 8: Set Theory<span class="sep">|</span>page 6 (printed 6)<span class="sep">|</span><a href="../Raw/Statistics/Chapter-08-Set-Theory/0006.jpg">original scan ↗</a><span class="sep">|</span><a href="../Formatted/Statistics/Chapter-08-Set-Theory/page-006.md">markdown source ↗</a></p>
+
+<div class="book-page">
+  <header class="page-ribbon"><span class="no">6</span><span>Basic Statistics Part-II (Federal Board)</span></header>
+
+  <main class="page-body">
+    <h1 class="sr-only">Chapter 8 Set Theory · printed page 6 (scan 6) — Example 8.6 with coin/die tree diagram (Figure-9), §8.20 Algebra of Sets, start of Example 8.7</h1>
+
+    <p class="exlab first">Example 8.6.</p>
+    <p>A coin is tossed and a die is rolled. Use a tree diagram to find the number of outcomes.</p>
+    <p><span class="lbl">Solution:</span> With the use of a tree diagram, the number of outcomes can be determined as shown in Figure-9.</p>
+
+    <figure class="fig tree">
+      <img src="assets/S1-006-fig-tree-coin-die.png" alt="Tree diagram: a root branches to H and T under Coin; each branches to 1–6 under Die; the outcomes (H,1)…(H,6) and (T,1)…(T,6) are listed under Outcomes">
+      <figcaption>Figure-9 — tree diagram: coin tossed, die rolled</figcaption>
+    </figure>
+
+    <h2 class="sec">8.20 ALGEBRA OF SETS</h2>
+    <p>Having defined the operations of union, intersection, difference and complementation for sets, we may formulate an &ldquo;algebra of sets&rdquo;. Many of the basic laws of set theory are analogous to the rules of algebra of real numbers.</p>
+
+    <p class="lawname">(1) Identity Laws</p>
+    <p class="lawline"><span>(i) $A \cup \phi = A$</span> <span>(ii) $A \cap \phi = \phi$</span> <span>(iii) $A \cup S = S$</span> <span>(iv) $A \cap S = A$</span></p>
+
+    <p class="lawname">(2) Idempotent Laws</p>
+    <p class="lawline"><span>(i) $A \cup A = A$</span> <span>(ii) $A \cap A = A$</span></p>
+
+    <p class="lawname">(3) Associative Laws</p>
+    <p class="lawline"><span>(i) $(A \cup B) \cup C = A \cup (B \cup C)$</span> <span>(ii) $(A \cap B) \cap C = A \cap (B \cap C) = A \cap B \cap C$</span></p>
+
+    <p class="lawname">(4) Commutative Laws</p>
+    <p class="lawline"><span>(i) $A \cup B = B \cup A$</span> <span>(ii) $A \cap B = B \cap A$</span></p>
+
+    <p class="lawname">(5) Distributive Laws</p>
+    <p class="lawline"><span>(i) $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$</span> <span>(ii) $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$</span></p>
+
+    <p class="lawname">(6) Complement Laws</p>
+    <p class="lawline"><span>(i) $A \cup \bar{A} = S$</span> <span>(ii) $A \cap \bar{A} = \phi$</span> <span>(iii) $\overline{(\bar{A})} = A$</span> <span>(iv) $A \cap \phi = \phi$</span></p>
+
+    <p class="lawname">(7) Demorgan's Laws</p>
+    <p class="lawline"><span>(i) $\overline{(A \cup B)} = \bar{A} \cap \bar{B}$</span> <span>(ii) $\overline{(A \cap B)} = \bar{A} \cup \bar{B}$</span></p>
+
+    <p class="exlab">Example 8.7.</p>
+    <p>If $S=\{0, 1, 2, 3, 4, 5, 7, 9, 10\}$, $A=\{1, 2, 3, 5, 9\}$, $B=\{3, 5, 7, 9, 10\}$ and $C=\{4, 7, 9, 10\}$. Show that:</p>
+    <p class="run"><span>(i) $(A \cup B) \cup C = A \cup (B \cup C)$</span> <span>(ii) $(A \cap B) \cap C = A \cap (B \cap C)$</span></p>
+    <p class="run"><span>(iii) $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$</span> <span>(iv) $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$</span></p>
+    <p class="run"><span>(v) $\overline{(A \cup B)} = \bar{A} \cap \bar{B}$</span> <span>(vi) $\overline{(A \cap B)} = \bar{A} \cup \bar{B}$</span></p>
+    <p class="run"><span>(vii) $(A \cap B) \cup (\bar{A} \cap B) = B$</span> <span>(viii) $A \cup (\bar{A} \cap B) = A \cup B$</span></p>
+
+    <p><span class="lbl">Solution:</span> Here, $S=\{0, 1, 2, 3, 4, 5, 7, 9, 10\}$, $A=\{1, 2, 3, 5, 9\}$, $B=\{3, 5, 7, 9, 10\}$ and $C=\{4, 7, 9, 10\}$. Therefore</p>
+  </main>
+
+  <footer class="page-foot">· 6 ·</footer>
+</div>
+
+<p class="colophon">Digital replica test page · typeset from <code>Books/Formatted/Statistics/Chapter-08-Set-Theory/page-006.md</code> · tree diagram cropped from the original scan <code>0006.jpg</code> · Basic Statistics Part-II, Chapter 8: Set Theory · Example 8.7 continues on printed page 7</p>
+</body>
+</html>

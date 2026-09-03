@@ -57,3 +57,24 @@
   scope, scan-first presentation, user approves scope before generation.
 - **Next suggested:** Collect the user's verdict on the 8 test pages (layout, Split/Scan/Text
   views, typography, math rendering) and only then discuss wider rollout or dashboard work.
+
+### 2026-09-03 — Digital rebuild v2: hand-typeset replica pages (user review round 3)
+- **Context:** User rejected the Phase 4b digital pages ("scan pane + plain-text
+  transcription", commit 26bc1c0). New directive: each Digital page must look like an actual
+  digital version of the original textbook page — a hand-typeset replica with real text,
+  KaTeX math, data tables and figure images cropped from the raw scans, with each book's
+  header/footer page furniture replicated. Subject sub-folders removed; 8 pages now sit FLAT
+  in `Books/Digital/` (`M1-page-001/023/025`, `S1-page-003/005/006`, `S2-page-005/042`) with
+  figure crops in `Digital/assets/`.
+- **Observations:** Third consecutive review round where the user strips away generated
+  scaffolding in favor of faithfulness to the printed artifact (rejected exercise folders →
+  flat chapters; rejected 112-page mirror → 8 test pages; rejected scan-viewer → typeset
+  replica). Strong preference signal: digital output should look like the book, including its
+  own typos and misprints (the "[Chapter 7]" running header on S-2 pages is kept verbatim).
+  Curation and scope control matter more than automation — no generator script anymore.
+- **Profile changes:** None to mastery (no study yet); presentation preference refined for
+  the future dashboard: replica-style typeset reading experience, scan/colophon traceability,
+  user approves scope before anything new is built.
+- **Next suggested:** Collect the user's verdict on the 8 replica pages (typography, math,
+  figures, page furniture). If approved, decide the production approach for a wider rollout
+  (dashboard, PLAN Phase 7); adding pages beyond the 8 requires explicit user approval.

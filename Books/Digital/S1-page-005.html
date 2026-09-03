@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 08 · Page 5 — Set Theory · Basic Statistics Part-II · Digital Edition</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.body, {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root{
+    /* Basic Statistics Part-II (Sindh/Federal Board) — monochrome black-on-cream page,
+       thin full-width running-header rule; no coloured bands, no corner wedges */
+    --rib-a:#fffdf9; --rib-b:#fffdf9; --rib-c:#f8f3e9;
+    --ink:#1c1914; --rule:#2a251f; --hairline:#d9d2c2;
+    --lbl:#1c1914; --muted:#6d675e; --paper:#fffdf9; --back:#e8e4dc;
+  }
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  body{ margin:0; background:var(--back); color:var(--ink);
+        font:16.5px/1.85 Georgia,'Times New Roman',serif; }
+
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+            overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+
+  /* ---------- slim test-edition toolbar (outside the page) ---------- */
+  .toolbar{ font:12.5px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif; color:#8a8377;
+            text-align:center; padding:8px 12px 10px; }
+  .toolbar a{ color:#8a8377; text-decoration:underline; text-underline-offset:2px; }
+  .toolbar a:hover{ color:#4a4438; }
+  .toolbar .sep{ margin:0 8px; color:#c9c2b4; }
+
+  /* ---------- the digital page ---------- */
+  .book-page{ max-width:880px; margin:0 auto 14px; background:var(--paper);
+              box-shadow:0 2px 6px rgba(60,50,30,.14), 0 12px 34px rgba(60,50,30,.10); }
+
+  /* running header, exactly as printed: title left · page no right · rule below */
+  .page-ribbon{ display:flex; align-items:baseline; justify-content:space-between; gap:18px;
+                background:linear-gradient(180deg,var(--rib-a) 0%,var(--rib-b) 70%,var(--rib-c) 100%);
+                color:var(--ink); padding:14px 52px 10px;
+                border-bottom:2.5px solid var(--rule);
+                font:700 15px/1.3 'Trebuchet MS','Arial Narrow',Arial,sans-serif;
+                letter-spacing:.04em; }
+  .page-ribbon .no{ font-size:16px; letter-spacing:.02em; }
+
+  .page-body{ padding:30px 52px 26px; }
+
+  /* ---------- typography ---------- */
+  p{ margin:0 0 14px; text-align:justify; }
+  .lbl{ font-weight:700; color:var(--lbl); }
+  .lbl-line{ font-weight:700; color:var(--lbl); margin:2px 0 8px; }
+
+  /* "Example 8.3." — bold italic on its own printed line */
+  .exlab{ font-weight:700; font-style:italic; margin:22px 0 8px; }
+  .exlab.first{ margin-top:0; }
+
+  /* numbered (i)/(ii) items with hanging indent */
+  .it{ padding-left:2.6em; text-indent:0; margin:0 0 8px; text-align:justify; }
+  .it .ro{ display:inline-block; width:2.6em; margin-left:-2.6em; font-style:normal; }
+  .it .ro.wide{ width:auto; min-width:2.6em; }
+
+  /* question items that share one printed line */
+  .run{ margin:0 0 10px; text-align:left; }
+  .run > span{ display:inline-block; margin-right:2em; white-space:nowrap; }
+
+  /* display equations, left-aligned like the book */
+  .eq{ margin:2px 0 8px 2.2em; overflow-x:auto; }
+  .eq .katex-display{ margin:0; text-align:left; }
+  .eq .katex-display>.katex{ text-align:left; }
+
+  /* ---------- figures ---------- */
+  .fig{ margin:14px auto 18px; text-align:center; }
+  .fig img{ max-width:100%; height:auto; }
+  .fig figcaption{ font:13.5px/1.55 Georgia,'Times New Roman',serif; color:var(--ink);
+                   margin-top:4px; }
+  .fig.tree{ max-width:600px; }
+  .clear{ clear:both; }
+
+  /* ---------- data tables ---------- */
+  table.tbl{ border-collapse:collapse; margin:16px auto 20px; font-size:15.5px; line-height:1.55; }
+  table.tbl th, table.tbl td{ border:1.4px solid var(--rule); padding:6px 12px; text-align:center; }
+  table.tbl th{ font-weight:700; }
+
+  /* ---------- bottom of page (book prints nothing here: quiet rule + folio) ---------- */
+  .page-foot{ border-top:1px solid var(--hairline); background:var(--paper);
+              color:var(--muted); display:flex; align-items:center; justify-content:center;
+              padding:8px 52px; font:12.5px/1.4 Georgia,serif; letter-spacing:.14em; }
+
+  /* ---------- colophon ---------- */
+  .colophon{ max-width:880px; margin:0 auto; padding:2px 18px 30px; text-align:center;
+             font:12px/1.6 system-ui,sans-serif; color:#98917f; }
+  .colophon code{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11px; }
+
+  @media (max-width:720px){
+    .page-body{ padding:20px 16px 16px; }
+    .page-ribbon{ padding:10px 16px 8px; font-size:12.5px; }
+    .page-foot{ padding:7px 16px; }
+    .eq{ margin-left:1em; }
+    .run > span{ margin-right:1em; }
+    body{ font-size:15.5px; }
+  }
+  @media print{
+    .toolbar,.colophon{ display:none; }
+    body{ background:#fff; }
+    .book-page{ box-shadow:none; max-width:none; }
+  }
+</style>
+</head>
+<body>
+<p class="toolbar"><strong>STUDY · Digital test edition</strong><span class="sep">|</span>Basic Statistics Part-II — Chapter 8: Set Theory<span class="sep">|</span>page 5 (printed 5)<span class="sep">|</span><a href="../Raw/Statistics/Chapter-08-Set-Theory/0005.jpg">original scan ↗</a><span class="sep">|</span><a href="../Formatted/Statistics/Chapter-08-Set-Theory/page-005.md">markdown source ↗</a></p>
+
+<div class="book-page">
+  <header class="page-ribbon"><span>[Chapter 8] Set Theory</span><span class="no">5</span></header>
+
+  <main class="page-body">
+    <h1 class="sr-only">Chapter 8 Set Theory · printed page 5 (scan 5) — Examples 8.3, 8.4 and 8.5 with the A×B×C tree diagram (Figure-8)</h1>
+
+    <p class="exlab first">Example 8.3.</p>
+    <p>Let $A = \{2, 3\}$, $B = \{3, 4\}$ and $C = \{4\}$ be subsets of the universal set $S = \{2, 3, 4\}$. Determine the sets.</p>
+    <p class="run"><span>(i) $A \times A$</span> <span>(ii) $A \times B$</span> <span>(iii) $B \times A$</span> <span>(iv) $(A \times B) \cap (B \times C)$</span> <span>(v) $(A \times B) \cup (B \times C)$</span></p>
+    <p class="it"><span class="ro wide"><span class="lbl">Solution:</span> (i)</span>$A \times A = \{(2, 2), (2, 3), (3, 2), (3, 3)\}$</p>
+
+    <p class="it"><span class="ro">(ii)</span>$A \times B = \{(2, 3), (2, 4), (3, 3), (3, 4)\}$</p>
+    <p class="it"><span class="ro">(iii)</span>$B \times A = \{(3, 2), (3, 3), (4, 2), (4, 3)\} \quad B \times C = \{(3, 4), (4, 4)\}$</p>
+    <p class="it"><span class="ro">(iv)</span>$(A \times B) \cap (B \times C) = \{3, 4\}$</p>
+    <p class="it"><span class="ro">(v)</span>$(A \times B) \cup (B \times C) = \{(2, 3), (2, 4), (3, 3), (3, 4), (4, 4)\}$</p>
+
+    <p class="exlab">Example 8.4.</p>
+    <p>Given $S = \{\text{k}, \text{l}, \text{m}, \text{n}, \text{o}, \text{p}\}$, $A = \{\text{k}, \text{l}\}$, $B = \{\text{m}, \text{n}, \text{o}, \text{p}\}$, $C = \{\text{o}, \text{p}\}$. Find</p>
+    <p class="run"><span>(i) $\bar{\text{C}}$</span> <span>(ii) $\text{A} \cup \text{C}$</span> <span>(iii) $\text{A} \cup \text{B}$</span> <span>(iv) $\text{A} \cap \text{B}$</span></p>
+    <p class="run"><span>(v) $\text{A} \cup \text{S}$</span> <span>(vi) $\text{S} \cap \text{B}$</span> <span>(vii) $\overline{(\text{A} \cup \text{B})}$</span> <span>(viii) $\overline{\bar{\text{A}} \cap \bar{\text{B}}}$</span></p>
+
+    <p class="it"><span class="ro wide"><span class="lbl">Solution:</span> (i)</span>$\bar{\text{C}} = \{\text{k}, \text{l}, \text{m}, \text{n}\}$ &nbsp;&nbsp; (ii) $\text{A} \cup \text{C} = \{\text{k}, \text{l}, \text{o}, \text{p}\}$ &nbsp;&nbsp; (iii) $\text{A} \cup \text{B} = \{\text{k}, \text{l}, \text{m}, \text{n}, \text{o}, \text{p}\}$</p>
+    <p class="it"><span class="ro">(iv)</span>$\text{A} \cap \text{B} = \phi$ &nbsp;&nbsp; (v) $\text{A} \cup \text{S} = \{\text{k}, \text{l}, \text{m}, \text{n}, \text{o}, \text{p}\} = \text{S}$ &nbsp;&nbsp; (vi) $\text{S} \cap \text{B} = \{\text{m}, \text{n}, \text{o}, \text{p}\} = \text{B}$</p>
+    <p class="it"><span class="ro">(vii)</span>$\overline{(\text{A} \cup \text{B})} = \phi$ &nbsp;&nbsp; $\bar{\text{A}} = \{\text{m}, \text{n}, \text{o}, \text{p}\}$ &nbsp;&nbsp; $\bar{\text{B}} = \{\text{k}, \text{l}\}$ &nbsp;&nbsp; $\bar{\text{A}} \cap \bar{\text{B}} = \phi$</p>
+    <p class="it"><span class="ro">(viii)</span>$\overline{\bar{\text{A}} \cap \bar{\text{B}}} = \{\text{k}, \text{l}, \text{m}, \text{n}, \text{o}, \text{p}\} = \text{S}$</p>
+
+    <p class="exlab">Example 8.5.</p>
+    <p>Let $A = \{1, 2, 3\}$, $B = \{2, 4\}$ and $C = \{3, 4, 5\}$. Find $\text{A} \times \text{B} \times \text{C}$.</p>
+    <p><span class="lbl">Solution:</span> A convenient method of finding $\text{A} \times \text{B} \times \text{C}$ is through the so called &ldquo;tree diagram&rdquo; shown below:</p>
+
+    <figure class="fig tree">
+      <img src="assets/S1-005-fig-tree-abc.png" alt="Tree diagram: A branches to 1, 2, 3; each branches to 2 and 4 under B; each of those branches to 3, 4, 5 under C, with the 18 ordered triples listed under A×B×C">
+      <figcaption>Figure-8 — tree diagram for $A \times B \times C$</figcaption>
+    </figure>
+  </main>
+
+  <footer class="page-foot">· 5 ·</footer>
+</div>
+
+<p class="colophon">Digital replica test page · typeset from <code>Books/Formatted/Statistics/Chapter-08-Set-Theory/page-005.md</code> · tree diagram cropped from the original scan <code>0005.jpg</code> · Basic Statistics Part-II, Chapter 8: Set Theory</p>
+</body>
+</html>

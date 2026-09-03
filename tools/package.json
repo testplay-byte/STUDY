@@ -2,9 +2,7 @@
   "name": "study-tools",
   "version": "4.0.0",
   "private": true,
-  "description": "Tooling for the STUDY textbook digitization library (structure v4). node_modules is gitignored.",
+  "description": "Tooling for the STUDY textbook digitization library (structure v4). All scripts are zero-dependency; node_modules is gitignored.",
   "type": "module",
-  "dependencies": {
-    "marked": "^18.0.11"
-  }
+  "dependencies": {}
 }

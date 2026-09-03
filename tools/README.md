@@ -1,4 +1,4 @@
-# tools/ — Digitization Tooling (structure v4)
+# tools/ — Digitization Tooling (structure v4 + Digital replica edition)
 
 Tool scripts for the STUDY library. Layout v4 (user directive, 2026-09-03):
 
@@ -6,12 +6,32 @@ Tool scripts for the STUDY library. Layout v4 (user directive, 2026-09-03):
 Books/
 ├── Raw/<Subject>/<Original-Chapter-Name>/NNNN.jpg       # immutable scans
 ├── Formatted/<Subject>/Chapter-NN-<Title>/page-NNN.md   # canonical markdown (source of truth)
-└── Digital/<Subject>/Chapter-NN-<Title>/page-NNN.html   # HTML test edition (generated)
+└── Digital/                                             # HAND-TYPESET replica pages (test edition)
+    ├── <BATCH>-page-NNN.html                            # 8 curated pages, FLAT — no subfolders, no index
+    └── assets/<BATCH>-<NNN>-fig-<slug>.png              # figure crops from the raw scans
 ```
 
 `<Subject>` folders are TitleCase (`Mathematics`, `Statistics`); the frontmatter `subject:`
 field stays a lowercase identifier. The batch code (`M-0`, `M-1`, `S-0`, `S-1`, `S-2`) is the
 permanent join key across Raw / Formatted / Digital.
+
+All scripts are **zero-dependency** (Node/Bun stdlib + Python stdlib/PIL) — no install step.
+
+## Tool inventory
+
+| Tool | Purpose | Run |
+|------|---------|-----|
+| `convert-page.mjs` | one scan → Markdown draft via the vision model (draft generator; agent QA still required) | `bun tools/convert-page.mjs …` |
+| `build-metadata.mjs` | regenerate `book.json` / `chapter.json` / `indexes/` from page frontmatter | `bun tools/build-metadata.mjs` |
+| `verify-v4.mjs` | integrity gate: tree shape, 112/112 counts, byte-verify pages vs git history, frontmatter/link coherence | `bun tools/verify-v4.mjs` |
+| `check-digital-test.mjs` | integrity gate for `Books/Digital/`: 8-page whitelist, link resolution, asset containment, KaTeX/`<main>` chrome | `bun tools/check-digital-test.mjs` |
+| `crop-figure.py` | crop figure images out of raw scans (fractional boxes), probe brand colors, render coordinate grids | `python3 tools/crop-figure.py …` |
+| `prompt.txt` | canonical VLM conversion prompt (read directly by `convert-page.mjs`) | — |
+
+Retired one-off migrations, kept for the audit trail (never run again):
+`migrate-v3.mjs` (v2→v3), `migrate-v4.mjs` (v3→v4), `fix-v4-casing.mjs` (TitleCase follow-up).
+`generate-digital.mjs` + `check-digital-links.mjs` were **deleted** (2026-09-03): they built
+and checked the rejected generated Digital design — see "The Digital edition" below.
 
 ## convert-page.mjs
 
@@ -70,46 +90,86 @@ Never hand-edit those files. The book identity data (titles, publishers, chapter
 raw folder names, printed page offsets) is maintained in the `BOOKS` constant at the top of the
 script — update it there when registering a new chapter (see `docs/PIPELINE.md` §3).
 
-## generate-digital.mjs
+## The Digital edition — hand-typeset replica pages
 
-Generates the **HTML digital test pages** under `Books/Digital/` from the Formatted markdown.
+> User directive (2026-09-03, after rejecting the generated "scan pane + transcription"
+> design of commit 26bc1c0): each Digital page must look like an **actual digital version of
+> the original textbook page** — a hand-typeset replica with real text, KaTeX math, data
+> tables and figure IMAGES cropped from the raw scans embedded where they sit on the printed
+> page. Full policy: `docs/CONVENTIONS.md` §1.5.
 
-- **Curated whitelist ONLY (user directive, 2026-09-03):** the `TEST_PAGES` constant at the top
-  of the script lists exactly which pages get an HTML version — currently 8:
-  `M-1` imgs 1, 23, 25 · `S-1` imgs 3, 5, 6 · `S-2` imgs 5, 42. Do not extend it without the
-  user's OK. The script asserts the written set equals the whitelist exactly.
-- **Flat layout:** `Books/Digital/<Subject>/page-<BATCH>-<NNN>.html` (e.g. `page-M1-025.html`,
-  `page-S2-042.html`) — no chapter sub-folders, no `index.html` scaffolding. Batch codes
-  disambiguate same-numbered pages across chapters.
-- **Scan shown directly:** each page embeds the original scan image in a sticky pane (click →
-  full resolution) beside the formatted transcription; Split / Scan / Text view toggle;
-  stacked on mobile. KaTeX math with math-first extraction (GitHub-style precedence).
-- **Test purposes only** (user directive): the canonical library stays `Books/Formatted/`.
-  Never hand-edit the generated HTML; re-run the script instead.
-- Requires `build-metadata.mjs` to have run first (consumes `book.json`/`chapter.json`).
-- Run: `bun tools/generate-digital.mjs` (regenerates `Books/Digital/` from scratch each run).
+- **Curated whitelist ONLY (8 pages):** `M1-page-001/023/025.html` (Mathematics, Unit-01,
+  printed = image + 6) · `S1-page-003/005/006.html` (Statistics Ch. 8 Set Theory, printed =
+  image) · `S2-page-005/042.html` (Statistics Ch. 9 Probability, printed = image + 10). The
+  whitelist is enforced by `check-digital-test.mjs`; adding pages requires the user's OK and a
+  whitelist edit in that script.
+- **Flat layout, batch-coded filenames:** `Books/Digital/<BATCH>-page-NNN.html` — batch codes
+  disambiguate same-numbered pages (S-1 p5 vs S-2 p5) and match the user's own chapter naming.
+  No subject/chapter subfolders, no `index.html`.
+- **Hand-typeset, never generated.** Each page is written by hand (agent-typeset) from the
+  canonical markdown + the raw scan: self-contained HTML with inline CSS, KaTeX via CDN
+  (auto-render, `$` inline / `$$` display), real `<table>`s, and figure crops from the scan
+  placed where they sit on the printed page. Page furniture (ribbons, running headers,
+  footers, folios) is replicated per book. Content is verbatim — **including the book's own
+  typos and misprints** (e.g. the S-2 odd-page running header prints "[Chapter 7]"; the
+  chapter is 9 — keep it verbatim).
+- **Figure crops** live in `Books/Digital/assets/` as
+  `<BATCH>-<NNN>-fig-<slug>.png` (plus special crops like `M1-023-keyfacts-icon.png` and
+  `M1-001-unit-banner.png`), produced with `crop-figure.py`.
 
-## verify-v4.mjs / check-digital-links.mjs — integrity verifiers
+### Digital workflow (per page)
+
+1. **Crop the figures.** `python3 tools/crop-figure.py grid <scan.jpg>` renders a coordinate
+   grid overlay to eyeball positions; `probe <scan.jpg>` prints size + dominant colors of
+   top/mid/bottom strips (use it to sample each book's brand colors); then
+   `crop <scan.jpg> Books/Digital/assets/<BATCH>-<NNN>-fig-<slug>.png L T R B` with
+   **fractional** coordinates (0..1, left/top/right/bottom) so boxes survive rescaling.
+2. **Hand-typeset the page** (self-contained HTML: inline CSS + KaTeX CDN auto-render; slim
+   toolbar; colophon linking `../Raw/<Subject>/<Chapter>/<NNNN>.jpg` and
+   `../Formatted/<Subject>/Chapter-NN-…/page-NNN.md`). Match the book's chrome:
+   - *Mathematics* (National Book Foundation Grade 12): blue unit ribbon with orange corner
+     wedges (`#2293fb→#0167ef`, `#f26a0a`), blue bold labels (`#1560d0`), maroon section
+     headings (`#5e0000`), red Key-Facts callout (`#ac0000`) with the cropped crossed-keys
+     icon, blue footer ribbon "GRADE 12 | <page> | National Book Foundation".
+   - *Statistics* (Basic Statistics Part-II): monochrome cream page, thin-ruled running
+     header ("[Chapter 8] Set Theory" / "[Chapter 7] Probability" — verbatim misprint), quiet
+     folio footer; `S2-page-042` replicates MCQs 101–112 and the full 112-answer ANSWERS grid
+     as a real HTML table.
+3. **Verify:** `bun tools/check-digital-test.mjs` → ALL GREEN (8/8). Then browser-check
+   (agent-browser or manual): KaTeX renders, figures load, no horizontal overflow at 1280px
+   and ~390px, zero console errors.
+
+### check-digital-test.mjs (the Digital gate)
+
+Plain Node/Bun, zero dependencies. It asserts that `Books/Digital/` contains **exactly** the
+8 whitelisted `.html` files + `assets/` and nothing else (no extra `.html`, no `index.html`,
+no strays); extracts every `href`/`src`, ignores external schemes (`http(s)`, `#`, `mailto:`,
+`data:`), resolves each relative target against the page's directory and requires it to exist
+on disk; requires locally referenced `src` targets to stay inside `Books/Digital/assets/`;
+requires a KaTeX CDN stylesheet and a `<main>` per page; reports unreferenced assets as a
+warning. Per-file + total summary; exit 1 with a clear ✗ report on any failure.
 
 ```bash
-bun tools/verify-v4.mjs            # tree shape, 112/112 counts, byte-verify every page vs git
-                                   # HEAD (v3)+rewrites, frontmatter/link coherence
-bun tools/check-digital-links.mjs  # every relative href/src in Books/Digital + indexes resolves
+bun tools/check-digital-test.mjs     # or: node tools/check-digital-test.mjs
+```
+
+### ⚠️ KaTeX CSS-scoping gotcha (learned the hard way)
+
+KaTeX generates deep internal markup with `.base`, `.run`, `span` elements everywhere.
+**Scope every custom selector** (e.g. `.run > span` for a specific label span). A bare
+descendant selector like `span { display: …; margin: …; white-space: nowrap; }` leaks into
+KaTeX's internal spans and shreds the formulas. Always namespace page CSS under the page's
+own classes.
+
+## verify-v4.mjs / check-digital-test.mjs — integrity verifiers
+
+```bash
+bun tools/verify-v4.mjs             # tree shape, 112/112 counts, byte-verify every page vs
+                                    # git history (v3 baseline) + rewrites, frontmatter/links
+bun tools/check-digital-test.mjs    # Books/Digital whitelist, links, assets, KaTeX/<main>
 ```
 
 Run both after any structural change. CI-style rule: **no push with a failing verifier.**
-
-## migrate-v4.mjs / fix-v4-casing.mjs
-
-One-off migrations, kept for the audit trail:
-
-- `migrate-v4.mjs` — v3 → v4 (2026-09-03): moved raw images to `Books/Raw/<Subject>/<original
-  chapter name>/`, pages to `Books/Formatted/<Subject>/Chapter-NN-<Title>/`, rewrote
-  `chapter_folder` + `source_image` + scan links, byte-verified vs git HEAD. **Do not run again**
-  (refuses if `Books/` exists).
-- `fix-v4-casing.mjs` — follow-up one-off: TitleCase book folders (`Mathematics`/`Statistics`)
-  + path rewrite. **Do not run again.**
-- `migrate-v3.mjs` — earlier v2 → v3 migration, kept for history.
 
 ## prompt.txt
 
@@ -117,7 +177,11 @@ The canonical VLM conversion prompt (single source of truth — `convert-page.mj
 directly). Frontmatter fields `subject`, `batch`, `chapter_folder`, `chapter_number`, … (schema
 v3 fields, v4 path examples). Documented snapshot + changelog: `docs/prompts/vlm-image-to-markdown.md`.
 
-## Dependencies
+## Retired: generate-digital.mjs / check-digital-links.mjs (deleted 2026-09-03)
 
-`package.json` pins `marked` (markdown → HTML for the Digital edition). Install with
-`bun install` inside `tools/` if `node_modules/` is missing (gitignored).
+`generate-digital.mjs` generated `Books/Digital/` HTML from the Formatted markdown (the
+"scan pane + formatted transcription" design, commit 26bc1c0) and `check-digital-links.mjs`
+checked its links. The user rejected that design; Digital is now hand-typeset (no generator
+exists, so nothing can regenerate pages — edits happen in the HTML itself) and
+`check-digital-links.mjs` is superseded by `check-digital-test.mjs`, which also enforces the
+whitelist + asset containment. History: `WORKLOG.md` Tasks 7-v4 → 9.

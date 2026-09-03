@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 09 · Page 15 — Probability · Basic Statistics Part-II · Digital Edition</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.body, {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root{
+    /* Basic Statistics Part-II — monochrome black-on-cream page,
+       thin full-width running-header rule; no coloured bands, no corner wedges */
+    --rib-a:#fffdf9; --rib-b:#fffdf9; --rib-c:#f8f3e9;
+    --ink:#1c1914; --rule:#2a251f; --hairline:#d9d2c2;
+    --lbl:#1c1914; --muted:#6d675e; --paper:#fffdf9; --back:#e8e4dc;
+  }
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  body{ margin:0; background:var(--back); color:var(--ink);
+        font:16.5px/1.85 Georgia,'Times New Roman',serif; }
+
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+            overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+
+  /* ---------- slim test-edition toolbar (outside the page) ---------- */
+  .toolbar{ font:12.5px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif; color:#8a8377;
+            text-align:center; padding:8px 12px 10px; }
+  .toolbar a{ color:#8a8377; text-decoration:underline; text-underline-offset:2px; }
+  .toolbar a:hover{ color:#4a4438; }
+  .toolbar .sep{ margin:0 8px; color:#c9c2b4; }
+
+  /* ---------- the digital page ---------- */
+  .book-page{ max-width:880px; margin:0 auto 14px; background:var(--paper);
+              box-shadow:0 2px 6px rgba(60,50,30,.14), 0 12px 34px rgba(60,50,30,.10); }
+
+  /* running header, exactly as printed: title left · page no right · rule below */
+  .page-ribbon{ display:flex; align-items:baseline; justify-content:space-between; gap:18px;
+                background:linear-gradient(180deg,var(--rib-a) 0%,var(--rib-b) 70%,var(--rib-c) 100%);
+                color:var(--ink); padding:14px 52px 10px;
+                border-bottom:2.5px solid var(--rule);
+                font:700 15px/1.3 'Trebuchet MS','Arial Narrow',Arial,sans-serif;
+                letter-spacing:.04em; }
+  .page-ribbon .no{ font-size:16px; letter-spacing:.02em; }
+
+  .page-body{ padding:30px 52px 26px; }
+
+  /* ---------- typography ---------- */
+  p{ margin:0 0 14px; text-align:justify; }
+  .lbl{ font-weight:700; color:var(--lbl); }
+
+  /* section headings: bold caps, black, as printed */
+  h2.sec{ font:700 16.5px/1.5 Georgia,'Times New Roman',serif; letter-spacing:.03em;
+          margin:20px 0 10px; }
+  h2.sec .no{ letter-spacing:.06em; }
+
+  /* the book's displayed set lines (S = {…}, A = {…}), lightly indented, ragged like print */
+  .setline{ margin:0 0 10px; text-align:left; }
+  .setline .ind1{ display:inline-block; width:5.5em; }
+  .setline .ind2{ display:inline-block; width:2.6em; }
+  .setline .gap{ display:inline-block; width:1.1em; }
+
+  /* display equations, left-aligned like the book */
+  .eq{ margin:2px 0 12px 2.2em; overflow-x:auto; }
+  .eq .katex-display{ margin:0; text-align:left; }
+  .eq .katex-display>.katex{ text-align:left; }
+
+  /* ---------- figures ---------- */
+  .fig{ margin:4px 0 18px; text-align:center; }
+  .fig img{ max-width:100%; height:auto; }
+  .fig figcaption{ font:14px/1.55 Georgia,'Times New Roman',serif; color:var(--ink);
+                   margin-top:4px; font-weight:700; }
+  /* Figures 2 & 3 printed side by side, mid-page */
+  .figrow{ display:flex; gap:7%; align-items:flex-start; margin:6px 0 20px; }
+  .figrow .fig{ flex:1 1 0; min-width:0; margin:0; }
+  /* Figure-4 floats right while the text wraps left, as printed */
+  .fig.right{ float:right; width:47%; min-width:250px; margin:6px 0 14px 22px; }
+  .fig .quietline{ font-weight:400; }
+  .clear{ clear:both; }
+
+  /* ---------- bottom of page (book prints nothing here: quiet rule + folio) ---------- */
+  .page-foot{ border-top:1px solid var(--hairline); background:var(--paper);
+              color:var(--muted); display:flex; align-items:center; justify-content:center;
+              padding:8px 52px; font:12.5px/1.4 Georgia,serif; letter-spacing:.14em; }
+
+  /* ---------- colophon ---------- */
+  .colophon{ max-width:880px; margin:0 auto; padding:2px 18px 30px; text-align:center;
+             font:12px/1.6 system-ui,sans-serif; color:#98917f; }
+  .colophon code{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11px; }
+
+  @media (max-width:720px){
+    .page-body{ padding:20px 16px 16px; }
+    .page-ribbon{ padding:10px 16px 8px; font-size:12.5px; }
+    .page-foot{ padding:7px 16px; }
+    .figrow{ flex-direction:column; gap:0; }
+    .fig.right{ float:none; width:92%; margin:10px auto 16px; }
+    .eq{ margin-left:1em; }
+    body{ font-size:15.5px; }
+  }
+  @media print{
+    .toolbar,.colophon{ display:none; }
+    body{ background:#fff; }
+    .book-page{ box-shadow:none; max-width:none; }
+  }
+</style>
+</head>
+<body>
+<p class="toolbar"><strong>STUDY · Digital test edition</strong><span class="sep">|</span>Basic Statistics Part-II — Chapter 9: Probability<span class="sep">|</span>page 5 (printed 15)<span class="sep">|</span><a href="../Raw/Statistics/Chapter-09-Probability/0005.jpg">original scan ↗</a><span class="sep">|</span><a href="../Formatted/Statistics/Chapter-09-Probability/page-005.md">markdown source ↗</a></p>
+
+<div class="book-page">
+  <header class="page-ribbon"><span>[Chapter 7] Probability</span><span class="no">15</span></header>
+
+  <main class="page-body">
+    <h1 class="sr-only">Chapter 9 Probability · printed page 15 (scan 5) — §9.9 Not Mutually Exclusive Events, §9.10 Exhaustive Events, §9.11 A or B, §9.12 A and B; Figures 2–4</h1>
+
+    <h2 class="sec"><span class="no">9.9.</span>&nbsp; NOT MUTUALLY EXCLUSIVE EVENTS</h2>
+
+    <p>The events are called not mutually exclusive if they have at least one outcome common between them. If A and B are not mutually exclusive events, then $A \cap B \neq \phi$. Similarly A, B and C are not mutually exclusive events if $A \cap B \cap C \neq \phi$. Thus they must have at least one common point between them. Consider a sample space :</p>
+
+    <p class="setline"><span class="ind1"></span>$S \;\; = \;\; \{\, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 \,\}$</p>
+    <p class="setline">Let the event<span class="gap"></span>$A \; = \; \{\, \text{prime numbers} \,\} \; = \; \{\, 2, 3, 5, 7, 11 \,\}$</p>
+    <p class="setline">and<span class="ind2"></span>$B \; = \; \{\, \text{odd faces} \,\} \qquad\;\; = \; \{\, 1, 3, 5, 7, 9, 11 \,\}$</p>
+    <p class="setline">Here<span class="ind2"></span>$A \cap B \; = \; \{\, 3, 5, 7, 11 \,\}$</p>
+
+    <p>Thus&nbsp; $A \cap B \neq \phi$&nbsp; i.e, $A \cap B$ exists. Here, A and B are not mutually exclusive events. $A \cap B$ consists of outcomes which are common to both A and B. Figure-2 shows a venn diagram in which A and B are not mutually exclusive events. Some area under A is common with B. If the event A is a part of the event B, then $A \cap B = A$. This is shown in Figure-3.</p>
+
+    <div class="figrow">
+      <figure class="fig">
+        <img src="assets/S2-005-fig-2-not-mutually-exclusive.png" alt="Venn diagram: rectangle S contains overlapping circles A and B; their intersection is shaded, with an arrow pointing to it labelled A ∩ B">
+        <figcaption>Figure-2. A and B are Not Mutually Exclusive Events</figcaption>
+      </figure>
+      <figure class="fig">
+        <img src="assets/S2-005-fig-3-A-part-of-B.png" alt="Venn diagram: rectangle S contains circle B with circle A entirely inside it; labelled A ∩ B = A">
+        <figcaption>Figure-3 A and B are Not Mutually Exclusive Events</figcaption>
+      </figure>
+    </div>
+
+    <h2 class="sec"><span class="no">9.10.</span>&nbsp; EXHAUSTIVE EVENTS</h2>
+
+    <p>When a sample space S is partitioned into some mutually exclusive events such that their union is the sample space itself then the events are called <em>exhaustive events</em> or <em>collectively exhaustive events</em>. Suppose a die is rolled and the sample space is</p>
+
+    <p class="setline"><span class="ind1"></span>$S \;\; = \;\; \{\, 1, 2, 3, 4, 5, 6 \,\}.$</p>
+    <p class="setline">Let<span class="ind2"></span>$A \; = \; \{\, 1, 2 \,\}$</p>
+    <p class="setline" style="margin-left:2.6em;">$B \; = \; \{\, 3, 4, 5 \,\}$</p>
+    <p class="setline" style="margin-left:2.6em;">$C \; = \; \{\, 6 \,\}$</p>
+
+    <figure class="fig right">
+      <img src="assets/S2-005-fig-4-exhaustive.png" alt="Diagram: rectangle S partitioned by straight lines from its top edge into three regions — A containing 1 and 2, B containing 3, 4 and 5, and C containing 6">
+      <figcaption><span class="quietline">$A \cap B \cap C = \phi$&nbsp; and $A \cup B \cup C = S$</span><br>Figure-4</figcaption>
+    </figure>
+
+    <p>Here the events A, B and C are mutually exclusive because $A \cap B \cap C = \phi$ and $A \cup B \cup C = S$. Figure-4 shows three events A, B and C which are exhaustive.</p>
+
+    <div class="clear"></div>
+
+    <h2 class="sec"><span class="no">9.11.</span>&nbsp; A or B</h2>
+
+    <p>The term A or B is very important in probability theory. The term 'A or B' is used for two events A and B when they are mutually exclusive and we are interested to know the probability of the event "A or B". For this purpose the symbol $A \cup B$ is used. It must be remembered that the symbol $A \cup B$ is also used for the event "A or B or both", when A and B are not mutually exclusive.</p>
+
+    <h2 class="sec"><span class="no">9.12.</span>&nbsp; A and B</h2>
+
+    <p>The term 'A and B' is used for the event which consists of the points which are common to both A and B. In set theory language, the symbol $A \cap B$ is used for A and B. The symbol $A \cap B$ means intersection of A and B.</p>
+  </main>
+
+  <footer class="page-foot">· 15 ·</footer>
+</div>
+
+<p class="colophon">Digital replica test page · typeset from <code>Books/Formatted/Statistics/Chapter-09-Probability/page-005.md</code> · Figures 2–4 cropped from the original scan <code>0005.jpg</code> · Basic Statistics Part-II, Chapter 9: Probability · running header "[Chapter 7]" is the book's own misprint (this is Chapter 9)</p>
+</body>
+</html>

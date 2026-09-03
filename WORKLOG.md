@@ -399,3 +399,22 @@ Stage Summary:
 - Books/Digital/ = exactly 8 FLAT hand-typeset replica pages (M1-page-001/023/025 · S1-page-003/005/006 · S2-page-005/042) + assets/ (14 figure crops) — nothing else; no generator script exists (pages are edited in place; adding pages needs user approval + a whitelist edit in check-digital-test.mjs)
 - Gates: bun tools/check-digital-test.mjs → ALL GREEN 8/8 (30 local links resolve, 14/14 assets referenced, KaTeX + <main> everywhere); bun tools/verify-v4.mjs → ALL GREEN 112/112 (Books/Formatted untouched)
 - Format proposal awaiting the user's verdict: true digital replicas of the printed pages; Books/Formatted remains the canonical library
+
+---
+Task ID: 10
+Agent: coordinator (Z.ai main)
+Task: User review round 4 — "there are no graphs and also there are not proper layout of the things" → make every Digital page fully self-contained (figures embedded as data URIs)
+
+Work Log:
+- Diagnosed the complaint: all 14 figure crops existed and every page referenced them, but the references were RELATIVE (src="assets/…"). Any viewing path where the HTML travels without the assets/ folder (preview copies, lone downloaded files, static hosting of single files) rendered zero graphs and collapsed the floats — which is exactly what the user saw ("no graphs" + "not proper layout"), while the typography looked proper.
+- Sandbox regression also hit mid-round (local clone snapped back to Phase-1 ebf55e4); recovered by git reset --hard origin/main (449cf68) — GitHub remains the durable store; nothing was lost.
+- Audited all 8 pages against their scans figure-by-figure: M1-025 (springs + big sin/cos graph), M1-001 (unit banner + telecom photo), M1-023 (Key-Facts icon; page genuinely has no graphs), S1-003 (4 Venn diagrams), S1-005/006 (tree diagrams), S2-005 (Figures 2/3/4 — the earlier "missing Figure 1" worry was unfounded, Figure-1 lives on a different page), S2-042 (no figures in the original — MCQ text + answers grid only). No figure was missing; the loading path was the bug.
+- NEW tools/embed-figures.py: optimizes every asset (photos M1-001-unit-banner/fig-telecom → JPEG q82 → .jpg; line art → 256-color palette PNG, icon → 64 colors) and inlines each into the pages as base64 data URIs. Assets 3.72 MB → 0.59 MB; pages now 12–244 KB, self-contained, render identically via file://, lone downloads, or any static server.
+- tools/check-digital-test.mjs upgraded: enforces SELF-CONTAINMENT — per-page expected figure counts (EXPECTED_FIGURES map, 14 total) must be present as data URIs; any relative src="assets/…" is a failing regression; assets/ must hold exactly 14 crops (.png line art + .jpg photos). Docs synced: CONVENTIONS §1.5 (embed policy + root-cause note), tools/README.md (new tool row + workflow step 3 + gate description).
+- Serving for user review rebuilt in the live Next.js app: public/{Digital→digital,Raw,Formatted} symlinked to the repo working tree (edits reflect instantly), viewer UI restored at / (8 cards: Digital page / Scan / Markdown links per page).
+- Browser-verified every page at 1280px and ~390px via agent-browser: sw == viewport, wide-element count 0 (non-table stragglers are KaTeX's hidden MathML internals only), KaTeX renders (10–43 nodes/page), ALL images naturalWidth > 0 (0 broken of 14), zero console errors, dev.log clean. Screenshots eyeballed against scans: M1-025 graph page, S1-003 Venn column, S2-005 side-by-side figures, M1-001 opener, S2-042 answer grid all match the printed layout.
+
+Stage Summary:
+- Every Digital page is now a truly standalone digital replica: typography + math + tables + FIGURES all embedded — the "no graphs" failure class is structurally eliminated (regression-gated by the checker, not just by convention).
+- Gates: check-digital-test ALL GREEN (8/8 pages, 14/14 figures embedded, 16 local links resolve); verify-v4 ALL GREEN 112/112 (Books/Formatted untouched).
+- Assets/ remains the canonical crop source (optimized); embed-figures.py is idempotent and re-runnable after any crop edit.

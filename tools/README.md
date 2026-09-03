@@ -24,8 +24,9 @@ All scripts are **zero-dependency** (Node/Bun stdlib + Python stdlib/PIL) — no
 | `convert-page.mjs` | one scan → Markdown draft via the vision model (draft generator; agent QA still required) | `bun tools/convert-page.mjs …` |
 | `build-metadata.mjs` | regenerate `book.json` / `chapter.json` / `indexes/` from page frontmatter | `bun tools/build-metadata.mjs` |
 | `verify-v4.mjs` | integrity gate: tree shape, 112/112 counts, byte-verify pages vs git history, frontmatter/link coherence | `bun tools/verify-v4.mjs` |
-| `check-digital-test.mjs` | integrity gate for `Books/Digital/`: 8-page whitelist, link resolution, asset containment, KaTeX/`<main>` chrome | `bun tools/check-digital-test.mjs` |
+| `check-digital-test.mjs` | integrity gate for `Books/Digital/`: 8-page whitelist, figure self-containment (data-URI counts), link resolution, asset counts, KaTeX/`<main>` chrome | `bun tools/check-digital-test.mjs` |
 | `crop-figure.py` | crop figure images out of raw scans (fractional boxes), probe brand colors, render coordinate grids | `python3 tools/crop-figure.py …` |
+| `embed-figures.py` | optimize Digital figure assets (photo→JPEG, line-art→palette PNG) and embed them into the pages as base64 data URIs | `python3 tools/embed-figures.py` |
 | `prompt.txt` | canonical VLM conversion prompt (read directly by `convert-page.mjs`) | — |
 
 Retired one-off migrations, kept for the audit trail (never run again):
@@ -113,9 +114,13 @@ script — update it there when registering a new chapter (see `docs/PIPELINE.md
   footers, folios) is replicated per book. Content is verbatim — **including the book's own
   typos and misprints** (e.g. the S-2 odd-page running header prints "[Chapter 7]"; the
   chapter is 9 — keep it verbatim).
-- **Figure crops** live in `Books/Digital/assets/` as
-  `<BATCH>-<NNN>-fig-<slug>.png` (plus special crops like `M1-023-keyfacts-icon.png` and
-  `M1-001-unit-banner.png`), produced with `crop-figure.py`.
+- **Figure crops (canonical sources)** live in `Books/Digital/assets/` as
+  `<BATCH>-<NNN>-fig-<slug>.png` (line art; photos like `M1-001-unit-banner.jpg` as `.jpg`),
+  produced with `crop-figure.py` and optimizer-compressed by `embed-figures.py`.
+- **Figures are embedded in the pages as base64 data URIs** (`tools/embed-figures.py`) so
+  every HTML file renders its graphs standalone — file://, lone downloads, any static host.
+  A relative `src="assets/…"` in a Digital page is a regression (it caused user review
+  round 3's "no graphs" when pages were viewed without the folder) and fails the checker.
 
 ### Digital workflow (per page)
 
@@ -135,19 +140,26 @@ script — update it there when registering a new chapter (see `docs/PIPELINE.md
      header ("[Chapter 8] Set Theory" / "[Chapter 7] Probability" — verbatim misprint), quiet
      folio footer; `S2-page-042` replicates MCQs 101–112 and the full 112-answer ANSWERS grid
      as a real HTML table.
-3. **Verify:** `bun tools/check-digital-test.mjs` → ALL GREEN (8/8). Then browser-check
-   (agent-browser or manual): KaTeX renders, figures load, no horizontal overflow at 1280px
-   and ~390px, zero console errors.
+3. **Embed the figures.** `python3 tools/embed-figures.py` optimizes every asset (photos →
+   JPEG q82, line art → 256-color palette PNG) and inlines each one into the pages as a
+   base64 data URI (also rewrites the canonical asset in place). Idempotent — re-run after
+   editing any page's `<img>` back to `assets/…` or after changing a crop.
+4. **Verify:** `bun tools/check-digital-test.mjs` → ALL GREEN (8/8 pages, 14 embedded
+   figures, expected counts per page). Then browser-check (agent-browser or manual): KaTeX
+   renders, figures load (`naturalWidth > 0`), no horizontal overflow at 1280px and ~390px,
+   zero console errors.
 
 ### check-digital-test.mjs (the Digital gate)
 
 Plain Node/Bun, zero dependencies. It asserts that `Books/Digital/` contains **exactly** the
 8 whitelisted `.html` files + `assets/` and nothing else (no extra `.html`, no `index.html`,
-no strays); extracts every `href`/`src`, ignores external schemes (`http(s)`, `#`, `mailto:`,
-`data:`), resolves each relative target against the page's directory and requires it to exist
-on disk; requires locally referenced `src` targets to stay inside `Books/Digital/assets/`;
-requires a KaTeX CDN stylesheet and a `<main>` per page; reports unreferenced assets as a
-warning. Per-file + total summary; exit 1 with a clear ✗ report on any failure.
+no strays); enforces **self-containment** — each page must embed exactly its expected figure
+count as base64 data URIs (`EXPECTED_FIGURES` map) and must NOT carry relative
+`src="assets/…"` references; extracts every remaining `href`/`src`, ignores external schemes
+(`http(s)`, `#`, `mailto:`, `data:`), resolves each relative target against the page's
+directory and requires it to exist on disk; requires a KaTeX CDN stylesheet and a `<main>`
+per page; requires `assets/` to hold exactly the expected 14 crops (`.png` line art +
+`.jpg` photos). Per-file + total summary; exit 1 with a clear ✗ report on any failure.
 
 ```bash
 bun tools/check-digital-test.mjs     # or: node tools/check-digital-test.mjs

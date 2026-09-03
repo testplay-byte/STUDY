@@ -78,3 +78,23 @@
 - **Next suggested:** Collect the user's verdict on the 8 replica pages (typography, math,
   figures, page furniture). If approved, decide the production approach for a wider rollout
   (dashboard, PLAN Phase 7); adding pages beyond the 8 requires explicit user approval.
+
+## 2026-09-03 — Round 4 review: "no graphs / layout not proper" → figures embedded, pages self-contained
+
+- **Verdict handled:** the replica typography was accepted, but pages showed NO figures and
+  broken layouts when viewed without the `assets/` folder (relative `src="assets/…"` refs).
+  Root cause was the loading path, not missing crops — a figure-by-figure scan audit found
+  all 14 crops present and correct (incl. S2-005 Figures 2–4; S2-042 genuinely has none).
+- **Fix:** `tools/embed-figures.py` optimizes each asset (photos → JPEG, line art → palette
+  PNG; 3.72 MB → 0.59 MB) and embeds it into the HTML as a base64 data URI. Every page now
+  renders its graphs standalone; checker (`check-digital-test.mjs`) now FAILS on any relative
+  asset reference and enforces per-page embedded-figure counts.
+- **Verification:** 8/8 pages browser-checked at 1280 px + ~390 px — KaTeX renders, 14/14
+  figures load, zero overflow, zero console errors; screenshots compared against scans.
+- **Observations:** Fourth round confirming the same preference: the user judges the digital
+  edition by fidelity to the printed page under real viewing conditions. Self-containment is
+  now a hard property (each HTML file carries its own figures), matching the "repo is the
+  durable backup" doctrine — single files survive any future viewing context.
+- **Next suggested:** user verdict on the self-contained replicas; if approved, plan the
+  rollout approach for the remaining 104 pages (still needs explicit user approval per scope
+  rules) or move to PLAN Phase 7 dashboard work.

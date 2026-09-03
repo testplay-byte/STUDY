@@ -12,16 +12,21 @@
  * Checks
  *   1. Layout  — Books/Digital/ holds EXACTLY the whitelisted .html files + assets/,
  *                nothing else (no extra .html, no index.html, no stray dirs/files).
- *   2. Links   — every href/src in every page is either external (http(s)/#/mailto:/
+ *   2. Self-contained figures — every figure must be embedded as a base64 data URI
+ *                (src="data:image/...") matching the page's expected figure count;
+ *                relative src="assets/..." references are a REGRESSION (they break
+ *                whenever a page is viewed without the assets folder — exactly the
+ *                'no graphs' bug reported in user review round 3) and fail the run.
+ *                Optimized canonical crops still live in Books/Digital/assets/
+ *                (source of truth, produced by tools/embed-figures.py).
+ *   3. Links   — every remaining href/src is either external (http(s)/#/mailto:/
  *                data:/javascript: — ignored) or resolves to an existing file on disk
- *                when resolved against the page's own directory.
- *   3. Assets  — locally referenced `src` targets must live inside Books/Digital/assets/
- *                (figure crops are bundled assets, never ad-hoc repo paths). `href`
- *                links may point anywhere in the repo (colophon → ../Raw scan +
- *                ../Formatted markdown) but must exist.
+ *                when resolved against the page's own directory (toolbar links →
+ *                ../Raw scan + ../Formatted markdown).
  *   4. Chrome  — each page carries a KaTeX CDN stylesheet link and a `<main` element.
- *   5. Assets/ — contains only .png figure crops; unreferenced assets are reported
- *                as a warning (does not fail the run).
+ *   5. Assets/ — contains only .png (line art) / .jpg (photos) figure crops;
+ *                count must match the expected total; unreferenced assets are
+ *                reported as a warning (does not fail the run).
  *
  * Exit code 0 = ALL GREEN, 1 = one or more ✗ failures (each printed with details).
  */
@@ -46,6 +51,19 @@ const WHITELIST = [
   "S2-page-005.html",
   "S2-page-042.html",
 ];
+
+/** Inline figure count expected per page (data-URI embeds; from the scans). */
+const EXPECTED_FIGURES = {
+  "M1-page-001.html": 2, // unit banner + telecom tower photo
+  "M1-page-023.html": 1, // Key-Facts crossed-keys icon
+  "M1-page-025.html": 2, // springs illustration + sin/cos graph
+  "S1-page-003.html": 4, // Venn: intersection, difference, complement, disjoint
+  "S1-page-005.html": 1, // A/B/C tree diagram
+  "S1-page-006.html": 1, // coin+die tree diagram
+  "S2-page-005.html": 3, // Figures 2, 3, 4
+  "S2-page-042.html": 0, // MCQ text + answers grid — no figures on this page
+};
+const EXPECTED_ASSET_COUNT = Object.values(EXPECTED_FIGURES).reduce((a, b) => a + b, 0);
 
 const SKIPPED_PREFIXES = ["http://", "https://", "#", "mailto:", "data:", "javascript:"];
 
@@ -102,9 +120,13 @@ const assetFiles = fs.existsSync(ASSETS) && fs.statSync(ASSETS).isDirectory()
 if (!fs.existsSync(ASSETS) || !fs.statSync(ASSETS).isDirectory()) {
   fail("Books/Digital/assets/ directory is missing");
 } else {
-  const nonPng = assetFiles.filter((f) => !f.toLowerCase().endsWith(".png"));
-  if (nonPng.length) fail(`assets/ contains non-.png file(s): ${nonPng.join(", ")} (only figure crops belong here)`);
-  if (!nonPng.length) ok(`${assetFiles.length} .png figure crops in assets/ (no other file types)`);
+  const badType = assetFiles.filter((f) => !/\.(png|jpg)$/i.test(f));
+  if (badType.length) fail(`assets/ contains unexpected file type(s): ${badType.join(", ")} (only .png line-art / .jpg photo crops belong here)`);
+  if (!badType.length && assetFiles.length === EXPECTED_ASSET_COUNT) {
+    ok(`${assetFiles.length} figure crops in assets/ (${assetFiles.filter((f) => f.endsWith(".jpg")).length} photo .jpg + ${assetFiles.filter((f) => f.endsWith(".png")).length} line-art .png)`);
+  } else if (!badType.length) {
+    fail(`assets/ holds ${assetFiles.length} files, expected ${EXPECTED_ASSET_COUNT}`);
+  }
 }
 
 /* ---------- 3. Per-page checks ---------- */
@@ -121,6 +143,16 @@ for (const name of WHITELIST) {
   const problems = [];
   let localLinks = 0;
   let resolvedOk = 0;
+
+  // --- self-contained figures: data URIs in, relative asset refs out ---
+  const inlineFigs = (html.match(/src="data:image\/(?:png|jpeg);base64,/g) || []).length;
+  const want = EXPECTED_FIGURES[name] ?? 0;
+  if (inlineFigs !== want) {
+    problems.push(`self-containment: ${inlineFigs} inline data-URI figure(s) but expected ${want} (run tools/embed-figures.py)`);
+  }
+  if (/src="assets\//.test(html)) {
+    problems.push(`regression: relative src="assets/..." reference(s) present — figures must be embedded as data URIs (user review round 3: 'no graphs')`);
+  }
 
   for (const { attr, value } of extractRefs(html)) {
     if (SKIPPED_PREFIXES.some((p) => value.toLowerCase().startsWith(p))) continue;
@@ -154,7 +186,7 @@ for (const name of WHITELIST) {
   if (problems.length) {
     for (const p of problems) fail(`${name}: ${p}`);
   } else {
-    ok(`${name}  · ${resolvedOk}/${localLinks} local links resolve · src ⊆ assets/ ✓`);
+    ok(`${name}  · ${inlineFigs} figure${inlineFigs === 1 ? "" : "s"} embedded · ${resolvedOk}/${localLinks} local links resolve`);
   }
 
   if (!/https:\/\/[^\s"']*katex[^\s"']*\.css/i.test(html)) {
@@ -168,18 +200,19 @@ for (const name of WHITELIST) {
   }
 }
 
-/* ---------- 4. Hygiene: unreferenced assets (warning only) ---------- */
-console.log("== Asset usage ==");
+/* ---------- 4. Hygiene (warnings only) ---------- */
+console.log("== Hygiene ==");
 const unreferenced = assetFiles.filter((f) => !referencedAssets.has(f));
 if (unreferenced.length) {
-  console.log(`  ⚠ unreferenced asset(s) in assets/ (kept on disk, not linked by any page): ${unreferenced.join(", ")}`);
+  console.log(`  ⚠ asset file(s) not directly referenced by any page (figures are embedded as data URIs; assets/ is the canonical source): ${unreferenced.join(", ")}`);
 } else if (assetFiles.length) {
-  ok(`every asset is referenced by at least one page (${referencedAssets.size}/${assetFiles.length})`);
+  ok(`assets/ consistent with embedded figures`);
 }
 
 /* ---------- 5. Summary ---------- */
 console.log("== Totals ==");
-const total = `  ${pagesPassed}/${WHITELIST.length} pages pass · ${linksChecked} local link${linksChecked === 1 ? "" : "s"} checked · ${assetFiles.length} asset${assetFiles.length === 1 ? "" : "s"}`;
+const totalFigs = Object.values(EXPECTED_FIGURES).reduce((a, b) => a + b, 0);
+const total = `  ${pagesPassed}/${WHITELIST.length} pages pass · ${totalFigs} figures embedded · ${linksChecked} local link${linksChecked === 1 ? "" : "s"} checked · ${assetFiles.length} asset${assetFiles.length === 1 ? "" : "s"}`;
 console.log(total);
 
 if (failures.length) {

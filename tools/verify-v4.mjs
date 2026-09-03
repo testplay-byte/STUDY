@@ -41,6 +41,16 @@ function rewriteV3toV4(text, b) {
     .split(`chapter_folder: ${b.oldFolder}`).join(`chapter_folder: ${b.newFolder}`)
     .split(`../raw/${b.batch}/`).join(`../../../Raw/${b.subjectDir}/${b.rawName}/`);
 }
+/** Fetch the v3 baseline for an old path: HEAD when the repo was still v3, else walk back
+ *  through history until a commit contains it (lets this verifier run at any future point). */
+function gitShowV3(oldRel) {
+  const revs = ['HEAD', 'HEAD~1', 'HEAD~2', 'HEAD~3', 'HEAD~4', 'HEAD~5', 'HEAD~6', 'HEAD~7', 'HEAD~8'];
+  for (const rev of revs) {
+    try { return execFileSync('git', ['show', `${rev}:${oldRel}`], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 }); }
+    catch { /* path not in this rev — try older */ }
+  }
+  return null;
+}
 function parseFm(text) {
   const m = text.match(/^---\n([\s\S]*?)\n---\n?/);
   const out = {};
@@ -64,10 +74,9 @@ for (const b of BATCHES) {
     const newRel = path.posix.join('Books', 'Formatted', b.subjectDir, b.newFolder, f);
     const oldRel = path.posix.join('books', b.subject, b.oldFolder, f);
     const newText = fs.readFileSync(path.join(fmtDir, f), 'utf8');
-    // C: byte integrity vs HEAD with rewrites
-    let headText;
-    try { headText = execFileSync('git', ['show', `HEAD:${oldRel}`], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 }); }
-    catch { p(`${newRel}: no HEAD counterpart ${oldRel}`); continue; }
+    // C: byte integrity vs v3 baseline (git history walk) with rewrites
+    const headText = gitShowV3(oldRel);
+    if (headText === null) { p(`${newRel}: no v3 baseline found in git history for ${oldRel}`); continue; }
     if (newText !== rewriteV3toV4(headText, b)) p(`${newRel}: content drift vs HEAD+rewrites`);
     // D: frontmatter + link coherence
     const fm = parseFm(newText);

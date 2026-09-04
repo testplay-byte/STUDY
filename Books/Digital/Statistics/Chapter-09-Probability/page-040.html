@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basic Statistics Part-II · Chapter 9 — Probability · page 40 (printed 50) — Digital Edition</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.body, {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root{
+    --rib-a:#fffdf9; --rib-b:#fffdf9; --rib-c:#f8f3e9;
+    --ink:#1c1914; --rule:#2a251f; --hairline:#d9d2c2;
+    --lbl:#1c1914; --muted:#6d675e; --paper:#fffdf9; --back:#e8e4dc;
+  }
+  
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+            overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+  .toolbar{ font:12.5px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif; color:#8a8377;
+            text-align:center; padding:8px 12px 10px; }
+  .toolbar a{ color:#8a8377; text-decoration:underline; text-underline-offset:2px; }
+  .toolbar .sep{ margin:0 8px; color:#c9c2b4; }
+  .book-page{ max-width:880px; margin:0 auto 14px; background:var(--paper);
+              box-shadow:0 2px 6px rgba(60,50,30,.14), 0 12px 34px rgba(60,50,30,.10); }
+  p{ margin:0 0 14px; text-align:justify; }
+  .fig{ margin:16px auto 20px; text-align:center; }
+  .fig img{ max-width:100%; height:auto; }
+  .fig figcaption{ font:12.5px/1.5 system-ui,sans-serif; color:#7a7368; margin-top:7px; }
+  table.tbl{ border-collapse:collapse; margin:16px auto 20px; font-size:15.5px; line-height:1.55; }
+  table.tbl th, table.tbl td{ border:1.4px solid var(--rule); padding:6px 12px; text-align:center; }
+  table.tbl th{ font-weight:700; }
+  .colophon{ max-width:880px; margin:0 auto; padding:2px 18px 30px; text-align:center;
+             font:12px/1.6 system-ui,sans-serif; color:#98917f; }
+  .colophon code{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11px; }
+  @media print{ .toolbar,.colophon{ display:none; } body{ background:#fff; }
+                .book-page{ box-shadow:none; max-width:none; } }
+
+  body{ margin:0; background:var(--back); color:var(--ink);
+        font:16.5px/1.85 Georgia,'Times New Roman',serif; }
+  .page-ribbon{ display:flex; align-items:baseline; justify-content:space-between; gap:18px;
+                background:linear-gradient(180deg,var(--rib-a) 0%,var(--rib-b) 70%,var(--rib-c) 100%);
+                color:var(--ink); padding:14px 52px 10px;
+                border-bottom:2.5px solid var(--rule);
+                font:700 15px/1.3 'Trebuchet MS','Arial Narrow',Arial,sans-serif;
+                letter-spacing:.04em; }
+  .page-ribbon .no{ font-size:16px; letter-spacing:.02em; }
+  .page-body{ padding:26px 52px 22px; }
+  .lbl{ font-weight:700; color:var(--lbl); }
+  .lbl-line{ font-weight:700; color:var(--lbl); margin:2px 0 8px; }
+  h2.sec{ font:700 16.5px/1.5 Georgia,'Times New Roman',serif; letter-spacing:.03em;
+          margin:20px 0 10px; }
+  ul.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ul.plain li{ margin-bottom:8px; padding-left:.35em; text-align:justify; }
+  ol.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ol.plain li{ margin-bottom:8px; text-align:justify; }
+  .it{ padding-left:2.3em; text-indent:0; margin:0 0 10px; text-align:justify; }
+  .it .ro{ display:inline-block; width:2.3em; margin-left:-2.3em; font-style:normal; }
+  .cont{ margin:0 0 10px 2.3em; text-align:justify; }
+  .eq{ margin:2px 0 12px 2.2em; overflow-x:auto; }
+  .eq .katex-display{ margin:0; text-align:left; }
+  .eq .katex-display>.katex{ text-align:left; }
+  p.q{ padding-left:2.9em; }
+  p.q .qno{ display:inline-block; width:2.9em; margin-left:-2.9em; font-weight:700; }
+  .opts{ display:grid; gap:2px 16px; margin:0 0 13px 2.9em; text-align:left; }
+  p.ans{ margin:0 0 12px; }
+  .note{ border-left:3px solid var(--rule); background:#f6f1e5; padding:10px 16px;
+         margin:0 0 14px; font-size:15px; }
+  .note p{ margin:0 0 6px; }
+  .keyfacts{ width:100%; margin:16px 0 18px; border:2.5px solid var(--rule); background:var(--paper);
+             padding:16px 16px 10px; position:relative; }
+  .keyfacts .tab{ position:absolute; top:-13px; right:12px; background:var(--rule); color:#fff;
+                  font:700 12.5px/1.6 system-ui,sans-serif; letter-spacing:.03em; padding:1px 12px; }
+  .keyfacts p{ margin:0 0 8px; font-size:15.5px; line-height:1.8; }
+  .keyfacts table.tbl{ margin:8px auto 4px; font-size:14.5px; }
+  .keyfacts table.tbl td{ text-align:left; }
+  .ansbox{ display:table; margin:20px auto 16px; border:2.5px solid var(--rule);
+           padding:2px 30px; font:700 17px/1.7 Georgia,'Times New Roman',serif;
+           letter-spacing:.08em; }
+  table.ans{ width:100%; border-collapse:collapse; font-size:14.5px; line-height:1.5; }
+  table.ans td{ border:1px solid #3a342c; padding:2px 9px; text-align:left; white-space:nowrap; }
+  table.ans td.nb{ border:none; }
+  .page-foot{ border-top:1px solid var(--hairline); background:var(--paper);
+              color:var(--muted); display:flex; align-items:center; justify-content:center;
+              padding:8px 52px; font:12.5px/1.4 Georgia,serif; letter-spacing:.14em; }
+  .figslot{ margin:16px auto 20px; border:2px dashed #a89a78; background:#fbf7ec;
+            padding:14px 18px; max-width:640px; }
+  .figslot .tag{ display:inline-block; font:700 12px/1.5 system-ui,sans-serif; color:#6d5a1e;
+                 background:#efe4c4; padding:1px 10px; margin-bottom:8px; letter-spacing:.04em; }
+  .figslot p{ font:13.5px/1.65 system-ui,sans-serif; color:#6d6248; margin:0; text-align:left; }
+  .figstrip{ margin-top:22px; border-top:1px solid #e3dbc8; padding-top:6px; }
+  .figcellslot{ display:inline-block; border:2px dashed #b3a262; background:#fdf8ea; color:#7a6420;
+                font:700 12px/1.4 system-ui,sans-serif; padding:10px 14px; min-width:96px; }
+  @media (max-width:720px){
+    .page-body{ padding:18px 16px 14px; }
+    .page-ribbon{ padding:10px 16px 8px; font-size:12px; }
+    .page-foot{ padding:7px 16px; }
+    .eq{ margin-left:1em; }
+    body{ font-size:15px; }
+    .opts{ grid-template-columns:repeat(2,1fr) !important; }
+    .page-body table.tbl{ display:block; overflow-x:auto; }
+    table.ans{ display:block; overflow-x:auto; }
+  }
+</style>
+</head>
+<body>
+<p class="toolbar"><strong>STUDY · Digital edition</strong><span class="sep">|</span>Basic Statistics Part-II — Chapter 9 — Probability<span class="sep">|</span>page 40 (printed 50)<span class="sep">|</span><a href="../../../Raw/Statistics/Chapter-09-Probability/0040.jpg">original scan ↗</a><span class="sep">|</span><a href="../../../Formatted/Statistics/Chapter-09-Probability/page-040.md">markdown source ↗</a><span class="sep">|</span><a href="../../index.html">library ↗</a></p>
+<div class="book-page">
+  <header class="page-ribbon"><span class="no">50</span><span>Basic Statistics Part-II (Federal Board)</span></header>
+  <main class="page-body">
+    <h1 class="sr-only">Basic Statistics Part-II · Chapter 9 — Probability — page 40 (printed 50)</h1>
+    <p class="q"><span class="qno">61.</span>When each outcome of a sample space is as likely to occur as any other, the outcomes are called:</p><div class="opts" style="grid-template-columns:repeat(4,1fr)"><span>(a) exhaustive</span><span>(b) mutually exclusive</span><span>(c) equally likely</span><span>(d) not mutually exclusive</span></div>
+    <p class="q"><span class="qno">62.</span>If n( A ) = n( B ), then A and B are ________ events.</p><div class="opts" style="grid-template-columns:repeat(4,1fr)"><span>(a) mutually exclusive</span><span>(b) equally likely</span><span>(c) exhaustive</span><span>(d) compound</span></div>
+    <p class="q"><span class="qno">63.</span>When the occurrence of one event has no effect on the probability of the occurrence of another event, the events are called:</p><div class="opts" style="grid-template-columns:repeat(4,1fr)"><span>(a) independent</span><span>(b) dependent</span><span>(c) mutually exclusive</span><span>(d) equally likely</span></div>
+    <p class="q"><span class="qno">64.</span>The six faces of the die are called equally likely if the die is:</p><div class="opts" style="grid-template-columns:repeat(4,1fr)"><span>(a) small</span><span>(b) fair</span><span>(c) six-faced</span><span>(d) round.</span></div>
+    <p class="q"><span class="qno">65.</span>Two events A and B are called mutually exclusive if:</p><div class="opts" style="grid-template-columns:repeat(4,1fr)"><span>(a) $A \cup B = \phi$</span><span>(b) $A \cap B = \phi$</span><span>(c) $A \cap B = S$</span><span>(d) $A \cap B = 1$</span></div>
+    <p class="q"><span class="qno">66.</span>If A and B are two mutually exclusive events, then:</p><div class="opts" style="grid-template-columns:repeat(4,1fr)"><span>(a) $P(A \cap B) = 0$</span><span>(b) $P(A \cap B) = 1$</span><span>(c) $P(A \cup B) = 0$</span><span>(d) $P(A \cap B) = S$.</span></div>
+    <p class="q"><span class="qno">67.</span>When A and B are two non-empty and mutually exclusive events, then:</p><div class="opts" style="grid-template-columns:repeat(2,1fr)"><span>(a) $P(A \cup B) = P(A) . P(B)$</span><span>(b) $P(A \cup B) = P(A) + P(B)$</span><span>(c) $P(A \cap B) = P(A) . P(B)$</span><span>(d) $P(A \cap B) = P(A) + P(B)$</span></div>
+    <p class="q"><span class="qno">68.</span>The two events A and B are called not mutually exclusive events if:</p><div class="opts" style="grid-template-columns:repeat(2,1fr)"><span>(a) $A \cap B = \phi$</span><span>(b) $A \cap B \neq \phi$</span><span>(c) $A \cup B = \phi$</span><span>(d) $A \cap B = \text{zero}$</span></div>
+    <p class="q"><span class="qno">69.</span>If A and B are disjoint events then the statement which is always true is:</p><div class="opts" style="grid-template-columns:repeat(4,1fr)"><span>(a) $P(A/B) = 0$</span><span>(b) $P(A \cup B) = 0$</span><span>(c) $P(A \cap B) = 1$</span><span>(d) $P(A) = P(B)$</span></div>
+    <p class="q"><span class="qno">70.</span>The events A, B and C are called exhaustive events if:</p><div class="opts" style="grid-template-columns:repeat(2,1fr)"><span>(a) $A \cup B \cup C = S$</span><span>(b) $A \cap B \cap C = S$</span><span>(c) $A \cup B \cup C = \phi$</span><span>(d) $A \cup B \cup C = \text{zero.}$</span></div>
+    <p class="q"><span class="qno">71.</span>If A and B are two non-mutually exclusive events, then $P(A \cup B)$ is:</p><div class="opts" style="grid-template-columns:repeat(2,1fr)"><span>(a) $P(A) + P(B)$</span><span>(b) $P(A) + P(B) - P(A \cap B)$</span><span>(c) $P(A) P(B)$</span><span>(d) $P(B) P(A/B)$</span></div>
+    <p class="q"><span class="qno">72.</span>If A and B are not-mutually exclusive events, then:</p><div class="opts" style="grid-template-columns:repeat(2,1fr)"><span>(a) $P(A \cup B) + P(A \cap B) = P(A) + P(B)$</span><span>(b) $P(A \cup B) = P(A) + P(B)$</span><span>(c) $P(A \cup B) = P(A) P(B)$</span><span>(d) $P(A \cap B) = P(A) + P(B)$</span></div>
+    <p class="q"><span class="qno">73.</span>If A and B are independent events, then:</p><div class="opts" style="grid-template-columns:repeat(2,1fr)"><span>(a) $P(A \cup B) = P(A) P(B)$</span><span>(b) $P(A \cap B) = P(A) P(B)$</span><span>(c) $P(A \cap B) = P(A) + P(B)$</span><span>(d) $P(A) = P(B)$</span></div>
+    <p class="q"><span class="qno">74.</span>If A and B are two independent events, then:</p><div class="opts" style="grid-template-columns:repeat(4,1fr)"><span>(a) $P(A/B) = P(A)$</span><span>(b) $P(A) = P(B)$</span><span>(c) $P(A) < P(B)$</span><span>(d) $P(A/B) = P(B/A)$.</span></div>
+    <p class="q"><span class="qno">75.</span>A and B are two independent events. Which one of these equations is false?</p><div class="opts" style="grid-template-columns:repeat(2,1fr)"><span>(a) $P(A \cap \bar{B}) = P(A) P(\bar{B})$</span><span>(b) $P(\bar{A} \cap \bar{B}) = P(\bar{B} \cap \bar{A})$</span><span>(c) $P(\bar{A} \cap \bar{B}) = P(\bar{A}) P(\bar{B})$</span><span>(d) $P(A \cup B) = P(A) P(B)$</span></div>
+    <p class="q"><span class="qno">76.</span>If A is an empty set (φ) and S is the sample space then:</p><div class="opts" style="grid-template-columns:repeat(2,1fr)"><span>(a) $P(A \cup S) = P(S)$</span><span>(b) $P(A \cup S) = P(\phi)$</span><span>(c) $P(A \cap S) = 1$</span><span>(d) $P(A \cup S) = \text{zero}$</span></div>
+    <p class="q"><span class="qno">77.</span>The joint probability of two independent events A and B is:</p><div class="opts" style="grid-template-columns:repeat(2,1fr)"><span>(a) $P(A) + P(B)$</span><span>(b) $P(A) + P(B) - P(A \cap B)$</span><span>(c) $P(A) P(A/B)$</span><span>(d) $P(A) P(B)$</span></div>
+    <p class="q"><span class="qno">78.</span>If A and B are any two events, then $P(A \cup \bar{B})$ is equal to:</p><div class="opts" style="grid-template-columns:repeat(4,1fr)"><span>(a) $1 + P(A \cap B)$</span><span>(b) $1 - P(A \cup B)$</span><span>(c) $1 - P(A \cap B)$</span><span>(d) $P(A) + P(B)$</span></div>
+    <p class="q"><span class="qno">79.</span>If A and B are any two events, then $P(\bar{A} \cap \bar{B})$ is equal to:</p><div class="opts" style="grid-template-columns:repeat(2,1fr)"><span>(a) $1 - P(A \cup B)$</span><span>(b) $1 - P(A \cap B)$</span><span>(c) $1 - P(\bar{A} \cap B)$</span><span>(d) $1 - P(A \cap \bar{B})$</span></div>
+    <p class="q"><span class="qno">80.</span>If we toss a coin and $P(H) = 2P(T)$, then probability of head is equal to:</p><div class="opts" style="grid-template-columns:repeat(4,1fr)"><span>(a) $0$</span><span>(b) $1/2$</span><span>(c) $1/3$</span><span>(d) $2/3$</span></div>
+  </main>
+  <footer class="page-foot">· 50 ·</footer>
+</div>
+<p class="colophon">Digital replica · typeset from <code>Books/Formatted/Statistics/Chapter-09-Probability/page-040.md</code> · figure crops embedded from the original scans</p>
+</body>
+</html>

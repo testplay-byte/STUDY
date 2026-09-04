@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basic Statistics Part-II · Front Matter · page 9 (printed 8) — Digital Edition</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.body, {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root{
+    --rib-a:#fffdf9; --rib-b:#fffdf9; --rib-c:#f8f3e9;
+    --ink:#1c1914; --rule:#2a251f; --hairline:#d9d2c2;
+    --lbl:#1c1914; --muted:#6d675e; --paper:#fffdf9; --back:#e8e4dc;
+  }
+  
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+            overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+  .toolbar{ font:12.5px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif; color:#8a8377;
+            text-align:center; padding:8px 12px 10px; }
+  .toolbar a{ color:#8a8377; text-decoration:underline; text-underline-offset:2px; }
+  .toolbar .sep{ margin:0 8px; color:#c9c2b4; }
+  .book-page{ max-width:880px; margin:0 auto 14px; background:var(--paper);
+              box-shadow:0 2px 6px rgba(60,50,30,.14), 0 12px 34px rgba(60,50,30,.10); }
+  p{ margin:0 0 14px; text-align:justify; }
+  .fig{ margin:16px auto 20px; text-align:center; }
+  .fig img{ max-width:100%; height:auto; }
+  .fig figcaption{ font:12.5px/1.5 system-ui,sans-serif; color:#7a7368; margin-top:7px; }
+  table.tbl{ border-collapse:collapse; margin:16px auto 20px; font-size:15.5px; line-height:1.55; }
+  table.tbl th, table.tbl td{ border:1.4px solid var(--rule); padding:6px 12px; text-align:center; }
+  table.tbl th{ font-weight:700; }
+  .colophon{ max-width:880px; margin:0 auto; padding:2px 18px 30px; text-align:center;
+             font:12px/1.6 system-ui,sans-serif; color:#98917f; }
+  .colophon code{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11px; }
+  @media print{ .toolbar,.colophon{ display:none; } body{ background:#fff; }
+                .book-page{ box-shadow:none; max-width:none; } }
+
+  body{ margin:0; background:var(--back); color:var(--ink);
+        font:16.5px/1.85 Georgia,'Times New Roman',serif; }
+  .page-ribbon{ display:flex; align-items:baseline; justify-content:space-between; gap:18px;
+                background:linear-gradient(180deg,var(--rib-a) 0%,var(--rib-b) 70%,var(--rib-c) 100%);
+                color:var(--ink); padding:14px 52px 10px;
+                border-bottom:2.5px solid var(--rule);
+                font:700 15px/1.3 'Trebuchet MS','Arial Narrow',Arial,sans-serif;
+                letter-spacing:.04em; }
+  .page-ribbon .no{ font-size:16px; letter-spacing:.02em; }
+  .page-body{ padding:26px 52px 22px; }
+  .lbl{ font-weight:700; color:var(--lbl); }
+  .lbl-line{ font-weight:700; color:var(--lbl); margin:2px 0 8px; }
+  h2.sec{ font:700 16.5px/1.5 Georgia,'Times New Roman',serif; letter-spacing:.03em;
+          margin:20px 0 10px; }
+  ul.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ul.plain li{ margin-bottom:8px; padding-left:.35em; text-align:justify; }
+  ol.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ol.plain li{ margin-bottom:8px; text-align:justify; }
+  .it{ padding-left:2.3em; text-indent:0; margin:0 0 10px; text-align:justify; }
+  .it .ro{ display:inline-block; width:2.3em; margin-left:-2.3em; font-style:normal; }
+  .cont{ margin:0 0 10px 2.3em; text-align:justify; }
+  .eq{ margin:2px 0 12px 2.2em; overflow-x:auto; }
+  .eq .katex-display{ margin:0; text-align:left; }
+  .eq .katex-display>.katex{ text-align:left; }
+  p.q{ padding-left:2.9em; }
+  p.q .qno{ display:inline-block; width:2.9em; margin-left:-2.9em; font-weight:700; }
+  .opts{ display:grid; gap:2px 16px; margin:0 0 13px 2.9em; text-align:left; }
+  p.ans{ margin:0 0 12px; }
+  .note{ border-left:3px solid var(--rule); background:#f6f1e5; padding:10px 16px;
+         margin:0 0 14px; font-size:15px; }
+  .note p{ margin:0 0 6px; }
+  .keyfacts{ width:100%; margin:16px 0 18px; border:2.5px solid var(--rule); background:var(--paper);
+             padding:16px 16px 10px; position:relative; }
+  .keyfacts .tab{ position:absolute; top:-13px; right:12px; background:var(--rule); color:#fff;
+                  font:700 12.5px/1.6 system-ui,sans-serif; letter-spacing:.03em; padding:1px 12px; }
+  .keyfacts p{ margin:0 0 8px; font-size:15.5px; line-height:1.8; }
+  .keyfacts table.tbl{ margin:8px auto 4px; font-size:14.5px; }
+  .keyfacts table.tbl td{ text-align:left; }
+  .ansbox{ display:table; margin:20px auto 16px; border:2.5px solid var(--rule);
+           padding:2px 30px; font:700 17px/1.7 Georgia,'Times New Roman',serif;
+           letter-spacing:.08em; }
+  table.ans{ width:100%; border-collapse:collapse; font-size:14.5px; line-height:1.5; }
+  table.ans td{ border:1px solid #3a342c; padding:2px 9px; text-align:left; white-space:nowrap; }
+  table.ans td.nb{ border:none; }
+  .page-foot{ border-top:1px solid var(--hairline); background:var(--paper);
+              color:var(--muted); display:flex; align-items:center; justify-content:center;
+              padding:8px 52px; font:12.5px/1.4 Georgia,serif; letter-spacing:.14em; }
+  .figslot{ margin:16px auto 20px; border:2px dashed #a89a78; background:#fbf7ec;
+            padding:14px 18px; max-width:640px; }
+  .figslot .tag{ display:inline-block; font:700 12px/1.5 system-ui,sans-serif; color:#6d5a1e;
+                 background:#efe4c4; padding:1px 10px; margin-bottom:8px; letter-spacing:.04em; }
+  .figslot p{ font:13.5px/1.65 system-ui,sans-serif; color:#6d6248; margin:0; text-align:left; }
+  .figstrip{ margin-top:22px; border-top:1px solid #e3dbc8; padding-top:6px; }
+  .figcellslot{ display:inline-block; border:2px dashed #b3a262; background:#fdf8ea; color:#7a6420;
+                font:700 12px/1.4 system-ui,sans-serif; padding:10px 14px; min-width:96px; }
+  @media (max-width:720px){
+    .page-body{ padding:18px 16px 14px; }
+    .page-ribbon{ padding:10px 16px 8px; font-size:12px; }
+    .page-foot{ padding:7px 16px; }
+    .eq{ margin-left:1em; }
+    body{ font-size:15px; }
+    .opts{ grid-template-columns:repeat(2,1fr) !important; }
+    .page-body table.tbl{ display:block; overflow-x:auto; }
+    table.ans{ display:block; overflow-x:auto; }
+  }
+
+  .page-body.plate{ text-align:center; padding:38px 56px 30px; }
+  .plate p{ text-align:center; }
+  .plate .display-title{ font:700 34px/1.3 Georgia,'Times New Roman',serif; letter-spacing:.06em;
+                         margin:10px 0 18px; }
+  .plate .small{ font-size:14px; color:var(--muted); }
+  .plate .fig{ margin:20px auto; }
+  .plate .fig.wide img{ max-width:100%; }
+</style>
+</head>
+<body>
+<p class="toolbar"><strong>STUDY · Digital edition</strong><span class="sep">|</span>Basic Statistics Part-II — Front Matter<span class="sep">|</span>page 9 (printed 8)<span class="sep">|</span><a href="../../../Raw/Statistics/Front-Matter/0009.jpg">original scan ↗</a><span class="sep">|</span><a href="../../../Formatted/Statistics/Chapter-00-Front-Matter/page-009.md">markdown source ↗</a><span class="sep">|</span><a href="../../index.html">library ↗</a></p>
+<div class="book-page">
+  <header class="page-ribbon"><span class="no">8</span><span>Basic Statistics Part-II (Federal Board)</span></header>
+  <main class="page-body plate">
+    <h1 class="sr-only">Basic Statistics Part-II · Front Matter — page 9 (printed 8)</h1>
+    <h2 class="sec">CONTENTS (continued)</h2>
+    <table class="tbl"><thead><tr><th>15.23</th><th>Hypothesis Testing – Difference between two Population Means $\mu_1 - \mu_2$, When $\sigma_1^2$ and $\sigma_2^2$ Known ( Large Samples )</th><th><em>254</em></th></tr></thead><tbody><tr><td>15.24</td><td>Hypothesis Testing – Difference between two Population Means $\mu_1 - \mu_2$, When $\sigma_1^2$ and $\sigma_2^2$ Unknown ( Large Samples )</td><td><em>256</em></td></tr><tr><td>15.25</td><td>Test about $\mu_1 - \mu_2$ when $\sigma_1^2$ and $\sigma_2^2$ Known, Populations Normal ( Small Samples )</td><td><em>257</em></td></tr><tr><td>15.26</td><td>Test about $\mu_1 - \mu_2$ when $\sigma_1^2$ and $\sigma_2^2$ unknown, Populations Normal ( Small Samples )</td><td><em>257</em></td></tr><tr><td>15.27</td><td>Test about $\mu_1 - \mu_2$. Dependent Samples, Populations Normal</td><td><em>259</em></td></tr><tr><td>15.28</td><td>Test of Population Proportion p ( Large Sample )</td><td><em>261</em></td></tr><tr><td>15.29</td><td>Test of Difference between two Population Proportions, p1 – P2 ( Large Samples )</td><td><em>265</em></td></tr><tr><td>15.30</td><td>Choice of Proper Test – Statistic</td><td><em>268</em></td></tr><tr><td>☞</td><td>Short Definitions</td><td><em>269</em></td></tr><tr><td>☞</td><td>Multiple Choice Questions</td><td><em>271</em></td></tr><tr><td>☞</td><td>Short Questions</td><td><em>276</em></td></tr><tr><td>☞</td><td>Exercises</td><td><em>279</em></td></tr></tbody></table>
+    <p><strong>CHAPTER 16</strong></p>
+    <p><strong>ASSOCIATION</strong> ( 285 – 318 )</p>
+    <table class="tbl"><thead><tr><th>16.1</th><th>Variable and Attribute</th><th><em>285</em></th></tr></thead><tbody><tr><td>16.2</td><td>Notation for Attributes</td><td><em>285</em></td></tr><tr><td>16.3</td><td>One Attribute</td><td><em>285</em></td></tr><tr><td>16.4</td><td>Two Attributes</td><td><em>286</em></td></tr><tr><td>16.5</td><td>Positive and Negative Classes</td><td><em>286</em></td></tr><tr><td>16.6</td><td>Order of Classes</td><td><em>287</em></td></tr><tr><td>16.7</td><td>Ultimate Class Frequencies</td><td><em>287</em></td></tr><tr><td>16.8</td><td>Lower Order Frequencies in Terms of Higher Order Frequencies</td><td><em>287</em></td></tr><tr><td>16.9</td><td>Higher Order Frequencies into Lower Order Frequencies</td><td><em>287</em></td></tr><tr><td>16.10</td><td>Consistency</td><td><em>289</em></td></tr><tr><td>16.11</td><td>Definition of Independence</td><td><em>290</em></td></tr><tr><td>16.12</td><td>Another Definition of Independence</td><td><em>291</em></td></tr><tr><td>16.13</td><td>Coefficient of Association</td><td><em>294</em></td></tr><tr><td>16.14</td><td>Chi-Square ( $\chi^2$ ) Distribution</td><td><em>295</em></td></tr><tr><td>16.15</td><td>Test of Independence</td><td><em>295</em></td></tr><tr><td>16.16</td><td>Direct Formula for Calculating $\chi^2$ in $2 \times 2$ Contingency Table</td><td><em>297</em></td></tr><tr><td>16.17</td><td>Contingency Table of Higher Order</td><td><em>297</em></td></tr><tr><td>16.18</td><td>Limitations of $\chi^2$</td><td><em>298</em></td></tr><tr><td>16.19</td><td>Rank Correlation</td><td><em>303</em></td></tr><tr><td>☞</td><td>Short Definitions</td><td><em>306</em></td></tr><tr><td>☞</td><td>Multiple Choice Questions</td><td><em>308</em></td></tr><tr><td>☞</td><td>Short Questions</td><td><em>312</em></td></tr><tr><td>☞</td><td>Exercises</td><td><em>314</em></td></tr></tbody></table>
+    <p><strong>CHAPTER 17</strong></p>
+    <p><strong>ORIENTATION OF COMPUTERS</strong> ( 319 – 334 )</p>
+    <table class="tbl"><thead><tr><th>17.1</th><th>Introduction to Computers</th><th><em>319</em></th></tr></thead><tbody><tr><td>17.2</td><td>Computer Capabilities and its Uses</td><td><em>319</em></td></tr><tr><td>17.3</td><td>Computer History</td><td><em>319</em></td></tr><tr><td>17.4</td><td>Types of Computer</td><td><em>320</em></td></tr><tr><td>17.5</td><td>Analog Computer</td><td><em>320</em></td></tr><tr><td>17.6</td><td>Digital Computer</td><td><em>320</em></td></tr><tr><td>17.7</td><td>Hybrid Computer</td><td><em>320</em></td></tr><tr><td>17.8</td><td>Classifications of Computers</td><td><em>320</em></td></tr><tr><td>17.9</td><td>Computer Components</td><td><em>321</em></td></tr><tr><td>17.10</td><td>Computer Hardware</td><td><em>321</em></td></tr><tr><td>17.11</td><td>Input Unit</td><td><em>321</em></td></tr><tr><td>17.12</td><td>Central Processing Unit</td><td><em>322</em></td></tr><tr><td>17.13</td><td>Secondary Storage</td><td><em>324</em></td></tr><tr><td>17.14</td><td>Output Unit</td><td><em>325</em></td></tr><tr><td>17.15</td><td>Computer Software</td><td><em>325</em></td></tr><tr><td>17.16</td><td>Programming Languages</td><td><em>325</em></td></tr><tr><td>17.17</td><td>System Software</td><td><em>326</em></td></tr><tr><td>17.18</td><td>Application Software</td><td><em>326</em></td></tr><tr><td>17.19</td><td>Basic Idea of Writing and Running a Computer Program</td><td><em>327</em></td></tr><tr><td>17.20</td><td>Program Design</td><td><em>327</em></td></tr><tr><td>17.21</td><td>Program Writing</td><td><em>327</em></td></tr><tr><td>17.22</td><td>Testing and Debugging</td><td><em>327</em></td></tr><tr><td>17.23</td><td>Documentation, Implementation and Maintenance</td><td><em>327</em></td></tr><tr><td>17.24</td><td>Number System</td><td><em>327</em></td></tr><tr><td>17.25</td><td>Hexadecimal Number System</td><td><em>327</em></td></tr><tr><td>17.26</td><td>Binary Number System as a Foundation of Computer Programming</td><td><em>328</em></td></tr><tr><td>☞</td><td>Short Definitions</td><td><em>329</em></td></tr><tr><td>☞</td><td>Multiple Choice Questions</td><td><em>331</em></td></tr><tr><td>☞</td><td>Short Questions</td><td><em>334</em></td></tr><tr><td>☞</td><td>Exercises</td><td><em>334</em></td></tr></tbody></table>
+    <p><strong>Statistical Tables</strong> <em>335–340</em></p>
+  </main>
+  <footer class="page-foot">· 8 ·</footer>
+</div>
+<p class="colophon">Digital replica · typeset from <code>Books/Formatted/Statistics/Chapter-00-Front-Matter/page-009.md</code> · figure crops embedded from the original scans</p>
+</body>
+</html>

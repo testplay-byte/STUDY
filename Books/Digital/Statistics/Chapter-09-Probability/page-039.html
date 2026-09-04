@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basic Statistics Part-II · Chapter 9 — Probability · page 39 (printed 49) — Digital Edition</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.body, {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root{
+    --rib-a:#fffdf9; --rib-b:#fffdf9; --rib-c:#f8f3e9;
+    --ink:#1c1914; --rule:#2a251f; --hairline:#d9d2c2;
+    --lbl:#1c1914; --muted:#6d675e; --paper:#fffdf9; --back:#e8e4dc;
+  }
+  
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+            overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+  .toolbar{ font:12.5px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif; color:#8a8377;
+            text-align:center; padding:8px 12px 10px; }
+  .toolbar a{ color:#8a8377; text-decoration:underline; text-underline-offset:2px; }
+  .toolbar .sep{ margin:0 8px; color:#c9c2b4; }
+  .book-page{ max-width:880px; margin:0 auto 14px; background:var(--paper);
+              box-shadow:0 2px 6px rgba(60,50,30,.14), 0 12px 34px rgba(60,50,30,.10); }
+  p{ margin:0 0 14px; text-align:justify; }
+  .fig{ margin:16px auto 20px; text-align:center; }
+  .fig img{ max-width:100%; height:auto; }
+  .fig figcaption{ font:12.5px/1.5 system-ui,sans-serif; color:#7a7368; margin-top:7px; }
+  table.tbl{ border-collapse:collapse; margin:16px auto 20px; font-size:15.5px; line-height:1.55; }
+  table.tbl th, table.tbl td{ border:1.4px solid var(--rule); padding:6px 12px; text-align:center; }
+  table.tbl th{ font-weight:700; }
+  .colophon{ max-width:880px; margin:0 auto; padding:2px 18px 30px; text-align:center;
+             font:12px/1.6 system-ui,sans-serif; color:#98917f; }
+  .colophon code{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11px; }
+  @media print{ .toolbar,.colophon{ display:none; } body{ background:#fff; }
+                .book-page{ box-shadow:none; max-width:none; } }
+
+  body{ margin:0; background:var(--back); color:var(--ink);
+        font:16.5px/1.85 Georgia,'Times New Roman',serif; }
+  .page-ribbon{ display:flex; align-items:baseline; justify-content:space-between; gap:18px;
+                background:linear-gradient(180deg,var(--rib-a) 0%,var(--rib-b) 70%,var(--rib-c) 100%);
+                color:var(--ink); padding:14px 52px 10px;
+                border-bottom:2.5px solid var(--rule);
+                font:700 15px/1.3 'Trebuchet MS','Arial Narrow',Arial,sans-serif;
+                letter-spacing:.04em; }
+  .page-ribbon .no{ font-size:16px; letter-spacing:.02em; }
+  .page-body{ padding:26px 52px 22px; }
+  .lbl{ font-weight:700; color:var(--lbl); }
+  .lbl-line{ font-weight:700; color:var(--lbl); margin:2px 0 8px; }
+  h2.sec{ font:700 16.5px/1.5 Georgia,'Times New Roman',serif; letter-spacing:.03em;
+          margin:20px 0 10px; }
+  ul.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ul.plain li{ margin-bottom:8px; padding-left:.35em; text-align:justify; }
+  ol.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ol.plain li{ margin-bottom:8px; text-align:justify; }
+  .it{ padding-left:2.3em; text-indent:0; margin:0 0 10px; text-align:justify; }
+  .it .ro{ display:inline-block; width:2.3em; margin-left:-2.3em; font-style:normal; }
+  .cont{ margin:0 0 10px 2.3em; text-align:justify; }
+  .eq{ margin:2px 0 12px 2.2em; overflow-x:auto; }
+  .eq .katex-display{ margin:0; text-align:left; }
+  .eq .katex-display>.katex{ text-align:left; }
+  p.q{ padding-left:2.9em; }
+  p.q .qno{ display:inline-block; width:2.9em; margin-left:-2.9em; font-weight:700; }
+  .opts{ display:grid; gap:2px 16px; margin:0 0 13px 2.9em; text-align:left; }
+  p.ans{ margin:0 0 12px; }
+  .note{ border-left:3px solid var(--rule); background:#f6f1e5; padding:10px 16px;
+         margin:0 0 14px; font-size:15px; }
+  .note p{ margin:0 0 6px; }
+  .keyfacts{ width:100%; margin:16px 0 18px; border:2.5px solid var(--rule); background:var(--paper);
+             padding:16px 16px 10px; position:relative; }
+  .keyfacts .tab{ position:absolute; top:-13px; right:12px; background:var(--rule); color:#fff;
+                  font:700 12.5px/1.6 system-ui,sans-serif; letter-spacing:.03em; padding:1px 12px; }
+  .keyfacts p{ margin:0 0 8px; font-size:15.5px; line-height:1.8; }
+  .keyfacts table.tbl{ margin:8px auto 4px; font-size:14.5px; }
+  .keyfacts table.tbl td{ text-align:left; }
+  .ansbox{ display:table; margin:20px auto 16px; border:2.5px solid var(--rule);
+           padding:2px 30px; font:700 17px/1.7 Georgia,'Times New Roman',serif;
+           letter-spacing:.08em; }
+  table.ans{ width:100%; border-collapse:collapse; font-size:14.5px; line-height:1.5; }
+  table.ans td{ border:1px solid #3a342c; padding:2px 9px; text-align:left; white-space:nowrap; }
+  table.ans td.nb{ border:none; }
+  .page-foot{ border-top:1px solid var(--hairline); background:var(--paper);
+              color:var(--muted); display:flex; align-items:center; justify-content:center;
+              padding:8px 52px; font:12.5px/1.4 Georgia,serif; letter-spacing:.14em; }
+  .figslot{ margin:16px auto 20px; border:2px dashed #a89a78; background:#fbf7ec;
+            padding:14px 18px; max-width:640px; }
+  .figslot .tag{ display:inline-block; font:700 12px/1.5 system-ui,sans-serif; color:#6d5a1e;
+                 background:#efe4c4; padding:1px 10px; margin-bottom:8px; letter-spacing:.04em; }
+  .figslot p{ font:13.5px/1.65 system-ui,sans-serif; color:#6d6248; margin:0; text-align:left; }
+  .figstrip{ margin-top:22px; border-top:1px solid #e3dbc8; padding-top:6px; }
+  .figcellslot{ display:inline-block; border:2px dashed #b3a262; background:#fdf8ea; color:#7a6420;
+                font:700 12px/1.4 system-ui,sans-serif; padding:10px 14px; min-width:96px; }
+  @media (max-width:720px){
+    .page-body{ padding:18px 16px 14px; }
+    .page-ribbon{ padding:10px 16px 8px; font-size:12px; }
+    .page-foot{ padding:7px 16px; }
+    .eq{ margin-left:1em; }
+    body{ font-size:15px; }
+    .opts{ grid-template-columns:repeat(2,1fr) !important; }
+    .page-body table.tbl{ display:block; overflow-x:auto; }
+    table.ans{ display:block; overflow-x:auto; }
+  }
+</style>
+</head>
+<body>
+<p class="toolbar"><strong>STUDY · Digital edition</strong><span class="sep">|</span>Basic Statistics Part-II — Chapter 9 — Probability<span class="sep">|</span>page 39 (printed 49)<span class="sep">|</span><a href="../../../Raw/Statistics/Chapter-09-Probability/0039.jpg">original scan ↗</a><span class="sep">|</span><a href="../../../Formatted/Statistics/Chapter-09-Probability/page-039.md">markdown source ↗</a><span class="sep">|</span><a href="../../index.html">library ↗</a></p>
+<div class="book-page">
+  <header class="page-ribbon"><span>Basic Statistics Part-II (Federal Board)</span><span class="no">49</span></header>
+  <main class="page-body">
+    <h1 class="sr-only">Basic Statistics Part-II · Chapter 9 — Probability — page 39 (printed 49)</h1>
+    <p><strong>40.</strong> If an event $\bar{A}$ is the complement of the event A, then:</p>
+    <ul class="plain"><li>(a) $A \cup \bar{A} = S$</li><li>(b) $A \cap \bar{A} = S$</li><li>(c) $A \cup \bar{A} = \phi$</li><li>(d) $P(A) = P(\bar{A})$</li></ul>
+    <p><strong>41.</strong> If A is an empty set and B is a non-empty set then:</p>
+    <ul class="plain"><li>(a) $A \cap B = S$</li><li>(b) $A \cap B = B$</li><li>(c) $A \cup B = B$</li><li>(d) $P(A) = P(B)$</li></ul>
+    <p><strong>42.</strong> Which of the following statements is correct:</p>
+    <ul class="plain"><li>(a) $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$</li><li>(b) $A \cup (B \cap C) = (A \cap B) \cap (A \cup C)$</li><li>(c) $A \cap (B \cap C) = (A \cup B) \cup (B \cap C)$</li><li>(d) $A \cap (B \cup C) = A + (B \cap C)$</li></ul>
+    <p><strong>43.</strong> Which of the following statement is correct?</p>
+    <ul class="plain"><li>(a) $A \cap A = \phi$</li><li>(b) $A \cap A = A'$</li><li>(c) $A \cup A = A$</li><li>(d) $A \cap A = S$</li></ul>
+    <p><strong>44.</strong> When the possible outcomes of an experiment are equally likely to occur, then we apply:</p>
+    <ul class="plain"><li>(a) relative probability</li><li>(b) subjective probability</li><li>(c) conditional probability</li><li>(d) classical probability</li></ul>
+    <p><strong>45.</strong> A number between 0 and 1 that is used to measure uncertainty is called:</p>
+    <ul class="plain"><li>(a) random variable</li><li>(b) trial</li><li>(c) simple event</li><li>(d) probability</li></ul>
+    <p><strong>46.</strong> Probability lies between:</p>
+    <ul class="plain"><li>(a) $-1$ and $+1$</li><li>(b) 0 and 1</li><li>(c) 0 and n</li><li>(d) 0 and $\infty$</li></ul>
+    <p><strong>47.</strong> Probability can be expressed as:</p>
+    <ul class="plain"><li>(a) ratio</li><li>(b) fraction</li><li>(c) percentage</li><li>(d) all of the above</li></ul>
+    <p><strong>48.</strong> The probability of an event cannot be:</p>
+    <ul class="plain"><li>(a) equal to zero</li><li>(b) greater than zero</li><li>(c) equal to one</li><li>(d) less than zero</li></ul>
+    <p><strong>49.</strong> A measure of the chance that an uncertain event will occur:</p>
+    <ul class="plain"><li>(a) an experiment</li><li>(b) an event</li><li>(c) a probability</li><li>(d) a trial</li></ul>
+    <p><strong>50.</strong> The probability of all possible outcomes of a random experiment is always equal to:</p>
+    <ul class="plain"><li>(a) one</li><li>(b) zero</li><li>(c) infinity</li><li>(d) all of the above</li></ul>
+    <p><strong>51.</strong> If an event is impossible, its probability must be:</p>
+    <ul class="plain"><li>(a) 0</li><li>(b) 1</li><li>(c) 0.5</li><li>(d) $-1$</li></ul>
+    <p><strong>52.</strong> For every event A, probability of A is:</p>
+    <ul class="plain"><li>(a) $\leq 0$</li><li>(b) $\geq 0$</li><li>(c) $> 0$</li><li>(d) $< 0$</li></ul>
+    <p><strong>53.</strong> When certainty is involved in a situation, its probability is equal to:</p>
+    <ul class="plain"><li>(a) zero</li><li>(b) between $-1$ and $+1$</li><li>(c) between 0 and 1</li><li>(d) one</li></ul>
+    <p><strong>54.</strong> Which of the following cannot be taken as probability of an event?</p>
+    <ul class="plain"><li>(a) 0</li><li>(b) 0.5</li><li>(c) 1</li><li>(d) $-1$</li></ul>
+    <p><strong>55.</strong> A letter is chosen at random from the word "Statistics". The probability of getting a vowel is:</p>
+    <ul class="plain"><li>(a) 1/10</li><li>(b) 2/10</li><li>(c) 3/10</li><li>(d) 4/10</li></ul>
+    <p><strong>56.</strong> A single letter is selected from the word "PROBABILITY". Then the probability of vowels is:</p>
+    <ul class="plain"><li>(a) 2/11</li><li>(b) 3/11</li><li>(c) 4/11</li><li>(d) 7/11</li></ul>
+    <p><strong>57.</strong> A single letter is selected from the world "PUBLICATION", then the probability of consonants is equal to:</p>
+    <ul class="plain"><li>(a) 5/11</li><li>(b) 6/11</li><li>(c) 0</li><li>(d) 1</li></ul>
+    <p><strong>58.</strong> The probability based on the concept of relative frequency is called:</p>
+    <ul class="plain"><li>(a) empirical probability</li><li>(b) statistical probability</li><li>(c) both (a) and (b)</li><li>(d) neither (a) nor (b)</li></ul>
+    <p><strong>59.</strong> The events having no experimental outcomes in common is called:</p>
+    <ul class="plain"><li>(a) equally likely events</li><li>(b) exhaustive events</li><li>(c) mutually exclusive events</li><li>(d) Independent events</li></ul>
+    <p><strong>60.</strong> If A is any event in S and $\bar{A}$ its complement, then $P(\bar{A})$ is equal to:</p>
+    <ul class="plain"><li>(a) 1</li><li>(b) 0</li><li>(c) $1 - A$</li><li>(d) $1 - P(A)$</li></ul>
+  </main>
+  <footer class="page-foot">· 49 ·</footer>
+</div>
+<p class="colophon">Digital replica · typeset from <code>Books/Formatted/Statistics/Chapter-09-Probability/page-039.md</code> · figure crops embedded from the original scans</p>
+</body>
+</html>

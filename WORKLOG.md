@@ -418,3 +418,61 @@ Stage Summary:
 - Every Digital page is now a truly standalone digital replica: typography + math + tables + FIGURES all embedded — the "no graphs" failure class is structurally eliminated (regression-gated by the checker, not just by convention).
 - Gates: check-digital-test ALL GREEN (8/8 pages, 14/14 figures embedded, 16 local links resolve); verify-v4 ALL GREEN 112/112 (Books/Formatted untouched).
 - Assets/ remains the canonical crop source (optimized); embed-figures.py is idempotent and re-runnable after any crop edit.
+
+---
+
+## Task 11 — Digital Edition v3: full 112-page generated library (2026-09-04)
+
+**User directive:** "let's work on the others and with a proper structure of the folders and such. lets build the digital versions of all the pages so far."
+
+### Structure (mirrors Raw/Formatted 1:1)
+
+- `Books/Digital/<Subject>/<Chapter-Folder>/page-NNN.html` + per-chapter `assets/` + library
+  `index.html` + `manifest.json`. The 8 flat v2 files were `git mv`-ed into the tree
+  (scan/md links deepened to `../../../`), their 14 crops split into per-chapter `assets/`.
+
+### Generation pipeline
+
+- **`tools/gen-digital.mjs`** (new): Books/Formatted markdown → replica HTML in the two
+  book design languages (math blue-ribbon/orange-wedge; stats monochrome cream). Renders
+  sections, (i)/(ii) items, bullet lists, MCQ grids + `## ANSWERS` 112-cell grid, display
+  math (KaTeX CDN auto-render), Key-Facts boxes (crossed-keys icon lifted from the M1-023
+  exemplar at runtime), real tables (math-aware cell splitting), front-matter plates,
+  alternating running heads, folio footers. `HAND_TYPESET` preserves the 8 exemplars
+  verbatim. Emits `manifest.json` (accurate under `--only`) + `index.html`.
+- **Figures:** 96 slots across 41 pages, all now embedded as data URIs from crops in
+  chapter `assets/` named `<PREFIX>-<NNN>-fig-<n>[-<slug>].png|jpg` (PREFIX M0/M1/S0/S1/S2,
+  n = md Figure F number). Slots without crops render explicit dashed placeholders
+  (nothing can silently vanish); marker-less md figures render in an end-of-page figstrip;
+  table-cell figure markers render inside their cells.
+- **`tools/check-digital.mjs`** (new, replaces check-digital-test.mjs): coverage 112/112,
+  chrome, on-disk link resolution, figure integrity vs `figures_count`, relative-`assets/`
+  regression, tree shape, manifest sync. `--strict-figures` = push gate. ALL GREEN.
+- **`tools/optimize-assets.py`** (new): palette-quantizes line-art PNGs / JPEG q82 photos
+  before the final regen (assets 12.2 MB → ~4 MB).
+- **`tools/crop-figure.py`**: `grid` now takes an output path (parallel-safe); `crop` saves
+  `.jpg` for photos.
+
+### Figure crops (subagent waves 11-a…11-g2 + coordinator)
+
+- 11-b M1-002..007 (8) · 11-f S0-001 + S1-002/004 + S2-004/007/015/017/018/019/023 (16) ·
+  11-c M1-009..013 partial (10, agent timed out after) · 11-a M0-001..007 (10, verified
+  prior run's crops, re-cropped the corner flourish, regenerated) · 11-c2 M1-014/015 (4) ·
+  11-d M1-016/017/018/021/022 (13) · 11-e M1-026..029 (11) · 11-g partial M1-031 (8) ·
+  coordinator finished M1-032 (8) + M1-033 (8) directly after repeated agent-launch
+  transport failures, using pixel-scanned true cell borders (caption-band rule scan).
+- VLM-verified + numpy ink-margin-scanned; several re-crops to kill table-rule bleed and
+  stray text. Generator fixes found during cropping: fig-asset stem dash bug, pipe-in-math
+  table splitting, literal `<br>` in cells, mobile wide-table scroll, manifest disk-count.
+
+### Verification
+
+- `check-digital.mjs --strict-figures` → ALL GREEN (112 pages, 116 embedded figures,
+  0 pending slots).
+- agent-browser sweep (desktop 1280 + mobile 390): index, M0 cover + title page, M1-003/
+  005/018/023/029/031/032/033, S0-001, S1-002/004/009, S2-010/018/023/042 — no broken
+  images, KaTeX renders, zero console errors, no real overflow (body.scrollWidth; the
+  documentElement delta is KaTeX's hidden MathML, a known artifact).
+
+Docs: CONVENTIONS v4.2 + §1.6; tools/README rewritten for v3. Next.js viewer rebuilt as a
+full library browser reading manifest.json at request time.

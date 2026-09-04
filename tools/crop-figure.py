@@ -40,10 +40,13 @@ def crop(path, out, l, t, r, b):
     box = (int(l*w), int(t*h), min(w, int(r*w)), min(h, int(b*h)))
     fig = im.crop(box)
     os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
-    fig.save(out, "PNG", optimize=True)
+    if out.lower().endswith((".jpg", ".jpeg")):
+        fig.save(out, "JPEG", quality=85, optimize=True)
+    else:
+        fig.save(out, "PNG", optimize=True)
     print(f"saved {out}  ({fig.size[0]}x{fig.size[1]} from box l={l} t={t} r={r} b={b})")
 
-def grid(path):
+def grid(path, out="/tmp/grid.jpg"):
     im = Image.open(path).convert("RGB").copy()
     w, h = im.size
     from PIL import ImageDraw
@@ -53,12 +56,12 @@ def grid(path):
         d.text((w*i//10 + 6, 8), f".{i}", fill=(255, 0, 255))
         d.line([(0, h*i//10), (w, h*i//10)], fill=(0, 200, 0), width=3)
         d.text((8, h*i//10 + 6), f".{i}", fill=(0, 200, 0))
-    im.save("/tmp/grid.jpg", quality=88)
-    print("saved /tmp/grid.jpg")
+    im.save(out, quality=88)
+    print(f"saved {out}")
 
 if __name__ == "__main__":
     cmd = sys.argv[1]
     if cmd == "probe":  probe(sys.argv[2])
     elif cmd == "crop": crop(sys.argv[2], sys.argv[3], *map(float, sys.argv[4:8]))
-    elif cmd == "grid": grid(sys.argv[2])
+    elif cmd == "grid": grid(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "/tmp/grid.jpg")
     else: print(__doc__); sys.exit(1)

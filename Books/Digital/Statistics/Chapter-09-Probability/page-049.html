@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basic Statistics Part-II · Chapter 9 — Probability · page 49 (printed 59) — Digital Edition</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.body, {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root{
+    --rib-a:#fffdf9; --rib-b:#fffdf9; --rib-c:#f8f3e9;
+    --ink:#1c1914; --rule:#2a251f; --hairline:#d9d2c2;
+    --lbl:#1c1914; --muted:#6d675e; --paper:#fffdf9; --back:#e8e4dc;
+  }
+  
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+            overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+  .toolbar{ font:12.5px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif; color:#8a8377;
+            text-align:center; padding:8px 12px 10px; }
+  .toolbar a{ color:#8a8377; text-decoration:underline; text-underline-offset:2px; }
+  .toolbar .sep{ margin:0 8px; color:#c9c2b4; }
+  .book-page{ max-width:880px; margin:0 auto 14px; background:var(--paper);
+              box-shadow:0 2px 6px rgba(60,50,30,.14), 0 12px 34px rgba(60,50,30,.10); }
+  p{ margin:0 0 14px; text-align:justify; }
+  .fig{ margin:16px auto 20px; text-align:center; }
+  .fig img{ max-width:100%; height:auto; }
+  .fig figcaption{ font:12.5px/1.5 system-ui,sans-serif; color:#7a7368; margin-top:7px; }
+  table.tbl{ border-collapse:collapse; margin:16px auto 20px; font-size:15.5px; line-height:1.55; }
+  table.tbl th, table.tbl td{ border:1.4px solid var(--rule); padding:6px 12px; text-align:center; }
+  table.tbl th{ font-weight:700; }
+  .colophon{ max-width:880px; margin:0 auto; padding:2px 18px 30px; text-align:center;
+             font:12px/1.6 system-ui,sans-serif; color:#98917f; }
+  .colophon code{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11px; }
+  @media print{ .toolbar,.colophon{ display:none; } body{ background:#fff; }
+                .book-page{ box-shadow:none; max-width:none; } }
+
+  body{ margin:0; background:var(--back); color:var(--ink);
+        font:16.5px/1.85 Georgia,'Times New Roman',serif; }
+  .page-ribbon{ display:flex; align-items:baseline; justify-content:space-between; gap:18px;
+                background:linear-gradient(180deg,var(--rib-a) 0%,var(--rib-b) 70%,var(--rib-c) 100%);
+                color:var(--ink); padding:14px 52px 10px;
+                border-bottom:2.5px solid var(--rule);
+                font:700 15px/1.3 'Trebuchet MS','Arial Narrow',Arial,sans-serif;
+                letter-spacing:.04em; }
+  .page-ribbon .no{ font-size:16px; letter-spacing:.02em; }
+  .page-body{ padding:26px 52px 22px; }
+  .lbl{ font-weight:700; color:var(--lbl); }
+  .lbl-line{ font-weight:700; color:var(--lbl); margin:2px 0 8px; }
+  h2.sec{ font:700 16.5px/1.5 Georgia,'Times New Roman',serif; letter-spacing:.03em;
+          margin:20px 0 10px; }
+  ul.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ul.plain li{ margin-bottom:8px; padding-left:.35em; text-align:justify; }
+  ol.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ol.plain li{ margin-bottom:8px; text-align:justify; }
+  .it{ padding-left:2.3em; text-indent:0; margin:0 0 10px; text-align:justify; }
+  .it .ro{ display:inline-block; width:2.3em; margin-left:-2.3em; font-style:normal; }
+  .cont{ margin:0 0 10px 2.3em; text-align:justify; }
+  .eq{ margin:2px 0 12px 2.2em; overflow-x:auto; }
+  .eq .katex-display{ margin:0; text-align:left; }
+  .eq .katex-display>.katex{ text-align:left; }
+  p.q{ padding-left:2.9em; }
+  p.q .qno{ display:inline-block; width:2.9em; margin-left:-2.9em; font-weight:700; }
+  .opts{ display:grid; gap:2px 16px; margin:0 0 13px 2.9em; text-align:left; }
+  p.ans{ margin:0 0 12px; }
+  .note{ border-left:3px solid var(--rule); background:#f6f1e5; padding:10px 16px;
+         margin:0 0 14px; font-size:15px; }
+  .note p{ margin:0 0 6px; }
+  .keyfacts{ width:100%; margin:16px 0 18px; border:2.5px solid var(--rule); background:var(--paper);
+             padding:16px 16px 10px; position:relative; }
+  .keyfacts .tab{ position:absolute; top:-13px; right:12px; background:var(--rule); color:#fff;
+                  font:700 12.5px/1.6 system-ui,sans-serif; letter-spacing:.03em; padding:1px 12px; }
+  .keyfacts p{ margin:0 0 8px; font-size:15.5px; line-height:1.8; }
+  .keyfacts table.tbl{ margin:8px auto 4px; font-size:14.5px; }
+  .keyfacts table.tbl td{ text-align:left; }
+  .ansbox{ display:table; margin:20px auto 16px; border:2.5px solid var(--rule);
+           padding:2px 30px; font:700 17px/1.7 Georgia,'Times New Roman',serif;
+           letter-spacing:.08em; }
+  table.ans{ width:100%; border-collapse:collapse; font-size:14.5px; line-height:1.5; }
+  table.ans td{ border:1px solid #3a342c; padding:2px 9px; text-align:left; white-space:nowrap; }
+  table.ans td.nb{ border:none; }
+  .page-foot{ border-top:1px solid var(--hairline); background:var(--paper);
+              color:var(--muted); display:flex; align-items:center; justify-content:center;
+              padding:8px 52px; font:12.5px/1.4 Georgia,serif; letter-spacing:.14em; }
+  .figslot{ margin:16px auto 20px; border:2px dashed #a89a78; background:#fbf7ec;
+            padding:14px 18px; max-width:640px; }
+  .figslot .tag{ display:inline-block; font:700 12px/1.5 system-ui,sans-serif; color:#6d5a1e;
+                 background:#efe4c4; padding:1px 10px; margin-bottom:8px; letter-spacing:.04em; }
+  .figslot p{ font:13.5px/1.65 system-ui,sans-serif; color:#6d6248; margin:0; text-align:left; }
+  .figstrip{ margin-top:22px; border-top:1px solid #e3dbc8; padding-top:6px; }
+  .figcellslot{ display:inline-block; border:2px dashed #b3a262; background:#fdf8ea; color:#7a6420;
+                font:700 12px/1.4 system-ui,sans-serif; padding:10px 14px; min-width:96px; }
+  @media (max-width:720px){
+    .page-body{ padding:18px 16px 14px; }
+    .page-ribbon{ padding:10px 16px 8px; font-size:12px; }
+    .page-foot{ padding:7px 16px; }
+    .eq{ margin-left:1em; }
+    body{ font-size:15px; }
+    .opts{ grid-template-columns:repeat(2,1fr) !important; }
+    .page-body table.tbl{ display:block; overflow-x:auto; }
+    table.ans{ display:block; overflow-x:auto; }
+  }
+</style>
+</head>
+<body>
+<p class="toolbar"><strong>STUDY · Digital edition</strong><span class="sep">|</span>Basic Statistics Part-II — Chapter 9 — Probability<span class="sep">|</span>page 49 (printed 59)<span class="sep">|</span><a href="../../../Raw/Statistics/Chapter-09-Probability/0049.jpg">original scan ↗</a><span class="sep">|</span><a href="../../../Formatted/Statistics/Chapter-09-Probability/page-049.md">markdown source ↗</a><span class="sep">|</span><a href="../../index.html">library ↗</a></p>
+<div class="book-page">
+  <header class="page-ribbon"><span>Basic Statistics Part-II (Federal Board)</span><span class="no">59</span></header>
+  <main class="page-body">
+    <h1 class="sr-only">Basic Statistics Part-II · Chapter 9 — Probability — page 49 (printed 59)</h1>
+    <p class="q"><span class="qno">Q.34</span>A pair of dice is thrown. If the two numbers appearing are different, find the probability that (i) the sum is 6　　　(ii) the sum is four or less.</p>
+    <p class="ans"><strong>Ans.</strong> (i) 2/15　　　　(ii) 2/15</p>
+    <p class="q"><span class="qno">Q.35</span>A card is taken at random from playing cards, find the probability that card is a king, when it is given ( known ) that the card is: (i) red　　　　　(ii) of diamonds　　　　　　(iii) faced.</p>
+    <p class="ans"><strong>Ans.</strong> (i) 1/13　　　　(ii) 1/13　　　　　(iii) 1/3</p>
+    <p class="q"><span class="qno">Q.36</span>In a firm, 20 percent of the employees have accounting background, while 5 percent of the employees are executives and have accounting background. If an employee has an accounting background, what is the probability that the employee is an executive?</p>
+    <p class="ans"><strong>Ans.</strong> 1/4</p>
+    <p class="q"><span class="qno">Q.37</span>The probability that a regularly scheduled flight departs on time is P(D) = 0.83, the probability that it arrives on time is P(A) = 0.92, and the probability that it departs and arrives in time is P( D ∩ A ) = 0.78. Find the probability that a plane (i) arrives in time given that it departed on time, and (ii) departed on time given that it has arrived in time.</p>
+    <p class="ans"><strong>Ans.</strong> (i) 0.94　　　　　　　　(ii) 0.85</p>
+    <p class="q"><span class="qno">Q.38</span>Given the following contingency table:</p>
+    <table class="tbl"><thead><tr><th></th><th>B</th><th>$\bar{B}$</th></tr></thead><tbody><tr><td>A</td><td>20</td><td>40</td></tr><tr><td>$\bar{A}$</td><td>10</td><td>30</td></tr></tbody></table>
+    <p>What is the probability of: (i) A/B?　　　　　(ii) A/$\bar{B}$?　　　　　(iii) $\bar{A}$ / B?　　　　　　(iv) $\bar{A}$ / $\bar{B}$?</p>
+    <p class="ans"><strong>Ans:</strong> (i) 2/3　　　　(ii) 4/7　　　　　(iii) 1/3　　　　　　(iv) 3/7</p>
+    <p class="q"><span class="qno">Q.39</span>Two dice are rolled. Let E₁ denote the event of an odd total, E₂ the event of an ace on the first die and E₃ the event of a total seven.</p>
+    <ul class="plain"><li>(i) Are E₁ and E₂ independent?　　(ii) Are E₁ and E₃ independent?　(iii) Are E₂ and E₃ independent?</li></ul>
+    <p class="ans"><strong>Ans.</strong> (i) independent　　　　　(ii) dependent　　　　　　　(iii) independent.</p>
+    <p class="q"><span class="qno">Q.40</span>The probability that a boy will pass an examination is 3/5 and that for a girl it is 2/5. What is the probability that at least one of them will pass the examination?</p>
+    <p class="ans"><strong>Ans.</strong> 19/25</p>
+    <p class="q"><span class="qno">Q.41</span>Two urns contain respectively 3 white, 7 red, 15 black and 10 white, 6 red and 9 black balls. One ball is drawn from each urn. What is the probability that both balls are of the same colour.</p>
+    <p class="ans"><strong>Ans.</strong> 0.3312</p>
+    <p class="q"><span class="qno">Q.42</span>The probability that a 50 year old man will be alive at 60 is 0.83 and the probability that a 45 year old woman will be alive at 55 is 0.87. What is the probability that a man who is 50 and his wife who is 45 will be alive 10 years hence? Also find the probability that at least one of them will be alive 10 years hence.</p>
+    <p class="ans"><strong>Ans.</strong> 0.7221, 0.9779</p>
+    <p class="q"><span class="qno">Q.43</span>Three missiles are fired at a target. If the probabilities of hitting the target are 0.4, 0.5 and 0.6, respectively and if the missiles are fired independently, what is the probability that at least two missiles will hit the target?</p>
+    <p class="ans"><strong>Ans.</strong> 0.5</p>
+    <p class="q"><span class="qno">Q.44</span>A can hit a target 4 times in 5 shots, B can hit 3 times in 4 shots and C can hit twice in 3 shots. They fire a volley. What is the probability that the two shots at least hit?</p>
+    <p class="ans"><strong>Ans.</strong> 5/6</p>
+    <p class="q"><span class="qno">Q.45</span>A husband and a wife appear in an interview for two vacancies of the same post. The probability of husband's selection is 1/7 and that of wife's selection is 1/5. What is the probability that (i) both of them will be selected?　　　　　(ii) only one of them will be selected?　　　　(iii) none of them will be selected?</p>
+    <p class="ans"><strong>Ans.</strong> (i) 1/35　　　　　(ii) 10/35　　　　　　(iii) 24/35</p>
+  </main>
+  <footer class="page-foot">· 59 ·</footer>
+</div>
+<p class="colophon">Digital replica · typeset from <code>Books/Formatted/Statistics/Chapter-09-Probability/page-049.md</code> · figure crops embedded from the original scans</p>
+</body>
+</html>

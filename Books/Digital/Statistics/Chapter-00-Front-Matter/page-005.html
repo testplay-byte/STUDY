@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basic Statistics Part-II · Front Matter · page 5 (printed 4) — Digital Edition</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.body, {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root{
+    --rib-a:#fffdf9; --rib-b:#fffdf9; --rib-c:#f8f3e9;
+    --ink:#1c1914; --rule:#2a251f; --hairline:#d9d2c2;
+    --lbl:#1c1914; --muted:#6d675e; --paper:#fffdf9; --back:#e8e4dc;
+  }
+  
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+            overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+  .toolbar{ font:12.5px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif; color:#8a8377;
+            text-align:center; padding:8px 12px 10px; }
+  .toolbar a{ color:#8a8377; text-decoration:underline; text-underline-offset:2px; }
+  .toolbar .sep{ margin:0 8px; color:#c9c2b4; }
+  .book-page{ max-width:880px; margin:0 auto 14px; background:var(--paper);
+              box-shadow:0 2px 6px rgba(60,50,30,.14), 0 12px 34px rgba(60,50,30,.10); }
+  p{ margin:0 0 14px; text-align:justify; }
+  .fig{ margin:16px auto 20px; text-align:center; }
+  .fig img{ max-width:100%; height:auto; }
+  .fig figcaption{ font:12.5px/1.5 system-ui,sans-serif; color:#7a7368; margin-top:7px; }
+  table.tbl{ border-collapse:collapse; margin:16px auto 20px; font-size:15.5px; line-height:1.55; }
+  table.tbl th, table.tbl td{ border:1.4px solid var(--rule); padding:6px 12px; text-align:center; }
+  table.tbl th{ font-weight:700; }
+  .colophon{ max-width:880px; margin:0 auto; padding:2px 18px 30px; text-align:center;
+             font:12px/1.6 system-ui,sans-serif; color:#98917f; }
+  .colophon code{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11px; }
+  @media print{ .toolbar,.colophon{ display:none; } body{ background:#fff; }
+                .book-page{ box-shadow:none; max-width:none; } }
+
+  body{ margin:0; background:var(--back); color:var(--ink);
+        font:16.5px/1.85 Georgia,'Times New Roman',serif; }
+  .page-ribbon{ display:flex; align-items:baseline; justify-content:space-between; gap:18px;
+                background:linear-gradient(180deg,var(--rib-a) 0%,var(--rib-b) 70%,var(--rib-c) 100%);
+                color:var(--ink); padding:14px 52px 10px;
+                border-bottom:2.5px solid var(--rule);
+                font:700 15px/1.3 'Trebuchet MS','Arial Narrow',Arial,sans-serif;
+                letter-spacing:.04em; }
+  .page-ribbon .no{ font-size:16px; letter-spacing:.02em; }
+  .page-body{ padding:26px 52px 22px; }
+  .lbl{ font-weight:700; color:var(--lbl); }
+  .lbl-line{ font-weight:700; color:var(--lbl); margin:2px 0 8px; }
+  h2.sec{ font:700 16.5px/1.5 Georgia,'Times New Roman',serif; letter-spacing:.03em;
+          margin:20px 0 10px; }
+  ul.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ul.plain li{ margin-bottom:8px; padding-left:.35em; text-align:justify; }
+  ol.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ol.plain li{ margin-bottom:8px; text-align:justify; }
+  .it{ padding-left:2.3em; text-indent:0; margin:0 0 10px; text-align:justify; }
+  .it .ro{ display:inline-block; width:2.3em; margin-left:-2.3em; font-style:normal; }
+  .cont{ margin:0 0 10px 2.3em; text-align:justify; }
+  .eq{ margin:2px 0 12px 2.2em; overflow-x:auto; }
+  .eq .katex-display{ margin:0; text-align:left; }
+  .eq .katex-display>.katex{ text-align:left; }
+  p.q{ padding-left:2.9em; }
+  p.q .qno{ display:inline-block; width:2.9em; margin-left:-2.9em; font-weight:700; }
+  .opts{ display:grid; gap:2px 16px; margin:0 0 13px 2.9em; text-align:left; }
+  p.ans{ margin:0 0 12px; }
+  .note{ border-left:3px solid var(--rule); background:#f6f1e5; padding:10px 16px;
+         margin:0 0 14px; font-size:15px; }
+  .note p{ margin:0 0 6px; }
+  .keyfacts{ width:100%; margin:16px 0 18px; border:2.5px solid var(--rule); background:var(--paper);
+             padding:16px 16px 10px; position:relative; }
+  .keyfacts .tab{ position:absolute; top:-13px; right:12px; background:var(--rule); color:#fff;
+                  font:700 12.5px/1.6 system-ui,sans-serif; letter-spacing:.03em; padding:1px 12px; }
+  .keyfacts p{ margin:0 0 8px; font-size:15.5px; line-height:1.8; }
+  .keyfacts table.tbl{ margin:8px auto 4px; font-size:14.5px; }
+  .keyfacts table.tbl td{ text-align:left; }
+  .ansbox{ display:table; margin:20px auto 16px; border:2.5px solid var(--rule);
+           padding:2px 30px; font:700 17px/1.7 Georgia,'Times New Roman',serif;
+           letter-spacing:.08em; }
+  table.ans{ width:100%; border-collapse:collapse; font-size:14.5px; line-height:1.5; }
+  table.ans td{ border:1px solid #3a342c; padding:2px 9px; text-align:left; white-space:nowrap; }
+  table.ans td.nb{ border:none; }
+  .page-foot{ border-top:1px solid var(--hairline); background:var(--paper);
+              color:var(--muted); display:flex; align-items:center; justify-content:center;
+              padding:8px 52px; font:12.5px/1.4 Georgia,serif; letter-spacing:.14em; }
+  .figslot{ margin:16px auto 20px; border:2px dashed #a89a78; background:#fbf7ec;
+            padding:14px 18px; max-width:640px; }
+  .figslot .tag{ display:inline-block; font:700 12px/1.5 system-ui,sans-serif; color:#6d5a1e;
+                 background:#efe4c4; padding:1px 10px; margin-bottom:8px; letter-spacing:.04em; }
+  .figslot p{ font:13.5px/1.65 system-ui,sans-serif; color:#6d6248; margin:0; text-align:left; }
+  .figstrip{ margin-top:22px; border-top:1px solid #e3dbc8; padding-top:6px; }
+  .figcellslot{ display:inline-block; border:2px dashed #b3a262; background:#fdf8ea; color:#7a6420;
+                font:700 12px/1.4 system-ui,sans-serif; padding:10px 14px; min-width:96px; }
+  @media (max-width:720px){
+    .page-body{ padding:18px 16px 14px; }
+    .page-ribbon{ padding:10px 16px 8px; font-size:12px; }
+    .page-foot{ padding:7px 16px; }
+    .eq{ margin-left:1em; }
+    body{ font-size:15px; }
+    .opts{ grid-template-columns:repeat(2,1fr) !important; }
+    .page-body table.tbl{ display:block; overflow-x:auto; }
+    table.ans{ display:block; overflow-x:auto; }
+  }
+
+  .page-body.plate{ text-align:center; padding:38px 56px 30px; }
+  .plate p{ text-align:center; }
+  .plate .display-title{ font:700 34px/1.3 Georgia,'Times New Roman',serif; letter-spacing:.06em;
+                         margin:10px 0 18px; }
+  .plate .small{ font-size:14px; color:var(--muted); }
+  .plate .fig{ margin:20px auto; }
+  .plate .fig.wide img{ max-width:100%; }
+</style>
+</head>
+<body>
+<p class="toolbar"><strong>STUDY · Digital edition</strong><span class="sep">|</span>Basic Statistics Part-II — Front Matter<span class="sep">|</span>page 5 (printed 4)<span class="sep">|</span><a href="../../../Raw/Statistics/Front-Matter/0005.jpg">original scan ↗</a><span class="sep">|</span><a href="../../../Formatted/Statistics/Chapter-00-Front-Matter/page-005.md">markdown source ↗</a><span class="sep">|</span><a href="../../index.html">library ↗</a></p>
+<div class="book-page">
+  <header class="page-ribbon"><span class="no">4</span><span>Basic Statistics Part-II (Federal Board)</span></header>
+  <main class="page-body plate">
+    <h1 class="sr-only">Basic Statistics Part-II · Front Matter — page 5 (printed 4)</h1>
+    <p><strong>Long-Questions:</strong> The fourth merit this book is embellished with are solved long questions both from exercises as well as from the past papers. This section contains a variety of questions concerning almost every field of life. Having read and solved these questions, it is expected that reader will not encounter any type of difficulty in the use of Statistics under any circumstances that of examination or practical life.</p>
+    <p><strong>Solved Examples:</strong> The fifth quality in this book are solved examples. These examples have been solved in line with solution of each topic discussed in theory and formulas. Repetition of these examples has been avoided to all possible extents except where the repetition was absolutely unavoidable. These examples have been solved in finger-lead guideline manner.</p>
+    <div class="note"><p><em>Last but not the least, the answer of each question is knit together as to help students to ensure the accuracy and certainty of their answers. The students will not astray from pillar to post for the certainty and accuracy of their answers. Having completed these abovementioned five portions, students will be able to grasp the respective topic more than 95%. Even then if the students feel any deficiency, the theoretical portion of this book will help them overcome those deficiencies.</em></p></div>
+    <p>If you need to know how to use a wide range basic and comprehensive knowledge of statistical techniques without getting in over your head, this is the book you want.</p>
+    <p>This book has been an outcome of successive years of my teaching experience in various prestigious institutions at MSc Statistics and BS Statistics level and other disciplines with a complete awareness of the needs of the students, demands of the subject and requirements of modern, rapidly changing and up-to-dated examination system.</p>
+    <p>As knowledge is shared property of all and alike and no one's individual possession, I don't dare claim 100% originality of the work. I have freely consulted hundreds of books written by foreign authors and I am immensely grateful to all of them whose names cannot be mentioned individually in this nature of work</p>
+    <p>This 6&lt;sup&gt;th&lt;/sup&gt; Edition of this book is an outcome of successive years of unending toil. During the course from 1&lt;sup&gt;st&lt;/sup&gt; Edition till the recent most 6&lt;sup&gt;th&lt;/sup&gt; edition, I have been approached and I myself met with hundreds of erudite teachers and passionate students of this field as well as many individuals from various walks of life in general. Based on the feed-back, suggestions, appreciations and criticism of worthy teachers from different Universities and colleges, and demands of the students and needs of the examination system, I have made a number of amendments in all the editions of this book over the years. And now I can humbly claim that there is sky-line difference in the 1&lt;sup&gt;st&lt;/sup&gt; and 6&lt;sup&gt;th&lt;/sup&gt; edition of this book. This can now be rated as a good book.</p>
+    <p>Lots of cares and pains have been taken while writing and proof reading this book yet I don't claim the book to be error-free. There may be erratum's which will be earnestly welcomed for rectifications from the revered teachers and dear students. Suggestions and constructive criticism for the improvement of this book and enhancement of the knowledge will be highly appreciated from amigos of the teaching community.</p>
+    <p>I am immensely gratified to my family, friends, and colleagues from the teaching community who have invigorated me to use my possible potentials for producing this book to make my experience immortal in form of this book for the welfare of the posterity generations.</p>
+    <p>In the end, I would like to extend superior gratitude to Majeed Book depot Urdu Bazar Lahore, my Publisher who have managed to bring this book despite acute time shortage. I am also thankful to my computer operator Mr. Javed Ahmad.</p>
+    <p><em>September 1, 2020</em></p>
+    <p><strong>Muhammad Saleem Akhtar</strong></p>
+    <p>Cell # 0333-</p>
+    <p>5127797</p>
+  </main>
+  <footer class="page-foot">· 4 ·</footer>
+</div>
+<p class="colophon">Digital replica · typeset from <code>Books/Formatted/Statistics/Chapter-00-Front-Matter/page-005.md</code> · figure crops embedded from the original scans</p>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basic Statistics Part-II · Chapter 9 — Probability · page 10 (printed 20) — Digital Edition</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.body, {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root{
+    --rib-a:#fffdf9; --rib-b:#fffdf9; --rib-c:#f8f3e9;
+    --ink:#1c1914; --rule:#2a251f; --hairline:#d9d2c2;
+    --lbl:#1c1914; --muted:#6d675e; --paper:#fffdf9; --back:#e8e4dc;
+  }
+  
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+            overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+  .toolbar{ font:12.5px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif; color:#8a8377;
+            text-align:center; padding:8px 12px 10px; }
+  .toolbar a{ color:#8a8377; text-decoration:underline; text-underline-offset:2px; }
+  .toolbar .sep{ margin:0 8px; color:#c9c2b4; }
+  .book-page{ max-width:880px; margin:0 auto 14px; background:var(--paper);
+              box-shadow:0 2px 6px rgba(60,50,30,.14), 0 12px 34px rgba(60,50,30,.10); }
+  p{ margin:0 0 14px; text-align:justify; }
+  .fig{ margin:16px auto 20px; text-align:center; }
+  .fig img{ max-width:100%; height:auto; }
+  .fig figcaption{ font:12.5px/1.5 system-ui,sans-serif; color:#7a7368; margin-top:7px; }
+  table.tbl{ border-collapse:collapse; margin:16px auto 20px; font-size:15.5px; line-height:1.55; }
+  table.tbl th, table.tbl td{ border:1.4px solid var(--rule); padding:6px 12px; text-align:center; }
+  table.tbl th{ font-weight:700; }
+  .colophon{ max-width:880px; margin:0 auto; padding:2px 18px 30px; text-align:center;
+             font:12px/1.6 system-ui,sans-serif; color:#98917f; }
+  .colophon code{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11px; }
+  @media print{ .toolbar,.colophon{ display:none; } body{ background:#fff; }
+                .book-page{ box-shadow:none; max-width:none; } }
+
+  body{ margin:0; background:var(--back); color:var(--ink);
+        font:16.5px/1.85 Georgia,'Times New Roman',serif; }
+  .page-ribbon{ display:flex; align-items:baseline; justify-content:space-between; gap:18px;
+                background:linear-gradient(180deg,var(--rib-a) 0%,var(--rib-b) 70%,var(--rib-c) 100%);
+                color:var(--ink); padding:14px 52px 10px;
+                border-bottom:2.5px solid var(--rule);
+                font:700 15px/1.3 'Trebuchet MS','Arial Narrow',Arial,sans-serif;
+                letter-spacing:.04em; }
+  .page-ribbon .no{ font-size:16px; letter-spacing:.02em; }
+  .page-body{ padding:26px 52px 22px; }
+  .lbl{ font-weight:700; color:var(--lbl); }
+  .lbl-line{ font-weight:700; color:var(--lbl); margin:2px 0 8px; }
+  h2.sec{ font:700 16.5px/1.5 Georgia,'Times New Roman',serif; letter-spacing:.03em;
+          margin:20px 0 10px; }
+  ul.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ul.plain li{ margin-bottom:8px; padding-left:.35em; text-align:justify; }
+  ol.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ol.plain li{ margin-bottom:8px; text-align:justify; }
+  .it{ padding-left:2.3em; text-indent:0; margin:0 0 10px; text-align:justify; }
+  .it .ro{ display:inline-block; width:2.3em; margin-left:-2.3em; font-style:normal; }
+  .cont{ margin:0 0 10px 2.3em; text-align:justify; }
+  .eq{ margin:2px 0 12px 2.2em; overflow-x:auto; }
+  .eq .katex-display{ margin:0; text-align:left; }
+  .eq .katex-display>.katex{ text-align:left; }
+  p.q{ padding-left:2.9em; }
+  p.q .qno{ display:inline-block; width:2.9em; margin-left:-2.9em; font-weight:700; }
+  .opts{ display:grid; gap:2px 16px; margin:0 0 13px 2.9em; text-align:left; }
+  p.ans{ margin:0 0 12px; }
+  .note{ border-left:3px solid var(--rule); background:#f6f1e5; padding:10px 16px;
+         margin:0 0 14px; font-size:15px; }
+  .note p{ margin:0 0 6px; }
+  .keyfacts{ width:100%; margin:16px 0 18px; border:2.5px solid var(--rule); background:var(--paper);
+             padding:16px 16px 10px; position:relative; }
+  .keyfacts .tab{ position:absolute; top:-13px; right:12px; background:var(--rule); color:#fff;
+                  font:700 12.5px/1.6 system-ui,sans-serif; letter-spacing:.03em; padding:1px 12px; }
+  .keyfacts p{ margin:0 0 8px; font-size:15.5px; line-height:1.8; }
+  .keyfacts table.tbl{ margin:8px auto 4px; font-size:14.5px; }
+  .keyfacts table.tbl td{ text-align:left; }
+  .ansbox{ display:table; margin:20px auto 16px; border:2.5px solid var(--rule);
+           padding:2px 30px; font:700 17px/1.7 Georgia,'Times New Roman',serif;
+           letter-spacing:.08em; }
+  table.ans{ width:100%; border-collapse:collapse; font-size:14.5px; line-height:1.5; }
+  table.ans td{ border:1px solid #3a342c; padding:2px 9px; text-align:left; white-space:nowrap; }
+  table.ans td.nb{ border:none; }
+  .page-foot{ border-top:1px solid var(--hairline); background:var(--paper);
+              color:var(--muted); display:flex; align-items:center; justify-content:center;
+              padding:8px 52px; font:12.5px/1.4 Georgia,serif; letter-spacing:.14em; }
+  .figslot{ margin:16px auto 20px; border:2px dashed #a89a78; background:#fbf7ec;
+            padding:14px 18px; max-width:640px; }
+  .figslot .tag{ display:inline-block; font:700 12px/1.5 system-ui,sans-serif; color:#6d5a1e;
+                 background:#efe4c4; padding:1px 10px; margin-bottom:8px; letter-spacing:.04em; }
+  .figslot p{ font:13.5px/1.65 system-ui,sans-serif; color:#6d6248; margin:0; text-align:left; }
+  .figstrip{ margin-top:22px; border-top:1px solid #e3dbc8; padding-top:6px; }
+  .figcellslot{ display:inline-block; border:2px dashed #b3a262; background:#fdf8ea; color:#7a6420;
+                font:700 12px/1.4 system-ui,sans-serif; padding:10px 14px; min-width:96px; }
+  @media (max-width:720px){
+    .page-body{ padding:18px 16px 14px; }
+    .page-ribbon{ padding:10px 16px 8px; font-size:12px; }
+    .page-foot{ padding:7px 16px; }
+    .eq{ margin-left:1em; }
+    body{ font-size:15px; }
+    .opts{ grid-template-columns:repeat(2,1fr) !important; }
+    .page-body table.tbl{ display:block; overflow-x:auto; }
+    table.ans{ display:block; overflow-x:auto; }
+  }
+</style>
+</head>
+<body>
+<p class="toolbar"><strong>STUDY · Digital edition</strong><span class="sep">|</span>Basic Statistics Part-II — Chapter 9 — Probability<span class="sep">|</span>page 10 (printed 20)<span class="sep">|</span><a href="../../../Raw/Statistics/Chapter-09-Probability/0010.jpg">original scan ↗</a><span class="sep">|</span><a href="../../../Formatted/Statistics/Chapter-09-Probability/page-010.md">markdown source ↗</a><span class="sep">|</span><a href="../../index.html">library ↗</a></p>
+<div class="book-page">
+  <header class="page-ribbon"><span class="no">20</span><span>Basic Statistics Part-II (Federal Board)</span></header>
+  <main class="page-body">
+    <h1 class="sr-only">Basic Statistics Part-II · Chapter 9 — Probability — page 10 (printed 20)</h1>
+    <p class="it"><span class="ro">(vii)</span>$\overline{A \cap B} = S - (A \cap B) = \{1, 3, 4, 5, 6\}$, $n(\overline{A \cap B}) = 5$, $P(\overline{A \cap B}) = \frac{n(\overline{A \cap B})}{n(S)} = \frac{5}{6}$</p>
+    <p class="it"><span class="ro">(viii)</span>$\overline{A \cup B} = S - (A \cup B) = \{1\}$, $n(\overline{A \cup B}) = 1$, $P(\overline{A \cup B}) = \frac{n(\overline{A \cup B})}{n(S)} = \frac{1}{6}$</p>
+    <p class="it"><span class="ro">(ix)</span>$\overline{\overline{A \cup B}} = S - (\overline{A \cup B}) = \{2, 3, 4, 5, 6\} = A \cup B$, $n(\overline{\overline{A \cup B}}) = 5$, $P(\overline{\overline{A \cup B}}) = \frac{n(\overline{\overline{A \cup B}})}{n(S)} = \frac{5}{6} = P(A \cup B)$</p>
+    <p class="lbl-line" style="margin-top:16px"><strong>Example 9.7.</strong></p>
+    <p>A bag contains 5 white, 4 black, 3 green and 6 red balls of the same size and weight. A ball is selected at random, find the following probabilities.</p>
+    <p class="it"><span class="ro">(i)</span>The selected ball is white. (ii) The selected ball is white or black. (iii) The ball is not black.</p>
+    <p class="lbl-line"><strong>Solution:</strong></p>
+    <table class="tbl"><thead><tr><th></th><th>White balls</th><th>Black balls</th><th>Green balls</th><th>Red balls</th><th>Total balls</th></tr></thead><tbody><tr><td>Bag:</td><td>5</td><td>4</td><td>3</td><td>6</td><td>18</td></tr></tbody></table>
+    <p>As all the balls are of the same size, the 18 possible outcomes are equally likely. A probability of 1/18 is attached to each ball. The classical definition of probability is applied here. Therefore</p>
+    <p class="it"><span class="ro">(i)</span>P( ball is white ) $= \frac{5}{18}$ (ii) P( ball is white or black ) $= \frac{9}{18} = \frac{1}{2}$</p>
+    <p class="it"><span class="ro">(iii)</span>P( ball is not black ) $= \frac{14}{18} = \frac{7}{9}$ .</p>
+    <p class="lbl-line" style="margin-top:16px"><strong>Example 9.8.</strong></p>
+    <p>Two uniform coins are tossed. Find the following probabilities:</p>
+    <p class="it"><span class="ro">(i)</span>both are heads (ii) both faces are same (iii) only one is head</p>
+    <p class="it"><span class="ro">(iv)</span>at least one is head (v) head on the first coin.</p>
+    <p><strong>Solution:</strong> When two coins are tossed, there are four possible outcomes. Thus the sample space is</p>
+    <p>$S = \{(HH), (HT), (TH), (TT)\}, n(S) = 4$</p>
+    <p>All the 4 outcomes are equally likely. Each outcome has probability of 1/4. The outcome ( TH ) has tail T of the first coin and head H of the second coin.</p>
+    <p class="it"><span class="ro">(i)</span>Let A denote the event that both coins give heads, then</p>
+    <p>$A = \{(HH)\}, n(A) = 1, P(A) = \frac{n(A)}{n(S)} = \frac{1}{4}$</p>
+    <p class="it"><span class="ro">(ii)</span>Let B be the event that both faces are same, then</p>
+    <p>$B = \{(HH), (TT)\}, n(B) = 2, P(B) = \frac{n(B)}{n(S)} = \frac{2}{4} = \frac{1}{2}$</p>
+    <p class="it"><span class="ro">(iii)</span>Let C denote the event that only one is head, then</p>
+    <p>$C = \{(HT), (TH)\}, n(C) = 2, P(C) = \frac{n(C)}{n(S)} = \frac{2}{4} = \frac{1}{2}$</p>
+    <p>Note: This event is also called "just one is head" or "exactly one is head". We can also say "only one is tail" or "just one is tail". All these statements mean the same event C.</p>
+    <p class="it"><span class="ro">(iv)</span>Let D denote the event that at least one is head. It means any number of heads, then</p>
+    <p>$D = \{(HH), (HT), (TH)\}, n(D) = 3, P(D) = \frac{n(D)}{n(S)} = \frac{3}{4}$</p>
+    <p class="it"><span class="ro">(v)</span>Let E stand for the event "head on the first coin". The event E means that anything may come on the second coin but it should be head on the first coin, then</p>
+    <p>$E = \{(HH), (HT)\}, n(E) = 2, P(E) = \frac{n(E)}{n(S)} = \frac{2}{4} = \frac{1}{2}$</p>
+  </main>
+  <footer class="page-foot">· 20 ·</footer>
+</div>
+<p class="colophon">Digital replica · typeset from <code>Books/Formatted/Statistics/Chapter-09-Probability/page-010.md</code> · figure crops embedded from the original scans</p>
+</body>
+</html>

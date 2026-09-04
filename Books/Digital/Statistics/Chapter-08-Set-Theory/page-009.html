@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basic Statistics Part-II · Chapter 8 — Set Theory · page 9 (printed 9) — Digital Edition</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.renderMathInElement) renderMathInElement(document.body, {
+    delimiters: [{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+    throwOnError: false
+  });
+});
+</script>
+<style>
+  :root{
+    --rib-a:#fffdf9; --rib-b:#fffdf9; --rib-c:#f8f3e9;
+    --ink:#1c1914; --rule:#2a251f; --hairline:#d9d2c2;
+    --lbl:#1c1914; --muted:#6d675e; --paper:#fffdf9; --back:#e8e4dc;
+  }
+  
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+            overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+  .toolbar{ font:12.5px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif; color:#8a8377;
+            text-align:center; padding:8px 12px 10px; }
+  .toolbar a{ color:#8a8377; text-decoration:underline; text-underline-offset:2px; }
+  .toolbar .sep{ margin:0 8px; color:#c9c2b4; }
+  .book-page{ max-width:880px; margin:0 auto 14px; background:var(--paper);
+              box-shadow:0 2px 6px rgba(60,50,30,.14), 0 12px 34px rgba(60,50,30,.10); }
+  p{ margin:0 0 14px; text-align:justify; }
+  .fig{ margin:16px auto 20px; text-align:center; }
+  .fig img{ max-width:100%; height:auto; }
+  .fig figcaption{ font:12.5px/1.5 system-ui,sans-serif; color:#7a7368; margin-top:7px; }
+  table.tbl{ border-collapse:collapse; margin:16px auto 20px; font-size:15.5px; line-height:1.55; }
+  table.tbl th, table.tbl td{ border:1.4px solid var(--rule); padding:6px 12px; text-align:center; }
+  table.tbl th{ font-weight:700; }
+  .colophon{ max-width:880px; margin:0 auto; padding:2px 18px 30px; text-align:center;
+             font:12px/1.6 system-ui,sans-serif; color:#98917f; }
+  .colophon code{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11px; }
+  @media print{ .toolbar,.colophon{ display:none; } body{ background:#fff; }
+                .book-page{ box-shadow:none; max-width:none; } }
+
+  body{ margin:0; background:var(--back); color:var(--ink);
+        font:16.5px/1.85 Georgia,'Times New Roman',serif; }
+  .page-ribbon{ display:flex; align-items:baseline; justify-content:space-between; gap:18px;
+                background:linear-gradient(180deg,var(--rib-a) 0%,var(--rib-b) 70%,var(--rib-c) 100%);
+                color:var(--ink); padding:14px 52px 10px;
+                border-bottom:2.5px solid var(--rule);
+                font:700 15px/1.3 'Trebuchet MS','Arial Narrow',Arial,sans-serif;
+                letter-spacing:.04em; }
+  .page-ribbon .no{ font-size:16px; letter-spacing:.02em; }
+  .page-body{ padding:26px 52px 22px; }
+  .lbl{ font-weight:700; color:var(--lbl); }
+  .lbl-line{ font-weight:700; color:var(--lbl); margin:2px 0 8px; }
+  h2.sec{ font:700 16.5px/1.5 Georgia,'Times New Roman',serif; letter-spacing:.03em;
+          margin:20px 0 10px; }
+  ul.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ul.plain li{ margin-bottom:8px; padding-left:.35em; text-align:justify; }
+  ol.plain{ margin:0 0 14px; padding-left:2.05em; }
+  ol.plain li{ margin-bottom:8px; text-align:justify; }
+  .it{ padding-left:2.3em; text-indent:0; margin:0 0 10px; text-align:justify; }
+  .it .ro{ display:inline-block; width:2.3em; margin-left:-2.3em; font-style:normal; }
+  .cont{ margin:0 0 10px 2.3em; text-align:justify; }
+  .eq{ margin:2px 0 12px 2.2em; overflow-x:auto; }
+  .eq .katex-display{ margin:0; text-align:left; }
+  .eq .katex-display>.katex{ text-align:left; }
+  p.q{ padding-left:2.9em; }
+  p.q .qno{ display:inline-block; width:2.9em; margin-left:-2.9em; font-weight:700; }
+  .opts{ display:grid; gap:2px 16px; margin:0 0 13px 2.9em; text-align:left; }
+  p.ans{ margin:0 0 12px; }
+  .note{ border-left:3px solid var(--rule); background:#f6f1e5; padding:10px 16px;
+         margin:0 0 14px; font-size:15px; }
+  .note p{ margin:0 0 6px; }
+  .keyfacts{ width:100%; margin:16px 0 18px; border:2.5px solid var(--rule); background:var(--paper);
+             padding:16px 16px 10px; position:relative; }
+  .keyfacts .tab{ position:absolute; top:-13px; right:12px; background:var(--rule); color:#fff;
+                  font:700 12.5px/1.6 system-ui,sans-serif; letter-spacing:.03em; padding:1px 12px; }
+  .keyfacts p{ margin:0 0 8px; font-size:15.5px; line-height:1.8; }
+  .keyfacts table.tbl{ margin:8px auto 4px; font-size:14.5px; }
+  .keyfacts table.tbl td{ text-align:left; }
+  .ansbox{ display:table; margin:20px auto 16px; border:2.5px solid var(--rule);
+           padding:2px 30px; font:700 17px/1.7 Georgia,'Times New Roman',serif;
+           letter-spacing:.08em; }
+  table.ans{ width:100%; border-collapse:collapse; font-size:14.5px; line-height:1.5; }
+  table.ans td{ border:1px solid #3a342c; padding:2px 9px; text-align:left; white-space:nowrap; }
+  table.ans td.nb{ border:none; }
+  .page-foot{ border-top:1px solid var(--hairline); background:var(--paper);
+              color:var(--muted); display:flex; align-items:center; justify-content:center;
+              padding:8px 52px; font:12.5px/1.4 Georgia,serif; letter-spacing:.14em; }
+  .figslot{ margin:16px auto 20px; border:2px dashed #a89a78; background:#fbf7ec;
+            padding:14px 18px; max-width:640px; }
+  .figslot .tag{ display:inline-block; font:700 12px/1.5 system-ui,sans-serif; color:#6d5a1e;
+                 background:#efe4c4; padding:1px 10px; margin-bottom:8px; letter-spacing:.04em; }
+  .figslot p{ font:13.5px/1.65 system-ui,sans-serif; color:#6d6248; margin:0; text-align:left; }
+  .figstrip{ margin-top:22px; border-top:1px solid #e3dbc8; padding-top:6px; }
+  .figcellslot{ display:inline-block; border:2px dashed #b3a262; background:#fdf8ea; color:#7a6420;
+                font:700 12px/1.4 system-ui,sans-serif; padding:10px 14px; min-width:96px; }
+  @media (max-width:720px){
+    .page-body{ padding:18px 16px 14px; }
+    .page-ribbon{ padding:10px 16px 8px; font-size:12px; }
+    .page-foot{ padding:7px 16px; }
+    .eq{ margin-left:1em; }
+    body{ font-size:15px; }
+    .opts{ grid-template-columns:repeat(2,1fr) !important; }
+    .page-body table.tbl{ display:block; overflow-x:auto; }
+    table.ans{ display:block; overflow-x:auto; }
+  }
+</style>
+</head>
+<body>
+<p class="toolbar"><strong>STUDY · Digital edition</strong><span class="sep">|</span>Basic Statistics Part-II — Chapter 8 — Set Theory<span class="sep">|</span>page 9 (printed 9)<span class="sep">|</span><a href="../../../Raw/Statistics/Chapter-08-Set-Theory/0009.jpg">original scan ↗</a><span class="sep">|</span><a href="../../../Formatted/Statistics/Chapter-08-Set-Theory/page-009.md">markdown source ↗</a><span class="sep">|</span><a href="../../index.html">library ↗</a></p>
+<div class="book-page">
+  <header class="page-ribbon"><span>Basic Statistics Part-II (Federal Board)</span><span class="no">9</span></header>
+  <main class="page-body">
+    <h1 class="sr-only">Basic Statistics Part-II · Chapter 8 — Set Theory — page 9 (printed 9)</h1>
+    <h2 class="sec">EXERCISES</h2>
+    <p class="q"><span class="qno">Q.1</span>If $S = \{0, 1, 2, 3, 4, 5, 6, 7, 8\}$, $A = \{0, 1, 3, 5, 7\}$, $B = \{0, 2, 4, 6, 8\}$, $C = \{1, 2, 3, 4\}$ and $D = \{0, 5, 6\}$. list the elements in the following sets.</p>
+    <p class="it"><span class="ro">(i)</span>$A \cap B$ (ii) $C \cup A$ (iii) $\bar{D}$ (iv) $(C \cap \bar{D}) \cup B$ (v) $\overline{(S \cap A)}$ (vi) $A \cap B \cap \bar{D}$.</p>
+    <p class="ans"><strong>Ans.</strong> (i) $\{0\}$ (ii) $\{0, 1, 2, 3, 4, 5, 7\}$ (iii) $\{1, 2, 3, 4, 7, 8\}$ (iv) $\{0, 1, 2, 3, 4, 6, 8\}$ (v) $\{2, 4, 6, 8\}$ (vi) $\phi$</p>
+    <p class="q"><span class="qno">Q.2</span>If $S = \{1, 2, 3, 4, 5, 6, 7, 8, 9\}$, $A = \{2, 4, 7, 9\}$, $B = \{1, 3, 5, 7, 9\}$, $C = \{2, 3, 4, 5\}$ and $D = \{1, 6, 7\}$. List the elements of the sets corresponding to the following events:</p>
+    <p class="it"><span class="ro">(i)</span>$\bar{A} \cup C$ (ii) $B \cap \bar{C}$ (iii) $\overline{(S \cap \bar{B})}$ (iv) $(\bar{C} \cap D) \cup B$ (v) $(B \cap \bar{C}) \cup A$ (vi) $A \cap C \cap \bar{D}$</p>
+    <p class="ans"><strong>Ans.</strong> (i) $\{1, 2, 3, 4, 5, 6, 8\}$ (ii) $\{1, 7, 9\}$ (iii) $\{1, 3, 5, 7, 9\}$ (iv) $\{1, 3, 5, 6, 7, 9\}$ (v) $\{1, 2, 4, 7, 9\}$ (vi) $\{2, 4\}$</p>
+    <p class="q"><span class="qno">Q.3</span>Let $S = \{3, 4, 5, 6, 7, 8, 9, 10, 11, 12\}$, $A = \{4, 5, 6\}$, $B = \{5, 6, 7\}$ and $C = \{7, 8, 9\}$. List the members of the following events</p>
+    <p class="it"><span class="ro">(i)</span>$\bar{A} \cap B$ (ii) $\bar{A} \cup B$ (iii) $(\overline{A \cap B})$ (iv) $\overline{A \cap (B \cup C)}$ (v) $\bar{S}$</p>
+    <p class="ans"><strong>Ans.</strong> (i) $\{7\}$ (ii) $\{3, 5, 6, 7, 8, 9, 10, 11, 12\}$ (iii) $\{4, 5, 6, 7\}$ (iv) $\{3, 4, 7, 8, 9, 10, 11, 12\}$ (v) $\{\} = \phi$</p>
+    <p class="q"><span class="qno">Q.4</span>Let $S = \{a, b, c, d, e, f, g, h, i, j\}$, $A = \{a, b, c, d\}$, $B = \{d, e, f\}$, $C = \{a, c, e, i, j\}$. Find</p>
+    <p class="it"><span class="ro">(i)</span>$A \cap C$ (ii) $B \cup C$ (iii) $\bar{C} \cap \bar{A}$ (iv) $A \cap S$ (v) $\overline{(A \cup B)}$</p>
+    <p class="ans"><strong>Ans.</strong> (i) $\{a, c\}$ (ii) $\{a, c, d, e, f, i, j\}$ (iii) $\{f, g, h\}$ (iv) $\{a, b, c, d\}$ (v) $\{g, h, i, j\}$.</p>
+    <p class="q"><span class="qno">Q.5</span>Consider the sample space $S =$ { bus, train, aeroplane, boat, bicycle, automobile, motorcycle } and the events $A =$ { bus, train, aeroplane }, $B =$ { train, automobile, boat }, $C =$ { bicycle }. List the elements of the sets corresponding to the following events:</p>
+    <p class="it"><span class="ro">(i)</span>$(\bar{A} \cup B)$ (ii) $(B \cap \bar{C}) \cap A$ (iii) $(\bar{A} \cup B) \cap (\bar{A} \cap \bar{C})$</p>
+    <p class="ans"><strong>Ans.</strong> (i) { train, boat, bicycle, automobile, motorcycle } (ii) { train } (iii) { boat, automobile, motorcycle }</p>
+    <p class="q"><span class="qno">Q.6</span>If $S=\{x / 0 < x < 12\}$, $A = \{x / 1 < x < 9\}$ and $B = \{x / 0 < x < 5\}$. Find:</p>
+    <p class="it"><span class="ro">(i)</span>$A \cup B$ (ii) $A \cap B$ (iii) $\bar{A} \cap \bar{B}$</p>
+    <p class="ans"><strong>Ans.</strong> (i) $\{x / 0 < x < 9\}$ (ii) $\{x / 1 < x < 5\}$ (iii) $\{x / 8 < x < 12\}$</p>
+    <p class="q"><span class="qno">Q.7</span>Let $A = \{2, 3\}$, $B = \{1, 3, 5\}$ and $C = \{3, 4\}$. Construct the tree diagram of $A \times B \times C$ and then find $A \times B \times C$.</p>
+    <p class="ans"><strong>Ans.</strong> $(2, 1, 3)$, $(2, 1, 4)$, $(2, 3, 3)$, $(2, 3, 4)$, $(2, 5, 3)$, $(2, 5, 4)$,</p>
+    <p>$(3, 1, 3)$, $(3, 1, 4)$, $(3, 3, 3)$, $(3, 3, 4)$, $(3, 5, 3)$, $(3, 5, 4)$.</p>
+    <p class="q"><span class="qno">Q.8</span>Let $S = \{a, b, c\}$, $T = \{b, c, d\}$ and $W = \{a, d\}$. Construct the tree diagram of $S \times T \times W$ and then find $S \times T \times W$.</p>
+    <p class="ans"><strong>Ans.</strong> $(a, b, a)$, $(a, b, d)$, $(a, c, a)$, $(a, c, d)$, $(a, d, a)$, $(a, d, d)$, $(b, b, a)$, $(b, b, d)$, $(b, c, a)$,</p>
+    <p>$(b, c, d)$, $(b, d, a)$, $(b, d, d)$, $(c, b, a)$, $(c, b, d)$, $(c, c, a)$, $(c, c, d)$, $(c, d, a)$, $(c, d, d)$</p>
+  </main>
+  <footer class="page-foot">· 9 ·</footer>
+</div>
+<p class="colophon">Digital replica · typeset from <code>Books/Formatted/Statistics/Chapter-08-Set-Theory/page-009.md</code> · figure crops embedded from the original scans</p>
+</body>
+</html>

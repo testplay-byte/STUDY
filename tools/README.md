@@ -93,6 +93,10 @@ script — update it there when registering a new chapter (see `docs/PIPELINE.md
 
 ## The Digital edition — hand-typeset replica pages
 
+> **⚠️ SUPERSEDED (2026-09-04, Digital Edition v3):** the 8-page hand-typeset test edition
+> grew into the full 112-page generated library — see the final section of this file and
+> `docs/CONVENTIONS.md` §1.6. The 8 exemplar pages remain in place, never regenerated.
+
 > User directive (2026-09-03, after rejecting the generated "scan pane + transcription"
 > design of commit 26bc1c0): each Digital page must look like an **actual digital version of
 > the original textbook page** — a hand-typeset replica with real text, KaTeX math, data
@@ -197,3 +201,69 @@ checked its links. The user rejected that design; Digital is now hand-typeset (n
 exists, so nothing can regenerate pages — edits happen in the HTML itself) and
 `check-digital-links.mjs` is superseded by `check-digital-test.mjs`, which also enforces the
 whitelist + asset containment. History: `WORKLOG.md` Tasks 7-v4 → 9.
+
+---
+
+## Digital Edition v3 — full 112-page generated library (2026-09-04)
+
+User go-ahead: "let's build the digital versions of all the pages so far … with a proper
+structure of the folders." The library now covers every scanned page.
+
+### Layout (mirrors Raw/Formatted 1:1)
+
+```
+Books/Digital/
+  index.html                        # library home (chips per page; ★ exemplar, ◦ pending)
+  manifest.json                     # machine map (drives the Next.js viewer + checker)
+  Mathematics/
+    Chapter-00-Front-Matter/        # page-001..007.html + assets/
+    Chapter-01-Functions-and-Graphs/# page-001..036.html + assets/
+  Statistics/
+    Chapter-00-Front-Matter/        # page-001..009.html + assets/
+    Chapter-08-Set-Theory/          # page-001..010.html + assets/
+    Chapter-09-Probability/         # page-001..050.html + assets/
+```
+
+### Generation
+
+- `node tools/gen-digital.mjs [--only <Book>/<ChapterFolder>/page-NNN ...]` — parses the
+  Formatted markdown (frontmatter + body blocks: sections, paragraphs, (i)/(ii) items,
+  bullets, MCQs with option grids, `## ANSWERS` grid, display math, Key-Facts blockquotes,
+  tables — including tables whose CELLS are `[Figure F<n>]` markers) and renders each page
+  in its book's design language with KaTeX CDN auto-render. Front-matter pages render as
+  centered "plates". Running heads alternate like the printed books (even printed page:
+  folio left / title right; odd: title left / folio right).
+- The 8 hand-typeset exemplars are listed in `HAND_TYPESET` inside the script and are
+  NEVER regenerated.
+- **Figure embedding:** each `[Figure F<n>]` slot (or figure-cell) embeds
+  `assets/<PREFIX>-<NNN>-fig-<n>[-<slug>].<png|jpg>` as a base64 data URI; slots without a
+  crop render an explicit dashed "CROP PENDING / FIGURE n" placeholder — a figure can never
+  silently disappear. Figures described in the md but lacking an inline marker render in an
+  end-of-page `.figstrip`.
+- `manifest.json` is rewritten on every run (counts figures per page from disk, so
+  `--only` runs keep the whole manifest honest).
+
+### Gates & helpers
+
+```bash
+node tools/check-digital.mjs                    # coverage/chrome/links/figures/tree/manifest
+node tools/check-digital.mjs --strict-figures   # push gate: zero placeholders allowed
+python3 tools/optimize-assets.py                # palette-quantize PNGs, JPEG q82 photos
+python3 tools/crop-figure.py grid <scan> /tmp/grid-X.jpg   # parallel-safe grid output
+```
+
+`crop-figure.py crop` now saves `.jpg` for photo crops too. `embed-figures.py` and
+`check-digital-test.mjs` are retired by v3 (kept in history only).
+
+### Lessons learned (v3 build)
+
+- `rg` hangs on the single-line base64 payloads in generated pages — always grep them with
+  python (`open(p).read().count('class="figslot"')`).
+- KaTeX hidden MathML inflates `documentElement.scrollWidth` on mobile; check
+  `document.body.scrollWidth`.
+- Table rows containing `$y = |x + 1|$` must be cell-split math-aware (`splitCells` in the
+  generator) — a naive `.split("|")` shreds absolute-value bars across cells.
+- On graph-grid pages, pixel-scan a caption-only band (`y` below the x-axes) to find TRUE
+  cell borders — graph axes pollute naive full-cell scans.
+- VLM clip-verdicts hallucinate on line art; trust numpy ink-margin scans, use neutral
+  VLM prompts only for content identity.

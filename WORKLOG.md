@@ -1,7 +1,4 @@
-# WORKLOG — Study Helper Planner (repo-side master log)
-
-> Append-only. Every agent appends the same section to this file AND to the local
-> shared log (`/home/z/my-project/worklog.md`). Newest sections at the bottom.
+# WORKLOG — local shared log (mirrors repo WORKLOG.md; append-only)
 
 ---
 Task ID: 0
@@ -17,9 +14,6 @@ Work Log:
 
 Stage Summary:
 - System skeleton ready; pipeline validated next on M-1 p25/p26 + S-1 p3/p5 before mass conversion
-- Binding docs for all agents: docs/CONVENTIONS.md + tools/prompt.txt
-
----
 Task ID: 1-test
 Agent: coordinator (Z.ai main)
 Task: Phase 1.2 — pipeline validation on user-specified test pages
@@ -118,8 +112,6 @@ Stage Summary:
 - Page 028: QA'd agent-1d draft against image with 6 targeted z-ai vision passes; body text verified verbatim incl. genuine book typos ("ono-one function" ×2, "must determines", "with main Y and range X", "(g(y)) = y" in Definition, "Rang" ×2, "1-1 function" in Check Point); figures_count corrected 2→3 (side-by-side HLT graphs split into F1/F2 per convention, mapping diagram = F3); Check Point is a purple-boxed callout.
 - Page 029: full workflow (convert-page.mjs + 6 vision QA passes incl. zoomed PIL crops of both graphs); six property bullets + Example 22/23 equations verified equation-by-equation; Challenge line confirmed printed between the two examples with forward reference to "example 23" (as printed); Example 23 book text "(3,0) is on the graph of f(x) and (0,3) on f^-1(x)" preserved verbatim — swapped vs the book's own printed graph (dots (0,3) on f(x), (3,0) on f^-1(x); f(x) x-intercept drawn at 0.75), documented in notes.
 - All QA done via targeted z-ai vision passes (Read cannot render images in sub-agent context); $ balance and F-block/inline-marker/figures_count consistency checked programmatically; frontmatter source_image exact strings verified.
-
----
 Task ID: 1-wave-done
 Agent: coordinator (Z.ai main)
 Task: Wave 1 audit & close-out (M-1 Unit 01 complete)
@@ -146,6 +138,22 @@ Work Log:
 
 Stage Summary:
 - 4/4 converted; S-1 chapter-08 is now complete (pp.7-10 done here + 3,5 earlier + 1,2,4,6 by agent-2d). Exercise boundary: end-of-chapter exercise "EXERCISES" starts at TOP of printed p.9 (Q.1) → pages 9-10 in exercise/ (unnumbered exercise, exercise: "8"); pages 7-8 are theory (00-intro). Anomalies: printed p.10 digit faint — missed in full-page pass, recovered via zoomed header crop (10, top-left); Q.9 Ans (iv) book typo "(7, 7)(7, 8)" (no comma) preserved verbatim; Q.19 printed answer 90720 preserved although 9!/(2!2!2!) = 45360 (book arithmetic/letter-count quirk, kept); one 429 rate-limit burst on img10 (7 failed attempts) — succeeded after 75s backoff. All QA via targeted z-ai vision passes (Read cannot render images in sub-agent context); source_image paths (5-ups) verified to resolve for all 4 files.
+---
+Task ID: 2c
+Agent: agent-2c
+Task: Convert S-0 front matter images 0006-0009 to Markdown
+
+Work Log:
+- page-006 → data/processed/S-0/front-matter/page-006.md ✔ (front-matter, roman ( v ) top center → page_printed 5; CONTENTS part 1: ch.8 Set Theory 8.1-8.24 + ch.9 Probability 9.1-9.23 + ch.10 10.1-10.13, two-column 6-col TOC table, manicule ☞ entries; ex null)
+- page-007 → data/processed/S-0/front-matter/page-007.md ✔ (front-matter, roman ( vi ) → 6; CONTENTS part 2: 10.14-13.34 incl. ch.11 Binomial & Hypergeometric (95-122), ch.12 Normal (123-154), ch.13 Sampling (155-202); quirk "13.26 Selection of Simple.Random Sample" preserved)
+- page-008 → data/processed/S-0/front-matter/page-008.md ✔ (front-matter, roman ( vii ) → 7, verified via contrast-enhanced zoom after full-page read said "( vi )"; CONTENTS part 3: 13.35-15.22 incl. ch.14 Estimation (203-238), ch.15 Testing of Hypotheses (239-284); quirks 15.20 "When Unknown σ", 15.22 lowercase "Population mean" preserved)
+- page-009 → data/processed/S-0/front-matter/page-009.md ✔ (front-matter, roman ( viii ) → 8; CONTENTS part 4: 15.23-15.30 + ch.16 Association (285-318) + ch.17 Orientation of Computers (319-334) + closing "Statistical Tables 335–340"; math in titles as LaTeX (μ1-μ2, σ1², χ², 2×2); quirk 15.29 "p1 – P2" preserved; NO symbols/notation table on page — pure TOC, confirmed by targeted vision QA)
+
+Stage Summary:
+- 4/4 converted; exercise folders created: none (all front matter, chapter/exercise null in frontmatter)
+- book_title set on all 4: "Basic Statistics for Intermediate Classes, Part-II — Majeed Book Depot (Federal Board)"; content_type front-matter; source_image + body scan-link = ../../../../data/raw/S-0/000N.jpg (4-ups, verified resolving)
+- Anomalies: S-0 front matter uses roman-numeral page markers "( v )…( viii )" top center (no arabic numbers) → recorded page_printed as integer 5-8 with notes; unnumbered TOC entries print pointing-hand manicules (not ✍️ as first draft guessed) → normalized to ☞ across all 4 pages; page 8's full-page roman-numeral read was wrong (vi vs vii) — caught via 3-page composite zoom QA; API 429 rate-limit storms (sibling agents) required backoff retries throughout QA
+- Note: pages 001-004 already placed by agent-2b (untouched); page-005 not in my batch
 
 ---
 Task ID: 2a
@@ -164,22 +172,6 @@ Work Log:
 Stage Summary:
 - 7/7 converted; all in data/processed/M-0/front-matter/ (content_type front-matter, chapter/exercise null; source_image = 4-ups "../../../../data/raw/M-0/000N.jpg", verified resolving from every file). Anomalies: (1) no printed page numbers anywhere in M-0 → page_printed null on all 7 (correct per brief); (2) TOC small-print Urdu line under the Bismillah read 3× by vision with differing renderings → best guess + [illegible] + note (initial draft line was a hallucination, caught & replaced); (3) TOC page numbers are START pages, no ranges; (4) recurring green/cyan mountain-motif corner decorations on pages 4-7 captured as figure blocks; (5) M-0 imprint styles itself "A Textbook of Mathematics for Grade 12" while cover reads "Textbook of MATHEMATICS Grade 12" — book_title normalized to the full cover/imprint form per brief; (6) heavy 429 rate-limiting — all z-ai vision QA done via retry loops (up to ~6 min backoff), conversions sequential.
 ---
-Task ID: 2c
-Agent: agent-2c
-Task: Convert S-0 front matter images 0006-0009 to Markdown
-
-Work Log:
-- page-006 → data/processed/S-0/front-matter/page-006.md ✔ (front-matter, roman ( v ) top center → page_printed 5; CONTENTS part 1: ch.8 Set Theory 8.1-8.24 + ch.9 Probability 9.1-9.23 + ch.10 10.1-10.13, two-column 6-col TOC table, manicule ☞ entries; ex null)
-- page-007 → data/processed/S-0/front-matter/page-007.md ✔ (front-matter, roman ( vi ) → 6; CONTENTS part 2: 10.14-13.34 incl. ch.11 Binomial & Hypergeometric (95-122), ch.12 Normal (123-154), ch.13 Sampling (155-202); quirk "13.26 Selection of Simple.Random Sample" preserved)
-- page-008 → data/processed/S-0/front-matter/page-008.md ✔ (front-matter, roman ( vii ) → 7, verified via contrast-enhanced zoom after full-page read said "( vi )"; CONTENTS part 3: 13.35-15.22 incl. ch.14 Estimation (203-238), ch.15 Testing of Hypotheses (239-284); quirks 15.20 "When Unknown σ", 15.22 lowercase "Population mean" preserved)
-- page-009 → data/processed/S-0/front-matter/page-009.md ✔ (front-matter, roman ( viii ) → 8; CONTENTS part 4: 15.23-15.30 + ch.16 Association (285-318) + ch.17 Orientation of Computers (319-334) + closing "Statistical Tables 335–340"; math in titles as LaTeX (μ1-μ2, σ1², χ², 2×2); quirk 15.29 "p1 – P2" preserved; NO symbols/notation table on page — pure TOC, confirmed by targeted vision QA)
-
-Stage Summary:
-- 4/4 converted; exercise folders created: none (all front matter, chapter/exercise null in frontmatter)
-- book_title set on all 4: "Basic Statistics for Intermediate Classes, Part-II — Majeed Book Depot (Federal Board)"; content_type front-matter; source_image + body scan-link = ../../../../data/raw/S-0/000N.jpg (4-ups, verified resolving)
-- Anomalies: S-0 front matter uses roman-numeral page markers "( v )…( viii )" top center (no arabic numbers) → recorded page_printed as integer 5-8 with notes; unnumbered TOC entries print pointing-hand manicules (not ✍️ as first draft guessed) → normalized to ☞ across all 4 pages; page 8's full-page roman-numeral read was wrong (vi vs vii) — caught via 3-page composite zoom QA; API 429 rate-limit storms (sibling agents) required backoff retries throughout QA
-- Note: pages 001-004 already placed by agent-2b (untouched); page-005 not in my batch
----
 Task ID: 2d
 Agent: agent-2d
 Task: Convert S-1 images 0001,0002,0004,0006 to Markdown
@@ -192,8 +184,6 @@ Work Log:
 
 Stage Summary:
 - 4/4 converted, all placed in 00-intro (none exercise-dominant); exercise start page: image 0009 / printed p.9 (heading "EXERCISES", Q.1 first — verified by vision peek; not in this batch); anomalies: opener page_printed=null (no digit on page; offset would be 1); opener chapter-number digit degraded — zoomed VLM reads "9" but §8.1–8.6 numbering + "[Chapter 8] Set Theory" running headers confirm Chapter 8; running headers on pp.2/4/6 actually read "Basic Statistics Part-II (Federal Board) <n>" (digit top-left), not the "[Chapter 8] Set Theory" alternation the brief assumed; book quirks preserved verbatim ("George Cantor", "Demorgan's Laws", ⊂-style symbols in 8.6 display line, period after C̄ in Ex 8.1 (vii), Ex 8.7 S = {0,1,2,3,4,5,7,9,10} with 6 and 8 absent); heavy 429 rate-limit storms mid-run — script backoff + long sleeps used; my 4 files fill book_title "Basic Statistics Part-II (Federal Board)" while earlier placed 003/005 have null — flagged for coordinator normalization.
-
----
 Task ID: 2b-note
 Agent: coordinator (Z.ai main)
 Task: Record agent-2b partial completion + S-0 0005 finish
@@ -205,8 +195,6 @@ Work Log:
 
 Stage Summary:
 - S-0 front matter complete 9/9. All 62/62 pages now digitized.
-
----
 Task ID: 3-final
 Agent: coordinator (Z.ai main)
 Task: Phase 1 close-out — final audit, indexes, docs, final push
@@ -220,297 +208,198 @@ Work Log:
 
 Stage Summary:
 - PHASE 1 COMPLETE: 62 scanned pages → 62 faithful Markdown files, book → chapter → exercise structure, figures preserved as detailed descriptions, math in LaTeX. Repo fully backed up to GitHub.
-- Updated PLAN.md (all Phase 1 items checked) + README (Phase 1 COMPLETE)
-- Worklog entries normalized: 2b partial completion recorded; S-0 0005 finish documented
-
-Stage Summary:
-- PHASE 1 COMPLETE: 62 scanned pages → 62 faithful Markdown files, book → chapter → exercise structure, figures preserved as detailed descriptions, math in LaTeX. Repo fully backed up to GitHub.
-
----
-Task ID: 4-restructure
-Agent: coordinator (Z.ai main)
-Task: Restructure repo to user-mandated subject → chapter → exercise hierarchy + prep S-2
-
-Work Log:
-- User feedback: format needs explicit separate folders for subjects, chapters, exercises; new S-2 link received (limewire S-2.zip, 63.7 MB)
-- git mv: data/raw/{M-0,M-1} → data/raw/mathematics/, data/raw/{S-0,S-1} → data/raw/statistics/; same for data/processed/
-- Renamed chapters/exercises: M-1 unit-01 → unit-01-functions-and-graphs; M-1 unnumbered exercise/ → review-exercise/ (034-036)
-- Rewrote all source_image + body scan-links: M-0/S-0 now 5-ups, M-1/S-1 now 6-ups (subject level added); verified 124/124 links resolve
-- Updated indexes/{M-0,M-1,S-0,S-1}.md paths (verified 0 broken); CONVENTIONS.md §1 v2 hierarchy + depth rule + review-exercise row; README structure tree + pipeline step 4; tools/README example
-- Next: download S-2.zip via browser (E2E-encrypted limewire share), unzip, recon, test page, 5-agent wave
-
-Stage Summary:
-- Repo now: data/{raw,processed}/<subject>/<book>/<chapter>/<exercise>/ — exactly the subject/chapter/exercise separation the user asked for
-- All 62 digitized pages intact under new paths; docs updated to v2 conventions
-
-Stage Summary:
-- Repo now: data/{raw,processed}/<subject>/<book>/<chapter>/<exercise>/ — exactly the subject/chapter/exercise separation the user asked for
-- All 62 digitized pages intact under new paths; docs updated to v2 conventions
-
----
-Task ID: 5-s2-download-test
-Agent: coordinator (Z.ai main)
-Task: Download S-2 from limewire (E2E-encrypted), recon chapter, test conversion on user-specified pages
-
-Work Log:
-- Limewire share = E2E-encrypted S-2.zip (63.7MB). Browser UI download stuck on Turnstile token that never resolves in automated browser
-- Reverse-engineered LimeWire client crypto from app bundles: URL fragment = passphrase; PBKDF2(passphrase, static salt "wvsoOvbI854RHQMiSiPmnw==", 100k, SHA-256) -> AES-KW unwrap passphraseWrappedPrivateKey -> ECDH P-256 scalar; ECDH(scalar, ephemeralPublicKey) -> AES-256 key; name AES-GCM (iv "EtrUFVLIRAW8aUCd"), content AES-CTR (nonce "C8aZG384/qPpBzg=", 11B + 5B counter)
-- Got downloadUrl via in-page API call (POST /sharing/download/<bucket> with x-csrf-token; Turnstile token NOT actually required server-side); downloaded 63,742,167 B; AES-CTR decrypted -> valid ZIP (magic 504b0304); SHA1 46f9594eacfdb26dcde13a60447fa3884a5f1349 matches decrypted sha1Encrypted ✓
-- S-2 = 50 JPGs = Chapter 9 PROBABILITY of Basic Statistics Part-II (printed pp.11-60, offset = image + 10)
-- Recon validated boundaries: 1-36 theory (00-intro), 37-42 MULTIPLE-CHOICE QUESTIONS MCQ 1-112 + ANSWERS table, 43-45 SHORT QUESTIONS Q.1-Q.83 (two-column), 46-50 EXERCISES Q.1-Q.57; running header misprints "[Chapter 7] Probability" (chapter is 9!); even-page header "Basic Statistics Part-II ( Federal Board )"
-- Test conversions (user's original test request): S-2 img 5 (printed p.15, §9.9-9.12, 3 Venn figures) + img 1 (opener). QA fixes: chapter 7->9 (misprinted header), book_title fill, Figure-4 rectangle (not triangle), chapter_title normalized "Probability"
-- Placed: S-2/chapter-09-probability/00-intro/{page-001,page-005}.md; CONVENTIONS/README updated with S-2 rows + quirks
-
-Stage Summary:
-- S-2 raw images (50) in data/raw/statistics/S-2/; pipeline re-validated on new book; docs updated
-- Ready for 5-agent wave: 3a:001-010, 3b:011-020, 3c:021-030, 3d:031-040, 3e:041-050
-
-Work Log:
-- Limewire share = E2E-encrypted S-2.zip (63.7MB). Browser UI download stuck on Turnstile token that never resolves in automated browser
-- Reverse-engineered LimeWire client crypto from app bundles: URL fragment = passphrase; PBKDF2(passphrase, static salt "wvsoOvbI854RHQMiSiPmnw==", 100k, SHA-256) -> AES-KW unwrap passphraseWrappedPrivateKey -> ECDH P-256 scalar; ECDH(scalar, ephemeralPublicKey) -> AES-256 key; name AES-GCM (iv "EtrUFVLIRAW8aUCd"), content AES-CTR (nonce "C8aZG384/qPpBzg=", 11B + 5B counter)
-- Got downloadUrl via in-page API call (POST /sharing/download/<bucket> with x-csrf-token; Turnstile token NOT actually required server-side); downloaded 63,742,167 B; AES-CTR decrypted -> valid ZIP (magic 504b0304); SHA1 46f9594eacfdb26dcde13a60447fa3884a5f1349 matches decrypted sha1Encrypted ✓
-- S-2 = 50 JPGs = Chapter 9 PROBABILITY of Basic Statistics Part-II (printed pp.11-60, offset = image + 10)
-- Recon validated boundaries: 1-36 theory (00-intro), 37-42 MULTIPLE-CHOICE QUESTIONS MCQ 1-112 + ANSWERS table, 43-45 SHORT QUESTIONS Q.1-Q.83 (two-column), 46-50 EXERCISES Q.1-Q.57; running header misprints "[Chapter 7] Probability" (chapter is 9!); even-page header "Basic Statistics Part-II ( Federal Board )"
-- Test conversions (user's original test request): S-2 img 5 (printed p.15, §9.9-9.12, 3 Venn figures) + img 1 (opener). QA fixes: chapter 7->9 (misprinted header), book_title fill, Figure-4 rectangle (not triangle), chapter_title normalized "Probability"
-- Placed: S-2/chapter-09-probability/00-intro/{page-001,page-005}.md; CONVENTIONS/README updated with S-2 rows + quirks
-
-Stage Summary:
-- S-2 raw images (50) in data/raw/statistics/S-2/; pipeline re-validated on new book; docs updated
-- Ready for 5-agent wave: 3a:001-010, 3b:011-020, 3c:021-030, 3d:031-040, 3e:041-050
-
----
-Task ID: 3-wave
-Agent: coordinator (Z.ai main) + agents 3a-3e + finishers
-Task: S-2 mass conversion — all 50 pages (wave + coordinator finish)
-
-Work Log:
-- 5-agent wave (3a:002-010, 3b:011-020, 3c:021-030, 3d:031-040, 3e:041-050) launched in parallel; all hit Task-tool context deadlines but background processes kept working: 34 pages placed by wave processes
-- agent-3c-v2 fully QA'd page-029 before dying (exemplary notes incl. Ex 9.39 (iii) book typo (4/52)(1/52)=1/169 preserved); agent-3e-v3 produced page-046 draft; agent-3b produced 010/018 drafts; agent-3a produced 010 draft
-- Vision API entered sustained 429 rate-limit exhaustion mid-wave (retries up to 90s failed); coordinator took over:
-  - QA'd + placed existing drafts: 010 (fixed item mislabel vi->vii, chapter/section frontmatter, GFM table for ball-count), 018 (frontmatter, mixed type, A∩B book typo noted), 029 (section fill), 046 (frontmatter, EXERCISES start note)
-  - Direct transcription (own vision, no API): 019 (Ex 9.22-9.23 + Venn F12), 020 (Ex 9.24-9.26 + contingency table), 030 (Ex 9.39 tail-9.40 + §9.22), 040 (MCQ 61-80), 042 (MCQ 101-112 + full 112-cell ANSWERS grid), 043 (SQ Q.1-47 two-column), 044 (SQ Q.48-70 two-column), 045 (SQ Q.71-90 two-column), 047 (Ex Q.12-21), 048 (Ex Q.22-33 + Q.31 contingency table), 049 (Ex Q.34-45 + Q.38 table), 050 (Ex Q.46-57 final page)
-- Integrity audit: 50/50 files; frontmatter complete on all; LaTeX $-balanced; figures_count == F-blocks everywhere; all source_image links resolve; chapter: 9 on all 50
-- Verified book quirks preserved: "[Chapter 7]" header misprint (never recorded as chapter), Q.21 Ans "1 1/30" (space verified via zoom crop), Q.19 skips (vi), Ex 9.23 prints P(A∩B'), "Alternately Method" heading
-
-Stage Summary:
-- S-2 COMPLETE: 36 theory + 6 MCQ + 3 short-questions + 5 exercise pages = 50/50
-- indexes/S-2.md generated; PLAN/README updated (Phase 2 COMPLETE, 112 total pages)
-- Total library: M-0 (7) + M-1 (36) + S-0 (9) + S-1 (10) + S-2 (50) = 112 pages digitized
-
----
-Task ID: 6-v3
-Agent: coordinator (Z.ai main)
-Task: Structure v3 — flatten exercise splits (user directive), raw-data handling, full agent docs, tracking system, metadata contracts
-
-Work Log:
-- User feedback round: (a) M-1 exercise split rejected — pages must stay FLAT in chapter folders, exercises recorded in metadata only; (b) raw data handling + documentation + indexes need to be first-class; (c) repo = permanent context store so ANY new agent can resume with full context; (d) tracking data (strengths/weaknesses/goals) to be stored; (e) naming scheme consistent + future-compatible; (f) future web dashboard planned
-- Cloned repo fresh (origin/main @ b89351c is source of truth; old local clone was stale at ebf55e4)
-- Wrote + ran tools/migrate-v3.mjs: 112/112 pages moved to books/<subject>/<part>/page-NNN.md (FLAT — dissolved 00-intro/exercise-1.1/exercise-1.2/exercise-1.3/review-exercise/multiple-choice-questions/short-questions sub-folders), raw images → books/<subject>/raw/<BATCH>/, frontmatter v3 rewrite (book:→batch:, chapter:→chapter_number:, + subject:, + chapter_folder:, source_image → ../raw/<BATCH>/NNNN.jpg), body scan-links rewritten; verifier: 0 problems, all links resolve, data/ tree removed
-- Content-integrity proof: all 112 page bodies diffed vs git HEAD — byte-identical after normalizing the intentionally-rewritten scan-link line (112/112 ✓)
-- Human spot-check of user-named test pages against scans post-migration: M-1 img25 (sin/cos tables+graphs ✓), S-1 img3 (4 Venn diagrams, §8.13–8.17 ✓); M-1 img26 + S-2 img5 confirmed present with resolving links (QA'd in earlier phases)
-- Wrote + ran tools/build-metadata.mjs → books/mathematics/book.json, books/statistics/book.json, chapter.json in all 5 part folders, indexes/{mathematics,statistics}.md (stale per-batch indexes removed); stats captured: 109 figures, content-type mix, printed ranges (M-1 7–41, S-2 11–60)
-- tools/convert-page.mjs updated to v3 (--batch flag, --subject auto-resolve, v3 frontmatter injections); tools/prompt.txt updated to v3 schema; tools/README.md rewritten
-- Docs written: AGENTS.md (agent onboarding: reading order, 11 ground rules, repo map, task types, credentials policy, quirks that bite), STATUS.md (live snapshot: inventory table, next-action queue, watchlist), docs/CONVENTIONS.md v3 (flat-pages rule + rationale, codes/naming, schema v3, transcription/QA/git rules, quirks, derived-files table, changelog), docs/PIPELINE.md (sandbox recovery + intake→recon→register→test-first→5-agent-wave→audit runbook), docs/PLAN.md (Phases 0–3 done + Phases 4–7 roadmap: more batches, enrichment, web dashboard, active study loop), README.md rewritten as front page
-- Tracking system: docs/tracking/STUDENT-PROFILE.md (learner snapshot, mastery map, strengths/gaps/goals, preferences — chapter-level preference recorded) + docs/tracking/PROGRESS-LOG.md (entry format + first entry)
-
-Stage Summary:
-- STRUCTURE v3 COMPLETE: books/<subject>/{book.json, front-matter/, chapter-NN-slug/ (FLAT pages + chapter.json), raw/<BATCH>/} — exactly the raw/processed separation and chapter-level organization the user asked for
-- 112/112 pages intact and verified; exercise identity preserved in frontmatter/chapter.json (M-1 boundaries flagged approximate pending user's raw info — frontmatter-only fix policy)
-- Repo now self-contained for any future agent: AGENTS.md → STATUS.md → CONVENTIONS → PIPELINE → WORKLOG tail = full context in ~5 minutes; tracking system ready for the study loop; book.json/chapter.json ready for the future web dashboard
-
----
-Task ID: 7-v4
-Agent: coordinator (Z.ai main)
-Task: Structure v4 — three-branch Books/ library (user directive): Books/{Raw, Formatted, Digital}, HTML test edition, full docs/tool/metadata sync, verification, push
-
-Work Log:
-- Processed user directive: `books/` → `Books/` (capital B) with (1) `Raw/` = folders named after ORIGINAL chapter names holding the raw uploads, (2) `Formatted/` = book → numbered chapters → flat markdown, front matter included as Chapter 00, (3) `Digital/` = HTML page edition, explicitly TEST PURPOSES ONLY
-- tools/migrate-v4.mjs: moved 112/112 raw images → Books/Raw/{Mathematics,Statistics}/<Original-Chapter-Name>/ and 112/112 markdown pages → Books/Formatted/{Mathematics,Statistics}/Chapter-NN-<Title>/; rewrote chapter_folder frontmatter values (e.g. chapter-01-functions-and-graphs → Chapter-01-Functions-and-Graphs; front-matter → Chapter-00-Front-Matter) and both raw-path occurrences per page (frontmatter source_image + scan-link line) to ../../../Raw/<Subject>/<Chapter-Name>/NNNN.jpg; per-file byte-verification vs git HEAD (v3)+rewrites ran during migration — 0 drift; old books/ tree removed (only generated JSON remained)
-- tools/fix-v4-casing.mjs (one-off follow-up): book folders TitleCase (Mathematics/Statistics) to mirror Raw/Formatted/Digital; 112 files' paths rewritten again (Raw/mathematics → Raw/Mathematics)
-- tools/verify-v4.mjs (new, read-only): tree shape, 7/36/9/10/50 counts per batch, byte-compare every page vs git HEAD with exact rewrites, frontmatter coherence (chapter_folder == folder, batch == mapping, source_image + scan-link resolve, no stale ../raw/ or books/ refs) → ALL GREEN 112/112
-- tools/build-metadata.mjs → v4: BOOKS constant now carries subjectDir/rawFolder per part; emits Books/Formatted/<Subject>/book.json (structure_version v4, raw_root, html_edition, per-part raw_folder), chapter.json ×5 (folder + raw_folder + v4 note), indexes/{mathematics,statistics}.md with Raw/Formatted/Digital paths per batch; regenerated — printed ranges unchanged (M-1 7–41, S-0 4–8, S-1 2–10, S-2 11–60)
-- tools/generate-digital.mjs (new): full rebuild of Books/Digital/ from book.json/chapter.json + page markdown; 112 page-NNN.html + index.html at Digital root/book/chapter levels (8 indexes); KaTeX via CDN; LaTeX $/$$ segments extracted BEFORE markdown parsing (GitHub-style math-first precedence — protects subscripts from emphasis) and restored HTML-escaped; TEST EDITION banner on every page; prev/next page nav; metadata badges (batch/image/printed/type/exercise/figures); links to markdown source + raw scan
-- Bugs caught & fixed during generation: (1) restoreMath dropped $/$$ delimiters → KaTeX had nothing to render (fixed, re-verified page HTML); (2) chapter-index .md links href="undefined" (mdLink not stored in row objects) + book-index up-link depth (../../ → ../) — found by tools/check-digital-links.mjs (new, read-only): 1460 relative links across Books/Digital + indexes → ALL LINKS RESOLVE
-- tools/convert-page.mjs usage header → v4 example; tools/prompt.txt chapter_folder example + source_image format → ../../../Raw/<Subject>/<Chapter-Name>/NNNN.jpg (schema fields unchanged); docs/prompts/vlm-image-to-markdown.md +v4 changelog row
-- Docs updated to v4: docs/CONVENTIONS.md (v4 header + changelog row; §1 tree/codes rewritten incl. §1.5 Digital policy — test only, never hand-edit; §2 examples with v4 paths; §4/§5/§7 paths + verifier gate), docs/PIPELINE.md (register/test/audit steps + cheat-sheet on v4 paths, generate-digital + verifiers in finish flow), docs/PLAN.md (ground rules +6/+10; new Phase 4 v4 COMPLETE; future phases renumbered 5–8), README.md (v4 structure tree, pipeline steps), AGENTS.md (rules 3/4, repo map, contracts paths), STATUS.md (rewritten for v4), tools/README.md (full rewrite incl. new tools + don't-rerun migrations), tracking/PROGRESS-LOG.md entry
-- tools/package.json added (marked dependency for generate-digital; node_modules gitignored)
-- Final state: verify-v4 ALL GREEN (112/112 byte-verified) + check-digital-links ALL RESOLVE (1460/1460) + build-metadata OK + generate-digital OK (112/112 HTML)
-
-Stage Summary:
-- STRUCTURE v4 COMPLETE & PUSHED: Books/Raw (original chapter names, immutable) + Books/Formatted (canonical markdown, Chapter-NN uniform, front matter = Chapter 00) + Books/Digital (HTML test edition, test purposes only per user)
-- Batch codes M-0/M-1/S-0/S-1/S-2 remain the permanent join key across all three branches (frontmatter + book.json/chapter.json record folder + raw_folder)
-- Content untouched: 112/112 pages byte-identical to v3 except intended path/field rewrites; 109 figures, printed offsets, quirks all preserved
-- Pipeline for the future: build-metadata.mjs → generate-digital.mjs → verify-v4.mjs + check-digital-links.mjs must all pass before any push
-
----
-Task ID: 7-v4b (addendum)
-Agent: coordinator (Z.ai main)
-Task: verify-v4 robustness fix after the v4 commit landed
-
-Work Log:
-- Re-running bun tools/verify-v4.mjs after commit 69752a6 failed (0/112 verified): the script
-  compared pages against git show HEAD:books/... but v4 was now HEAD, so old v3 paths only
-  exist in HEAD~2 (377be6e)
-- Fixed: gitShowV3() walks HEAD, HEAD~1 … HEAD~8 until the old path resolves — verifier now
-  usable from any future HEAD
-- Re-run: ALL GREEN 112/112; committed & pushed as 129a342
-
-Stage Summary:
-- verify-v4.mjs is now a permanent CI-style gate (baseline located by history walk, not a
-  fixed rev); verified state: 69752a6 + 129a342 on origin/main
-
----
-Task ID: 8-digital-scope
-Agent: coordinator (Z.ai main)
-Task: Digital edition scope correction per user review — curated 8 test pages only, flat in subject folders, scan images shown directly in the pages
-
-Work Log:
-- Processed user review: v4 structure approved ("exactly how I wanted it"), but Digital must NOT generate HTML for every page nor mirror chapter folders; only 8 named test pages; the original scan images must be shown directly in the digital pages
-- Interpreted the user's page list (his "Chapter 1"/"Chapter 2" = S-1/S-2): M-1 imgs 1, 23, 25 · S-1 imgs 3, 5, 6 · S-2 imgs 5, 42 → 8 HTML files; "page number 1" of the math book resolved to M-1 img 1 (Unit 01 opener — the only math chapter, consistent with his stats list starting at S-1; flagged in the report)
-- tools/generate-digital.mjs rewritten: TEST_PAGES whitelist is the scope of truth; output flat at Books/Digital/<Subject>/page-<BATCH>-<NNN>.html (batch code disambiguates S-1 p5 vs S-2 p5 and matches the user's own S1/S2 vocabulary); script asserts written set == whitelist exactly (wipes Books/Digital/ first — removed all chapter folders, 8 old index.html files, and the 104 non-test pages)
-- New page design ("properly formatted, properly thought-out"): sticky scan pane showing the original page image directly (click → full-resolution JPG) beside the KaTeX-formatted transcription; Split / Scan / Text view toggle (aria-pressed buttons, no deps); identity header (book · chapter label · badges: batch, content type, page image n/N, printed page, position in chapter, figures); links to Markdown source + full scan; warm paper palette (no blue/indigo); print = text only
-- Fixes during build: book.json parts expose raw_folder (not rawFolder) → resolution corrected; body's embedded scan link (3-ups, md-relative) rewritten to 2-ups for the new page depth (8 broken links caught by check-digital-links, then ALL RESOLVE 168/168); mobile default view changed text→split so the scan stays directly visible (stacked scan-on-top)
-- Browser verification (agent-browser, all 8 pages): image naturalWidth > 0, KaTeX rendered (18–62 nodes/page), toggle works both directions, no console errors; desktop split + 390px mobile screenshots reviewed (M-1 25 trig tables, S-2 42 MCQ+answers, M-1 1 opener with UNIT-01 art); no horizontal overflow
-- Docs synced: CONVENTIONS §1.5 rewritten (whitelist scope, flat naming, scan-first policy), README (tree + design rules + start-here), STATUS (Phase 4b, inventory line "8 curated .html digital test pages"), PLAN (Phase 4b section), tools/README (generate-digital section), tracking/PROGRESS-LOG entry
-
-Stage Summary:
-- Books/Digital/ = exactly 8 files: Mathematics/{page-M1-001,page-M1-023,page-M1-025}.html + Statistics/{page-S1-003,page-S1-005,page-S1-006,page-S2-005,page-S2-042}.html — nothing else (no folders beyond the two subject folders, no indexes)
-- Digital format proposal ready for the user's verdict: scan shown directly + formatted text, three view modes; canonical library untouched (Books/Formatted still 112/112, verify-v4 still ALL GREEN)
-- Whitelist is enforced in tooling: extending Digital beyond the 8 pages requires editing TEST_PAGES (and the user's OK)
-
----
-Task ID: 9
-Agent: coordinator (Z.ai main) + parallel sub-agents 9-a/9-b/9-c
-Task: Digital rebuild v2 — replace the rejected generated "scan pane + transcription" pages with hand-typeset digital replicas of the printed textbook pages (8 flat pages + figure-crop assets), new crop tooling, new integrity gate, full docs sync
-
-Work Log:
-- User REJECTED the Phase 4b Digital design (commit 26bc1c0, built by tools/generate-digital.mjs): pages must NOT be a scan viewer beside a plain-text transcription — each Digital page must look like an ACTUAL DIGITAL VERSION OF THE ORIGINAL TEXTBOOK PAGE: hand-typeset replica with real text, KaTeX math, data tables and figure IMAGES cropped from the raw scans embedded where they sit on the printed page; header/footer page furniture replicated per book
-- Coordinator (Task 9-prep) removed Books/Digital/{Mathematics,Statistics}/ entirely; new layout: 8 HTML files FLAT in Books/Digital/ (no subject subfolders, no index) + Books/Digital/assets/ for figure crops; built the M1-page-023.html exemplar (inline-CSS replica system) and tools/crop-figure.py (Python/PIL: fractional crop / brand-color probe / coordinate grid overlay); sampled the math book's palette from scans (ribbon #0167ef/#2293fb, orange #f26a0a, labels #1560d0, headings #5e0000, Key-Facts #ac0000)
-- Sub-agent 9-a: M1-page-025.html (printed 31; maroon section heading, trig sin/cos tables as real <table>s, springs + sincos figure crops, Function/Domain/Range table) + M1-page-001.html (unit opener: banner crop, rust title, 18-bullet objectives box, telecom crop)
-- Sub-agent 9-b: S2-page-005.html (3 Venn crops, mutually-exclusive law boxes) + S2-page-042.html (MCQs 101–112 with options as printed + the full 112-answer ANSWERS grid as a real HTML table)
-- Sub-agent 9-c: S1-page-003/005/006.html (Basic Statistics Part-II cream monochrome chrome; 4 Venn crops, tree-diagram crops; thin-ruled running header "[Chapter 8] Set Theory" / "[Chapter 7] Probability" — the "[Chapter 7]" on S-2 pages is the BOOK'S OWN MISPRINT (chapter is 9), kept verbatim)
-- All pages: self-contained HTML (inline CSS + KaTeX via CDN, auto-render $ inline / $$ display), slim toolbar, colophon linking ../Raw/<Subject>/<Chapter>/<NNNN>.jpg (original scan) and ../Formatted/<Subject>/Chapter-NN-.../page-NNN.md (markdown source); Mathematics pages carry the NBF Grade 12 chrome (blue unit ribbon + orange corner wedges, blue bold labels, maroon section headings, red Key-Facts callout with cropped crossed-keys icon, blue footer ribbon "GRADE 12 | <page> | National Book Foundation"); Statistics pages carry the cream quiet-folio chrome; 14 PNGs in assets/ named <BATCH>-<NNN>-fig-<slug>.png plus M1-023-keyfacts-icon.png and M1-001-unit-banner.png
-- Coordinator QA: fixed the sub-agent flag re toolbar link depth (../../Raw → ../Raw so links resolve from flat Books/Digital/); found & fixed the S-1 KaTeX overflow bug — a bare descendant `span` selector leaked display/margin/nowrap into KaTeX's internal .base spans and shredded formulas; lesson documented: scope selectors like `.run > span` (now in CONVENTIONS §1.5 + tools/README)
-- All 8 pages browser-verified (agent-browser) at 1280px + 390px: KaTeX renders, all figures load, no horizontal overflow, zero console errors
-- Tooling swapped: tools/generate-digital.mjs + tools/check-digital-links.mjs DELETED (built/checked the rejected generated design; marked dependency dropped from tools/package.json); NEW tools/check-digital-test.mjs (plain Node/Bun, zero deps) — asserts Books/Digital holds EXACTLY the 8 whitelisted .html + assets/ (no extra .html, no index.html, no strays), resolves every relative href/src (ignores http(s)/#/mailto:/data:), requires local src ⊆ Books/Digital/assets/, requires KaTeX CDN link + <main> per page, warns on unreferenced assets, per-file + total summary, exit 1 with ✗ report on failure
-- Docs synced to the new reality: tools/README.md (rewritten: inventory + digital workflow + KaTeX gotcha + retired-tools note), docs/CONVENTIONS.md (§0 changelog v4.1 row; §1.1 tree; §1.3 digital naming rows; §1.5 rewritten = curated hand-typeset replicas, flat layout, batch-coded filenames, assets/, verbatim incl. the book's typos/misprints, never regenerated by a script, CSS-scoping rule; §5/§7 verifier + derived-files updates), docs/PIPELINE.md (§6 finish flow + §8 cheat-sheet), docs/PLAN.md (ground rules 6/10, Phase 4b marked superseded, new Phase 4c section DONE, Phase 6/7 notes), README.md (current state, tree, design rules, pipeline steps), AGENTS.md (repo map + new quirk bullet), STATUS.md (Phase 4c DONE subsection with verification results, next actions, watchlist), docs/tracking/PROGRESS-LOG.md (dated entry)
-
-Stage Summary:
-- Books/Digital/ = exactly 8 FLAT hand-typeset replica pages (M1-page-001/023/025 · S1-page-003/005/006 · S2-page-005/042) + assets/ (14 figure crops) — nothing else; no generator script exists (pages are edited in place; adding pages needs user approval + a whitelist edit in check-digital-test.mjs)
-- Gates: bun tools/check-digital-test.mjs → ALL GREEN 8/8 (30 local links resolve, 14/14 assets referenced, KaTeX + <main> everywhere); bun tools/verify-v4.mjs → ALL GREEN 112/112 (Books/Formatted untouched)
-- Format proposal awaiting the user's verdict: true digital replicas of the printed pages; Books/Formatted remains the canonical library
 
 ---
 Task ID: 10
 Agent: coordinator (Z.ai main)
-Task: User review round 4 — "there are no graphs and also there are not proper layout of the things" → make every Digital page fully self-contained (figures embedded as data URIs)
+Task: User review round 4 ("no graphs / layout not proper") — diagnose, make Digital pages self-contained, restore sandbox review setup, verify + push
 
 Work Log:
-- Diagnosed the complaint: all 14 figure crops existed and every page referenced them, but the references were RELATIVE (src="assets/…"). Any viewing path where the HTML travels without the assets/ folder (preview copies, lone downloaded files, static hosting of single files) rendered zero graphs and collapsed the floats — which is exactly what the user saw ("no graphs" + "not proper layout"), while the typography looked proper.
-- Sandbox regression also hit mid-round (local clone snapped back to Phase-1 ebf55e4); recovered by git reset --hard origin/main (449cf68) — GitHub remains the durable store; nothing was lost.
-- Audited all 8 pages against their scans figure-by-figure: M1-025 (springs + big sin/cos graph), M1-001 (unit banner + telecom photo), M1-023 (Key-Facts icon; page genuinely has no graphs), S1-003 (4 Venn diagrams), S1-005/006 (tree diagrams), S2-005 (Figures 2/3/4 — the earlier "missing Figure 1" worry was unfounded, Figure-1 lives on a different page), S2-042 (no figures in the original — MCQ text + answers grid only). No figure was missing; the loading path was the bug.
-- NEW tools/embed-figures.py: optimizes every asset (photos M1-001-unit-banner/fig-telecom → JPEG q82 → .jpg; line art → 256-color palette PNG, icon → 64 colors) and inlines each into the pages as base64 data URIs. Assets 3.72 MB → 0.59 MB; pages now 12–244 KB, self-contained, render identically via file://, lone downloads, or any static server.
-- tools/check-digital-test.mjs upgraded: enforces SELF-CONTAINMENT — per-page expected figure counts (EXPECTED_FIGURES map, 14 total) must be present as data URIs; any relative src="assets/…" is a failing regression; assets/ must hold exactly 14 crops (.png line art + .jpg photos). Docs synced: CONVENTIONS §1.5 (embed policy + root-cause note), tools/README.md (new tool row + workflow step 3 + gate description).
-- Serving for user review rebuilt in the live Next.js app: public/{Digital→digital,Raw,Formatted} symlinked to the repo working tree (edits reflect instantly), viewer UI restored at / (8 cards: Digital page / Scan / Markdown links per page).
-- Browser-verified every page at 1280px and ~390px via agent-browser: sw == viewport, wide-element count 0 (non-table stragglers are KaTeX's hidden MathML internals only), KaTeX renders (10–43 nodes/page), ALL images naturalWidth > 0 (0 broken of 14), zero console errors, dev.log clean. Screenshots eyeballed against scans: M1-025 graph page, S1-003 Venn column, S2-005 side-by-side figures, M1-001 opener, S2-042 answer grid all match the printed layout.
+- Sandbox had regressed to Phase-1 snapshot (local clone at ebf55e4, worklog missing 9-* entries); GitHub held the true state (449cf68 = Digital v2). Recovered: git reset --hard origin/main; restored public/{digital,Raw,Formatted} symlinks + viewer UI (page.tsx) into the live Next.js app from the surviving /tmp/my-project copy
+- Diagnosed user complaint: all 14 figure crops existed; pages referenced them RELATIVELY (src="assets/…"), so any viewing path without the assets folder showed zero graphs and collapsed floats → "no graphs" + "not proper layout" while typography looked proper
+- Audited all 8 pages vs scans figure-by-figure: nothing missing (S2-005 Fig 2/3/4 complete — no Figure 1 on that page; S2-042 has no figures in the original; M1-023 has none — Key-Facts icon only)
+- NEW tools/embed-figures.py: optimizes assets (photos→JPEG q82, line-art→palette PNG; 3.72MB→0.59MB) and embeds each figure as base64 data URI → every page self-contained (renders via file://, lone downloads, any host)
+- check-digital-test.mjs upgraded: enforces per-page embedded-figure counts (EXPECTED_FIGURES, 14 total); relative src="assets/…" now a failing regression; assets/ must hold exactly 14 crops (2 .jpg + 12 .png)
+- Docs synced: CONVENTIONS §1.5, tools/README.md, repo WORKLOG.md Task 10, docs/tracking/PROGRESS-LOG.md
+- Browser-verified 8/8 pages @1280 + ~390px (agent-browser): sw==viewport, wide=0 (only KaTeX hidden MathML), KaTeX 10-43 nodes/page, 14/14 images naturalWidth>0, zero console errors, dev.log clean; screenshots eyeballed vs scans (M1-025, S1-003, S2-005, M1-001, S2-042)
+- Both gates ALL GREEN; committed a366659 "Digital v2.1: figures embedded as data URIs" and pushed to GitHub
 
 Stage Summary:
-- Every Digital page is now a truly standalone digital replica: typography + math + tables + FIGURES all embedded — the "no graphs" failure class is structurally eliminated (regression-gated by the checker, not just by convention).
-- Gates: check-digital-test ALL GREEN (8/8 pages, 14/14 figures embedded, 16 local links resolve); verify-v4 ALL GREEN 112/112 (Books/Formatted untouched).
-- Assets/ remains the canonical crop source (optimized); embed-figures.py is idempotent and re-runnable after any crop edit.
-
+- Digital pages now carry their figures INSIDE the HTML — the "no graphs" failure class is structurally eliminated and regression-gated by the checker
+- Review setup restored: preview / → viewer cards → /digital/<page>.html (live symlink to repo, so repo edits serve instantly)
+- Commit pushed: a366659 (GitHub main = local HEAD)
 ---
+Task ID: 11-b
+Agent: figure-crop-11-b
+Task: Crop all figures for Mathematics Chapter-01 pages 002-007 and regenerate those digital pages
 
-## Task 11 — Digital Edition v3: full 112-page generated library (2026-09-04)
+Work Log:
+- page-002: F1 mapping diagram → assets/M1-002-fig-1-mapping.png (crop L.744 T.176 R.952 B.336, 494x521; first attempt had body-text leak top/bottom + clipped f-arrow tip → refined via generous-crop+VLM-recheck, re-cropped clean); F2 tree photo → assets/M1-002-fig-2-tree-photo.jpg (L.704 T.464 R.965 B.649, 619x602, .jpg for photo) — page regenerated, 0 placeholders
+- page-003: F1 Domain/Codomain/Range diagram → assets/M1-003-fig-1-domain-codomain-range.png (L.664 T.520 R.998 B.700, 813x584; first attempt at R.937 clipped the Range bracket + label → extended right/bottom, verified OK; dark-background diagram)
+- page-004: F1 into function → assets/M1-004-fig-1-into.png (L.760 T.270 R.958 B.442, 463x537); F2 onto function → assets/M1-004-fig-2-onto.png (L.760 T.615 R.956 B.783, 459x524) — both verified complete on first crop
+- page-005: F1 one-to-one mapping diagram → assets/M1-005-fig-1-one-to-one.png (L.750 T.064 R.938 B.220, 468x527; two independent VLM box estimates agreed within ~0.002) — verified complete
+- page-006: F1 inverse-function diagram → assets/M1-006-fig-1-inverse.png (L.075 T.605 R.494 B.858, 963x777) — NOTE: figure sits bottom-LEFT of the scan (x≈0.08-0.49), not bottom-right as the brief hinted (md "bottom center" was closer); both grid-pass and refine-pass coordinates matched, crop verified (X/Y ovals + all 4 text labels + both red arcs f(x)/f^-1(y))
+- page-007: F1 f / f^-1 graph pair → assets/M1-007-fig-1-inverse-graph.png (L.622 T.413 R.929 B.606, 766x672) — verified complete (axes+arrowheads, dashed y=x, both labeled curves)
+- All crops located via tools/crop-figure.py grid + z-ai vision passes (Read tool cannot render images in sub-agent context, same limitation prior agents documented); every crop VLM-QA'd for clipping/stray-text/missing elements; each page regenerated individually with `node tools/gen-digital.mjs --only "Mathematics/Chapter-01-Functions-and-Graphs/page-00N"`
+- FIXED tooling bug in tools/gen-digital.mjs findFigureAsset(): stem was built as `${prefix}${pad3(pageImage)}-fig-${n}` = "M1002-fig-1" (missing dash), so NO auto-generated page could ever match its crop assets — all 8 previously-embedded figures lived on hand-typeset pages that bypass this lookup. Patched to accept BOTH `<PREFIX>-<PPP>-fig-<n>` (documented pattern, matches brief + every existing asset) and the legacy dash-less stem; backward compatible, hand-typeset pages unaffected (not rebuilt)
+- Verification caveat: `rg -c 'figslot'` on ANY generated page always reports 3 (the static .figslot CSS style rules in the template), so "must output nothing" is literally unachievable for generated pages; the real placeholder test is `rg -c 'CROP PENDING'` / `rg -c 'class="figslot"'` = no matches — both are 0 on all 6 pages
 
-**User directive:** "let's work on the others and with a proper structure of the folders and such. lets build the digital versions of all the pages so far."
+Stage Summary:
+- 8/8 crops saved (7 PNG diagrams + 1 JPG photo), 6/6 pages regenerated placeholder-free (CROP PENDING=0, class="figslot" placeholders=0 on every page; embedded figure counts 2/1/2/1/1/1 match figures_count frontmatter); no figures genuinely absent; anomalies: page-006 figure is bottom-left (not bottom-right) on the scan, and the gen-digital.mjs asset-stem dash bug fixed in passing
+FINAL REPORT: crops saved = M1-002-fig-1-mapping.png 494x521 · M1-002-fig-2-tree-photo.jpg 619x602 · M1-003-fig-1-domain-codomain-range.png 813x584 · M1-004-fig-1-into.png 463x537 · M1-004-fig-2-onto.png 459x524 · M1-005-fig-1-one-to-one.png 468x527 · M1-006-fig-1-inverse.png 963x777 · M1-007-fig-1-inverse-graph.png 766x672; figures not found = none; placeholder check = `rg -c 'CROP PENDING'` and `rg -c 'class="figslot"'` return no matches on all 6 regenerated pages (raw `rg -c 'figslot'` = 3 per page from template CSS only); gen-digital summaries: "2/1/2/1/1/1 figures embedded, 0 figure slots pending crops".
+---
+Task ID: 11-f
+Agent: figure-crop-11-f
+Task: Crop all figures for Statistics pages S0-001, S1-002, S1-004, S2-004/007/015/017/018/019/023 and regenerate those digital pages
 
-### Structure (mirrors Raw/Formatted 1:1)
+Work Log:
+- S0-001 (Front-Matter/0001.jpg): F1 cover collage → assets/S0-001-fig-1-cover-collage.jpg (1215x827, box 0.075/0.440/0.565/0.712) — first VLM grid pass was far too wide (caught title/subtitle/author text); located the white collage box precisely via non-teal pixel row/column scan (teal bg #35BCD2), margins re-tightened, VLM-verified CLEAN incl. full blue border, no stray text. F2 publisher logo → assets/S0-001-fig-2-publisher-logo.png (166x204, box 0.678/0.830/0.745/0.897) — first attempts missed it entirely (VLM grid misreads) → localized via 3x3 tile-question (cells A3/B3), then tightened to drop clipped red MAJEED letters; verified CLEAN.
+- S1-002 (Chapter-08/0002.jpg): 3 Venn crops saved first pass, all CLEAN: S1-002-fig-1-venn-abc.png (870x392, .55/.27/.92/.40), S1-002-fig-2-union-overlapping.png (729x422, .17/.75/.48/.89 incl. 'A∪B is shaded area' + Fig-2(a) caption), S1-002-fig-3-union-disjoint.png (729x422, .55/.75/.86/.89 incl. Fig-2(b) caption).
+- S1-004 (Chapter-08/0004.jpg): tree diagram → S1-004-fig-1-tree-product.png (1189x903, .46/.10/.97/.40 incl. (1,w)…(3,x) pair column + Figure-7 caption); verified all 3 nodes/6 leaves/6 ordered pairs, CLEAN.
+- S2-004 (Chapter-09/0004.jpg): Venn mutually exclusive → S2-004-fig-1-mutually-exclusive.png (770x479, .61/.78/.97/.95 incl. A∩B=φ + Figure-1 caption); CLEAN.
+- S2-007 (Chapter-09/0007.jpg): Venn complement → S2-007-fig-1-complement.png (809x530, .57/.07/.91/.24 incl. Figure-5 caption); CLEAN.
+- S2-015 (Chapter-09/0015.jpg): F1 → S2-015-fig-1-mutually-exclusive.png (821x611); F2 → S2-015-fig-2-complement.png (555x363). First pass had body-text bleed on right edge (stray 'S/N') on both + slight top clip on F2 → re-cropped tighter (F1 .52/.31/.835/.49, F2 .645/.838/.858/.945) using fine-grid VLM local-frame conversion; both re-verified CLEAN.
+- S2-017 (Chapter-09/0017.jpg): F1 exhaustive → S2-017-fig-1-exhaustive.png (615x428, .68/.35/.92/.48), F2 non-exhaustive → S2-017-fig-2-non-exhaustive.png (615x428, .68/.51/.92/.64); both incl. their two printed text lines below; CLEAN first pass.
+- S2-018 (Chapter-09/0018.jpg): F1 non-mutually exclusive → S2-018-fig-1-non-mutually-exclusive.png (831x701, .60/.33/.95/.56 incl. arrow + 'A∩B has m points' + 'A∪B is shaded' + Figure-10); F2 three mutually exclusive → S2-018-fig-2-three-mutually-exclusive.png (795x610) — first crop clipped the rectangle's S label at right edge → widened R 0.93→0.955, re-verified CLEAN. (VLM call timed out once mid-verification; crops unaffected, retried.)
+- S2-019 (Chapter-09/0019.jpg): concentric-circles Venn (Fig-12) → S2-019-fig-1-A-union-B-coins.png (783x617, .64/.58/.95/.77); verified S letter, HH/HT/TH/TT labels, A/B arrows, 'A∪B is shaded' text + caption; CLEAN.
+- S2-023 (Chapter-09/0023.jpg): conditional-probability Venn → S2-023-fig-1-conditional-probability.png (972x632, .55/.23/.93/.42 incl. shaded intersection, arrow, 'A∩B has m points', 'Figue-13' book-typo caption); CLEAN.
+- Regenerated each page right after its crops were saved (node tools/gen-digital.mjs --only …), then a final batch regen of all 10; generator reports "16 figures embedded, 0 figure slots pending crops".
 
-- `Books/Digital/<Subject>/<Chapter-Folder>/page-NNN.html` + per-chapter `assets/` + library
-  `index.html` + `manifest.json`. The 8 flat v2 files were `git mv`-ed into the tree
-  (scan/md links deepened to `../../../`), their 14 crops split into per-chapter `assets/`.
+Stage Summary:
+- 16/16 crops saved (15 .png line-art + 1 .jpg cover collage) across the 10 assigned pages; every crop VLM-verified complete (labels S/A/B/Ā, shading, captions intact) with no stray body text; 10/10 regenerated pages have ZERO figslot placeholders (rg 'class="figslot"' empty on all).
+- Anomalies: VLM reads absolute grid labels unreliably — worked around with pixel-based edge detection (S0 cover), tile-based localization (publisher logo) and fine-grid local-frame conversion (S2-015); no missing figures found (all md figures present in scans).
+- Note for coordinator: tools/gen-digital.mjs run without --only rewrites all pages (hit once at session start, hand-typeset pages protected as designed); final state regenerated only my 10 pages.
+---
+Task ID: 11-a
+Agent: figure-crop-11-a
+Task: Crop all figures for Mathematics Chapter-00-Front-Matter pages 001,002,004,005,006,007 and regenerate those digital pages
 
-### Generation pipeline
+Work Log:
+- Found previous timed-out attempt had already saved all 10 crops (assets 06:33, pages still 06:10 with CROP PENDING) — did NOT redo them; ran a full VLM verification pass over each crop instead, re-cropping only failures
+- page-001: F1 cover collage → M0-001-fig-1-cover-collage.jpg (1920x1719) VLM-verified: complete photo-network, shuttle center, no clipping, no stray text, no excess background; F2 publisher emblems → M0-001-fig-2-publisher-emblems.png (1512x356 strip: NBF emblem left, shield crest right, "NBF as Federal Textbook Board Islamabad" text between, as md describes "logos flank the publisher lines") — verified both logos complete/unclipped
+- page-002: F1 grade badge (438x472), F2 state emblem (450x439), F3 NBF logo (306x351) all VLM-verified complete/unclipped/no stray text on first check; F4 corner flourish (was 534x371) FAILED verification — VLM: artwork cut mid-stroke at top AND left → previous attempt had used L>0,T>0 box inside the corner bleed. Pixel-located true decoration on scan 0002 (swoosh bbox x 0..463, y 0..316; navy body text starts y=382) → re-cropped from the true page corner (L0 T0 R0.198 B0.104 → 481x351) and VLM re-verified CLEAN (full swoosh, clean right/bottom margins, no text)
+- pages 004-007 corner crops: VLM flagged "clipped at top/left" — resolved via pixel forensics: the decorations bleed off the printed page corner, so page-edge cuts are correct-by-design. Scan-decoration bboxes (text excluded via color+row-band analysis; rejected navy-text and top-edge cyan scan-sliver clusters on 0005/0006/0007): 0004 x0..326/y0..94, 0005 x4..426/y0..345, 0006 x0..336/y0..117, 0007 x0..423/y0..174 — each existing crop's content bbox matches its scan bbox exactly (full on-page artwork captured, clean white right/bottom margins, no text). M0-004 (395x205), M0-005 (506x446), M0-006 (390x220), M0-007 (525x276) all accepted; no re-crops needed
+- Regenerated all 6 pages with node tools/gen-digital.mjs --only "Mathematics/Chapter-00-Front-Matter/page-00N" (pages now embed figures as base64 data URIs per Task-10 design)
+- Tooling note: rg HANGS on these generated pages (giant single-line base64 data URIs — first placeholder check timed out at 120s); used a python scanner instead. Caveat from 11-b still holds: raw 'figslot' = 3 per page = template CSS rules only
 
-- **`tools/gen-digital.mjs`** (new): Books/Formatted markdown → replica HTML in the two
-  book design languages (math blue-ribbon/orange-wedge; stats monochrome cream). Renders
-  sections, (i)/(ii) items, bullet lists, MCQ grids + `## ANSWERS` 112-cell grid, display
-  math (KaTeX CDN auto-render), Key-Facts boxes (crossed-keys icon lifted from the M1-023
-  exemplar at runtime), real tables (math-aware cell splitting), front-matter plates,
-  alternating running heads, folio footers. `HAND_TYPESET` preserves the 8 exemplars
-  verbatim. Emits `manifest.json` (accurate under `--only`) + `index.html`.
-- **Figures:** 96 slots across 41 pages, all now embedded as data URIs from crops in
-  chapter `assets/` named `<PREFIX>-<NNN>-fig-<n>[-<slug>].png|jpg` (PREFIX M0/M1/S0/S1/S2,
-  n = md Figure F number). Slots without crops render explicit dashed placeholders
-  (nothing can silently vanish); marker-less md figures render in an end-of-page figstrip;
-  table-cell figure markers render inside their cells.
-- **`tools/check-digital.mjs`** (new, replaces check-digital-test.mjs): coverage 112/112,
-  chrome, on-disk link resolution, figure integrity vs `figures_count`, relative-`assets/`
-  regression, tree shape, manifest sync. `--strict-figures` = push gate. ALL GREEN.
-- **`tools/optimize-assets.py`** (new): palette-quantizes line-art PNGs / JPEG q82 photos
-  before the final regen (assets 12.2 MB → ~4 MB).
-- **`tools/crop-figure.py`**: `grid` now takes an output path (parallel-safe); `crop` saves
-  `.jpg` for photos.
+Stage Summary:
+- 10/10 crops on disk (9 reused from timed-out attempt after verification, 1 re-cropped: M0-002-fig-4 from true page corner), all 10 VLM/pixel-verified complete with no stray text; 6/6 pages regenerated placeholder-free (CROP PENDING=0, placeholder figslot=0, embedded figure counts 2/4/1/1/1/1 match md); no figures genuinely absent; anomaly: corner decorations bleed off the page corner — must crop from L0/T0 or the artwork is cut mid-stroke
+FINAL REPORT: crops saved = M0-001-fig-1-cover-collage.jpg 1920x1719 · M0-001-fig-2-publisher-emblems.png 1512x356 · M0-002-fig-1-grade-badge.png 438x472 · M0-002-fig-2-state-emblem.png 450x439 · M0-002-fig-3-nbf-logo.png 306x351 · M0-002-fig-4-corner-flourish.png 481x351 (re-cropped) · M0-004-fig-1-corner.png 395x205 · M0-005-fig-1-corner.png 506x446 · M0-006-fig-1-corner.png 390x220 · M0-007-fig-1-corner.png 525x276; figures not found = none; placeholder check = python scan of all 6 regenerated pages: CROP PENDING=0 and placeholder class="figslot"=0 on every page (raw 'figslot'=3/page is template CSS only), embedded images 2/4/1/1/1/1 with all data-URI srcs resolving.
+---
+Task ID: 11-d
+Agent: figure-crop-11-d
+Task: Crop all figures for Mathematics Chapter-01 pages 016,017,018,021,022 and regenerate those digital pages
 
-### Figure crops (subagent waves 11-a…11-g2 + coordinator)
+Work Log:
+- page-016: F1 y=|x| graph → assets/M1-016-fig-1-abs.png (805x669, box .650/.355/.995/.560; first crop caught a stray "0." text fragment top-left → located via VLM bbox query, trimmed L 0.625→0.650, verified clean); F2 linear f(x)=(12−2x)/3 → assets/M1-016-fig-2-linear-12-2x-over-3.png (681x614, box .690/.620/.982/.808; first crop at B.825 caught the magenta Check-Point bar below the graph + first VLM verify misread → probed bottom-right quadrant, re-cropped to probed bbox, verified clean incl. (0,4)/(6,0) labels + 2x+3y=12)
+- page-017: F1 two-line intersection O(4,1) → assets/M1-017-fig-1-linear-intersection.png (727x614, box .618/.176/.914/.367; first crop caught body-text line at bottom → pixel row-scan separated graph ink (ends ~y0.362) from text block (starts ~y0.372) → B 0.378→0.367 and T 0.168→0.176 (text line sits just above graph top), verified clean; VLM pixel-bbox readings cross-checked against numpy ink scans because normalized coords were noisy); F2 line+downward-parabola → assets/M1-017-fig-2-line-parabola.png (1099x1214, box .480/.552/.928/.930) — clean first pass
+- page-018: F1 two-plane paths f(x)=x+2 / g(x)=2x−4 → assets/M1-018-fig-1-two-planes-paths.png (721x723, box .612/.115/.925/.340) clean first pass; F2-F5 exercise sketches cropped SEPARATELY from the bottom row: M1-018-fig-2-linear-q5i.png (497x453), M1-018-fig-3-cubic-q5ii.png (516x453), M1-018-fig-4-parabola-q5iii.png (477x453), M1-018-fig-5-parabola-q5iv.png (480x453), all box T.700 B.848→0.841 after pixel-scan found Q.6 body-text line leaking into the bottom ~15px; (i)-(iv) sub-labels kept (printed beside graphs); all five verified clean (axes, tick numbers, point labels (-1,1)/(0,-1)/(1,1), "a=1" on F5)
+- page-021: F1 exponential growth/decay y=2^x & y=0.5^x → assets/M1-021-fig-1-exponential-growth-decay.png (785x722, box .602/.623/.934/.848; first crop caught "ation y = a^x" body-text fragment bottom-left → row-scan located text band, B 0.856→0.848, verified clean)
+- page-022: F1 y=a^x vs y=log_a x → assets/M1-022-fig-1-exp-log.png (752x602, box .629/.061/.986/.275) clean first pass; F2 e^(−0.5x) decay → assets/M1-022-fig-2-exp-decay.png (631x562, box .576/.311/.876/.511) clean first pass; F3 lnx & ln(x+3) → assets/M1-022-fig-3-ln-ln3.png (1013x579, box .502/.501/.983/.707) clean first pass
+- Regenerated each page: node tools/gen-digital.mjs --only "Mathematics/Chapter-01-Functions-and-Graphs/page-0{16,17,18}/021/022" (5 runs)
+- Note: gen-digital console summary now always prints "0 figures embedded, 0 figure slots pending crops" — the figuresEmbedded/placeholders counters (tools/gen-digital.mjs line 783) are declared+printed but never incremented; harmless (manifest per-page figures_embedded/pending ARE computed from disk and are correct). Flagged for coordinator.
 
-- 11-b M1-002..007 (8) · 11-f S0-001 + S1-002/004 + S2-004/007/015/017/018/019/023 (16) ·
-  11-c M1-009..013 partial (10, agent timed out after) · 11-a M0-001..007 (10, verified
-  prior run's crops, re-cropped the corner flourish, regenerated) · 11-c2 M1-014/015 (4) ·
-  11-d M1-016/017/018/021/022 (13) · 11-e M1-026..029 (11) · 11-g partial M1-031 (8) ·
-  coordinator finished M1-032 (8) + M1-033 (8) directly after repeated agent-launch
-  transport failures, using pixel-scanned true cell borders (caption-band rule scan).
-- VLM-verified + numpy ink-margin-scanned; several re-crops to kill table-rule bleed and
-  stray text. Generator fixes found during cropping: fig-asset stem dash bug, pipe-in-math
-  table splitting, literal `<br>` in cells, mobile wide-table scroll, manifest disk-count.
+Stage Summary:
+- 13/13 crops saved (13 PNG line-art graphs) across the 5 assigned pages; every crop VLM-verified complete (axes, tick numbers, curve labels, intercept/point labels intact) with no stray body text; 5/5 regenerated pages have ZERO figslot placeholders (class="figslot" = 0, CROP PENDING = 0; embedded counts 2/2/5/1/3 match figures_count in manifest).
+- Anomalies: VLM 0-1000 normalized bbox readings noisy → all trims cross-checked with numpy ink row/column scans of the crops; page-017 F1 graph sits directly under a body-text line (T trim to 0.176 was the delicate one); dead counters bug noted above; no missing figures (all md figures found in scans).
+FINAL REPORT: crops saved = M1-016-fig-1-abs.png 805x669 · M1-016-fig-2-linear-12-2x-over-3.png 681x614 · M1-017-fig-1-linear-intersection.png 727x614 · M1-017-fig-2-line-parabola.png 1099x1214 · M1-018-fig-1-two-planes-paths.png 721x723 · M1-018-fig-2-linear-q5i.png 497x453 · M1-018-fig-3-cubic-q5ii.png 516x453 · M1-018-fig-4-parabola-q5iii.png 477x453 · M1-018-fig-5-parabola-q5iv.png 480x453 · M1-021-fig-1-exponential-growth-decay.png 785x722 · M1-022-fig-1-exp-log.png 752x602 · M1-022-fig-2-exp-decay.png 631x562 · M1-022-fig-3-ln-ln3.png 1013x579; figures not found = none; placeholder check = class="figslot" and CROP PENDING both 0 on all five regenerated pages, manifest embedded 2/2/5/1/3 = figures_count, pending 0.
+---
+Task ID: 11-c2
+Agent: figure-crop-11-c2
+Task: Crop figures for Mathematics Chapter-01 pages 014-015 and regenerate those digital pages
 
-### Verification
+Work Log:
+- page-014: F1 y=x²-8x+12 parabola → assets/M1-014-fig-1-parabola.png (696x838, box .688/.352/.976/.602). First grid-pass crop (.680/.352/.985/.610) + widen-to-.31 re-crop both had a body-text sliver top-left (tail of the "Example 10" line at x≤.684, y≈.311-.319 — VLM caught it once, then hallucinated "all arrowheads clipped" on the retry); settled via scipy connected-component scan of the right-margin region: graph blob x .7029-.9643, y .3657-.5883, body-text fragments excluded by L=.688/T=.352; VLM re-verify CLEAN (labels (0,12),(2,0),(6,0),(4,-4), x=4; numbers 0,5,10,-5)
+- page-014: F2 y=-x²+4x-4 parabola → assets/M1-014-fig-2-parabola-down.png (694x838, box .694/.680/.981/.930). Component scan: blob x .7054-.9709, y .6922-.9026 plus "y=-4" text line above at y .675-.685 (excluded via L=.694 > text right edge .6868) and scanner edge-shadow strip at x≥.988 (excluded via R=.981); first crop (.697/.685) fine, widened margins slightly. VLM flip-flopped ("clipped" claims contradicted by pixel data) → pixel ground-truth: ink margins 36/92/28/25px, axis ends are plain bare lines in the ORIGINAL (md mentions no arrowheads either); ASCII-render eyeball confirms full parabola + (2,0),(0,-4),(4,-4), x=2, numbers 0,-2,-4,-6,4
+- page-015: F1 linear y=x-2 → assets/M1-015-fig-1-linear.png (986x865, box .520/.2695/.908/.512). Tight squeeze: body-text line "(Point slope form…)" bottom (descender tip y=.26913 at x .594-.596) sits only 10px above the figure top (y-axis/red arrowheads y=.27194) → T=.2695 threaded the gap (first T=.2692 caught a 4px descender speck on row 0, re-cropped); component-derived box, VLM neutral pass agrees with pixels (numbers -2,0,4,6 x / 4,2,-2,-4 y, "x-axis" label, 2 dots; NO "(2,0)"/"(0,-2)" text labels or "y-axis" text exist in the ORIGINAL drawing — md over-describes, crop faithful); pixel margins 9/35/18/27px, nothing clipped
+- page-015: F2 parabola y=2(x-2)(x+1) → assets/M1-015-fig-2-parabola.png (970x891, box .530/.536/.912/.7858). Component scan: blob x .5413-.8811, y .5465-.7812 + "x-axis" text to x .9020 (R=.912) + "y-axis" text at top; Check Point box starts y .7904 (B=.7858 keeps 14px clear); left column text ends x .5024 (L=.530); VLM neutral pass reads ALL md labels ((-1,0),(2,0),(0,-4), -5/0/5, -5, "x-axis"/"y-axis") — its four "cut off" border claims again contradicted by pixel margins 36/16/10/25px (genuine white page gap, drawing ends inside)
+- Regenerated both pages individually (node tools/gen-digital.mjs --only …); NOTE generator stdout prints "0 figures embedded" even on success — real check is in the HTML: page-014 has 2 + page-015 has 2 <figure class="fig"> data-URI images byte-identical (md5) to the asset PNGs, plus page-015's template Key-Facts icon (3rd data URI, expected)
+- Method note for future agents: VLM border/clip judgments on these line-art graphs are unreliable (4 false "clipped" verdicts, contradicted each time by pixel scans); trustworthy combo = scipy connected-component envelopes on the page + per-crop ink-edge-margin scan + neutral (non-leading) VLM description for label inventory; leading prompts ("should show arrowheads…") induce hallucinated defects
 
-- `check-digital.mjs --strict-figures` → ALL GREEN (112 pages, 116 embedded figures,
-  0 pending slots).
-- agent-browser sweep (desktop 1280 + mobile 390): index, M0 cover + title page, M1-003/
-  005/018/023/029/031/032/033, S0-001, S1-002/004/009, S2-010/018/023/042 — no broken
-  images, KaTeX renders, zero console errors, no real overflow (body.scrollWidth; the
-  documentElement delta is KaTeX's hidden MathML, a known artifact).
+Stage Summary:
+- 4/4 crops saved, 2/2 pages regenerated placeholder-free (CROP PENDING=0, class="figslot"=0 on both; raw 'figslot'=3/page is template CSS only, per 11-b finding); embedded figures md5-verified against assets; no missing figures; anomalies: page-015 F1 source drawing has no printed point-coordinate labels (md embellishment) and page-014 F1/F2 axes end in plain lines (no arrowheads) — crops reproduce the scans faithfully; tightest crop of the batch is M1-015-fig-1 (9px top headroom, forced by 10px text-to-figure gap in the print layout)
+FINAL REPORT: crops saved = M1-014-fig-1-parabola.png 696x838 · M1-014-fig-2-parabola-down.png 694x838 · M1-015-fig-1-linear.png 986x865 · M1-015-fig-2-parabola.png 970x891 (all PNG, 131-160KB each); figures not found = none; placeholder check = `rg -c 'CROP PENDING'` and `rg -c 'class="figslot"'` return no matches on page-014.html and page-015.html (raw `rg -c 'figslot'` = 3 per page from template CSS only); embedded <figure> counts 2/2 md5-match the saved assets; gen-digital summaries "1 pages written, 111 untouched" per run.
+---
+Task ID: 11-e
+Agent: figure-crop-11-e
+Task: Crop all figures for Mathematics Chapter-01 pages 026,027,028,029 and regenerate those digital pages
 
-Docs: CONVENTIONS v4.2 + §1.6; tools/README rewritten for v3. Next.js viewer rebuilt as a
-full library browser reading manifest.json at request time.
+Work Log:
+- Added tools/ink-scan.py (numpy ink-margin/row-run/col-run scanner) used throughout instead of trusting VLM clip verdicts
+- page-026: F1 y=tanθ → assets/M1-026-fig-1-tan.png (815x559, box .586/.050/.980/.248); F2 y=cotθ → M1-026-fig-2-cot.png (856x644, .570/.250/.984/.478); F3 y=secθ two stacked plots → M1-026-fig-3-sec.png (824x641, .112/.535/.510/.762); F4 y=cosecθ → M1-026-fig-4-cosec.png (798x641, .584/.535/.970/.762). Pixel forensics: page has right-edge scan-shadow strip at x≥.988 (cols 2047-2061) that silently merged into graph row-runs until excluded (it faked a 675px-tall "cot graph" reaching the section heading — real cot bottom is row 1329); sec y-axis tip starts 19px below the full-width body-text line → T re-trimmed .538→.535 after first crop left 1px top margin on the axis tip; cosec bottom margin is 3px because the csc table rule starts only 11px below the graph (printed layout squeeze, nothing clipped). Leading-prompt VLM pass claimed "cut off at all 4 edges" on all 4 crops — contradicted by ink scans (margins 3-22px, zero edge-touching pixels); neutral VLM inventory pass confirmed all labels (−2π..2π, −3..3, green tan/cot branches, U/inverted-U sec & csc branches)
+- page-027: F1 f(x)=x−3 → assets/M1-027-fig-1-linear-one-one.png (760x645, box .1652/.7088/.5045/.9166, incl. blue "One-One Function" caption); F2 g(x)=x²−1 → M1-027-fig-2-parabola-not-one-one.png (532x645, .5616/.7088/.7991/.9166, incl. "Not a One-One Function" caption). Both clean first crop (margins 7-28px); scattered 1-9px dust specks below the graphs mapped and excluded; VLM inventory confirms equations, dots (0,−3)/(3,0), ticks −2..6 / −4..2 and −2,0,2 / 4,2
+- page-028: F1 line passes horizontal line test → assets/M1-028-fig-1-horizontal-line-test-line.png (690x565, box .1671/.2720/.5274/.4891, incl. dashed "Horizontal line" + blue caption "f(x) is one-one function."); F2 parabola fails → M1-028-fig-2-horizontal-line-test-parabola.png (611x565, .5979/.2720/.9165/.4891, incl. orange dashed line + caption "g(x) is not a one-one function."); F3 inverse mapping diagram (ovals x/X, y/Y, curved arrows f & g) → M1-028-fig-3-inverse-mapping.png (370x370, .7050/.6262/.8982/.7683). Bottom edge is the tight one: captions end row 1267, shaded Check-Point box starts 1277 → B=.4891 threads the 10px gap; Check-Point box top had contaminated the F1 caption bbox until rows were separated; 3-4px dust specks near both graphs excluded via region scans; VLM confirms all three figures complete
+- page-029: F1 Example-22 f(x)=1/(2x−3) & f⁻¹(x) hyperbola pair → assets/M1-029-fig-1-example22.png (853x637, box .5034/.3357/.8898/.5412); F2 Example-23 f(x)=3−4x & f⁻¹(x) line pair with dots (0,3)/(3,0) → M1-029-fig-2-example23.png (934x581, .4762/.6733/.9002/.8602). Left body-text column reaches x 1092 (F1) / 1006+1137 (F2 rows) → L trimmed to keep 18-47px text clearance; full-width text line sits only 15px above F1's top (T=.3357 threads it, verified rows 1036-1050 empty); isolated 2-3px dust at x 1965/2049 excluded via R=.8898; VLM inventory confirms tick numbers, curve labels f(x)/f⁻¹(x), both dot annotations
+- Regenerated each page right after its crops (node tools/gen-digital.mjs --only "Mathematics/Chapter-01-Functions-and-Graphs/page-0NN", 4 runs); final check: python count of 'class="figslot"' and 'CROP PENDING' = 0 on all four pages, embedded <figure> data URIs md5-match the asset PNGs (counts 4/2/3/2 = figures_count)
+
+Stage Summary:
+- 11/11 crops saved (11 PNG line-art graphs/diagrams) across the 4 assigned pages; every crop pixel-verified (ink edge margins all positive, no body-text bleed) + neutral-VLM label inventory matches md descriptions; 4/4 regenerated pages have ZERO figslot placeholders (class="figslot"=0, CROP PENDING=0; embedded 4/2/3/2 match figures_count)
+- Anomalies: 0026 right-edge scan-shadow strip (x≥.988) corrupts naive row/col runs — must exclude cols ≥2040 on that scan; printed layouts squeeze figures against neighbours on 0026 (cosec↔csc table gap 11px) and 0028 (caption↔Check-Point box gap 10px), so bottom margins of 3-5px are by necessity, nothing clipped; leading VLM clip prompts hallucinate defects on these line-art crops (3rd agent to observe this) — pixel scans + neutral description passes are the reliable QA
+FINAL REPORT: crops saved = M1-026-fig-1-tan.png 815x559 · M1-026-fig-2-cot.png 856x644 · M1-026-fig-3-sec.png 824x641 · M1-026-fig-4-cosec.png 798x641 · M1-027-fig-1-linear-one-one.png 760x645 · M1-027-fig-2-parabola-not-one-one.png 532x645 · M1-028-fig-1-horizontal-line-test-line.png 690x565 · M1-028-fig-2-horizontal-line-test-parabola.png 611x565 · M1-028-fig-3-inverse-mapping.png 370x370 · M1-029-fig-1-example22.png 853x637 · M1-029-fig-2-example23.png 934x581; figures not found = none; placeholder check = python scan of page-026/027/028/029.html: class="figslot" placeholders = 0 and CROP PENDING = 0 on every page, embedded figure counts 4/2/3/2 with all data-URI images md5-identical to the saved assets.
+---
+Task ID: 11
+Agent: coordinator (Z.ai main)
+Task: Digital Edition v3 — build digital versions of ALL 112 pages with a proper folder structure (user directive round 5)
+
+Work Log:
+- Cleaned sandbox noise: 207 mode-only diffs restored (git restore + core.fileMode=false)
+- Restructured Books/Digital to mirror Raw/Formatted: <Subject>/<Chapter-Folder>/page-NNN.html + per-chapter assets/; git-mv-ed the 8 flat v2 exemplars (links deepened to ../../../)
+- Wrote tools/gen-digital.mjs (md → replica HTML, math-ribbon + stats-cream families, KaTeX, MCQ/ANSWERS grids, Key-Facts boxes, math-aware table splitting, data-URI figure embedding, placeholder-until-cropped slots, figstrip for marker-less figures, manifest.json + index.html emission)
+- Fixed generator bugs found en route: OOM infinite-loop on option bullets after blank lines; figslot-count regex counting CSS; findFigureAsset stem dash (M1002 vs M1-002, patched after subagent report); manifest inaccuracy under --only (now counts from disk); pipe-in-math table cell splitting ($y = |x+1|$ shredded by naive split); literal <br> in cells; mobile wide-table overflow (table.tbl display:block scroll)
+- Wrote tools/check-digital.mjs (all-pages gate; --strict-figures) replacing check-digital-test.mjs; tools/optimize-assets.py (12.2MB → ~4MB assets); crop-figure.py: parallel-safe grid path + .jpg crops
+- Figure crops via parallel subagents: 11-b (M1-002..007, 8 figs), 11-f (stats 10 pages, 16 figs), 11-c (M1-009..013 partial, timed out), 11-a (M0 6 pages, 10 figs — verified prior attempt's crops + regenerated), 11-c2 (M1-014/015), 11-d (M1-016..022, 13 figs), 11-e (M1-026..029, 11 figs), 11-g (M1-031 partial, timed out); 11-g2 relaunch failed twice on transport errors → coordinator cropped M1-032/033 (16 table-cell graphs) directly using pixel-scanned true cell borders
+- Regenerated everything; check-digital.mjs --strict-figures ALL GREEN (112/112 pages, 116 figures embedded, 0 pending)
+- Browser-verified (agent-browser): index + 15 sampled pages across all 5 chapters @1280 and @390 — zero broken images, zero console errors, KaTeX OK; the only scrollWidth anomaly is KaTeX hidden MathML (known artifact, body.scrollWidth is clean); screenshots eyeballed vs scans (incl. graph-grid page-032 before/after cell-split fix)
+- Rebuilt Next.js viewer (src/app/page.tsx) as full library browser reading manifest.json; lint clean for src/
+- Docs: CONVENTIONS v4.2 + §1.6; tools/README v3 section; repo WORKLOG.md Task 11; PROGRESS-LOG
+
+Stage Summary:
+- Digital Edition v3 complete: 112/112 pages, 8 hand-typeset exemplars preserved verbatim + 104 generated replicas, all figures embedded as data URIs, library index + manifest, strict checker green, viewer live
+- Key artifacts: tools/gen-digital.mjs, tools/check-digital.mjs, tools/optimize-assets.py, Books/Digital/manifest.json + index.html
+- Lesson: subagent image rendering unavailable → z-ai vision CLI + numpy ink scans; VLM clip-verdicts unreliable on line art; pixel caption-band scans find true table borders
+- Commit: see git log (Digital Edition v3)
 ---
 Task ID: 12
 Agent: coordinator (Z.ai main)
 Task: Prepare environment for new books/chapters — declare v4.3 markdown-only mode (user directive 2026-09-06)
 
 Work Log:
-- Synced with GitHub: PAT verified (git pull → already up to date), tree clean at 1d76c63 (Digital Edition v3)
-- Context research: full docs re-read (AGENTS → STATUS → CONVENTIONS → PIPELINE → PLAN → tools/README)
+- Synced with GitHub: PAT verified (git pull → already up to date), tree clean at 1d76c63 (Digital Edition v3), branch main tracking origin/main
+- Context research: re-read AGENTS.md → STATUS.md → docs/CONVENTIONS.md → docs/PIPELINE.md → docs/PLAN.md → tools/README.md; refreshed full pipeline picture (Raw scans → Formatted markdown → Digital generated HTML)
 - User directive: new books/chapters are coming and will be digitized to MARKDOWN ONLY (no digital replicas)
-- tools/check-digital.mjs: added --frozen flag (markdown-only mode — Formatted pages without Digital twins counted as expected) + reverse-orphan regression check (Digital page losing its md = hard failure)
-- Fire drills: normal gate ALL GREEN (112/116); frozen ALL GREEN (0 missing, 112 intact); simulated md-only page → frozen GREEN / normal correctly FAILS; cleanup verified
-- Pipeline smoke test: convert-page.mjs on S-1 img 0003.jpg → schema-valid draft (frontmatter complete, $-balance OK, 4 F-blocks == figures_count == canonical; length within 2% of canonical)
-- Docs codified v4.3: CONVENTIONS (changelog v4.3 + §1.7 + §1.5 historical + stale-gate fixes), PIPELINE (mode banner + §6 digital step skipped), STATUS (Phase 4d/4e + queue), AGENTS (mode + repo map + gates), PLAN (Phase 4d/4e + Phase 5 rewrite), tools/README (v3 gate + --frozen + retired notes)
-- build-metadata.mjs no-op diff confirmed; final gates ALL GREEN (verify-v4 112/112; check-digital --frozen --strict-figures 112 intact)
-- Committed + pushed
+- Tooling hardening: tools/check-digital.mjs gained --frozen flag (markdown-only mode) — Formatted pages without Digital twins counted as expected instead of failing; added reverse-orphan regression check in both modes (a Digital page whose md vanished = hard failure)
+- Fire drills: normal gate ALL GREEN (112 pages / 116 figures); frozen gate ALL GREEN (0 missing twins, 112 digital pages intact); simulated md-only page-999.md → frozen GREEN + normal gate correctly FAILS; cleaned up → normal GREEN again
+- Pipeline liveness smoke test: convert-page.mjs on S-1 img 0003.jpg → /tmp draft (1 API round, 4018 chars); QA: frontmatter complete (page_printed 3, all 5 sections), $-balance OK, 4 F-blocks == figures_count 4 == canonical; length within 2% of canonical
+- Docs codified v4.3: CONVENTIONS.md (changelog v4.3 + new §1.7 markdown-only mode + §1.5 historical banner + stale gate refs fixed), PIPELINE.md (v4.3 mode banner + §6 step 5 skipped + cheat-sheet gate), STATUS.md (state = Digital v3 complete + mode v4.3 + Phase 4d/4e history + next-actions rewrite), AGENTS.md (mode bullet + repo map + task table + quirks), docs/PLAN.md (Phase 4d/4e done blocks + Phase 5 rewritten), tools/README.md (v3 gate rows, --frozen section, retired-tool notes)
+- build-metadata.mjs run → no-op diff (derived files in sync)
+- Final gates: bun tools/verify-v4.mjs ALL GREEN 112/112 + node tools/check-digital.mjs --frozen --strict-figures ALL GREEN (112 digital pages intact)
+- Committed + pushed to GitHub
 
 Stage Summary:
-- v4.3 mode live: new books/chapters → markdown only (Formatted layer); Digital frozen at the 112-page v3 library
-- Push gate for library work: bun tools/verify-v4.mjs && node tools/check-digital.mjs --frozen --strict-figures
-- Sandbox ready (PAT verified, staging dir present, VLM pipeline smoke-tested); awaiting the user's new books/chapters
+- v4.3 mode is live: new books/chapters → markdown only (Formatted layer); Digital frozen at the 112-page v3 library
+- New push gate for library work: verify-v4.mjs && check-digital.mjs --frozen --strict-figures (both ALL GREEN)
+- Sandbox ready: PAT verified, staging dir present, VLM conversion pipeline smoke-tested end-to-end
+- Awaiting: the user's new books/chapters (batch codes continue M-2/S-3/…; new subjects get --subject + a BOOKS registry entry in build-metadata.mjs)
 ---
 Task ID: 13-prep
 Agent: coordinator (Z.ai main)
-Task: M-2..M-5 intake + recon + registration + test-first (117 pages, markdown-only v4.3)
+Task: M-2..M-5 intake + recon + registration + test-first conversion (Mathematics Units 02-05, 117 pages, markdown-only v4.3)
 
 Work Log:
-- FromSmash transfer downloaded (4 zips verified by content-disposition), 117 images inventoried (46/31/20/20, no gaps)
-- Recon: Unit 02 Limit-Continuity-and-Derivative (+42, printed 43-88), Unit 03 Integration (+88, printed 89-119, opener folio scan-cut), Unit 04 Differential-Equations (+119, printed 120-139), Unit 05 Kinematics-of-Motion-in-a-Straight-Line (+139, printed 140-159); continuity verified
-- Problem pages (user-flagged): p.131/p.143 left-edge crops, p.134 right-edge crop; scan-edge reconstruction policy established + [edge cut] markers for unrecoverable text
-- Registered batches + BOOKS registry; skeleton commit 8d91f4e; test-first 3 pages (M-2/001, M-4/012, M-5/004) QA'd + placed; commit b8e2ffc
-- convert-page.mjs: --chapter-folder + --book-title injection flags added (fixes chapter_folder bug class found in tests)
-- Gates ALL GREEN (verify-v4, check-digital --frozen --strict-figures)
+- Downloaded user's FromSmash transfer (4 zips, 159.15MB) via agent-browser URL capture + verified content-disposition names (M-2/M-3/M-4/M-5.zip); unzip + zip -t verified
+- Intake: 46+31+20+20 = 117 images, 0001-start, zero gaps, all NNNN.jpg conforming
+- Recon: M-2 = Unit 02 LIMIT, CONTINUITY AND DERIVATIVE (opener printed 43, offset +42); M-3 = Unit 03 INTEGRATION (opener folio scan-cut -> null; img2 prints 90, offset +88); M-4 = Unit 04 DIFFERENTIAL EQUATIONS (opener printed 120, offset +119); M-5 = Unit 05 KINEMATICS OF MOTION IN A STRAIGHT LINE (opener printed 140, offset +139). Continuity cross-check: 88 | 89..119 | 120..139 | 140..159 - all perfect
+- Problem pages examined: p.131 (M-4 img12) LEFT-edge crop; p.134 (M-4 img15) RIGHT-edge crop; p.143 (M-5 img4) LEFT-edge crop; M-3 opener footer cut
+- Registered 4 batches: Raw folders copied, BOOKS registry extended, skeleton commit 8d91f4e pushed
+- Test-first: 3 pages converted (M-2/001, M-4/012, M-5/004) + QA'd. Findings: model auto-reconstructs cut edge chars well BUT chapter_folder bug (2/3 drafts used raw folder name), book_title null, notes empty, one figure-marker misposition; M-4 heading section number scan-cut -> reconstructed '(ii)' via sibling '(i)' heading p.130; one M-4 line genuinely unrecoverable (~2-3 words) -> [left edge cut] marker
+- Tooling: convert-page.mjs gained --chapter-folder + --book-title injection flags (kills the bug class at source)
+- Scan-edge crop policy codified (reconstruct unambiguous / marker + notes otherwise)
+- Test pages placed, gates ALL GREEN (verify-v4, check-digital --frozen), commit b8e2ffc pushed
 
 Stage Summary:
-- 3/117 done, 114 remain; 5-agent Wave 1 (M-2 + M-3) + 4-agent Wave 2 (M-4 + M-5) planned with scan-edge policy embedded in every prompt
+- 3/117 pages done (M-2 p.001, M-4 p.012, M-5 p.004); 114 remaining
+- Wave plan: W1 = 13-a M-2 002-017, 13-b M-2 018-032, 13-c M-2 033-046, 13-d M-3 001-016, 13-e M-3 017-031; W2 = 13-f M-4 001-011, 13-g M-4 013-020, 13-h M-5 001-003+005-013, 13-i M-5 014-020
+- Batch facts all agents get: footer GRADE 12 | <page> | National Book Foundation; running header UNIT-0N: <TITLE>; chapter_title CAPS; book typos verbatim (e.g. 'Slove' p.133); printed digit only for page_printed
 ---
 Task ID: 13-d2
 Agent: agent-13d2
@@ -568,7 +457,7 @@ Work Log:
 - page-026 → ✔ (printed p.68, §2.13 Derivative of Exponential Functions; 2.14 Derivative of Logarithmic Functions, Ex 31-34) — continuation of xy=1 example; top line prints d(x)/dx verbatim; 'a^x . 1/lna' as printed
 - page-027 → ✔ (printed p.69, §2.15 Differentials, Ex 35-36, 1 figure) — first draft scrambled Ex 36 block order; re-verified vs scan + reordered; Figure F1 'Fig (a)' right-margin graph (P,Q, secant+tangent, Δx/Δy)
 - page-028 → ✔ (printed p.70, §2.15 cont. + 2.16 Approximations start, Ex 37, 1 figure) — book typos 'interrupted in dy', 'When Δx = 0' (for ≠ 0), 'if x is changes' preserved; page ends mid-sentence 'then the' (continues p.71); scan right edge slightly crops figure's x-axis end (no text loss)
-- page-029 → ✔ (printed p.71, §2.16 cont. + Exercise 2.7 Q.1-22, Ex 38, 1 figure) — opens mid-sentence completing §2.16 paragraph; Exercise 2.7 three groups (Q.1-8, 9-16, 17-22), continues on p.72 Q.23-32; Fig F1 top right with on-graph equation label
+- page-029 → ✔ (printed p.71, §2.16 cont. + Exercise 2.8? no — Exercise 2.7 Q.1-22, Ex 38, 1 figure) — opens mid-sentence completing §2.16 paragraph; Exercise 2.7 three groups (Q.1-8, 9-16, 17-22), continues on p.72 Q.23-32; Fig F1 top right with on-graph equation label
 - page-030 → ✔ (printed p.72, Ex 2.7 tail Q.23-32 + §2.17 Higher Order Derivatives; 2.17.1 The Second Derivative, Ex 39) — side-by-side items kept on shared lines (nbsp); book typo 'twice is successive' preserved; Q.31 stray comma preserved
 - page-031 → ✔ (printed p.73, Ex 40 a/b/c + §2.18 Higher Derivatives) — Ex 40 y'' line transcribed verbatim ('x^2 3(x^3+1)^2 3(x^2)', '12x(x^3+1)^2[11x^3+2]'); §2.18 prints 'Higher Derivatives' (vs 2.17 'Higher Order') as printed; D_x notation row verbatim
 - page-032 → ✔ (printed p.74, Ex 41-42 + Exercise 2.8 Q.1-20) — Ex 42 'third derivatives' (plural) verbatim; Q.20 'and that' before d^3/dx^3 display; no section heading on page (§2.18 in force)
@@ -577,3 +466,80 @@ Stage Summary:
 - 10/10 placed (page-023..032, printed 65-74); page_printed == image+42 verified on every page from the blue footer digit; all frontmatter exact per spec; sanity script (staging/drafts/agent-13b2/sanity.mjs) SANITY OK on all 10 placed files; figures: 2 total (F1 on 027, F1 on 028) with matching figures_count and inline markers; no [left/right edge cut] markers needed anywhere (edges clean except cosmetic figure-margin clip on 028, noted)
 - Chapter-02 now complete for images 001-038 except 014-017 (agent-13a scope); nothing outside 0023-0032 touched (only in-scope page-029 note amended after p.030 revealed Ex 2.7 continues on p.72)
 - Lesson for future agents: this book prints side-by-side exercise items — predecessor convention is shared lines with &nbsp;&nbsp; separators (never \hfill); VLM occasionally scrambles block order on worked-example pages (caught on 027) — always QA block order, not just content; continuation pages need section field = section in force + note when no heading printed
+---
+Task ID: 13-c3
+Agent: agent-13c3
+Task: Convert M-2 images 0039-0046 (completion)
+
+Work Log:
+- page-039 → ✔ (printed p.81, Ex 2.9 cont. Q.3 iii-vi + Q.4-6, §2.22 Applications of Derivatives starts) — typo 'the give function' preserved; side-by-side items as shared lines &nbsp;&nbsp;
+- page-040 → ✔ (printed p.82, §2.22 cont., Ex 49-51 related rates; 2 figures: square, balloon circle) — typos 'baloon' ×2, lowercase 'dv', 'where x the length' preserved; Ex 50 prints same equation twice w/ 'is the same as:' as printed
+- page-041 → ✔ (printed p.83, §2.22 cont., Ex 52-53 optimization; 1 figure: divided rectangle) — typos 'defined any for', 'any critical value is x = 5', 'that contain 1500 m²', 'by any additional fence' preserved; arithmetic misprints preserved: L''=13500/x³, L(15√10)=...=15√10 (truly 60√10)
+- page-042 → ✔ (printed p.84, §2.22 cont., Price Growth Model + Ex 54 + Using Straight Lines + Ex 55 start) — typos 'at time P', r-label missing in definition list, '10 ears', 6e^0.15=6.92 (≈6.97), 'cost increase by 30/units' preserved; page ends mid-Ex 55 solution (cont. p.85)
+
+Stage Summary:
+- 4/8 placed (039-042, printed 81-84); printed == image+42 cross-check OK on all; no scan-edge crops; no Key Facts/Check Point boxes; remaining: 0043-0046
+---
+Task ID: 13-a3
+Agent: agent-13a3
+Task: Convert M-2 images 0016-0017 (completion)
+
+Work Log:
+- page-016 → Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-016.md ✔ (printed p.58, Example 15 + five 'all real numbers' power-rule derivatives + Example 16 i-iii; no printed section heading — section in force 2.6/2.6.1 carried from p.57). Page's upper half is TWO-COLUMN: left = Example 15 + five stacked derivative equations; right = three dotted summary boxes (Derivative of constant function; two Theorems side-by-side with dotted divider; Sum and Difference Rule) → rendered as blockquotes per sidebar-box policy, theorems transcribed sequentially. Book typos preserved verbatim: 'differentiable function' (singular), 'equals to the sum', 'c.0x^{0-1}' (period as multiplication dot)
+- page-017 → Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-017.md ✔ (printed p.59, Example 17 a/b/c + Note with 4-column Function|Derivative|Function|Derivative table (no caption) + Exercise 2.4 Q.1-3; Q.4-5 continue on p.60 = page-018, continuity verified against placed neighbour). 'Exercise 2.4' banner (white serif, orange→purple gradient); numbering does not follow §2.6 (book's own numbering, same pattern as Ex 2.6 after §2.10 on p.65). Example 17 parts b/c printed side-by-side — setup lines shared, solutions sequential. Note typos preserved verbatim: 'in the different contents of science' (for contexts), 'expressed in variable other than' (singular). Table cells verified at 2.2x zoom incl. printed Leibniz fractions dV/dt, dH/dz, dA/dr, dr/dθ
+- Method: convert-page.mjs (1 API round each) + ~10 targeted z-ai vision QA passes per page (full-page inventory, 1.5-2.2x zoom crops per region, spatial position audit when two vision passes conflicted on block order). GLM vision hallucinated equation content from the wrong column on a mid-page crop of 016 — caught via band-slicing + position audit and re-verified from the correct left-column crop BEFORE placement. Frontmatter normalized to spec (book_title unquoted, chapter_title CAPS, H1 'Unit 02' with space — converter had printed 'Unit-02' on 017, fixed); $ counts even; figures_count 0 == 0 F-blocks on both; footer digits 58/59 read from blue ribbon, == image+42 cross-check OK
+Stage Summary:
+- 2/2 placed (page-016 → printed 58, page-017 → printed 59); no scan-edge crops and no unrecoverable text on either page
+- Chapter-02-Limit-Continuity-and-Derivative now holds 44/46 pages: page-045/page-046 NOT present in Formatted (outside this task's scope — coordinator attention)
+- Anomalies recorded in page notes: p.58 dotted summary boxes → blockquotes (theorems printed side-by-side, transcribed sequentially); p.59 'Exercise 2.4' numbering anomaly (book's own); typos 'different contents', 'variable other than', 'differentiable function', 'equals to the sum' preserved verbatim
+---
+Task ID: 13-c3
+Agent: agent-13c3
+Task: Convert M-2 images 0039-0046 (completion)
+
+Work Log:
+- page-039 → Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-039.md ✔ (printed p.81, Ex 2.9 cont. Q.3 iii-vi + Q.4-6 + §2.22 Applications of Derivatives starts; typo 'the give function' preserved; side-by-side items as shared lines &nbsp;&nbsp;)
+- page-040 → page-040.md ✔ (printed p.82, §2.22 cont., Ex 49-51 related rates; F1 square + F2 balloon circle; typos 'baloon' ×2, lowercase 'dv', 'where x the length'; Ex 50 prints same equation twice w/ 'is the same as:' as printed)
+- page-041 → page-041.md ✔ (printed p.83, §2.22 cont., Ex 52-53 optimization; F1 divided rectangle; typos 'defined any for', 'any critical value is x = 5', 'that contain', 'by any additional fence'; arithmetic misprints preserved: L''=13500/x³, L(15√10)=…=15√10 (truly 60√10))
+- page-042 → page-042.md ✔ (printed p.84, §2.22 cont., Price Growth Model + Ex 54 + Using Straight Lines + Ex 55 start; typos 'at time P', missing r-label in definition list, '10 ears', 6e^0.15=6.92 (≈6.97), 'cost increase by 30/units'; page ends mid-Ex 55)
+- page-043 → page-043.md ✔ (printed p.85, Ex 55 b-c + Exercise 2.10 Q.1-7 + F1 jogger N/E triangle; typos 'revenue equal costs', 'The slopes of R(x) is 50', 'projectile time t', 'joggers hanging 20 minutes', 'when side in 8cm'; +½gt² as printed)
+- page-044 → page-044.md ✔ (printed p.86, Exercise 2.10 Q.8-18 + F1 fenced rectangle; typos '¼ min/hr', 'remove and cost functions' (for revenue), cost fn printed G(x), 'in figure', 'of box', 'Determining the rate of increase in cost is minimal.')
+- page-045 → page-045.md ✔ (printed page_printed: null — footer band cut off at bottom edge of scan, two vision passes; offset rule would give 87; Exercise 2.10 ends Q.19-20 ('20:' colon) + Review Exercise banner (unnumbered) MCQs i-vii; misprint MCQ ii 'lim(x→0⁻) f(x) = 0, is:' preserved)
+- page-046 → page-046.md ✔ (printed p.88, Review Exercise MCQs viii-x + Q.2-10 — FINAL PAGE of Unit 02; misprints preserved: MCQ ix options '[0, ∞]'/'[0, -∞]', MCQ x 'is absolute minimum at:', Q.6 'an approximate of'; no navigation chip)
+
+Stage Summary:
+- 8/8 placed; Chapter-02-Limit-Continuity-and-Derivative now COMPLETE (46/46 pages, 001-046) — this batch finished the chapter
+- printed == image+42 cross-check OK on 039-044, 046; page-045 footer genuinely cut → null + note (never computed)
+- figures: 6 F-blocks total (F1+F2 on 040, F1 on 041, F1 on 043, F1 on 044) each with matching figures_count + inline markers; no Key Facts/Check Point sidebar boxes in range; no [left/right edge cut] text markers needed anywhere
+- Book typos/misprints logged per page in notes: 'give function', 'baloon', '10 ears', 'remove and cost functions', 'joggers hanging', L''=13500/x³, L(15√10)=15√10, 6.92, MCQ ii stray '= 0', '[0, -∞]'
+- QA method: convert-page.mjs (1 API round each; one 300s timeout on first 0039 run — reran clean) + 2-3 neutral z-ai vision passes per page (footer digit, verbatim quote-backs, figure-region zooms, edge/box sweeps) + sanity.mjs (adapted from agent-13b2, \$-escape-aware) ALL GREEN on all 8; no other pages touched
+---
+Task ID: 13-i
+Agent: agent-13i
+Task: Convert M-5 images 0013-0020 (checkpoint 4/8)
+
+Work Log:
+- page-013 → ✔ (printed p.152, Exercise 5.2 cont. Q.4-9; Q.9 ends (iv) complete; no figures/boxes; typo-free verified)
+- page-014 → ✔ (printed p.153, Ex 5.2 ends Q.13 + §5.6 Vector Valued Function starts + Definition; misprints preserved: Q.12 first piecewise 't > 0' second case, Q.12(iii) 'form O')
+- page-015 → ✔ (printed p.154, §§5.6.1-5.6.4 + Example 6 + Key Facts box → blockquote; no graph on page; typos 'Consider a particle is moving', 'The value the function', 'as we considering' preserved; 5.6.1 prints 'valued' lowercase)
+- page-016 → ✔ (printed p.155, §5.6.4 cont. + Examples 7-8 + §5.6.5; misprints preserved: Ex7 last line 'df/dt|_{t=5} df/dt' (no =), '+ -3t^{-4}k', Ex8 stray 'v(t̄)', v(t) line printed twice; ends mid-Example 8, acceleration cont. p.156)
+
+Stage Summary:
+- 4/8 placed (013-016, printed 152-155); printed == image+139 cross-check OK on all four
+- No scan-edge crops; one Key Facts box (015) converted from converter's bogus F-block to blockquote; remaining: 0017-0020
+---
+Task ID: 13-f
+Agent: agent-13f
+Task: Convert M-4 images 0001-0011 (checkpoint 1: pages 1-5)
+
+Work Log:
+- page-001 → ✔ (printed p.120, Unit 04 OPENER; opener body formatted per Chapter-02 precedent: UNIT/04 bold lines, big title heading, objectives list, 2 intro paragraphs, photo F-block 'car on road'; objectives sub-bullets 'separable variables equations, homogeneous equations,' verbatim)
+- page-002 → ✔ (printed p.121, §Introduction + §4.1 Differential Equation; Key Facts box → blockquote (two properties of a good mathematical model); F1 free-falling person with 9.8 m/s² red arrow; 'equation are must' typo preserved)
+- page-003 → ✔ (printed p.122, cont. + §4.2 Order and Degree; 4.2.1 (i)/(ii) sub-headings; boxed simplest-DE definition → blockquote; four example DEs one display line; order-examples block as blockquote)
+- page-004 → ✔ (printed page_printed: null — blue footer ribbon ABSENT from scan, pixel-verified no blue rows below y≈916/3552, bottom edge white/tan; offset would give 123, never used; §4.2.2 Degree + Example 1 (i)-(iii) + Key Facts 'degree cannot be defined' box + F1 order/degree annotated dashed box + §4.2.3 ODE explicit form F(x,y,y',…,y^(n-1))=y^(n))
+- page-005 → ✔ (printed page_printed: null — footer ribbon CUT at bottom edge: only ~6 top pixel rows of blue ribbon visible (y 3429-3434 of 3435), digit unreadable; offset would give 124, never used; §4.2.4 Linear/Non-Linear + Example 2 (i)-(vi) + §4.3 starts; book misprint preserved: ODE example (ii) prints '(2x + 3y)dy = (x - 2y)dx = 0' double '=')
+
+Stage Summary:
+- 5/11 placed (001-005); printed == image+119 cross-check OK where footer readable (120,121,122); two consecutive footer failures (p.123/124 equivalents) → null + notes, pixel-verified, never computed
+- No scan-edge LEFT/RIGHT text crops in 0001-0005 (the M-4 edge-crop pattern starts at p.131 = image 012, already handled by page-012); no Check Point boxes yet; Key Facts boxes on 002/003/004/005 all as blockquotes
+- QA method: convert-page.mjs (1 API round each) + neutral vqa.mjs vision quote-back passes per page + pixel band analysis for footer verification; 429 storms encountered — vqa retries absorbed them

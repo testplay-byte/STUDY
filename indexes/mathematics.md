@@ -1,7 +1,7 @@
 # Index — mathematics
 
 **Book:** Textbook of Mathematics Grade 12 — National Book Foundation as Federal Textbook Board, Islamabad  
-**Digitized pages:** 112 · **Raw images:** 160 · Structure **v4** (Books/{Raw, Formatted, Digital})
+**Digitized pages:** 144 · **Raw images:** 160 · Structure **v4** (Books/{Raw, Formatted, Digital})
 
 > Machine-readable equivalents: `Books/Formatted/Mathematics/book.json` + `chapter.json` in every chapter folder.
 > Digital replica test edition: `Books/Digital/` — 8 hand-typeset pages (`<BATCH>-page-NNN.html` + assets/, user-approved whitelist; see docs/CONVENTIONS.md §1.5).
@@ -74,7 +74,7 @@
 ## M-2 — Unit 02: Limit, Continuity and Derivative
 
 - Markdown (`Formatted`): `Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/` · Raw scans: `Books/Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/` · HTML (test): `Books/Digital/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/`
-- Pages: 36 · Printed range: 43–80 · Offset: +42
+- Pages: 46 · Printed range: 43–88 · Offset: +42
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
@@ -93,6 +93,8 @@
 | 13 | 55 | [page-013.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-013.md) | exercise | 2.3 | Exercise 2.3 | 0 |
 | 14 | 56 | [page-014.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-014.md) | theory | — | 2.5 The Derivative Functions | 0 |
 | 15 | 57 | [page-015.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-015.md) | theory | — | 2.6 Rules of Differentiation; 2.6.1 Power and Sum Rules | 0 |
+| 16 | 58 | [page-016.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-016.md) | worked-examples | — | 2.6 Rules of Differentiation; 2.6.1 Power and Sum Rules | 0 |
+| 17 | 59 | [page-017.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-017.md) | mixed | 2.4 | 2.6 Rules of Differentiation; 2.6.1 Power and Sum Rules | 0 |
 | 18 | 60 | [page-018.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-018.md) | worked-examples | — | 2.7 The Product and Quotient Rules; 2.7.1 Derivative of a P… | 0 |
 | 19 | 61 | [page-019.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-019.md) | worked-examples | — | 2.7.2 Derivative of a Quotient; 2.8 The Connection Between … | 0 |
 | 20 | 62 | [page-020.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-020.md) | mixed | 2.5 | 2.9 Derivations of Trigonometric Functions | 0 |
@@ -114,6 +116,14 @@
 | 36 | 78 | [page-036.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-036.md) | theory | — | 2.20 Second Derivative Test for Relative Extrema | 4 |
 | 37 | 79 | [page-037.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-037.md) | theory | — | 2.21 Point of Inflection | 1 |
 | 38 | 80 | [page-038.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-038.md) | mixed | 2.9 |  | 2 |
+| 39 | 81 | [page-039.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-039.md) | mixed | 2.9 | 2.22 Applications of Derivatives | 0 |
+| 40 | 82 | [page-040.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-040.md) | worked-examples | — | 2.22 Applications of Derivatives | 2 |
+| 41 | 83 | [page-041.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-041.md) | worked-examples | — | 2.22 Applications of Derivatives | 1 |
+| 42 | 84 | [page-042.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-042.md) | mixed | — | 2.22 Applications of Derivatives | 0 |
+| 43 | 85 | [page-043.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-043.md) | mixed | 2.10 | 2.22 Applications of Derivatives | 1 |
+| 44 | 86 | [page-044.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-044.md) | exercise | 2.10 | 2.22 Applications of Derivatives | 1 |
+| 45 | — | [page-045.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-045.md) | exercise | Review Exercise |  | 0 |
+| 46 | 88 | [page-046.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-046.md) | exercise | Review Exercise |  | 0 |
 
 ---
 
@@ -161,22 +171,44 @@
 ## M-4 — Unit 04: Differential Equations
 
 - Markdown (`Formatted`): `Books/Formatted/Mathematics/Chapter-04-Differential-Equations/` · Raw scans: `Books/Raw/Mathematics/Unit-04-Differential-Equations/` · HTML (test): `Books/Digital/Mathematics/Chapter-04-Differential-Equations/`
-- Pages: 1 · Printed range: 131–131 · Offset: +119
+- Pages: 13 · Printed range: 120–134 · Offset: +119
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
+| 1 | 120 | [page-001.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-001.md) | chapter-opener | — |  | 1 |
+| 2 | 121 | [page-002.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-002.md) | theory | — | 4.1 Differential Equation | 1 |
+| 3 | 122 | [page-003.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-003.md) | theory | — | 4.2 Order and Degree of Differential Equation; 4.2.1 Types … | 0 |
+| 4 | — | [page-004.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-004.md) | theory | — | 4.2.2 Degree of Differential Equation; 4.2.3 Ordinary Diffe… | 1 |
+| 5 | — | [page-005.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-005.md) | theory | — | 4.2.4 Linear and Non-Linear Differential Equations; 4.3 Con… | 0 |
+| 6 | 125 | [page-006.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-006.md) | worked-examples | — |  | 1 |
+| 7 | 126 | [page-007.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-007.md) | worked-examples | — | 4.3.1 General Solution of DE; 4.3.2 Particular Solution of … | 0 |
+| 8 | 127 | [page-008.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-008.md) | theory | — | 4.4 Formation of Differential Equation | 0 |
 | 12 | 131 | [page-012.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-012.md) | worked-examples | — | (ii) Initial Condition and Initial Value Problem (IVP) | 0 |
+| 13 | 132 | [page-013.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-013.md) | worked-examples | — | (ii) Initial Condition and Initial Value Problem (IVP) | 0 |
+| 14 | 133 | [page-014.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-014.md) | mixed | 4.2 | 4.6 Homogeneous First order Differential Equations; 4.6.1 H… | 0 |
+| 15 | 134 | [page-015.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-015.md) | mixed | — | 4.6.2 Homogeneous Differential Equations | 0 |
+| 16 | — | [page-016.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-016.md) | worked-examples | — |  | 0 |
 
 ---
 
 ## M-5 — Unit 05: Kinematics of Motion in a Straight Line
 
 - Markdown (`Formatted`): `Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/` · Raw scans: `Books/Raw/Mathematics/Unit-05-Kinematics-of-Motion-in-a-Straight-Line/` · HTML (test): `Books/Digital/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/`
-- Pages: 1 · Printed range: 143–143 · Offset: +139
+- Pages: 11 · Printed range: 140–156 · Offset: +139
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
+| 1 | 140 | [page-001.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-001.md) | chapter-opener | — |  | 1 |
+| 2 | 141 | [page-002.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-002.md) | theory | — | 5.1 Scalar and Vector Quantities; 5.1.1 Distance; 5.1.2 Spe… | 3 |
+| 3 | 142 | [page-003.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-003.md) | theory | — | 5.2.2 Slope of Displacement-time Graph; 5.2.3 Direction of … | 3 |
 | 4 | 143 | [page-004.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-004.md) | theory | — | 5.2.5 Slope of Velocity-Time Graph; Area between the Graph … | 4 |
+| 5 | 144 | [page-005.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-005.md) | worked-examples | — |  | 4 |
+| 6 | 145 | [page-006.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-006.md) | exercise | 5.1 | Exercise 5.1 | 3 |
+| 13 | 152 | [page-013.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-013.md) | exercise | 5.2 |  | 0 |
+| 14 | 153 | [page-014.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-014.md) | mixed | 5.2 | 5.6 Vector Valued Function | 0 |
+| 15 | 154 | [page-015.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-015.md) | theory | — | 5.6.1 Domain and Range of Vector valued Function; 5.6.2 Con… | 0 |
+| 16 | 155 | [page-016.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-016.md) | theory | — | 5.6.4 Derivative of a Vector Valued Function; 5.6.5 Velocit… | 0 |
+| 17 | 156 | [page-017.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-017.md) | exercise | 5.3 | 5.3 | 0 |
 
 ---
 *Auto-generated by `tools/build-metadata.mjs` — do not hand-edit.*

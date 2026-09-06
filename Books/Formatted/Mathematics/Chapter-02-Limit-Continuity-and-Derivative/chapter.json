@@ -8,8 +8,8 @@
   "chapter_label": "Unit 02",
   "title": "Limit, Continuity and Derivative",
   "book_title": "Textbook of Mathematics Grade 12 — National Book Foundation as Federal Textbook Board, Islamabad",
-  "page_count": 18,
-  "digitized_page_count": 18,
+  "page_count": 36,
+  "digitized_page_count": 36,
   "printed_page_offset": "+42",
   "printed_page_range": [
     43,
@@ -88,6 +88,86 @@
       "figures_count": 4
     },
     {
+      "image": 8,
+      "printed": 50,
+      "file": "page-008.md",
+      "content_type": "exercise",
+      "section": "Exercise 2.2",
+      "exercise": "2.2",
+      "has_figures": false,
+      "figures_count": 0
+    },
+    {
+      "image": 9,
+      "printed": 51,
+      "file": "page-009.md",
+      "content_type": "mixed",
+      "section": "2.3 Rate of Change of Functions; 2.3.1 Tangent of a Graph",
+      "exercise": null,
+      "has_figures": true,
+      "figures_count": 3
+    },
+    {
+      "image": 10,
+      "printed": 52,
+      "file": "page-010.md",
+      "content_type": "worked-examples",
+      "section": null,
+      "exercise": null,
+      "has_figures": true,
+      "figures_count": 1
+    },
+    {
+      "image": 11,
+      "printed": 53,
+      "file": "page-011.md",
+      "content_type": "theory",
+      "section": "2.5.2 Rate of Change; 2.4 Instantaneous Velocity",
+      "exercise": null,
+      "has_figures": true,
+      "figures_count": 2
+    },
+    {
+      "image": 12,
+      "printed": 54,
+      "file": "page-012.md",
+      "content_type": "theory",
+      "section": null,
+      "exercise": null,
+      "has_figures": true,
+      "figures_count": 1
+    },
+    {
+      "image": 13,
+      "printed": 55,
+      "file": "page-013.md",
+      "content_type": "exercise",
+      "section": "Exercise 2.3",
+      "exercise": "2.3",
+      "has_figures": false,
+      "figures_count": 0
+    },
+    {
+      "image": 14,
+      "printed": 56,
+      "file": "page-014.md",
+      "content_type": "theory",
+      "section": "2.5 The Derivative Functions",
+      "exercise": null,
+      "has_figures": false,
+      "figures_count": 0
+    },
+    {
+      "image": 15,
+      "printed": 57,
+      "file": "page-015.md",
+      "content_type": "theory",
+      "section": "2.6 Rules of Differentiation; 2.6.1 Power and Sum Rules",
+      "exercise": null,
+      "has_figures": false,
+      "figures_count": 0
+    },
+    {
       "image": 18,
       "printed": 60,
       "file": "page-018.md",
@@ -134,6 +214,106 @@
       "content_type": "theory",
       "section": "2.10 Derivatives of Inverse Trigonometric Functions",
       "exercise": null,
+      "has_figures": false,
+      "figures_count": 0
+    },
+    {
+      "image": 23,
+      "printed": 65,
+      "file": "page-023.md",
+      "content_type": "mixed",
+      "section": "2.10 Derivatives of Inverse Trigonometric Functions",
+      "exercise": "2.6",
+      "has_figures": false,
+      "figures_count": 0
+    },
+    {
+      "image": 24,
+      "printed": 66,
+      "file": "page-024.md",
+      "content_type": "worked-examples",
+      "section": "2.11 Product Rule; 2.11.1 Power Rule for Functions",
+      "exercise": null,
+      "has_figures": false,
+      "figures_count": 0
+    },
+    {
+      "image": 25,
+      "printed": 67,
+      "file": "page-025.md",
+      "content_type": "theory",
+      "section": "2.11.2 Chain Rule; 2.12 Implicit Differentiation; 2.12.1 Explicit and Implicit Functions; 2.12.2 Explicit Differentiation",
+      "exercise": null,
+      "has_figures": false,
+      "figures_count": 0
+    },
+    {
+      "image": 26,
+      "printed": 68,
+      "file": "page-026.md",
+      "content_type": "theory",
+      "section": "2.13 Derivative of Exponential Functions; 2.14 Derivative of Logarithmic Functions",
+      "exercise": null,
+      "has_figures": false,
+      "figures_count": 0
+    },
+    {
+      "image": 27,
+      "printed": 69,
+      "file": "page-027.md",
+      "content_type": "theory",
+      "section": "2.15 Differentials",
+      "exercise": null,
+      "has_figures": true,
+      "figures_count": 1
+    },
+    {
+      "image": 28,
+      "printed": 70,
+      "file": "page-028.md",
+      "content_type": "theory",
+      "section": "2.16 Approximations",
+      "exercise": null,
+      "has_figures": true,
+      "figures_count": 1
+    },
+    {
+      "image": 29,
+      "printed": 71,
+      "file": "page-029.md",
+      "content_type": "mixed",
+      "section": "2.16 Approximations",
+      "exercise": "2.7",
+      "has_figures": true,
+      "figures_count": 1
+    },
+    {
+      "image": 30,
+      "printed": 72,
+      "file": "page-030.md",
+      "content_type": "mixed",
+      "section": "2.17 Higher Order Derivatives; 2.17.1 The Second Derivative",
+      "exercise": "2.7",
+      "has_figures": false,
+      "figures_count": 0
+    },
+    {
+      "image": 31,
+      "printed": 73,
+      "file": "page-031.md",
+      "content_type": "theory",
+      "section": "2.18 Higher Derivatives",
+      "exercise": null,
+      "has_figures": false,
+      "figures_count": 0
+    },
+    {
+      "image": 32,
+      "printed": 74,
+      "file": "page-032.md",
+      "content_type": "mixed",
+      "section": "2.18 Higher Derivatives",
+      "exercise": "2.8",
       "has_figures": false,
       "figures_count": 0
     },

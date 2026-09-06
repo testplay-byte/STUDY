@@ -511,3 +511,69 @@ Work Log:
 
 Stage Summary:
 - 3/117 done, 114 remain; 5-agent Wave 1 (M-2 + M-3) + 4-agent Wave 2 (M-4 + M-5) planned with scan-edge policy embedded in every prompt
+---
+Task ID: 13-d2
+Agent: agent-13d2
+Task: Convert M-3 images 0016+0029-0031 (completion)
+
+Work Log:
+- page-016 → Books/Formatted/Mathematics/Chapter-03-Integration/page-016.md ✔ (printed p.104, cont. Example 18 + Example 19 §3.5 partial fractions; Exercise 3.5 Q.1-12 starts & completes; typos preserved: 'we gat:', 'A + B,' missing '= 3', 'ln(x + 1)' for ln(x + 2))
+- page-029 → Books/Formatted/Mathematics/Chapter-03-Integration/page-029.md ✔ (printed p.117, §3.12.3 Work + §3.12.4 Motion of Spring + Example 34 + Exercise 3.8 Q.1-4; 2 figures (spring states, Q.4 area graph — region A x=1..3, B x=3..4 zoom-verified); typo preserved: 'Hook's law')
+- page-030 → Books/Formatted/Mathematics/Chapter-03-Integration/page-030.md ✔ (printed p.118, Exercise 3.8 Q.5-18 continuation; 2 figures (y=√(3-x), y=3-2x volumes-of-revolution graphs); typos preserved: 'sloid' (Q.11), 'bonded' (Q.18 second occurrence))
+- page-031 → Books/Formatted/Mathematics/Chapter-03-Integration/page-031.md ✔ (printed p.119, Review Exercise MCQs i-x + Q.2-Q.5 — final page of Unit 03; book misprint preserved: MCQ (iii) options (b)/(d) both '2x + c', triple-checked at zoom)
+- Method: convert-page.mjs (1 API round each) + z-ai vision QA pass per page (footer digit, headings, verbatim typo zooms, edge-crop & sidebar-box sweeps, figure-region zooms); frontmatter/H1 normalized (chapter_title INTEGRATION, H1 'Unit 03', exercise fields aligned to M-1 Review-Exercise convention: section null + exercise 'Review Exercise')
+- All 4 pages: printed == image+88 cross-check held (104/117/118/119); no scan-edge crops found; no Key Facts/Check Point boxes; figures_count == F-block count (0/2/2/0); $ counts even
+
+Stage Summary:
+- 4/4 placed; Chapter-03-Integration now COMPLETE (31/31 pages, 001-031) — chapter finished by this batch
+- No problems for coordinator; anomalous book printings recorded in per-page notes: duplicate MCQ option 2x+c (p.119), 'sloid'/'bonded'/'Hook's law'/'we gat' typos, 'A + B,' equating-coefficients line lacking '= 3', 'ln(x + 1)' in Ex.19 final line
+---
+Task ID: 13-b2
+Agent: agent-13b2
+Task: Convert M-2 images 0023-0032 (completion)
+
+Work Log:
+- page-023 → ✔ (printed p.65, §2.10 cont., Ex 2.6 Q.1-16) — book misprint 'd/dx sec t x^2' (Ex 27 last line) preserved; boxed sec^-1/cosec^-1 formulas; 'Exercise 2.6' numbering recorded verbatim (does not follow §2.10)
+- page-024 → ✔ (printed p.66, §2.11 Product Rule; 2.11.1 Power Rule for Functions, Ex 28-29) — Theorem: Power Rule box as blockquote
+- page-025 → ✔ (printed p.67, §2.11.2 Chain Rule; 2.12 Implicit Differentiation; 2.12.1; 2.12.2, Ex 30) — book typos 'differentiable formula of u', 'y is an implicit of x' preserved; Ex 30 two-column solution transcribed sequentially (a then b)
+- page-026 → ✔ (printed p.68, §2.13 Derivative of Exponential Functions; 2.14 Derivative of Logarithmic Functions, Ex 31-34) — continuation of xy=1 example; top line prints d(x)/dx verbatim; 'a^x . 1/lna' as printed
+- page-027 → ✔ (printed p.69, §2.15 Differentials, Ex 35-36, 1 figure) — first draft scrambled Ex 36 block order; re-verified vs scan + reordered; Figure F1 'Fig (a)' right-margin graph (P,Q, secant+tangent, Δx/Δy)
+
+Stage Summary:
+- 5/10 placed (page-023..027, printed 65-69); page_printed cross-check printed==image+42 OK on all 5; no scan-edge crops found so far (edges clean on 023-027); remaining: 028-032
+---
+Task ID: 13-a2
+Agent: agent-13a2
+Task: Convert M-2 images 0008-0017 (completion)
+
+Work Log:
+- page-008 → ✔ (printed p.50, Key Facts box blockquote + Exercise 2.2 Q.1-18; typo 'continues at a' preserved)
+- page-009 → ✔ (printed p.51, Ex 2.2 ends Q.19-20; §2.3 + §2.3.1 start; Figs (i)(ii)(iii); anchors verified vs scan)
+- page-010 → ✔ (printed p.52, Definition: Tangent line + Examples 9-10 + 4-step summary; Definition-box slope identity printed WITHOUT lim on first fraction — preserved; section null per house style for no printed heading)
+- page-011 → ✔ (printed p.53, Key Facts 'A Tangent May Not Exist' box + graphs (a)(b)(c) INSIDE box; book prints '2.5.2 Rate of Change' BEFORE '2.4 Instantaneous Velocity' — zoom-crop verified, as printed; left-margin gutter bleed of facing page noted as scan artifact, not transcribed)
+- page-012 → ✔ (printed p.54, Instantaneous-velocity runner narrative + Definition: Instantaneous Velocity + Example 11 (ball, s=-4.9t²+192, v(3)=-29.4 m/s); figure 'Ball at t = 3' parabola+ground+ball re-verified via zoom crops; converter-hallucinated frontmatter section corrected to null — no printed heading)
+
+Stage Summary:
+- 5/10 placed (008-012); QA method: convert-page draft + 2-4 targeted neutral vision passes per page, zoom-crops for heading digits/figure regions; all $ balanced, F-blocks == figures_count, printed digits 50-54 == image+42 cross-check OK
+- No scan-edge text cuts found so far on 0008-0012 (only gutter-bleed sliver on 0011, artifact); no unrecoverable text
+---
+Task ID: 13-b2
+Agent: agent-13b2
+Task: Convert M-2 images 0023-0032 (completion)
+
+Work Log:
+- page-023 → ✔ (printed p.65, §2.10 cont., Ex 2.6 Q.1-16) — book misprint 'd/dx sec t x^2' (Ex 27 last line) preserved; boxed sec^-1/cosec^-1 formulas; 'Exercise 2.6' numbering recorded verbatim (does not follow §2.10)
+- page-024 → ✔ (printed p.66, §2.11 Product Rule; 2.11.1 Power Rule for Functions, Ex 28-29) — Theorem: Power Rule box as blockquote
+- page-025 → ✔ (printed p.67, §2.11.2 Chain Rule; 2.12 Implicit Differentiation; 2.12.1; 2.12.2, Ex 30) — book typos 'differentiable formula of u', 'y is an implicit of x' preserved; Ex 30 two-column solution transcribed sequentially (a then b)
+- page-026 → ✔ (printed p.68, §2.13 Derivative of Exponential Functions; 2.14 Derivative of Logarithmic Functions, Ex 31-34) — continuation of xy=1 example; top line prints d(x)/dx verbatim; 'a^x . 1/lna' as printed
+- page-027 → ✔ (printed p.69, §2.15 Differentials, Ex 35-36, 1 figure) — first draft scrambled Ex 36 block order; re-verified vs scan + reordered; Figure F1 'Fig (a)' right-margin graph (P,Q, secant+tangent, Δx/Δy)
+- page-028 → ✔ (printed p.70, §2.15 cont. + 2.16 Approximations start, Ex 37, 1 figure) — book typos 'interrupted in dy', 'When Δx = 0' (for ≠ 0), 'if x is changes' preserved; page ends mid-sentence 'then the' (continues p.71); scan right edge slightly crops figure's x-axis end (no text loss)
+- page-029 → ✔ (printed p.71, §2.16 cont. + Exercise 2.7 Q.1-22, Ex 38, 1 figure) — opens mid-sentence completing §2.16 paragraph; Exercise 2.7 three groups (Q.1-8, 9-16, 17-22), continues on p.72 Q.23-32; Fig F1 top right with on-graph equation label
+- page-030 → ✔ (printed p.72, Ex 2.7 tail Q.23-32 + §2.17 Higher Order Derivatives; 2.17.1 The Second Derivative, Ex 39) — side-by-side items kept on shared lines (nbsp); book typo 'twice is successive' preserved; Q.31 stray comma preserved
+- page-031 → ✔ (printed p.73, Ex 40 a/b/c + §2.18 Higher Derivatives) — Ex 40 y'' line transcribed verbatim ('x^2 3(x^3+1)^2 3(x^2)', '12x(x^3+1)^2[11x^3+2]'); §2.18 prints 'Higher Derivatives' (vs 2.17 'Higher Order') as printed; D_x notation row verbatim
+- page-032 → ✔ (printed p.74, Ex 41-42 + Exercise 2.8 Q.1-20) — Ex 42 'third derivatives' (plural) verbatim; Q.20 'and that' before d^3/dx^3 display; no section heading on page (§2.18 in force)
+
+Stage Summary:
+- 10/10 placed (page-023..032, printed 65-74); page_printed == image+42 verified on every page from the blue footer digit; all frontmatter exact per spec; sanity script (staging/drafts/agent-13b2/sanity.mjs) SANITY OK on all 10 placed files; figures: 2 total (F1 on 027, F1 on 028) with matching figures_count and inline markers; no [left/right edge cut] markers needed anywhere (edges clean except cosmetic figure-margin clip on 028, noted)
+- Chapter-02 now complete for images 001-038 except 014-017 (agent-13a scope); nothing outside 0023-0032 touched (only in-scope page-029 note amended after p.030 revealed Ex 2.7 continues on p.72)
+- Lesson for future agents: this book prints side-by-side exercise items — predecessor convention is shared lines with &nbsp;&nbsp; separators (never \hfill); VLM occasionally scrambles block order on worked-example pages (caught on 027) — always QA block order, not just content; continuation pages need section field = section in force + note when no heading printed

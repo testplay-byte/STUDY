@@ -1,7 +1,7 @@
 # Index — mathematics
 
 **Book:** Textbook of Mathematics Grade 12 — National Book Foundation as Federal Textbook Board, Islamabad  
-**Digitized pages:** 90 · **Raw images:** 160 · Structure **v4** (Books/{Raw, Formatted, Digital})
+**Digitized pages:** 112 · **Raw images:** 160 · Structure **v4** (Books/{Raw, Formatted, Digital})
 
 > Machine-readable equivalents: `Books/Formatted/Mathematics/book.json` + `chapter.json` in every chapter folder.
 > Digital replica test edition: `Books/Digital/` — 8 hand-typeset pages (`<BATCH>-page-NNN.html` + assets/, user-approved whitelist; see docs/CONVENTIONS.md §1.5).
@@ -74,7 +74,7 @@
 ## M-2 — Unit 02: Limit, Continuity and Derivative
 
 - Markdown (`Formatted`): `Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/` · Raw scans: `Books/Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/` · HTML (test): `Books/Digital/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/`
-- Pages: 18 · Printed range: 43–80 · Offset: +42
+- Pages: 36 · Printed range: 43–80 · Offset: +42
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
@@ -85,11 +85,29 @@
 | 5 | 47 | [page-005.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-005.md) | mixed | 2.1 | 2.2 Continuity | 7 |
 | 6 | 48 | [page-006.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-006.md) | theory | — | 2.2.1 Continuity at a Number | 3 |
 | 7 | 49 | [page-007.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-007.md) | theory | — | 2.2.2 Continuity on an Interval; Example 8 | 4 |
+| 8 | 50 | [page-008.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-008.md) | exercise | 2.2 | Exercise 2.2 | 0 |
+| 9 | 51 | [page-009.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-009.md) | mixed | — | 2.3 Rate of Change of Functions; 2.3.1 Tangent of a Graph | 3 |
+| 10 | 52 | [page-010.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-010.md) | worked-examples | — |  | 1 |
+| 11 | 53 | [page-011.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-011.md) | theory | — | 2.5.2 Rate of Change; 2.4 Instantaneous Velocity | 2 |
+| 12 | 54 | [page-012.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-012.md) | theory | — |  | 1 |
+| 13 | 55 | [page-013.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-013.md) | exercise | 2.3 | Exercise 2.3 | 0 |
+| 14 | 56 | [page-014.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-014.md) | theory | — | 2.5 The Derivative Functions | 0 |
+| 15 | 57 | [page-015.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-015.md) | theory | — | 2.6 Rules of Differentiation; 2.6.1 Power and Sum Rules | 0 |
 | 18 | 60 | [page-018.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-018.md) | worked-examples | — | 2.7 The Product and Quotient Rules; 2.7.1 Derivative of a P… | 0 |
 | 19 | 61 | [page-019.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-019.md) | worked-examples | — | 2.7.2 Derivative of a Quotient; 2.8 The Connection Between … | 0 |
 | 20 | 62 | [page-020.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-020.md) | mixed | 2.5 | 2.9 Derivations of Trigonometric Functions | 0 |
 | 21 | 63 | [page-021.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-021.md) | worked-examples | — | The other Trigonometric Functions: | 0 |
 | 22 | 64 | [page-022.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-022.md) | theory | — | 2.10 Derivatives of Inverse Trigonometric Functions | 0 |
+| 23 | 65 | [page-023.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-023.md) | mixed | 2.6 | 2.10 Derivatives of Inverse Trigonometric Functions | 0 |
+| 24 | 66 | [page-024.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-024.md) | worked-examples | — | 2.11 Product Rule; 2.11.1 Power Rule for Functions | 0 |
+| 25 | 67 | [page-025.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-025.md) | theory | — | 2.11.2 Chain Rule; 2.12 Implicit Differentiation; 2.12.1 Ex… | 0 |
+| 26 | 68 | [page-026.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-026.md) | theory | — | 2.13 Derivative of Exponential Functions; 2.14 Derivative o… | 0 |
+| 27 | 69 | [page-027.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-027.md) | theory | — | 2.15 Differentials | 1 |
+| 28 | 70 | [page-028.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-028.md) | theory | — | 2.16 Approximations | 1 |
+| 29 | 71 | [page-029.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-029.md) | mixed | 2.7 | 2.16 Approximations | 1 |
+| 30 | 72 | [page-030.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-030.md) | mixed | 2.7 | 2.17 Higher Order Derivatives; 2.17.1 The Second Derivative | 0 |
+| 31 | 73 | [page-031.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-031.md) | theory | — | 2.18 Higher Derivatives | 0 |
+| 32 | 74 | [page-032.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-032.md) | mixed | 2.8 | 2.18 Higher Derivatives | 0 |
 | 33 | 75 | [page-033.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-033.md) | theory | — | 2.19 Extrema of Functions | 7 |
 | 34 | — | [page-034.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-034.md) | theory | — | 2.19.1 Relative Extrema | 4 |
 | 35 | 77 | [page-035.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-035.md) | theory | — |  | 1 |
@@ -102,7 +120,7 @@
 ## M-3 — Unit 03: Integration
 
 - Markdown (`Formatted`): `Books/Formatted/Mathematics/Chapter-03-Integration/` · Raw scans: `Books/Raw/Mathematics/Unit-03-Integration/` · HTML (test): `Books/Digital/Mathematics/Chapter-03-Integration/`
-- Pages: 27 · Printed range: 90–116 · Offset: +88
+- Pages: 31 · Printed range: 90–119 · Offset: +88
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
@@ -121,6 +139,7 @@
 | 13 | 101 | [page-013.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-013.md) | worked-examples | — |  | 0 |
 | 14 | 102 | [page-014.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-014.md) | mixed | — |  | 0 |
 | 15 | 103 | [page-015.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-015.md) | theory | — | 3.5 Integration by Partial Fraction | 0 |
+| 16 | 104 | [page-016.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-016.md) | mixed | 3.5 |  | 0 |
 | 17 | 105 | [page-017.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-017.md) | theory | — | 3.6 The Definite Integral; 3.6.1 Partition of the Interval | 1 |
 | 18 | 106 | [page-018.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-018.md) | worked-examples | — |  | 3 |
 | 19 | 107 | [page-019.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-019.md) | theory | — | 3.7 Properties of The Definite Integral | 2 |
@@ -133,6 +152,9 @@
 | 26 | 114 | [page-026.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-026.md) | theory | — | 3.11 Volume of Solids of Revolution; 3.11.1 Disc Method | 2 |
 | 27 | 115 | [page-027.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-027.md) | worked-examples | — | 3.12 Applications; 3.12.1 Consumer and Producer Surpluses | 1 |
 | 28 | 116 | [page-028.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-028.md) | worked-examples | — | 3.12.2 Rectilinear Motion | 1 |
+| 29 | 117 | [page-029.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-029.md) | mixed | 3.8 | 3.12.3 Work; 3.12.4 Motion of Spring | 2 |
+| 30 | 118 | [page-030.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-030.md) | exercise | 3.8 |  | 2 |
+| 31 | 119 | [page-031.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-031.md) | exercise | Review Exercise |  | 0 |
 
 ---
 

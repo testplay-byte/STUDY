@@ -70,6 +70,8 @@ repo / gitignored.)
 | `--subject` | optional; auto-resolved from the batch prefix (`M-*`→mathematics, `S-*`→statistics) when omitted |
 | `--page` | integer image number |
 | `--image-filename` | filename used in the scan-link line |
+| `--chapter-folder` | Formatted chapter folder name (e.g. `Chapter-02-Limit-Continuity-and-Derivative`) — injected into the frontmatter context so the model cannot guess the raw folder name (a recurring bug class in M-2..M-5 test conversions) |
+| `--book-title` | book title string (e.g. `Mathematics (Grade 12)`) — injected likewise (prevents `book_title: null`) |
 | `--out` | draft output path |
 | `--agent` | agent id for `converted_by` |
 | `--source-image-rel` | relative path from the final .md location to the raw scan — always `../../../Raw/<Subject>/<Chapter-Name>/NNNN.jpg` (3 ups: page → chapter → Formatted/<Subject> → Books) |

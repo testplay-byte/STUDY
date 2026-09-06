@@ -5,6 +5,8 @@
  * Usage (v4 layout):
  *   bun tools/convert-page.mjs --image Books/Raw/Mathematics/Unit-01-Functions-and-Graphs/0025.jpg \
  *        --batch M-1 --page 25 --image-filename 0025.jpg \
+ *        --chapter-folder Chapter-01-Functions-and-Graphs \
+ *        --book-title "Mathematics (Grade 12)" \
  *        --out /tmp/drafts/page-025.md \
  *        --agent agent-A1 \
  *        --source-image-rel "../../../Raw/Mathematics/Unit-01-Functions-and-Graphs/0025.jpg" [--subject mathematics]
@@ -28,6 +30,8 @@ const BATCH = arg('batch') || arg('book');   // v3 name --batch; --book kept as 
 const PAGE = arg('page');
 const SUBJECT = arg('subject');              // optional; resolved from batch prefix if omitted
 const IMAGE_FILENAME = arg('image-filename') || path.basename(IMAGE || '');
+const CHAPTER_FOLDER = arg('chapter-folder');
+const BOOK_TITLE = arg('book-title');
 const OUT = arg('out');
 const AGENT = arg('agent', 'coordinator');
 const SOURCE_REL = arg('source-image-rel', '');
@@ -50,6 +54,8 @@ const injections = [
   `page_image: ${PAGE}`,
   `image filename: ${IMAGE_FILENAME}`,
   `source_image: ${SOURCE_REL}`,
+  ...(CHAPTER_FOLDER ? [`chapter_folder: ${CHAPTER_FOLDER}`] : []),
+  ...(BOOK_TITLE ? [`book_title: "${BOOK_TITLE}"`] : []),
   `converted_at: "${today}"`,
   `converted_by: "${AGENT} (glm-vision)"`
 ].join('\n');

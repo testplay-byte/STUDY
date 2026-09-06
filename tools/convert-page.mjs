@@ -55,7 +55,7 @@ const injections = [
   `image filename: ${IMAGE_FILENAME}`,
   `source_image: ${SOURCE_REL}`,
   ...(CHAPTER_FOLDER ? [`chapter_folder: ${CHAPTER_FOLDER}`] : []),
-  ...(BOOK_TITLE ? [`book_title: "${BOOK_TITLE}"`] : []),
+  ...(BOOK_TITLE ? [`book_title: ${BOOK_TITLE}`] : []),
   `converted_at: "${today}"`,
   `converted_by: "${AGENT} (glm-vision)"`
 ].join('\n');

@@ -1,7 +1,7 @@
 # Index — mathematics
 
 **Book:** Textbook of Mathematics Grade 12 — National Book Foundation as Federal Textbook Board, Islamabad  
-**Digitized pages:** 46 · **Raw images:** 160 · Structure **v4** (Books/{Raw, Formatted, Digital})
+**Digitized pages:** 90 · **Raw images:** 160 · Structure **v4** (Books/{Raw, Formatted, Digital})
 
 > Machine-readable equivalents: `Books/Formatted/Mathematics/book.json` + `chapter.json` in every chapter folder.
 > Digital replica test edition: `Books/Digital/` — 8 hand-typeset pages (`<BATCH>-page-NNN.html` + assets/, user-approved whitelist; see docs/CONVENTIONS.md §1.5).
@@ -74,21 +74,65 @@
 ## M-2 — Unit 02: Limit, Continuity and Derivative
 
 - Markdown (`Formatted`): `Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/` · Raw scans: `Books/Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/` · HTML (test): `Books/Digital/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/`
-- Pages: 1 · Printed range: 43–43 · Offset: +42
+- Pages: 18 · Printed range: 43–80 · Offset: +42
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
 | 1 | 43 | [page-001.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-001.md) | chapter-opener | — |  | 1 |
+| 2 | 44 | [page-002.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-002.md) | theory | — | 2.1 Limits of Functions; 2.1.1 Limit of a Function as x App… | 1 |
+| 3 | 45 | [page-003.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-003.md) | worked-examples | — |  | 1 |
+| 4 | 46 | [page-004.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-004.md) | mixed | 2.1 | Theorems on Limits; Exercise 2.1 | 0 |
+| 5 | 47 | [page-005.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-005.md) | mixed | 2.1 | 2.2 Continuity | 7 |
+| 6 | 48 | [page-006.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-006.md) | theory | — | 2.2.1 Continuity at a Number | 3 |
+| 7 | 49 | [page-007.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-007.md) | theory | — | 2.2.2 Continuity on an Interval; Example 8 | 4 |
+| 18 | 60 | [page-018.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-018.md) | worked-examples | — | 2.7 The Product and Quotient Rules; 2.7.1 Derivative of a P… | 0 |
+| 19 | 61 | [page-019.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-019.md) | worked-examples | — | 2.7.2 Derivative of a Quotient; 2.8 The Connection Between … | 0 |
+| 20 | 62 | [page-020.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-020.md) | mixed | 2.5 | 2.9 Derivations of Trigonometric Functions | 0 |
+| 21 | 63 | [page-021.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-021.md) | worked-examples | — | The other Trigonometric Functions: | 0 |
+| 22 | 64 | [page-022.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-022.md) | theory | — | 2.10 Derivatives of Inverse Trigonometric Functions | 0 |
+| 33 | 75 | [page-033.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-033.md) | theory | — | 2.19 Extrema of Functions | 7 |
+| 34 | — | [page-034.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-034.md) | theory | — | 2.19.1 Relative Extrema | 4 |
+| 35 | 77 | [page-035.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-035.md) | theory | — |  | 1 |
+| 36 | 78 | [page-036.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-036.md) | theory | — | 2.20 Second Derivative Test for Relative Extrema | 4 |
+| 37 | 79 | [page-037.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-037.md) | theory | — | 2.21 Point of Inflection | 1 |
+| 38 | 80 | [page-038.md](../Books/Formatted/Mathematics/Chapter-02-Limit-Continuity-and-Derivative/page-038.md) | mixed | 2.9 |  | 2 |
 
 ---
 
 ## M-3 — Unit 03: Integration
 
 - Markdown (`Formatted`): `Books/Formatted/Mathematics/Chapter-03-Integration/` · Raw scans: `Books/Raw/Mathematics/Unit-03-Integration/` · HTML (test): `Books/Digital/Mathematics/Chapter-03-Integration/`
-- Pages: 0 · Printed range: n/a · Offset: +88
+- Pages: 27 · Printed range: 90–116 · Offset: +88
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
+| 1 | — | [page-001.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-001.md) | chapter-opener | — |  | 1 |
+| 2 | 90 | [page-002.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-002.md) | theory | — | 3.1 Integration | 0 |
+| 3 | 91 | [page-003.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-003.md) | theory | — |  | 0 |
+| 4 | 92 | [page-004.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-004.md) | theory | — |  | 0 |
+| 5 | 93 | [page-005.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-005.md) | mixed | 3.1 |  | 0 |
+| 6 | 94 | [page-006.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-006.md) | mixed | — | 3.2 Integration of Trigonometric Functions | 0 |
+| 7 | 95 | [page-007.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-007.md) | theory | — | 3.2.1 Integration of Sin²x and Cos²x | 0 |
+| 8 | 96 | [page-008.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-008.md) | mixed | 3.2 | 3.3 Integration by Substitution | 0 |
+| 9 | 97 | [page-009.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-009.md) | mixed | — |  | 0 |
+| 10 | 98 | [page-010.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-010.md) | mixed | — |  | 0 |
+| 11 | 99 | [page-011.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-011.md) | mixed | 3.3 |  | 0 |
+| 12 | 100 | [page-012.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-012.md) | mixed | — | 3.4 Integration by Parts | 0 |
+| 13 | 101 | [page-013.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-013.md) | worked-examples | — |  | 0 |
+| 14 | 102 | [page-014.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-014.md) | mixed | — |  | 0 |
+| 15 | 103 | [page-015.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-015.md) | theory | — | 3.5 Integration by Partial Fraction | 0 |
+| 17 | 105 | [page-017.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-017.md) | theory | — | 3.6 The Definite Integral; 3.6.1 Partition of the Interval | 1 |
+| 18 | 106 | [page-018.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-018.md) | worked-examples | — |  | 3 |
+| 19 | 107 | [page-019.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-019.md) | theory | — | 3.7 Properties of The Definite Integral | 2 |
+| 20 | 108 | [page-020.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-020.md) | mixed | 3.6 | Theorem 3.3; Example 22; Exercise 3.6 | 0 |
+| 21 | 109 | [page-021.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-021.md) | mixed | — | 3.8 Fundamental Theorem of Calculus | 2 |
+| 22 | 110 | [page-022.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-022.md) | worked-examples | — |  | 0 |
+| 23 | 111 | [page-023.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-023.md) | worked-examples | — |  | 0 |
+| 24 | — | [page-024.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-024.md) | mixed | 3.7 | 3.9 Area and Volume | 0 |
+| 25 | 113 | [page-025.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-025.md) | theory | — | 3.10 Area of Bounded Region; 3.10.1 Area Between a Curve an… | 4 |
+| 26 | 114 | [page-026.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-026.md) | theory | — | 3.11 Volume of Solids of Revolution; 3.11.1 Disc Method | 2 |
+| 27 | 115 | [page-027.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-027.md) | worked-examples | — | 3.12 Applications; 3.12.1 Consumer and Producer Surpluses | 1 |
+| 28 | 116 | [page-028.md](../Books/Formatted/Mathematics/Chapter-03-Integration/page-028.md) | worked-examples | — | 3.12.2 Rectilinear Motion | 1 |
 
 ---
 

@@ -42,6 +42,10 @@ const BOOKS = {
     parts: [
       { folder: 'Chapter-00-Front-Matter', rawFolder: 'Front-Matter', batch: 'M-0', kind: 'front-matter', printed_page_offset: null },
       { folder: 'Chapter-01-Functions-and-Graphs', rawFolder: 'Unit-01-Functions-and-Graphs', batch: 'M-1', kind: 'chapter', chapter_number: 1, chapter_label: 'Unit 01', title: 'Functions and Graphs', printed_page_offset: '+6' },
+      { folder: 'Chapter-02-Limit-Continuity-and-Derivative', rawFolder: 'Unit-02-Limit-Continuity-and-Derivative', batch: 'M-2', kind: 'chapter', chapter_number: 2, chapter_label: 'Unit 02', title: 'Limit, Continuity and Derivative', printed_page_offset: '+42' },
+      { folder: 'Chapter-03-Integration', rawFolder: 'Unit-03-Integration', batch: 'M-3', kind: 'chapter', chapter_number: 3, chapter_label: 'Unit 03', title: 'Integration', printed_page_offset: '+88' },
+      { folder: 'Chapter-04-Differential-Equations', rawFolder: 'Unit-04-Differential-Equations', batch: 'M-4', kind: 'chapter', chapter_number: 4, chapter_label: 'Unit 04', title: 'Differential Equations', printed_page_offset: '+119' },
+      { folder: 'Chapter-05-Kinematics-of-Motion-in-a-Straight-Line', rawFolder: 'Unit-05-Kinematics-of-Motion-in-a-Straight-Line', batch: 'M-5', kind: 'chapter', chapter_number: 5, chapter_label: 'Unit 05', title: 'Kinematics of Motion in a Straight Line', printed_page_offset: '+139' },
     ],
   },
   statistics: {

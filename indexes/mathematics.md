@@ -1,7 +1,7 @@
 # Index — mathematics
 
 **Book:** Textbook of Mathematics Grade 12 — National Book Foundation as Federal Textbook Board, Islamabad  
-**Digitized pages:** 144 · **Raw images:** 160 · Structure **v4** (Books/{Raw, Formatted, Digital})
+**Digitized pages:** 160 · **Raw images:** 160 · Structure **v4** (Books/{Raw, Formatted, Digital})
 
 > Machine-readable equivalents: `Books/Formatted/Mathematics/book.json` + `chapter.json` in every chapter folder.
 > Digital replica test edition: `Books/Digital/` — 8 hand-typeset pages (`<BATCH>-page-NNN.html` + assets/, user-approved whitelist; see docs/CONVENTIONS.md §1.5).
@@ -171,7 +171,7 @@
 ## M-4 — Unit 04: Differential Equations
 
 - Markdown (`Formatted`): `Books/Formatted/Mathematics/Chapter-04-Differential-Equations/` · Raw scans: `Books/Raw/Mathematics/Unit-04-Differential-Equations/` · HTML (test): `Books/Digital/Mathematics/Chapter-04-Differential-Equations/`
-- Pages: 13 · Printed range: 120–134 · Offset: +119
+- Pages: 20 · Printed range: 120–139 · Offset: +119
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
@@ -183,18 +183,25 @@
 | 6 | 125 | [page-006.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-006.md) | worked-examples | — |  | 1 |
 | 7 | 126 | [page-007.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-007.md) | worked-examples | — | 4.3.1 General Solution of DE; 4.3.2 Particular Solution of … | 0 |
 | 8 | 127 | [page-008.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-008.md) | theory | — | 4.4 Formation of Differential Equation | 0 |
+| 9 | 128 | [page-009.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-009.md) | theory | — | 4.4.1 Explicit and Implicit Solution | 0 |
+| 10 | 129 | [page-010.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-010.md) | mixed | 4.1 | 4.4.2 Number of Solutions | 0 |
+| 11 | 130 | [page-011.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-011.md) | mixed | — | 4.5 Solution of Differential Equation; 4.5.1 Solution of Di… | 0 |
 | 12 | 131 | [page-012.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-012.md) | worked-examples | — | (ii) Initial Condition and Initial Value Problem (IVP) | 0 |
 | 13 | 132 | [page-013.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-013.md) | worked-examples | — | (ii) Initial Condition and Initial Value Problem (IVP) | 0 |
 | 14 | 133 | [page-014.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-014.md) | mixed | 4.2 | 4.6 Homogeneous First order Differential Equations; 4.6.1 H… | 0 |
 | 15 | 134 | [page-015.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-015.md) | mixed | — | 4.6.2 Homogeneous Differential Equations | 0 |
 | 16 | — | [page-016.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-016.md) | worked-examples | — |  | 0 |
+| 17 | 136 | [page-017.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-017.md) | mixed | 4.3 | 4.7 Applications of Differential Equations | 0 |
+| 18 | 137 | [page-018.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-018.md) | worked-examples | — |  | 0 |
+| 19 | — | [page-019.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-019.md) | exercise | 4.4 |  | 0 |
+| 20 | 139 | [page-020.md](../Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-020.md) | exercise | Review Exercise |  | 0 |
 
 ---
 
 ## M-5 — Unit 05: Kinematics of Motion in a Straight Line
 
 - Markdown (`Formatted`): `Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/` · Raw scans: `Books/Raw/Mathematics/Unit-05-Kinematics-of-Motion-in-a-Straight-Line/` · HTML (test): `Books/Digital/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/`
-- Pages: 11 · Printed range: 140–156 · Offset: +139
+- Pages: 20 · Printed range: 140–159 · Offset: +139
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
@@ -204,11 +211,20 @@
 | 4 | 143 | [page-004.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-004.md) | theory | — | 5.2.5 Slope of Velocity-Time Graph; Area between the Graph … | 4 |
 | 5 | 144 | [page-005.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-005.md) | worked-examples | — |  | 4 |
 | 6 | 145 | [page-006.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-006.md) | exercise | 5.1 | Exercise 5.1 | 3 |
+| 7 | 146 | [page-007.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-007.md) | exercise | 5.1 |  | 3 |
+| 8 | 147 | [page-008.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-008.md) | mixed | 5.1 | 5.3 Velocity as Derivative of Displacement Function | 0 |
+| 9 | 148 | [page-009.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-009.md) | theory | — | 5.3.1 Acceleration as Derivative of Velocity and Displaceme… | 0 |
+| 10 | 149 | [page-010.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-010.md) | theory | — | 5.3.2 Displacement as an Integral of Velocity; 5.4 Velocity… | 0 |
+| 11 | 150 | [page-011.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-011.md) | theory | — | 5.5 Application of Mechanics in Real Life Situation | 0 |
+| 12 | 151 | [page-012.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-012.md) | exercise | 5.2 |  | 0 |
 | 13 | 152 | [page-013.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-013.md) | exercise | 5.2 |  | 0 |
 | 14 | 153 | [page-014.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-014.md) | mixed | 5.2 | 5.6 Vector Valued Function | 0 |
 | 15 | 154 | [page-015.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-015.md) | theory | — | 5.6.1 Domain and Range of Vector valued Function; 5.6.2 Con… | 0 |
 | 16 | 155 | [page-016.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-016.md) | theory | — | 5.6.4 Derivative of a Vector Valued Function; 5.6.5 Velocit… | 0 |
 | 17 | 156 | [page-017.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-017.md) | exercise | 5.3 | 5.3 | 0 |
+| 18 | 157 | [page-018.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-018.md) | exercise | Review Exercise |  | 2 |
+| 19 | 158 | [page-019.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-019.md) | exercise | Review Exercise |  | 2 |
+| 20 | 159 | [page-020.md](../Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-020.md) | exercise | Review Exercise |  | 0 |
 
 ---
 *Auto-generated by `tools/build-metadata.mjs` — do not hand-edit.*

@@ -1,17 +1,16 @@
 # STATUS — live snapshot
 
-> **Last updated: 2026-09-06** (v4.3 — markdown-only mode declared; environment re-verified
-> ready for new books/chapters). Coordinator updates this after every task. New agents: if
+> **Last updated: 2026-09-06** (Phase 5 — Mathematics Units 02–05 digitized in markdown-only mode; library now 229 pages). Coordinator updates this after every task. New agents: if
 > reality differs from this file, trust reality, then fix this file.
 
 ## One-line state
 
-**Digital Edition v3 complete & pushed** — 112/112 pages digitized in the three-branch
-`Books/` library (`Raw/` scans by original chapter name · `Formatted/` canonical markdown ·
-`Digital/` full 112-page generated replica library + index + manifest, incl. the 8 preserved
-hand-typeset exemplars); docs/tracking/metadata systems in place. **MODE v4.3: new
-books/chapters are digitized to MARKDOWN ONLY (Digital layer frozen); environment verified
-ready — awaiting the user's new material.**
+**229/229 pages digitized & pushed** — Mathematics (front matter + Units 01–05) and Statistics
+(front matter + Ch. 8–9) in the three-branch `Books/` library (`Raw/` immutable scans ·
+`Formatted/` canonical markdown · `Digital/` frozen 112-page replica edition of the legacy
+library). Units 02–05 (117 pages) digitized in **markdown-only mode (v4.3)** with the
+scan-edge-crop policy: every scan-edge reconstruction disclosed in page notes; 8 scan-cut
+folios recorded as `page_printed: null` with pixel-verified notes. All gates green.
 
 ## Library inventory
 
@@ -19,13 +18,17 @@ ready — awaiting the user's new material.**
 |-------|---------|----------------------------|----------------------------------------|------:|---------------|--------|--------|
 | M-0 | mathematics | `Mathematics/Front-Matter` | `Mathematics/Chapter-00-Front-Matter` | 7 | (unnumbered) | — | ✅ digitized |
 | M-1 | mathematics | `Mathematics/Unit-01-Functions-and-Graphs` | `Mathematics/Chapter-01-Functions-and-Graphs` | 36 | 7–41 | +6 | ✅ digitized |
+| M-2 | mathematics | `Mathematics/Unit-02-Limit-Continuity-and-Derivative` | `Mathematics/Chapter-02-Limit-Continuity-and-Derivative` | 46 | 43–88 | +42 | ✅ digitized |
+| M-3 | mathematics | `Mathematics/Unit-03-Integration` | `Mathematics/Chapter-03-Integration` | 31 | 89–119 | +88 | ✅ digitized |
+| M-4 | mathematics | `Mathematics/Unit-04-Differential-Equations` | `Mathematics/Chapter-04-Differential-Equations` | 20 | 120–139 | +119 | ✅ digitized |
+| M-5 | mathematics | `Mathematics/Unit-05-Kinematics-of-Motion-in-a-Straight-Line` | `Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line` | 20 | 140–159 | +139 | ✅ digitized |
 | S-0 | statistics | `Statistics/Front-Matter` | `Statistics/Chapter-00-Front-Matter` | 9 | roman folios | — | ✅ digitized |
 | S-1 | statistics | `Statistics/Chapter-08-Set-Theory` | `Statistics/Chapter-08-Set-Theory` | 10 | 1–10 | =image | ✅ digitized |
 | S-2 | statistics | `Statistics/Chapter-09-Probability` | `Statistics/Chapter-09-Probability` | 50 | 11–60 | +10 | ✅ digitized |
-| | | | **Total** | **112** | | | **112 raw images ⇄ 112 .md pages · Digital Edition v3: 112 replica pages ✓ (FROZEN, v4.3)** |
+| | | | **Total** | **229** | | | **229 raw images ⇄ 229 .md pages · Digital Edition v3 (legacy 112) FROZEN ✓** |
 
-Content mix: 32 theory · 28 worked-examples · 21 exercise · 16 front-matter · 12 mixed ·
-2 summary · 1 chapter-opener — with **109 figures** preserved as structured descriptions.
+Content mix (229 pages): 73 theory · 50 worked-examples · 45 mixed · 38 exercise · 16 front-matter ·
+5 chapter-opener · 2 summary — with **210 figures** preserved as structured F-block descriptions.
 
 ## Done so far (condensed — details in WORKLOG.md / PLAN.md)
 
@@ -73,14 +76,25 @@ Content mix: 32 theory · 28 worked-examples · 21 exercise · 16 front-matter �
   git sync OK, both gates ALL GREEN, `verify-v4` 112/112, **smoke conversion S-1 img 3 →
   schema-valid draft (frontmatter / 4×F-blocks / `$`-balance match canonical)** — pipeline
   live and ready for the new material.
+- Phase 5 (**2026-09-06, this session**): **Mathematics Units 02–05 digitized (117 pages,
+  markdown-only)** — user delivered a FromSmash transfer (4 zips, named M-2..M-5.zip).
+  Downloaded via browser URL-capture + content-disposition verification; recon established
+  offsets +42/+88/+119/+139 (continuity-verified 43→159, no gaps); user-flagged problem
+  pages p.131/p.134/p.143 handled via the **scan-edge crop policy** (reconstruct unambiguous
+  edge chars, `[edge cut]` markers + notes for the rest; page numbers NEVER computed — 8
+  scan-cut folios recorded null with notes). 11 sub-agent runs (+ salvage passes + scoped
+  relaunches) converted all 117 pages; coordinator audit: full-library integrity sweep ALL
+  CLEAN (frontmatter exact, printed==img+offset everywhere readable, 101 F-blocks with
+  markers, `$` balanced, sources resolve); tooling hardened (convert-page `--chapter-folder`/
+  `--book-title` injections; verify-v4 v4.3-aware with deep v3-baseline history walk);
+  M-4 imgs 0016/0019 footers pixel-verified absent → null. All gates green.
 
 ## Next actions (queue)
 
-1. **AWAITING USER:** the new books/chapters (scan packages). When they arrive run
-   `docs/PIPELINE.md` §1–§6 **in markdown-only mode (v4.3)** — recon → register → test-first
-   → 5-agent wave → audit → metadata; NO digital steps. Batch codes continue `M-2`, `S-3`, …
-   (a new book gets a new subject letter, e.g. `P-1` for Physics); register chapters in
-   `build-metadata.mjs` `BOOKS` and pass `--subject` to `convert-page.mjs` for new subjects.
+1. **AWAITING USER:** further books/chapters (scan packages) — same markdown-only runbook
+   (`docs/PIPELINE.md` §1–§6 in v4.3 mode). Batch codes continue `M-6`, `S-3`, … (new books
+   get new subject letters); register in `build-metadata.mjs` `BOOKS` + `verify-v4.mjs`
+   `BATCHES` (markdownOnly: true).
 2. **User input needed (M-1 cleanup):** user says Unit 01 contains **five exercises (1.1–1.5)**
    across its 36 pages and may share raw info to pin down exact boundaries. Current
    frontmatter records: Ex 1.1 @ img 8 · 1.2 @ img 18 · 1.3 @ img 24 · 1.4 @ img 30 ·

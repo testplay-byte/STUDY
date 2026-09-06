@@ -70,6 +70,6 @@ $$\begin{aligned}
 \Rightarrow \quad x \cos y &&&\Rightarrow \quad x \cos y = C \qquad (\frac{1}{c} = C)
 \end{aligned}$$
 
-## (ii) Initial Condition and Initial Value Problem (IVP)
+#### (ii) Initial Condition and Initial Value Problem (IVP)
 
 We have observed that general solution of differential equation contains the same number of arbitrary constants as is the order of differential equation. Sometimes we need to find the solution of `[left edge cut]` subject to the supplementary conditions.

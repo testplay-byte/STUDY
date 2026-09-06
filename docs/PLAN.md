@@ -1,6 +1,6 @@
 # Master Plan — Study Helper Planner
 
-> Living document. Updated at the end of every phase. Last updated: **Phase 4e (v4.3 markdown-only mode) COMPLETE — 2026-09-06**.
+> Living document. Updated at the end of every phase. Last updated: **Phase 5 (Mathematics Units 02–05, markdown-only v4.3) COMPLETE — 2026-09-06**.
 
 ## North Star
 
@@ -200,18 +200,35 @@ only** — no digital replica pages.
       GREEN (`verify-v4` 112/112; `check-digital --frozen --strict-figures` 112 intact),
       smoke conversion (S-1 img 3) → schema-valid draft matching canonical quality
 
-## Phase 5 — More books/chapters (READY — markdown-only mode v4.3, awaiting material)
+## Phase 5 — More books/chapters: Mathematics Units 02–05 (DONE 2026-09-06, markdown-only v4.3)
 
-- [ ] User supplies the new books/chapters (scan packages) → run `docs/PIPELINE.md` §1–§6
-      **in markdown-only mode (v4.3)**: intake → recon → register → test-first → 5-agent
-      wave → audit → metadata → push. **NO digital steps** (Digital frozen, CONVENTIONS §1.7)
-- [ ] Batch codes continue (`M-2`, `S-3`, …; a brand-new book gets a new subject letter,
-      e.g. `P-1` for Physics); Raw folders use original chapter names; Formatted folders use
-      `Chapter-<NN>-<TitleCase-Slug>`; register both in `build-metadata.mjs` `BOOKS` (add a
-      new subject entry for a new book) and pass `--subject` to `convert-page.mjs`
-- [ ] If a batch spans multiple chapters: split at recon time, record image ranges in chapter.json
-- [ ] Push gate per wave/audit: `bun tools/verify-v4.mjs && node tools/check-digital.mjs
-      --frozen --strict-figures` → ALL GREEN
+- [x] User delivered Units 02–05 as a FromSmash transfer (4 zips, 159.15 MB) — downloaded via
+      agent-browser URL-capture, verified by signed-URL content-disposition names + zip tests
+- [x] Recon: Unit 02 Limit, Continuity and Derivative (46 pp, 43–88, offset +42) · Unit 03
+      Integration (31 pp, 89–119, +88) · Unit 04 Differential Equations (20 pp, 120–139, +119) ·
+      Unit 05 Kinematics of Motion in a Straight Line (20 pp, 140–159, +139); continuity verified
+- [x] Registered M-2..M-5 in `build-metadata.mjs` BOOKS + `verify-v4.mjs` BATCHES
+      (markdownOnly) + Raw/Formatted skeletons; committed before conversion
+- [x] Test-first: 3 pages (M-2 opener, M-4 p.131, M-5 p.143 — two of them user-flagged problem
+      pages) — established the **scan-edge crop policy** + `--chapter-folder`/`--book-title`
+      converter injections
+- [x] Mass conversion via parallel sub-agent waves (11 runs + salvage passes + scoped
+      relaunches after context-deadline deaths) — all 117 pages placed and QA'd
+- [x] User-flagged cut-content pages (p.131, p.134, p.143) + cut folios handled: reconstructions
+      disclosed in notes; unrecoverable text marked `[edge cut]`; 8 scan-cut folios →
+      `page_printed: null` (pixel-verified), never computed
+- [x] Coordinator audit: full-library integrity sweep ALL CLEAN (117/117: frontmatter, H1s,
+      printed==img+offset cross-check, 101 F-blocks w/ markers, `$`-balance, sources resolve);
+      spot-checks vs scans; book typos preserved + logged
+- [x] Metadata + indexes regenerated; `verify-v4` ALL GREEN (112 legacy byte-verified +
+      117/117 markdown-only); `check-digital --frozen --strict-figures` ALL GREEN
+- [x] Docs synced (README registry, STATUS inventory/Phase 5, this file); WORKLOG complete
+
+### Next: more books/chapters (awaiting material)
+
+- [ ] User supplies further scan packages → same markdown-only runbook (v4.3); batch codes
+      continue `M-6`, `S-3`, …; register in BOOKS + BATCHES; pass `--chapter-folder` +
+      `--book-title` to the converter; push gate `verify-v4 && check-digital --frozen`
 
 ## Phase 6 — Library enrichment (backlog)
 

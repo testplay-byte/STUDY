@@ -5,13 +5,13 @@ from scans into a structured Markdown library, plus the tracking data and docume
 lets **any AI agent** (or the user, or a future web dashboard) pick up the project with full
 context. The sandbox is disposable — **this repository is the project's memory.**
 
-## 🎯 Current state: **Structure v4 + Digital replica test build complete** — 112/112 pages digitized & reorganized
+## 🎯 Current state: **v4.3 markdown-only mode — 229/229 pages digitized** (Mathematics Units 01–05 + Statistics Ch. 8–9)
 
-Two books, five batches, 112 scanned pages → 112 faithful Markdown pages, now organized in the
-three-branch **`Books/`** library (`Raw/` scans · `Formatted/` markdown · `Digital/` 8
-hand-typeset HTML replica pages + figure-crop assets). Every figure described in detail, every
-formula in LaTeX, every table as a GFM table, every page traceable to its raw scan. Full
-status: [`STATUS.md`](STATUS.md).
+Two books, nine batches, **229 scanned pages → 229 faithful Markdown pages**, organized in the
+three-branch **`Books/`** library (`Raw/` scans · `Formatted/` markdown · `Digital/` the frozen
+112-page generated replica edition of the legacy library). Every figure described in detail,
+every formula in LaTeX, every table as a GFM table, every page traceable to its raw scan.
+New books/chapters arrive in **markdown-only mode (v4.3)**. Full status: [`STATUS.md`](STATUS.md).
 
 ## 🧭 Start here
 
@@ -25,7 +25,7 @@ status: [`STATUS.md`](STATUS.md).
 
 | Subject | Book | Digitized |
 |---------|------|-----------|
-| Mathematics | *Textbook of Mathematics Grade 12* — National Book Foundation, Federal Textbook Board, Islamabad (National Curriculum of Pakistan 2022-23) | front matter (7) + **Unit 01: Functions and Graphs** (36) = **43 pages** |
+| Mathematics | *Textbook of Mathematics Grade 12* — National Book Foundation, Federal Textbook Board, Islamabad (National Curriculum of Pakistan 2022-23) | front matter (7) + **Unit 01: Functions and Graphs** (36, pp. 7–41) + **Unit 02: Limit, Continuity and Derivative** (46, pp. 43–88) + **Unit 03: Integration** (31, pp. 89–119) + **Unit 04: Differential Equations** (20, pp. 120–139) + **Unit 05: Kinematics of Motion in a Straight Line** (20, pp. 140–159) = **160 pages** |
 | Statistics | *Basic Statistics for Intermediate Classes, Part-II* — M. Saleem Akhtar, Majeed Book Depot (Federal Board) | front matter (9) + **Ch. 8: Set Theory** (10) + **Ch. 9: Probability** (50) = **69 pages** |
 
 > ℹ️ Scans are digitized **as printed**. The user's brief once said "Statistics chapters 1–2";

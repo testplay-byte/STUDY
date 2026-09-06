@@ -18,7 +18,7 @@ converted_by: "agent-13h (glm-vision)"
 notes: ""
 ---
 
-# Page 6 — Unit 5: Kinematics of Motion in a Straight Line
+# Page 6 — Unit 05: Kinematics of Motion in a Straight Line
 
 > 📄 Original scan: [0006.jpg](../../../Raw/Mathematics/Unit-05-Kinematics-of-Motion-in-a-Straight-Line/0006.jpg) · printed page 145
 

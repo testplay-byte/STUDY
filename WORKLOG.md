@@ -543,3 +543,88 @@ Stage Summary:
 - 5/11 placed (001-005); printed == image+119 cross-check OK where footer readable (120,121,122); two consecutive footer failures (p.123/124 equivalents) → null + notes, pixel-verified, never computed
 - No scan-edge LEFT/RIGHT text crops in 0001-0005 (the M-4 edge-crop pattern starts at p.131 = image 012, already handled by page-012); no Check Point boxes yet; Key Facts boxes on 002/003/004/005 all as blockquotes
 - QA method: convert-page.mjs (1 API round each) + neutral vqa.mjs vision quote-back passes per page + pixel band analysis for footer verification; 429 storms encountered — vqa retries absorbed them
+---
+Task ID: 13-h2
+Agent: agent-13h2
+Task: Convert M-5 images 0007-0012+0018-0020 (checkpoint 4/9)
+
+Work Log:
+- page-007 → Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-007.md ✔ (printed p.146, Ex 5.1 cont. Q.5-11; 3 velocity-time graphs F1-F3; typos 'time-displacement graph', Q.10 'velocity-time of the motion' missing 'graph', Q.11 ends mid-sentence '...and then' with graph after)
+- page-008 → page-008.md ✔ (printed p.147, Ex 5.1 cont. Q.11 fin-14 + §5.3 Velocity as Derivative of Displacement Function + Example 2 start; typos '2sint' ×2, 'for which it decelerating' preserved; left gutter strip = facing-page bleed, zoom-verified no content loss)
+- page-009 → page-009.md ✔ (printed p.148, Example 2 fin + §5.3.1 Acceleration as Derivative of Velocity and Displacement + Example 3 to 'Velocity at t = 4'; typos '2cost' ×2, 'Which is acceleration is a derivative of its velocity.' preserved)
+- page-010 → page-010.md ✔ (printed p.149, Example 3 fin (a(1), a(4)) + §§5.3.2/5.4 + Example 4 start; misprint a(4) = -37/800 (true -57/800) digit-by-digit verified as printed; §5.4 prints '∫a' without dt)
+
+Stage Summary:
+- 4/9 placed (007-010, printed 146-149); printed == image+139 cross-check OK on all four
+- Pattern so far: dark gutter/binding strip at far left of every scan with rotated facing-page bleed (axis labels 't (s)', 's (m)') — body text verified intact at zoom on 008; no [edge cut] markers needed; no Check Point/Key Facts boxes in range; figure-heavy only on 007 (3 graphs, figures_count 3 == 3 F-blocks)
+- Remaining: 0011, 0012, 0018, 0019, 0020
+---
+Task ID: 13-f2
+Agent: agent-13f2
+Task: Convert M-4 images 0009-0011+0017-0020 (completion)
+
+Work Log:
+- page-009 → Books/Formatted/Mathematics/Chapter-04-Differential-Equations/page-009.md ✔ (printed p.128, Example 6 + Check Point box + §4.4.1 Explicit and Implicit Solution + Example 7; no crops, no figures)
+- page-010 → page-010.md ✔ (printed p.129, §4.4.2 Number of Solutions + Exercise 4.1 Q.1-3 (i)-(vii); items (i)(ii)/(iii)(iv)/(v)(vi) side-by-side shared lines, (vii) alone; ultra-zoom verified (y'')³ two primes; typo 'each of differential equations' preserved)
+- page-011 → page-011.md ✔ (printed p.130, Ex 4.1 cont. 3(vi)+Q.4-6 + §4.5 + §4.5.1 + (i) Variable Separable sub-heading; (i) heading nested #### per page-003 pattern — sibling (ii) on already-placed page-012 sits flat ##, left untouched per scope, noted)
+- page-017 → page-017.md ✔ (printed p.136, Exercise 4.3 full Q.1-15 (1-3 three per row; 4/5, 6/7/8, 9/10 pairs+trio; 12-15 one per line w/ y(1)= same line) + §4.7 Applications starts + Example 16 problem + dv/dt=g start; no 'Slove' typo here — that was Ex 4.2 p.133)
+
+Stage Summary:
+- 4/7 placed (009-011 → printed 128-130; 017 → printed 136); printed == image+119 cross-check OK on all four, footer digits read from blue ribbon
+- No scan-edge crops on 0009-0011/0017 (checked both edges + footer on every page); no Key Facts/Check Point boxes except p.128 Check Point → blockquote; no figures
+- Remaining: images 0018-0020 (printed 137-139: Ex 16 tail + Review Exercise expected)
+---
+Task ID: 13-h2
+Agent: agent-13h2
+Task: Convert M-5 images 0007-0012+0018-0020 (completion)
+
+Work Log:
+- page-011 → Books/Formatted/Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line/page-011.md ✔ (printed p.150, Example 4 fin (A=0, B=0) + §5.5 Application of Mechanics in Real Life Situation + Example 5 to S = −½gt² + 10t; typos 'sint'/'cost', '10m/sec', capital 'V = 10m/sec' preserved)
+- page-012 → page-012.md ✔ (printed p.151, Example 5 fin (max height 50/g, total 100/g) + Exercise 5.2 banner + Q.1-3; typo 'Meinar-e-Pakistan' ×2, 'maximum height of projectile' preserved; continuity with 13i's page-013 Q.4 verified)
+- page-018 → page-018.md ✔ (printed p.157, Review Ex Q.1 MCQs (ii)-(viii) + F1 road-journey schematic + F2 train illustration; typos 'Which of following', 'lowest speed 40km/h' missing 'is', 'platform of station', 'What is length of train?' preserved; train '=' -like symbol + vehicle count resolved via 2 zoom passes: 2 carriages + locomotive, symbol directly above child figure; exercise id 'Review Exercise' per Ch-02 unnumbered-banner precedent)
+- page-019 → page-019.md ✔ (printed p.158, MCQ (ix) closes Q.1 + Review Ex Q.2 (car distance-time graph F1, A(0,0) B(10,200) C(30,200) D(60,500)) + Q.3 (athlete velocity-time graph F2, rise to 8 m/s @4 s, plateau to 14 s, rest @16 s); typos 'What is speed of car', 'for whole journey?', 'first 4 second', 'in final stage' preserved; axis labels verbatim 'Distance (m)'/'Time(s)'/'Velocity(m/s)')
+- page-020 → page-020.md ✔ (printed p.159, FINAL PAGE: Review Ex Q.4-5; no answers section/End-of-Unit marker/navigation chip; formulas zoom-verified v(t)=1/π+sin 3t, a=3 on [π/2,π], tan⁻¹(e^t); typos 'velocity of object', 'Find acceleration of the particle', 'speed of particle' preserved). CHAPTER 05 NOW COMPLETE 20/20
+
+Stage Summary:
+- 9/9 placed (007-012, 018-020 → printed 146-151 + 157-159); printed == image+139 cross-check OK on all nine (footer digit read from blue ribbon each time; none null)
+- Chapter-05-Kinematics-of-Motion-in-a-Straight-Line COMPLETE: pages 001-020 all present (001-006 agent-13h, 007-012+018-020 agent-13h2, 013-017 agent-13i)
+- Figures: 7 F-blocks total, figures_count == F-block count == inline markers on every page (F1-F3 on 007; F1-F2 on 018; F1-F2 on 019); no Check Point/Key Facts boxes anywhere in this batch
+- Scan edges: NO text crops in this batch; every scan carries a dark gutter/binding strip at far left with rotated facing-page bleed (t (s)/s (m) fragments) — zoom-verified body text intact on 008 and noted on all pages; no [edge cut] markers needed, nothing reconstructed
+- Book typos/misprints logged per page in notes incl. a(4) = −37/800 (p.149, true −57/800), '2sint'/'2cost', 'Meinar-e-Pakistan', 'Which of following', Q.11 p.146 mid-sentence '...and then' (graph printed after)
+- QA method: convert-page.mjs (1 API round each) + 1 full-page neutral vision pass per page (qa-page.mjs) + targeted zoom crops when passes conflicted (0008 left edge, 0018 train diagram ×2); $ parity, F-block/marker/count parity, H1 'Unit 05' wording, CAPS chapter_title machine-checked ALL GREEN on all 9; no other pages touched; no git commands
+
+---
+Task ID: 13-f2
+Agent: agent-13f2
+Task: Convert M-4 images 0009-0011+0017-0020 (completion)
+
+Work Log:
+- page-018 → page-018.md ✔ (printed p.137, Example 16 solution tail (v=gt, S=gt²/2, t=2.02sec, v=19.8m/s) + Example 17 Newton's cooling start + Check Point box → blockquote; book typos preserved: 'Integrating both sides, se have:', 'Which is velocity of the ball')
+- page-019 → page-019.md ✔ (printed page_printed: null — footer ribbon CUT at scan bottom, pixel-verified only ~26 top ribbon rows visible y≥3470/3496, digit unreadable; offset would suggest 138, never computed; Example 17 solution tail (c=60, k=−0.081, T=60e^{−0.081t}+30) + Exercise 4.4 Q.1-6 word problems; typos 'a radioactive substances', 'at the rate proportional', 'the temperature of thermometer' preserved; right edge zoom-verified complete)
+- page-020 → page-020.md ✔ (printed p.139 — FINAL PAGE of Unit 04; Review Exercise banner + Q.1 MCQs (i)-(x) + Q.2-4; MCQ (iii) options print 2×2 (ink-profile verified), all other MCQ options one row; Q.2 (i)/(ii), Q.3 (i)/(ii)+(iii)/(iv), Q.4 (i)(ii)(iii) share lines; exercise: "Review Exercise" per Ch-02 p.045/046 precedent; book misprint preserved: Q.4 (ii) '(y+1)dy/dx + x sinx' with no '= 0')
+- page-009 → notes updated post-placement: book prints 'Example 6' twice in a row (p.127 end AND p.128 top, zoom-verified on both scans) — duplicate example number is the book's own misprint, preserved; p.128's second heading verified 'Example 7'
+
+Stage Summary:
+- 7/7 placed (009-011 → printed 128-130; 017-020 → 136-null-139) — Chapter-04-Differential-Equations now COMPLETE (20/20 pages, 001-020)
+- printed == image+119 cross-check OK on 009/010/011/017/018/020; page-019 footer genuinely cut → null + pixel-verified note (never computed)
+- figures: 0 across all 7 pages (verified per-page, figures_count 0 == 0 F-blocks); sidebar boxes: Check Point on p.128 + p.137 → blockquotes; no Key Facts boxes in range
+- No left/right scan-edge crops in 0009-0011/0017-0020 (edge strips checked per page; 0019 bottom trim shaves only descenders of last line)
+- Book typos/misprints logged in notes: 'Example 6' ×2 consecutive pages, 'each of differential equations', 'se have:', 'Which is velocity', 'a radioactive substances', 'at the rate proportional', Q.4(ii) missing '= 0', k=−0.081 & v=19.8m/s arithmetic as printed
+- QA method: convert-page.mjs (1 API round each) + 2-4 neutral vqa.mjs passes per page (inventory, verbatim quote-backs, line-layout zooms, footer/edge crops) + PIL ink-profile pixel checks for footers and MCQ option wrapping; $ counts even on all 7; no other pages touched
+---
+Task ID: 13
+Agent: coordinator (Z.ai main)
+Task: Mathematics Units 02-05 digitized - 117 pages, markdown-only v4.3 (COMPLETE)
+
+Work Log:
+- FromSmash transfer downloaded (4 zips verified via content-disposition); 117 images inventoried (46/31/20/20, no gaps)
+- Recon: Unit 02 (+42, 43-88), Unit 03 (+88, 89-119), Unit 04 (+119, 120-139), Unit 05 (+139, 140-159); continuity verified
+- Test-first established the scan-edge crop policy; convert-page hardened (--chapter-folder/--book-title)
+- 11 sub-agent runs + salvage passes + scoped relaunches -> all 117 pages placed
+- User-flagged pages (p.131/p.134/p.143) + 8 scan-cut folios handled per policy: reconstructions in notes, [edge cut] markers, page_printed null (pixel-verified), never computed
+- Full-library audit ALL CLEAN (117/117 frontmatter/H1/offsets/figures/$-balance/sources); book typos preserved + logged
+- Gates ALL GREEN (verify-v4 v4.3-aware: 112 legacy byte-verified + 117 markdown-only; check-digital --frozen)
+- README/STATUS/PLAN synced; metadata + indexes regenerated
+
+Stage Summary:
+- Library now 229/229 pages (Mathematics Units 01-05 + Statistics Ch.8-9); all four new chapters complete and pushed; awaiting next books/chapters

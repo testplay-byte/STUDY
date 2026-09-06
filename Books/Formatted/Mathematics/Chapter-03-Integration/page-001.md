@@ -4,7 +4,7 @@ book_title: Mathematics (Grade 12)
 batch: M-3
 chapter_folder: Chapter-03-Integration
 chapter_number: 3
-chapter_title: Integration
+chapter_title: INTEGRATION
 page_image: 1
 page_printed: null
 section: null

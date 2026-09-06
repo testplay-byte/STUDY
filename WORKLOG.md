@@ -496,3 +496,18 @@ Stage Summary:
 - v4.3 mode live: new books/chapters → markdown only (Formatted layer); Digital frozen at the 112-page v3 library
 - Push gate for library work: bun tools/verify-v4.mjs && node tools/check-digital.mjs --frozen --strict-figures
 - Sandbox ready (PAT verified, staging dir present, VLM pipeline smoke-tested); awaiting the user's new books/chapters
+---
+Task ID: 13-prep
+Agent: coordinator (Z.ai main)
+Task: M-2..M-5 intake + recon + registration + test-first (117 pages, markdown-only v4.3)
+
+Work Log:
+- FromSmash transfer downloaded (4 zips verified by content-disposition), 117 images inventoried (46/31/20/20, no gaps)
+- Recon: Unit 02 Limit-Continuity-and-Derivative (+42, printed 43-88), Unit 03 Integration (+88, printed 89-119, opener folio scan-cut), Unit 04 Differential-Equations (+119, printed 120-139), Unit 05 Kinematics-of-Motion-in-a-Straight-Line (+139, printed 140-159); continuity verified
+- Problem pages (user-flagged): p.131/p.143 left-edge crops, p.134 right-edge crop; scan-edge reconstruction policy established + [edge cut] markers for unrecoverable text
+- Registered batches + BOOKS registry; skeleton commit 8d91f4e; test-first 3 pages (M-2/001, M-4/012, M-5/004) QA'd + placed; commit b8e2ffc
+- convert-page.mjs: --chapter-folder + --book-title injection flags added (fixes chapter_folder bug class found in tests)
+- Gates ALL GREEN (verify-v4, check-digital --frozen --strict-figures)
+
+Stage Summary:
+- 3/117 done, 114 remain; 5-agent Wave 1 (M-2 + M-3) + 4-agent Wave 2 (M-4 + M-5) planned with scan-edge policy embedded in every prompt

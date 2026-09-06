@@ -6,9 +6,9 @@ Tool scripts for the STUDY library. Layout v4 (user directive, 2026-09-03):
 Books/
 ├── Raw/<Subject>/<Original-Chapter-Name>/NNNN.jpg       # immutable scans
 ├── Formatted/<Subject>/Chapter-NN-<Title>/page-NNN.md   # canonical markdown (source of truth)
-└── Digital/                                             # HAND-TYPESET replica pages (test edition)
-    ├── <BATCH>-page-NNN.html                            # 8 curated pages, FLAT — no subfolders, no index
-    └── assets/<BATCH>-<NNN>-fig-<slug>.png              # figure crops from the raw scans
+└── Digital/                                             # Digital Edition v3 (generated, FROZEN — see below)
+    ├── index.html  manifest.json                        # library home + machine map
+    └── <Subject>/<Chapter-Folder>/page-NNN.html         # mirrors Formatted 1:1 (+ per-chapter assets/)
 ```
 
 `<Subject>` folders are TitleCase (`Mathematics`, `Statistics`); the frontmatter `subject:`
@@ -24,15 +24,19 @@ All scripts are **zero-dependency** (Node/Bun stdlib + Python stdlib/PIL) — no
 | `convert-page.mjs` | one scan → Markdown draft via the vision model (draft generator; agent QA still required) | `bun tools/convert-page.mjs …` |
 | `build-metadata.mjs` | regenerate `book.json` / `chapter.json` / `indexes/` from page frontmatter | `bun tools/build-metadata.mjs` |
 | `verify-v4.mjs` | integrity gate: tree shape, 112/112 counts, byte-verify pages vs git history, frontmatter/link coherence | `bun tools/verify-v4.mjs` |
-| `check-digital-test.mjs` | integrity gate for `Books/Digital/`: 8-page whitelist, figure self-containment (data-URI counts), link resolution, asset counts, KaTeX/`<main>` chrome | `bun tools/check-digital-test.mjs` |
+| `check-digital.mjs` | integrity gate for `Books/Digital/` (v3): coverage, chrome/links, data-URI figure counts vs `figures_count`, tree shape, manifest sync; `--frozen` = markdown-only mode (new Formatted pages without Digital twins are expected) | `node tools/check-digital.mjs [--strict-figures] [--frozen]` |
+| `gen-digital.mjs` | Digital Edition v3 generator: Formatted markdown → replica HTML (data-URI figures, manifest + index); never touches the 8 `HAND_TYPESET` exemplars | `node tools/gen-digital.mjs [--only …]` |
+| `optimize-assets.py` | palette-quantize PNG crops / JPEG-compress photos in the Digital chapter `assets/` dirs | `python3 tools/optimize-assets.py` |
 | `crop-figure.py` | crop figure images out of raw scans (fractional boxes), probe brand colors, render coordinate grids | `python3 tools/crop-figure.py …` |
 | `embed-figures.py` | optimize Digital figure assets (photo→JPEG, line-art→palette PNG) and embed them into the pages as base64 data URIs | `python3 tools/embed-figures.py` |
 | `prompt.txt` | canonical VLM conversion prompt (read directly by `convert-page.mjs`) | — |
 
 Retired one-off migrations, kept for the audit trail (never run again):
-`migrate-v3.mjs` (v2→v3), `migrate-v4.mjs` (v3→v4), `fix-v4-casing.mjs` (TitleCase follow-up).
+`migrate-v3.mjs` (v2→v3), `migrate-v4.mjs` (v3→v4), `fix-v4-casing.mjs` (TitleCase follow-up),
+`check-digital-test.mjs` + `embed-figures.py` (v4.1 8-page era, retired by v3).
 `generate-digital.mjs` + `check-digital-links.mjs` were **deleted** (2026-09-03): they built
-and checked the rejected generated Digital design — see "The Digital edition" below.
+and checked the rejected generated Digital design — its modern successor is `gen-digital.mjs`
+(Digital Edition v3, different design; see the final section of this file).
 
 ## convert-page.mjs
 
@@ -106,8 +110,8 @@ script — update it there when registering a new chapter (see `docs/PIPELINE.md
 - **Curated whitelist ONLY (8 pages):** `M1-page-001/023/025.html` (Mathematics, Unit-01,
   printed = image + 6) · `S1-page-003/005/006.html` (Statistics Ch. 8 Set Theory, printed =
   image) · `S2-page-005/042.html` (Statistics Ch. 9 Probability, printed = image + 10). The
-  whitelist is enforced by `check-digital-test.mjs`; adding pages requires the user's OK and a
-  whitelist edit in that script.
+  whitelist (historical; in v3 the exemplar list lives in `HAND_TYPESET` inside
+  `gen-digital.mjs` and is never regenerated).
 - **Flat layout, batch-coded filenames:** `Books/Digital/<BATCH>-page-NNN.html` — batch codes
   disambiguate same-numbered pages (S-1 p5 vs S-2 p5) and match the user's own chapter naming.
   No subject/chapter subfolders, no `index.html`.
@@ -148,26 +152,15 @@ script — update it there when registering a new chapter (see `docs/PIPELINE.md
    JPEG q82, line art → 256-color palette PNG) and inlines each one into the pages as a
    base64 data URI (also rewrites the canonical asset in place). Idempotent — re-run after
    editing any page's `<img>` back to `assets/…` or after changing a crop.
-4. **Verify:** `bun tools/check-digital-test.mjs` → ALL GREEN (8/8 pages, 14 embedded
-   figures, expected counts per page). Then browser-check (agent-browser or manual): KaTeX
-   renders, figures load (`naturalWidth > 0`), no horizontal overflow at 1280px and ~390px,
-   zero console errors.
+4. **Verify (historical, v4.1 era):** `bun tools/check-digital-test.mjs` → ALL GREEN (8/8
+   pages, 14 embedded figures). Superseded by `check-digital.mjs` — see the v3 section below.
+   Browser-check (agent-browser or manual): KaTeX renders, figures load (`naturalWidth > 0`),
+   no horizontal overflow at 1280px and ~390px, zero console errors.
 
-### check-digital-test.mjs (the Digital gate)
+### check-digital-test.mjs (the v4.1-era Digital gate — RETIRED by v3)
 
-Plain Node/Bun, zero dependencies. It asserts that `Books/Digital/` contains **exactly** the
-8 whitelisted `.html` files + `assets/` and nothing else (no extra `.html`, no `index.html`,
-no strays); enforces **self-containment** — each page must embed exactly its expected figure
-count as base64 data URIs (`EXPECTED_FIGURES` map) and must NOT carry relative
-`src="assets/…"` references; extracts every remaining `href`/`src`, ignores external schemes
-(`http(s)`, `#`, `mailto:`, `data:`), resolves each relative target against the page's
-directory and requires it to exist on disk; requires a KaTeX CDN stylesheet and a `<main>`
-per page; requires `assets/` to hold exactly the expected 14 crops (`.png` line art +
-`.jpg` photos). Per-file + total summary; exit 1 with a clear ✗ report on any failure.
-
-```bash
-bun tools/check-digital-test.mjs     # or: node tools/check-digital-test.mjs
-```
+Retired with the 8-page test edition (kept in git history only). The current Digital gate is
+`check-digital.mjs` — see the v3 section at the bottom of this file.
 
 ### ⚠️ KaTeX CSS-scoping gotcha (learned the hard way)
 
@@ -177,15 +170,18 @@ descendant selector like `span { display: …; margin: …; white-space: nowrap;
 KaTeX's internal spans and shreds the formulas. Always namespace page CSS under the page's
 own classes.
 
-## verify-v4.mjs / check-digital-test.mjs — integrity verifiers
+## verify-v4.mjs / check-digital.mjs — integrity verifiers
 
 ```bash
-bun tools/verify-v4.mjs             # tree shape, 112/112 counts, byte-verify every page vs
-                                    # git history (v3 baseline) + rewrites, frontmatter/links
-bun tools/check-digital-test.mjs    # Books/Digital whitelist, links, assets, KaTeX/<main>
+bun tools/verify-v4.mjs                        # tree shape, per-batch img⇄md counts, byte-verify
+                                               # every page vs git history + frontmatter/links
+node tools/check-digital.mjs --strict-figures  # Digital gate: coverage/chrome/figures/tree/manifest
+node tools/check-digital.mjs --frozen --strict-figures  # v4.3 markdown-only push gate (see below)
 ```
 
 Run both after any structural change. CI-style rule: **no push with a failing verifier.**
+In markdown-only mode (v4.3) new batches never add Digital pages, so the push gate for library
+work is `verify-v4.mjs` + `check-digital.mjs --frozen --strict-figures`.
 
 ## prompt.txt
 
@@ -197,10 +193,10 @@ v3 fields, v4 path examples). Documented snapshot + changelog: `docs/prompts/vlm
 
 `generate-digital.mjs` generated `Books/Digital/` HTML from the Formatted markdown (the
 "scan pane + formatted transcription" design, commit 26bc1c0) and `check-digital-links.mjs`
-checked its links. The user rejected that design; Digital is now hand-typeset (no generator
-exists, so nothing can regenerate pages — edits happen in the HTML itself) and
-`check-digital-links.mjs` is superseded by `check-digital-test.mjs`, which also enforces the
-whitelist + asset containment. History: `WORKLOG.md` Tasks 7-v4 → 9.
+checked its links. The user rejected that design; the 8-page hand-typeset era followed, and
+the current generated library is Digital Edition v3 via `gen-digital.mjs` (different design:
+true replica rendering, data-URI figures, manifest — see below). History: `WORKLOG.md`
+Tasks 7-v4 → 9, then Task 11.
 
 ---
 
@@ -248,12 +244,28 @@ Books/Digital/
 ```bash
 node tools/check-digital.mjs                    # coverage/chrome/links/figures/tree/manifest
 node tools/check-digital.mjs --strict-figures   # push gate: zero placeholders allowed
+node tools/check-digital.mjs --frozen --strict-figures  # v4.3 markdown-only mode (see below)
 python3 tools/optimize-assets.py                # palette-quantize PNGs, JPEG q82 photos
 python3 tools/crop-figure.py grid <scan> /tmp/grid-X.jpg   # parallel-safe grid output
 ```
 
 `crop-figure.py crop` now saves `.jpg` for photo crops too. `embed-figures.py` and
 `check-digital-test.mjs` are retired by v3 (kept in history only).
+
+### ⚠️ FROZEN since 2026-09-06 (v4.3 markdown-only mode — user directive)
+
+New books/chapters are digitized to **markdown only** (the Formatted layer). The Digital
+library above is **frozen exactly as built** — no new HTML pages, no new figure crops, no
+`gen-digital.mjs` runs for new chapters — unless the user later directs otherwise. Because
+`check-digital.mjs` coverage would otherwise fail on Formatted pages that intentionally have
+no Digital twin, library work on new batches pushes with:
+
+```bash
+bun tools/verify-v4.mjs && node tools/check-digital.mjs --frozen --strict-figures
+```
+
+`--frozen` counts Formatted pages without a Digital twin as expected (and still hard-fails if
+any existing Digital page loses its md — that remains a real regression).
 
 ### Lessons learned (v3 build)
 

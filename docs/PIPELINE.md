@@ -3,6 +3,13 @@
 > This is the operational runbook. Rules & schemas live in `docs/CONVENTIONS.md` (binding).
 > Current status lives in `STATUS.md`. History lives in `WORKLOG.md`.
 
+> **⚠️ MODE (v4.3, user directive 2026-09-06): new books/chapters are digitized to MARKDOWN
+> ONLY.** Run this runbook §1–§6 as written EXCEPT the digital-replica steps (§6 step 5 —
+> skip it). The Digital layer is frozen at the 112-page v3 library; figures stay as
+> structured F-block descriptions in the markdown. Push gate: `bun tools/verify-v4.mjs` &&
+> `node tools/check-digital.mjs --frozen --strict-figures` (the `--frozen` flag accepts
+> Formatted pages that intentionally have no Digital twin). Full policy: CONVENTIONS §1.7.
+
 ## 0. Sandbox recovery (fresh agent, wiped sandbox)
 
 1. Clone: `git clone https://github.com/testplay-byte/STUDY.git` (PAT provided by the user in
@@ -86,10 +93,13 @@ Before any mass conversion:
 3. Integrity sweep: frontmatter complete on every file; `$` balance; `figures_count` ==
    F-blocks; every `source_image` resolves; no page uses a sub-folder.
 4. `bun tools/build-metadata.mjs` (regenerates book.json / chapter.json / indexes).
-5. Digital replica pages (if this batch adds any — user-approved whitelist only) are
-   **hand-typeset**, not generated: crop figures with `python3 tools/crop-figure.py`, write
-   the page per CONVENTIONS §1.5, then `bun tools/check-digital-test.mjs` → ALL GREEN 8/8.
-6. `bun tools/verify-v4.mjs` && `bun tools/check-digital-test.mjs` — must be ALL GREEN.
+5. ~~Digital replica pages~~ **SKIPPED in markdown-only mode (v4.3, CONVENTIONS §1.7):** new
+   batches add NO Digital pages — no figure crops, no `gen-digital.mjs`, no HTML. The Digital
+   library is frozen at the 112-page v3 edition. (If the user ever re-enables digital for a
+   batch, this step returns as: hand-typeset pages per CONVENTIONS §1.5 +
+   `check-digital.mjs --strict-figures` ALL GREEN.)
+6. `bun tools/verify-v4.mjs && node tools/check-digital.mjs --frozen --strict-figures` —
+   must be ALL GREEN.
 7. Update `STATUS.md`, `README.md` (counts), `docs/PLAN.md` (checklist), `WORKLOG.md`
    (final section), then **commit + push**.
 
@@ -113,11 +123,8 @@ bun tools/convert-page.mjs \
 # regenerate all metadata + indexes after any page change
 bun tools/build-metadata.mjs
 
-# after any Digital replica page add/edit: verify the 8-page whitelist + links + assets
-bun tools/check-digital-test.mjs
-
 # integrity sweep (both gates must be ALL GREEN before any push)
-bun tools/verify-v4.mjs && bun tools/check-digital-test.mjs
+bun tools/verify-v4.mjs && node tools/check-digital.mjs --frozen --strict-figures
 ```
 
 `convert-page.mjs` flags: `--thinking` for very dense math pages; auto-continue handles

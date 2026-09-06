@@ -4,11 +4,19 @@
  *
  * Plain Node (ESM, zero dependencies). Read-only.
  *
- *   node tools/check-digital.mjs [--strict-figures]
+ *   node tools/check-digital.mjs [--strict-figures] [--frozen]
+ *
+ * --frozen (v4.3 markdown-only mode): the Digital layer is FROZEN at the edition it
+ *   was built for (user directive 2026-09-06 — new books/chapters are digitized to
+ *   markdown only). Formatted pages without a Digital twin are counted, not failed;
+ *   everything else (chrome/figures/tree/manifest over existing Digital pages, plus
+ *   the reverse-orphan regression check) is enforced exactly as usual.
  *
  * Checks
  *   1. Coverage  — every Books/Formatted page-NNN.md has a matching generated
- *                  (or hand-typeset) Books/Digital/<Book>/<Chapter>/page-NNN.html.
+ *                  (or hand-typeset) Books/Digital/<Book>/<Chapter>/page-NNN.html
+ *                  (— in --frozen mode missing twins are counted, not failed),
+ *                  and every Digital page still has its Formatted md (regression check).
  *   2. Chrome    — every page has <main>, KaTeX CDN css, viewport meta, a
  *                  toolbar scan link + markdown link that resolve on disk,
  *                  and the library index link.
@@ -37,6 +45,7 @@ const FORMATTED = path.join(BOOKS, "Formatted");
 const DIGITAL = path.join(BOOKS, "Digital");
 
 const STRICT = process.argv.includes("--strict-figures");
+const FROZEN = process.argv.includes("--frozen");
 
 const failures = [];
 const warnings = [];
@@ -55,13 +64,17 @@ for (const book of fs.readdirSync(FORMATTED, { withFileTypes: true })) {
   }
 }
 
-let pagesChecked = 0, figuresEmbeddedTotal = 0, slotsPendingTotal = 0;
+let pagesChecked = 0, figuresEmbeddedTotal = 0, slotsPendingTotal = 0, frozenSkipped = 0;
 
 for (const md of mdFiles.sort()) {
   const relBooks = path.relative(BOOKS, md).replace(/^Formatted\//, "Digital/").replace(/\.md$/, ".html");
   const htmlPath = path.join(BOOKS, relBooks);
   const pageDir = path.dirname(htmlPath);
-  if (!fs.existsSync(htmlPath)) { fail(`MISSING page: ${relBooks}`); continue; }
+  if (!fs.existsSync(htmlPath)) {
+    if (FROZEN) { frozenSkipped++; continue; }
+    fail(`MISSING page: ${relBooks}`);
+    continue;
+  }
   pagesChecked++;
   const html = fs.readFileSync(htmlPath, "utf8");
 
@@ -94,6 +107,26 @@ for (const md of mdFiles.sort()) {
 
   /* the regression class */
   if (/src="assets\//.test(html)) fail(`${relBooks}: relative assets/ src (must be data URI)`);
+}
+
+/* ---------- 1b: reverse coverage — a Digital page whose md vanished is always a regression ---------- */
+const mdSet = new Set(
+  mdFiles.map((m) =>
+    path.relative(BOOKS, m).replace(/^Formatted\//, "Digital/").replace(/\.md$/, "")
+  )
+);
+let digitalCount = 0;
+for (const book of fs.readdirSync(DIGITAL, { withFileTypes: true })) {
+  if (!book.isDirectory()) continue;
+  for (const chap of fs.readdirSync(path.join(DIGITAL, book.name), { withFileTypes: true })) {
+    if (!chap.isDirectory()) continue;
+    for (const f of fs.readdirSync(path.join(DIGITAL, book.name, chap.name))) {
+      if (!/^page-\d+\.html$/.test(f)) continue;
+      digitalCount++;
+      const rel = `Digital/${book.name}/${chap.name}/${f.replace(/\.html$/, "")}`;
+      if (!mdSet.has(rel)) fail(`Digital page without Formatted md (regression): ${rel}`);
+    }
+  }
 }
 
 /* ---------- 4: tree shape ---------- */
@@ -140,6 +173,10 @@ else {
 
 /* ---------- report ---------- */
 console.log(`pages checked: ${pagesChecked} | figures embedded: ${figuresEmbeddedTotal} | pending slots: ${slotsPendingTotal}`);
+if (FROZEN)
+  console.log(
+    `frozen mode (v4.3 markdown-only): ${frozenSkipped} Formatted page(s) without a Digital twin (expected) · digital pages intact: ${digitalCount}`
+  );
 for (const w of warnings) console.log(`  ⚠ ${w}`);
 for (const f of failures) console.log(`  ✗ ${f}`);
 if (failures.length) { console.log(`\nFAIL — ${failures.length} problem(s)`); process.exit(1); }

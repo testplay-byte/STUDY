@@ -1,6 +1,6 @@
 # Master Plan — Study Helper Planner
 
-> Living document. Updated at the end of every phase. Last updated: **Phase 4c (digital replica test build) COMPLETE — 2026-09-03**.
+> Living document. Updated at the end of every phase. Last updated: **Phase 4e (v4.3 markdown-only mode) COMPLETE — 2026-09-06**.
 
 ## North Star
 
@@ -162,12 +162,56 @@ text, KaTeX math, data tables and figure images, not a scan viewer beside plain 
 - [x] Docs synced (CONVENTIONS §0/§1/§5/§7, PIPELINE, PLAN, README, AGENTS, STATUS,
       tools/README, PROGRESS-LOG, WORKLOG)
 
-## Phase 5 — More books/chapters (ready, awaiting material)
+## Phase 4d — Digital Edition v3: full 112-page library (DONE 2026-09-04, commit `1d76c63`)
 
-- [ ] User supplies next scan batch(es) → run `docs/PIPELINE.md` §1–§6 end-to-end
-- [ ] Batch codes continue (`M-2`, `S-3`, …); Raw folders use original chapter names; Formatted
-      folders use `Chapter-<NN>-<TitleCase-Slug>`; register both in `build-metadata.mjs` `BOOKS`
+User go-ahead: "let's build the digital versions of all the pages so far … with a proper
+structure of the folders."
+
+- [x] `Books/Digital/` restructured to mirror Raw/Formatted 1:1
+      (`<Subject>/<Chapter-Folder>/page-NNN.html` + per-chapter `assets/`)
+- [x] `tools/gen-digital.mjs` — replica generator (math-ribbon / stats-cream design
+      languages, KaTeX, MCQ/ANSWERS grids, math-aware table splitting, data-URI figure
+      embedding, placeholder-until-cropped slots, manifest + index emission)
+- [x] All 112 pages generated; the 8 hand-typeset exemplars preserved verbatim
+      (`HAND_TYPESET` list, never overwritten)
+- [x] 116 figure crops embedded as base64 data URIs (parallel subagent cropping waves +
+      coordinator; pixel-scan QA — VLM clip-verdicts proved unreliable on line art)
+- [x] `tools/check-digital.mjs --strict-figures` gate (replaces check-digital-test.mjs);
+      `tools/optimize-assets.py` (12.2MB → ~4MB assets); ALL GREEN 112/112
+- [x] Browser-verified (agent-browser): index + 15 sampled pages @1280px/390px, zero broken
+      images / console errors; Next.js viewer (`src/app/page.tsx`) rebuilt on manifest.json
+- [x] Docs synced (CONVENTIONS §1.6, tools/README v3 section, STATUS, PLAN, WORKLOG)
+
+## Phase 4e — v4.3 markdown-only mode (DONE 2026-09-06)
+
+User directive: more books and chapters are coming; new material gets **markdown versions
+only** — no digital replica pages.
+
+- [x] Policy codified: Digital layer FROZEN at the v3 library; future batches stop at the
+      Formatted layer; figures stay as structured F-block descriptions (CONVENTIONS §1.7 +
+      changelog v4.3)
+- [x] `check-digital.mjs --frozen` added: Formatted pages without Digital twins counted as
+      expected; new reverse-orphan regression check (a Digital page losing its md = hard
+      failure); fire-drilled (simulated md-only page → frozen GREEN, normal correctly FAILS)
+- [x] Docs synced: CONVENTIONS (changelog + §1.7 + stale-gate fixes), PIPELINE (mode note +
+      §6 digital step skipped), STATUS (Phase 4e), AGENTS (mode + repo map + gates),
+      tools/README (v3 gate, --frozen, retired-tool notes)
+- [x] Environment re-verified ready: git sync OK (PAT works, tree clean), both gates ALL
+      GREEN (`verify-v4` 112/112; `check-digital --frozen --strict-figures` 112 intact),
+      smoke conversion (S-1 img 3) → schema-valid draft matching canonical quality
+
+## Phase 5 — More books/chapters (READY — markdown-only mode v4.3, awaiting material)
+
+- [ ] User supplies the new books/chapters (scan packages) → run `docs/PIPELINE.md` §1–§6
+      **in markdown-only mode (v4.3)**: intake → recon → register → test-first → 5-agent
+      wave → audit → metadata → push. **NO digital steps** (Digital frozen, CONVENTIONS §1.7)
+- [ ] Batch codes continue (`M-2`, `S-3`, …; a brand-new book gets a new subject letter,
+      e.g. `P-1` for Physics); Raw folders use original chapter names; Formatted folders use
+      `Chapter-<NN>-<TitleCase-Slug>`; register both in `build-metadata.mjs` `BOOKS` (add a
+      new subject entry for a new book) and pass `--subject` to `convert-page.mjs`
 - [ ] If a batch spans multiple chapters: split at recon time, record image ranges in chapter.json
+- [ ] Push gate per wave/audit: `bun tools/verify-v4.mjs && node tools/check-digital.mjs
+      --frozen --strict-figures` → ALL GREEN
 
 ## Phase 6 — Library enrichment (backlog)
 

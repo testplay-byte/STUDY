@@ -476,3 +476,23 @@ Stage Summary:
 
 Docs: CONVENTIONS v4.2 + §1.6; tools/README rewritten for v3. Next.js viewer rebuilt as a
 full library browser reading manifest.json at request time.
+---
+Task ID: 12
+Agent: coordinator (Z.ai main)
+Task: Prepare environment for new books/chapters — declare v4.3 markdown-only mode (user directive 2026-09-06)
+
+Work Log:
+- Synced with GitHub: PAT verified (git pull → already up to date), tree clean at 1d76c63 (Digital Edition v3)
+- Context research: full docs re-read (AGENTS → STATUS → CONVENTIONS → PIPELINE → PLAN → tools/README)
+- User directive: new books/chapters are coming and will be digitized to MARKDOWN ONLY (no digital replicas)
+- tools/check-digital.mjs: added --frozen flag (markdown-only mode — Formatted pages without Digital twins counted as expected) + reverse-orphan regression check (Digital page losing its md = hard failure)
+- Fire drills: normal gate ALL GREEN (112/116); frozen ALL GREEN (0 missing, 112 intact); simulated md-only page → frozen GREEN / normal correctly FAILS; cleanup verified
+- Pipeline smoke test: convert-page.mjs on S-1 img 0003.jpg → schema-valid draft (frontmatter complete, $-balance OK, 4 F-blocks == figures_count == canonical; length within 2% of canonical)
+- Docs codified v4.3: CONVENTIONS (changelog v4.3 + §1.7 + §1.5 historical + stale-gate fixes), PIPELINE (mode banner + §6 digital step skipped), STATUS (Phase 4d/4e + queue), AGENTS (mode + repo map + gates), PLAN (Phase 4d/4e + Phase 5 rewrite), tools/README (v3 gate + --frozen + retired notes)
+- build-metadata.mjs no-op diff confirmed; final gates ALL GREEN (verify-v4 112/112; check-digital --frozen --strict-figures 112 intact)
+- Committed + pushed
+
+Stage Summary:
+- v4.3 mode live: new books/chapters → markdown only (Formatted layer); Digital frozen at the 112-page v3 library
+- Push gate for library work: bun tools/verify-v4.mjs && node tools/check-digital.mjs --frozen --strict-figures
+- Sandbox ready (PAT verified, staging dir present, VLM pipeline smoke-tested); awaiting the user's new books/chapters

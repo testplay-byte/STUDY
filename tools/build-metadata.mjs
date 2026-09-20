@@ -49,6 +49,9 @@ const BOOKS = {
       { folder: 'Chapter-06-Analytical-Geometry', rawFolder: 'Unit-06-Analytical-Geometry', batch: 'M-6', kind: 'chapter', chapter_number: 6, chapter_label: 'Unit 06', title: 'Analytical Geometry', printed_page_offset: '+159' },
       { folder: 'Chapter-07-Conic-Section', rawFolder: 'Unit-07-Conic-Section', batch: 'M-7', kind: 'chapter', chapter_number: 7, chapter_label: 'Unit 07', title: 'Conic Section', printed_page_offset: '+181' },
       { folder: 'Chapter-08-Inverse-Trigonometric-Functions-and-Their-Graphs', rawFolder: 'Unit-08-Inverse-Trigonometric-Functions-and-Their-Graphs', batch: 'M-8', kind: 'chapter', chapter_number: 8, chapter_label: 'Unit 08', title: 'Inverse Trigonometric Functions and Their Graphs', printed_page_offset: '+229' },
+      { folder: 'Chapter-09-Solution-of-Trigonometric-Equations', rawFolder: 'Unit-09-Solution-of-Trigonometric-Equations', batch: 'M-9', kind: 'chapter', chapter_number: 9, chapter_label: 'Unit 09', title: 'Solution of Trigonometric Equations', printed_page_offset: '+261' },
+      { folder: 'Chapter-10-Numerical-Methods', rawFolder: 'Unit-10-Numerical-Methods', batch: 'M-10', kind: 'chapter', chapter_number: 10, chapter_label: 'Unit 10', title: 'Numerical Methods', printed_page_offset: '+273' },
+      { folder: 'Chapter-99-Back-Matter', rawFolder: 'Back-Matter', batch: 'M-BM', kind: 'back-matter', printed_page_offset: '+289' },
     ],
   },
   statistics: {

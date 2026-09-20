@@ -648,3 +648,22 @@ Stage Summary:
 - Commits this phase: 72552b0 7d93aa6 c41615c 62947a9 c6c6201 c3fd269 83392cb 4dd7173 97c7bc5 + metadata/docs
 - Preserved misprints logged in per-page notes (x-21=X, y=1, wil, B(4,0), 3600x1000/7, V(030), capital Cos/Sin, 1<=x,y<=-1, restated-LHS chain, iv.' apostrophe, reversed inequalities, 13/15 option)
 - NEXT: user's new transfer with Unit 09, Unit 10 + back matter (Answers/Index/Glossary) -> batch codes M-9/M-10/M-BM
+---
+Task ID: 17 (final)
+Agent: coordinator (Z.ai main)
+Task: Mathematics book COMPLETE - Units 09, 10 + Back Matter digitized (55 pages)
+
+Work Log:
+- Downloaded CH-9-10-L transfer (71.23 MB, 3 zips) via agent-browser signed-URL capture; recon verified chain 261->316 continuous (offsets +261/+273/+289)
+- Registered M-9 (Unit-09-Solution-of-Trigonometric-Equations, 12pp), M-10 (Unit-10-Numerical-Methods, 16pp), M-BM (Back-Matter -> Chapter-99-Back-Matter, 27pp, kind back-matter) in BATCHES + BOOKS; skeleton commit 2802a09
+- Test-first 4 pages (M-9 001-002, M-BM 001-002) validated conventions: chapter CAPS titles, H1 patterns, M-BM front-matter enum, figures_count==markers==F-blocks
+- Converted all 55 pages via controlled sequential pipeline; every draft coordinator-reviewed against its scan with PIL zoom crops for ambiguous glyphs; committed in ~4-page batches (f0fd084..bc3e7cd)
+- Preserved dozens of book misprints with per-page notes; MATLAB boxes as fenced code (never figures); banner furniture excluded from figures; hfill/nbsp normalized to library conventions
+- 4 scan-cut folios -> page_printed null with pixel-verified notes (M-10 0004/0016, M-BM 0002/0016... verified per page)
+- Final audit: 55/55 ALL CLEAN ($-parity, F-block parity, offset cross-check, canon, enum); metadata regenerated (book.json + chapter.json x3 + indexes/mathematics.md)
+- Gates: verify-v4 ALL GREEN (386/386 raw imgs, 274/274 markdown-only placed); check-digital --frozen --strict-figures ALL GREEN
+
+Stage Summary:
+- LIBRARY NOW 386 PAGES: Mathematics 317 (FM 7 + Units 01-10 + Back Matter 27 = 7+36+46+31+20+20+22+48+32+12+16+27) + Statistics 69
+- THE MATHEMATICS BOOK IS FULLY DIGITIZED (markdown-only): front matter, all 10 units, all answers, glossary, symbols, index, about-authors
+- Next: await user direction

@@ -1,7 +1,7 @@
 # Index — mathematics
 
 **Book:** Textbook of Mathematics Grade 12 — National Book Foundation as Federal Textbook Board, Islamabad  
-**Digitized pages:** 262 · **Raw images:** 262 · Structure **v4** (Books/{Raw, Formatted, Digital})
+**Digitized pages:** 317 · **Raw images:** 317 · Structure **v4** (Books/{Raw, Formatted, Digital})
 
 > Machine-readable equivalents: `Books/Formatted/Mathematics/book.json` + `chapter.json` in every chapter folder.
 > Digital replica test edition: `Books/Digital/` — 8 hand-typeset pages (`<BATCH>-page-NNN.html` + assets/, user-approved whitelist; see docs/CONVENTIONS.md §1.5).
@@ -357,6 +357,91 @@
 | 30 | 259 | [page-030.md](../Books/Formatted/Mathematics/Chapter-08-Inverse-Trigonometric-Functions-and-Their-Graphs/page-030.md) | mixed | 8.3 |  | 0 |
 | 31 | 260 | [page-031.md](../Books/Formatted/Mathematics/Chapter-08-Inverse-Trigonometric-Functions-and-Their-Graphs/page-031.md) | exercise | 8.3 |  | 0 |
 | 32 | 261 | [page-032.md](../Books/Formatted/Mathematics/Chapter-08-Inverse-Trigonometric-Functions-and-Their-Graphs/page-032.md) | exercise | Review Exercise |  | 0 |
+
+---
+
+## M-9 — Unit 09: Solution of Trigonometric Equations
+
+- Markdown (`Formatted`): `Books/Formatted/Mathematics/Chapter-09-Solution-of-Trigonometric-Equations/` · Raw scans: `Books/Raw/Mathematics/Unit-09-Solution-of-Trigonometric-Equations/` · HTML (test): `Books/Digital/Mathematics/Chapter-09-Solution-of-Trigonometric-Equations/`
+- Pages: 12 · Printed range: 262–273 · Offset: +261
+
+| Image | Printed | File | Type | Exercise | Section(s) | Fig. |
+|------:|--------:|------|------|----------|------------|-----:|
+| 1 | 262 | [page-001.md](../Books/Formatted/Mathematics/Chapter-09-Solution-of-Trigonometric-Equations/page-001.md) | chapter-opener | — |  | 1 |
+| 2 | 263 | [page-002.md](../Books/Formatted/Mathematics/Chapter-09-Solution-of-Trigonometric-Equations/page-002.md) | theory | — | 9.1 Trigonometric Equations; Standard Intervals and Periods… | 0 |
+| 3 | 264 | [page-003.md](../Books/Formatted/Mathematics/Chapter-09-Solution-of-Trigonometric-Equations/page-003.md) | worked-examples | — |  | 0 |
+| 4 | 265 | [page-004.md](../Books/Formatted/Mathematics/Chapter-09-Solution-of-Trigonometric-Equations/page-004.md) | exercise | 9.1 |  | 0 |
+| 5 | 266 | [page-005.md](../Books/Formatted/Mathematics/Chapter-09-Solution-of-Trigonometric-Equations/page-005.md) | mixed | — | 9.2 Graphical Solution of the Trigonometric Equations | 0 |
+| 6 | 267 | [page-006.md](../Books/Formatted/Mathematics/Chapter-09-Solution-of-Trigonometric-Equations/page-006.md) | worked-examples | — |  | 0 |
+| 7 | — | [page-007.md](../Books/Formatted/Mathematics/Chapter-09-Solution-of-Trigonometric-Equations/page-007.md) | worked-examples | — |  | 2 |
+| 8 | — | [page-008.md](../Books/Formatted/Mathematics/Chapter-09-Solution-of-Trigonometric-Equations/page-008.md) | worked-examples | — |  | 1 |
+| 9 | 270 | [page-009.md](../Books/Formatted/Mathematics/Chapter-09-Solution-of-Trigonometric-Equations/page-009.md) | mixed | 9.2 | Exercise 9.2; 9.3 Daily Life Applications of Inverse Trigon… | 2 |
+| 10 | 271 | [page-010.md](../Books/Formatted/Mathematics/Chapter-09-Solution-of-Trigonometric-Equations/page-010.md) | exercise | 9.3 |  | 0 |
+| 11 | 272 | [page-011.md](../Books/Formatted/Mathematics/Chapter-09-Solution-of-Trigonometric-Equations/page-011.md) | exercise | Review Exercise |  | 0 |
+| 12 | 273 | [page-012.md](../Books/Formatted/Mathematics/Chapter-09-Solution-of-Trigonometric-Equations/page-012.md) | exercise | Review Exercise |  | 0 |
+
+---
+
+## M-10 — Unit 10: Numerical Methods
+
+- Markdown (`Formatted`): `Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/` · Raw scans: `Books/Raw/Mathematics/Unit-10-Numerical-Methods/` · HTML (test): `Books/Digital/Mathematics/Chapter-10-Numerical-Methods/`
+- Pages: 16 · Printed range: 274–288 · Offset: +273
+
+| Image | Printed | File | Type | Exercise | Section(s) | Fig. |
+|------:|--------:|------|------|----------|------------|-----:|
+| 1 | 274 | [page-001.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-001.md) | chapter-opener | — |  | 1 |
+| 2 | 275 | [page-002.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-002.md) | theory | — | 10.1 Importance of Numerical Methods; 10.2 The Role of Nume… | 0 |
+| 3 | 276 | [page-003.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-003.md) | theory | — | 10.3 Computers and Numerical Methods; 10.4 Basic Principle … | 0 |
+| 4 | — | [page-004.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-004.md) | theory | — | iii. Numerical Methods | 0 |
+| 5 | — | [page-005.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-005.md) | theory | — | 10.5 Bisection method | 2 |
+| 6 | 279 | [page-006.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-006.md) | worked-examples | — |  | 0 |
+| 7 | 280 | [page-007.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-007.md) | theory | — | 10.6 Regula Falsi Method | 1 |
+| 8 | — | [page-008.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-008.md) | worked-examples | — |  | 0 |
+| 9 | 282 | [page-009.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-009.md) | theory | — | 10.7 Newton's Raphson Method | 0 |
+| 10 | 283 | [page-010.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-010.md) | worked-examples | — | 10.7 Newton's Raphson Method | 1 |
+| 11 | 284 | [page-011.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-011.md) | worked-examples | — |  | 0 |
+| 12 | 285 | [page-012.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-012.md) | mixed | 10.1 | 10.8 Numerical Integration; 10.8.1 Trapezoidal Rule | 1 |
+| 13 | 286 | [page-013.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-013.md) | theory | — | 10.9 Simpson's 1/3 Rule | 0 |
+| 14 | 287 | [page-014.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-014.md) | worked-examples | — |  | 0 |
+| 15 | 288 | [page-015.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-015.md) | exercise | 10.2 |  | 0 |
+| 16 | — | [page-016.md](../Books/Formatted/Mathematics/Chapter-10-Numerical-Methods/page-016.md) | exercise | Review Exercise |  | 0 |
+
+---
+
+## M-BM — Front matter ("zero chapter", Chapter 00)
+
+- Markdown (`Formatted`): `Books/Formatted/Mathematics/Chapter-99-Back-Matter/` · Raw scans: `Books/Raw/Mathematics/Back-Matter/` · HTML (test): `Books/Digital/Mathematics/Chapter-99-Back-Matter/`
+- Pages: 27 · Printed range: 290–316 · Offset: +289
+
+| Image | Printed | File | Type | Exercise | Section(s) | Fig. |
+|------:|--------:|------|------|----------|------------|-----:|
+| 1 | 290 | [page-001.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-001.md) | front-matter | — |  | 9 |
+| 2 | — | [page-002.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-002.md) | front-matter | — |  | 14 |
+| 3 | — | [page-003.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-003.md) | front-matter | 1.3; 1.4 |  | 5 |
+| 4 | 293 | [page-004.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-004.md) | front-matter | 1.5 |  | 6 |
+| 5 | 294 | [page-005.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-005.md) | front-matter | 1.5 |  | 8 |
+| 6 | 295 | [page-006.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-006.md) | front-matter | 2.1; 2.2; 2.3; 2.4; 2.5; 2.6 |  | 0 |
+| 7 | 296 | [page-007.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-007.md) | front-matter | — |  | 0 |
+| 8 | 297 | [page-008.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-008.md) | front-matter | 2.10; Review Exercise 2; 3.1; 3.2; 3.3 |  | 0 |
+| 9 | 298 | [page-009.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-009.md) | front-matter | 3.4; 3.5; 3.6; 3.7; 3.8; Review Exercise 3 |  | 0 |
+| 10 | 299 | [page-010.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-010.md) | front-matter | 4.1; 4.2; 4.3; 4.4; Review Exercise 4; 5.1 |  | 2 |
+| 11 | 300 | [page-011.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-011.md) | front-matter | 5.2; 5.3; Review Exercise 5 |  | 5 |
+| 12 | 301 | [page-012.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-012.md) | front-matter | 6.1; 6.2; 6.3; Review Exercise 6; 7.1 |  | 0 |
+| 13 | 302 | [page-013.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-013.md) | front-matter | 7.1; 7.2; 7.3; 7.4; 7.5 |  | 0 |
+| 14 | — | [page-014.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-014.md) | front-matter | 7.6; 7.7; 7.8 |  | 0 |
+| 15 | 304 | [page-015.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-015.md) | front-matter | 7.8; 7.9; 7.10; Review Exercise 7; 8.1 |  | 0 |
+| 16 | — | [page-016.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-016.md) | front-matter | 8.2 |  | 11 |
+| 17 | — | [page-017.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-017.md) | front-matter | — |  | 12 |
+| 18 | 307 | [page-018.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-018.md) | front-matter | 8.3; Review Exercise 8; 9.1 |  | 4 |
+| 19 | 308 | [page-019.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-019.md) | front-matter | 9.1; 9.2; 9.3 |  | 0 |
+| 20 | 309 | [page-020.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-020.md) | front-matter | Review Exercise 9; 10.1; 10.2; Review Exercise 10 |  | 0 |
+| 21 | 310 | [page-021.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-021.md) | front-matter | — |  | 0 |
+| 22 | 311 | [page-022.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-022.md) | front-matter | — |  | 0 |
+| 23 | 312 | [page-023.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-023.md) | front-matter | — |  | 0 |
+| 24 | 313 | [page-024.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-024.md) | front-matter | — |  | 0 |
+| 25 | 314 | [page-025.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-025.md) | front-matter | — |  | 0 |
+| 26 | 315 | [page-026.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-026.md) | front-matter | — |  | 0 |
+| 27 | 316 | [page-027.md](../Books/Formatted/Mathematics/Chapter-99-Back-Matter/page-027.md) | front-matter | — |  | 0 |
 
 ---
 *Auto-generated by `tools/build-metadata.mjs` — do not hand-edit.*

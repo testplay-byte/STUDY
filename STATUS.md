@@ -1,6 +1,6 @@
 # STATUS — live snapshot
 
-> **Last updated: 2026-09-20** (Phase 6 — Mathematics Units 06–08 digitized in markdown-only mode; library now 331 pages). Coordinator updates this after every task. New agents: if
+> **Last updated: 2026-09-20** (Phase 7 — Mathematics book COMPLETE: Units 09, 10 + Back Matter digitized; library now 386 pages). Coordinator updates this after every task. New agents: if
 > reality differs from this file, trust reality, then fix this file.
 
 ## One-line state
@@ -106,12 +106,29 @@ Content mix (229 pages): 73 theory · 50 worked-examples · 45 mixed · 38 exerc
   (book.json + 3 chapter.json + indexes); verify-v4 ALL GREEN 331/331 raw imgs, 219/219
   markdown-only placed; check-digital --frozen --strict-figures ALL GREEN.
 
+- Phase 7 (**2026-09-20, this session**): **MATHEMATICS BOOK COMPLETE — Units 09, 10 and
+  Back Matter digitized (55 pages, markdown-only)** — user delivered the final transfer
+  (CH-9-10-L: M-9.zip, M-10.zip, M-L.zip via FromSmash). Recon: Unit 09 Solution of
+  Trigonometric Equations (12 pp, printed 262–273, offset +261), Unit 10 Numerical Methods
+  (16 pp, printed 274–289, offset +273), Back Matter (27 pp, printed 290–316, offset +289:
+  Answers for every exercise incl. graph answers, Glossary, Symbols table, Index, About
+  Authors). Registered M-9/M-10/M-BM (Chapter-99-Back-Matter, kind back-matter). Test-first
+  4 pages, then all remaining 51 converted via the controlled sequential pipeline with
+  coordinator review of every page against its scan (zoom crops for misprints). Artifacts
+  preserved and logged: {π/12, 5π/3} solution-set misprint, π/2 slip, 'quadratic' for
+  quadrant, 'negective', stale x₄ numerator, '2.315', (x₁)-for-f(x₁), 'Examble',
+  y₄ transposed digits, '= : [0,1]', (xxv) mislabel, duplicate Q.9 entries, 'nomogenous',
+  'Pie', 'Instantaneously velocity', restated chain labels, MATLAB boxes as fenced code.
+  4 scan-cut folios → page_printed null with pixel-verified notes (M-10 imgs 0004, 0016;
+  M-BM imgs 0002, 0016). Metadata regenerated (book.json + 3 chapter.json + indexes);
+  verify-v4 ALL GREEN 386/386 raw imgs, 274/274 markdown-only placed; check-digital
+  --frozen --strict-figures ALL GREEN.
+
 ## Next actions (queue)
 
-1. **IN PROGRESS:** user delivered the next FromSmash transfer — Mathematics **Unit 09,
-   Unit 10, and back matter (Answers / Index / Glossary)**. Batch codes `M-9`, `M-10`,
-   `M-BM`; same markdown-only runbook (`docs/PIPELINE.md` §1–§6 in v4.3 mode); register in
-   `build-metadata.mjs` `BOOKS` + `verify-v4.mjs` `BATCHES` (markdownOnly: true).
+1. **Mathematics book COMPLETE (386 pages):** front matter + Units 01–10 + Back Matter.
+   Awaiting user direction (Statistics additions, Digital-layer extension for new batches,
+   or the future web dashboard).
 2. **User input needed (M-1 cleanup):** user says Unit 01 contains **five exercises (1.1–1.5)**
    across its 36 pages and may share raw info to pin down exact boundaries. Current
    frontmatter records: Ex 1.1 @ img 8 · 1.2 @ img 18 · 1.3 @ img 24 · 1.4 @ img 30 ·

@@ -26,6 +26,10 @@ const BATCHES = [
   { batch: 'M-3', subject: 'mathematics', subjectDir: 'Mathematics', rawName: 'Unit-03-Integration',                                 oldFolder: null, newFolder: 'Chapter-03-Integration',                     imgs: 31, markdownOnly: true },
   { batch: 'M-4', subject: 'mathematics', subjectDir: 'Mathematics', rawName: 'Unit-04-Differential-Equations',                      oldFolder: null, newFolder: 'Chapter-04-Differential-Equations',          imgs: 20, markdownOnly: true },
   { batch: 'M-5', subject: 'mathematics', subjectDir: 'Mathematics', rawName: 'Unit-05-Kinematics-of-Motion-in-a-Straight-Line',     oldFolder: null, newFolder: 'Chapter-05-Kinematics-of-Motion-in-a-Straight-Line', imgs: 20, markdownOnly: true },
+  // v4.3 markdown-only batches (2026-09-20, user zips "CH-6-7-8"): direct JPG scans.
+  { batch: 'M-6', subject: 'mathematics', subjectDir: 'Mathematics', rawName: 'Unit-06-Analytical-Geometry',                         oldFolder: null, newFolder: 'Chapter-06-Analytical-Geometry',                         imgs: 22, markdownOnly: true },
+  { batch: 'M-7', subject: 'mathematics', subjectDir: 'Mathematics', rawName: 'Unit-07-Conic-Section',                               oldFolder: null, newFolder: 'Chapter-07-Conic-Section',                               imgs: 48, markdownOnly: true },
+  { batch: 'M-8', subject: 'mathematics', subjectDir: 'Mathematics', rawName: 'Unit-08-Inverse-Trigonometric-Functions-and-Their-Graphs', oldFolder: null, newFolder: 'Chapter-08-Inverse-Trigonometric-Functions-and-Their-Graphs', imgs: 32, markdownOnly: true },
   { batch: 'S-0', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Front-Matter',                  oldFolder: 'front-matter',                    newFolder: 'Chapter-00-Front-Matter',         imgs: 9 },
   { batch: 'S-1', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-08-Set-Theory',         oldFolder: 'chapter-08-set-theory',           newFolder: 'Chapter-08-Set-Theory',           imgs: 10 },
   { batch: 'S-2', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-09-Probability',        oldFolder: 'chapter-09-probability',          newFolder: 'Chapter-09-Probability',          imgs: 50 },
@@ -119,13 +123,17 @@ const legacyMdCount = BATCHES.filter(b => !b.markdownOnly).reduce((s, b) => {
   return s + (fs.existsSync(d) ? fs.readdirSync(d).filter(f => /^page-\d{3}\.md$/.test(f)).length : 0);
 }, 0);
 if (legacyMdCount !== legacyImgs) p(`legacy md ${legacyMdCount} != ${legacyImgs}`); else ok(`${legacyImgs}/${legacyImgs} legacy markdown pages`);
-if (totalImg !== 229) p(`total images ${totalImg} != 229`); else ok('229/229 raw images (112 legacy + 117 M-2..M-5)');
+const totalRawExpected = BATCHES.reduce((s, b) => s + b.imgs, 0);
+const moRawExpected = BATCHES.filter(b => b.markdownOnly).reduce((s, b) => s + b.imgs, 0);
+if (totalImg !== totalRawExpected) p(`total images ${totalImg} != ${totalRawExpected}`); else ok(`${totalRawExpected}/${totalRawExpected} raw images (${legacyImgs} legacy + ${moRawExpected} markdown-only)`);
 if (totalChecked !== legacyImgs) p(`byte-verified legacy pages ${totalChecked} != ${legacyImgs}`); else ok(`${legacyImgs} legacy pages byte-verified vs v3 baseline + link-checked`);
-const moPages = BATCHES.filter(b => b.markdownOnly).reduce((s, b) => {
+const moBatches = BATCHES.filter(b => b.markdownOnly);
+const moNames = moBatches.map(b => b.batch).join(',');
+const moPages = moBatches.reduce((s, b) => {
   const d = path.join(ROOT, 'Books', 'Formatted', b.subjectDir, b.newFolder);
   return s + (fs.existsSync(d) ? fs.readdirSync(d).filter(f => /^page-\d{3}\.md$/.test(f)).length : 0);
 }, 0);
-console.log(`  ℹ markdown-only batches (M-2..M-5): ${moPages}/117 pages placed (conversion in progress or complete)`);
+console.log(`  ℹ markdown-only batches (${moNames}): ${moPages}/${moRawExpected} pages placed (conversion in progress or complete)`);
 
 console.log('\n=== verify-v4 ===');
 if (problems.length) { console.log(`PROBLEMS: ${problems.length} ❌`); process.exit(1); }

@@ -46,6 +46,9 @@ const BOOKS = {
       { folder: 'Chapter-03-Integration', rawFolder: 'Unit-03-Integration', batch: 'M-3', kind: 'chapter', chapter_number: 3, chapter_label: 'Unit 03', title: 'Integration', printed_page_offset: '+88' },
       { folder: 'Chapter-04-Differential-Equations', rawFolder: 'Unit-04-Differential-Equations', batch: 'M-4', kind: 'chapter', chapter_number: 4, chapter_label: 'Unit 04', title: 'Differential Equations', printed_page_offset: '+119' },
       { folder: 'Chapter-05-Kinematics-of-Motion-in-a-Straight-Line', rawFolder: 'Unit-05-Kinematics-of-Motion-in-a-Straight-Line', batch: 'M-5', kind: 'chapter', chapter_number: 5, chapter_label: 'Unit 05', title: 'Kinematics of Motion in a Straight Line', printed_page_offset: '+139' },
+      { folder: 'Chapter-06-Analytical-Geometry', rawFolder: 'Unit-06-Analytical-Geometry', batch: 'M-6', kind: 'chapter', chapter_number: 6, chapter_label: 'Unit 06', title: 'Analytical Geometry', printed_page_offset: '+159' },
+      { folder: 'Chapter-07-Conic-Section', rawFolder: 'Unit-07-Conic-Section', batch: 'M-7', kind: 'chapter', chapter_number: 7, chapter_label: 'Unit 07', title: 'Conic Section', printed_page_offset: '+181' },
+      { folder: 'Chapter-08-Inverse-Trigonometric-Functions-and-Their-Graphs', rawFolder: 'Unit-08-Inverse-Trigonometric-Functions-and-Their-Graphs', batch: 'M-8', kind: 'chapter', chapter_number: 8, chapter_label: 'Unit 08', title: 'Inverse Trigonometric Functions and Their Graphs', printed_page_offset: '+229' },
     ],
   },
   statistics: {

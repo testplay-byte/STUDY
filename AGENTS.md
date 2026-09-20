@@ -13,9 +13,11 @@ We are digitizing the user's school textbooks (scanned page images) into a perma
   be wiped at any moment; anything not pushed to GitHub is lost forever.
 - **The repo is also the context store.** Any future AI agent (you, again, or a different model)
   can clone the repo, read the docs, and continue with full context — no other handoff needed.
-- Current library: **112 scanned pages** from 2 books → 112 faithful Markdown pages, every
+- Current library: **386 scanned pages** from 2 books → 386 faithful Markdown pages, every
   figure described, every formula in LaTeX, every page traceable to its raw scan — plus the
   **Digital Edition v3** replica library (112 generated HTML pages + index + manifest).
+  The **Mathematics book is COMPLETE** (front matter + Units 01–10 + Back Matter = 317 pages);
+  Statistics holds front matter + Ch. 8–9 (69 pages) with the remaining chapters next.
 - **MODE v4.3 (2026-09-06): new books/chapters are digitized to MARKDOWN ONLY.** The Digital
   layer is FROZEN — build no HTML replicas, no digital figure crops, no `gen-digital.mjs`
   runs for new batches (full policy: CONVENTIONS §1.7).

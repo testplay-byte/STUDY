@@ -224,11 +224,42 @@ only** — no digital replica pages.
       117/117 markdown-only); `check-digital --frozen --strict-figures` ALL GREEN
 - [x] Docs synced (README registry, STATUS inventory/Phase 5, this file); WORKLOG complete
 
-### Next: more books/chapters (awaiting material)
+### More books/chapters: Mathematics Units 06–08 (DONE 2026-09-20, markdown-only v4.3)
 
-- [ ] User supplies further scan packages → same markdown-only runbook (v4.3); batch codes
-      continue `M-6`, `S-3`, …; register in BOOKS + BATCHES; pass `--chapter-folder` +
-      `--book-title` to the converter; push gate `verify-v4 && check-digital --frozen`
+- [x] User delivered ZIP scans (FromSmash) as the authoritative Raw source (PDF-derived set
+      discarded per user directive); recon offsets +159/+181/+229, chain 159→261 continuous
+- [x] Registered M-6/M-7/M-8 (Unit-06-Analytical-Geometry 22 pp · Unit-07-Conic-Section 48 pp ·
+      Unit-08-Inverse-Trigonometric-Functions-and-Their-Graphs 32 pp) in BOOKS + BATCHES
+- [x] Parallel sub-agent waves hit transport deadlines repeatedly → switched to the **controlled
+      sequential pipeline** (foreground convert-page batches of 3–4, coordinator reviews every
+      draft against its scan before placing) — now the preferred mode
+- [x] All 102 pages placed + full audit ALL CLEAN ($-parity, F-block parity, printed==img+offset,
+      canon titles/H1s); M-8 img 0022 folio scan-cut → null (pixel-verified); misprints preserved
+      + logged per page; nbsp runs purged from 4 early-wave pages
+- [x] Metadata + indexes regenerated; gates ALL GREEN (331 raw imgs · 219 markdown-only placed)
+
+### More books/chapters: Mathematics Units 09–10 + Back Matter (DONE 2026-09-20 — BOOK COMPLETE)
+
+- [x] Final transfer (CH-9-10-L, 3 zips) downloaded via agent-browser signed-URL capture; recon
+      verified chain 261→316 continuous (offsets +261/+273/+289)
+- [x] Registered M-9 (12 pp) · M-10 (16 pp) · M-BM (27 pp, Chapter-99-Back-Matter, kind
+      back-matter: answers incl. graph answers, glossary, symbols table, index, about-authors)
+- [x] Test-first 4 pages → all 55 remaining pages converted via the controlled sequential
+      pipeline, coordinator review of every page (zoom crops for ambiguous glyphs)
+- [x] Artifacts preserved: solution-set misprint {π/12, 5π/3}, 'negective', 'Examble',
+      'nomogenous', 'Pie', MATLAB boxes as fenced code, duplicate Q.9 entries, etc.; 4 scan-cut
+      folios → null with pixel-verified notes
+- [x] Final audit ALL CLEAN; metadata + indexes regenerated; gates ALL GREEN at HEAD `78781f0`
+      (386/386 raw imgs · 274/274 markdown-only placed · 112 digital pages intact)
+- [x] **THE MATHEMATICS BOOK IS FULLY DIGITIZED** (317 pages: front matter + Units 01–10 +
+      Back Matter); docs synced (README, STATUS, AGENTS, this file); WORKLOG complete
+
+### Next: remaining Statistics chapters (user-scheduled, ~10 h out)
+
+- [ ] User supplies the remaining Statistics chapters (Ch. 1–7 and any other parts; the book
+      currently holds front matter + Ch. 8–9 = 69 pages) → same markdown-only runbook (v4.3);
+      batch codes continue `S-3`, `S-4`, …; register in BOOKS + BATCHES; pass `--chapter-folder`
+      + `--book-title` to the converter; push gate `verify-v4 && check-digital --frozen`
 
 ## Phase 6 — Library enrichment (backlog)
 

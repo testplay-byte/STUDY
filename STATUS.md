@@ -1,16 +1,19 @@
 # STATUS — live snapshot
 
-> **Last updated: 2026-09-20** (Phase 7 — Mathematics book COMPLETE: Units 09, 10 + Back Matter digitized; library now 386 pages). Coordinator updates this after every task. New agents: if
-> reality differs from this file, trust reality, then fix this file.
+> **Last updated: 2026-09-20** (Phase 7 complete + docs sync — Mathematics book FULLY digitized;
+> library 386 pages; next session planned: remaining Statistics chapters). Coordinator updates
+> this after every task. New agents: if reality differs from this file, trust reality, then fix
+> this file.
 
 ## One-line state
 
-**229/229 pages digitized & pushed** — Mathematics (front matter + Units 01–05) and Statistics
-(front matter + Ch. 8–9) in the three-branch `Books/` library (`Raw/` immutable scans ·
-`Formatted/` canonical markdown · `Digital/` frozen 112-page replica edition of the legacy
-library). Units 02–05 (117 pages) digitized in **markdown-only mode (v4.3)** with the
-scan-edge-crop policy: every scan-edge reconstruction disclosed in page notes; 8 scan-cut
-folios recorded as `page_printed: null` with pixel-verified notes. All gates green.
+**386/386 pages digitized & pushed** — the **Mathematics book is COMPLETE** (front matter +
+Units 01–10 + Back Matter = 317 pages) and Statistics (front matter + Ch. 8–9 = 69 pages) live
+in the three-branch `Books/` library (`Raw/` immutable scans · `Formatted/` canonical markdown ·
+`Digital/` frozen 112-page replica edition of the legacy library). Everything since Phase 4e is
+digitized in **markdown-only mode (v4.3)** with the scan-edge-crop policy: every scan-edge
+reconstruction disclosed in page notes; scan-cut folios recorded as `page_printed: null` with
+pixel-verified notes. All gates green. NEXT: remaining Statistics chapters (user-scheduled).
 
 ## Library inventory
 
@@ -19,16 +22,27 @@ folios recorded as `page_printed: null` with pixel-verified notes. All gates gre
 | M-0 | mathematics | `Mathematics/Front-Matter` | `Mathematics/Chapter-00-Front-Matter` | 7 | (unnumbered) | — | ✅ digitized |
 | M-1 | mathematics | `Mathematics/Unit-01-Functions-and-Graphs` | `Mathematics/Chapter-01-Functions-and-Graphs` | 36 | 7–41 | +6 | ✅ digitized |
 | M-2 | mathematics | `Mathematics/Unit-02-Limit-Continuity-and-Derivative` | `Mathematics/Chapter-02-Limit-Continuity-and-Derivative` | 46 | 43–88 | +42 | ✅ digitized |
-| M-3 | mathematics | `Mathematics/Unit-03-Integration` | `Mathematics/Chapter-03-Integration` | 31 | 89–119 | +88 | ✅ digitized |
+| M-3 | mathematics | `Mathematics/Unit-03-Integration` | `Mathematics/Chapter-03-Integration` | 31 | 90–119 | +88 | ✅ digitized |
 | M-4 | mathematics | `Mathematics/Unit-04-Differential-Equations` | `Mathematics/Chapter-04-Differential-Equations` | 20 | 120–139 | +119 | ✅ digitized |
 | M-5 | mathematics | `Mathematics/Unit-05-Kinematics-of-Motion-in-a-Straight-Line` | `Mathematics/Chapter-05-Kinematics-of-Motion-in-a-Straight-Line` | 20 | 140–159 | +139 | ✅ digitized |
+| M-6 | mathematics | `Mathematics/Unit-06-Analytical-Geometry` | `Mathematics/Chapter-06-Analytical-Geometry` | 22 | 160–181 | +159 | ✅ digitized |
+| M-7 | mathematics | `Mathematics/Unit-07-Conic-Section` | `Mathematics/Chapter-07-Conic-Section` | 48 | 182–229 | +181 | ✅ digitized |
+| M-8 | mathematics | `Mathematics/Unit-08-Inverse-Trigonometric-Functions-and-Their-Graphs` | `Mathematics/Chapter-08-Inverse-Trigonometric-Functions-and-Their-Graphs` | 32 | 230–261 | +229 | ✅ digitized |
+| M-9 | mathematics | `Mathematics/Unit-09-Solution-of-Trigonometric-Equations` | `Mathematics/Chapter-09-Solution-of-Trigonometric-Equations` | 12 | 262–273 | +261 | ✅ digitized |
+| M-10 | mathematics | `Mathematics/Unit-10-Numerical-Methods` | `Mathematics/Chapter-10-Numerical-Methods` | 16 | 274–288 | +273 | ✅ digitized |
+| M-BM | mathematics | `Mathematics/Back-Matter` | `Mathematics/Chapter-99-Back-Matter` | 27 | 290–316 | +289 | ✅ digitized |
 | S-0 | statistics | `Statistics/Front-Matter` | `Statistics/Chapter-00-Front-Matter` | 9 | roman folios | — | ✅ digitized |
-| S-1 | statistics | `Statistics/Chapter-08-Set-Theory` | `Statistics/Chapter-08-Set-Theory` | 10 | 1–10 | =image | ✅ digitized |
+| S-1 | statistics | `Statistics/Chapter-08-Set-Theory` | `Statistics/Chapter-08-Set-Theory` | 10 | 2–10 | =image | ✅ digitized |
 | S-2 | statistics | `Statistics/Chapter-09-Probability` | `Statistics/Chapter-09-Probability` | 50 | 11–60 | +10 | ✅ digitized |
-| | | | **Total** | **229** | | | **229 raw images ⇄ 229 .md pages · Digital Edition v3 (legacy 112) FROZEN ✓** |
+| | | | **Total** | **386** | | | **386 raw images ⇄ 386 .md pages · Digital Edition v3 (legacy 112) FROZEN ✓** |
 
-Content mix (229 pages): 73 theory · 50 worked-examples · 45 mixed · 38 exercise · 16 front-matter ·
-5 chapter-opener · 2 summary — with **210 figures** preserved as structured F-block descriptions.
+Content mix (386 pages): 124 theory · 79 worked-examples · 73 mixed · 55 exercise · 43 front-matter ·
+10 chapter-opener · 2 summary — with **401 figures** preserved as structured F-block descriptions.
+
+Printed-range notes: M-3 starts at 90 and S-1 at 2 because the preceding page's folio is
+scan-cut/null (ranges reflect first *readable* folio, per generated `book.json`); M-10 ends at
+288 because img 0016's footer is scan-cut (null). Offset chain Mathematics: +6 → +42 → +88 →
++119 → +139 → +159 → +181 → +229 → +261 → +273 → +289, folios 7→316 continuous.
 
 ## Done so far (condensed — details in WORKLOG.md / PLAN.md)
 
@@ -126,9 +140,13 @@ Content mix (229 pages): 73 theory · 50 worked-examples · 45 mixed · 38 exerc
 
 ## Next actions (queue)
 
-1. **Mathematics book COMPLETE (386 pages):** front matter + Units 01–10 + Back Matter.
-   Awaiting user direction (Statistics additions, Digital-layer extension for new batches,
-   or the future web dashboard).
+1. **NEXT SESSION (~10 hours out, per user directive 2026-09-20): the remaining Statistics
+   chapters.** The Statistics book currently holds front matter + Ch. 8 (Set Theory) + Ch. 9
+   (Probability) = 69 pages; the user will send the remaining chapters (Ch. 1–7 and any other
+   parts) as scan transfers. Run the full v4.3 markdown-only pipeline exactly as for the
+   Mathematics phases: intake → recon (offsets, continuity) → register (batch codes continue
+   **S-3, S-4, …**) → test-first → controlled sequential conversion waves → audit → metadata →
+   gates → push. Do not rush; coordinator reviews every page.
 2. **User input needed (M-1 cleanup):** user says Unit 01 contains **five exercises (1.1–1.5)**
    across its 36 pages and may share raw info to pin down exact boundaries. Current
    frontmatter records: Ex 1.1 @ img 8 · 1.2 @ img 18 · 1.3 @ img 24 · 1.4 @ img 30 ·
@@ -142,7 +160,9 @@ Content mix (229 pages): 73 theory · 50 worked-examples · 45 mixed · 38 exerc
 ## Known issues / watchlist
 
 - `page_printed: null` on M-1 imgs 20, 22, 32, 33, 34, 36 + S-1 img 1 + most front matter —
-  legitimate (no digit printed); do not invent numbers.
+  legitimate (no digit printed); do not invent numbers. Markdown-only scan-cut folios (null
+  with pixel-verified notes): M-8 img 0022 · M-10 imgs 0004, 0016 · M-BM imgs 0002, 0016 ·
+  M-3 img 001 · S-1 img 1.
 - S-2 odd-page running headers misprint "[Chapter 7]" — chapter is 9 everywhere in data ✓
   (audited). Keep it that way.
 - `Books/Digital/` (FROZEN, v4.3) pages use a KaTeX CDN — offline, math degrades to readable
@@ -151,7 +171,10 @@ Content mix (229 pages): 73 theory · 50 worked-examples · 45 mixed · 38 exerc
 - Vision API rate-limits (~3 concurrent) — waves must run agents sequentially within each
   agent; expect 429 storms; convert-page.mjs backs off automatically.
 - Task-tool agents can die mid-wave (context deadlines) — coordinator re-scopes `-v2` runs to
-  missing pages; check page counts vs STATUS table after every wave.
+  missing pages; check page counts vs STATUS table after every wave. **Preferred mode since
+  Phase 6: the controlled sequential pipeline** (foreground convert-page batches of 3–4,
+  coordinator reviews every draft against its scan before placing) — parallel sub-agent waves
+  repeatedly hit transport deadlines on the 100+-page batches.
 
 ## Environment notes
 
@@ -159,6 +182,11 @@ Content mix (229 pages): 73 theory · 50 worked-examples · 45 mixed · 38 exerc
   local-only, never committed.
 - Working clone lives at `/home/z/my-project/study-workspace/STUDY` (or re-clone per
   PIPELINE.md §0). Local shared agent log: `/home/z/my-project/worklog.md`.
-- Integrity commands (run from repo root): `bun tools/verify-v4.mjs` → ALL GREEN (112/112);
-  `node tools/check-digital.mjs --frozen --strict-figures` → ALL GREEN (112 digital pages
-  intact; markdown-only push gate, v4.3). Both re-verified 2026-09-06 + smoke conversion OK.
+- Integrity commands (run from repo root): `bun tools/verify-v4.mjs` → ALL GREEN (112/112
+  legacy byte-verified; 386/386 raw images; 274/274 markdown-only placed); `node
+  tools/check-digital.mjs --frozen --strict-figures` → ALL GREEN (112 digital pages intact;
+  274 frozen twins expected). Both re-verified 2026-09-20 at Phase 7 HEAD (`78781f0`).
+- Raw scan intake path that works: FromSmash transfer → agent-browser signed-URL capture →
+  `curl` download → verify zip contents are direct images → recon offsets from footers →
+  register (BATCHES in `tools/verify-v4.mjs` + BOOKS in `tools/build-metadata.mjs`) →
+  skeleton commit.

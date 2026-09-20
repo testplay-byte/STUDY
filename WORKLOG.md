@@ -667,3 +667,20 @@ Stage Summary:
 - LIBRARY NOW 386 PAGES: Mathematics 317 (FM 7 + Units 01-10 + Back Matter 27 = 7+36+46+31+20+20+22+48+32+12+16+27) + Statistics 69
 - THE MATHEMATICS BOOK IS FULLY DIGITIZED (markdown-only): front matter, all 10 units, all answers, glossary, symbols, index, about-authors
 - Next: await user direction
+---
+Task ID: 18 (final)
+Agent: coordinator (Z.ai main)
+Task: Full documentation sync after Mathematics book completion; next session queued (Statistics chapters)
+
+Work Log:
+- Verified library reality before writing: HEAD 78781f0 == origin/main, tree clean; both gates re-run ALL GREEN (verify-v4: 112/112 legacy byte-verified, 386/386 raw images, 274/274 markdown-only placed; check-digital --frozen --strict-figures: 112 digital pages intact)
+- Recounted content mix across all 386 pages: 124 theory / 79 worked-examples / 73 mixed / 55 exercise / 43 front-matter / 10 chapter-opener / 2 summary; 401 figures total
+- STATUS.md: one-line state -> 386/386, Mathematics COMPLETE; inventory table extended with M-6/M-7/M-8/M-9/M-10/M-BM rows (printed ranges + offsets from generated book.json; M-3 90-119, S-1 2-10 = first READABLE folio, first pages null); added printed-range notes + full offset chain +6..+289 (folios 7->316 continuous); Next-actions queue rewritten (item 1 = remaining Statistics chapters, user-scheduled ~10 h out, batch codes S-3+); watchlist now lists all markdown-only null folios (M-8 0022, M-10 0004/0016, M-BM 0002/0016, M-3 001, S-1 img 1); Environment notes updated (gate outputs, controlled-sequential-pipeline preference, working FromSmash intake path)
+- README.md: current-state banner (386 pages, 15 batches, Mathematics book COMPLETE); library registry rows for both books; repo tree updated (all math Raw/Formatted folders incl. Chapter-99-Back-Matter; Digital described as frozen v3 edition mirroring Raw/Formatted); design rules note back matter = Chapter 99; pipeline steps 4-8 rewritten to the controlled sequential pipeline + current gates
+- AGENTS.md: "What this project is" library figures updated to 386 pages with Mathematics COMPLETE + Statistics remaining
+- docs/PLAN.md: two new DONE records (Units 06-08; Units 09-10 + Back Matter = book complete); "Next" section replaced with "remaining Statistics chapters (user-scheduled)" runbook pointer
+- Metadata/build files untouched (book.json/chapter.json/indexes already current from Phase 7)
+
+Stage Summary:
+- Documentation now matches reality everywhere: 386 pages, Mathematics book fully digitized, all gates green at 78781f0
+- NEXT SESSION (user-scheduled, ~10 h): remaining Statistics chapters via the same v4.3 markdown-only pipeline; batch codes continue S-3, S-4, ...

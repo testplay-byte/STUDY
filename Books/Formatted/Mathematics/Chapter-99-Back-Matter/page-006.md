@@ -18,7 +18,7 @@ converted_by: "coordinator-w5 (glm-vision)"
 notes: "Answers for Unit 2 Exercises 2.1-2.6. BOOK PRINT ARTIFACT preserved: Ex 2.1 Q.1 item (f) prints (f-prime) instead of (f). Ex 2.2 Q.9/Q.10 entries merge on one printed line as shown."
 ---
 
-# Page 6 — Answers — Unit 2: Limit, Continuity and Derivative
+# Page 6 — Answers (Unit 2: Limit, Continuity and Derivative)
 
 > 📄 Original scan: [0006.jpg](../../../Raw/Mathematics/Back-Matter/0006.jpg) · printed page 295
 

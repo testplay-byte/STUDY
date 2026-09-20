@@ -24,31 +24,45 @@ notes: "Exercise 8.1 Q.2-4 (continued from p.241) + section 8.2 opening. Book ty
 
 **2.** Find sum of principal values of the following inverse trigonometric expressions without using calculator.
 
-i. $\text{Tan}^{-1}(1) + \text{Cos}^{-1}\left(-\frac{1}{2}\right) + \text{Sin}^{-1}\left(-\frac{1}{2}\right)$ &nbsp;&nbsp; ii. $\text{Cos}^{-1}\left(\frac{1}{2}\right) + 2\,\text{Sin}^{-1}\left(\frac{1}{2}\right)$
+   i. $\text{Tan}^{-1}(1) + \text{Cos}^{-1}\left(-\frac{1}{2}\right) + \text{Sin}^{-1}\left(-\frac{1}{2}\right)$
+   ii. $\text{Cos}^{-1}\left(\frac{1}{2}\right) + 2\,\text{Sin}^{-1}\left(\frac{1}{2}\right)$
 
-iii. $\text{Tan}^{-1}(\sqrt{3}) - \text{Sec}^{-1}(-2)$ &nbsp;&nbsp; iv. $\text{Cot}^{-1}(-\sqrt{3}) + \text{Csc}^{-1}(-2) - \text{Cos}^{-1}\left(\frac{\sqrt{2}}{2}\right)$
+   iii. $\text{Tan}^{-1}(\sqrt{3}) - \text{Sec}^{-1}(-2)$
+   iv. $\text{Cot}^{-1}(-\sqrt{3}) + \text{Csc}^{-1}(-2) - \text{Cos}^{-1}\left(\frac{\sqrt{2}}{2}\right)$
 
 **3.** Find the exact real number value of each without using a calculator.
 
-i. $\text{Cos}^{-1}\left[\text{sin}\left(\frac{\pi}{4}\right)\right]$ &nbsp;&nbsp; ii. $\text{Sin}^{-1}\left[\text{cos}\left(-\frac{2\pi}{3}\right)\right]$ &nbsp;&nbsp; iii. $\text{Cos}^{-1}\left(\text{sin}\frac{11\pi}{6}\right)$
+   i. $\text{Cos}^{-1}\left[\text{sin}\left(\frac{\pi}{4}\right)\right]$
+   ii. $\text{Sin}^{-1}\left[\text{cos}\left(-\frac{2\pi}{3}\right)\right]$
+   iii. $\text{Cos}^{-1}\left(\text{sin}\frac{11\pi}{6}\right)$
 
-iv. $\text{Cos}^{-1}\left(\text{cos}\frac{\pi}{6}\right)$ &nbsp;&nbsp; v. $\text{Sin}\left(\text{Tan}^{-1}\frac{3}{4}\right)$ &nbsp;&nbsp; vi. $\text{Cos}\left(2\,\text{Sin}^{-1}\frac{\sqrt{2}}{2}\right)$
+   iv. $\text{Cos}^{-1}\left(\text{cos}\frac{\pi}{6}\right)$
+   v. $\text{Sin}\left(\text{Tan}^{-1}\frac{3}{4}\right)$
+   vi. $\text{Cos}\left(2\,\text{Sin}^{-1}\frac{\sqrt{2}}{2}\right)$
 
-vii. $\text{Sin}\left[2\,\text{Sin}^{-1}\left(\frac{4}{5}\right)\right]$ &nbsp;&nbsp; viii. $\text{Cos}\left(\text{Sin}^{-1}\frac{5}{13}\right)$ &nbsp;&nbsp; ix. $\text{Sin}\left[\text{Cos}^{-1}\left(-\frac{3}{5}\right)\right]$
+   vii. $\text{Sin}\left[2\,\text{Sin}^{-1}\left(\frac{4}{5}\right)\right]$
+   viii. $\text{Cos}\left(\text{Sin}^{-1}\frac{5}{13}\right)$
+   ix. $\text{Sin}\left[\text{Cos}^{-1}\left(-\frac{3}{5}\right)\right]$
 
-x. $\text{Sin}\left[\text{Sin}^{-1}\frac{2}{3} + \text{Cos}^{-1}\frac{1}{2}\right]$ &nbsp;&nbsp; xi. $\text{Cos}\left(\text{Sin}^{-1}\frac{3}{4} + \text{Cos}^{-1}\frac{5}{13}\right)$
+   x. $\text{Sin}\left[\text{Sin}^{-1}\frac{2}{3} + \text{Cos}^{-1}\frac{1}{2}\right]$
+   xi. $\text{Cos}\left(\text{Sin}^{-1}\frac{3}{4} + \text{Cos}^{-1}\frac{5}{13}\right)$
 
 xii. $\text{Cos}[\text{Sec}^{-1}(3) + \text{Tan}^{-1}(2)]$
 
 **4.** Find the unknown angles and use a calculator to evaluate the following as real numbers to three decimal places:
 
-i. $\text{Cos}^{-1}\left(\frac{3}{5}\right) = \text{Sin}^{-1}\left(\ \ \right)$ &nbsp;&nbsp; ii. $\text{Sin}^{-1}\left(\frac{2}{3}\right) = \text{Cos}^{-1}\left(\ \ \right)$ &nbsp;&nbsp; iii. $\text{Sin}^{-1}\left(-\frac{1}{\sqrt{5}}\right) = -\text{Cos}^{-1}\left(\ \ \right)$
+   i. $\text{Cos}^{-1}\left(\frac{3}{5}\right) = \text{Sin}^{-1}\left(\ \ \right)$
+   ii. $\text{Sin}^{-1}\left(\frac{2}{3}\right) = \text{Cos}^{-1}\left(\ \ \right)$
+   iii. $\text{Sin}^{-1}\left(-\frac{1}{\sqrt{5}}\right) = -\text{Cos}^{-1}\left(\ \ \right)$
 
-iv. $\text{Tan}^{-1}\left(\frac{1}{4}\right) = \text{Cos}^{-1}\left(\ \ \right)$ &nbsp;&nbsp; v. $\text{Tan}^{-1}(-1.2) = -\text{Cos}^{-1}\left(\ \ \right)$
+   iv. $\text{Tan}^{-1}\left(\frac{1}{4}\right) = \text{Cos}^{-1}\left(\ \ \right)$
+   v. $\text{Tan}^{-1}(-1.2) = -\text{Cos}^{-1}\left(\ \ \right)$
 
-vi. $\text{Cot}^{-1}\left(-\frac{3}{4}\right) = -\text{Sin}^{-1}\left(\ \ \right)$ &nbsp;&nbsp; vii. $\text{Sec}^{-1}(2.041) = \text{Tan}^{-1}\left(\ \ \right)$
+   vi. $\text{Cot}^{-1}\left(-\frac{3}{4}\right) = -\text{Sin}^{-1}\left(\ \ \right)$
+   vii. $\text{Sec}^{-1}(2.041) = \text{Tan}^{-1}\left(\ \ \right)$
 
-viii. $\text{Sec}^{-1}(-\sqrt{5}) = \text{Cot}^{-1}\left(\ \ \right)$ &nbsp;&nbsp; ix. $\text{Csc}^{-1}(1.172) = \text{Sin}^{-1}\left(\ \ \right)$
+   viii. $\text{Sec}^{-1}(-\sqrt{5}) = \text{Cot}^{-1}\left(\ \ \right)$
+   ix. $\text{Csc}^{-1}(1.172) = \text{Sin}^{-1}\left(\ \ \right)$
 
 x. $\text{Csc}^{-1}\left(-\frac{5}{3}\right) = \text{Tan}^{-1}\left(\ \ \right)$
 

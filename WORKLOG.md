@@ -628,3 +628,23 @@ Work Log:
 
 Stage Summary:
 - Library now 229/229 pages (Mathematics Units 01-05 + Statistics Ch.8-9); all four new chapters complete and pushed; awaiting next books/chapters
+---
+Task ID: 16 (final)
+Agent: coordinator (Z.ai main)
+Task: Mathematics Units 06-08 COMPLETE - 102 pages digitized markdown-only
+
+Work Log:
+- ZIP scans (FromSmash CH-6-7-8.zip) used as authoritative Raw source per user directive (PDF-derived set discarded); 22/48/32 images registered as M-6/M-7/M-8 (Unit-06-Analytical-Geometry, Unit-07-Conic-Section, Unit-08-Inverse-Trigonometric-Functions-and-Their-Graphs), offsets +159/+181/+229
+- Early sub-agent waves hit transport deadlines repeatedly (salvage commits f7aa2d2, 1295f49, 835339c placed 63/102); user paused, then approved continuation
+- Switched to controlled sequential pipeline: foreground convert-page batches, coordinator personally reviewed EVERY draft against its scan (PIL zoom crops for pen-slash cancellations, misprint verification), fixed canon (chapter_title caps, H1 Unit 0N, exercise-id Review Exercise, section:null for banner-only pages), placed, committed every ~4-5 pages
+- 39 remaining pages converted in session (M-7 021,022,034-048; M-8 008,009,010,014-032) with per-page verification
+- Final sweep: removed nbsp runs from 4 early-wave pages (M-6 008, M-8 003/012/013), full 102-page audit ALL CLEAN ($-parity, F-blocks==markers==figures_count, printed==img+offset, canon titles, H1s, scan links)
+- M-8 img 0022 footer cut by scan edge -> page_printed null with pixel-verified note
+- Metadata regenerated: book.json + Chapter-06/07/08 chapter.json + indexes/mathematics.md
+- Gates: verify-v4 ALL GREEN (331 raw imgs, 219/219 markdown-only placed); check-digital --frozen --strict-figures ALL GREEN (112 digital intact, 219 frozen twins expected)
+
+Stage Summary:
+- LIBRARY NOW 331 PAGES: Mathematics FM + Units 01-08 (262 = 7+36+46+31+20+20+22+48+32) + Statistics FM + Ch.8-9 (69)
+- Commits this phase: 72552b0 7d93aa6 c41615c 62947a9 c6c6201 c3fd269 83392cb 4dd7173 97c7bc5 + metadata/docs
+- Preserved misprints logged in per-page notes (x-21=X, y=1, wil, B(4,0), 3600x1000/7, V(030), capital Cos/Sin, 1<=x,y<=-1, restated-LHS chain, iv.' apostrophe, reversed inequalities, 13/15 option)
+- NEXT: user's new transfer with Unit 09, Unit 10 + back matter (Answers/Index/Glossary) -> batch codes M-9/M-10/M-BM

@@ -60,8 +60,14 @@ notes: "Exercise 8.1 Q.1 sub-parts print 3-per-line (i-iii, iv-vi, vii-ix) — l
 
 1. Find the principal values of each of the following without using a calculator.
 
-i. $\text{Cos}^{-1}\left(\frac{\sqrt{3}}{2}\right)$ &nbsp;&nbsp; ii. $\text{Sin}^{-1}(1)$ &nbsp;&nbsp; iii. $\text{Tan}^{-1}(\sqrt{3})$
+   i. $\text{Cos}^{-1}\left(\frac{\sqrt{3}}{2}\right)$
+   ii. $\text{Sin}^{-1}(1)$
+   iii. $\text{Tan}^{-1}(\sqrt{3})$
 
-iv. $\text{Cot}^{-1}\left(\frac{\sqrt{3}}{3}\right)$ &nbsp;&nbsp; v. $\text{Sec}^{-1}\left(\frac{2\sqrt{3}}{3}\right)$ &nbsp;&nbsp; vi. $\text{Csc}^{-1}(-\sqrt{2})$
+   iv. $\text{Cot}^{-1}\left(\frac{\sqrt{3}}{3}\right)$
+   v. $\text{Sec}^{-1}\left(\frac{2\sqrt{3}}{3}\right)$
+   vi. $\text{Csc}^{-1}(-\sqrt{2})$
 
-vii. $\text{Cos}^{-1}\left(-\frac{1}{2}\right)$ &nbsp;&nbsp; viii. $\text{Tan}^{-1}\left(\frac{1}{\sqrt{3}}\right)$ &nbsp;&nbsp; ix. $\text{Csc}^{-1}(-2)$
+   vii. $\text{Cos}^{-1}\left(-\frac{1}{2}\right)$
+   viii. $\text{Tan}^{-1}\left(\frac{1}{\sqrt{3}}\right)$
+   ix. $\text{Csc}^{-1}(-2)$

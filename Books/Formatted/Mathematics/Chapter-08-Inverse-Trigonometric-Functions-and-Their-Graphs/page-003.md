@@ -38,11 +38,11 @@ For the cosine function $y = \text{Cos } x$ where $x \in [0, \pi]$ and $y \in [-
 
 In view of above, we observe that:
 
-$\text{Cos}^{-1}(1) = 0$ &nbsp;&nbsp;&nbsp;&nbsp; since &nbsp;&nbsp;&nbsp;&nbsp; $\text{Cos}(0) = 1$
+$\text{Cos}^{-1}(1) = 0$ since $\text{Cos}(0) = 1$
 
-$\text{Cos}^{-1}(0) = \frac{\pi}{2}$ &nbsp;&nbsp;&nbsp;&nbsp; since &nbsp;&nbsp;&nbsp;&nbsp; $\text{Cos}\left(\frac{\pi}{2}\right) = 0$
+$\text{Cos}^{-1}(0) = \frac{\pi}{2}$ since $\text{Cos}\left(\frac{\pi}{2}\right) = 0$
 
-$\text{Cos}^{-1}(-1) = \pi$ &nbsp;&nbsp;&nbsp;&nbsp; since &nbsp;&nbsp;&nbsp;&nbsp; $\text{Cos } \pi = -1$
+$\text{Cos}^{-1}(-1) = \pi$ since $\text{Cos } \pi = -1$
 
 [Figure F1]
 

@@ -1,6 +1,6 @@
 # STATUS — live snapshot
 
-> **Last updated: 2026-09-06** (Phase 5 — Mathematics Units 02–05 digitized in markdown-only mode; library now 229 pages). Coordinator updates this after every task. New agents: if
+> **Last updated: 2026-09-20** (Phase 6 — Mathematics Units 06–08 digitized in markdown-only mode; library now 331 pages). Coordinator updates this after every task. New agents: if
 > reality differs from this file, trust reality, then fix this file.
 
 ## One-line state
@@ -89,12 +89,29 @@ Content mix (229 pages): 73 theory · 50 worked-examples · 45 mixed · 38 exerc
   `--book-title` injections; verify-v4 v4.3-aware with deep v3-baseline history walk);
   M-4 imgs 0016/0019 footers pixel-verified absent → null. All gates green.
 
+- Phase 6 (**2026-09-20, this session**): **Mathematics Units 06–08 digitized (102 pages,
+  markdown-only)** — user delivered ZIP scans (FromSmash) as the authoritative Raw source
+  (PDF-derived set discarded per user directive). Recon offsets +159/+181/+229 confirmed
+  (chain 159→261 continuous; footers read, none computed). Registered M-6/M-7/M-8 in
+  BATCHES + BOOKS. After transport-deadline churn with parallel sub-agent waves, switched
+  to a **controlled sequential pipeline**: foreground convert-page batches (3–4 pages),
+  coordinator personally reviewing every draft against its scan (zoom crops for pen-slash
+  cancellations and misprints) before placing; committed in ~4-5-page batches. All 102
+  pages coordinator-audited: $-parity, F-blocks==markers==figures_count, printed==img+offset
+  (2 scan-cut folios → null with pixel-verified notes: M-8 img 0022), no nbsp runs, canon
+  frontmatter (chapter_title CAPS, H1 "Unit 0N: <Title>", exercise-id "Review Exercise").
+  Book misprints preserved and logged per page (x−21=X, y=1 foci line, 'wil', misplaced
+  full stop, B(4,0), 3600×1000/7, V(030), ∉ for ≠, capital Cos/Sin, 1≤x,y≤−1, restated-LHS
+  chain line, iv.' apostrophe, reversed 0>x>π/2, 13/15 option). Metadata regenerated
+  (book.json + 3 chapter.json + indexes); verify-v4 ALL GREEN 331/331 raw imgs, 219/219
+  markdown-only placed; check-digital --frozen --strict-figures ALL GREEN.
+
 ## Next actions (queue)
 
-1. **AWAITING USER:** further books/chapters (scan packages) — same markdown-only runbook
-   (`docs/PIPELINE.md` §1–§6 in v4.3 mode). Batch codes continue `M-6`, `S-3`, … (new books
-   get new subject letters); register in `build-metadata.mjs` `BOOKS` + `verify-v4.mjs`
-   `BATCHES` (markdownOnly: true).
+1. **IN PROGRESS:** user delivered the next FromSmash transfer — Mathematics **Unit 09,
+   Unit 10, and back matter (Answers / Index / Glossary)**. Batch codes `M-9`, `M-10`,
+   `M-BM`; same markdown-only runbook (`docs/PIPELINE.md` §1–§6 in v4.3 mode); register in
+   `build-metadata.mjs` `BOOKS` + `verify-v4.mjs` `BATCHES` (markdownOnly: true).
 2. **User input needed (M-1 cleanup):** user says Unit 01 contains **five exercises (1.1–1.5)**
    across its 36 pages and may share raw info to pin down exact boundaries. Current
    frontmatter records: Ex 1.1 @ img 8 · 1.2 @ img 18 · 1.3 @ img 24 · 1.4 @ img 30 ·

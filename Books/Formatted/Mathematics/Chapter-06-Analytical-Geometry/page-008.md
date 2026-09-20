@@ -22,7 +22,8 @@ notes: ""
 
 > 📄 Original scan: [0008.jpg](../../../Raw/Mathematics/Unit-06-Analytical-Geometry/0008.jpg) · printed page 167
 
-Slope of $\text{OA} = \frac{0 - 0}{6 - 0} = 0$, &nbsp;&nbsp;&nbsp;&nbsp; Slope of $\text{OB} = \frac{6 - 0}{0 - 0} = \infty$ (undefined)
+   Slope of $\text{OA} = \frac{0 - 0}{6 - 0} = 0$,
+   Slope of $\text{OB} = \frac{6 - 0}{0 - 0} = \infty$ (undefined)
 
 Slope of $\text{AB} = \frac{6 - 0}{0 - 6} = -1$
 

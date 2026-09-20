@@ -57,4 +57,4 @@ Graph the function $\sin \theta = \frac{\theta}{2}$ where $\theta \in \left[-\fr
 | $y = \frac{\theta}{2}$ | $-0.79$ | $-0.52$ | $-0.39$ | $-0.26$ | $0$ | $0.26$ | $0.39$ | $0.52$ | $0.79$ |
 
 **Step IV:** Scale along $x$-axis: 1 small square = $3^\circ$
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scale along $y$-axis: 1 small square = 0.1 units
+Scale along $y$-axis: 1 small square = 0.1 units

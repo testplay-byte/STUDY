@@ -1,6 +1,6 @@
 ---
 subject: mathematics
-book_title: Textbook of Mathematics Grade 12
+book_title: Mathematics (Grade 12)
 batch: M-6
 chapter_folder: Chapter-06-Analytical-Geometry
 chapter_number: 6

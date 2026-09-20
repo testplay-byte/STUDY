@@ -24,7 +24,8 @@ notes: "BOOK MISPRINT preserved: y_4 table row prints 0.0508235 (transposed; 1/1
 
 **Example 7:** Evaluate $\int\limits_{0}^{10}\frac{dx}{1+x^2}$ by using:
 
-i. Trapezoidal rule &nbsp;&nbsp;&nbsp;&nbsp; ii. Simpson $\frac{1}{3}$ rule, taking $h=1$.
+   i. Trapezoidal rule
+   ii. Simpson $\frac{1}{3}$ rule, taking $h=1$.
 
 **Solution:**
 

@@ -36,6 +36,11 @@ const BATCHES = [
   { batch: 'S-0', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Front-Matter',                  oldFolder: 'front-matter',                    newFolder: 'Chapter-00-Front-Matter',         imgs: 9 },
   { batch: 'S-1', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-08-Set-Theory',         oldFolder: 'chapter-08-set-theory',           newFolder: 'Chapter-08-Set-Theory',           imgs: 10 },
   { batch: 'S-2', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-09-Probability',        oldFolder: 'chapter-09-probability',          newFolder: 'Chapter-09-Probability',          imgs: 50 },
+  // v4.3 markdown-only batches (2026-10-01, user transfer "statistics-chapters"): direct JPG scans, Chapters 10-13.
+  { batch: 'S-3', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-10-Random-Variable-and-Probability-Distributions', oldFolder: null, newFolder: 'Chapter-10-Random-Variable-and-Probability-Distributions', imgs: 34, markdownOnly: true },
+  { batch: 'S-4', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-11-Binomial-and-Hypergeometric-Distributions',     oldFolder: null, newFolder: 'Chapter-11-Binomial-and-Hypergeometric-Distributions',     imgs: 28, markdownOnly: true },
+  { batch: 'S-5', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-12-Normal-Distribution',                           oldFolder: null, newFolder: 'Chapter-12-Normal-Distribution',                           imgs: 32, markdownOnly: true },
+  { batch: 'S-6', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-13-Sampling-and-Sampling-Distributions',           oldFolder: null, newFolder: 'Chapter-13-Sampling-and-Sampling-Distributions',           imgs: 48, markdownOnly: true },
 ];
 
 const problems = [];

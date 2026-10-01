@@ -64,6 +64,10 @@ const BOOKS = {
       { folder: 'Chapter-00-Front-Matter', rawFolder: 'Front-Matter', batch: 'S-0', kind: 'front-matter', printed_page_offset: null },
       { folder: 'Chapter-08-Set-Theory', rawFolder: 'Chapter-08-Set-Theory', batch: 'S-1', kind: 'chapter', chapter_number: 8, chapter_label: 'Chapter 8', title: 'Set Theory', printed_page_offset: '0 (printed = image)' },
       { folder: 'Chapter-09-Probability', rawFolder: 'Chapter-09-Probability', batch: 'S-2', kind: 'chapter', chapter_number: 9, chapter_label: 'Chapter 9', title: 'Probability', printed_page_offset: '+10' },
+      { folder: 'Chapter-10-Random-Variable-and-Probability-Distributions', rawFolder: 'Chapter-10-Random-Variable-and-Probability-Distributions', batch: 'S-3', kind: 'chapter', chapter_number: 10, chapter_label: 'Chapter 10', title: 'Random Variable and Probability Distributions', printed_page_offset: '+60' },
+      { folder: 'Chapter-11-Binomial-and-Hypergeometric-Distributions', rawFolder: 'Chapter-11-Binomial-and-Hypergeometric-Distributions', batch: 'S-4', kind: 'chapter', chapter_number: 11, chapter_label: 'Chapter 11', title: 'Binomial and Hypergeometric Distributions', printed_page_offset: '+94' },
+      { folder: 'Chapter-12-Normal-Distribution', rawFolder: 'Chapter-12-Normal-Distribution', batch: 'S-5', kind: 'chapter', chapter_number: 12, chapter_label: 'Chapter 12', title: 'Normal Distribution', printed_page_offset: '+122' },
+      { folder: 'Chapter-13-Sampling-and-Sampling-Distributions', rawFolder: 'Chapter-13-Sampling-and-Sampling-Distributions', batch: 'S-6', kind: 'chapter', chapter_number: 13, chapter_label: 'Chapter 13', title: 'Sampling and Sampling Distributions', printed_page_offset: '+154' },
     ],
   },
 };

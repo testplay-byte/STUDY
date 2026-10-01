@@ -185,7 +185,8 @@ scan-cut/null (ranges reflect first *readable* folio, per generated `book.json`)
 - Integrity commands (run from repo root): `bun tools/verify-v4.mjs` → ALL GREEN (112/112
   legacy byte-verified; 386/386 raw images; 274/274 markdown-only placed); `node
   tools/check-digital.mjs --frozen --strict-figures` → ALL GREEN (112 digital pages intact;
-  274 frozen twins expected). Both re-verified 2026-09-20 at Phase 7 HEAD (`78781f0`).
+  274 frozen twins expected). Both re-verified 2026-09-20 at docs-sync HEAD (`46f9d6f`), after a
+  sandbox restore + fast-forward from a stale clone (PIPELINE §0 recovery path validated).
 - Raw scan intake path that works: FromSmash transfer → agent-browser signed-URL capture →
   `curl` download → verify zip contents are direct images → recon offsets from footers →
   register (BATCHES in `tools/verify-v4.mjs` + BOOKS in `tools/build-metadata.mjs`) →

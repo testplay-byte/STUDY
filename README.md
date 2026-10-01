@@ -5,16 +5,17 @@ from scans into a structured Markdown library, plus the tracking data and docume
 lets **any AI agent** (or the user, or a future web dashboard) pick up the project with full
 context. The sandbox is disposable — **this repository is the project's memory.**
 
-## 🎯 Current state: **v4.3 markdown-only mode — 386/386 pages digitized — Mathematics book COMPLETE**
+## 🎯 Current state: **v4.3 markdown-only mode — 528/528 pages digitized — Mathematics book COMPLETE, Statistics Ch. 8–13 done**
 
-Two books, fifteen batches, **386 scanned pages → 386 faithful Markdown pages**, organized in
+Two books, nineteen batches, **528 scanned pages → 528 faithful Markdown pages**, organized in
 the three-branch **`Books/`** library (`Raw/` scans · `Formatted/` markdown · `Digital/` the
 frozen 112-page generated replica edition of the legacy library). The Mathematics book is
 **fully digitized**: front matter, Units 01–10, and Back Matter (answers, glossary, symbols,
-index, about-authors). Statistics: front matter + Ch. 8–9; the remaining chapters are next.
-Every figure described in detail, every formula in LaTeX, every table as a GFM table, every
-page traceable to its raw scan. New books/chapters arrive in **markdown-only mode (v4.3)**.
-Full status: [`STATUS.md`](STATUS.md).
+index, about-authors). Statistics holds front matter + Ch. 8–13 (Set Theory, Probability,
+Random Variable & Probability Distributions, Binomial & Hypergeometric, Normal, Sampling &
+Sampling Distributions); Ch. 1–7 remain. Every figure described in detail, every formula in
+LaTeX, every table as a GFM table, every page traceable to its raw scan. New books/chapters
+arrive in **markdown-only mode (v4.3)**. Full status: [`STATUS.md`](STATUS.md).
 
 ## 🧭 Start here
 
@@ -29,7 +30,7 @@ Full status: [`STATUS.md`](STATUS.md).
 | Subject | Book | Digitized |
 |---------|------|-----------|
 | Mathematics | *Textbook of Mathematics Grade 12* — National Book Foundation, Federal Textbook Board, Islamabad (National Curriculum of Pakistan 2022-23) | front matter (7) + **Unit 01: Functions and Graphs** (36, pp. 7–41) + **Unit 02: Limit, Continuity and Derivative** (46, pp. 43–88) + **Unit 03: Integration** (31, pp. 90–119) + **Unit 04: Differential Equations** (20, pp. 120–139) + **Unit 05: Kinematics of Motion in a Straight Line** (20, pp. 140–159) + **Unit 06: Analytical Geometry** (22, pp. 160–181) + **Unit 07: Conic Section** (48, pp. 182–229) + **Unit 08: Inverse Trigonometric Functions and Their Graphs** (32, pp. 230–261) + **Unit 09: Solution of Trigonometric Equations** (12, pp. 262–273) + **Unit 10: Numerical Methods** (16, pp. 274–288) + **Back Matter** (27, pp. 290–316: answers, glossary, symbols, index, about-authors) = **317 pages — BOOK COMPLETE ✅** |
-| Statistics | *Basic Statistics for Intermediate Classes, Part-II* — M. Saleem Akhtar, Majeed Book Depot (Federal Board) | front matter (9) + **Ch. 8: Set Theory** (10) + **Ch. 9: Probability** (50) = **69 pages** · remaining Ch. 1–7 next (user-scheduled) |
+| Statistics | *Basic Statistics for Intermediate Classes, Part-II* — M. Saleem Akhtar, Majeed Book Depot (Federal Board) | front matter (9) + **Ch. 8: Set Theory** (10) + **Ch. 9: Probability** (50) + **Ch. 10: Random Variable and Probability Distributions** (34, pp. 61–94) + **Ch. 11: Binomial and Hypergeometric Distributions** (28, pp. 95–122) + **Ch. 12: Normal Distribution** (32, pp. 123–154) + **Ch. 13: Sampling and Sampling Distributions** (48, pp. 155–202) = **211 pages** · remaining Ch. 1–7 next |
 
 > ℹ️ Scans are digitized **as printed**. The user's brief once said "Statistics chapters 1–2";
 > the scans are actually Ch. 8 (Set Theory) & Ch. 9 (Probability) — recorded as printed, with
@@ -55,7 +56,11 @@ STUDY/
 │   │   ├── Mathematics/Back-Matter/                  ← M-BM · 0001-0027.jpg (answers · glossary · symbols · index)
 │   │   ├── Statistics/Front-Matter/                  ← S-0 · 0001-0009.jpg
 │   │   ├── Statistics/Chapter-08-Set-Theory/         ← S-1 · 0001-0010.jpg
-│   │   └── Statistics/Chapter-09-Probability/        ← S-2 · 0001-0050.jpg
+│   │   ├── Statistics/Chapter-09-Probability/        ← S-2 · 0001-0050.jpg
+│   │   ├── Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/ ← S-3 · 0034 imgs
+│   │   ├── Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/     ← S-4 · 0028 imgs
+│   │   ├── Statistics/Chapter-12-Normal-Distribution/                ← S-5 · 0032 imgs
+│   │   └── Statistics/Chapter-13-Sampling-and-Sampling-Distributions/ ← S-6 · 0048 imgs
 │   ├── Formatted/              ← canonical Markdown library (source of truth)
 │   │   ├── Mathematics/
 │   │   │   ├── book.json       ← machine-readable registry (generated)
@@ -66,7 +71,8 @@ STUDY/
 │   │       ├── book.json
 │   │       ├── Chapter-00-Front-Matter/             ← S-0 · 9 pages
 │   │       ├── Chapter-08-Set-Theory/               ← S-1 · 10 pages + chapter.json
-│   │       └── Chapter-09-Probability/              ← S-2 · 50 pages + chapter.json
+│   │       ├── Chapter-09-Probability/              ← S-2 · 50 pages + chapter.json
+│   │       └── Chapter-10…Chapter-13/               ← S-3…S-6 · 34/28/32/48 pages + chapter.json each
 │   └── Digital/                ← Digital Edition v3 (FROZEN at v4.3 — mirrors Raw/Formatted 1:1)
 │       ├── <Subject>/<Chapter-Folder>/page-NNN.html ← 112 generated replica pages (legacy library only)
 │       ├── index.html + manifest.json               ← library browser entry points
@@ -83,7 +89,7 @@ STUDY/
 - **v4:** `Books/` splits the library into **Raw** (original chapter names, immutable scans),
   **Formatted** (uniform numbered chapters `Chapter-NN-<Title>`, front matter = Chapter 00,
   back matter = Chapter 99) and **Digital** (Digital Edition v3 — 112 generated replica pages
-  of the legacy library, **FROZEN** since v4.3). The batch code (M-0…M-BM, S-0…S-2) is the
+  of the legacy library, **FROZEN** since v4.3). The batch code (M-0…M-BM, S-0…S-6) is the
   permanent join key across all three branches.
 
 ## 🔁 Digitization pipeline (summary)

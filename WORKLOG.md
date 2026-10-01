@@ -702,3 +702,21 @@ Stage Summary:
 - State: S-3 32/34, S-4 28/28 COMPLETE, S-5 6/32, S-6 2/48 = 68/142 placed; both gates ALL GREEN at each push (latest 173ec61)
 - Book misprints preserved + noted per page (house-agent 'not disturbed', '(d).all of these', bare '>' option, 'historigram', 'Bernoulli Trails', '(N - k')' prime, etc.)
 - NEXT: S-3 033-034, S-5 0005-0008 + 0011-0032, S-6 0003-0048; then full audit + metadata + docs sync
+---
+Task ID: 20 (final)
+Agent: coordinator (Z.ai main)
+Task: SESSION COMPLETE - Statistics Chapters 10-13 digitized (142 pages), library 528
+
+Work Log:
+- All 142 pages (S-3 34, S-4 28, S-5 32, S-6 48) converted, QA'd and placed; batches S-3/S-4/S-5 COMPLETE alongside S-6
+- Conversion mix: sub-agent waves 20-b1..b25 (short prompts + /tmp/drafts/CANON-STATS.md canon, ~7-page ranges, 2-3 concurrent) + coordinator-foreground pages (S-3 033-034, S-5 005-008) during a vision-API 429 outage; interrupted agent legs' partial placements re-verified and kept (S-4 002-008, S-3 023-031, S-3 032, S-5 001/003/004/009/010, S-6 017-020, S-5 025-029)
+- Final full-library sweep: 142/142 sequences complete, $-parity even everywhere, figures_count==markers==F-blocks (66 figures in the new batches), folio==img+offset on every readable page (0 nulls - no scan-cut folios in this transfer), no nbsp, no ### Example/Q style, all 17 frontmatter fields present, offset-check notes everywhere, H1s canon
+- Coordinator scan-verified audit: 29/142 pages (20.4%) incl. every ANSWERS grid (S-4 022, S-5 024, S-6 039), both chapter-final pages (S-4 028, S-6 048), Table-1/2x10 permutation tables, tally-pipe tables, figure-dense pages (S-3 007/018/020, S-5 004/009/010/013/017) - ZERO content problems; no cut-off text, no missing pages, no illegible spots to flag
+- Example-style normalized (### Example -> **Example N.**) on S-5 003/004; hallucinated section fields removed on dead-leg pages (S-5 006, S-6 010/011/012/016/023/024/028/029)
+- Metadata regenerated (book.json: stats 211 pages; 4 new chapter.json + indexes); STATUS/README/PLAN/AGENTS synced (528-page library, 19 batches)
+- Gates at final push: verify-v4 ALL GREEN (112/112 legacy byte-verified, 528/528 raw images, 416/416 markdown-only placed); check-digital --frozen --strict-figures ALL GREEN
+
+Stage Summary:
+- LIBRARY NOW 528 PAGES: Mathematics 317 (COMPLETE) + Statistics 211 (FM + Ch. 8-13)
+- Statistics printed-folio chain 2->202 continuous; Ch. 1-7 + any back matter outstanding (batch codes S-7+)
+- All 142 new pages pushed incrementally (commits aa008ff..final); sandbox can be wiped safely

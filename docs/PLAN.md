@@ -254,12 +254,19 @@ only** — no digital replica pages.
 - [x] **THE MATHEMATICS BOOK IS FULLY DIGITIZED** (317 pages: front matter + Units 01–10 +
       Back Matter); docs synced (README, STATUS, AGENTS, this file); WORKLOG complete
 
-### Next: remaining Statistics chapters (user-scheduled, ~10 h out)
+### Next: remaining Statistics chapters (Ch. 1–7 outstanding)
 
+- [x] **Statistics Chapters 10–13 (DONE 2026-10-01, 142 pages)** — user transfer "statistics-chapters"
+      (4 named zips S-3..S-6); recon offsets +60/+94/+122/+154 (chain 60→202 continuous with
+      Ch. 9's end; folios in the running header, nav chips = furniture); registered S-3..S-6;
+      test-first 5 pages; sub-agent waves (short prompts + shared canon file, ~7-page ranges) with
+      coordinator sweep + ≥20 % scan-verified audit per wave; 429 outage bridged coordinator-
+      foreground; zero scan-cut folios; gates ALL GREEN 528/528.
 - [ ] User supplies the remaining Statistics chapters (Ch. 1–7 and any other parts; the book
-      currently holds front matter + Ch. 8–9 = 69 pages) → same markdown-only runbook (v4.3);
-      batch codes continue `S-3`, `S-4`, …; register in BOOKS + BATCHES; pass `--chapter-folder`
-      + `--book-title` to the converter; push gate `verify-v4 && check-digital --frozen`
+      currently holds front matter + Ch. 8–13 = 211 pages, printed folios 2–202 continuous) →
+      same markdown-only runbook (v4.3); batch codes continue `S-7`, `S-8`, …; register in BOOKS +
+      BATCHES; pass `--chapter-folder` + `--book-title` to the converter; push gate
+      `verify-v4 && check-digital --frozen`
 
 ## Phase 6 — Library enrichment (backlog)
 

@@ -1,7 +1,7 @@
 # Index — statistics
 
 **Book:** Basic Statistics for Intermediate Classes, Part-II — M. Saleem Akhtar, Majeed Book Depot (Federal Board)  
-**Digitized pages:** 74 · **Raw images:** 211 · Structure **v4** (Books/{Raw, Formatted, Digital})
+**Digitized pages:** 211 · **Raw images:** 211 · Structure **v4** (Books/{Raw, Formatted, Digital})
 
 > Machine-readable equivalents: `Books/Formatted/Statistics/book.json` + `chapter.json` in every chapter folder.
 > Digital replica test edition: `Books/Digital/` — 8 hand-typeset pages (`<BATCH>-page-NNN.html` + assets/, user-approved whitelist; see docs/CONVENTIONS.md §1.5).
@@ -110,45 +110,182 @@
 ## S-3 — Chapter 10: Random Variable and Probability Distributions
 
 - Markdown (`Formatted`): `Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/` · Raw scans: `Books/Raw/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/` · HTML (test): `Books/Digital/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/`
-- Pages: 2 · Printed range: 61–75 · Offset: +60
+- Pages: 34 · Printed range: 61–94 · Offset: +60
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
 | 1 | 61 | [page-001.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-001.md) | chapter-opener | — | 10.1 INTRODUCTION; 10.2 GENERATION OF RANDOM NUMBER TABLES;… | 0 |
+| 2 | 62 | [page-002.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-002.md) | theory | — | 10.4 USES OF RANDOM NUMBERS TABLE | 0 |
+| 3 | 63 | [page-003.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-003.md) | theory | — |  | 0 |
+| 4 | 64 | [page-004.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-004.md) | worked-examples | — |  | 0 |
+| 5 | 65 | [page-005.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-005.md) | mixed | — | 10.5 RANDOM VARIABLE | 0 |
+| 6 | 66 | [page-006.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-006.md) | theory | — | 10.6 DISCRETE RANDOM VARIABLE; 10.7 DISCRETE PROBABILITY DI… | 0 |
+| 7 | 67 | [page-007.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-007.md) | worked-examples | — | 10.10 PROBABILITY HISTOGRAM | 2 |
+| 8 | 68 | [page-008.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-008.md) | worked-examples | — |  | 0 |
+| 9 | 69 | [page-009.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-009.md) | worked-examples | — |  | 1 |
+| 10 | 70 | [page-010.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-010.md) | worked-examples | — |  | 2 |
+| 11 | 71 | [page-011.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-011.md) | mixed | — | 10.11 MATHEMATICAL EXPECTATION; 10.12 FUNCTION OF A RANDOM … | 0 |
+| 12 | 72 | [page-012.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-012.md) | mixed | — | 10.13 LAWS OF EXPECTATION; 10.14 VARIANCE, STANDARD DEVIATI… | 0 |
+| 13 | 73 | [page-013.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-013.md) | worked-examples | — |  | 0 |
+| 14 | 74 | [page-014.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-014.md) | worked-examples | — |  | 0 |
 | 15 | 75 | [page-015.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-015.md) | worked-examples | — |  | 0 |
+| 16 | 76 | [page-016.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-016.md) | worked-examples | — |  | 0 |
+| 17 | 77 | [page-017.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-017.md) | mixed | — | 10.15 CONTINUOUS RANDOM VARIABLE | 0 |
+| 18 | 78 | [page-018.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-018.md) | theory | — | 10.16 PROBABILITY DENSITY FUNCTION; 10.17 PROPERTIES OF PRO… | 1 |
+| 19 | 79 | [page-019.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-019.md) | worked-examples | — |  | 2 |
+| 20 | 80 | [page-020.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-020.md) | worked-examples | — |  | 1 |
+| 21 | 81 | [page-021.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-021.md) | worked-examples | — |  | 0 |
+| 22 | 82 | [page-022.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-022.md) | theory | — | SHORT DEFINITIONS | 0 |
+| 23 | 83 | [page-023.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-023.md) | theory | — | 12. Probability Function; 13. Discrete Probability Function… | 0 |
+| 24 | 84 | [page-024.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-024.md) | mixed | — | 21. Examples of Continuous Random Variable; 22. Probability… | 0 |
+| 25 | 85 | [page-025.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-025.md) | exercise | — |  | 0 |
+| 26 | 86 | [page-026.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-026.md) | exercise | — |  | 0 |
+| 27 | 87 | [page-027.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-027.md) | exercise | — |  | 0 |
+| 28 | 88 | [page-028.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-028.md) | exercise | — | SHORT QUESTIONS | 0 |
+| 29 | 89 | [page-029.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-029.md) | exercise | — |  | 0 |
+| 30 | 90 | [page-030.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-030.md) | exercise | — |  | 0 |
+| 31 | 91 | [page-031.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-031.md) | exercise | — | EXERCISES | 0 |
+| 32 | 92 | [page-032.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-032.md) | exercise | — |  | 0 |
+| 33 | 93 | [page-033.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-033.md) | exercise | — |  | 0 |
+| 34 | 94 | [page-034.md](../Books/Formatted/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/page-034.md) | exercise | — |  | 0 |
 
 ---
 
 ## S-4 — Chapter 11: Binomial and Hypergeometric Distributions
 
 - Markdown (`Formatted`): `Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/` · Raw scans: `Books/Raw/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/` · HTML (test): `Books/Digital/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/`
-- Pages: 1 · Printed range: 95–95 · Offset: +94
+- Pages: 28 · Printed range: 95–122 · Offset: +94
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
 | 1 | 95 | [page-001.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-001.md) | chapter-opener | — | 11.1 INTRODUCTION; 11.2 BERNOULLI TRIALS; 11.3 BINOMIAL EXP… | 0 |
+| 2 | 96 | [page-002.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-002.md) | theory | — | 11.6 GRAPH OF THE BINOMIAL DISTRIBUTION | 2 |
+| 3 | 97 | [page-003.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-003.md) | worked-examples | — |  | 1 |
+| 4 | 98 | [page-004.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-004.md) | worked-examples | — |  | 0 |
+| 5 | 99 | [page-005.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-005.md) | worked-examples | — |  | 0 |
+| 6 | 100 | [page-006.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-006.md) | mixed | — | 11.7 MEAN, VARIANCE AND STANDARD DEVIATION OF THE BINOMIAL … | 0 |
+| 7 | 101 | [page-007.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-007.md) | worked-examples | — |  | 0 |
+| 8 | 102 | [page-008.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-008.md) | worked-examples | — |  | 0 |
+| 9 | 103 | [page-009.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-009.md) | theory | — |  | 0 |
+| 10 | 104 | [page-010.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-010.md) | mixed | — | 11.8 PROPERTIES OF THE BINOMIAL DISTRIBUTION | 0 |
+| 11 | 105 | [page-011.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-011.md) | theory | — | 11.9 BINOMIAL FREQUENCY DISTRIBUTION; 11.10 FITTING OF THE … | 0 |
+| 12 | 106 | [page-012.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-012.md) | worked-examples | — |  | 0 |
+| 13 | 107 | [page-013.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-013.md) | mixed | — | 11.11 HYPERGEOMETRIC DISTRIBUTION | 0 |
+| 14 | 108 | [page-014.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-014.md) | mixed | — | 11.12 HYPERGEOMETRIC EXPERIMENT; 11.13 PROPERTIES OF THE HY… | 0 |
+| 15 | 109 | [page-015.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-015.md) | worked-examples | — |  | 0 |
+| 16 | 110 | [page-016.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-016.md) | worked-examples | — |  | 0 |
+| 17 | 111 | [page-017.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-017.md) | worked-examples | — |  | 0 |
+| 18 | 112 | [page-018.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-018.md) | theory | — | Short Definitions | 0 |
+| 19 | 113 | [page-019.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-019.md) | exercise | — | MULTIPLE – CHOICE QUESTIONS | 0 |
+| 20 | 114 | [page-020.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-020.md) | exercise | — |  | 0 |
+| 21 | 115 | [page-021.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-021.md) | exercise | — |  | 0 |
+| 22 | 116 | [page-022.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-022.md) | mixed | — |  | 0 |
+| 23 | 117 | [page-023.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-023.md) | exercise | SQ |  | 0 |
+| 24 | 118 | [page-024.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-024.md) | exercise | SQ |  | 0 |
+| 25 | 119 | [page-025.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-025.md) | exercise | EXERCISES | EXERCISES | 0 |
+| 26 | 120 | [page-026.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-026.md) | exercise | EXERCISES |  | 0 |
+| 27 | 121 | [page-027.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-027.md) | exercise | EXERCISES |  | 0 |
+| 28 | 122 | [page-028.md](../Books/Formatted/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/page-028.md) | exercise | EXERCISES |  | 0 |
 
 ---
 
 ## S-5 — Chapter 12: Normal Distribution
 
 - Markdown (`Formatted`): `Books/Formatted/Statistics/Chapter-12-Normal-Distribution/` · Raw scans: `Books/Raw/Statistics/Chapter-12-Normal-Distribution/` · HTML (test): `Books/Digital/Statistics/Chapter-12-Normal-Distribution/`
-- Pages: 1 · Printed range: 124–124 · Offset: +122
+- Pages: 32 · Printed range: 123–154 · Offset: +122
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
+| 1 | 123 | [page-001.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-001.md) | chapter-opener | — | 12.1 INTRODUCTION; 12.2 NORMAL DISTRIBUTION | 0 |
 | 2 | 124 | [page-002.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-002.md) | theory | — | 12.3 PROPERTIES OF THE NORMAL DISTRIBUTION; 12.4 STANDARD N… | 1 |
+| 3 | 125 | [page-003.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-003.md) | mixed | — | 12.5 USE OF THE AREA TABLE | 1 |
+| 4 | 126 | [page-004.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-004.md) | worked-examples | — |  | 5 |
+| 5 | 127 | [page-005.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-005.md) | worked-examples | — |  | 5 |
+| 6 | 128 | [page-006.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-006.md) | worked-examples | — |  | 6 |
+| 7 | 129 | [page-007.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-007.md) | worked-examples | — |  | 5 |
+| 8 | 130 | [page-008.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-008.md) | worked-examples | — |  | 4 |
+| 9 | 131 | [page-009.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-009.md) | mixed | — | 12.6 NORMAL FREQUENCY DISTRIBUTION | 4 |
+| 10 | 132 | [page-010.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-010.md) | mixed | — | 12.7 THE NORMAL APPROXIMATION TO THE BINOMIAL DISTRIBUTION | 3 |
+| 11 | 133 | [page-011.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-011.md) | worked-examples | — | 12.7 THE NORMAL APPROXIMATION TO THE BINOMIAL DISTRIBUTION | 0 |
+| 12 | 134 | [page-012.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-012.md) | worked-examples | — |  | 0 |
+| 13 | 135 | [page-013.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-013.md) | worked-examples | — | 12.8 INVERSE USE OF THE AREA TABLE | 5 |
+| 14 | 136 | [page-014.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-014.md) | worked-examples | — |  | 4 |
+| 15 | 137 | [page-015.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-015.md) | worked-examples | — |  | 3 |
+| 16 | 138 | [page-016.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-016.md) | worked-examples | — |  | 3 |
+| 17 | 139 | [page-017.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-017.md) | worked-examples | — |  | 5 |
+| 18 | 140 | [page-018.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-018.md) | theory | — | SHORT DEFINITIONS | 0 |
+| 19 | 141 | [page-019.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-019.md) | theory | — | 9. Properties of Normal Distribution; 10. Standard Normal D… | 0 |
+| 20 | 142 | [page-020.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-020.md) | exercise | MCQ | MULTIPLE - CHOICE QUESTIONS | 0 |
+| 21 | 143 | [page-021.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-021.md) | exercise | MCQ | MULTIPLE - CHOICE QUESTIONS | 0 |
+| 22 | 144 | [page-022.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-022.md) | exercise | MCQ | MULTIPLE - CHOICE QUESTIONS | 0 |
+| 23 | 145 | [page-023.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-023.md) | exercise | MCQ | MULTIPLE - CHOICE QUESTIONS | 0 |
+| 24 | 146 | [page-024.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-024.md) | exercise | MCQ | MULTIPLE - CHOICE QUESTIONS | 0 |
+| 25 | 147 | [page-025.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-025.md) | exercise | SHORT QUESTIONS | SHORT QUESTIONS | 0 |
+| 26 | 148 | [page-026.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-026.md) | exercise | SHORT QUESTIONS |  | 0 |
+| 27 | 149 | [page-027.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-027.md) | exercise | SHORT QUESTIONS |  | 0 |
+| 28 | 150 | [page-028.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-028.md) | exercise | SHORT QUESTIONS |  | 0 |
+| 29 | 151 | [page-029.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-029.md) | exercise | EXERCISES | EXERCISES | 0 |
+| 30 | 152 | [page-030.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-030.md) | exercise | EXERCISES |  | 0 |
+| 31 | 153 | [page-031.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-031.md) | exercise | EXERCISES |  | 0 |
+| 32 | 154 | [page-032.md](../Books/Formatted/Statistics/Chapter-12-Normal-Distribution/page-032.md) | exercise | EXERCISES |  | 0 |
 
 ---
 
 ## S-6 — Chapter 13: Sampling and Sampling Distributions
 
 - Markdown (`Formatted`): `Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/` · Raw scans: `Books/Raw/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/` · HTML (test): `Books/Digital/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/`
-- Pages: 1 · Printed range: 155–155 · Offset: +154
+- Pages: 48 · Printed range: 155–202 · Offset: +154
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
 | 1 | 155 | [page-001.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-001.md) | chapter-opener | — | 13.1 INTRODUCTION; 13.2 POPULATION; 13.3 FINITE POPULATION;… | 0 |
+| 2 | 156 | [page-002.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-002.md) | theory | — | 13.7 PARAMETER AND STATISTIC; 13.8 SAMPLING FRACTION; 13.9 … | 0 |
+| 3 | 157 | [page-003.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-003.md) | theory | — | 13.13 LIMITATIONS OF SAMPLING; 13.14 SAMPLE DESIGN; 13.15 S… | 0 |
+| 4 | 158 | [page-004.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-004.md) | theory | — | 13.17 KNOWN PROBABILITY; 13.18 NON-ZERO PROBABILITY; 13.19 … | 0 |
+| 5 | 159 | [page-005.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-005.md) | theory | — | 13.21 SAMPLING WITHOUT REPLACEMENT; 13.22 COMBINATIONS; 13.… | 0 |
+| 6 | 160 | [page-006.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-006.md) | theory | — | 13.25 DIFFERENCE BETWEEN RANDOM SAMPLE AND SIMPLE RANDOM SA… | 0 |
+| 7 | 161 | [page-007.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-007.md) | theory | — | 13.27 ERRORS; 13.28 SAMPLING ERRORS; 13.29 REDUCING THE SAM… | 0 |
+| 8 | 162 | [page-008.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-008.md) | theory | — | 13.30 NON-SAMPLING ERRORS; 13.31 SAMPLING DISTRIBUTIONS | 0 |
+| 9 | 163 | [page-009.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-009.md) | theory | — | 13.32 STANDARD ERROR; 13.33 SAMPLING DISTRIBUTION OF SAMPLE… | 0 |
+| 10 | 164 | [page-010.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-010.md) | worked-examples | — |  | 0 |
+| 11 | 165 | [page-011.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-011.md) | worked-examples | — |  | 0 |
+| 12 | 166 | [page-012.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-012.md) | worked-examples | — |  | 0 |
+| 13 | 167 | [page-013.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-013.md) | worked-examples | — |  | 0 |
+| 14 | 168 | [page-014.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-014.md) | worked-examples | — |  | 0 |
+| 15 | 169 | [page-015.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-015.md) | mixed | — | 13.34 SAMPLING DISTRIBUTION OF s² and S² | 0 |
+| 16 | 170 | [page-016.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-016.md) | worked-examples | — |  | 0 |
+| 17 | 171 | [page-017.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-017.md) | worked-examples | — |  | 0 |
+| 18 | 172 | [page-018.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-018.md) | mixed | — | 13.35 SAMPLING DISTRIBUTION OF DIFFERENCE BETWEEN TWO MEANS | 0 |
+| 19 | 173 | [page-019.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-019.md) | worked-examples | — |  | 0 |
+| 20 | 174 | [page-020.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-020.md) | worked-examples | — |  | 0 |
+| 21 | 175 | [page-021.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-021.md) | worked-examples | — |  | 0 |
+| 22 | 176 | [page-022.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-022.md) | mixed | — | 13.36 PROPORTION; 13.37 SAMPLING DISTRIBUTION OF PROPORTION | 0 |
+| 23 | 177 | [page-023.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-023.md) | mixed | — |  | 0 |
+| 24 | 178 | [page-024.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-024.md) | worked-examples | — |  | 0 |
+| 25 | 179 | [page-025.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-025.md) | worked-examples | — |  | 0 |
+| 26 | 180 | [page-026.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-026.md) | worked-examples | — |  | 0 |
+| 27 | 181 | [page-027.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-027.md) | mixed | — | 13.38 SAMPLING DISTRIBUTION OF DIFFERENCE BETWEEN p̂1 and p… | 0 |
+| 28 | 182 | [page-028.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-028.md) | mixed | — |  | 0 |
+| 29 | 183 | [page-029.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-029.md) | worked-examples | — |  | 0 |
+| 30 | 184 | [page-030.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-030.md) | worked-examples | — |  | 0 |
+| 31 | 185 | [page-031.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-031.md) | theory | — | SHORT DEFINITIONS | 0 |
+| 32 | 186 | [page-032.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-032.md) | theory | — | 19. Parameter; 20. Statistic; 21. Census; 22. Sample Survey… | 0 |
+| 33 | 187 | [page-033.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-033.md) | theory | — | 34. Sampling without Replacement; 35. Permutation; 36. Comb… | 0 |
+| 34 | 188 | [page-034.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-034.md) | exercise | MCQ | MULTIPLE – CHOICE QUESTIONS | 0 |
+| 35 | 189 | [page-035.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-035.md) | exercise | MCQ |  | 0 |
+| 36 | 190 | [page-036.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-036.md) | exercise | MCQ |  | 0 |
+| 37 | 191 | [page-037.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-037.md) | exercise | MCQ |  | 0 |
+| 38 | 192 | [page-038.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-038.md) | exercise | MCQ |  | 0 |
+| 39 | 193 | [page-039.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-039.md) | exercise | MCQ | ANSWERS | 0 |
+| 40 | 194 | [page-040.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-040.md) | exercise | SHORT QUESTIONS | SHORT QUESTIONS | 0 |
+| 41 | 195 | [page-041.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-041.md) | exercise | SHORT QUESTIONS | SHORT QUESTIONS | 0 |
+| 42 | 196 | [page-042.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-042.md) | exercise | SHORT QUESTIONS | SHORT QUESTIONS | 0 |
+| 43 | 197 | [page-043.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-043.md) | exercise | EXERCISES | EXERCISES | 0 |
+| 44 | 198 | [page-044.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-044.md) | exercise | EXERCISES | EXERCISES | 0 |
+| 45 | 199 | [page-045.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-045.md) | exercise | EXERCISES | EXERCISES | 0 |
+| 46 | 200 | [page-046.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-046.md) | exercise | EXERCISES | EXERCISES | 0 |
+| 47 | 201 | [page-047.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-047.md) | exercise | EXERCISES | EXERCISES | 0 |
+| 48 | 202 | [page-048.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-048.md) | exercise | EXERCISES | EXERCISES | 0 |
 
 ---
 *Auto-generated by `tools/build-metadata.mjs` — do not hand-edit.*

@@ -684,3 +684,21 @@ Work Log:
 Stage Summary:
 - Documentation now matches reality everywhere: 386 pages, Mathematics book fully digitized, all gates green at 78781f0
 - NEXT SESSION (user-scheduled, ~10 h): remaining Statistics chapters via the same v4.3 markdown-only pipeline; batch codes continue S-3, S-4, ...
+---
+Task ID: 20 (progress checkpoint)
+Agent: coordinator (Z.ai main)
+Task: Statistics Chapters 10-13 (S-3..S-6, 142 pages) - intake/recon/test-first done, mass conversion in progress
+
+Work Log:
+- Transfer "statistics-chapters" downloaded (177.13 MB, 4 zips S-3..S-6, all -t clean, direct JPGs 0001..NNNN no gaps)
+- Recon: S-3 = Ch.10 Random Variable and Probability Distributions (34pp, printed 61-94, +60); S-4 = Ch.11 Binomial and Hypergeometric Distributions (28pp, 95-122, +94); S-5 = Ch.12 Normal Distribution (32pp, 123-154, +122); S-6 = Ch.13 Sampling and Sampling Distributions (48pp, 155-202, +154); chain 60->202 continuous with Ch.9's end; folios live in RUNNING HEADER (odd: top-right, even: top-left) + chapter-end nav chips = furniture; running labels correct (no S-2-style misprint)
+- Registered BOOKS + BATCHES + Raw/Formatted skeletons; commits aa008ff, e89ef65 (test-first 5 pages: S-3 001/015, S-4 001, S-5 002, S-6 001)
+- Mass conversion via sub-agent waves (short-prompt pattern + shared /tmp/drafts/CANON-STATS.md): S-3 002-014 (20-b1/b2), S-3 016-022 (20-b4), S-4 009-015 (20-b6), S-4 016-022 (20-b8), S-4 023-028 (20-b9) = S-4 COMPLETE 28/28
+- Transport-deadline agent deaths (long-prompt launch failures + mid-run deaths): dead legs still placed good work (S-3 023-031, S-4 002-008, S-3 032, S-5 001/003/004/009/010) - all coordinator-audited (mechanical sweep + detailed vs-scan spot checks incl. S-4 004/006, S-3 025, S-5 004/009/010) - ALL PASS
+- S-5 example-style normalized (### Example -> **Example N.**) on pages 003/004
+- Vision API then went hard-429 (quota exhaustion) -> coordinator sequential pipeline fallback for the remainder
+
+Stage Summary:
+- State: S-3 32/34, S-4 28/28 COMPLETE, S-5 6/32, S-6 2/48 = 68/142 placed; both gates ALL GREEN at each push (latest 173ec61)
+- Book misprints preserved + noted per page (house-agent 'not disturbed', '(d).all of these', bare '>' option, 'historigram', 'Bernoulli Trails', '(N - k')' prime, etc.)
+- NEXT: S-3 033-034, S-5 0005-0008 + 0011-0032, S-6 0003-0048; then full audit + metadata + docs sync

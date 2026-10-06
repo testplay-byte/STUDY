@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-17-Orientation-of-Computers/0001.jpg
 converted_at: "2026-10-06"
 converted_by: "coordinator-direct (vision-API 429 outage — direct transcription, no convert-page draft)"
-notes: "Chapter opener: black box labelled 'Chapter 17' + title printed in caps = furniture (captured in H1); chapter_title normalized from printed caps (S-2 canon). Opener folio 319 at bottom-center. Converted during a sustained vision-API 429 outage by coordinator direct transcription, QA'd against the image by the coordinator. Section heading '17.3.COMPUTER HISTORY' prints with no space after '3.' (as printed, preserved). Book typos preserved: 'In to day's world', 'john atanassoff' (lowercase as printed), 'hon reliable' (for non), 'were come into existence', 'From 1942 on wards'; ink specks trail 'thousands' and 'generations' (not transcribed)."
+notes: "Chapter opener: black box labelled 'Chapter 17' + title printed in caps = furniture (captured in H1); chapter_title normalized from printed caps (S-2 canon). Opener folio 319 at bottom-center. Offset check: printed p.319 = image 1 + 318. Converted during a sustained vision-API 429 outage by coordinator direct transcription, QA'd against the image by the coordinator. Section heading '17.3.COMPUTER HISTORY' prints with no space after '3.' (as printed, preserved). Book typos preserved: 'In to day's world', 'john atanassoff' (lowercase as printed), 'hon reliable' (for non), 'were come into existence', 'From 1942 on wards'; ink specks trail 'thousands' and 'generations' (not transcribed)."
 ---
 
 # Page 1 — Orientation of Computers (Chapter 17) — Chapter Opener

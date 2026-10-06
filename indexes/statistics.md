@@ -1,7 +1,7 @@
 # Index — statistics
 
 **Book:** Basic Statistics for Intermediate Classes, Part-II — M. Saleem Akhtar, Majeed Book Depot (Federal Board)  
-**Digitized pages:** 211 · **Raw images:** 211 · Structure **v4** (Books/{Raw, Formatted, Digital})
+**Digitized pages:** 351 · **Raw images:** 351 · Structure **v4** (Books/{Raw, Formatted, Digital})
 
 > Machine-readable equivalents: `Books/Formatted/Statistics/book.json` + `chapter.json` in every chapter folder.
 > Digital replica test edition: `Books/Digital/` — 8 hand-typeset pages (`<BATCH>-page-NNN.html` + assets/, user-approved whitelist; see docs/CONVENTIONS.md §1.5).
@@ -286,6 +286,196 @@
 | 46 | 200 | [page-046.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-046.md) | exercise | EXERCISES | EXERCISES | 0 |
 | 47 | 201 | [page-047.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-047.md) | exercise | EXERCISES | EXERCISES | 0 |
 | 48 | 202 | [page-048.md](../Books/Formatted/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/page-048.md) | exercise | EXERCISES | EXERCISES | 0 |
+
+---
+
+## S-7 — Chapter 14: Statistical Inference Estimation
+
+- Markdown (`Formatted`): `Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/` · Raw scans: `Books/Raw/Statistics/Chapter-14-Statistical-Inference-Estimation/` · HTML (test): `Books/Digital/Statistics/Chapter-14-Statistical-Inference-Estimation/`
+- Pages: 36 · Printed range: 203–238 · Offset: +202
+
+| Image | Printed | File | Type | Exercise | Section(s) | Fig. |
+|------:|--------:|------|------|----------|------------|-----:|
+| 1 | 203 | [page-001.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-001.md) | chapter-opener | — | 14.1 INTRODUCTION; 14.2 STATISTICAL INFERENCE; 14.3 APPROAC… | 0 |
+| 2 | 204 | [page-002.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-002.md) | theory | — | 14.6 POINT ESTIMATION; 14.7 UNBIASEDNESS; 14.8 IMPORTANCE O… | 0 |
+| 3 | 205 | [page-003.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-003.md) | theory | — | 14.9 INTERVAL ESTIMATION; 14.10 CONFIDENCE COEFFICIENT; 14.… | 0 |
+| 4 | 206 | [page-004.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-004.md) | theory | — | 14.13 CONFIDENCE INTERVAL ESTIMATE OF POPULATION MEAN μ ( L… | 1 |
+| 5 | 207 | [page-005.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-005.md) | theory | — |  | 2 |
+| 6 | 208 | [page-006.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-006.md) | mixed | — | 14.14 MEANING OF THE CONFIDENCE INTERVAL | 0 |
+| 7 | 209 | [page-007.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-007.md) | worked-examples | — |  | 0 |
+| 8 | 210 | [page-008.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-008.md) | worked-examples | — |  | 0 |
+| 9 | 211 | [page-009.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-009.md) | mixed | — | 14.15 CONFIDENCE INTERVAL ESTIMATE FOR POPULATION MEAN μ- P… | 1 |
+| 10 | 212 | [page-010.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-010.md) | worked-examples | — |  | 0 |
+| 11 | 213 | [page-011.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-011.md) | worked-examples | — | 14.16 CONFIDENCE INTERVAL ESTIMATE FOR THE DIFFERENCE BETWE… | 0 |
+| 12 | 214 | [page-012.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-012.md) | theory | — |  | 0 |
+| 13 | 215 | [page-013.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-013.md) | worked-examples | — |  | 0 |
+| 14 | 216 | [page-014.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-014.md) | theory | — | 14.17 CONFIDENCE INTERVAL ESTIMATE FOR THE DIFFERENCE BETWE… | 0 |
+| 15 | 217 | [page-015.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-015.md) | theory | — |  | 1 |
+| 16 | 218 | [page-016.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-016.md) | worked-examples | — |  | 0 |
+| 17 | 219 | [page-017.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-017.md) | theory | — | 14.18 CONFIDENCE INTERVAL FOR THE DIFFERENCE BETWEEN TWO PO… | 0 |
+| 18 | 220 | [page-018.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-018.md) | mixed | — |  | 0 |
+| 19 | 221 | [page-019.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-019.md) | theory | — | 14.19 PROPORTION; 14.20 CONFIDENCE INTERVAL ESTIMATE FOR PO… | 1 |
+| 20 | 222 | [page-020.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-020.md) | worked-examples | — |  | 0 |
+| 21 | 223 | [page-021.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-021.md) | theory | — | 14.21 CONFIDENCE INTERVAL ESTIMATE FOR THE DIFFERENCE BETWE… | 0 |
+| 22 | 224 | [page-022.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-022.md) | worked-examples | — |  | 0 |
+| 23 | 225 | [page-023.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-023.md) | worked-examples | — |  | 0 |
+| 24 | 226 | [page-024.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-024.md) | theory | — | SHORT DEFINITIONS | 0 |
+| 25 | 227 | [page-025.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-025.md) | mixed | — | 15. Confidence Interval; 16. Confidence Limits; 17. Level o… | 0 |
+| 26 | 228 | [page-026.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-026.md) | exercise | — |  | 0 |
+| 27 | 229 | [page-027.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-027.md) | exercise | — |  | 0 |
+| 28 | 230 | [page-028.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-028.md) | exercise | — |  | 0 |
+| 29 | 231 | [page-029.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-029.md) | exercise | — |  | 0 |
+| 30 | 232 | [page-030.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-030.md) | exercise | SQ |  | 0 |
+| 31 | 233 | [page-031.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-031.md) | exercise | SQ |  | 0 |
+| 32 | 234 | [page-032.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-032.md) | exercise | EXERCISES | EXERCISES | 0 |
+| 33 | 235 | [page-033.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-033.md) | exercise | EXERCISES |  | 0 |
+| 34 | 236 | [page-034.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-034.md) | exercise | EXERCISES |  | 0 |
+| 35 | 237 | [page-035.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-035.md) | exercise | EXERCISES |  | 0 |
+| 36 | 238 | [page-036.md](../Books/Formatted/Statistics/Chapter-14-Statistical-Inference-Estimation/page-036.md) | exercise | EXERCISES |  | 0 |
+
+---
+
+## S-8 — Chapter 15: Statistical Inference Testing of Hypotheses
+
+- Markdown (`Formatted`): `Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/` · Raw scans: `Books/Raw/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/` · HTML (test): `Books/Digital/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/`
+- Pages: 46 · Printed range: 239–284 · Offset: +238
+
+| Image | Printed | File | Type | Exercise | Section(s) | Fig. |
+|------:|--------:|------|------|----------|------------|-----:|
+| 1 | 239 | [page-001.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-001.md) | chapter-opener | — | 15.1 INTRODUCTION; 15.2 STATISTICAL HYPOTHESES; 15.3 NULL H… | 0 |
+| 2 | 240 | [page-002.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-002.md) | theory | — | 15.4 ALTERNATIVE HYPOTHESIS; 15.5 SIMPLE HYPOTHESIS; 15.6 C… | 0 |
+| 3 | 241 | [page-003.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-003.md) | theory | — | 15.8 TEST STATISTIC; 15.9 ACCEPTANCE AND REJECTION REGIONS;… | 3 |
+| 4 | 242 | [page-004.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-004.md) | theory | — | 15.12 ERRORS IN TESTING OF HYPOTHESIS; 15.13 TYPE I ERROR; … | 0 |
+| 5 | 243 | [page-005.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-005.md) | theory | — | 15.15 RELATION BETWEEN α and β | 1 |
+| 6 | 244 | [page-006.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-006.md) | theory | — | 15.16 LEVEL OF SIGNIFICANCE; 15.17 FORMULATING H₀ , H₁ AND … | 1 |
+| 7 | 245 | [page-007.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-007.md) | mixed | — | 15.18 GENERAL PROCEDURE FOR TESTING OF HYPOTHESIS | 2 |
+| 8 | 246 | [page-008.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-008.md) | theory | — | 15.19 HYPOTHESIS TESTING - POPULATION MEAN μ WHEN σ KNOWN (… | 0 |
+| 9 | 247 | [page-009.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-009.md) | theory | — |  | 3 |
+| 10 | 248 | [page-010.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-010.md) | worked-examples | — |  | 0 |
+| 11 | 249 | [page-011.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-011.md) | theory | — | 15.20 HYPOTHESIS TESTING — POPULATION MEAN μ WHEN σ UNKNOWN… | 0 |
+| 12 | 250 | [page-012.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-012.md) | worked-examples | — |  | 0 |
+| 13 | 251 | [page-013.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-013.md) | theory | — | 15.21 HYPOTHESIS TESTING – POPULATION MEAN μ WHEN σ KNOWN –… | 2 |
+| 14 | 252 | [page-014.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-014.md) | worked-examples | — |  | 1 |
+| 15 | 253 | [page-015.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-015.md) | worked-examples | — |  | 0 |
+| 16 | 254 | [page-016.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-016.md) | theory | — | 15.23 HYPOTHESIS TESTING – DIFFERENCE BETWEEN TWO POPULATIO… | 0 |
+| 17 | 255 | [page-017.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-017.md) | worked-examples | — |  | 0 |
+| 18 | 256 | [page-018.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-018.md) | mixed | — | 15.24 HYPOTHESIS TESTING – DIFFERENCE BETWEEN TWO POPULATIO… | 0 |
+| 19 | 257 | [page-019.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-019.md) | mixed | — | 15.25 TEST ABOUT μ1 – μ2 WHEN σ1² AND σ2² KNOWN, POPULATION… | 0 |
+| 20 | 258 | [page-020.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-020.md) | mixed | — |  | 0 |
+| 21 | 259 | [page-021.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-021.md) | mixed | — | 15.27 TEST ABOUT μ1 – μ2, DEPENDENT SAMPLES, POPULATIONS NO… | 0 |
+| 22 | 260 | [page-022.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-022.md) | mixed | — |  | 0 |
+| 23 | 261 | [page-023.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-023.md) | mixed | — | 15.28 TEST OF POPULATION PROPORTION p ( LARGE SAMPLE ) | 0 |
+| 24 | 262 | [page-024.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-024.md) | theory | — |  | 2 |
+| 25 | 263 | [page-025.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-025.md) | mixed | — |  | 1 |
+| 26 | 264 | [page-026.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-026.md) | worked-examples | — |  | 0 |
+| 27 | 265 | [page-027.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-027.md) | mixed | — | 15.29 TEST OF DIFFERENCE BETWEEN TWO POPULATION PROPORTIONS… | 0 |
+| 28 | 266 | [page-028.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-028.md) | mixed | — |  | 0 |
+| 29 | 267 | [page-029.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-029.md) | worked-examples | — |  | 0 |
+| 30 | 268 | [page-030.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-030.md) | mixed | — | 15.30 CHOICE OF PROPER TEST-STATISTIC | 0 |
+| 31 | 269 | [page-031.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-031.md) | summary | — |  | 0 |
+| 32 | 270 | [page-032.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-032.md) | summary | — |  | 0 |
+| 33 | 271 | [page-033.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-033.md) | exercise | — | MULTIPLE – CHOICE QUESTIONS | 0 |
+| 34 | 272 | [page-034.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-034.md) | exercise | — |  | 0 |
+| 35 | 273 | [page-035.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-035.md) | exercise | — |  | 0 |
+| 36 | 274 | [page-036.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-036.md) | exercise | — |  | 0 |
+| 37 | 275 | [page-037.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-037.md) | exercise | MCQ |  | 0 |
+| 38 | 276 | [page-038.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-038.md) | exercise | SQ | SHORT QUESTIONS | 0 |
+| 39 | 277 | [page-039.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-039.md) | exercise | SQ |  | 0 |
+| 40 | 278 | [page-040.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-040.md) | exercise | SQ |  | 0 |
+| 41 | 279 | [page-041.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-041.md) | exercise | EXERCISES | EXERCISES | 0 |
+| 42 | 280 | [page-042.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-042.md) | exercise | EXERCISES |  | 0 |
+| 43 | 281 | [page-043.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-043.md) | exercise | EXERCISES |  | 0 |
+| 44 | 282 | [page-044.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-044.md) | exercise | EXERCISES |  | 0 |
+| 45 | 283 | [page-045.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-045.md) | exercise | EXERCISES |  | 0 |
+| 46 | 284 | [page-046.md](../Books/Formatted/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/page-046.md) | exercise | EXERCISES |  | 0 |
+
+---
+
+## S-9 — Chapter 16: Association
+
+- Markdown (`Formatted`): `Books/Formatted/Statistics/Chapter-16-Association/` · Raw scans: `Books/Raw/Statistics/Chapter-16-Association/` · HTML (test): `Books/Digital/Statistics/Chapter-16-Association/`
+- Pages: 34 · Printed range: 285–318 · Offset: +284
+
+| Image | Printed | File | Type | Exercise | Section(s) | Fig. |
+|------:|--------:|------|------|----------|------------|-----:|
+| 1 | 285 | [page-001.md](../Books/Formatted/Statistics/Chapter-16-Association/page-001.md) | chapter-opener | — | 16.1. VARIABLE AND ATTRIBUTE; 16.2. NOTATION FOR ATTRIBUTES… | 0 |
+| 2 | 286 | [page-002.md](../Books/Formatted/Statistics/Chapter-16-Association/page-002.md) | theory | — | 16.4. TWO ATTRIBUTES; 16.5. POSITIVE AND NEGATIVE CLASSES; … | 0 |
+| 3 | 287 | [page-003.md](../Books/Formatted/Statistics/Chapter-16-Association/page-003.md) | theory | — | 16.7. ULTIMATE CLASS FREQUENCIES; 16.8. LOWER ORDER FREQUEN… | 0 |
+| 4 | 288 | [page-004.md](../Books/Formatted/Statistics/Chapter-16-Association/page-004.md) | worked-examples | — |  | 0 |
+| 5 | 289 | [page-005.md](../Books/Formatted/Statistics/Chapter-16-Association/page-005.md) | theory | — | 16.10. CONSISTENCY | 0 |
+| 6 | 290 | [page-006.md](../Books/Formatted/Statistics/Chapter-16-Association/page-006.md) | mixed | — | 16.11. DEFINITION OF INDEPENDENCE | 0 |
+| 7 | 291 | [page-007.md](../Books/Formatted/Statistics/Chapter-16-Association/page-007.md) | theory | — | 16.12. ANOTHER DEFINITION OF INDEPENDENCE | 0 |
+| 8 | 292 | [page-008.md](../Books/Formatted/Statistics/Chapter-16-Association/page-008.md) | worked-examples | — |  | 0 |
+| 9 | 293 | [page-009.md](../Books/Formatted/Statistics/Chapter-16-Association/page-009.md) | worked-examples | — |  | 0 |
+| 10 | 294 | [page-010.md](../Books/Formatted/Statistics/Chapter-16-Association/page-010.md) | worked-examples | — | 16.13. COEFFICIENT OF ASSOCIATION | 0 |
+| 11 | 295 | [page-011.md](../Books/Formatted/Statistics/Chapter-16-Association/page-011.md) | mixed | — | 16 14. CHI-SQUARE (χ²) DISTRIBUTION; 16.15. TEST OF INDEPEN… | 1 |
+| 12 | 296 | [page-012.md](../Books/Formatted/Statistics/Chapter-16-Association/page-012.md) | theory | — |  | 1 |
+| 13 | 297 | [page-013.md](../Books/Formatted/Statistics/Chapter-16-Association/page-013.md) | theory | — | 16.16. DIRECT FORMULA FOR CALCULATING χ² IN 2×2 CONTINGENCY… | 0 |
+| 14 | 298 | [page-014.md](../Books/Formatted/Statistics/Chapter-16-Association/page-014.md) | mixed | — | 16.18. LIMITATIONS OF χ² | 0 |
+| 15 | 299 | [page-015.md](../Books/Formatted/Statistics/Chapter-16-Association/page-015.md) | worked-examples | — |  | 0 |
+| 16 | 300 | [page-016.md](../Books/Formatted/Statistics/Chapter-16-Association/page-016.md) | worked-examples | — |  | 1 |
+| 17 | 301 | [page-017.md](../Books/Formatted/Statistics/Chapter-16-Association/page-017.md) | worked-examples | — |  | 0 |
+| 18 | 302 | [page-018.md](../Books/Formatted/Statistics/Chapter-16-Association/page-018.md) | worked-examples | — |  | 0 |
+| 19 | 303 | [page-019.md](../Books/Formatted/Statistics/Chapter-16-Association/page-019.md) | mixed | — | 16.19. RANK CORRELATION: | 0 |
+| 20 | 304 | [page-020.md](../Books/Formatted/Statistics/Chapter-16-Association/page-020.md) | worked-examples | — |  | 0 |
+| 21 | 305 | [page-021.md](../Books/Formatted/Statistics/Chapter-16-Association/page-021.md) | worked-examples | — |  | 0 |
+| 22 | 306 | [page-022.md](../Books/Formatted/Statistics/Chapter-16-Association/page-022.md) | theory | — | SHORT DEFINITIONS | 0 |
+| 23 | 307 | [page-023.md](../Books/Formatted/Statistics/Chapter-16-Association/page-023.md) | theory | — | 18. Coefficient of Association; 19. Coefficient of Continge… | 0 |
+| 24 | 308 | [page-024.md](../Books/Formatted/Statistics/Chapter-16-Association/page-024.md) | mixed | — | 27. Applications of Chi-Square Test; 28. Rank Correlation; … | 0 |
+| 25 | 309 | [page-025.md](../Books/Formatted/Statistics/Chapter-16-Association/page-025.md) | exercise | — |  | 0 |
+| 26 | 310 | [page-026.md](../Books/Formatted/Statistics/Chapter-16-Association/page-026.md) | exercise | — |  | 0 |
+| 27 | 311 | [page-027.md](../Books/Formatted/Statistics/Chapter-16-Association/page-027.md) | exercise | MCQ |  | 0 |
+| 28 | 312 | [page-028.md](../Books/Formatted/Statistics/Chapter-16-Association/page-028.md) | exercise | SQ | SHORT QUESTIONS | 0 |
+| 29 | 313 | [page-029.md](../Books/Formatted/Statistics/Chapter-16-Association/page-029.md) | exercise | SQ |  | 0 |
+| 30 | 314 | [page-030.md](../Books/Formatted/Statistics/Chapter-16-Association/page-030.md) | exercise | EXERCISES |  | 0 |
+| 31 | 315 | [page-031.md](../Books/Formatted/Statistics/Chapter-16-Association/page-031.md) | exercise | EXERCISES |  | 0 |
+| 32 | 316 | [page-032.md](../Books/Formatted/Statistics/Chapter-16-Association/page-032.md) | exercise | EXERCISES |  | 0 |
+| 33 | 317 | [page-033.md](../Books/Formatted/Statistics/Chapter-16-Association/page-033.md) | exercise | EXERCISES |  | 0 |
+| 34 | 318 | [page-034.md](../Books/Formatted/Statistics/Chapter-16-Association/page-034.md) | exercise | EXERCISES |  | 0 |
+
+---
+
+## S-10 — Chapter 17: Orientation of Computers
+
+- Markdown (`Formatted`): `Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/` · Raw scans: `Books/Raw/Statistics/Chapter-17-Orientation-of-Computers/` · HTML (test): `Books/Digital/Statistics/Chapter-17-Orientation-of-Computers/`
+- Pages: 16 · Printed range: 319–334 · Offset: +318
+
+| Image | Printed | File | Type | Exercise | Section(s) | Fig. |
+|------:|--------:|------|------|----------|------------|-----:|
+| 1 | 319 | [page-001.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-001.md) | chapter-opener | — | 17.1 INTRODUCTION TO COMPUTERS; 17.2 COMPUTER CAPABILITIES … | 0 |
+| 2 | 320 | [page-002.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-002.md) | theory | — | 17.4. TYPES OF COMPUTER; 17.5. ANALOG COMPUTER; 17.6. DIGIT… | 0 |
+| 3 | 321 | [page-003.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-003.md) | theory | — | 17.9. COMPUTER COMPONENTS; 17.10. COMPUTER HARDWARE; 17.11.… | 0 |
+| 4 | 322 | [page-004.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-004.md) | theory | — | 17.12. CENTRAL PROCESSING UNIT | 0 |
+| 5 | 323 | [page-005.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-005.md) | theory | — |  | 1 |
+| 6 | 324 | [page-006.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-006.md) | theory | — | 17.13. SECONDARY STORAGE | 2 |
+| 7 | 325 | [page-007.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-007.md) | theory | — | 17.14. OUTPUT UNIT; 17.15. COMPUTER SOFTWARE; 17.16. PROGRA… | 0 |
+| 8 | 326 | [page-008.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-008.md) | theory | — | 17.17. SYSTEM SOFTWARE; 17.18. APPLICATION SOFTWARE | 0 |
+| 9 | 327 | [page-009.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-009.md) | theory | — | 17.19. BASIC IDEA OF WRITING AND RUNNING A COMPUTER PROGRAM… | 0 |
+| 10 | 328 | [page-010.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-010.md) | theory | — | 17.26. BINARY NUMBER SYSTEM AS A FOUNDATION OF COMPUTER PRO… | 1 |
+| 11 | 329 | [page-011.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-011.md) | theory | — | SHORT DEFINITIONS | 0 |
+| 12 | 330 | [page-012.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-012.md) | theory | — | SHORT DEFINITIONS | 0 |
+| 13 | 331 | [page-013.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-013.md) | mixed | — | SHORT DEFINITIONS | 0 |
+| 14 | 332 | [page-014.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-014.md) | exercise | — |  | 0 |
+| 15 | 333 | [page-015.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-015.md) | exercise | — |  | 0 |
+| 16 | 334 | [page-016.md](../Books/Formatted/Statistics/Chapter-17-Orientation-of-Computers/page-016.md) | exercise | SQ |  | 0 |
+
+---
+
+## S-L — Front matter ("zero chapter", Chapter 00)
+
+- Markdown (`Formatted`): `Books/Formatted/Statistics/Chapter-99-Back-Matter/` · Raw scans: `Books/Raw/Statistics/Statistical-Tables/` · HTML (test): `Books/Digital/Statistics/Chapter-99-Back-Matter/`
+- Pages: 8 · Printed range: 335–340 · Offset: +334
+
+| Image | Printed | File | Type | Exercise | Section(s) | Fig. |
+|------:|--------:|------|------|----------|------------|-----:|
+| 1 | 335 | [page-001.md](../Books/Formatted/Statistics/Chapter-99-Back-Matter/page-001.md) | front-matter | — |  | 0 |
+| 2 | 336 | [page-002.md](../Books/Formatted/Statistics/Chapter-99-Back-Matter/page-002.md) | front-matter | — |  | 1 |
+| 3 | 337 | [page-003.md](../Books/Formatted/Statistics/Chapter-99-Back-Matter/page-003.md) | front-matter | — |  | 1 |
+| 4 | 338 | [page-004.md](../Books/Formatted/Statistics/Chapter-99-Back-Matter/page-004.md) | front-matter | — |  | 1 |
+| 5 | 339 | [page-005.md](../Books/Formatted/Statistics/Chapter-99-Back-Matter/page-005.md) | front-matter | — |  | 0 |
+| 6 | 340 | [page-006.md](../Books/Formatted/Statistics/Chapter-99-Back-Matter/page-006.md) | front-matter | — |  | 0 |
+| 7 | — | [page-007.md](../Books/Formatted/Statistics/Chapter-99-Back-Matter/page-007.md) | front-matter | — |  | 0 |
+| 8 | — | [page-008.md](../Books/Formatted/Statistics/Chapter-99-Back-Matter/page-008.md) | front-matter | — |  | 0 |
 
 ---
 *Auto-generated by `tools/build-metadata.mjs` — do not hand-edit.*

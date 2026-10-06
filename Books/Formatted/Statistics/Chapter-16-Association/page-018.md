@@ -14,8 +14,8 @@ has_figures: false
 figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-16-Association/0018.jpg
 converted_at: "2026-10-06"
-converted_by: "agent-26c (glm-vision)"
-notes: "Offset check: printed p.302 = image 18 + 284 (header folio, top-left; even page). Page is the continuation of Example 16.15 (no printed section heading, section: null; no figures). EDGE CUT at bottom: the final Chi-square calculation table is sliced by the page/scan edge after the row '155 185.4 -30.4 924.16 4.98' — the next row and the totals row (with the χ² total) are cut off (only digit tops visible, unreadable) and continue on the next printed page; marked [edge cut] in body and NOT reconstructed. Expected-frequency cells print the fraction over two lines inside the cell (rendered with \\frac); (A3B2) cell reads '= 82.0' with a plain equals sign (pixel-verified). Attribute-table row/column labels printed bold."
+converted_by: "agent-26c (glm-vision); corrected by coordinator"
+notes: "Offset check: printed p.302 = image 18 + 284 (header folio, top-left; even page). Page is the continuation of Example 16.15 (no printed section heading, section: null; no figures). CORRECTION: the original conversion wrongly claimed an edge cut after the row '155 185.4 -30.4 924.16 4.98' — coordinator pixel-verification (3x zooms) shows the scan is COMPLETE: the next row '115 94.2 +20.8 432.64 4.59' and the totals row 'Sum fo = 510, Sum fe = 510, Sum (fo - fe) = 0, chi-square = 32.15' are fully printed and readable; table restored and the false [edge cut] marker removed (the six term values sum to exactly 32.15 as printed). Expected-frequency cells print the fraction over two lines inside the cell (rendered with \\frac); (A3B2) cell reads '= 82.0' with a plain equals sign (pixel-verified). Attribute-table row/column labels printed bold."
 ---
 
 # Page 18 — Association (Chapter 16)
@@ -67,5 +67,5 @@ The necessary calculations of Chi-square are given below:
 | 40 | 60.8 | -20.8 | 432.64 | 7.12 |
 | 40 | 30.4 | +9.6 | 92.16 | 3.03 |
 | 155 | 185.4 | -30.4 | 924.16 | 4.98 |
-
-*[edge cut — the calculation table continues on the next printed page; the following row and the totals row (with the $\chi^2$ total) are sliced off at the bottom edge of this scan, digit tops visible but unreadable.]*
+| 115 | 94.2 | +20.8 | 432.64 | 4.59 |
+| $\sum f_o = 510$ | $\sum f_e = 510$ | $\sum (f_o - f_e) = 0$ | - | $\chi^2 = 32.15$ |

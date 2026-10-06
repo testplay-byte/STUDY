@@ -1,19 +1,20 @@
 # STATUS — live snapshot
 
-> **Last updated: 2026-10-01** (Phase 8 — Statistics Chapters 10–13 digitized; library now 528 pages;
-> stats book holds FM + Ch. 8–13; remaining Ch. 1–7 still outstanding). Coordinator updates this
-> after every task. New agents: if reality differs from this file, trust reality, then fix this
-> file.
+> **Last updated: 2026-10-06** (Phase 9 — Statistics Chapters 14–17 + Statistical Tables back matter digitized;
+> library now 668 pages; **both books COMPLETE**). Coordinator updates this after every task.
+> New agents: if reality differs from this file, trust reality, then fix this file.
 
 ## One-line state
 
-**528/528 pages digitized & pushed** — the **Mathematics book is COMPLETE** (front matter +
-Units 01–10 + Back Matter = 317 pages) and **Statistics holds front matter + Ch. 8–13**
-(FM 9 + Set Theory 10 + Probability 50 + Random Variable 34 + Binomial/Hypergeometric 28 +
-Normal 32 + Sampling 48 = **211 pages**) in the three-branch `Books/` library (`Raw/` immutable
-scans · `Formatted/` canonical markdown · `Digital/` frozen 112-page replica edition of the
-legacy library). Everything since Phase 4e is digitized in **markdown-only mode (v4.3)** with
-the scan-edge-crop policy. All gates green. NEXT: remaining Statistics chapters (Ch. 1–7).
+**668/668 pages digitized & pushed** — the **Mathematics book is COMPLETE** (front matter +
+Units 01–10 + Back Matter = 317 pages) and the **Statistics book is COMPLETE** (front matter +
+Ch. 8–17 + Statistical Tables back matter = 351 pages: FM 9 + Set Theory 10 + Probability 50 +
+Random Variable 34 + Binomial/Hypergeometric 28 + Normal 32 + Sampling 48 + Estimation 36 +
+Testing of Hypotheses 46 + Association 34 + Orientation of Computers 16 + Statistical Tables 8)
+in the three-branch `Books/` library (`Raw/` immutable scans · `Formatted/` canonical markdown ·
+`Digital/` frozen 112-page replica edition of the legacy library). Everything since Phase 4e is
+digitized in **markdown-only mode (v4.3)** with the scan-edge-crop policy. All gates green.
+NEXT: await user direction (no outstanding chapters).
 
 ## Library inventory
 
@@ -38,17 +39,23 @@ the scan-edge-crop policy. All gates green. NEXT: remaining Statistics chapters 
 | S-4 | statistics | `Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions` | `Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions` | 28 | 95–122 | +94 | ✅ digitized |
 | S-5 | statistics | `Statistics/Chapter-12-Normal-Distribution` | `Statistics/Chapter-12-Normal-Distribution` | 32 | 123–154 | +122 | ✅ digitized |
 | S-6 | statistics | `Statistics/Chapter-13-Sampling-and-Sampling-Distributions` | `Statistics/Chapter-13-Sampling-and-Sampling-Distributions` | 48 | 155–202 | +154 | ✅ digitized |
-| | | | **Total** | **528** | | | **528 raw images ⇄ 528 .md pages · Digital Edition v3 (legacy 112) FROZEN ✓** |
+| S-7 | statistics | `Statistics/Chapter-14-Statistical-Inference-Estimation` | `Statistics/Chapter-14-Statistical-Inference-Estimation` | 36 | 203–238 | +202 | ✅ digitized |
+| S-8 | statistics | `Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses` | `Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses` | 46 | 239–284 | +238 | ✅ digitized |
+| S-9 | statistics | `Statistics/Chapter-16-Association` | `Statistics/Chapter-16-Association` | 34 | 285–318 | +284 | ✅ digitized |
+| S-10 | statistics | `Statistics/Chapter-17-Orientation-of-Computers` | `Statistics/Chapter-17-Orientation-of-Computers` | 16 | 319–334 | +318 | ✅ digitized |
+| S-L | statistics | `Statistics/Statistical-Tables` | `Statistics/Chapter-99-Back-Matter` | 8 | 335–340 (+2 unnumbered) | +334 | ✅ digitized |
+| | | | **Total** | **668** | | | **668 raw images ⇄ 668 .md pages · Digital Edition v3 (legacy 112) FROZEN ✓** |
 
-Content mix (528 pages): 148 theory · 127 worked-examples · 102 exercise · 92 mixed · 43 front-matter ·
-14 chapter-opener · 2 summary — with **467 figures** preserved as structured F-block descriptions.
+Content mix (668 pages): 189 theory · 153 worked-examples · 140 exercise · 113 mixed · 51 front-matter ·
+18 chapter-opener · 4 summary — with **499 figures** preserved as structured F-block descriptions.
 
 Printed-range notes: M-3 starts at 90 and S-1 at 2 because the preceding page's folio is
 scan-cut/null (ranges reflect first *readable* folio, per generated `book.json`); M-10 ends at
 288 because img 0016's footer is scan-cut (null). Offset chains — Mathematics: +6 → +42 → +88 →
 +119 → +139 → +159 → +181 → +229 → +261 → +273 → +289, folios 7→316 continuous; Statistics:
-= image (S-1) → +10 → +60 → +94 → +122 → +154, folios 2→202 continuous. Statistics folios live
-in the RUNNING HEADER (odd printed: top-right; even: top-left; openers: bottom-center); chapter-
+= image (S-1) → +10 → +60 → +94 → +122 → +154 → +202 → +238 → +284 → +318 → +334, folios 2→340
+continuous (S-L pages 7–8 unnumbered: calendar chart + back cover). Statistics folios live in
+the RUNNING HEADER (odd printed: top-right; even: top-left; openers: bottom-center); chapter-
 end pages carry `← NN →` navigation chips = furniture.
 
 ## Done so far (condensed — details in WORKLOG.md / PLAN.md)
@@ -165,13 +172,38 @@ end pages carry `← NN →` navigation chips = furniture.
   ALL GREEN 528/528 raw imgs, 416/416 markdown-only placed; check-digital --frozen
   --strict-figures ALL GREEN.
 
+- Phase 9 (**2026-10-06, this session**): **Statistics Chapters 14–17 + Statistical Tables back
+  matter digitized (140 pages, markdown-only) — THE STATISTICS BOOK IS NOW COMPLETE** — user
+  delivered the "S-7-8-9-10" FromSmash transfer (180.14 MB wrapper, 5 zips, sizes matched the
+  listing, all -t clean, direct JPGs 0001..NNNN no gaps). Recon: the transfer name is BATCH codes,
+  not chapter numbers — actual content: Ch. 14 Statistical Inference Estimation (36 pp, 203–238,
+  +202), Ch. 15 Statistical Inference Testing of Hypotheses (46 pp, 239–284, +238), Ch. 16
+  Association (34 pp, 285–318, +284), Ch. 17 Orientation of Computers (16 pp, 319–334, +318),
+  Statistical Tables back matter (8 pp, 335–340 + unnumbered perpetual-calendar chart + back
+  cover, +334); chain 202→342 continuous with Ch. 13's end. Registered S-7..S-10 + S-L; test-
+  first 3 pages (opener folio 203 pixel-verified against a VLM misread of 263; S-L z-table
+  misprints locked as canon); mass conversion via sub-agent waves (short prompts + shared
+  CANON-STATS2.md) — repeated Task-tool transport-deadline deaths still left good partial work,
+  all re-verified and kept; a sustained vision-API 429 outage bridged by coordinator-direct
+  transcription (S-9 029–034, all S-10 011–016, all remaining S-L). Coordinator audit: per-wave
+  mechanical sweeps + ≥20 % scan-verified spot audits + fixes (S-8 SHORT-QUESTIONS pages
+  normalized to the S-2 content_type/exercise canon; **p.302 chi-square table restored — the
+  converting agent's edge-cut claim was WRONG, coordinator zooms proved the scan complete and
+  the missing rows 115/94.2 + totals χ²=32.15 were added**); S-L 5-decimal z-table misprints
+  preserved + disclosed (15542 dot, .33646/.33891 duplicates, .28298, .56495, .49243, row-3.0
+  tail, .49C40 damaged glyph); S-9 p.317 ink blotch left Q.25 rank-table column 9 cells
+  unrecoverable — preserved blank + flagged, never guessed. S-10 p.332 Q.15 stem genuinely
+  truncated in the printed book — flagged. Metadata regenerated (book.json + 5 chapter.json +
+  indexes); STATUS/README/PLAN/AGENTS synced; verify-v4 ALL GREEN 668/668 raw imgs, 556/556
+  markdown-only placed; check-digital --frozen --strict-figures ALL GREEN.
+
 ## Next actions (queue)
 
-1. **NEXT: the remaining Statistics chapters (Ch. 1–7 + any other parts).** The Statistics book
-   now holds front matter + Ch. 8–13 = 211 pages; printed folios run 2–202 continuous, so
-   Ch. 1–7 (and any back matter) will slot in with their own offsets when the user sends them.
-   Same v4.3 markdown-only pipeline; batch codes continue **S-7, S-8, …**; runbook per
-   `docs/PLAN.md`. Do not rush; coordinator reviews every page.
+1. **Both books COMPLETE — await user direction.** The Statistics book now holds front matter +
+   Ch. 8–17 + Statistical Tables back matter = 351 pages; printed folios 2–340 continuous (S-L
+   last two pages unnumbered). No outstanding chapters from either book. Future transfers get
+   batch codes continuing from the last used per subject; same v4.3 markdown-only pipeline;
+   runbook per `docs/PIPELINE.md`.
 2. **User input needed (M-1 cleanup):** user says Unit 01 contains **five exercises (1.1–1.5)**
    across its 36 pages and may share raw info to pin down exact boundaries. Current
    frontmatter records: Ex 1.1 @ img 8 · 1.2 @ img 18 · 1.3 @ img 24 · 1.4 @ img 30 ·
@@ -187,20 +219,30 @@ end pages carry `← NN →` navigation chips = furniture.
 - `page_printed: null` on M-1 imgs 20, 22, 32, 33, 34, 36 + S-1 img 1 + most front matter —
   legitimate (no digit printed); do not invent numbers. Markdown-only scan-cut folios (null
   with pixel-verified notes): M-8 img 0022 · M-10 imgs 0004, 0016 · M-BM imgs 0002, 0016 ·
-  M-3 img 001 · S-1 img 1.
+  M-3 img 001 · S-1 img 1. S-L imgs 0007 (perpetual-calendar chart) and 0008 (back cover)
+  carry no folio → null (expected for unnumbered back-matter pages).
 - S-2 odd-page running headers misprint "[Chapter 7]" — chapter is 9 everywhere in data ✓
   (audited). Keep it that way.
+- S-L 5-decimal z-table (printed p.337) carries a dozen book misprints — all preserved
+  verbatim with per-cell notes (see page-003.md). Do NOT "fix" them.
+- S-9 p.317 (S-9 img 0033) ink blotch leaves Q.25's rank-table column 9 cells unreadable —
+  recorded as empty cells + [illegible] marker; never reconstruct.
+- S-10 p.332 (S-10 img 0014) Q.15 question stem is truncated in the printed book itself
+  (only "currently used data and instructions are held in:" printed) — flagged on the page.
 - `Books/Digital/` (FROZEN, v4.3) pages use a KaTeX CDN — offline, math degrades to readable
   raw LaTeX (accepted; the dashboard will bundle KaTeX locally). Custom page CSS must scope
   its selectors (bare `span { … }` rules shred KaTeX output — see CONVENTIONS §1.5).
 - Vision API rate-limits (~3 concurrent) — waves must run agents sequentially within each
-  agent; expect 429 storms; convert-page.mjs backs off automatically.
+  agent; expect 429 storms; convert-page.mjs backs off automatically. **Sustained hard-429
+  outages: coordinator-direct transcription (reading scans via the agent's own vision and
+  writing the md by hand) is the proven fallback — used for 22 pages in Phase 9.**
 - Task-tool agents can die mid-wave (context deadlines / long prompts) — coordinator re-scopes
-  missing pages; check page counts vs STATUS table after every wave. **Phase 8 pattern that
-  works: sub-agent waves with SHORT prompts + shared canon file, ~7-page ranges, 2–3 concurrent,
-  sweep + ≥20 % audit + commit after every wave**; fall back to the controlled sequential
-  pipeline (foreground convert-page batches of 3–4, coordinator reviews every draft) during
-  agent-infra or vision-API outages.
+  missing pages; check page counts vs STATUS table after every wave. Dead agents' partial
+  placements are usually good — sweep, audit, keep. **Phase 8/9 pattern that works: sub-agent
+  waves with SHORT prompts + shared canon file, ~7-page ranges, 2–3 concurrent, sweep +
+  ≥20 % audit + commit after every wave**; fall back to the controlled sequential pipeline
+  (foreground convert-page batches of 3–4, coordinator reviews every draft) during agent-infra
+  or vision-API outages; fall back to coordinator-direct transcription during hard-429 storms.
 
 ## Environment notes
 
@@ -209,9 +251,9 @@ end pages carry `← NN →` navigation chips = furniture.
 - Working clone lives at `/home/z/my-project/study-workspace/STUDY` (or re-clone per
   PIPELINE.md §0). Local shared agent log: `/home/z/my-project/worklog.md`.
 - Integrity commands (run from repo root): `bun tools/verify-v4.mjs` → ALL GREEN (112/112
-  legacy byte-verified; 528/528 raw images; 416/416 markdown-only placed); `node
+  legacy byte-verified; 668/668 raw images; 556/556 markdown-only placed); `node
   tools/check-digital.mjs --frozen --strict-figures` → ALL GREEN (112 digital pages intact;
-  416 frozen twins expected). Both re-verified 2026-10-01 at Phase 8 completion.
+  556 frozen twins expected). Both re-verified 2026-10-06 at Phase 9 completion.
 - Raw scan intake path that works: FromSmash transfer → agent-browser signed-URL capture →
   `curl` download → verify zip contents are direct images → recon offsets from footers →
   register (BATCHES in `tools/verify-v4.mjs` + BOOKS in `tools/build-metadata.mjs`) →

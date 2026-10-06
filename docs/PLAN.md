@@ -262,11 +262,16 @@ only** — no digital replica pages.
       test-first 5 pages; sub-agent waves (short prompts + shared canon file, ~7-page ranges) with
       coordinator sweep + ≥20 % scan-verified audit per wave; 429 outage bridged coordinator-
       foreground; zero scan-cut folios; gates ALL GREEN 528/528.
-- [ ] User supplies the remaining Statistics chapters (Ch. 1–7 and any other parts; the book
-      currently holds front matter + Ch. 8–13 = 211 pages, printed folios 2–202 continuous) →
-      same markdown-only runbook (v4.3); batch codes continue `S-7`, `S-8`, …; register in BOOKS +
-      BATCHES; pass `--chapter-folder` + `--book-title` to the converter; push gate
-      `verify-v4 && check-digital --frozen`
+- [x] **Statistics Chapters 14–17 + Statistical Tables back matter (DONE 2026-10-06, 140 pages)**
+      — user transfer "S-7-8-9-10" (5 zips, 180.14 MB, sizes verified, no gaps); recon: transfer
+      name = batch codes, content = Ch. 14 Estimation (36 pp, 203–238, +202), Ch. 15 Testing of
+      Hypotheses (46 pp, 239–284, +238), Ch. 16 Association (34 pp, 285–318, +284), Ch. 17
+      Orientation of Computers (16 pp, 319–334, +318), Statistical Tables (8 pp, 335–340 +
+      unnumbered calendar chart + back cover, +334); chain 202→342 continuous. Registered
+      S-7..S-10 + S-L; test-first 3 pages (opener folio 203 pixel-verified vs VLM misread);
+      sub-agent waves + coordinator-direct fallback during a hard-429 outage; p.302 chi-square
+      table restored after a false edge-cut claim; S-L z-table misprints + p.317 ink blotch +
+      p.332 stem truncation disclosed; gates ALL GREEN 668/668. **Statistics book COMPLETE.**
 
 ## Phase 6 — Library enrichment (backlog)
 

@@ -5,15 +5,17 @@ from scans into a structured Markdown library, plus the tracking data and docume
 lets **any AI agent** (or the user, or a future web dashboard) pick up the project with full
 context. The sandbox is disposable — **this repository is the project's memory.**
 
-## 🎯 Current state: **v4.3 markdown-only mode — 528/528 pages digitized — Mathematics book COMPLETE, Statistics Ch. 8–13 done**
+## 🎯 Current state: **v4.3 markdown-only mode — 668/668 pages digitized — Mathematics book COMPLETE ✅ and Statistics book COMPLETE ✅**
 
-Two books, nineteen batches, **528 scanned pages → 528 faithful Markdown pages**, organized in
+Two books, twenty-four batches, **668 scanned pages → 668 faithful Markdown pages**, organized in
 the three-branch **`Books/`** library (`Raw/` scans · `Formatted/` markdown · `Digital/` the
 frozen 112-page generated replica edition of the legacy library). The Mathematics book is
 **fully digitized**: front matter, Units 01–10, and Back Matter (answers, glossary, symbols,
-index, about-authors). Statistics holds front matter + Ch. 8–13 (Set Theory, Probability,
-Random Variable & Probability Distributions, Binomial & Hypergeometric, Normal, Sampling &
-Sampling Distributions); Ch. 1–7 remain. Every figure described in detail, every formula in
+index, about-authors). The Statistics book (Basic Statistics Part-II) is **fully digitized**:
+front matter + Ch. 8–17 (Set Theory, Probability, Random Variable & Probability Distributions,
+Binomial & Hypergeometric, Normal, Sampling & Sampling Distributions, Statistical Inference:
+Estimation, Statistical Inference: Testing of Hypotheses, Association, Orientation of
+Computers) + Statistical Tables back matter. Every figure described in detail, every formula in
 LaTeX, every table as a GFM table, every page traceable to its raw scan. New books/chapters
 arrive in **markdown-only mode (v4.3)**. Full status: [`STATUS.md`](STATUS.md).
 
@@ -30,7 +32,7 @@ arrive in **markdown-only mode (v4.3)**. Full status: [`STATUS.md`](STATUS.md).
 | Subject | Book | Digitized |
 |---------|------|-----------|
 | Mathematics | *Textbook of Mathematics Grade 12* — National Book Foundation, Federal Textbook Board, Islamabad (National Curriculum of Pakistan 2022-23) | front matter (7) + **Unit 01: Functions and Graphs** (36, pp. 7–41) + **Unit 02: Limit, Continuity and Derivative** (46, pp. 43–88) + **Unit 03: Integration** (31, pp. 90–119) + **Unit 04: Differential Equations** (20, pp. 120–139) + **Unit 05: Kinematics of Motion in a Straight Line** (20, pp. 140–159) + **Unit 06: Analytical Geometry** (22, pp. 160–181) + **Unit 07: Conic Section** (48, pp. 182–229) + **Unit 08: Inverse Trigonometric Functions and Their Graphs** (32, pp. 230–261) + **Unit 09: Solution of Trigonometric Equations** (12, pp. 262–273) + **Unit 10: Numerical Methods** (16, pp. 274–288) + **Back Matter** (27, pp. 290–316: answers, glossary, symbols, index, about-authors) = **317 pages — BOOK COMPLETE ✅** |
-| Statistics | *Basic Statistics for Intermediate Classes, Part-II* — M. Saleem Akhtar, Majeed Book Depot (Federal Board) | front matter (9) + **Ch. 8: Set Theory** (10) + **Ch. 9: Probability** (50) + **Ch. 10: Random Variable and Probability Distributions** (34, pp. 61–94) + **Ch. 11: Binomial and Hypergeometric Distributions** (28, pp. 95–122) + **Ch. 12: Normal Distribution** (32, pp. 123–154) + **Ch. 13: Sampling and Sampling Distributions** (48, pp. 155–202) = **211 pages** · remaining Ch. 1–7 next |
+| Statistics | *Basic Statistics for Intermediate Classes, Part-II* — M. Saleem Akhtar, Majeed Book Depot (Federal Board) | front matter (9) + **Ch. 8: Set Theory** (10) + **Ch. 9: Probability** (50) + **Ch. 10: Random Variable and Probability Distributions** (34, pp. 61–94) + **Ch. 11: Binomial and Hypergeometric Distributions** (28, pp. 95–122) + **Ch. 12: Normal Distribution** (32, pp. 123–154) + **Ch. 13: Sampling and Sampling Distributions** (48, pp. 155–202) + **Ch. 14: Statistical Inference Estimation** (36, pp. 203–238) + **Ch. 15: Statistical Inference Testing of Hypotheses** (46, pp. 239–284) + **Ch. 16: Association** (34, pp. 285–318) + **Ch. 17: Orientation of Computers** (16, pp. 319–334) + **Statistical Tables back matter** (8, pp. 335–340 + calendar chart + back cover) = **351 pages — BOOK COMPLETE ✅** |
 
 > ℹ️ Scans are digitized **as printed**. The user's brief once said "Statistics chapters 1–2";
 > the scans are actually Ch. 8 (Set Theory) & Ch. 9 (Probability) — recorded as printed, with

@@ -720,3 +720,22 @@ Stage Summary:
 - LIBRARY NOW 528 PAGES: Mathematics 317 (COMPLETE) + Statistics 211 (FM + Ch. 8-13)
 - Statistics printed-folio chain 2->202 continuous; Ch. 1-7 + any back matter outstanding (batch codes S-7+)
 - All 142 new pages pushed incrementally (commits aa008ff..final); sandbox can be wiped safely
+---
+Task ID: 22-a
+Agent: agent-22a
+Task: Batch S-7 (Ch.14 Statistical Inference Estimation, offset +202) - convert images 0008, 0014, 0015, 0022, 0023 (one at a time, canon workflow)
+
+Work Log:
+- page-008 (printed 210, folio pixel-read top-left, even page): PLACED - opens mid-solution of Example 14.3 (continues p.209), then Examples 14.4 and 14.5; ends mid-14.5 (unknown-sigma CI) -> continues p.211. Percent spacing as printed: '98 %'/'99 %' spaced vs '95%' unspaced; '( when sigma is known )' paren spacing as printed.
+- page-014 (printed 216): PLACED - opens mid-Example 14.13 (continues p.215), Example 14.14 with Supplier A/B data table, printed heading 14.17 CONFIDENCE INTERVAL ESTIMATE ... POPULATIONS NORMAL ( SMALL SAMPLES ); ends mid-sentence -> continues p.217. BOOK TYPO preserved + noted: 'a difference in equality of the spare parts' (context implies 'quality'). Range lines printed 'Range = Xm - Xo' as printed.
+- page-015 (printed 217): PLACED - continuation of 14.17; bold sub-label 'sigma1^2 and sigma2^2 Unknown but sigma1^2 = sigma2^2 = sigma^2' printed WITHOUT section number (first-pass '14.5.2 ...' section reading was a hallucination - zoom-verified absent, section null). Figure-5 (t-distribution curve, middle-right) F-blocked with inline marker at the t-statistic formula. As-printed oddities preserved + noted: statistic display begins with '=' (no left-hand 't ='); 'degree of freedom' singular in both occurrences; t subscripts print without comma after alpha/2 (resolved via 2x-crop pixel read after conflicting full-page reads).
+- page-022 (printed 224): PLACED - continuation of 14.21 (p.223) + Examples 14.22 and 14.23 (14.23 completes). No printed section heading (first-pass '14.6 Confidence Interval...' reading was a hallucination - zoom-verified absent, section null). INK SPECK printed over the 'o' of 'for' in the theory para - not transcribed, noted (same treatment as p.209 speck). BOOK TYPO preserved + noted: final line of Ex 14.23 prints '= 0.08 < p1 - p2 < - 0.02' with an EQUALS sign where a minus belongs (prev line gives -0.05 - 0.03); pixel-verified twice.
+- page-023 (printed 225): PLACED - Example 14.24 (a)(b)(c) complete on one page. As-printed quirks preserved + noted: (b) 'the 99% confidence interval for mu found to be' (no 'was'); (c) 'The limits for interval are' (no 'the') and question reads 'What confidence interval is used?' (context implies confidence level/coefficient).
+- QA per page: convert-page.mjs draft -> targeted z-ai vision passes (folio read from pixels, every numeric line, spacing quirks) -> fixes -> mechanical gate (17 frontmatter fields, $ count even, 0 nbsp, offset-check note present, H1 + scan-link canon) -> flat placement page-NNN.md. One vision-API 429 mid-QA; waited and retried per canon.
+- Continuity verified against placed neighbours: 007->008 (Ex 14.3), 013->014 (Ex 14.13), 021->022 (14.21), 022->023 (Ex 14.23 -> 14.24). Other agents' pages untouched; no git commits.
+
+Stage Summary:
+- Assignment COMPLETE: 5/5 pages placed - 0008->210, 0014->216, 0015->217, 0022->224, 0023->225 (all folios read from pixels; offset +202 holds on every page; expected numbers all confirmed).
+- Anomalies flagged (also in per-page notes): book typo 'equality' (p.216); book typo '= 0.08' for '-0.08' with equals sign (p.224, pixel-verified twice); ink speck over 'for' (p.224, not transcribed); p.217 as-printed quirks ('='-initial display, singular 'degree of freedom', t-subscript comma ambiguity resolved to no-comma via 2x crop); p.225 wording quirks (missing 'was', 'limits for interval', 'What confidence interval is used?').
+- Nothing cut off, illegible or missing on any of the 5 pages; no pages failed QA.
+- NOT completed: nothing in scope. Pages 024-027/031 etc. belong to other agents (appeared in-folder during run) - untouched. No commits made.

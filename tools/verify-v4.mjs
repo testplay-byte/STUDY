@@ -41,6 +41,12 @@ const BATCHES = [
   { batch: 'S-4', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-11-Binomial-and-Hypergeometric-Distributions',     oldFolder: null, newFolder: 'Chapter-11-Binomial-and-Hypergeometric-Distributions',     imgs: 28, markdownOnly: true },
   { batch: 'S-5', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-12-Normal-Distribution',                           oldFolder: null, newFolder: 'Chapter-12-Normal-Distribution',                           imgs: 32, markdownOnly: true },
   { batch: 'S-6', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-13-Sampling-and-Sampling-Distributions',           oldFolder: null, newFolder: 'Chapter-13-Sampling-and-Sampling-Distributions',           imgs: 48, markdownOnly: true },
+  // v4.3 markdown-only batches (2026-10-06, user transfer "S-7-8-9-10"): direct JPG scans, Chapters 14-17 + Statistical Tables back matter.
+  { batch: 'S-7', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-14-Statistical-Inference-Estimation',              oldFolder: null, newFolder: 'Chapter-14-Statistical-Inference-Estimation',              imgs: 36, markdownOnly: true },
+  { batch: 'S-8', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-15-Statistical-Inference-Testing-of-Hypotheses',   oldFolder: null, newFolder: 'Chapter-15-Statistical-Inference-Testing-of-Hypotheses',   imgs: 46, markdownOnly: true },
+  { batch: 'S-9', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-16-Association',                                   oldFolder: null, newFolder: 'Chapter-16-Association',                                   imgs: 34, markdownOnly: true },
+  { batch: 'S-10', subject: 'statistics', subjectDir: 'Statistics',  rawName: 'Chapter-17-Orientation-of-Computers',                      oldFolder: null, newFolder: 'Chapter-17-Orientation-of-Computers',                      imgs: 16, markdownOnly: true },
+  { batch: 'S-L', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Statistical-Tables',                                       oldFolder: null, newFolder: 'Chapter-99-Back-Matter',                                   imgs: 8, markdownOnly: true },
 ];
 
 const problems = [];

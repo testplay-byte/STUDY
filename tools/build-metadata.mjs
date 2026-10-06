@@ -68,6 +68,11 @@ const BOOKS = {
       { folder: 'Chapter-11-Binomial-and-Hypergeometric-Distributions', rawFolder: 'Chapter-11-Binomial-and-Hypergeometric-Distributions', batch: 'S-4', kind: 'chapter', chapter_number: 11, chapter_label: 'Chapter 11', title: 'Binomial and Hypergeometric Distributions', printed_page_offset: '+94' },
       { folder: 'Chapter-12-Normal-Distribution', rawFolder: 'Chapter-12-Normal-Distribution', batch: 'S-5', kind: 'chapter', chapter_number: 12, chapter_label: 'Chapter 12', title: 'Normal Distribution', printed_page_offset: '+122' },
       { folder: 'Chapter-13-Sampling-and-Sampling-Distributions', rawFolder: 'Chapter-13-Sampling-and-Sampling-Distributions', batch: 'S-6', kind: 'chapter', chapter_number: 13, chapter_label: 'Chapter 13', title: 'Sampling and Sampling Distributions', printed_page_offset: '+154' },
+      { folder: 'Chapter-14-Statistical-Inference-Estimation', rawFolder: 'Chapter-14-Statistical-Inference-Estimation', batch: 'S-7', kind: 'chapter', chapter_number: 14, chapter_label: 'Chapter 14', title: 'Statistical Inference Estimation', printed_page_offset: '+202' },
+      { folder: 'Chapter-15-Statistical-Inference-Testing-of-Hypotheses', rawFolder: 'Chapter-15-Statistical-Inference-Testing-of-Hypotheses', batch: 'S-8', kind: 'chapter', chapter_number: 15, chapter_label: 'Chapter 15', title: 'Statistical Inference Testing of Hypotheses', printed_page_offset: '+238' },
+      { folder: 'Chapter-16-Association', rawFolder: 'Chapter-16-Association', batch: 'S-9', kind: 'chapter', chapter_number: 16, chapter_label: 'Chapter 16', title: 'Association', printed_page_offset: '+284' },
+      { folder: 'Chapter-17-Orientation-of-Computers', rawFolder: 'Chapter-17-Orientation-of-Computers', batch: 'S-10', kind: 'chapter', chapter_number: 17, chapter_label: 'Chapter 17', title: 'Orientation of Computers', printed_page_offset: '+318' },
+      { folder: 'Chapter-99-Back-Matter', rawFolder: 'Statistical-Tables', batch: 'S-L', kind: 'back-matter', printed_page_offset: '+334' },
     ],
   },
 };

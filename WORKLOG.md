@@ -1896,3 +1896,55 @@ Work Log:
 
 Stage Summary:
 - P-5 21/23 placed & verified; committed + pushed; remaining: P-5 020-023 (4, incl. unit end), P-6 (25) = 29 pages
+---
+Task ID: 34-d
+Agent: 34-d
+Task: Phase 10 wave 34 — P-6 imgs 3,4 (running log)
+Work Log:
+- page-003 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-003.md ✔ (printed p.105 READ digit-by-digit '1','0','5' both passes, green disc = img+102; opens at NEW magenta ## 'Sugar Industry' at very top, no fragment above — p.104 continuity owned by another agent; ends COMPLETE with table source line; theory, figures 0 — 1 printed table transcribed in full: super-header 'Pakistan' + units cell Area: Hect/Prod: Tonnes/Yield: Tonnes/Hect + header Year/Area/Production/Yield/Utilization % by mills + 14 data rows 2009-10→2022-23, every numeral digit-by-digit on QA pass identical ×2; 'Do You Know?' box top-right dark-blue tab/yellow bg → blockquote; no bold body runs ×2; Tier A ×0 Tier B ×0; Tier C keeps: 'utilization by Sugar Mills' caps, labour BrE vs utilization AmE same page, all table numbers as printed; method 2 VLM CLI passes + PIL colour-band scan, no crops)
+---
+Task ID: 34-a
+Agent: 34-a
+Task: Phase 10 wave 34 — P-5 imgs 20,21 (running log)
+Work Log:
+- page-020 → .../Chapter-05-Mineral-Power-Resources-and-Telecommunication/page-020.md ✔ (printed p.99 READ digit-by-digit '9','9' both passes = img+79, corroborates p.98/img 0019; opens with CONTINUATION of What-I-have-Learned box from p.98 — no title printed on this page, 16 bullets blockquote no bold, PIL red-border bands y≈221-233/1795-1804; then unit-end EXERCISE banner purple/lilac + cyan caps (PIL y≈1855-1925) → ##, blue lead-in 'Answer the following questions by choosing the best answer A, B, C or D.' period not colon (PIL cyan y≈1976-2020) → ###; MCQs 1-4 stems bold **N. stem**, options TWO PER ROW labels a.-d. no trailing periods; content_type mixed (box half + exercise half), exercise null (no printed id), figures 0; ends COMPLETE 'd. rock salt and gypsum' → Q5 cont. p.100 verified on img 0021; Tier A ×0 Tier B ×0 zero-corrections note; Tier C keeps: 'Challenges include' ×2 bullets, 'utilized', 'hydroelectricity'; method 2 VLM CLI passes word-identical + PIL bands, no crops)
+---
+Task ID: 34-b
+Agent: 34-b
+Task: Phase 10 wave 34 — P-5 imgs 22,23 (unit end) (running log)
+Work Log:
+- page-022 → .../Chapter-05-Mineral-Power-Resources-and-Telecommunication/page-022.md ✔ (printed p.101 READ digit-by-digit '1','0','1' both passes + footer strip agrees = img+79; exercise continuation: bare bold brief Q4/Q5 (lead-in printed on p.100, not here — flagged; p.021 not yet on disk, continuity unverified) + 'Answer the following questions in detail.' (cyan ###, PERIOD not colon — 3 concordant reads) + bold detail Q1-5 (pass-1 bold omission overturned by QA pass + 2.2x stitched crop) + activity headings Relevance across Time / Project / Compare and Contrast (cyan ###, no punctuation) with black-bold sub-head 'Energy Resources in Pakistan' → ####; NO 'Learning Activities' banner on page (pass-2 targeted check); bold run-ins 'Historical Context:'/'Current State:'; exercise, figures 0 (PIL photo-scan empty; red speck = R10 artifact); Tier A ×0 Tier B ×0 (word-identical ×2); Tier C keeps: 'keyways', em-dashes, 'Analyze' -z-, 'e-learning', declarative stems; method 2 VLM passes + 1 justified stitched crop + PIL bands)
+- page-004 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-004.md ✔ (printed p.106 READ digit-by-digit '1','0','6' both passes, dark-green disc = img+102, corroborates p.105; opens at NEW magenta ## 'Cement Industry' at very top (p.105 ended complete with sugar-table source line), ends COMPLETE '…provide an ideal environment for cotton cultivation.' → Cotton Industry continues p.107; §§ Cement Industry + Cotton Industry both magenta → ##, no cyan subs; theory, figures 0 (no photos/tables both passes + PIL bands y≈111-144/1908-1938 headings only); 'Expand Your Horizon' box right margin yellow-gold tab/light-blue bg, bold title NO colon → blockquote after opening para; wrapped para kept ONE unit ('…infrastructure sectors, significantly contributing…'); no bold body runs ×2 (pass 2 negated industry-name/number candidates); Tier A ×0 Tier B ×0 → ledger zero-corrections note; Tier C keeps: '104 cement industries' phrasing, 'Rs 50 billion' no period, 'labor'/'neighboring' US, 'Mirpurkhas' one word, 'third largest exporter' unhyphenated, 11%/60%/38%/170,000/14th/69 million tons 2024 as printed; method 2 VLM CLI passes + PIL colour-band scan, no crops)
+---
+Task ID: 34-c
+Agent: 34-c
+Task: Phase 10 wave 34 — P-6 imgs 1,2 (running log)
+Work Log:
+- page-001 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-001.md ✔ (printed p.103 READ digit-by-digit both passes from red disc bottom-center, PIL red cluster y≈2985 = img+102; Unit-06 OPENER: white 'UNIT 06' bubble as one bold line (pass-1 split 'UNIT'/'06' fixed), banner 'Section 3 / Resources and Economic Development of Pakistan' joined per exemplar, printed unit title 'Industry, Livestock and Fish Farming' verified char-level 'and' NOT '&' (vs Unit-05 '& Telecommunication'), no serial comma; content_type chapter-opener, figures 1 → F1 roundel top-left industrial complex at dusk (chimneys/scaffolding/illuminated windows, thick circular frame, no caption), [Figure F1] placed before banner; lead-in bold; 6 objective bullets word-identical ×2 passes; Tier A ×0 Tier B ×0 — QA pass-2 'husbandry'/'large-scale' flags quoted IDENTICAL text both sides → discarded as noise; Tier C keeps: 'government led' unhyphenated, 'micro and macro level' singular, repetitive 'livestock farming and fish farming…animal husbandry and fish farming', 'promote livestock practices'; no footer strip text on opener; method 2 VLM CLI passes + PIL forensics, no crops)
+- page-021 → .../Chapter-05-Mineral-Power-Resources-and-Telecommunication/page-021.md ✔ (printed p.100 READ digit-by-digit '1','0','0' both passes = img+79, corroborates p.99/img 0020; bare continuation of exercise MCQ list — opens at Q5, lead-in NOT printed on this page (flagged); MCQs 5-10 stems BOLD **N. stem** (pass-1 + 1.8x stitched 3-band crop re-read of Q5/Q10 concur; pass-2 'regular' overruled, consistent with p.99 Q1-4; A-rejected row in ledger); Q6/Q7 options TWO PER ROW, Q5/Q8/Q9/Q10 ONE PER ROW, labels a.-d.; blue heading 'Answer the following questions briefly.' period not colon (PIL blue band y≈2001-2034) → ###; brief Qs 1-3 bold printed numbers + regular stems (**N.** + text); ends COMPLETE '…future energy needs.' nothing after but footer (green PIL bands y≈2429-2494 = footer strip); exercise-dominated → content_type exercise, exercise null (no printed id), figures 0; Tier A ×0 Tier B ×0 zero-corrections note; Tier C keeps: Q5 option b no terminal period, 'Analyze'/'urbanization' AmE, 'famously extracted', 'Khyber Pakhtunkhwa'; method 2 VLM CLI passes + 1 justified crop re-read + PIL bands)
+---
+Task ID: 34-c
+Agent: 34-c
+Task: Phase 10 wave 34 — P-6 imgs 1,2 (running log)
+Work Log:
+- page-002 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-002.md ✔ (printed p.104 READ digit-by-digit both passes from green disc bottom-center, PIL green cluster x≈1070/y≈2658 = img+102 consecutive with p.103; first theory page of Unit-06, starts NEW ## 'Pakistan's Principal Industries' (magenta PIL band y≈90-132 → ##), ends COMPLETE 'Here we will learn about these principal industries one by one.' after map; theory, figures 1 → F1 full-width industrial map of Pakistan y≈640-2080 (legend Cotton/Sugar/Cement/Automobile/Cottage coloured dots, compass N top right, 0-300 KM scale bar, insets 'M.CREEK' best-read + 'JUNAGADH & MANAVADAR', three red-bordered disclaimer boxes right edge — small print described not quoted), [Figure F1] between the two body paragraphs; no tables/side boxes; bold body runs NONE (×2 passes + PIL stroke stats p50=6 regular); Tier A ×0 Tier B ×0 → zero-corrections ledger note; Tier C keeps: 'but the economy…' no comma, 'Automobile' singular legend entry, map title casing 'Pakistan industry' as read; QA pass-2 disclaimer 'quotes' self-inconsistent → discarded as hallucination per wave-33 precedent; method 2 VLM CLI passes + PIL forensics, no crops)
+
+---
+Task ID: 34-b
+Agent: 34-b
+Task: Phase 10 wave 34 — P-5 imgs 22,23 (unit end) (running log)
+Work Log:
+- page-023 → .../Chapter-05-Mineral-Power-Resources-and-Telecommunication/page-023.md ✔ (printed p.102 READ digit-by-digit '1','0','2' both passes + footer strip agrees = img+79; unit-final summary page: 'Glossary' blue-on-light-blue banner (PIL y≈176-259, NO colon) → ### per page-014 exemplar; 11 glossary terms ALL bold ×2 passes (PIL stroke concurs), every junction ': ' 11/11; GDP definition ends WITHOUT full stop (flagged); 'List more words…' line BOLD ×2 + PIL 0.751 (vs Unit-04's regular parallel — per THIS unit's print); EMPTY write-in table: PIL 11 uniform 74-77px magenta rules → 10 EMPTY rows (VLM said 10 rules/9 rows — PIL count taken, flagged), 1 mid vertical divider x≈978 → 2 columns → stand-in header + separator + 10 blank rows; summary, figures 0; Tier A ×0 Tier B ×0 (word-identical ×2); Tier C keeps: GDP no-period, '(GDP)' expansion, 'bio-fuel'/'Bio-Fuel' casing split, 'E-learning', 'which contribute'; page opens at Glossary banner (activities completed p.101); method 2 VLM passes + PIL rule-geometry forensics, no crops)
+
+---
+Task ID: 34-wave-verify
+Agent: coordinator (Z.ai main)
+Task: PHASE 10 wave 34 QA (P-5 020-023 unit end, P-6 001-004) + push
+
+Work Log:
+- Wave 34: ALL FOUR agents delivered (8 pages) — 34-a P-5 020+021 (What-I-have-Learned continuation + EXERCISE + MCQs 1-10); 34-b P-5 022+023 (detail questions + Learning Activities + Glossary 11 bold terms + 10-row empty write-in table, PIL-adjudicated vs VLM 9) — P-5 COMPLETE (23/23); 34-c P-6 001 (opener, title 'Industry, Livestock and Fish Farming' verified 'and' not '&') + 002 (industrial map); 34-d P-6 003+004 (Sugar Industry 14-row table digit-verified + Cement/Cotton)
+- Coordinator structural QA all 8 (folios 99-106 all match offsets) + deep vision checks: P-5 023 PASS (11 bold glossary terms; GDP no-period kept; 10-row table confirmed vs scan); P-6 003 PASS (table numerals spot-checked digit-perfect incl. 2016-17 94.00% and 2022-23 row; Do You Know? blockquote; PSMA source line); P-6 001 PASS (6 SLO bullets verbatim; industrial roundel F1)
+- Zero Tier A/B corrections this wave (agents' QA converged); gates ALL GREEN
+
+Stage Summary:
+- P-5 COMPLETE (23/23); P-6 4/25 placed & verified; committed + pushed; remaining: P-6 005-025 (21 pages)

@@ -1709,3 +1709,65 @@ Work Log:
 
 Stage Summary:
 - P-2 COMPLETE (18/18) + P-3 COMPLETE (22/22) + P-4 3/14 placed & verified; committed + pushed; remaining: P-4 004-014 (11), P-5 (23), P-6 (25) = 59 pages
+---
+Task ID: 30-c
+Agent: 30-c
+Task: Phase 10 wave 30 — P-4 imgs 8,9 (running log)
+Work Log:
+- page-008 → .../Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-008.md ✔ (printed p.73 READ from bottom-centre disc, both passes agree; 3 blue ### sub-heads 'Sustainable Development of Mangrove for Marine life' / 'Importance of Mangroves for Climate Change' / 'Deforestation in Pakistan', theory, figures 0; starts MID-SENTENCE 'and the dumping of domestic and industrial waste in the sea.' (completes p.72), ends MID-SENTENCE 'Forests have been removed' → cont. p.74; Tier A ×0, Tier B ×0 (2 full-page VLM passes word-identical); Tier C keeps flagged: 'taken various efforts', '8000 hectares' (no comma, never fixed), 'fixing climate change' + “sequester carbon dioxide” quotes as printed, 'their afforestation'; no bold runs/tables/side boxes)
+---
+Task ID: 30-d
+Agent: 30-d
+Task: Phase 10 wave 30 — P-4 imgs 10,11 (running log)
+Work Log:
+- page-010 → Books/Formatted/Pakistan-Studies/Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-010.md ✔ (printed p.75 READ from bottom-center circle digit-by-digit '7','5' = img+65, both passes agree; 3 BLUE bold ### headings, no maroon on page — 'Impact of Natural Vegetation and Forests on Lifestyle', 'Lifestyle of the people of Northern mountains', 'Lifestyle of the people of western mountains' (case as printed); theory, figures 0 (pure-text page — no photos/maps/tables/side boxes, both passes + QA agree); starts MID-SENTENCE '1995. The government also started…' (completes p.74), ends MID-SENTENCE '…(about 250mm) and thin vegetation cover' → cont. p.76; bold run ×1 'Ministry of Climate Change'; Tier A ×1 'about250mm'→'about 250mm'; Tier B none; Tier C keeps flagged: 'Handi crafts', 'wild life'/'bio diversity' spacings, 'they also practice Transhumance', 'works as focal point' no-article (2x PIL crop confirmed), 'Pakistan Tourism Development corporation', 'Karakoram highway', 'life style' two words, '(UNFCCC)' crop-verified after pass-1 '(UNFCC)' misread, 620 hectares never fixed; ledger rows in drafts-ps/30-d-corrections.md)
+---
+Task ID: 30-d
+Agent: 30-d
+Task: Phase 10 wave 30 — P-4 imgs 10,11 (running log)
+Work Log:
+- page-011 → Books/Formatted/Pakistan-Studies/Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-011.md ✔ (printed p.76 READ from bottom-center circle digit-by-digit '7','6' = img+65, both passes agree; 2 BLUE bold ### headings with inconsistent styles kept verbatim — 'Life Style of the People of Baluchistan' (two words) vs 'Lifestyle of the People of Indus Plain.' (one word + trailing period); theory, figures 0 (pure-text page, no photos/maps/tables/boxes — both passes agree); starts MID-SENTENCE 'with thorny bushes and broad-leaved…' (completes p.75 '…thin vegetation cover'), ends MID-SENTENCE '…(Cholistan, Nara and thar) The vast and properly' → cont. p.77; no bold body runs; Tier A ×3: 'broad leave'→'broad-leaved', 'int tube wells'→'into tube wells', 'it truck Art'→'its truck Art'; Tier B none; Tier C keeps flagged: 'Kuram' single-r, 'Baluchistan' with u throughout (vs p.68 legend 'Balochistan'), 'Sulaiman', 'etc. people' lc start, 'marble limestone' comma-as-read, 'potohar plateau'/'Arabian sea'/'thar' lowercase, comma quirks ('tributaries, hold', 'flora, and fauna', 'followed by, Pasni'), 'these Karez' cap-K plural, 'north-south' joined across line wrap, no-article quirks ('mining industry', 'transport system', 'reliable source of water'), curly-quote 'bread basket of Pakistan', 125mm/200,000 sq mi never fixed; ledger rows appended to drafts-ps/30-d-corrections.md)
+---
+Task ID: 30-a
+Agent: 30-a
+Task: Phase 10 wave 30 — P-4 imgs 4,5 (running log)
+Work Log:
+- page-004 → study-workspace/STUDY/Books/Formatted/Pakistan-Studies/Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-004.md ✔ (printed p.69 READ from bottom-center circle, both passes agree, matches img+65; §Factors Affecting Different Types of Forests (maroon ##) + Altitude (cyan ###), theory, figures 0 → full-width 5-row altitude/forest-types table (header 'Altitude | Types of Forests' bold, row labels bold, multi-line cells <br>-joined) instead; starts at NEW section heading (not mid-sentence), ends COMPLETE '…problems of barren land.'; Tier A ×6: 'forestsare'→'forests are', 'Scrubfrosts'→'Scrub forests' (missing space + 'e'), 'Mangroveforests'→'Mangrove forests', 'mountains-are'→'mountains are', 'Rawalpindi- Islamabad'→'Rawalpindi-Islamabad', '20-25 %'→'20-25%'; Tier B none; Tier C keeps flagged: 'The Himalayas' cap-T, 'Riverian Bela forests' (cf. Riverain), 'Makaran' (cf. Makran), 'Kirther' (cf. Kirthar), 'Baluchistan' ×3, row-label case/punct mix ('Metres' vs 'meters:'), 'thrive with different forest classification' garbled, intro ends without full stop, rows 1-2 no full stop as read, verbless 'Riverian Bela forests (irrigated forest) Indus river…', 'coastal Areas' cap-A; quoted 'Productive forests'/'Protective forests' bold-vs-regular split → regular+quotes per no-invent-bold precedent, flagged; sea-level cell bold through 'are found' per QA pass + rows 2-3 parallelism, flagged; no figures (both passes), has_figures false per corpus table-page convention; native vision Read down → 2 VLM CLI full-page passes, converged; ledger rows → drafts-ps/30-a-corrections.md)
+---
+Task ID: 30-b
+Agent: 30-b
+Task: Phase 10 wave 30 — P-4 imgs 6,7 (running log)
+Work Log:
+- page-006 → .../Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-006.md ✔ (printed p.71 READ from bottom-center green disc digit-by-digit '7','1' on both passes, matches img+65; §3. Tropical Thorn forests (Rakh) + §4. Sub-tropical Scrub forests (cyan ###), theory, figures 2 → F1 full-width coniferous-forest photo w/ snow-capped peaks (no caption printed) + F2 right-side thorn-scrub photo beside §3 (no caption printed); starts MID-SECTION continuing p.70 coniferous text w/ complete sentence 'These forests are mostly evergreen…', ends MID-SENTENCE '…but mostly grow on the' → cont. p.72; heading numeral spacing contested between full-page passes ('3.Tropical'/'4.Sub-tropical') → 3x heading crop re-read settled spaces '3. Tropical'/'4. Sub-tropical', '(Rakh)' prints on a 2nd cyan heading line (joined); Tier A ×0, Tier B ×0; Tier C keeps flagged: '1000m', 'pulahi' species spelling, 'Oak, walnut, deodar, chestnut, fir, spruce, and blue pine' as printed, 'check floods' comma quirk, 'fuel wood' two words, no-'as' in 'same features of small thorny bushes'; no bold body runs; method 2 full VLM passes + 1 heading crop + PIL ink/colour bands; no ledger rows for this page)
+---
+Task ID: 30-b
+Agent: 30-b
+Task: Phase 10 wave 30 — P-4 imgs 6,7 (running log)
+Work Log:
+- page-006 → .../Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-006.md ✔ (printed p.71 READ from bottom-center green disc digit-by-digit '7','1' on both passes, matches img+65; §3. Tropical Thorn forests (Rakh) + §4. Sub-tropical Scrub forests (cyan ###), theory, figures 2 → F1 full-width coniferous-forest photo w/ snow-capped peaks (no caption printed) + F2 right-side thorn-scrub photo beside §3 (no caption printed); starts MID-SECTION continuing p.70 coniferous text w/ complete sentence 'These forests are mostly evergreen…', ends MID-SENTENCE '…but mostly grow on the' → cont. p.72; heading numeral spacing contested between full-page passes ('3.Tropical'/'4.Sub-tropical') → 3x heading crop re-read settled spaces '3. Tropical'/'4. Sub-tropical', '(Rakh)' prints on a 2nd cyan heading line (joined); Tier A ×0, Tier B ×0; Tier C keeps flagged: '1000m', 'pulahi' species spelling, species list as printed, 'check floods' comma quirk, 'fuel wood' two words, no-'as' in 'same features of small thorny bushes'; no bold body runs; method 2 full VLM passes + 1 heading crop + PIL ink/colour bands; no ledger rows for this page)
+---
+Task ID: 30-b
+Agent: 30-b
+Task: Phase 10 wave 30 — P-4 imgs 6,7 (running log)
+Work Log:
+- page-007 → .../Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-007.md ✔ (printed p.72 READ from bottom-center green disc '7','2' on both passes, matches img+65; §5. Mangroves (cyan ###) + Importance of Mangrove Forests (magenta ##) + Threats to Mangroves (cyan ###), theory, figures 2 → F1 top-right sub-tropical-scrub photo w/ cyan italic caption 'Sub-tropical Scrub forests' (caption ink sits below the photo, which runs past the '5. Mangroves' heading line) + F2 two side-by-side mangrove photos full width w/ cyan italic caption 'Mangroves'; starts MID-SENTENCE 'dry hillslopes of the western mountains, Quetta, and Kalat divisions.' (completes p.71 '…but mostly grow on the'), ends MID-SENTENCE '…development of tourist attractions on the beaches,' → cont. p.73; Tier A ×1: 'floating forests..'→'floating forests.' (stray duplicated full stop; both passes + targeted QA); Tier B none; Tier C keeps flagged: 'Avicenna, Alba and Rhizophora' (as printed, cf. Avicennia), 'minimize'/'urbanisation' mixed spellings, 'of Indus and Hub delta' no article + singular, serial commas, no comma after 'urbanisation', '3 to 8 meters' never altered, curly printed quotes 'knee roots'; ledger row appended to drafts-ps/30-b-corrections.md; no bold body runs; method 2 full VLM passes (word-identical body text) + PIL ink/colour bands)
+---
+Task ID: 30-a
+Agent: 30-a
+Task: Phase 10 wave 30 — P-4 imgs 4,5 (running log)
+Work Log:
+- page-005 → study-workspace/STUDY/Books/Formatted/Pakistan-Studies/Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-005.md ✔ (printed p.70 folio read bottom-center circle both passes, matches img+65; §Irrigated Plantations (blue ###) + Advantages/Disadvantages (cyan/blue ###) + Productive Forests (red-family ##) + 1. Alpine forests/2. Coniferous forests (blue ###, printed numbers kept), theory, figures 1 → F1 mountain-landscape photo bottom right ≈1/4 page, alpine paragraph wraps its left side, no caption; starts at NEW heading (not mid-sentence), ends COMPLETE '…between 1000m and 4000m.' (Productive Forests list continues p.71); bullets 10 + 6 — QA pass miscounted Disadvantages as 5 → 3 PIL dot-forensics passes + 1 crop re-read counted 6 dots, 'Money is required…'/'Extra burden…' two separate bullets; crop pass misread the maroon heading as 'Recreational Forests' → rejected in favour of 'Productive Forests' (2 full-page passes + p.69 'Productive forests' definition context); Tier A none; Tier B ×3 inserted 'a'/'the'/'a' ('has a semi-arid climate', 'increasing the area under tree cover', 'for a better environment'); Tier C keeps flagged: 'Land area under forests is very little.' no article, 'road sides', 'Water logging' + 'salinity is controlled' agreement, 'sub-soil water' hyphen, 'They promote employment to the people', 'The land can no longer be used for other commercial purposes and quick returns.' garbled, 'Government is providing…' no article + sits under Disadvantages as printed, 'Hindukush' one word + serial comma, '4000m and 4500m'/'1000m and 4000m' no-space numbers never fixed, 'Deodar, Kail are few species' comma-spliced; no bold in body (headings only); ledger rows → drafts-ps/30-a-corrections.md)
+
+---
+Task ID: 30-wave-verify
+Agent: coordinator (Z.ai main)
+Task: PHASE 10 wave 30 QA (P-4 004-011) + 30-c abort resolution + corrections merge + push
+
+Work Log:
+- Wave 30 placed 8 pages: 30-a P-4 004+005 (altitude table + irrigated plantations); 30-b P-4 006+007 (thorn/scrub/mangroves); 30-c P-4 008+009 then ABORTED claiming env self-contradictions made its outputs unverifiable; 30-d P-4 010+011 (lifestyle pages)
+- Coordinator resolved the 30-c abort: on-disk frontmatter verified to match the 17-field schema exactly; side-by-side vision QA of BOTH pages vs scans = PASS verbatim (008: folio 73, 3 blue headings, '8000 hectares' + 'sequester carbon dioxide' keeps; 009: folio 74, Effects/Afforestation sections, 'free saplings' resolution, Changa-Manga/1866/Chicha watni keeps) — the agent's fears were stale-read artifacts; pages CLEAN
+- Coordinator side-by-side QA of the other 6: 004 PASS (folio 69; 5-row altitude table complete w/ 6 Tier A fixes matching print incl. 'Scrubfrosts'->'Scrub forests'; 'Productive/Protective forests' quoted-regular adjudication); 005 PASS (folio 70; Advantages x10 + Disadvantages x6 lists; Productive Forests ##; mountain photo F1); 006 PASS (folio 71; '3. Tropical Thorn forests (Rakh)'; coniferous + thorn photos; 'pulahi' kept); 007 PASS (folio 72; mangroves; 'floating forests..' double period fixed; F1+F2 w/ cyan captions); 010 PASS (folio 75; '**Ministry of Climate Change**' bold; UNFCCC crop-verified; 'about250mm' fix); 011 PASS (folio 76; 'Life Style'/'Lifestyle.' heading variants kept; 3 Tier A fixes match)
+- 14 Tier A/B rows merged to CORRECTIONS-LOG §6; gates ALL GREEN
+
+Stage Summary:
+- P-4 11/14 placed & verified; committed + pushed; remaining: P-4 012-014 (3, incl. unit end), P-5 (23), P-6 (25) = 51 pages

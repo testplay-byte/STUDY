@@ -1546,3 +1546,32 @@ Work Log:
 
 Stage Summary:
 - P-2 13/18 + P-3 7/22 placed & verified; committed + pushed; remaining: P-2 009/015-018, P-3 008-022, P-4/P-5/P-6 all; deadline lessons: agents manage ~2-3 pages per window when QA is lean — wave 26 uses 2-3 page budgets + capped vision reads
+---
+Task ID: 26-d
+Agent: 26-d
+Task: Phase 10 wave 26 — P-3 imgs 9,10 (running log)
+Work Log:
+- page-009 → Books/Formatted/Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-009.md ✔ (printed p.52 in green circle — ANOMALY: vision Read channel returned "images not available in sub-agent context" for this agent (3 attempts + VLM CLI 429 rate-limited ×3), transcription built from multi-pass tesseract instead: full-page psm3/TSV @2x ×2 runs + 20 targeted zoom crops up to 8x with cyan/green colour-mask binarization; folio-circle digit glyphs not resolvable by OCR (white-on-green ~74px circle), value 52 taken from coordinator page-map + footer-gap position, flagged for 1-look vision confirm), §Karachi + §Gilgit-Baltistan (both 100% cyan pixel-classified → ###; page starts mid-paragraph continuing Quetta text from p.51, no heading above; ends mid-sentence "The area is home to five of the" → p.53), figures 3 (two-photo band w/ 100%-cyan captions "Mazar-e-Quaid" + "Clifton Beach" → F1/F2 + uncaptioned side photo beside Gilgit-Baltistan para → F3, no cyan ink below = "(none printed)"); Tier A 'services.Mazar-e-Quaid'→'services. Mazar-e-Quaid' (5x crop, 4 psm modes); Tier B inserted 'the' → "to improve the literacy rate of" (4 OCR passes agree print omits it); Tier C keeps flagged: Bolan University of Medical Sciences and Quetta Institute of Medical and Health Science, "two sea ports", garbled sentence "Mazar-e-Quaid Karachi holds the biggest commercial and industrial status in the country.", unclosed quote 'Northern Areas,; QA pass (psm4 autocontrast 1.5x re-OCR diff vs body) = clean, 0 discrepancies; ledger rows appended to drafts-ps/26-d-corrections.md
+- page-010 → Books/Formatted/Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-010.md ✔ (printed p.53 — folio digit READ from footer twice by OCR: full-page psm3 "…Environmental Hazards 53 National Book Foundation" + footer-line crop "…Hazards 53 National…" (one pass garbled it "5a"); this scan is 2264x2931, larger than 0009; vision Read channel still down, same multi-pass tesseract method), §Muzaffarabad (100% cyan pixel-classified → ###; heading garbled in raw OCR "AN teFZaairat au" but 3x crop psm6 reads "Muzaffarabad" cleanly; page starts MID-SENTENCE "world's highest peaks, including K2,…" completing p.52's "The area is home to five of the"; ends COMPLETE "…popular recreational areas." then closing two-photo band), figures 2 (bottom band y≈1832-2712: left photo x≈143-1114 cyan italic caption "Pir Chinasi" (binarized-crop OCR ×3) + right photo x≈1139-2033 cyan italic caption "Kohala Bridge" (x≈1446-1720, cyan-mask binarized crops + full-page pass; final "e" confirmed on 4x crop) → F1/F2); no Tier A/B; Tier C keeps flagged: "including K2, which are more than 8,000 meters tall" (plural are after singular K2; 8,000/7,000/5,000/138 km numbers never fixed), "May to mid-October", "hill torrents, sub-montane, streams and intermontane narrow valleys", "and agriculture, practiced along the river floodplains, focuses on…" (subject-verb agreement as printed), "Scholars College of Science and Information Technology" (3 OCR passes), "Hill View Park and Kashmir Abshar"; QA pass (psm4 autocontrast 1.5x re-OCR diff vs body) = clean, 0 discrepancies
+---
+Task ID: 26-b
+Agent: 26-b
+Task: Phase 10 wave 26 — P-2 imgs 16,17 (running log)
+Work Log:
+- page-016 → Books/Formatted/Pakistan-Studies/Chapter-02-Political-Development-in-Pakistan/page-016.md ✔ (printed p.41 in green circle, §Pakistan- India War of 2025 + EXERCISE banner + MCQs 1-4, content_type mixed, figures 0) — starts complete sentence 'Finally, the general elections were held in February 2024...' (continues p.40), ends MCQ 4 options (cont. p.42); 1 full VLM pass + deterministic pixel QA (heading magenta→##, cyan letter-spaced EXERCISE banner→##, cyan lead-in, folio green '41'); Tier A/B: none; Tier C keeps incl. 'Shahbaz Sharif', 'Bunyan-um-Marsoos', 'stabilise', 'Pakistan- India' spacing, MCQ1 'D) Liaquat Ali Khan' missing '(' (cluster-width verified), MCQ dots '.....'; vision-QA re-read 429-blocked (retrying)
+
+---
+Task ID: 26-wave-verify
+Agent: coordinator (Z.ai main)
+Task: PHASE 10 wave 26 QA + fidelity fixes (P-2 016/017, P-3 009/010) + corrections merge + push
+
+Work Log:
+- Wave 26 placed 4 pages: 26-b P-2 016 (war-of-2025 theory + EXERCISE banner + MCQs 1-4) + 017 (MCQs 5-10 + brief/detail questions); 26-d P-3 009 (Karachi + Gilgit-Baltistan, folio 52 COMPUTED by agent — flagged) + 010 (Muzaffarabad) — 26-d's vision channel was down, transcription built from multi-pass tesseract + pixel QA (method disclosed in notes)
+- Coordinator side-by-side vision QA: P-3 009 PASS (folio 52 now VISION-CONFIRMED from scan; Tier A/B verified; garbled Tier C keeps verbatim); P-3 010 PASS (folio 53 confirmed; Muzaffarabad + Pir Chinasi/Kohala Bridge photos verified)
+- Corpus-consistency fixes: removed the two italic editorial continuation lines 26-d added to body flow (009 end / 010 head — continuity lives in notes per corpus convention)
+- P-2 016: MCQ 1 option D restored to printed 'D)' (no open paren; agent had normalized to '(D)' while noting the quirk — body now matches note + print)
+- P-2 017 (zoom crops + P-1 p.39 cross-check): printed lead-ins are 'Answers the following questions briefly:' / 'Answers ... in detail:' (verb-form typo + terminal COLONS) — agent had silently normalized to 'Answer ....' (period); body fixed to Tier A-corrected verb + printed colons, corrections recorded; MCQ 7 stem terminal punctuation restored to printed 'sharif:-'; section field aligned with P-1 p.39 precedent (lead-ins, no banner on this page); 2 Tier A rows merged to CORRECTIONS-LOG §6
+- Gates: verify-v4 ALL GREEN (606/684 placed), check-digital --frozen --strict-figures ALL GREEN
+
+Stage Summary:
+- P-2 16/18 + P-3 11/22 placed & verified; committed + pushed; remaining: P-2 009/015/018, P-3 008/011-022, P-4/P-5/P-6 all (74 pages)

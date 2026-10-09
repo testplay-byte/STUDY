@@ -608,3 +608,11 @@ TOC "Unit | Title | Page" header rows are editorial (not printed).
 | P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-001.md` (printed p.44, Unit 03 opener) | `access the significance` (SLO verb misprint) | `assess the significance` | A |
 | P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-001.md` (printed p.44, Unit 03 opener) | `on Pakistan's, economic` (stray comma) | `on Pakistan's economic` | A |
 | P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-003.md` (printed p.46) | `NE.USA` (missing space) | `NE. USA` | A |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-005.md` (printed p.30) | `Feroze Kham Noon` (name misspelling; zoom crops, 2 reads agree printed 'Kham') | `Feroze Khan Noon` | A |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-005.md` (printed p.30) | `lost the confidence of assembly` (missing article) | `lost the confidence of the assembly` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-005.md` (printed p.30) | `he started conspiracy against Ayub Khan` (missing article) | `he started a conspiracy against Ayub Khan` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-005.md` (printed p.30) | `he was hindrance to good governance` (missing article) | `he was a hindrance to good governance` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-005.md` (printed p.30) | `invest their money in industrial sector` (missing article) | `invest their money in the industrial sector` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-006.md` (printed p.31) | `Kahmir` (misspelling, 2 reads agree) | `Kashmir` | A |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-006.md` (printed p.31) | `twenty -four` (stray printed space) | `twenty-four` | A |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-013.md` (printed p.38) | `M-2 Moter way` (misspelling) | `M-2 Motor way` | A |

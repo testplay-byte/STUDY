@@ -1461,3 +1461,54 @@ Work Log:
 
 Stage Summary:
 - P-2 7/18 + P-3 4/22 committed & pushed; clean baseline before the remaining-91-page conversion waves (P-2 11, P-3 18, P-4 14, P-5 23, P-6 25)
+---
+Task ID: 24-b
+Agent: 24-b
+Task: Phase 10 wave — Pakistan Studies P-2 imgs 13-18 (unit end)
+Work Log:
+- page-013 → Books/Formatted/Pakistan-Studies/Chapter-02-Political-Development-in-Pakistan/page-013.md ✔ (printed p.38, § Nawaz Sharif's 2nd Term; Kargil War (1999); Musharraf Era (1999-2008), theory, figures 0, no photos) — convergent multi-engine evidence (8 overlapping VLM bands + 6 targeted crops + 2 tesseract runs + neutral full-page pass); starts mid-sentence 'imposed on Pakistan since 1990.' (completes p.37 '...sanctions which were'); ends mid-sentence 'tried to strengthen' (continues p.39); Tier A 'Moter' → 'Motor' ('M-2 Moter way' → 'M-2 Motor way'); Tier C keeps flagged in notes ('This cause financial loss', 'attempted unsuccessfully tried', 'Casualties occurred from both side', 'Fearing of the nuclear war', 'Pervaiz Musharraf', 'General Zia Uddin Butt', 'Sajjad Ali Shah', 'Mujahedeen', 'focussed'); heading colors verified (magenta majors → ##, blue 'Kargil War (1999)' → ###)
+- pages 014-018 NOT CONVERTED — BLOCKED: vision channel returned mutually inconsistent output across passes on the SAME bands (date '9 March 2009' vs '2007'; heading 'PPP'S Government' vs 'PPP Government'; 'Mujahedeen' vs 'Mujahedeen'; caption/name variants; band boundaries shifting run-to-run; later calls erroring outright). R11 absolute-verbatim fidelity cannot be certified under this channel — majority-voting hallucinations would fabricate study data, so no files were placed for 014-018
+- Corrections ledger → drafts-ps/24-b-corrections.md (page-013 Tier A row only, with merge-hold note until coordinator re-verification; NO rows for 014-018)
+- No git commands run (coordinator-only)
+Stage Summary:
+- 1/6 pages converted+QA'd (013 placed with convergent evidence; coordinator re-verification requested per wave-1 orphan precedent); 014-018 BLOCKED by unstable vision channel — retry needs a fresh VLM session + deterministic tesseract-diff protocol or human eyes on 0014-0018; folio 38 printed on 013; exercise page = 017, Glossary page = 018 (both still pending)
+
+---
+Task ID: 24-wave-verify
+Agent: coordinator (Z.ai main)
+Task: PHASE 10 wave 24 QA + dead-agent reconstruction (P-2 005/006/013, P-3 004) + corrections merge + push
+
+Work Log:
+- Wave 24 outcome: 24-b placed page-013 only (flagged transient vision-channel instability; blocked 014-018); 24-a placed 005+006 then died at context deadline (no worklog entry); 24-c placed page-004 then died (no worklog entry; drafts 24c-page-004/006 confirm 006 was never written)
+- Coordinator side-by-side vision QA of all 4 placed pages vs scans: page-013 PASS (folio 38; pink ## Nawaz Sharif's 2nd Term + Musharraf Era, blue ### Kargil War; Tier A 'M-2 Moter way'->'M-2 Motor way' matches print; all Tier C keeps verbatim); page-005 PASS (folio 30; Tier A 'Feroze Kham Noon'->'Feroze Khan Noon' matches print; Tier B x4 article insertions; Do You Know? box blockquoted at sentence boundary; Ayub photo F1 + caption); page-006 PASS (folio 31; Tier A 'Kahmir'->'Kashmir' + 'twenty -four'->'twenty-four'; Tier C garbles kept); P-3 page-004 PASS (folio 47; blue ### Geopolitical Importance; Tier C 'Peoples's Republic of China' 2nd occurrence + 'six hundred and fifty year' kept verbatim)
+- 24-b's ledger merge-hold honored: coordinator verification done first, then 8 Tier A/B rows merged to CORRECTIONS-LOG §6 (from 24-b-corrections.md + 24-a page notes; P-3 p.004 had Tier C only, no rows)
+- Reconstructed worklog entries below for 24-a/24-c (their own appends were lost to context death)
+
+Stage Summary:
+- P-2 10/18 + P-3 5/22 placed & verified; committed + pushed; vision channel healthy on coordinator re-test (24-b's instability transient); remaining: P-2 007-009/014-018, P-3 006-010, P-4/P-5/P-6 all
+
+---
+Task ID: 24-a (reconstructed by coordinator)
+Agent: 24-a
+Task: Phase 10 wave — Pakistan Studies P-2 imgs 5-9 (died at context deadline after 2 pages)
+
+Work Log:
+- page-005 → Books/Formatted/Pakistan-Studies/Chapter-02-Political-Development-in-Pakistan/page-005.md ✔ (printed p.30, § Ayub Khan Era (1958-1969); Ban On Political Activities; Economic Policy, theory, 1 fig) — coordinator-verified vs scan
+- page-006 → Books/Formatted/Pakistan-Studies/Chapter-02-Political-Development-in-Pakistan/page-006.md ✔ (printed p.31, § Presidential Elections; War of 1965, theory, 0 figs) — coordinator-verified vs scan
+- Corrections (logged by coordinator): Tier A 'Feroze Kham Noon'->'Feroze Khan Noon', 'Kahmir'->'Kashmir', 'twenty -four'->'twenty-four'; Tier B x4 (articles)
+- imgs 0007-0009 crops made (drafts-ps/0007-*, 0008-folio, 0009-*) but conversion not reached
+
+Stage Summary:
+- 2/5 pages placed; agent died at context deadline; remainder reassigned to 25-a
+
+---
+Task ID: 24-c (reconstructed by coordinator)
+Agent: 24-c
+Task: Phase 10 wave — Pakistan Studies P-3 imgs 4, 6-10 (died at context deadline after 1 page)
+
+Work Log:
+- page-004 → Books/Formatted/Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-004.md ✔ (printed p.47, § Geopolitical Importance, theory, 0 figs) — coordinator-verified vs scan (5 independent reads noted by agent; Tier C keeps incl. duplicated-spelling 'Peoples's')
+- draft 24c-page-006.md exists but no placed file — img 0006 conversion not completed
+
+Stage Summary:
+- 1/6 pages placed; agent died at context deadline; remainder reassigned to 25-c

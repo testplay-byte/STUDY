@@ -656,3 +656,7 @@ TOC "Unit | Title | Page" header rows are editorial (not printed).
 | P-4 `Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-007.md` (printed p.72) | `floating forests..` (stray duplicated full stop) | `floating forests.` | A |
 | P-4 `Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-010.md` (printed p.75) | `about250mm` (missing space) | `about 250mm` | A |
 | P-4 `Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-011.md` (printed p.76) | `broad leave deciduous trees` / `converted int tube wells` / `famous for it truck Art` (3 surface typos) | `broad-leaved deciduous trees` / `converted into tube wells` / `famous for its truck Art` | A |
+| P-4 `Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-012.md` (printed p.77) | `people..` / `housing , food` (stray dot/space) | `people.` / `housing, food` | A |
+| P-4 `Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-012.md` (printed p.77) | `“reduce, “followed by “reuse”` (misplaced curly quote) | `“reduce”, followed by “reuse”` | A |
+| P-4 `Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-014.md` (printed p.79, Glossary) | `adding tress` / `live in the costal` (2 typos) | `adding trees` / `live in the coastal` | A |
+| P-4 `Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-014.md` (printed p.79, Glossary) | `in canal irrigated tract` (missing article) | `in the canal irrigated tract` | B |

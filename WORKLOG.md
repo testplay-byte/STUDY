@@ -1771,3 +1771,53 @@ Work Log:
 
 Stage Summary:
 - P-4 11/14 placed & verified; committed + pushed; remaining: P-4 012-014 (3, incl. unit end), P-5 (23), P-6 (25) = 51 pages
+---
+Task ID: 31-d
+Agent: 31-d
+Task: Phase 10 wave 31 — P-5 imgs 4,5 (running log)
+Work Log:
+- page-004 → .../Chapter-05-Mineral-Power-Resources-and-Telecommunication/page-004.md ✔ (printed p.83 from bottom-center green circle '8','3' both passes = img+79; MID-SENTENCE start 'cement, plaster of paris, Sulphuric acid, paper, paints, and rubber industries.' cont. p.82 Gypsum ¶, ends COMPLETE '…posing social and ecological challenges.'; ## Energy Minerals mid-page + ### Coal + ### Advantages and Disadvantages (single combined heading, both passes), figures 1 → F1 Khewra Salt Mines entrance photo (arch + black gate, red/brown rock face, English+Urdu lettering unresolvable) right side beside marble/granite ¶s, no printed caption; bold: Limestone, Rock salt, Rock Salt, marble, granite; Tier A ×0, Tier B ×0; Tier C keeps: 'Chaghi', 'Nagarparker', 'Khyber Agency Swabi' no comma, 'utilised', 'Soda Ash'/'bicarbonate of Soda' caps, '(Sindh), and Salt Range (Punjab)' comma-after-paren; corrections ledger → drafts-ps/31-d-corrections.md; method 2 full VLM CLI passes + QA, converged)
+---
+Task ID: 31-d
+Agent: 31-d
+Task: Phase 10 wave 31 — P-5 imgs 4,5 (running log, entry 2 of 2)
+Work Log:
+- page-005 → .../Chapter-05-Mineral-Power-Resources-and-Telecommunication/page-005.md ✔ (printed p.84 from bottom-center green circle '8','4' both passes + last-line crop = img+79; opens with 'Do You Know?' side box → blockquote (tab bold, body regular per zoom crop + PIL density scan), then ### Natural Gas, ### Advantages and Disadvantages, ### Oil, ### Advantages and Disadvantages (exact combined headings, no numbers), theory, figures 0, tables 0, ends COMPLETE '…daily life worldwide.'; Tier A ×0 ('dailly' pass-1 misread disproved ×2 targeted reads), Tier B ×0; Tier C flagged: Mazrani/Kandhlot/Sarang/Pir koh/Dhallian+Dhulian/Mail, 'Jhelum, Moreover' splice, 'In Khyber Pakhtunkhwa notable' no comma, 'Further reserves are discovered', 'fueling', 175/89/6%; ledger rows appended; method 2 VLM passes + 2 crop re-reads + PIL forensics, converged)
+---
+Task ID: 31-c
+Agent: 31-c
+Task: Phase 10 wave 31 — P-5 imgs 2,3 (running log)
+Work Log:
+- page-002 → .../Chapter-05-Mineral-Power-Resources-and-Telecommunication/page-002.md ✔ (printed p.81 READ from bottom-centre green disc via targeted 3x folio crop digit-by-digit '8','1', matches img+79; both full-page passes misread the small disc as '84' — crop + consecutive-folio p.82 win, noted; §Mineral Resources + Importance of Minerals + Mineral Resources in Pakistan + Metallic Minerals (all four pink/magenta majors → ##, PIL band avg RGB ≈220,90,150), theory, figures 0 → 'Expand Your Horizon' coloured sidebar box (right side, beside opening Importance paragraph, title bold) transcribed as blockquote, boxes not counted as figures; starts at NEW section heading (not mid-sentence), ends COMPLETE '…Iron ore is mainly used for steel production.' mid-section (Metallic Minerals continues p.82 with copper); Tier A ×0, Tier B ×0, no ledger rows; Tier C keeps flagged: 'Similarly minerals like iron and coal' no comma as printed, 'Nokundi' (cf. Nokkundi), 'aluminum'/'jewelry' US spellings, list 'i)…iv)' not '(i)', no bold body runs (both passes); no figures → has_figures false per PIL photo-scan 0% coloured pixels; method 2 full VLM passes + folio crop re-read + 1 mid-band crop read (box title/text confirmed) + PIL ink/colour bands)
+---
+Task ID: 31-b
+Agent: 31-b
+Task: Phase 10 wave 31 — P-4 img 14 (glossary) + P-5 img 1 (opener) (running log)
+Work Log:
+- page-014 → .../Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-014.md ✔ (printed p.79 READ digit-by-digit both passes, = img+65; §continuation Qs 5-7 (no heading printed, cont. p.78) + 'Answer the following questions in detail:' + 'Learning Activities:' + 'Glossary' (all blue/cyan → ###), content_type summary, figures 0; 5 detail items (pass-1 dropped item 5, crop restored); Glossary 6 terms ALL bold, 'Sustainability' colonless as printed; empty write-in table 4 magenta rules → 3 rows × 2 cols preserved; Tier A ×2 'tress'→'trees' 'costal'→'coastal', Tier B ×1 inserted 'the'; no figures; native Read down → 2 VLM full passes + 2 crop re-reads, converged; ledger rows → drafts-ps/31-b-corrections.md)
+---
+Task ID: 31-a
+Agent: 31-a
+Task: Phase 10 wave 31 — P-4 imgs 12,13 (running log)
+Work Log:
+- page-012 → .../Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-012.md ✔ (printed p.77, §Coastal area + §Significance…Environment: (blue ###, period vs colon crop-settled), figures 0; mid-sentence start completing p.76, complete ending; Tier A ×3, Tier B ×0, Tier C ~15 kept+flagged incl. 'for to maintain', '3Rs', 'land fill', fuelwood/fuel wood split, minimise; no bold; no figures; ledger → drafts-ps/31-a-corrections.md)
+- page-003 → .../Chapter-05-Mineral-Power-Resources-and-Telecommunication/page-003.md ✔ (printed p.82 READ from bottom-centre green disc digit-by-digit '8','2' on folio crop AND both full-page passes, matches img+79; theory, figures 1 → F1 full-width aerial photo of Saindak Copper and Gold Mine at top ≈45% of page w/ cyan italic caption 'Saindak Copper and Gold Mine' (cyan rows PIL y≈1244-1268), transcribed as italic line after [Figure F1] marker; starts MID-SECTION continuing p.81 Metallic Minerals (first para opens complete sentence on copper), ends MID-SENTENCE '…it holds significance in the' → cont. p.83 Gypsum; heading 'Non Metallic Minerals' deep maroon/crimson (PIL avg ≈205,46,102) → ##; Tier A ×0, Tier B ×0, no ledger rows; Tier C keeps flagged: 'Baluchistan' in lead para vs 'Balochistan' elsewhere on same page (as printed), 'Gold is discovered in conjunction with' passive quirk, 'It is located…' pronoun quirk, heading unhyphenated vs p.81 list 'Non-metallic Minerals', 'jewelry' US spelling; bold body runs **lead** + **Gypsum** (both passes; Copper/Gold/Chromite openers NOT bold); method 2 full VLM passes + folio crop + PIL ink/colour bands; no ledger rows for these pages — drafts-ps/31-c-corrections.md not yet created)
+---
+Task ID: 31-b
+Agent: 31-b
+Task: Phase 10 wave 31 — P-4 img 14 (glossary) + P-5 img 1 (opener) (running log)
+Work Log:
+- page-001 → .../Chapter-05-Mineral-Power-Resources-and-Telecommunication/page-001.md ✔ (printed p.80 READ digit-by-digit both passes, = img+79; opener content_type chapter-opener, figures 1; white 'UNIT 05' bubble + 'Section 3' (black) / 'Resources and Economic Development of Pakistan' (green) banner + unit title printed 'Mineral, Power Resources & Telecommunication' (singular 'Mineral' + '&' verified character-level ×2; folder slug keeps 'and'); lead-in 'In this unit the students will be able to:' (no comma) + 6 SLO bullets word-identical ×2; roundel = F1 hands holding tablet with glowing 5G neon city (icon set differs slightly between passes: lightbulb/cloud — hedged in description); Tier A ×0, Tier B ×0, Tier C flagged: 'Pakistan's mining industry's potential' double possessive, 'protective measures to recommend sustainable economic development' garble, 'bio-fuel', 'Analyze' US spelling; no footer strip on opener; no ledger rows)
+
+---
+Task ID: 31-wave-verify
+Agent: coordinator (Z.ai main)
+Task: PHASE 10 wave 31 QA (P-4 012-014, P-5 001-005) + corrections merge + push
+
+Work Log:
+- Wave 31: ALL FOUR agents delivered (8 pages) — 31-a P-4 012+013 (coastal lifestyle + EXERCISE 10 MCQs); 31-b P-4 014 (glossary, 3 empty rows) + P-5 001 (opener; printed title character-verified 'Mineral, Power Resources & Telecommunication' — singular + ampersand); 31-c P-5 002+003 (minerals; folio-81 crop-adjudicated vs both-passes '84' misread); 31-d P-5 004+005 (energy minerals)
+- Coordinator side-by-side vision QA ALL 8: 012 PASS (folio 77; 3 Tier A match; heading punctuation settled period-vs-colon); 013 PASS (folio 78; 10 MCQs w/ (B) cap, duplicate (b), "(c)'" quirks preserved); 014 PASS (folio 79; bare Qs 5-7 continuation; detail item 5 restored by agent crop; 6 bold glossary terms; 'tress'/'costal' Tier A + 'the' Tier B match; 3-row write-in table); P-5 001 PASS (folio 80; 5G roundel F1; Section 3 banner; 6 SLO bullets verbatim); 002 PASS (folio 81; 4 magenta ## headings; Expand Your Horizon blockquote; i)-iv) list); 003 PASS AFTER FIXES (folio 82; Saindak F1; coordinator 2.2x zooms proved 'copper'/'Gold'/'Chromite' ARE bold — agent's 'not bold' call overturned, 3 bolds added); 004 PASS (folio 83; Limestone/Rock salt/Rock Salt/marble/granite bolds present; Khewra F1); 005 PASS (folio 84; Do You Know? blockquote; 'dailly' candidate disproved; Dhodhak/Dhallian/Dhulian variants kept)
+- 6 Tier A/B rows merged to CORRECTIONS-LOG §6; gates ALL GREEN
+
+Stage Summary:
+- P-4 COMPLETE (14/14); P-5 5/23 placed & verified; committed + pushed; remaining: P-5 006-023 (18), P-6 (25) = 43 pages

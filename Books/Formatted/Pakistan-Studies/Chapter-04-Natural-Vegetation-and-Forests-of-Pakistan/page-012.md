@@ -1,0 +1,37 @@
+---
+subject: pakistan-studies
+book_title: "Textbook of Pakistan Studies Grade 12 — National Book Foundation, Federal Textbook Board, Islamabad"
+batch: P-4
+chapter_folder: Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan
+chapter_number: 4
+chapter_title: "Natural Vegetation and Forests of Pakistan"
+page_image: 12
+page_printed: 77
+section: "Life style of the People of Coastal area.; Significance of Natural Vegetation and Forests on the Environment:"
+exercise: null
+content_type: theory
+has_figures: false
+figures_count: 0
+source_image: ../../../Raw/Pakistan-Studies/Unit-04-Natural-Vegetation-and-Forests-of-Pakistan/0012.jpg
+converted_at: "2026-10-09"
+converted_by: "31-a (glm-vision)"
+notes: "Printed folio '77' (bottom-center colored circle, digit-by-digit '7','7' on both full-page passes, matches img+65; footer 'Unit-04 Natural Vegetation and Forests of Pakistan 77 National Book Foundation' = furniture). Page starts MID-SENTENCE — opening fragment 'planned irrigation system has met the increasing needs of water for domestic, agriculture, industrial and commercial needs of the people.' completes p.76 'The vast and properly' — and ends COMPLETE '…not only for better economy but also for better environment.' (last line crop-verified; theory of Unit-04 closes here, EXERCISE begins p.78). Both headings BLUE bold (### — no maroon heading on this page); trailing punctuation settled by stitched 3-band crop re-read: 'Life style of the People of Coastal area.' ends with a PERIOD, 'Significance of Natural Vegetation and Forests on the Environment:' ends with a COLON (full-page pass 1 had read a period). Capitalization as printed: 'Life style' (lowercase s), 'Coastal area' (lowercase a). Tier A ×3: 'people..' → 'people.' (stray duplicated full stop, both passes + p.007 precedent); 'housing , food' → 'housing, food' (stray space before comma); quote garble '“reduce, “followed by “reuse”' → '“reduce”, followed by “reuse”' (misplaced curly quote as printed — closing quote missing after 'reduce', stray opening quote before 'followed'). Tier B ×0. Tier C kept verbatim + flagged: 'for to maintain the freshness' (extra 'for' — not deleted per no-omission); 'Mangroves forests' (plural as adjective); 'Making of boats, fishing nets, and fish processing is their important activities.' (verb agreement); 'they are involved' (lowercase sentence start); 'Fish sale, Packing' (mid-sentence capitals); 'have been setup' (one word); 'Sindh Coast' (caps); 'Ibrahim Hyderi is a Whole sale fish market' ('Whole sale' two words, capital W); 'fuelwood' one word vs 'fuel wood' two words within the same paragraph; 'minimise' (vs unit precedent 'minimize' p.72 — mixed spellings); '3Rs'; 'land fill' two words; 'Forest department' (capital F, lowercase d); 'has increasing needs for housing, food and other needs' (needs…needs echo); 'The use of synthetic wood, chipboard, cardboard, plastics and synthetic rubber are introduced' (agreement); 'the treatment of solid waste' (lowercase sentence start); 'more gas cylinders to be provided' (no 'should' — kept); 'but public will also be aware of better tomorrow' (no articles — article-quirk precedent p.75); 'control weather changes' (cf. climate); 'alternate use of fuel' / 'alternate of wood' (cf. alternative); 'for a prolonged use'. No bold body runs (both passes agree). No figures, photos, maps, tables or side boxes (both passes + QA agree) → has_figures false. Method: 2 full VLM passes (verbatim + targeted QA token grid) + 1 stitched 3-band crop re-read (heading 1 / heading 2 / last line, PIL 3x upscale); engines converged.
+---
+
+# Page 12 — Unit-04: Natural Vegetation and Forests of Pakistan
+
+> 📄 Original scan: [0012.jpg](../../../Raw/Pakistan-Studies/Unit-04-Natural-Vegetation-and-Forests-of-Pakistan/0012.jpg) · printed page 77
+
+planned irrigation system has met the increasing needs of water for domestic, agriculture, industrial and commercial needs of the people. Some of the desert areas have also been reclaimed to grow crops. In desert areas, people make mud houses to keep them cool during intense heat.
+
+### Life style of the People of Coastal area.
+
+Mangroves forests along the coast of Indus and Hub delta mostly provide fishing as an important occupation of the people. Making of boats, fishing nets, and fish processing is their important activities. they are involved in Fish sale, Packing and processing of fish for domestic and commercial markets. Fish meal is prepared for poultry feed. Ice factories have been setup to freeze fish packs for to maintain the freshness and quality of the product. Sindh Coast has a broad continental shelf which attracts variety of marine fish. Ibrahim Hyderi is a Whole sale fish market of Sindh. It has its own fish harbour for both commercial and subsistence fishing. Beaches along the coastal areas also provide recreational facilities to the people.
+
+### Significance of Natural Vegetation and Forests on the Environment:
+
+Natural vegetation contributes to the environment by providing healthy and fresh air, beauty to the landscape, and habitat for plant and animal life. Forests contribute to the ecosystem, provide biodiversity, and control weather changes. They provide wood, timber, raw materials, vegetables, and fruits. They are a source of a variety of medicines and provide recreational, aesthetic, and spiritual benefits.
+
+Pakistan has a small area under natural vegetation, and even that is under a great threat of deforestation. Forest department of the government needs to take strict measures to protect the forests. The fast-growing population of Pakistan has increasing needs for housing, food and other needs. Sustainability and conservation of natural resources are becoming inevitable to protect them for a prolonged use. Forests are one of the most precious natural resources for the environment and economy of the country. According to international standards, for the conservation of the forests, important focus should be on recycling or alternative uses of raw materials. 3Rs are introduced for focusing on “reduce”, followed by “reuse” and then recycle, in order to keep as much material out of land fill as possible, helping to combat climate change.
+
+To avoid the use of fuelwood, gas pipelines should be extended, and more gas cylinders to be provided as an alternate use of fuel. The government is focusing on renewable sources of energy, such as solar, wind, and hydroelectricity, and raising awareness to save electricity instead of fuel wood. The use of synthetic wood, chipboard, cardboard, plastics and synthetic rubber are introduced as an alternate of wood. the treatment of solid waste should be managed more seriously by the municipal authorities of the cities to check soil degradation. More awareness programs may be introduced to involve the public to minimise waste. New technologies of research should be introduced according to international standards. Literacy ratio of the country should be increased by providing more ratio of GNP for education. This change in learning will improve the economic and social life of the people with new dimensions. This effort of the government will not only increase the employment ratio of the country but public will also be aware of better tomorrow. Intense care of mangroves for the fishing industry along the coast will bring better returns. These are a few examples to save the forests not only for better economy but also for better environment.

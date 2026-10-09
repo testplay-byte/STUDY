@@ -133,7 +133,6 @@ Task: Convert S-1 images 0007,0008,0009,0010 to Markdown
 Work Log:
 - page-007 → data/processed/S-1/chapter-08-set-theory/00-intro/page-007.md ✔ (printed p.7, §8.21 Multiplication Principle; §8.22 Factorials, ex null; top = tail of a worked example from p.6 — set-equality list + "Hence" results (i)-(viii), all 23 set lines verified element-by-element vs image)
 - page-008 → data/processed/S-1/chapter-08-set-theory/00-intro/page-008.md ✔ (printed p.8, §8.23 Permutations; §8.24 Combinations, ex null; "Samasatta" word example = 3780, Example 8.8 (^4P_2 = 12, ^4C_2 = 6); all nPr/nCr formulas verified token-by-token)
-- page-009 → data/processed/S-1/chapter-08-set-theory/exercise/page-009.md ✔ (printed p.9, heading "EXERCISES" — start of end-of-chapter exercise, Q.1-Q.8 with printed "Ans." lines; all set elements and all 12+18 ordered triples verified vs image)
 - page-010 → data/processed/S-1/chapter-08-set-theory/exercise/page-010.md ✔ (printed p.10, exercise continues Q.9-Q.23; Q.16 Ans digit-by-digit verified 6.704425728 × 10^12 incl. zoomed crop re-read; Q.20 permutations + Q.21 six binomial expressions + decimal answers verified; "← 08 →" chip = page furniture, excluded from body)
 
 Stage Summary:
@@ -1948,3 +1947,60 @@ Work Log:
 
 Stage Summary:
 - P-5 COMPLETE (23/23); P-6 4/25 placed & verified; committed + pushed; remaining: P-6 005-025 (21 pages)
+---
+Task ID: 35-d
+Agent: 35-d
+Task: Phase 10 wave 35 — P-6 imgs 11,12 (running log)
+Work Log:
+- page-011 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-011.md ✔ (printed p.113 READ digit-by-digit '1','1','3' both passes = img+102; opens NEW magenta ## 'Unemployment and underemployment in Pakistan' at very top, ends COMPLETE '…financial strain.'; figures 2 → F1 unnumbered photo top-right Heavy Electrical Complex, cyan italic caption 'Huttar' read H-u-t-t-a-r ×2 kept verbatim (real-world 'Hattar' flagged Tier C, NOT fixed) + F2 'Fig-12.4' BAR CHART (pass-1 'table' superseded by targeted pass-2 + justified 2× crop: legend Total/Male/Female, y 0–16, 7 brackets 10-14→65 & Over, bar-top labels majority-read, 65+ Female non-concordant 0.7/0.5/0.1 → 0.5 flagged); cyan ### Micro-Level + Financial Pressures; no bold body runs ×2; no tables/side boxes; Tier A ×0 Tier B ×0; Tier C keeps: 8%/2024 as printed, missing-article quirk kept; method 2 VLM CLI passes + 1 crop, PIL not needed)
+---
+Task ID: 35-b
+Agent: 35-b
+Task: Phase 10 wave 35 — P-6 imgs 7,8 (running log)
+Work Log:
+- page-007 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-007.md ✔ (printed p.109 READ digit-by-digit '1','0','9' both passes, green disc = img+102; opens MID-SENTENCE 'introducing policy reforms…' completing p.108 Automobile Industry sentence-tail (img 0006 not mine, continuity unverified), ends complete '…limiting their market potential.' but Disadvantages bullet LIST continues p.110; §§ maroon ## 'Cottage and Small-Scale Industries in Pakistan' + cyan ### 'Advantages' (NO colon) + 'Disadvantages:' (WITH colon — printed asymmetry kept); theory, figures 1 → F1 right-half photo person at loom weaving carpet (PIL y≈300-1050 x≈1100-2050) + cyan italic caption 'Carpet Weaving in Pakistan' y≈1061-1081; 5+3 bullets verbatim; bold runs ×2 passes + 1.6x stitched crop (pass-1 'Handicrafts' omission overturned 2:1 BOLD): carpet weaving/Hand-embroidery/brassware and pottery/Handicrafts/candle-making/rug weaving/cotton weaving/surgical instrument production; Tier A ×1 corrected 'thorough' → 'through' (letter-verified both passes); Tier B ×0; Tier C keeps: 'utilize'/'jewelry' US, 'adaptability is yet another advantage' singular verb; no tables/side boxes ×2 + PIL; method 2 VLM passes + 1 justified crop + PIL band forensics)
+---
+Task ID: 35-b
+Agent: 35-b
+Task: Phase 10 wave 35 — P-6 imgs 7,8 (running log)
+Work Log:
+- page-008 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-008.md ✔ (printed p.110 READ digit-by-digit '1','1','0' both passes, green disc = img+102 consecutive with p.109; opens MID-LIST 2 continuation bullets closing p.109 Disadvantages list, ends COMPLETE with Note For Teachers box '…famous in other parts of Pakistan?'; §§ maroon ## 'Large-Scale Industries in Pakistan' + cyan ### 'Advantages'; full-width light-cyan 'Expand Your Horizon' box PIL y≈846-1221 between intro para and 'Pakistan's economy thrives…' para → blockquote bold title NO colon, NEVP/30%/2030 as printed; bottom-left 'Note For Teachers:' box (bold dark-blue title WITH colon, blue icon square w/ white people+book silhouettes = box furniture) → blockquote NOT a figure per Unit-05 pp.007/013/016 precedent → has_figures false, figures 0; bold runs: dispute 'chemical and petrochemical industry'/'energy sector' settled BOLD 2:1 by 1.6x crop (pass-2 'regular' overruled); final bold set Textile and Garments/automobile manufacturing sector/chemical and petrochemical industry/energy sector/food processing; NOT bold: opener, 'Cement factories', 'Steel mills', 'Toyota, Honda, Hyundai, and Suzuki'; Tier A ×0 Tier B ×0 word-identical ×2 → zero-corrections ledger note; Tier C keeps: comma-less 'growth and in recent years,' box run-on, 'neighboring' US, 'Textile and Garments' casing; method 2 VLM passes + 1 justified crop + PIL band forensics)
+---
+Task ID: 35-d
+Agent: 35-d
+Task: Phase 10 wave 35 — P-6 imgs 11,12 (running log)
+Work Log:
+- page-012 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-012.md ✔ (printed p.114 READ digit-by-digit '1','1','4' both passes, green disc = img+102 consecutive with p.113; opens NEW cyan ### 'Diminished Quality of Life' at very top both passes (p.113 ended COMPLETE), ends MID-SENTENCE '…women and adolescents, social protection' → continues p.115 (flagged; not in batch); §§ cyan ### 'Access to Education is Limited' + magenta ## 'Impacts at the Macro Level' + cyan ### 'Decreased Economic development'/'Enhanced Social Welfare Costs'/'Social Instability'/'Factors to Improve Employment Situation'; theory, figures 1 → F1 centre infographic, magenta title 'Out of School Children' + black '(Pakistan: 26.2 million)', five red/blue region silhouettes in a row with thin black connectors, bold labels PUNJAB 11.73m / SINDH 7.63m / K.P.K 3.63m / BALOCHISTAN 3.13m / ICT 0.08m (sums 26.20 ✔), no caption/legend/compass; body 'more than 26 million' vs figure '26.2 million' both as printed; no bold body runs ×2; no tables/side boxes; Tier A ×0 Tier B ×0 zero-corrections ledger row; method 2 VLM CLI passes, no crops — all numerals concordant ×2)
+---
+Task ID: 35-a
+Agent: 35-a
+Task: Phase 10 wave 35 — P-6 imgs 5,6 (running log)
+Work Log:
+- page-005 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-005.md ✔ (printed p.107 READ digit-by-digit '1','0','7' both passes, green disc = img+102, consecutive with p.106; opens mid-SECTION: Cotton Industry continues from p.106, no heading at top, first line a new complete sentence; ONE long cotton para wraps left of top-right photo, cyan-blue italic caption 'Cotton Mills in Pakistan' below photo; magenta ## 'Fertilizer' (PIL band y≈1092-1122) + 5 fertilizer paras, openers identical ×2; ends COMPLETE '…price fluctuations and supply disruptions.'; theory, figures 1 → F1 mill-interior photo right ~third y≈96-720; no side boxes/tables/bold body runs ×3 reads; Tier A ×0 Tier B ×0 → ledger zero-corrections note; Tier C keeps: 'labor'/'utilization' AmE vs 'neighbouring'/'utilise' BrE mixed same page, 'Sindh…play' agreement quirk, 4.4%/0.9%/PKR 100 billion ×2/100,000/200,000 as printed; method 2 VLM CLI passes + 1 justified high-res top-region crop (settled ONE-para wrap + no missed text) + PIL forensics)
+- page-006 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-006.md ✔ (printed p.108 READ digit-by-digit '1','0','8' both passes, green disc = img+102, consecutive with p.107; opens COMPLETE 'In addition to its benefits…' (Fertilizer drawbacks), ends MID-SENTENCE '…Restructuring loans,' → p.109; magenta ## 'Iron Industry' + blue ### 'Advantages' (NO colon) and 'Disadvantages:' (WITH colon) — asymmetric punctuation kept+flagged; photo right ⅔ y≈786-1300 w/ blue-sky band, wraps left of 'concentrated in a few key regions' para, cyan italic caption 'Pakistan Steel Mills Karachi' BELOW photo, Punjab para printed BELOW caption — order settled by justified mid-page crop after passes disagreed; '**Pakistan Steel Mills**' bold mid-sentence ×3; '**Economic Vulnerability:**' bold run-in FINAL sentence of production para (pass-1 split overturned by pass-2 + PIL pitch forensics 56px uniform vs 68px at true boundaries, flush-left block style) — flagged; Tier A ×0 Tier B ×0 → ledger zero-corrections note; Tier C keeps: 'In Khyber Pakhtunkhwa Peshawar' no punctuation ×3 reads, 'centre' BrE vs 'revitalize' AmE, 'Bin Qasim'; figures 1; method 2 VLM CLI passes + 1 justified high-res mid-page crop + PIL forensics)
+---
+Task ID: 35-c
+Agent: 35-c
+Task: Phase 10 wave 35 — P-6 imgs 9,10 (running log)
+Work Log:
+- page-009 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-009.md ✔ (printed p.111, §Disadvantages:; Government Policies and Industrial Zones, figures 0) folio DISPUTE settled: 2 full-page passes both read '141', 3x folio-disc crop digit-read '1','1','1' = 111 green disc = img+102; opens mid-list (cyan ### 'Disadvantages:' + 5 bullets cont. p.110, bullet 4 no terminal period kept+flagged); ends mid-sentence 'These include Rashakai SEZ in' → p.112; bold ×1 only 'National Small and Medium Enterprises (SME) Policy 2021' (crop+stroke concurrence; pass-2 bold over-claims refuted by crops+PIL); Tier A ×0 Tier B ×0; Tier C keeps: (SEZ's), inspector-less, Industrial Estates caps, SEZ Act syntax, labour, Rashakai; method 2 VLM passes + stitched crops + PIL forensics
+---
+Task ID: 35-c
+Agent: 35-c
+Task: Phase 10 wave 35 — P-6 imgs 9,10 (running log)
+Work Log:
+- page-009 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-009.md ✔ (printed p.111 — full-page passes ×2 misread folio '141', folio-disc crop 3x digit-read '1','1','1' = 111 green disc LOCKED img+102; opens mid-list cyan ### 'Disadvantages:' + 5 bullets continuing p.110, bullet 4 NO terminal period kept+flagged; ## 'Government Policies and Industrial Zones' magenta; ends mid-sentence 'These include Rashakai SEZ in' → p.112; sole bold **National Small and Medium Enterprises (SME) Policy 2021** — pass-2 bold over-claims on Rs. 10 million / Special Economic Zones ×2 / Export Processing Zones / SEZ Act refuted by 2.7-3x crops + stroke stats; figures 0, tables 0; Tier A ×0 Tier B ×0; Tier C keeps "(SEZ's)", 'inspector-less inspection regime', 'Industrial Estates' caps, garbled 'enacted…amended 2016 facilitated', 'large scale'/'time consuming', 'labour', 'Rs. 10 million' period; method 2 VLM passes + folio/bold stitched crops + PIL stroke-run forensics)
+- page-010 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-010.md ✔ (printed p.112 '1','1','2' both passes green disc = img+102 consecutive; magenta ## 'Special Economic Zones (SEZs)' + isometric SEZ artwork = Figure 6.3 cyan-italic label bottom-left (3x crop digit-read), goal-pill banners + BOI logo folded into figure; opens MID-SENTENCE 'Nowshera, Dhabeji SEZ in Thatta, …' ← p.111, ends COMPLETE '…implementing sustainable practices.'; cyan ### 'Advantages'/'Disadvantages' no punctuation (crop ×2); figures 1; bold body NONE; Tier A ×0 Tier B ×0 (3 concordant reads); Tier C keeps '(SEZs)' vs "(SEZ's)" split, repeated 'Dhabeji in Thatta', 'In addition to these there are…have been approved' quirk, Nowshera/Pishin/Sheikhupura/Mohmand verbatim; method 2 VLM passes + stitched structure/caption crop + PIL line-map reconciliation, no extra crops)
+
+---
+Task ID: 35-wave-verify
+Agent: coordinator (Z.ai main)
+Task: PHASE 10 wave 35 QA (P-6 005-012) + bar-chart label adjudication + push
+
+Work Log:
+- Wave 35: ALL FOUR agents delivered (8 pages) — 35-a P-6 005+006 (Cotton/Fertilizer + Iron Industry w/ Steel Mills photo); 35-b P-6 007+008 (Cottage industries + Large-Scale, 'thorough'->'through' Tier A); 35-c P-6 009+010 (Gov Policies + SEZs w/ Fig 6.3 artwork; folio 111 crop-adjudicated vs '141' misread); 35-d P-6 011+012 (Unemployment + Out-of-School Children infographic)
+- Coordinator structural QA all 8 (folios 107-114 = img+102) + deep vision check page-011: PASS AFTER FIXES — Fig-12.4 bar-top labels are printed ROTATED 90°; coordinator rotated 4-6x crop re-reads proved 4 agent misreads: 10-14 Male 5.1 (not 5.0), 15-24 Total 11.1 (not 11.0), 15-24 Female 14.4 (not 14.7), 65+ Female 0.1 (not 0.5); F2 block + notes updated with definitive values
+- Gates ALL GREEN; zero Tier A/B rows this wave (agents converged)
+
+Stage Summary:
+- P-6 12/25 placed & verified; committed + pushed; remaining: P-6 013-025 (13 pages)

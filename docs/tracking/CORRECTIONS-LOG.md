@@ -616,3 +616,8 @@ TOC "Unit | Title | Page" header rows are editorial (not printed).
 | P-2 `Chapter-02-Political-Development-in-Pakistan/page-006.md` (printed p.31) | `Kahmir` (misspelling, 2 reads agree) | `Kashmir` | A |
 | P-2 `Chapter-02-Political-Development-in-Pakistan/page-006.md` (printed p.31) | `twenty -four` (stray printed space) | `twenty-four` | A |
 | P-2 `Chapter-02-Political-Development-in-Pakistan/page-013.md` (printed p.38) | `M-2 Moter way` (misspelling) | `M-2 Motor way` | A |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-007.md` (printed p.32) | `(Roti,Kapra aur makan)` (missing space after comma) | `(Roti, Kapra aur makan)` | A |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-007.md` (printed p.32) | `He claimed that army intervened` (missing article) | `He claimed that the army intervened` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-008.md` (printed p.33; page reprints the entire p.32 block — production misprint, transcribed verbatim) | `(Roti,Kapra aur makan)` (missing space after comma) | `(Roti, Kapra aur makan)` | A |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-008.md` (printed p.33; reprinted block) | `(Roti, Kapra aur makan). .` (stray extra printed period) | `(Roti, Kapra aur makan).` | A |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-014.md` (printed p.39) | `came into power as result of 2008 elections` (missing article) | `came into power as a result of 2008 elections` | B |

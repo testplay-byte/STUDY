@@ -1512,3 +1512,37 @@ Work Log:
 
 Stage Summary:
 - 1/6 pages placed; agent died at context deadline; remainder reassigned to 25-c
+---
+Task ID: 25-a
+Agent: 25-a
+Task: Phase 10 wave — P-2 imgs 7-9 (running log)
+Work Log:
+- page-007 → Books/Formatted/Pakistan-Studies/Chapter-02-Political-Development-in-Pakistan/page-007.md ✔ (printed p.32 in green circle, §Downfall of Ayub Khan + §Yahya Khan Era (1969-1971), theory, 1 fig: Yahya portrait w/ blue-italic caption) — convergent evidence: full neutral VLM pass + 4 band crops + full-page tesseract + 2 targeted zooms; starts with blue sub-heading (p.31 ended at paragraph close), ends mid-sentence "citing PPP's boycott as" → p.33; Tier A '(Roti,Kapra' → '(Roti, Kapra', Tier B inserted 'the' → 'claimed that the army intervened'; Tier C keeps flagged (Tashkent Accord variant, Mujeeb-ur-Rehman/Mujeeb ur Rehman mixed hyphenation, 160/162 & 81 & 313 as printed)
+---
+Task ID: 25-c
+Agent: 25-c
+Task: Phase 10 wave — P-3 imgs 6-10 (running log)
+Work Log:
+- page-006 → Books/Formatted/Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-006.md ✔ (printed p.49 green-circle folio zoom-verified; § Islamabad blue → ### pixel-verified; theory; 2 figs) — convergent evidence: tesseract full pass + VLM neutral pass + 8 targeted crops (top band, (I)/(ii)/(iii) markers 6x zoom, Islamabad heading ink-classified 3212 blue vs 123 dark px, last-para band, mosque band, photos band, folio circle, caption band); starts with complete sentence "According to the constitution..." (continues p.48 map-page discussion, no heading printed above); ends complete before photo pair; Tier C keeps flagged in notes ((I) serif capital I no dot 6x-verified, Baluchistan, Session Courts, Different ministries..., fifth largest mosque, flagship marks, Margalla National Park Shakarparian); no Tier A/B; two side-by-side photos w/ own italic captions → F1 Faisal Masjid (night, lit tent-roof + 4 minarets) + F2 Pakistan Monument & Shakarparian Park (aerial petals); ledger row appended to drafts-ps/25-c-corrections.md
+---
+Task ID: 25-b
+Agent: 25-b
+Task: Phase 10 wave — P-2 imgs 14-18, unit end (running log)
+Work Log:
+- page-014 → Books/Formatted/Pakistan-Studies/Chapter-02-Political-Development-in-Pakistan/page-014.md ✔ (printed p.39, §PPP'S Government (2008-2013); PML-N Era (2013-2018), theory, 2 figs F1 Musharraf portrait + F2 Zardari & Gilani photo) — tesseract 8-band base + 8 VLM bands + 5 verification crops (9-March-2009 date line, both captions, financial-aid line, folio circle) + full-page QA pass all convergent; starts mid-sentence 'local bodies and devolved powers at grassroots level.' (completes p.38), ends mid-sentence '(CPEC) which' (continues p.40); Tier B 'as result of'→'as a result of'; Tier C keeps incl. '9 March 2009' (dates never fixed), 'Murree tribes', 'PPP'S', body 'Yousaf' vs caption 'Yousuf', duplicated 'Many departments...' sentence as printed
+- page-007 → Books/Formatted/Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-007.md ✔ (printed p.50 green folio re-cropped IN BOUNDS — this scan is 1958x2455, smaller than 0006; first folio crop was out-of-bounds black, caught via ink-audit) — cyan headings "Lahore" (top, missed by tesseract — caught by VLM + coloured-ink row) + "Peshawar" (mid) → ###; photo row INTERRUPTS "Urbanisation..." para ("...reach their" / photos / "destinations. The government...") with cyan italic captions "Minar-e-Pakistan" + "Badshahi Masjid" → F1+F2; convergent tesseract + VLM full + 6 crops (tophead, imgband, capband 3x, folio); Tier C keeps flagged (comma splice "Punjab University Lahore, is", "underpasses overhead bridges" no comma, "16 km north of Peshawar city" — factually west, kept per Tier C, "International airport" lc-a, "river Ravi" lc); ends mid-sentence "Sugarcane, maize, tobacco, pulses, and oil" → p.51; no Tier A/B; ledger row appended
+- page-008 → Books/Formatted/Pakistan-Studies/Chapter-02-Political-Development-in-Pakistan/page-008.md ✔ (printed p.33 in green circle, theory, 0 figs) — PRINTING ANOMALY found + transcribed verbatim: p.33 misprints a duplicate of the ENTIRE p.32 text block (same headings + Tashkent/LFO/elections paragraphs, ends "…citing PPP's boycott as") then continues the genuine p.33 text "a reason. This decision strengthened…Mujeeb refused to compromise on his" (ends mid-sentence → p.34); evidence: full VLM pass + 4 tesseract band runs + 2 full tesseract runs + 5 targeted zooms (folio 33 green circle; stray ". ." after "makan)." zoom-confirmed; "(Roti,Kapra" no-space 5x-confirmed → same Tier A as p.007; Tier C keeps: "strengthened Awami League belief", "turned so worse"); blue ### + magenta ## colors verified; no photo on this page
+
+---
+Task ID: 25-wave-verify
+Agent: coordinator (Z.ai main)
+Task: PHASE 10 wave 25 QA + finalize (P-2 007/008/014, P-3 006/007) + corrections merge + push
+
+Work Log:
+- Wave 25 placed 5 pages under the page-by-page safety rhythm (entries survived agent context deaths): 25-a P-2 007+008, 25-b P-2 014, 25-c P-3 006+007
+- Coordinator side-by-side vision QA of all 5 vs scans: ALL PASS — P-2 007 (folio 32; blue ### Downfall of Ayub Khan + magenta ## Yahya Khan Era; Yahya portrait F1; Tier A/B match print); P-2 008 (folio 33; CONFIRMED production misprint: printed page reprints the entire p.32 text block then completes the broken sentence — transcribed verbatim + extensively noted; stray '. .' removal verified); P-2 014 (folio 39; PPP'S Government + PML-N Era ##; Musharraf F1 + Zardari & Gilani F2; duplicated 'Many departments' sentence as printed; Tier B 'as a result of' verified); P-3 006 (folio 49; ### Islamabad; (I)/(ii)/(iii) markers; Faisal Masjid + Pakistan Monument photos); P-3 007 (folio 50; ### Lahore/Peshawar; photo row Minar-e-Pakistan + Badshahi Masjid interrupts Urbanisation para mid-sentence as printed)
+- 5 Tier A/B rows merged to CORRECTIONS-LOG §6; P-3 pages 006/007 carry Tier C only
+- Gates: verify-v4 ALL GREEN; committed + pushed
+
+Stage Summary:
+- P-2 13/18 + P-3 7/22 placed & verified; committed + pushed; remaining: P-2 009/015-018, P-3 008-022, P-4/P-5/P-6 all; deadline lessons: agents manage ~2-3 pages per window when QA is lean — wave 26 uses 2-3 page budgets + capped vision reads

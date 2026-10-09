@@ -571,3 +571,22 @@ Representative classes (full per-page documentation lives in each page's `notes:
   `node tools/check-digital.mjs --frozen --strict-figures` ALL GREEN.
 - Post-correction z-table re-check: 0 hard mismatches vs computed Φ(z) − 0.5;
   only the 7 documented wobble cells differ.
+
+---
+
+## 6. Pakistan Studies Grade 12 — Phase 10 onward (2026-10-09 →)
+
+New book "BOOK-P-1-2-3-4-5-6" (batches P-0…P-6). Conventions applied to this book from
+recon: **dates/numbers in factual claims are Tier C** (kept verbatim + flagged — e.g. Unit 02
+opener prints "Wars of 1948, 1965, 1971 and 199" for the 1999 Kargil war; a numeric value,
+never silently fixed). Unit-end Glossary pages use `content_type: summary`; "List more
+words…" write-in tables are transcribed as empty GFM tables with the printed row count.
+TOC "Unit | Title | Page" header rows are editorial (not printed).
+
+| Page | Printed | Corrected | Tier |
+|------|---------|-----------|------|
+| P-1 `Chapter-01-Ideological-Basis-of-Pakistan/page-020.md` (printed p.25, Glossary) | `Field Marshall` | `Field Marshal` | A |
+| P-1 `Chapter-01-Ideological-Basis-of-Pakistan/page-020.md` (printed p.25, Glossary) | `led by a caliph` (no full stop, all 7 sibling items have one) | `led by a caliph.` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-005.md` (printed p.48) | `Turky` | `Turkey` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-005.md` (printed p.48) | `Siri Lanka` | `Sri Lanka` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-005.md` (printed p.48) | `established in1985` (missing space) | `established in 1985` | A |

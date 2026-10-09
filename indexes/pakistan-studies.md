@@ -1,7 +1,7 @@
 # Index — pakistan-studies
 
 **Book:** Textbook of Pakistan Studies Grade 12 — National Book Foundation as Federal Textbook Board, Islamabad  
-**Digitized pages:** 0 · **Raw images:** 128 · Structure **v4** (Books/{Raw, Formatted, Digital})
+**Digitized pages:** 4 · **Raw images:** 128 · Structure **v4** (Books/{Raw, Formatted, Digital})
 
 > Machine-readable equivalents: `Books/Formatted/Pakistan-Studies/book.json` + `chapter.json` in every chapter folder.
 > Digital replica test edition: `Books/Digital/` — 8 hand-typeset pages (`<BATCH>-page-NNN.html` + assets/, user-approved whitelist; see docs/CONVENTIONS.md §1.5).
@@ -11,20 +11,23 @@
 ## P-0 — Front matter ("zero chapter", Chapter 00)
 
 - Markdown (`Formatted`): `Books/Formatted/Pakistan-Studies/Chapter-00-Front-Matter/` · Raw scans: `Books/Raw/Pakistan-Studies/Front-Matter/` · HTML (test): `Books/Digital/Pakistan-Studies/Chapter-00-Front-Matter/`
-- Pages: 0 · Printed range: n/a · Offset: n/a
+- Pages: 1 · Printed range: n/a · Offset: n/a
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
+| 6 | — | [page-006.md](../Books/Formatted/Pakistan-Studies/Chapter-00-Front-Matter/page-006.md) | front-matter | — |  | 0 |
 
 ---
 
 ## P-1 — Unit 01: Ideological Basis of Pakistan
 
 - Markdown (`Formatted`): `Books/Formatted/Pakistan-Studies/Chapter-01-Ideological-Basis-of-Pakistan/` · Raw scans: `Books/Raw/Pakistan-Studies/Unit-01-Ideological-Basis-of-Pakistan/` · HTML (test): `Books/Digital/Pakistan-Studies/Chapter-01-Ideological-Basis-of-Pakistan/`
-- Pages: 0 · Printed range: n/a · Offset: +5
+- Pages: 2 · Printed range: 7–25 · Offset: +5
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
+| 2 | 7 | [page-002.md](../Books/Formatted/Pakistan-Studies/Chapter-01-Ideological-Basis-of-Pakistan/page-002.md) | theory | — | Ideology of Pakistan and Initial Problems; What is Ideology… | 0 |
+| 20 | 25 | [page-020.md](../Books/Formatted/Pakistan-Studies/Chapter-01-Ideological-Basis-of-Pakistan/page-020.md) | summary | — | Glossary | 0 |
 
 ---
 
@@ -41,10 +44,11 @@
 ## P-3 — Unit 03: Land of Pakistan and Environmental Hazards
 
 - Markdown (`Formatted`): `Books/Formatted/Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/` · Raw scans: `Books/Raw/Pakistan-Studies/Unit-03-Land-of-Pakistan-and-Environmental-Hazards/` · HTML (test): `Books/Digital/Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/`
-- Pages: 0 · Printed range: n/a · Offset: +43
+- Pages: 1 · Printed range: 48–48 · Offset: +43
 
 | Image | Printed | File | Type | Exercise | Section(s) | Fig. |
 |------:|--------:|------|------|----------|------------|-----:|
+| 5 | 48 | [page-005.md](../Books/Formatted/Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-005.md) | theory | — | Geographic and Economic Significance of the Provinces and M… | 1 |
 
 ---
 

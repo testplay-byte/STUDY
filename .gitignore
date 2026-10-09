@@ -6,3 +6,4 @@ staging/
 node_modules/
 *.log
 output-cache/
+drafts-ps

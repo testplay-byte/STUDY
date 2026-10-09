@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-14-Statistical-Inference-Estimation/0011.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-21b (glm-vision)"
-notes: "Offset check: printed p.213 = image 11 + 202 (header folio, top-right). Page opens mid-solution (continuation of Example 14.8 from p.212: final limits 39.9 < μ < 43.1), then Examples 14.9 and 14.10. Book typo preserved in Example 14.10 statement: 'Obtained the best unbiased estimates...' (printed as-is; reads as 'Obtain...'). Section 14.16 begins near the bottom; its sub-heading 'σ1² and σ2² known' is printed inside a rectangular box (rendered as blockquote). Page ends mid-sentence 'Two independent random' — continues on p.214."
+notes: "Offset check: printed p.213 = image 11 + 202 (header folio, top-right). Page opens mid-solution (continuation of Example 14.8 from p.212: final limits 39.9 < μ < 43.1), then Examples 14.9 and 14.10. Book typo preserved in Example 14.10 statement: 'Obtained the best unbiased estimates...' (printed as-is; reads as 'Obtain...'). Section 14.16 begins near the bottom; its sub-heading 'σ1² and σ2² known' is printed inside a rectangular box (rendered as blockquote). Page ends mid-sentence 'Two independent random' — continues on p.214. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 11 — Statistical Inference Estimation (Chapter 14)
@@ -56,7 +56,7 @@ $$0.9782 < \mu < 1.0330$$
 
 **Example 14.10.**
 
-Obtained the best unbiased estimates of the population mean ($\mu$) and variance ($\sigma^2$) from which the following sample is drawn $n = 8$, $\sum X = 120$, $\sum(X - \bar{X})^2 = 302$.
+Obtain the best unbiased estimates of the population mean ($\mu$) and variance ($\sigma^2$) from which the following sample is drawn $n = 8$, $\sum X = 120$, $\sum(X - \bar{X})^2 = 302$.
 
 **Solution:** Here, $n = 8$, $\sum X = 120$ and $\sum(X - \bar{X})^2 = 302$. Therefore
 

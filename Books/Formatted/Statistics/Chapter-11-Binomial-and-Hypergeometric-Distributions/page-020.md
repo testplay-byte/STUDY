@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/0020.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S4c (glm-vision)"
-notes: "Offset check: printed p.114 = image 20 + 94 (header folio). Continues the MULTIPLE – CHOICE QUESTIONS block from p.113 (Q.21-Q.41 here; no heading reprinted). Book typo preserved verbatim: Q.33 prints 'the probability success remains constant from trial to trial' (missing 'of'). Long-option questions Q.21, Q.25, Q.33 are printed with options (a)/(b) then (c)/(d) on two lines; all others inline on one line. Page ends after Q.41; Q.42 continues on p.115."
+notes: "Offset check: printed p.114 = image 20 + 94 (header folio). Continues the MULTIPLE – CHOICE QUESTIONS block from p.113 (Q.21-Q.41 here; no heading reprinted). Book typo preserved verbatim: Q.33 prints 'the probability success remains constant from trial to trial' (missing 'of'). Long-option questions Q.21, Q.25, Q.33 are printed with options (a)/(b) then (c)/(d) on two lines; all others inline on one line. Page ends after Q.41; Q.42 continues on p.115. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 20 — Binomial and Hypergeometric Distributions (Chapter 11)
@@ -62,7 +62,7 @@ notes: "Offset check: printed p.114 = image 20 + 94 (header folio). Continues th
 **32.** In a binomial distribution, the mean, median and mode coincide when:
 (a) $p < 1/2$ (b) $p > 1/2$ (c) $p \neq 1/2$ (d) $p = 1/2$
 
-**33.** In which distribution, the probability success remains constant from trial to trial?
+**33.** In which distribution, the probability of success remains constant from trial to trial?
 (a) Hypergeometric distribution (b) Binomial distribution
 (c) Sampling distribution (d) Frequency distribution
 

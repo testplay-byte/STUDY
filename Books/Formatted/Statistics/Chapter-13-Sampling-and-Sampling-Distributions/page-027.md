@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/0027.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S6d (glm-vision)"
-notes: "Offset check: printed p.181 = image 27 + 154 (header folio, top-right). Examples 13.21 and 13.22 start and complete on this page; section 13.38 begins here and its properties list ends the page. Book typos preserved verbatim: 'The president take n = 400 questionnaires' (missing s) and 'public finding' (for funding). Inconsistent print preserved: '80%' (no space) vs '20 %' (space); 'S.E(p̂)' in 13.21 vs 'S.E.(p̂)' in 13.22; heading prints lowercase 'and' between p̂1 and p̂2."
+notes: "Offset check: printed p.181 = image 27 + 154 (header folio, top-right). Examples 13.21 and 13.22 start and complete on this page; section 13.38 begins here and its properties list ends the page. Book typos preserved verbatim: 'The president take n = 400 questionnaires' (missing s) and 'public finding' (for funding). Inconsistent print preserved: '80%' (no space) vs '20 %' (space); 'S.E(p̂)' in 13.21 vs 'S.E.(p̂)' in 13.22; heading prints lowercase 'and' between p̂1 and p̂2. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 27 — Sampling and Sampling Distributions (Chapter 13)
@@ -24,9 +24,9 @@ notes: "Offset check: printed p.181 = image 27 + 154 (header folio, top-right). 
 
 **Example 13.21.**
 
-(i) A small society has $N = 4500$ members. The president take $n = 400$ questionnaires to a random sample without replacement. If $p = 0.7$ then find mean and variance of the sampling distribution of sample proportion ( $\hat{p}$ ). Here $p$ = population proportion and $\hat{p}$ = sample proportion.
+(i) A small society has $N = 4500$ members. The president takes $n = 400$ questionnaires to a random sample without replacement. If $p = 0.7$ then find mean and variance of the sampling distribution of sample proportion ( $\hat{p}$ ). Here $p$ = population proportion and $\hat{p}$ = sample proportion.
 
-(ii) Suppose that 80% of a city population favours public finding for a proposed recreational facility. If 150 persons are to be randomly selected and interviewed, what is the mean and standard error of the sample proportion favouring this issue?
+(ii) Suppose that 80% of a city population favours public funding for a proposed recreational facility. If 150 persons are to be randomly selected and interviewed, what is the mean and standard error of the sample proportion favouring this issue?
 
 **Solution:** The necessary calculations are given below:
 

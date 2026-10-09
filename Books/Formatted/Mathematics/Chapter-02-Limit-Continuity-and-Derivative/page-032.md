@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0032.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13b2 (glm-vision)"
-notes: "No section heading printed on this page — §2.18 heading is on p.73 (page-031); section field carries the section in force. Book prints 'Find the third derivatives of y = 1/x^3' (plural) — verbatim. Exercise 2.8: Q.1-14 second derivatives, Q.15-20 indicated derivatives (Q.19 two parts; Q.20 'and that' before the d^3/dx^3 display). No scan-edge cropping, no figures, no sidebar boxes."
+notes: "No section heading printed on this page — §2.18 heading is on p.73 (page-031); section field carries the section in force. Book prints 'Find the third derivatives of y = 1/x^3' (plural) — verbatim. Exercise 2.8: Q.1-14 second derivatives, Q.15-20 indicated derivatives (Q.19 two parts; Q.20 'and that' before the d^3/dx^3 display). No scan-edge cropping, no figures, no sidebar boxes. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 32 — Unit 02: Limit, Continuity and Derivative
@@ -34,7 +34,7 @@ f^{(4)}(x) &= 48 \\
 f^{(5)}(x) &= 0
 \end{aligned}$$
 
-**Example 42:** Find the third derivatives of $y = \frac{1}{x^3}$
+**Example 42:** Find the third derivative of $y = \frac{1}{x^3}$
 
 **Solution:** We have $y = \frac{1}{x^3} = x^{-3}$
 

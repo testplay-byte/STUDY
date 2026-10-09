@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-03-Integration/0022.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13e (glm-vision)"
-notes: "Continues section 3.8 from p.109 (derivation of the FTC evaluation formula). Book typos preserved verbatim: 'if $f$ is continuous on [a,b] ad F is antiderivative' ('ad' for 'and'); Example 24 first step carries the printed stray tail '= 3^2/2 - 1^2/2' (copy-over from Example 23, printed in the book)."
+notes: "Continues section 3.8 from p.109 (derivation of the FTC evaluation formula). Book typos preserved verbatim: 'if $f$ is continuous on [a,b] ad F is antiderivative' ('ad' for 'and'); Example 24 first step carries the printed stray tail '= 3^2/2 - 1^2/2' (copy-over from Example 23, printed in the book). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 22 — Unit 03: Integration
@@ -40,7 +40,7 @@ Therefore, from (i), we have:
 
 $$A = \int_{a}^{b} f(x)dx = F(b) - F(a) \ldots \ldots (v)$$
 
-**Statement:** The Fundamental Theorem of Calculus states that if $f$ is continuous on $[a, b]$ ad $F$ is antiderivative of $f$ on $[a, b]$, then:
+**Statement:** The Fundamental Theorem of Calculus states that if $f$ is continuous on $[a, b]$ and $F$ is antiderivative of $f$ on $[a, b]$, then:
 
 $$\int_{a}^{b} f(x)dx = F(b) - F(a)$$
 

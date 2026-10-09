@@ -15,7 +15,7 @@ figures_count: 1
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0041.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13c3 (glm-vision)"
-notes: "No section heading printed — §2.22 (heading p.81) in force; worked Examples 52-53 (optimization). Book typos/misprints preserved verbatim: 'The function p(x) defined any for 0 ≤ x ≤ 15', 'Thus, any critical value is x = 5', 'Testing the end points of the interval reveal ... , is the minimum value', 'A rectangular plot of land that contain 1500 m²', 'divided into equal portions by any additional fence parallel to two sides', 'Hence x = 15√10 m, is required minimum amount of fencing', L''(x) = 13500/x³ (correct value 9000/x³), and L(15√10) = 2(15√10) + 4500/(15√10) = 15√10 (arithmetic misprint; equals 60√10). Example 52 jumps straight from p'(x) factorization to the critical value — as printed. No edge crops, no sidebar boxes."
+notes: "No section heading printed — §2.22 (heading p.81) in force; worked Examples 52-53 (optimization). Book typos/misprints preserved verbatim: 'The function p(x) defined any for 0 ≤ x ≤ 15', 'Thus, any critical value is x = 5', 'Testing the end points of the interval reveal ... , is the minimum value', 'A rectangular plot of land that contain 1500 m²', 'divided into equal portions by any additional fence parallel to two sides', 'Hence x = 15√10 m, is required minimum amount of fencing', L''(x) = 13500/x³ (correct value 9000/x³), and L(15√10) = 2(15√10) + 4500/(15√10) = 15√10 (arithmetic misprint; equals 60√10). Example 52 jumps straight from p'(x) factorization to the critical value — as printed. No edge crops, no sidebar boxes. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 41 — Unit 02: Limit, Continuity and Derivative
@@ -39,9 +39,9 @@ $p'(x) = x.2(15 - x)(-1) + (15 - x)^2 = (15 - x)(15 - 3x)$
 
 Thus, any critical value is $x = 5$.
 
-Testing the end points of the interval reveal $p(0) = p(15) = 0$, is the minimum value of the product. Hence, $p(5) = 5(10)^2 = 500$ must be the maximum value. The two non-negative numbers are 5 and 10.
+Testing the end points of the interval revealss $p(0) = p(15) = 0$, is the minimum value of the product. Hence, $p(5) = 5(10)^2 = 500$ must be the maximum value. The two non-negative numbers are 5 and 10.
 
-**Example 53:** A rectangular plot of land that contain 1500 $m^2$ will be fenced and divided into equal portions by any additional fence parallel to two sides. Find the dimensions of the land that require the least amount of fencing.
+**Example 53:** A rectangular plot of land that contains 1500 $m^2$ will be fenced and divided into equal portions by any additional fence parallel to two sides. Find the dimensions of the land that require the least amount of fencing.
 
 [Figure F1]
 

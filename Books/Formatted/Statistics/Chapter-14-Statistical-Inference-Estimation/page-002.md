@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-14-Statistical-Inference-Estimation/0002.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-21a (glm-vision)"
-notes: "Offset check: printed p.204 = image 2 + 202 (header folio, top-left; even page). Page opens mid-sentence (continuation of 14.5 point-estimate text from p.203) and ends mid-sentence ('...is infact the') — continues on next page. Book typos preserved: 'infact' printed as one word; 'habitual of taking tea' phrasing as printed; printed phrase 'point estimate of \\hat{\\theta}' (hat on estimate) verified by zoom — as printed."
+notes: "Offset check: printed p.204 = image 2 + 202 (header folio, top-left; even page). Page opens mid-sentence (continuation of 14.5 point-estimate text from p.203) and ends mid-sentence ('...is infact the') — continues on next page. Book typos preserved: 'infact' printed as one word; 'habitual of taking tea' phrasing as printed; printed phrase 'point estimate of \\hat{\\theta}' (hat on estimate) verified by zoom — as printed. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 2 — Statistical Inference Estimation (Chapter 14)
@@ -40,4 +40,4 @@ Unbiasedness is one of the important properties of good point estimators. Other 
 
 ## 14.8 IMPORTANCE OF UNBIASEDNESS
 
-Unbiasedness plays a major role in statistical inference. The next chapter is about the testing of hypothesis wherein we shall learn that the hypothesis about the population parameter is infact the
+Unbiasedness plays a major role in statistical inference. The next chapter is about the testing of hypothesis wherein we shall learn that the hypothesis about the population parameter is in fact the

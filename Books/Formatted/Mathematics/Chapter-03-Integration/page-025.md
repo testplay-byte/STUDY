@@ -15,7 +15,7 @@ figures_count: 4
 source_image: ../../../Raw/Mathematics/Unit-03-Integration/0025.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13e (glm-vision)"
-notes: "Book typo preserved verbatim: 'We even certain that such a region has an area?' (missing 'are', as printed). Page opens mid-§3.9 (polygon-to-triangles figures F1/F2 + closing paragraph)."
+notes: "Book typo preserved verbatim: 'We even certain that such a region has an area?' (missing 'are', as printed). Page opens mid-§3.9 (polygon-to-triangles figures F1/F2 + closing paragraph). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 25 — Unit 03: Integration
@@ -26,7 +26,7 @@ notes: "Book typo preserved verbatim: 'We even certain that such a region has an
 
 [Figure F2]
 
-However, how do we define the area of a region in a plane if the region is bounded by a curve? We even certain that such a region has an area? In the same way volume of solids can be found by using definite integration.
+However, how do we define the area of a region in a plane if the region is bounded by a curve? We are even certain that such a region has an area? In the same way volume of solids can be found by using definite integration.
 
 ## 3.10 Area of Bounded Region
 

@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/0025.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S3d (glm-vision)"
-notes: "Offset check: printed p.85 = image 25 + 60 (header folio). Single-column MCQ page; questions Q.9–Q.25 continue the unnumbered MULTIPLE-CHOICE QUESTIONS block from p.84; page ends complete at Q.25. Book misprints preserved: stray dot in Q.13 option (d) '(d).all of these'; Q.16 option (c) printed as bare '>' (apparent missing 0); Q.20 table x-row printed in the order -1, -2, 0, 1, 2; spelling 'historigram' (Q.23 d)."
+notes: "Offset check: printed p.85 = image 25 + 60 (header folio). Single-column MCQ page; questions Q.9–Q.25 continue the unnumbered MULTIPLE-CHOICE QUESTIONS block from p.84; page ends complete at Q.25. Book misprints preserved: stray dot in Q.13 option (d) '(d).all of these'; Q.16 option (c) printed as bare '>' (apparent missing 0); Q.20 table x-row printed in the order -1, -2, 0, 1, 2; spelling 'historigram' (Q.23 d). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 25 — Random Variable and Probability Distributions (Chapter 10)
@@ -36,7 +36,7 @@ notes: "Offset check: printed p.85 = image 25 + 60 (header folio). Single-column
 (c) probability distribution (d) continuous distribution
 
 13. A discrete probability distribution may be represented by:
-(a) table (b) graph (c) mathematical equation (d).all of these
+(a) table (b) graph (c) mathematical equation (d) all of these
 
 14. If $c$ is a constant (non-random variable), then $E(C)$ is:
 (a) 0 (b) 1 (c) cf(c) (d) c

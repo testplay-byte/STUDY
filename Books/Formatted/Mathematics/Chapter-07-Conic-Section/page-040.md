@@ -15,14 +15,14 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-07-Conic-Section/0040.jpg
 converted_at: "2026-09-20"
 converted_by: "coordinator-w4a (glm-vision)"
-notes: "BOOK MISPRINT preserved in Example 29: misplaced full stop printed as '... = 1. with slope 7/3'."
+notes: "BOOK MISPRINT preserved in Example 29: misplaced full stop printed as '... = 1. with slope 7/3'. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 40 — Unit 07: Conic Section
 
 > 📄 Original scan: [0040.jpg](../../../Raw/Mathematics/Unit-07-Conic-Section/0040.jpg) · printed page 221
 
-**Example 29:** Find the equations of tangents to the hyperbola $\frac{x^2}{3} - \frac{y^2}{2} = 1$. with slope $\frac{7}{3}$.
+**Example 29:** Find the equations of tangents to the hyperbola $\frac{x^2}{3} - \frac{y^2}{2} = 1$ with slope $\frac{7}{3}$.
 
 **Solution:**
 

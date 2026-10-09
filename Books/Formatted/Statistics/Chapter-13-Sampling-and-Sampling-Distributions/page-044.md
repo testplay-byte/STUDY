@@ -15,14 +15,14 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/0044.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S6g (glm-vision)"
-notes: "Offset check: printed p.198 = image 44 + 154 (header folio 198, top-left; even page; running header is the book-title variant). Continues EXERCISES (started p.197): Q.10-Q.16, single column, ends complete at the Q.16 answer. Print oddities preserved verbatim: Q.10 label prints 'Q.10.' with a trailing dot (other labels print without); Q.10 book typo 'find it mean and variance'; Q.13(i) prints '18 and .20.' with a stray dot before 20; Q.13 answer (i) prints '14.22224' (verified digit by digit on crop). Scan artifacts (dust speckles) obscure letters in Q.11 ('m[ea]n', 'th[e]', 't[h]e') - transcribed as clean words per R10."
+notes: "Offset check: printed p.198 = image 44 + 154 (header folio 198, top-left; even page; running header is the book-title variant). Continues EXERCISES (started p.197): Q.10-Q.16, single column, ends complete at the Q.16 answer. Print oddities preserved verbatim: Q.10 label prints 'Q.10.' with a trailing dot (other labels print without); Q.10 book typo 'find it mean and variance'; Q.13(i) prints '18 and .20.' with a stray dot before 20; Q.13 answer (i) prints '14.22224' (verified digit by digit on crop). Scan artifacts (dust speckles) obscure letters in Q.11 ('m[ea]n', 'th[e]', 't[h]e') - transcribed as clean words per R10. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 44 — Sampling and Sampling Distributions (Chapter 13)
 
 > 📄 Original scan: [0044.jpg](../../../Raw/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/0044.jpg) · printed page 198
 
-**Q.10.** A population consists of 4 elements 2, 4, 6, 8. Take all possible samples of size 2 with replacement and find their means. Make a sampling distribution of sample means and find it mean and variance. Also find the mean and variance of the population. Verify that:
+**Q.10.** A population consists of 4 elements 2, 4, 6, 8. Take all possible samples of size 2 with replacement and find their means. Make a sampling distribution of sample means and find its mean and variance. Also find the mean and variance of the population. Verify that:
 
 (i) $\mu_{\bar{x}} = \mu$ (ii) $\sigma_{\bar{x}}^2 = \frac{\sigma^2}{n}$
 

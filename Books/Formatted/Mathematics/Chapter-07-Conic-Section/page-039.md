@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-07-Conic-Section/0039.jpg
 converted_at: "2026-09-20"
 converted_by: "coordinator-w4a (glm-vision)"
-notes: "BOOK TYPO preserved: 'we wil get' (missing l). Pen-slash cancellations on b^4 (both occurrences), m^4 of the a^4m^4(c-k)^2 term and m^2 of the last a^4m^2(c-k)^2 term rendered with \\not{} (zoom-verified). Final tangent-slope result printed inside a bordered box -> blockquote."
+notes: "BOOK TYPO preserved: 'we wil get' (missing l). Pen-slash cancellations on b^4 (both occurrences), m^4 of the a^4m^4(c-k)^2 term and m^2 of the last a^4m^2(c-k)^2 term rendered with \\not{} (zoom-verified). Final tangent-slope result printed inside a bordered box -> blockquote. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 39 — Unit 07: Conic Section
@@ -28,7 +28,7 @@ Consider the hyperbola $\frac{(x-h)^2}{a^2} - \frac{(y-k)^2}{b^2} = 1$ .........
 
 and the line $y = mx + c$ ...........(2)
 
-on solving Eqs (1) and (2) simultaneously we wil get the points of intersections of the line and hyperbola; for this use Eq (2) in (1)
+on solving Eqs (1) and (2) simultaneously we will get the points of intersections of the line and hyperbola; for this use Eq (2) in (1)
 
 $$\begin{aligned}
 &\frac{(x-h)^2}{a^2} - \frac{(mx+c-k)^2}{b^2} = 1 \\

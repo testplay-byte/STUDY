@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-05-Kinematics-of-Motion-in-a-Straight-Line/0015.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13i (glm-vision)"
-notes: "Red-bordered Key Facts box (crossed-keys icon) sits to the right of the 'In this case the domain...' paragraph — transcribed as blockquote; box text verbatim. Book typos preserved: 'Consider a particle is moving in space', 'considering it motion', 'The value the function', 'ranges 0 to infinity (as we considering t as time)'. Heading '5.6.1' prints 'valued' lowercase (5.6.2/5.6.4 print 'Valued' capitalized) — as printed. No mathematical graph on the page; no scan-edge crops."
+notes: "Red-bordered Key Facts box (crossed-keys icon) sits to the right of the 'In this case the domain...' paragraph — transcribed as blockquote; box text verbatim. Book typos preserved: 'Consider a particle is moving in space', 'considering it motion', 'The value the function', 'ranges 0 to infinity (as we considering t as time)'. Heading '5.6.1' prints 'valued' lowercase (5.6.2/5.6.4 print 'Valued' capitalized) — as printed. No mathematical graph on the page; no scan-edge crops. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 15 — Unit 05: Kinematics of Motion in a Straight Line
@@ -44,7 +44,7 @@ $$\{(-\infty, 1) \cup (1, \infty)\} \cap \{(-\infty, \infty)\} \cap \{[0, \infty
 
 ## 5.6.2 Construction of Vector Valued Function
 
-Consider a particle is moving in space then its vector function can be constructed by considering it motion along x-, y- and z-axes. Suppose that the motion of particle along x- and y-axes is in circular shape and z-axis is changing linearly 3 times with time, then its vector function is given by
+Consider a particle is moving in space then its vector function can be constructed by considering its motion along x-, y- and z-axes. Suppose that the motion of particle along x- and y-axes is in circular shape and z-axis is changing linearly 3 times with time, then its vector function is given by
 $$r = (\cos t)\hat{i} + (\sin t)\hat{j} + 3t\hat{k}$$
 
 ## 5.6.3 Scalar Valued Function
@@ -57,7 +57,7 @@ $$r = 3\hat{i} + t\hat{j} + (\sin t)\hat{k}$$
 Its magnitude is $|r| = |3\hat{i} + t\hat{j} + (\sin t)\hat{k}|$
 $$= \sqrt{3^2 + t^2 + \sin^2 t} = \sqrt{9 + t^2 + \sin^2 t}$$
 
-The value the function $\sqrt{9 + t^2 + \sin^2 t}$ also depends on the scalar variable $t$.
+The value of the function $\sqrt{9 + t^2 + \sin^2 t}$ also depends on the scalar variable $t$.
 
 In this case the domain of the function ranges 0 to infinity (as we considering $t$ as time) and the range of the function is from 9 to infinity.
 

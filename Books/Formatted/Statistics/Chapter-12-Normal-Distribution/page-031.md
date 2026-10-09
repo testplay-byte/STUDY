@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-12-Normal-Distribution/0031.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S5g (glm-vision)"
-notes: "Offset check: printed p.153 = image 31 + 122 (header folio, top-right; odd page). Continuation of the EXERCISES block: Q.22-Q.31, single column; page ends complete at Q.31 Ans. Book typos/oddities preserved verbatim: Q.23 item (iii) word truncated as printed 'central 70% of the distrib lies' ('ution' missing, no trailing period); Q.23 item (iv) also printed without trailing period; Q.29 Ans label misprinted as 'An' (not 'Ans.'); Q.29 item (ii) printed with stray dot '(ii). the chance'; Q.22 fraction printed inline '3/5'."
+notes: "Offset check: printed p.153 = image 31 + 122 (header folio, top-right; odd page). Continuation of the EXERCISES block: Q.22-Q.31, single column; page ends complete at Q.31 Ans. Book typos/oddities preserved verbatim: Q.23 item (iii) word truncated as printed 'central 70% of the distrib lies' ('ution' missing, no trailing period); Q.23 item (iv) also printed without trailing period; Q.29 Ans label misprinted as 'An' (not 'Ans.'); Q.29 item (ii) printed with stray dot '(ii). the chance'; Q.22 fraction printed inline '3/5'. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 31 — Normal Distribution (Chapter 12)
@@ -34,7 +34,7 @@ notes: "Offset check: printed p.153 = image 31 + 122 (header folio, top-right; o
 
 (ii) Find a point that has 81.7 % of the distribution above it.
 
-(iii) Find two such points between which the central 70% of the distrib lies
+(iii) Find two such points between which the central 70% of the distribution lies
 
 (iv) Find two such points between which the central 90% of the distribution lies
 

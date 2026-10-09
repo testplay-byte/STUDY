@@ -15,14 +15,14 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0042.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13c3 (glm-vision)"
-notes: "No section heading printed — §2.22 (heading p.81) in force: applied 'Price Growth Model' + 'Using Straight Lines' paragraphs with Examples 54-55. Book typos/misprints preserved verbatim: 'The price level at time P' (for t), definition list prints 'P₀ = Initial price, continuous annual inflation rate,' with the 'r =' label missing, 't= Time(in years)', 'd/dt P(t)= P₀re^rt, The dP(t)/dt, represents' (capital 'The' after comma), 'c. 10 ears' (for 'years'), 6e^0.15 = 6.92 (arithmetic misprint; ≈ 6.97), 'a line relationship', 'cost increase by 30/units' (revenue bullet prints 'increases'). Page ends after the marginal-cost bullet — Ex 55 parts b-c solutions continue on p.85. No figures, no sidebar boxes, no edge crops."
+notes: "No section heading printed — §2.22 (heading p.81) in force: applied 'Price Growth Model' + 'Using Straight Lines' paragraphs with Examples 54-55. Book typos/misprints preserved verbatim: 'The price level at time P' (for t), definition list prints 'P₀ = Initial price, continuous annual inflation rate,' with the 'r =' label missing, 't= Time(in years)', 'd/dt P(t)= P₀re^rt, The dP(t)/dt, represents' (capital 'The' after comma), 'c. 10 ears' (for 'years'), 6e^0.15 = 6.92 (arithmetic misprint; ≈ 6.97), 'a line relationship', 'cost increase by 30/units' (revenue bullet prints 'increases'). Page ends after the marginal-cost bullet — Ex 55 parts b-c solutions continue on p.85. No figures, no sidebar boxes, no edge crops. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 42 — Unit 02: Limit, Continuity and Derivative
 
 > 📄 Original scan: [0042.jpg](../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0042.jpg) · printed page 84
 
-**Price Growth Model:** The price level at time P, considering inflation can be modeled as:
+**Price Growth Model:** The price level at time t, considering inflation can be modeled as:
 $P(t) = P_0e^{rt}$, where, $P(t)$= Price at time t, $P_0$ = Initial price, continuous annual inflation rate,
 
 t= Time(in years)

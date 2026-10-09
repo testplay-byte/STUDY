@@ -15,7 +15,7 @@ figures_count: 2
 source_image: ../../../Raw/Mathematics/Unit-03-Integration/0030.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13d2 (glm-vision)"
-notes: "Continuation of Exercise 3.8 (Q.5-18; heading printed on image 29 / p.117, no heading repeated here). Book typos preserved verbatim: 'sloid' for 'solid' (Q.11), 'bonded' for 'bounded' in Q.18's closing clause (first occurrence is correctly 'bounded'). No scan-edge crops; no sidebar boxes."
+notes: "Continuation of Exercise 3.8 (Q.5-18; heading printed on image 29 / p.117, no heading repeated here). Book typos preserved verbatim: 'sloid' for 'solid' (Q.11), 'bonded' for 'bounded' in Q.18's closing clause (first occurrence is correctly 'bounded'). No scan-edge crops; no sidebar boxes. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 30 — Unit 03: Integration
@@ -35,7 +35,7 @@ notes: "Continuation of Exercise 3.8 (Q.5-18; heading printed on image 29 / p.11
 
 10. Find the volume of the solid that is obtained when the region under the curve $y = \sqrt{x}$ over the interval $[1, 4]$ is revolved about the x-axis.
 
-11. Find the volume of the sloid that results when the shaded region is revolved about the indicated axis.
+11. Find the volume of the solid that results when the shaded region is revolved about the indicated axis.
     (i) $y = \sqrt{3-x}$ about x-axis [Figure F1] (ii) $y = 3 - 2x$ about y-axis [Figure F2]
 
 12. An object moves in a straight line according to the position function given below. If $f$ is measured in centimetres, find the distance travelled by the object in the indicated time interval:
@@ -57,7 +57,7 @@ notes: "Continuation of Exercise 3.8 (Q.5-18; heading printed on image 29 / p.11
 17. Find the total revenue obtained in 8 years if the rate of increase in dollars per year is:
     $$f(t) = 600\sqrt{1 + 3t}$$
 
-18. Find the area bounded by the curve $f(x) = x^3 - 2x^2 + 1$ and the x-axis in the first quadrant bonded by the line $x = 1.5$.
+18. Find the area bounded by the curve $f(x) = x^3 - 2x^2 + 1$ and the x-axis in the first quadrant bounded by the line $x = 1.5$.
 
 ## Figures on this page
 

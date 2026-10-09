@@ -15,7 +15,7 @@ figures_count: 2
 source_image: ../../../Raw/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/0013.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-23b (glm-vision)"
-notes: "Offset check: printed p.251 = image 13 + 238 (header folio, top-right; odd page). Page opens with the continuation (items iv-vi) of Example 15.8 from p.250, then sections 15.21 and 15.22. BOOK TYPOS preserved: 'as show in Figure-11' (item a, final sentence) and the garbled opening 'Sometimes the hypothesis about the population which is normal and its standard deviation sigma is known.' — both transcribed as printed."
+notes: "Offset check: printed p.251 = image 13 + 238 (header folio, top-right; odd page). Page opens with the continuation (items iv-vi) of Example 15.8 from p.250, then sections 15.21 and 15.22. BOOK TYPOS preserved: 'as show in Figure-11' (item a, final sentence) and the garbled opening 'Sometimes the hypothesis about the population which is normal and its standard deviation sigma is known.' — both transcribed as printed. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 13 — Statistical Inference Testing of Hypotheses (Chapter 15)
@@ -55,7 +55,7 @@ $$t = \frac{\bar{X} - \mu_0}{s/\sqrt{n}}.$$
 Critical region:
 The critical region is based on the alternative hypothesis.
 
-(a) For the alternative hypothesis $H_1 : \mu \neq \mu_0$, the rejection region is two-sided as shown in Figure-11. The two critical values $-t_{\alpha/2(n - 1)}$ and $+t_{\alpha/2( n - 1)}$ are seen from the t-table below $\alpha/2$ and against $(n - 1)$ degrees of freedom. The critical region is $t > +t_{\alpha/2(n - 1)}$ or $t < -t_{\alpha/2(n - 1)}$ as show in Figure-11.
+(a) For the alternative hypothesis $H_1 : \mu \neq \mu_0$, the rejection region is two-sided as shown in Figure-11. The two critical values $-t_{\alpha/2(n - 1)}$ and $+t_{\alpha/2( n - 1)}$ are seen from the t-table below $\alpha/2$ and against $(n - 1)$ degrees of freedom. The critical region is $t > +t_{\alpha/2(n - 1)}$ or $t < -t_{\alpha/2(n - 1)}$ as shown in Figure-11.
 
 [Figure F1]
 

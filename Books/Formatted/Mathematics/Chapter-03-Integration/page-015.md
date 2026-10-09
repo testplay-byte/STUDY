@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-03-Integration/0015.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13d (glm-vision)"
-notes: "Book typo preserved: 'repectively' (Example 17 solution). Check Point sidebar box (Evaluate \\int (2x+1)/((x-1)(x+3)) dx) transcribed as blockquote at its scan position."
+notes: "Book typo preserved: 'repectively' (Example 17 solution). Check Point sidebar box (Evaluate \\int (2x+1)/((x-1)(x+3)) dx) transcribed as blockquote at its scan position. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 15 — Unit 03: Integration
@@ -60,7 +60,7 @@ By equating numerator, we get:
 
 $$5x + 6 = A(x + 2) + B(x + 1) \quad \text{(ii)}$$
 
-If we set $x = -2$ and $x = -1$, we get $B = 4$ and $A = 1$, repectively.
+If we set $x = -2$ and $x = -1$, we get $B = 4$ and $A = 1$, respectively.
 
 $$\begin{aligned}
 \therefore \int \frac{x^3 - 2x}{x^2 + 3x + 2} dx &= \int \left[ x - 3 + \frac{1}{x+1} + \frac{4}{x+2} \right] dx = \int x \, dx - 3 \int dx + \int \frac{1}{x+1} dx + 4 \int \frac{1}{x+2} dx \\

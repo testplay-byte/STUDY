@@ -15,7 +15,7 @@ figures_count: 1
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0037.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13c (glm-vision)"
-notes: "Book quirks preserved verbatim: intro paragraph prints 'In the example 47 function changes concavity...' (lowercase, missing words as printed) and '...changes from upward or downward or reverse'; definition prints 'Let f be a continuous at c'."
+notes: "Book quirks preserved verbatim: intro paragraph prints 'In the example 47 function changes concavity...' (lowercase, missing words as printed) and '...changes from upward or downward or reverse'; definition prints 'Let f be a continuous at c'. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 37 — Unit 02: Limit, Continuity and Derivative
@@ -28,7 +28,7 @@ In the example 47 function changes concavity at the point that corresponds to $x
 
 > **Definition:** Point of Inflection
 >
-> Let $f$ be a continuous at $c$, a point $(c, f(c))$ is point of inflection if there exists an open interval $(a, b)$ that contains $c$ such that the graph of $f$ is either:
+> Let $f$ be continuous at $c$, a point $(c, f(c))$ is point of inflection if there exists an open interval $(a, b)$ that contains $c$ such that the graph of $f$ is either:
 > 
 > i. Concave upward on $(a, c)$ and concave downward on $(c, b)$ or
 > 

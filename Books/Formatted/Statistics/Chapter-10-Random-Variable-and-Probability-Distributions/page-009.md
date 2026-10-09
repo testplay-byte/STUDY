@@ -15,7 +15,7 @@ figures_count: 1
 source_image: ../../../Raw/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/0009.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S3b (glm-vision)"
-notes: "Offset check: printed p.69 = image 9 + 60 (header folio). Book misprint preserved: stray period after 120 in Example 10.8 solution ('120. sample points.'). Caption prints with spaced hyphen 'Figure - 3'. The urn line (Red/White/Total marbles with 4/6/10 beneath) is printed as unbordered aligned text, not a table; reproduced with spacing. Page ends cleanly after the second distribution table (Example 10.9 graphs continue on next page)."
+notes: "Offset check: printed p.69 = image 9 + 60 (header folio). Book misprint preserved: stray period after 120 in Example 10.8 solution ('120. sample points.'). Caption prints with spaced hyphen 'Figure - 3'. The urn line (Red/White/Total marbles with 4/6/10 beneath) is printed as unbordered aligned text, not a table; reproduced with spacing. Page ends cleanly after the second distribution table (Example 10.9 graphs continue on next page). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 9 — Random Variable and Probability Distributions (Chapter 10)
@@ -30,7 +30,7 @@ From an urn containing 4 red and 6 white round marbles, a man draws three marble
 
 $\qquad\quad\;\; 4 \qquad\qquad\quad 6 \qquad\qquad\quad 10$
 
-$\therefore$ S contains $\binom{10}{3} = 120$. sample points.
+$\therefore$ S contains $\binom{10}{3} = 120$ sample points.
 
 If the random variable X denotes the number of red marbles, the possible values of x are 0, 1, 2, and 3, and their respective probabilities are:
 

@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/0025.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S6d (glm-vision)"
-notes: "Offset check: printed p.179 = image 25 + 154 (header folio, top-right). Page opens mid-Solution of Example 13.18 with its sampling-distribution table and completes that example; Example 13.19 starts here and its 15-sample table completes, page ends with that table (distribution table follows next page). Book typo preserved verbatim: 'Where X represent the vowel letters in the population.' (missing 's'). The Total row of the distribution table is not printed in bold on this page."
+notes: "Offset check: printed p.179 = image 25 + 154 (header folio, top-right). Page opens mid-Solution of Example 13.18 with its sampling-distribution table and completes that example; Example 13.19 starts here and its 15-sample table completes, page ends with that table (distribution table follows next page). Book typo preserved verbatim: 'Where X represent the vowel letters in the population.' (missing 's'). The Total row of the distribution table is not printed in bold on this page. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 25 — Sampling and Sampling Distributions (Chapter 13)
@@ -37,7 +37,7 @@ $$\sigma_{\hat{p}}^2 = \sum \hat{p}^2 f(\hat{p}) - [\sum \hat{p} f(\hat{p})]^2 =
 
 Population proportion $= p = \frac{X}{N} = \frac{2}{7}$ and $q = 1 - p = \frac{5}{7}$.
 
-Where $X$ represent the vowel letters in the population.
+Where $X$ represents the vowel letters in the population.
 
 $$\frac{pq}{n}\left(\frac{N-n}{N-1}\right) = \frac{\left(\frac{2}{7}\right)\left(\frac{5}{7}\right)}{2}\left(\frac{7-2}{7-1}\right) = \frac{10}{98}\left(\frac{5}{6}\right) = \frac{50}{588} = \frac{25}{294}$$
 

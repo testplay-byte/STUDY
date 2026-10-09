@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0039.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13c3 (glm-vision)"
-notes: "Top of page continues Exercise 2.9 Q.3 (stem on p.80/page-038) with sub-items iii-vi; Q.4-6 complete on this page; §2.22 Applications of Derivatives starts near bottom. Book typos preserved verbatim: 'Determine whether the give function' (Q.6, for 'given'), 'Many real world phenomenon involve', 'the number in a bacteria in a culture', 'the stoke intensity of an earth quake'. Items printed side-by-side two per line — transcribed as shared lines with &nbsp;&nbsp;. No figures, no sidebar boxes, no edge crops."
+notes: "Top of page continues Exercise 2.9 Q.3 (stem on p.80/page-038) with sub-items iii-vi; Q.4-6 complete on this page; §2.22 Applications of Derivatives starts near bottom. Book typos preserved verbatim: 'Determine whether the give function' (Q.6, for 'given'), 'Many real world phenomenon involve', 'the number in a bacteria in a culture', 'the stoke intensity of an earth quake'. Items printed side-by-side two per line — transcribed as shared lines with &nbsp;&nbsp;. No figures, no sidebar boxes, no edge crops. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 39 — Unit 02: Limit, Continuity and Derivative
@@ -42,7 +42,7 @@ notes: "Top of page continues Exercise 2.9 Q.3 (stem on p.80/page-038) with sub-
 
     v. $f(x) = \cos 3x, [0, 2\pi]$ &nbsp;&nbsp; vi. $f(x) = \cos x + \sin x, [0, 2\pi]$
 
-6. Determine whether the give function has a relative extremum at the indicated points.
+6. Determine whether the given function has a relative extremum at the indicated points.
 
     i. $f(x) = \cos x \sin x, \quad x = \frac{\pi}{4}$ &nbsp;&nbsp; ii. $f(x) = x \sin x, \quad x = 0$
 
@@ -50,4 +50,4 @@ notes: "Top of page continues Exercise 2.9 Q.3 (stem on p.80/page-038) with sub-
 
 ## 2.22 Applications of Derivatives
 
-Many real world phenomenon involve changing quantities like the speed of the rocket, the inflation of currency, the number in a bacteria in a culture, the stoke intensity of an earth quake, the voltage of an electrical signal and so forth. In this section we will develop the concept of limits, continuity, derivative and extrema of function for use in real world problems. Another important application of the derivative is to find solution of the optimization problems. For example, if time is the main consideration in a problem, we might be interested in finding the quickest way to perform a task and if cost is the main consideration we might be interested in finding the least expensive way to perform a task. Mathematically, optimization problem can be reduced to finding the largest or smallest value of a function on some interval and determining where the largest and smallest values occurs. Using derivatives, we will develop the mathematical tools necessary for solving such problems.
+Many real world phenomena involve changing quantities like the speed of the rocket, the inflation of currency, the number of bacteria in a culture, the stroke intensity of an earth quake, the voltage of an electrical signal and so forth. In this section we will develop the concept of limits, continuity, derivative and extrema of function for use in real world problems. Another important application of the derivative is to find solution of the optimization problems. For example, if time is the main consideration in a problem, we might be interested in finding the quickest way to perform a task and if cost is the main consideration we might be interested in finding the least expensive way to perform a task. Mathematically, optimization problem can be reduced to finding the largest or smallest value of a function on some interval and determining where the largest and smallest values occurs. Using derivatives, we will develop the mathematical tools necessary for solving such problems.

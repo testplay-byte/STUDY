@@ -15,7 +15,7 @@ figures_count: 2
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0040.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13c3 (glm-vision)"
-notes: "No section heading printed on the page — §2.22 Applications of Derivatives (heading p.81) is the section in force; worked Examples 49-51 (related rates). Book typos preserved verbatim: 'baloon' (both occurrences in Ex 51), 'where x the length of one side' (missing 'is'), lowercase 'dv' in Ex 49 differential lines, 'A of a square is a function of length of one side of x'. Ex 50 prints the SAME equation dA/dt = 2x dx/dt twice with 'is the same as:' between — as printed. No edge crops, no sidebar boxes."
+notes: "No section heading printed on the page — §2.22 Applications of Derivatives (heading p.81) is the section in force; worked Examples 49-51 (related rates). Book typos preserved verbatim: 'baloon' (both occurrences in Ex 51), 'where x the length of one side' (missing 'is'), lowercase 'dv' in Ex 49 differential lines, 'A of a square is a function of length of one side of x'. Ex 50 prints the SAME equation dA/dt = 2x dx/dt twice with 'is the same as:' between — as printed. No edge crops, no sidebar boxes. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 40 — Unit 02: Limit, Continuity and Derivative
@@ -24,7 +24,7 @@ notes: "No section heading printed on the page — §2.22 Applications of Deriva
 
 **Example 49:** A side of a cube is measured to be $30cm$ with the possible error of $\pm 0.02cm$. What is the approximate maximum possible error in the volume of the cube?
 
-**Solution:** The volume of a cube is $V = x^3$, where $x$ the length of one side. If $\Delta x$ represents the error in the length of one side, then the corresponding error in the volume is:
+**Solution:** The volume of a cube is $V = x^3$, where $x$ is the length of one side. If $\Delta x$ represents the error in the length of one side, then the corresponding error in the volume is:
 $$\Delta V = (x + \Delta x)^3 - x^3$$
 We use differential: $dv = 3x^2 dx = 3x^2 \Delta x$
 as an approximate to $\Delta V$. Thus, for $x = 30$ and $\Delta x = \pm 0.02$, the approximate maximum error is:
@@ -40,9 +40,9 @@ $$\frac{dA}{dt} = 2x \frac{dx}{dt} \text{ (diff w.r.t “t”)}$$
 is the same as:
 $$\frac{dA}{dt} = 2x \frac{dx}{dt}$$
 
-**Example 51:** Air is being pumped into a spherical baloon at a rate of 20 cubic feet/min. At what rate is the radius changing when the radius is 3ft?
+**Example 51:** Air is being pumped into a spherical balloon at a rate of 20 cubic feet/min. At what rate is the radius changing when the radius is 3ft?
 
-**Solution:** As shown in fig, we denote the radius of the baloon by $r$ and its volume by V. As per statement, air is being pumped at the rate $20ft^3/min$, means we have: $\frac{dV}{dt} = 20ft^3/min$
+**Solution:** As shown in fig, we denote the radius of the balloon by $r$ and its volume by V. As per statement, air is being pumped at the rate $20ft^3/min$, means we have: $\frac{dV}{dt} = 20ft^3/min$
 In addition, we require $\frac{dr}{dt} |_{r=3}$
 
 We know the relation between V and r is $V = \frac{4}{3}\pi r^3$

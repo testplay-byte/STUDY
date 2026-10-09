@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0013.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13a2 (glm-vision)"
-notes: "Book misprint preserved verbatim, verified at 4x zoom: Q.11(i) prints 'What is the instantaneous velocity at = 1/2?' — the letter t is missing before the '=' in the printed book. Instruction lines print singular 'In problem 1-6 / 7-8 / 9-10' with hyphens."
+notes: "Book misprint preserved verbatim, verified at 4x zoom: Q.11(i) prints 'What is the instantaneous velocity at = 1/2?' — the letter t is missing before the '=' in the printed book. Instruction lines print singular 'In problem 1-6 / 7-8 / 9-10' with hyphens. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 13 — Unit 02: Limit, Continuity and Derivative
@@ -51,7 +51,7 @@ In problem 9-10, find the instantaneous velocity of the particle at the indicate
 10. $f(t) = t^2 + \frac{1}{5t+1}$; $t = 0$
 
 11. The height above ground of a ball dropped from an initial altitude of 122.5 m is given by $s(t) = 122.5 - 4.9t^2$, where s is measured in meters and t in seconds.
-    i. What is the instantaneous velocity at $= \frac{1}{2}$?
+    i. What is the instantaneous velocity at $t = \frac{1}{2}$?
     ii. At what time does the ball hit the ground?
     iii. What is the impact velocity?
 

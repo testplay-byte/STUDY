@@ -15,7 +15,7 @@ figures_count: 2
 source_image: ../../../Raw/Mathematics/Unit-03-Integration/0029.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13d2 (glm-vision)"
-notes: "Book typo preserved verbatim: 'Hook's law' printed where 'Hooke's law' expected (§3.12.4). Example 34 statement styled as a blue heading in print → bold here. Exercise 3.8 Q.4 figure: region A bounded by vertical lines x=1 and x=3, region B by x=3 and x=4 (consistent with Q.4(iii) asking x=1..4). No scan-edge crops; no sidebar boxes."
+notes: "Book typo preserved verbatim: 'Hook's law' printed where 'Hooke's law' expected (§3.12.4). Example 34 statement styled as a blue heading in print → bold here. Exercise 3.8 Q.4 figure: region A bounded by vertical lines x=1 and x=3, region B by x=3 and x=4 (consistent with Q.4(iii) asking x=1..4). No scan-edge crops; no sidebar boxes. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 29 — Unit 03: Integration
@@ -32,7 +32,7 @@ $$W = \int_{a}^{b} F(x)dx$$
 
 ## 3.12.4 Motion of Spring
 
-Hook's law states that “when a spring is stretched (or compressed) beyond its natural length, the restoring force exerted by the spring is directly proportional to the amount of elongation (or compression)”. Thus, in order to stretch a spring, $x$ units beyond its natural length, we need to apply the force:
+Hooke's law states that “when a spring is stretched (or compressed) beyond its natural length, the restoring force exerted by the spring is directly proportional to the amount of elongation (or compression)”. Thus, in order to stretch a spring, $x$ units beyond its natural length, we need to apply the force:
 
 $F(x) = kx$; $k$ is spring constant.
 

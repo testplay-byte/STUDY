@@ -15,7 +15,7 @@ figures_count: 1
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0044.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13c3 (glm-vision)"
-notes: "Exercise 2.10 continuation Q.8-18 (Q.1-7 on p.85). Book typos/misprints preserved verbatim: Q.8 'length increases at a rate of ¼ min/hr' (for in/hr), Q.10 asks 'What is dx/dt when x = 8?' with given dx/dt = 4x + 4 (as printed), Q.13 'enclosed land in figure', Q.14 'dimensions of box that require', Q.15 'its remove and cost functions' (for revenue) with cost function printed G(x) = 2x² + 500, Q.17b 'Determining the rate of increase in cost is minimal.', Q.18a 'at t= 3years' spacing. Figure F1 (rectangle split into 3 parts by 2 vertical lines, no labels) sits beside Q.13. No edge crops, no sidebar boxes."
+notes: "Exercise 2.10 continuation Q.8-18 (Q.1-7 on p.85). Book typos/misprints preserved verbatim: Q.8 'length increases at a rate of ¼ min/hr' (for in/hr), Q.10 asks 'What is dx/dt when x = 8?' with given dx/dt = 4x + 4 (as printed), Q.13 'enclosed land in figure', Q.14 'dimensions of box that require', Q.15 'its remove and cost functions' (for revenue) with cost function printed G(x) = 2x² + 500, Q.17b 'Determining the rate of increase in cost is minimal.', Q.18a 'at t= 3years' spacing. Figure F1 (rectangle split into 3 parts by 2 vertical lines, no labels) sits beside Q.13. No edge crops, no sidebar boxes. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 44 — Unit 02: Limit, Continuity and Derivative
@@ -32,13 +32,13 @@ notes: "Exercise 2.10 continuation Q.8-18 (Q.1-7 on p.85). Book typos/misprints 
 
 12. Find two non-negative numbers whose sum is 60 and whose product is a maximum?
 
-13. If the total fence to be used is 8000 m, find the dimensions of the enclosed land in figure that has the greatest area.
+13. If the total fence to be used is 8000 m, find the dimensions of the enclosed land in the figure that has the greatest area.
 
 [Figure F1]
 
 14. An open rectangular box is to be constructed with a square base and a volume of 32,000 $cm^3$. Find the dimensions of box that require the least amount of material.
 
-15. A company determines that for the production of $x$ units of a commodity its remove and cost functions are, respectively, $R(x) = -3x^2 + 970x$ and $G(x) = 2x^2 + 500$. Find the maximum profit and minimum average cost.
+15. A company determines that for the production of $x$ units of a commodity its revenue and cost functions are, respectively, $R(x) = -3x^2 + 970x$ and $G(x) = 2x^2 + 500$. Find the maximum profit and minimum average cost.
 
 16. If the inflation rate is continuously compounded 4% per year and the price of a commodity is \$50 today.
    a. Derive the function for the price of the commodity over time.

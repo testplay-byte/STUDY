@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-07-Conic-Section/0008.jpg
 converted_at: "2026-09-20"
 converted_by: "agent-16b (glm-vision)"
-notes: "No numbered section heading printed on page (Exercise 7.1 banner only); Ex.7 inconsistency preserved verbatim: problem says circle x^2 + y^2 = r^2 but Solution assumes x^2 + y^2 = 16 (r=4); misprint 'Equation the line is' preserved; page starts mid-7.3 case iii inequality"
+notes: "No numbered section heading printed on page (Exercise 7.1 banner only); Ex.7 inconsistency preserved verbatim: problem says circle x^2 + y^2 = r^2 but Solution assumes x^2 + y^2 = 16 (r=4); misprint 'Equation the line is' preserved; page starts mid-7.3 case iii inequality | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 8 — Unit 07: Conic Section
@@ -32,7 +32,7 @@ $$\Rightarrow c^2 > r^2(m^2 + 1)$$
 
 $\Rightarrow$ radius of the circle $= r = 4$
 
-Equation the line is $x + 2y - 3 = 0$.
+Equation of the line is $x + 2y - 3 = 0$.
 
 $$\Rightarrow 2y = -x + 3 \quad \Rightarrow \quad y = -\frac{1}{2}x + \frac{3}{2} \Rightarrow m = -\frac{1}{2} \text{ and } c = \frac{3}{2}$$
 

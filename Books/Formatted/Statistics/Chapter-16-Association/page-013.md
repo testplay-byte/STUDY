@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-16-Association/0013.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-27a (glm-vision)"
-notes: "Offset check: printed p.297 = image 13 + 284 (header folio, top-right; odd page). Page opens with item (vi) Conclusion — continuation of the 16.15 test procedure from printed p.296. Book typo preserved: 'when we are taking about heights' ('taking' as printed, for 'talking'). Table-4 caption printed as two stacked lines ('Table-4.' / 'Two-way Classification'). Page ends mid-sentence ('...(A_i B_j) the expected') — continues on printed p.298."
+notes: "Offset check: printed p.297 = image 13 + 284 (header folio, top-right; odd page). Page opens with item (vi) Conclusion — continuation of the 16.15 test procedure from printed p.296. Book typo preserved: 'when we are taking about heights' ('taking' as printed, for 'talking'). Table-4 caption printed as two stacked lines ('Table-4.' / 'Two-way Classification'). Page ends mid-sentence ('...(A_i B_j) the expected') — continues on printed p.298. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 13 — Association (Chapter 16)
@@ -46,7 +46,7 @@ $$\chi^{2}=\frac{(55+125+45+75)(55\times 75-125\times 45)^{2}}{(55+125)(125+75)(
 
 ## 16.17. CONTINGENCY TABLE OF HIGHER ORDER
 
-Sometimes a certain characteristic or attribute has more than two categories. For example when we are taking about heights of persons, the population or sample can be divided into four classes or categories like, very tall, tall, medium and short. In general if the attribute is A, then its different levels are denoted by $A_1$, $A_2$, ..., $A_r$ if it has r categories. The same population or sample may also be divided according to another characteristic say B with its levels $B_1$, $B_2$, ..., $B_c$ with c categories. The sample data on two attributes can be written in the form of two-way classification as below:
+Sometimes a certain characteristic or attribute has more than two categories. For example when we are talking about heights of persons, the population or sample can be divided into four classes or categories like, very tall, tall, medium and short. In general if the attribute is A, then its different levels are denoted by $A_1$, $A_2$, ..., $A_r$ if it has r categories. The same population or sample may also be divided according to another characteristic say B with its levels $B_1$, $B_2$, ..., $B_c$ with c categories. The sample data on two attributes can be written in the form of two-way classification as below:
 
 **Table-4.**
 **Two-way Classification**

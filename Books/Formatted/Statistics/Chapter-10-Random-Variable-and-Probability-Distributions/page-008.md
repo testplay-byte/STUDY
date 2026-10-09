@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/0008.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S3a (glm-vision)"
-notes: "Offset check: printed p.68 = image 8 + 60 (header folio). Book misprint preserved: P(X = 1) line prints 'first defective bulbs and second good bulb' (plural 'bulbs' as printed). Page ends cleanly with the Example 10.7 distribution table."
+notes: "Offset check: printed p.68 = image 8 + 60 (header folio). Book misprint preserved: P(X = 1) line prints 'first defective bulbs and second good bulb' (plural 'bulbs' as printed). Page ends cleanly with the Example 10.7 distribution table. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 8 — Random Variable and Probability Distributions (Chapter 10)
@@ -36,7 +36,7 @@ $$P(X = 0) = P(\text{both good bulbs}) = P(\text{none defective bulb})$$
 
 $$= P(G_1G_2) = P(G_1)P(G_2) = \left(\frac{3}{4}\right)\left(\frac{3}{4}\right) = \frac{9}{16}$$
 
-$$P(X = 1) = P(\text{first defective bulbs and second good bulb})$$
+$$P(X = 1) = P(\text{first defective bulb and second good bulb})$$
 
 $$+ P(\text{first good bulb and second defective bulb})$$
 

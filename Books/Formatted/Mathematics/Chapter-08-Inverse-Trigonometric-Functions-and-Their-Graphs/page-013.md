@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-08-Inverse-Trigonometric-Functions-and-Their-Graphs/0013.jpg
 converted_at: "2026-09-20"
 converted_by: "coordinator (glm-vision + manual transcription)"
-notes: "Exercise 8.1 Q.2-4 (continued from p.241) + section 8.2 opening. Book typo preserved in 8.2 para 3: 'we gain insights the characteristics' (missing 'into'). Q.4 blanks printed as empty parentheses ( )."
+notes: "Exercise 8.1 Q.2-4 (continued from p.241) + section 8.2 opening. Book typo preserved in 8.2 para 3: 'we gain insights the characteristics' (missing 'into'). Q.4 blanks printed as empty parentheses ( ). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 13 — Unit 08: Inverse Trigonometric Functions and Their Graphs
@@ -72,4 +72,4 @@ Drawing graphs of trigonometric functions is a fundamental skill. It allows the 
 
 Graphing becomes valuable in case of inverse trigonometric functions, where the restricted domain and range were not enough to understand the problem.
 
-Plotting these graphs, we gain insights the characteristics, such as symmetry, continuity, and asymptotic behavior. Whether it is engineering or navigation, the ability to draw accurately and interpret graphs of inverse trigonometric functions is essential for solving real-world problems involving angles and distances.
+Plotting these graphs, we gain insights into the characteristics, such as symmetry, continuity, and asymptotic behavior. Whether it is engineering or navigation, the ability to draw accurately and interpret graphs of inverse trigonometric functions is essential for solving real-world problems involving angles and distances.

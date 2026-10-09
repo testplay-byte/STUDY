@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/0034.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S6e (glm-vision)"
-notes: "Offset check: printed p.188 = image 34 + 154 (header folio, top-left; running header is the book-title variant). MULTIPLE – CHOICE QUESTIONS exercise starts here (heading prints an en dash), MCQs 1-23 with options printed inline on one line; no answer key on this page (continues on p.189). Book misprints preserved verbatim: option label '(af)' in Q19(a), 'sampling faction' (for fraction) in Q19(a), Q19 prints 'the ratio N/n' as the sampling-fraction stem, 'Number of observations falling in a sample are called:' (Q11), 'Any population constants is called a:' (Q12), Q10 prints 'sub-set ( part )' with spaced parentheses. Trailing periods printed only after Q10(d) 'distribution.', Q14(d) 'random.' and Q16(d) 'error.'."
+notes: "Offset check: printed p.188 = image 34 + 154 (header folio, top-left; running header is the book-title variant). MULTIPLE – CHOICE QUESTIONS exercise starts here (heading prints an en dash), MCQs 1-23 with options printed inline on one line; no answer key on this page (continues on p.189). Book misprints preserved verbatim: option label '(af)' in Q19(a), 'sampling faction' (for fraction) in Q19(a), Q19 prints 'the ratio N/n' as the sampling-fraction stem, 'Number of observations falling in a sample are called:' (Q11), 'Any population constants is called a:' (Q12), Q10 prints 'sub-set ( part )' with spaced parentheses. Trailing periods printed only after Q10(d) 'distribution.', Q14(d) 'random.' and Q16(d) 'error.'. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 34 — Sampling and Sampling Distributions (Chapter 13)
@@ -98,7 +98,7 @@ notes: "Offset check: printed p.188 = image 34 + 154 (header folio, top-left; ru
 
 **19.** If size of the population is $N$ and size of the sample is $n$, the ratio $N/n$ is called:
 
-(a) sampling faction (b) sample proportion (c) sampling error (d) sampling interval
+(a) sampling fraction (b) sample proportion (c) sampling error (d) sampling interval
 
 **20.** Study of population is called:
 

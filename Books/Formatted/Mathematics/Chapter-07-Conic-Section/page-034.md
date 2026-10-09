@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-07-Conic-Section/0034.jpg
 converted_at: "2026-09-20"
 converted_by: "coordinator-w4a (glm-vision)"
-notes: "Top table is the continuation of the 'Summary of elements of hyperbola' table from printed p.214 (header row on previous page); first row here rendered as GFM header. BOOK MISPRINTS preserved: 'Let x − 21 = X' (should be x − 2 = X); covertices array last cell prints 'y = −3, x = 1' (x should be y, cf. answer (2,1)); 'Covertices hyperbola are' missing 'of'."
+notes: "Top table is the continuation of the 'Summary of elements of hyperbola' table from printed p.214 (header row on previous page); first row here rendered as GFM header. BOOK MISPRINTS preserved: 'Let x − 21 = X' (should be x − 2 = X); covertices array last cell prints 'y = −3, x = 1' (x should be y, cf. answer (2,1)); 'Covertices hyperbola are' missing 'of'. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 34 — Unit 07: Conic Section
@@ -55,7 +55,7 @@ $$\begin{array}{c|c} \Rightarrow X=\pm a & Y=0 \\ \Rightarrow x-2=\pm 3 & y+1=0 
 
 Hence vertices are $(-1,-1)$ and $(5,-1)$.
 
-**Covertices:** Covertices hyperbola are $(0,\pm b)$ i.e. $(X,Y) = (0,\pm b)$
+**Covertices:** Covertices of hyperbola are $(0,\pm b)$ i.e. $(X,Y) = (0,\pm b)$
 
 $$\begin{array}{c|c|c} \Rightarrow X=0 & \Rightarrow Y=\pm b & \\ \Rightarrow x-2=0 & \Rightarrow y+1=\pm 2 & \\ \Rightarrow x=2 & \Rightarrow y=-1\pm 2 & \\ & \Rightarrow y=-3,x=1 & \end{array}$$
 

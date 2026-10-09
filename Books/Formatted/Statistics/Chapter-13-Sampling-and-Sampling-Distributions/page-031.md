@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/0031.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S6e (glm-vision)"
-notes: "Offset check: printed p.185 = image 31 + 154 (header folio, top-right). SHORT DEFINITIONS section begins here (18 definitions on this page, ends complete; continues next page). Book typos preserved verbatim: '(iii)Real population' (missing space), 'an important roll in determining the sample size' (def. 10), 'drawing sample from the population' (def. 12), inconsistent 'called as real/hypothetical population' (defs. 5-6) vs 'called target/sampled population' (defs. 7-8)."
+notes: "Offset check: printed p.185 = image 31 + 154 (header folio, top-right). SHORT DEFINITIONS section begins here (18 definitions on this page, ends complete; continues next page). Book typos preserved verbatim: '(iii)Real population' (missing space), 'an important roll in determining the sample size' (def. 10), 'drawing sample from the population' (def. 12), inconsistent 'called as real/hypothetical population' (defs. 5-6) vs 'called target/sampled population' (defs. 7-8). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 31 — Sampling and Sampling Distributions (Chapter 13)
@@ -34,7 +34,7 @@ The population is a set of data that characterizes some phenomenon.
 
 The name of different types of population are:  
 (i) Finite population (ii) Infinite population  
-(iii)Real population (iv) Hypothetical population
+(iii) Real population (iv) Hypothetical population
 
 **3. Finite Population**
 
@@ -68,7 +68,7 @@ A sample is a subset of the population that contains measurements obtained by an
 
 **10. Sample Size**
 
-The sample size is denoted by $n$. Precision of estimates required is an important roll in determining the sample size. For greater heterogeneity usually a large sample size is preferred. For homogeneous units usually a small sample size is taken.
+The sample size is denoted by $n$. Precision of estimates required is an important role in determining the sample size. For greater heterogeneity usually a large sample size is preferred. For homogeneous units usually a small sample size is taken.
 
 **11. Random Sample**
 
@@ -78,7 +78,7 @@ If a sample is selected from such a population whose sampling units have known p
 
 **12. Sampling**
 
-Sampling is the process of drawing sample from the population.
+Sampling is the process of drawing a sample from the population.
 
 **13. Sampling Technique**
 

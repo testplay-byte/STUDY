@@ -15,7 +15,7 @@ figures_count: 3
 source_image: ../../../Raw/Mathematics/Unit-08-Inverse-Trigonometric-Functions-and-Their-Graphs/0002.jpg
 converted_at: "2026-09-20"
 converted_by: "agent-16d (glm-vision)"
-notes: "Book prints 'cosx'/'Cosx' without space throughout body and figure labels (preserved); figure caption typo 'all six trigonometric function on one graph' (sic); footer publisher credit 'National Book Founde...' cut at right edge (page furniture only)"
+notes: "Book prints 'cosx'/'Cosx' without space throughout body and figure labels (preserved); figure caption typo 'all six trigonometric function on one graph' (sic); footer publisher credit 'National Book Founde...' cut at right edge (page furniture only) | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 2 — Unit 08: Inverse Trigonometric Functions and Their Graphs
@@ -72,7 +72,7 @@ The cosine function defined on $x \in [0, \pi]$ for which there is only **one so
 
 ### Figure F1 — Overlay of six trigonometric functions (top right)
 - **Type:** curve-plot
-- **Caption/Number:** Overlay of all six trigonometric function on one graph
+- **Caption/Number:** Overlay of all six trigonometric functions on one graph
 - **Description:** A Cartesian coordinate system with multiple curves representing the six basic trigonometric functions (sine, cosine, tangent, secant, cosecant, cotangent) plotted together. The $x$-axis has ticks at $-4, -2, 0, 2, 4$; the $y$-axis at $-2, 0, 2, 4$. Curves show periodic waves and asymptotic branches.
 - **Mathematical meaning:** Visualizes the relationship and domains/ranges of all six primary trigonometric functions simultaneously.
 

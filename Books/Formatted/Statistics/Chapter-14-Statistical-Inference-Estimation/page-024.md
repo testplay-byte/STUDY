@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-14-Statistical-Inference-Estimation/0024.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-22b (glm-vision)"
-notes: "Offset check: printed p.226 = image 24 + 202 (header folio, top-left; even page, running header is the book-title variant). SHORT DEFINITIONS banner page: end-of-chapter definitions review in two columns (col. 1: items 1-7; col. 2: items 8-14); ends complete with item 14; no figures. Book typo preserved verbatim: item 5 heading printed 'Internal Estimation' (for Interval Estimation). In item 13 the word 'the' before 'mean' is smudged/faded in the print; pixel-verified reading 'the mean' (reconstructed, context-confirmed), noted per canon."
+notes: "Offset check: printed p.226 = image 24 + 202 (header folio, top-left; even page, running header is the book-title variant). SHORT DEFINITIONS banner page: end-of-chapter definitions review in two columns (col. 1: items 1-7; col. 2: items 8-14); ends complete with item 14; no figures. Book typo preserved verbatim: item 5 heading printed 'Internal Estimation' (for Interval Estimation). In item 13 the word 'the' before 'mean' is smudged/faded in the print; pixel-verified reading 'the mean' (reconstructed, context-confirmed), noted per canon. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 24 — Statistical Inference Estimation (Chapter 14)
@@ -46,7 +46,7 @@ Statistical estimation is divided into two types:
 
 Point estimation is a process of getting a single value from the sample as an estimate of the unknown population parameter. The percentage of babies who are born with physical defects and the percentage of children who do not get admission in the schools are the areas of point estimation. A serious drawback in point estimation is that the amount of error cannot be calculated in point estimation.
 
-**5. Internal Estimation**
+**5. Interval Estimation**
 
 An interval estimation is the range of values within which the value of the parameter is expected to lie with some known probability.
 

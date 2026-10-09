@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-12-Normal-Distribution/0025.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S5f (glm-vision)"
-notes: "Offset check: printed p.147 = image 25 + 122 (header folio, top-right). Start of the SHORT QUESTIONS section: Q.1-Q.28, page is two-column (col 1: Q.1-Q.12; col 2: Q.13-Q.28); read column 1 fully, then column 2. Book typo preserved verbatim: Q.2 'Define the normal, probability density function.' (comma after 'normal' as printed). Q.5 prints six fill-in blanks (mu, sigma, pi, e, X, Y) rendered as underline blanks; Q.28 table printed with empty Z-score and Area cells (fill-in table). Page ends after the table; question list continues on next page."
+notes: "Offset check: printed p.147 = image 25 + 122 (header folio, top-right). Start of the SHORT QUESTIONS section: Q.1-Q.28, page is two-column (col 1: Q.1-Q.12; col 2: Q.13-Q.28); read column 1 fully, then column 2. Book typo preserved verbatim: Q.2 'Define the normal, probability density function.' (comma after 'normal' as printed). Q.5 prints six fill-in blanks (mu, sigma, pi, e, X, Y) rendered as underline blanks; Q.28 table printed with empty Z-score and Area cells (fill-in table). Page ends after the table; question list continues on next page. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 25 — Normal Distribution (Chapter 12)
@@ -26,7 +26,7 @@ notes: "Offset check: printed p.147 = image 25 + 122 (header folio, top-right). 
 
 **Q.1** Define normal distribution.
 
-**Q.2** Define the normal, probability density function.
+**Q.2** Define the normal probability density function.
 
 **Q.3** Discuss the importance of normal distribution. *or* Why is the normal distribution important in statistical analysis?
 

@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-16-Association/0024.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-27b (glm-vision)"
-notes: "Offset check: printed p.308 = image 24 + 284 (header folio, top-left; even page; running head 'Basic Statistics Part-II ( Federal Board )' top-right = furniture). Continuation of the 'SHORT DEFINITIONS' list (items 27-31) + start of MULTIPLE – CHOICE QUESTIONS (printed horizontal rule above the banner, rendered as ---; banner not re-numbered, exercise: null as no numeric id printed) → mixed. Book stray dots preserved: def 27 (iv) 'It .is used' and def 28 'and . the rankings' (pixel-verified). Def 30 note bullets printed as solid dots; 'Note:' printed bold. MCQ options inline on one line as printed; no answer key on page. MCQs 1-8 complete, Q.8 last on page (list continues next page). No figures, no cut-offs."
+notes: "Offset check: printed p.308 = image 24 + 284 (header folio, top-left; even page; running head 'Basic Statistics Part-II ( Federal Board )' top-right = furniture). Continuation of the 'SHORT DEFINITIONS' list (items 27-31) + start of MULTIPLE – CHOICE QUESTIONS (printed horizontal rule above the banner, rendered as ---; banner not re-numbered, exercise: null as no numeric id printed) → mixed. Book stray dots preserved: def 27 (iv) 'It .is used' and def 28 'and . the rankings' (pixel-verified). Def 30 note bullets printed as solid dots; 'Note:' printed bold. MCQ options inline on one line as printed; no answer key on page. MCQs 1-8 complete, Q.8 last on page (list continues next page). No figures, no cut-offs. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 24 — Association (Chapter 16)
@@ -27,11 +27,11 @@ notes: "Offset check: printed p.308 = image 24 + 284 (header folio, top-left; ev
 (i) It is used as a test of goodness of fit.
 (ii) It is used to find the association or independence between attributes.
 (iii) It is used to obtain confidence limits for the population variance.
-(iv) It .is used to test the variance of a normal population.
+(iv) It is used to test the variance of a normal population.
 
 **28. Rank Correlation**
 
-The rank correlation describes the relationship between the two sets of rankings that is, between the rankings of the one variable and . the rankings of the other variable.
+The rank correlation describes the relationship between the two sets of rankings that is, between the rankings of the one variable and the rankings of the other variable.
 
 **29. Spearman's Rank Correlation Coefficient**
 

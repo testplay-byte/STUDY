@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Back-Matter/0025.jpg
 converted_at: "2026-09-20"
 converted_by: "coordinator-w5 (glm-vision)"
-notes: "Index page (running head GRADE-12: INDEX), two-column layout rendered as one table. BOOK TYPO preserved: 'Instantaneously velocity'. GFM header row invented (print has none)."
+notes: "Index page (running head GRADE-12: INDEX), two-column layout rendered as one table. BOOK TYPO preserved: 'Instantaneously velocity'. GFM header row invented (print has none). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 25 — Index
@@ -42,7 +42,7 @@ notes: "Index page (running head GRADE-12: INDEX), two-column layout rendered as
 | Limits of functions | 44 | Integration by parts | 100 |
 | Continuity of functions | 47 | Integration by partial fractions | 103 |
 | Rate of change of function | 51 | Definite integral | 105 |
-| Instantaneously velocity | 53 | Properties of definite integral | 107 |
+| Instantaneous velocity | 53 | Properties of definite integral | 107 |
 | Rules of differentiation | 57 | Fundamental theorem of calculus | 109 |
 | Product & quotient rules | 60 | Area of bounded regions | 113 |
 | Derivatives of trig. functions | 62 | Volume of solid of revolution | 114 |

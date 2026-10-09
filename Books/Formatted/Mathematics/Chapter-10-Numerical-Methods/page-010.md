@@ -15,7 +15,7 @@ figures_count: 1
 source_image: ../../../Raw/Mathematics/Unit-10-Numerical-Methods/0010.jpg
 converted_at: "2026-09-20"
 converted_by: "coordinator-w5 (glm-vision)"
-notes: "BOOK TYPO preserved: 'Examble 5:' (Example). Note (i) prints 'then h will small' (missing be); note (iv) odd absolute-value bars |f(a) < f(b)| as printed. Newton's Raphson advantages/disadvantages box -> blockquote placed beside Example 5 solution per scan layout."
+notes: "BOOK TYPO preserved: 'Examble 5:' (Example). Note (i) prints 'then h will small' (missing be); note (iv) odd absolute-value bars |f(a) < f(b)| as printed. Newton's Raphson advantages/disadvantages box -> blockquote placed beside Example 5 solution per scan layout. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 10 — Unit 10: Numerical Methods
@@ -36,7 +36,7 @@ Which is known as Newton's Raphson formula.
 
 **Note:**
 
-i. When $f'(x_n)$ is large, i.e. when the slope is large, then $h$ will small (as assumed) and hence, the root can be calculated in even less time.
+i. When $f'(x_n)$ is large, i.e. when the slope is large, then $h$ will be small (as assumed) and hence, the root can be calculated in even less time.
 
 ii. If we choose the initial approximation $x_0$ close to the root, then we will get the root of the equation very quickly.
 
@@ -46,7 +46,7 @@ iv. If the initial approximation to the root is not given, choose two values of 
 
 v. Newton's Raphson method is also referred to as the method of tangent.
 
-**Examble 5:** Solve $x^3 + 2x^2 + 10x - 20 = 0$ by Newton's Raphson method.
+**Example 5:** Solve $x^3 + 2x^2 + 10x - 20 = 0$ by Newton's Raphson method.
 
 **Solution:**
 

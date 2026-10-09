@@ -15,7 +15,7 @@ figures_count: 2
 source_image: ../../../Raw/Mathematics/Unit-03-Integration/0026.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13e (glm-vision)"
-notes: "Opens mid-Example 29 (final area computation of §3.10.2). Book quirks preserved verbatim: 'can approximated' (missing 'be'); Note prints V = π ∫ [g(x)]² dx with variable x although the text says x = g(y) (as printed); 'Respectively' capitalized mid-sentence."
+notes: "Opens mid-Example 29 (final area computation of §3.10.2). Book quirks preserved verbatim: 'can approximated' (missing 'be'); Note prints V = π ∫ [g(x)]² dx with variable x although the text says x = g(y) (as printed); 'Respectively' capitalized mid-sentence. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 26 — Unit 03: Integration
@@ -29,7 +29,7 @@ $$\begin{aligned} A &= \int_{-1}^{2}[g(x) - f(x)]dx = \int_{-1}^{2}[(3 - x) - (x
 
 ### 3.11.1 Disc Method
 
-Consider a region bounded by the graph of $y = f(x)$ and the x-axis between $x = a$ and $x = b$ that is rotated about x-axis. If $a = x_{0} < x_{1} < x_{2} \ldots < x_{n} = b$ is partition of the interval $[a, b]$, the volume $V$ of the resulting 3-D region can approximated by the sum of volumes of discs obtained after rotation.
+Consider a region bounded by the graph of $y = f(x)$ and the x-axis between $x = a$ and $x = b$ that is rotated about x-axis. If $a = x_{0} < x_{1} < x_{2} \ldots < x_{n} = b$ is partition of the interval $[a, b]$, the volume $V$ of the resulting 3-D region can be approximated by the sum of volumes of discs obtained after rotation.
 
 The radius and height of discs $D_{i}$ are $f(x)_{i}$ and $\Delta x_{i}$ Respectively. Thus:
 $$V = \sum_{i=1}^{n} \pi[f(x_{i})]^{2}\Delta x_{i}$$

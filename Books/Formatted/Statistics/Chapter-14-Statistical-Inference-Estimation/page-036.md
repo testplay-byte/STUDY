@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-14-Statistical-Inference-Estimation/0036.jpg
 converted_at: "2026-10-06"
 converted_by: "coordinator-fill (glm-vision)"
-notes: "Offset check: printed p.238 = image 36 + 202 (header folio, top-left; even page). CHAPTER-FINAL page: continuation of the unnumbered EXERCISES block (banner on p.234/image 32), Q.36-Q.46, ends complete at Q.46 Ans.; bottom shows the chapter-end navigation chip (arrow-1-4-arrow) = furniture, not transcribed. Book misprints preserved verbatim: Q.40 'Also construct a 95% confidence limits' (grammar as printed); Q.46 'semi-urbans' as printed; mixed percent spacing ('95 %'/'99 %' with space vs '98%'/'90%'/'99%' without) as printed."
+notes: "Offset check: printed p.238 = image 36 + 202 (header folio, top-left; even page). CHAPTER-FINAL page: continuation of the unnumbered EXERCISES block (banner on p.234/image 32), Q.36-Q.46, ends complete at Q.46 Ans.; bottom shows the chapter-end navigation chip (arrow-1-4-arrow) = furniture, not transcribed. Book misprints preserved verbatim: Q.40 'Also construct a 95% confidence limits' (grammar as printed); Q.46 'semi-urbans' as printed; mixed percent spacing ('95 %'/'99 %' with space vs '98%'/'90%'/'99%' without) as printed. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 36 — Statistical Inference Estimation (Chapter 14)
@@ -38,7 +38,7 @@ notes: "Offset check: printed p.238 = image 36 + 202 (header folio, top-left; ev
 
 **Ans.** $0.45 < p < 0.75$
 
-**Q.40** A bank conducts a study on a random sample of 40 employees and finds that 20 percent have more than 20 years of experience in banking. Construct a 99% confidence interval for the percentage of all the bank's employees who have more than 20 years of experience in banking. Also construct a 95% confidence limits for the percentage of all the bank's employees who have not more than 20 years of experience in banking.
+**Q.40** A bank conducts a study on a random sample of 40 employees and finds that 20 percent have more than 20 years of experience in banking. Construct a 99% confidence interval for the percentage of all the bank's employees who have more than 20 years of experience in banking. Also construct the 95% confidence limits for the percentage of all the bank's employees who have not more than 20 years of experience in banking.
 
 **Ans.** $0.04 < p < 0.36$ or 4% to 36% and $0.68 < p < 0.92$ or 68% to 92%
 

@@ -1350,3 +1350,27 @@ Stage Summary:
 - Statistics printed-folio chain 2->340 continuous (S-L final chart + back cover unnumbered)
 - Commits this session: 6641b8a 93676fd fe75adb cd82799 ec262d5 34bc9c2 27f5fc3 ad37f41 e5f2313 becad7f f1a4bfb 843b6ea c2ab4d0 + docs
 - No outstanding chapters from either book; next: await user direction (study tracking / dashboard / more books)
+
+---
+Task ID: 22
+Agent: coordinator (Z.ai main)
+Task: PHASE 9.1 — issue-resolution + typo-correction session: apply user decisions (p.317/p.332), correct p.337 z-table, library-wide typo auto-correction sweep (policy v4.4), docs overhaul
+
+Work Log:
+- Sandbox restored after a full rollback: local clone was stuck at 1d76c63 (Digital v3); remote set-url with fresh user PAT, fetch, fast-forward 92 commits to origin/main f6b35fb; git fsck clean; both gates ALL GREEN out of the box
+- p.317 (S-9 page-033): Q.25 rank-table col-9 filled per USER DECISION (Laboratory = 1, Lecture = 2), FLAGGED as potentially inaccurate; user values verified arithmetically (sum d2 = 24 -> r_s = 0.8545 ~= printed 0.85); blot-lost word 'in' restored in the Ans line (flagged); same-page Tier A fixes (Q.23 '3.' -> '3', Q.24 'Equit' -> 'Equity')
+- p.332 (S-10 page-014): Q.15 stem first word 'The' restored per USER DECISION, flagged as reconstruction; notes rewritten
+- p.337 (S-L page-003): EVERY table cell cross-checked against computed Phi(z) - 0.5 (5 decimals). 16 misprints CORRECTED incl. 6 NEWLY DISCOVERED (z = 0.48, 0.53, 1.30, 1.57, 1.99, 2.51 - digit corruptions the conversion note missed); 7 last-digit rounding-wobble cells left as printed (book's own convention, documented); superseded two of the original note's wrong 'intended' guesses (1.88 -> .46995 not .46495; 3.09 -> .49900 not .49890); post-fix re-check: 0 hard mismatches
+- p.302 (S-9 page-018): chi-square restoration re-verified intact (rows 115/94.2 + chi2 = 32.15); user closed the item
+- Policy v4.4 defined from user mandate ('correct the dozens of small book typos automatically along the way and keep note'): Tier A correct-in-body / Tier B insert-documented-word / Tier C keep-verbatim-and-flag; legacy 112 pages byte-frozen and exempt
+- Library-wide Tier A/B sweep over the 556 markdown-only pages: 262 note lines reviewed, per-file exact-string correction tables built, applied via body-only replacements with exact-count assertions. Caught and repaired en route: (1) first applier had a last-write-wins bug on multi-entry files -> rewrote as single-read/single-write consolidated pass with already-applied detection; (2) one manual M-3 p.111 edit corrupted '$[a, b]$' LaTeX -> repaired to '$[a, b]$ and $F$' and added a $-parity checker over all 104 touched files (only false positives from a pre-existing multi-line aligned block)
+- FINAL: 162 unique printed->corrected pairs across 104 files; every modified file's notes carries the TYPO-CORRECTION PASS suffix pointing at the ledger
+- Created docs/tracking/CORRECTIONS-LOG.md (permanent ledger: policy table, user-decided reconstructions, z-table section incl. wobble cells, full 162-item ledger, Tier C keep-list, verification record)
+- Docs synced: CONVENTIONS v4.4 changelog + 3.1 exception + 3.11 tiered policy rewrite; PIPELINE 6 step 4 (typo-correction pass, computational cross-check rule for numeric tables); tools/prompt.txt R1 exception clause; AGENTS.md rule 1; STATUS (header, Phase 9.1 section, watchlist 317/332/337 rewritten)
+- Gates after sweep: verify-v4 ALL GREEN (112/112 legacy byte-verified, 668/668 raw imgs, 556/556 markdown-only); check-digital --frozen --strict-figures ALL GREEN; build-metadata regenerated with ZERO diff (no-op confirmed)
+
+Stage Summary:
+- Library unchanged at 668 pages (both books COMPLETE); content now corrected + flagged per v4.4 instead of verbatim-preserved for surface typos
+- All four user-flagged issues CLOSED: p.302 (user-approved restoration verified), p.317 (user-decided fill + flag), p.332 (user-decided 'The' + flag), p.337 (16 computed corrections + 7 documented wobble)
+- Going forward every new book gets the typo-correction pass automatically (prompt R1 + PIPELINE 6.4 + CONVENTIONS 3.11) with the ledger as the single source of truth
+- Ready for the user's next transfer (additional books) under the v4.4 pipeline

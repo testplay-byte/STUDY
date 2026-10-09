@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-14-Statistical-Inference-Estimation/0027.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-22b (glm-vision)"
-notes: "Offset check: printed p.229 = image 27 + 202 (header folio, top-right; odd page — chapter-name header top-left). MULTIPLE – CHOICE QUESTIONS continuation from p.228: Q.38-Q.58, ends complete with Q.58; no figures. Book misprints preserved verbatim: Q.39 and Q.40 print 'unbiased estimated of the population mean/variance' (for 'estimate'); Q.44 and Q.47 option (a) printed fused as 'confidence coefficient(b)' with no space before option (b); Q.56 '(a) the poisson distribution' (lowercase p); Q.57 '95 %' with space; Q.58 'i.e;' (semicolon) and option (d) 'the hyper geometric distribution' (word split). Q.54 stem ends with a printed period (colon expected; glyph verified at maximum zoom, low print quality). Q.42/43 options follow a blank line after the stem, as printed."
+notes: "Offset check: printed p.229 = image 27 + 202 (header folio, top-right; odd page — chapter-name header top-left). MULTIPLE – CHOICE QUESTIONS continuation from p.228: Q.38-Q.58, ends complete with Q.58; no figures. Book misprints preserved verbatim: Q.39 and Q.40 print 'unbiased estimated of the population mean/variance' (for 'estimate'); Q.44 and Q.47 option (a) printed fused as 'confidence coefficient(b)' with no space before option (b); Q.56 '(a) the poisson distribution' (lowercase p); Q.57 '95 %' with space; Q.58 'i.e;' (semicolon) and option (d) 'the hyper geometric distribution' (word split). Q.54 stem ends with a printed period (colon expected; glyph verified at maximum zoom, low print quality). Q.42/43 options follow a blank line after the stem, as printed. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 27 — Statistical Inference Estimation (Chapter 14)
@@ -25,10 +25,10 @@ notes: "Offset check: printed p.229 = image 27 + 202 (header folio, top-right; o
 **38.** If $E(\hat{\theta}) < \theta$, then $\hat{\theta}$ is called:
 (a) positively biased  (b) negatively biased  (c) biased estimator  (d) unbiased estimator
 
-**39.** If $n = 8, \sum X = 120$ and $\sum(X - \bar{X})^2 = 144$, then unbiased estimated of the population mean is:
+**39.** If $n = 8, \sum X = 120$ and $\sum(X - \bar{X})^2 = 144$, then unbiased estimate of the population mean is:
 (a) 8  (b) 15  (c) 120  (d) 144
 
-**40.** If $n = 10$ and $\sum(X - \bar{X})^2 = 144$, then unbiased estimated of the population variance is:
+**40.** If $n = 10$ and $\sum(X - \bar{X})^2 = 144$, then unbiased estimate of the population variance is:
 (a) 10  (b) 16  (c) 14.4  (d) 9
 
 **41.** A statistic is an unbiased estimator of a parameter if:

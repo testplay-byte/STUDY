@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/0018.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S4c (glm-vision)"
-notes: "Offset check: printed p.112 = image 18 + 94 (header folio). SHORT DEFINITIONS summary page, items 1-10 complete. Book typos preserved verbatim: heading 2 prints \"Trails\" (for Trials); item 7 formula prints a stray dot \"P( X = x ).= b(x; n, p)\"; factorial line printed with dots \"n(n - 1)(n - 2) ... 3.2.1\". Page ends complete after the condition line x <= k, n - x <= N - k, n <= N."
+notes: "Offset check: printed p.112 = image 18 + 94 (header folio). SHORT DEFINITIONS summary page, items 1-10 complete. Book typos preserved verbatim: heading 2 prints \"Trails\" (for Trials); item 7 formula prints a stray dot \"P( X = x ).= b(x; n, p)\"; factorial line printed with dots \"n(n - 1)(n - 2) ... 3.2.1\". Page ends complete after the condition line x <= k, n - x <= N - k, n <= N. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 18 — Binomial and Hypergeometric Distributions (Chapter 11)
@@ -28,7 +28,7 @@ notes: "Offset check: printed p.112 = image 18 + 94 (header folio). SHORT DEFINI
 
 A trial that gives only two possible outcomes is called a Bernoulli trial.
 
-**2. Properties of Bernoulli Trails**
+**2. Properties of Bernoulli Trials**
 (i) There are two possible outcomes for each trial, called generically by success and failure.
 (ii) The trials are independent.
 (iii) The probability of a success remains the same from trial to trial and denote it by the letter p.
@@ -56,7 +56,7 @@ The function used to compute probabilities in a binomial experiment is called bi
 
 **7. Binomial Formula**
 
-$$P(X = x).= b(x; n, p) = \binom{n}{x} p^x q^{n-x}$$
+$$P(X = x) = b(x; n, p) = \binom{n}{x} p^x q^{n-x}$$
 
 for $x = 0, 1, 2, 3, \cdots, n$
 

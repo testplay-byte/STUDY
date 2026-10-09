@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-05-Kinematics-of-Motion-in-a-Straight-Line/0009.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13h2 (glm-vision)"
-notes: "Continuation of Example 2 from p.147 (differentiation + v(0), v(π/3)); §5.3.1 'Acceleration as Derivative of Velocity and Displacement' printed mid-page; Example 3 through 'Velocity at t = 4' computation — page ends there (acceleration evaluations continue p.149). Book typos/styles preserved verbatim: '2cost' (no space, twice), '2m/sec'-style unit runs, 'Which is acceleration is a derivative of its velocity.' (redundant grammar as printed), 'ln (t + 1)' with space. No figures, no sidebar boxes; dark gutter strip at far left with facing-page bleed but no content loss (zoom-verified)."
+notes: "Continuation of Example 2 from p.147 (differentiation + v(0), v(π/3)); §5.3.1 'Acceleration as Derivative of Velocity and Displacement' printed mid-page; Example 3 through 'Velocity at t = 4' computation — page ends there (acceleration evaluations continue p.149). Book typos/styles preserved verbatim: '2cost' (no space, twice), '2m/sec'-style unit runs, 'Which is acceleration is a derivative of its velocity.' (redundant grammar as printed), 'ln (t + 1)' with space. No figures, no sidebar boxes; dark gutter strip at far left with facing-page bleed but no content loss (zoom-verified). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 9 — Unit 05: Kinematics of Motion in a Straight Line
@@ -24,8 +24,8 @@ notes: "Continuation of Example 2 from p.147 (differentiation + v(0), v(π/3)); 
 
 Differentiate it w.r.t ‘t’
 
-$$\frac{dS}{dt} = 2t + 2cost$$
-$$v(t) = 2t + 2cost \qquad \qquad \qquad \qquad \qquad \dots\dots(1)$$
+$$\frac{dS}{dt} = 2t + 2 cos t$$
+$$v(t) = 2t + 2 cos t \qquad \qquad \qquad \qquad \qquad \dots\dots(1)$$
 
 (1) shows the velocity of the particle at any time ‘t’. To find the initial velocity put $t = 0$ in (1).
 

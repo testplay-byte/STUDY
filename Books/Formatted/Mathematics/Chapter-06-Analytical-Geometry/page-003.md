@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-06-Analytical-Geometry/0003.jpg
 converted_at: "2026-09-20"
 converted_by: "agent-16a (glm-vision)"
-notes: "No printed section heading on the page (continues the concurrency treatment of 6.2; verified on zoom). Book typo preserved: 'system of homogenous equations'. Key Facts sidebar box (top right) contains a circle graphic with 16 lines through its centre — described inside the blockquote, not F-blocked, per sidebar-box rule. Footer ribbon 162 pixel-verified. No edge crops."
+notes: "No printed section heading on the page (continues the concurrency treatment of 6.2; verified on zoom). Book typo preserved: 'system of homogenous equations'. Key Facts sidebar box (top right) contains a circle graphic with 16 lines through its centre — described inside the blockquote, not F-blocked, per sidebar-box rule. Footer ribbon 162 pixel-verified. No edge crops. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 3 — Unit 06: Analytical Geometry
@@ -36,7 +36,7 @@ Consider three straight lines whose equations are:
 
 $$\begin{aligned} a_1x + b_1y + c_1 &= 0 \quad \ldots \ldots \ldots \ldots (1) \\ a_2x + b_2y + c_2 &= 0 \quad \ldots \ldots \ldots \ldots (2) \\ a_3x + b_3y + c_3 &= 0 \quad \ldots \ldots \ldots \ldots (3) \end{aligned}$$
 
-The system of homogenous equations (1)-(3) can be written in matrix form as:
+The system of homogeneous equations (1)-(3) can be written in matrix form as:
 
 $$\begin{bmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{bmatrix} \begin{bmatrix} x \\ y \\ 1 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix} \ldots \ldots \ldots \ldots (4)$$
 

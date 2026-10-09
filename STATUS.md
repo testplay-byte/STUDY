@@ -1,7 +1,10 @@
 # STATUS — live snapshot
 
-> **Last updated: 2026-10-06** (Phase 9 — Statistics Chapters 14–17 + Statistical Tables back matter digitized;
-> library now 668 pages; **both books COMPLETE**). Coordinator updates this after every task.
+> **Last updated: 2026-10-06** (Phase 9.1 — issue-resolution + typo-correction session:
+> user-decided reconstructions on printed pp.317/332 applied; p.337 z-table computationally
+> corrected (16 cells); library-wide Tier A/B typo sweep (162 corrections / 104 files) under
+> the new v4.4 correction policy; CORRECTIONS-LOG.md created; both gates ALL GREEN.
+> Library unchanged at 668 pages — both books COMPLETE). Coordinator updates this after every task.
 > New agents: if reality differs from this file, trust reality, then fix this file.
 
 ## One-line state
@@ -197,6 +200,22 @@ end pages carry `← NN →` navigation chips = furniture.
   indexes); STATUS/README/PLAN/AGENTS synced; verify-v4 ALL GREEN 668/668 raw imgs, 556/556
   markdown-only placed; check-digital --frozen --strict-figures ALL GREEN.
 
+- Phase 9.1 (**2026-10-06, this session**): **Issue-resolution + typo-correction pass (policy
+  v4.4)** — sandbox restored after a rollback (fast-forwarded to origin/main `f6b35fb`, gates
+  re-verified). User decisions applied: p.317 Q.25 rank-table col-9 filled (Laboratory = 1,
+  Lecture = 2 — FLAGGED as potentially inaccurate; arithmetically consistent with the printed
+  r_s = 0.85) + blot-lost word "in" restored (flagged); p.332 Q.15 stem first word "The"
+  restored (flagged). p.337 z-table: every cell cross-checked against computed Φ(z) − 0.5 —
+  **16 misprints corrected** (6 newly discovered: z = 0.48, 0.53, 1.30, 1.57, 1.99, 2.51),
+  7 last-digit rounding-wobble cells deliberately left as printed; two of the original note's
+  "intended" guesses superseded (1.88 → .46995, 3.09 → .49900). p.302 chi-square restoration
+  re-verified intact (user closed the item). Library-wide **Tier A/B typo sweep: 162 surface
+  corrections across 104 files** (both subjects, markdown-only batches only — legacy 112 stay
+  byte-frozen), applied via exact-count body-only replacements with per-file note suffixes.
+  New `docs/tracking/CORRECTIONS-LOG.md` is the permanent ledger; CONVENTIONS v4.4 (§3.11
+  tiered correction policy), PIPELINE §6 step 4, tools/prompt.txt R1, AGENTS.md synced.
+  Both gates ALL GREEN after the sweep.
+
 ## Next actions (queue)
 
 1. **Both books COMPLETE — await user direction.** The Statistics book now holds front matter +
@@ -223,12 +242,16 @@ end pages carry `← NN →` navigation chips = furniture.
   carry no folio → null (expected for unnumbered back-matter pages).
 - S-2 odd-page running headers misprint "[Chapter 7]" — chapter is 9 everywhere in data ✓
   (audited). Keep it that way.
-- S-L 5-decimal z-table (printed p.337) carries a dozen book misprints — all preserved
-  verbatim with per-cell notes (see page-003.md). Do NOT "fix" them.
-- S-9 p.317 (S-9 img 0033) ink blotch leaves Q.25's rank-table column 9 cells unreadable —
-  recorded as empty cells + [illegible] marker; never reconstruct.
-- S-10 p.332 (S-10 img 0014) Q.15 question stem is truncated in the printed book itself
-  (only "currently used data and instructions are held in:" printed) — flagged on the page.
+- S-L 5-decimal z-table (printed p.337): Phase 9.1 CORRECTED 16 misprinted cells to computed
+  Φ(z)−0.5 values; 7 last-digit rounding-wobble cells stay as printed (book's own convention);
+  full list in `docs/tracking/CORRECTIONS-LOG.md` §2. Do not re "fix" the wobble cells.
+- S-9 p.317 (S-9 img 0033) ink blotch: Q.25 rank-table col-9 FILLED per user decision
+  (Laboratory = 1, Lecture = 2) and FLAGGED as potentially inaccurate in the page notes —
+  treat those two cells as reconstructions, not print data. Blot-lost word "in" likewise
+  restored + flagged.
+- S-10 p.332 (S-10 img 0014) Q.15 question stem is truncated in the printed book itself;
+  first word "The" restored per user decision and flagged on the page. The rest of the stem
+  is verbatim printed text.
 - `Books/Digital/` (FROZEN, v4.3) pages use a KaTeX CDN — offline, math degrades to readable
   raw LaTeX (accepted; the dashboard will bundle KaTeX locally). Custom page CSS must scope
   its selectors (bare `span { … }` rules shred KaTeX output — see CONVENTIONS §1.5).

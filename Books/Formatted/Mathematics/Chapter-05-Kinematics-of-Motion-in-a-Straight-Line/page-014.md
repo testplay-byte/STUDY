@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-05-Kinematics-of-Motion-in-a-Straight-Line/0014.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13i (glm-vision)"
-notes: "Exercise 5.2 ends at Q.13 (continuation from p.151/152, banner printed p.151); section 5.6 'Vector Valued Function' starts lower on the page. Book misprints preserved verbatim: Q.12 first piecewise prints second case 't > 0' (mathematically t > 8 as its own S piecewise prints), Q.12(iii) 'displacement of P form O'. Definition paragraph is plain body text (bold blue 'Definition:' label), not a box. No figures, no scan-edge crops."
+notes: "Exercise 5.2 ends at Q.13 (continuation from p.151/152, banner printed p.151); section 5.6 'Vector Valued Function' starts lower on the page. Book misprints preserved verbatim: Q.12 first piecewise prints second case 't > 0' (mathematically t > 8 as its own S piecewise prints), Q.12(iii) 'displacement of P form O'. Definition paragraph is plain body text (bold blue 'Definition:' label), not a box. No figures, no scan-edge crops. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 14 — Unit 05: Kinematics of Motion in a Straight Line
@@ -46,7 +46,7 @@ The car starts from rest.
 
 (ii) Find the time it takes for the car to reach its maximum speed.
 
-(iii) Show that the displacement of $P$ form $O$ is given by:
+(iii) Show that the displacement of $P$ from $O$ is given by:
 
 $$S = \begin{cases} 2t^2 - \frac{1}{12}t^3 & 0 \leq t \leq 8 \\ 16t - \frac{128}{3} & t > 8 \end{cases}$$
 

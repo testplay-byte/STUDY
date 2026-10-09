@@ -15,7 +15,7 @@ figures_count: 3
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0006.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13a (glm-vision)"
-notes: "Book typos preserved verbatim: 'exits' in Definition condition ii, 'f(1) is not define' after Example 5. Example 7 solution sentence breaks off mid-sentence at the page bottom ('...but is also') and continues on the next printed page. Example 7 graph carries printed caption 'Fig (i)'; the printed figure draws the horizontal curve between the y-tick marks 4 and 5 with the hole at x=2 on it (does not place the hole at the true value 5/4) — figure reproduced as printed."
+notes: "Book typos preserved verbatim: 'exits' in Definition condition ii, 'f(1) is not define' after Example 5. Example 7 solution sentence breaks off mid-sentence at the page bottom ('...but is also') and continues on the next printed page. Example 7 graph carries printed caption 'Fig (i)'; the printed figure draws the horizontal curve between the y-tick marks 4 and 5 with the hole at x=2 on it (does not place the hole at the true value 5/4) — figure reproduced as printed. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 6 — Unit 02: Limit, Continuity and Derivative
@@ -29,14 +29,14 @@ Figures (i) - (v), at page 47, suggest the threefold conditions of continuity of
 > **Definition: Continuity**
 > A function is said to be **continuous** at a number **a** if
 > i. $f(a)$ is defined
-> ii. $\lim_{x \to a} f(x)$ exits, and
+> ii. $\lim_{x \to a} f(x)$ exists, and
 > iii. $\lim_{x \to a} f(x) = f(a)$
 
 **Example 5:** The rational function
 
 $$\begin{aligned} f(x) &= \frac{x^3 - 1}{x - 1} \\ &= \frac{(x - 1)(x^2 + x + 1)}{x - 1} \\ &= x^2 + x + 1, x \neq 1 \end{aligned}$$
 
-is discontinuous at 1 since $f(1)$ is not define.
+is discontinuous at 1 since $f(1)$ is not defined.
 
 From graph, we observe that $\lim_{x \to 1} f(x) = 3$. We can also state that $f$ is continuous at any other number $x \neq 1$.
 

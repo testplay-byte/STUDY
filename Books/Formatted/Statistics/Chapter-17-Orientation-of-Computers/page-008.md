@@ -15,14 +15,14 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-17-Orientation-of-Computers/0008.jpg
 converted_at: "2026-10-06"
 converted_by: "coordinator-direct (vision-API 429 outage — direct transcription, no convert-page draft)"
-notes: "Offset check: printed p.326 = image 8 + 318 (header folio, top-left; even page). Converted during a sustained vision-API 429 outage by coordinator direct transcription, QA'd against the image by the coordinator. Book typos preserved: 'Examples of high-level languages are C, C++, PASCAL, and FORTRAN' (no closing period, as printed); 'to let user to type a command' (as printed); 'games etc with in the environment of DOS' ('with in' as printed); 'in a file and executed later.' period artefacts as printed."
+notes: "Offset check: printed p.326 = image 8 + 318 (header folio, top-left; even page). Converted during a sustained vision-API 429 outage by coordinator direct transcription, QA'd against the image by the coordinator. Book typos preserved: 'Examples of high-level languages are C, C++, PASCAL, and FORTRAN' (no closing period, as printed); 'to let user to type a command' (as printed); 'games etc with in the environment of DOS' ('with in' as printed); 'in a file and executed later.' period artefacts as printed. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 8 — Orientation of Computers (Chapter 17)
 
 > 📄 Original scan: [0008.jpg](../../../Raw/Statistics/Chapter-17-Orientation-of-Computers/0008.jpg) · printed page 326
 
-In the 1960s, high-level programming languages emerged. With a high-level language, the programmer uses simple English words and familiar mathematical expressions. Examples of high-level languages are C, C++, PASCAL, and FORTRAN
+In the 1960s, high-level programming languages emerged. With a high-level language, the programmer uses simple English words and familiar mathematical expressions. Examples of high-level languages are C, C++, PASCAL, and FORTRAN.
 
 ## 17.17. SYSTEM SOFTWARE
 
@@ -41,7 +41,7 @@ Operating systems provide a software platform on top of which other programs, ca
 
 DOS stands for "Disk Operating System". It is a generic name for the basic IBM PC operating system. Several variants of DOS are available, including Microsoft's version of DOS (MS-DOS), IBM's version (PC-DOS), and several others. There's even a free version of DOS called Open DOS.
 
-There are actually several levels to DOS. At the lowest level is the **BIOS** ( Basic Input/Output System ) which is responsible for managing devices like the keyboards and disk drives at the simplest possible level. The second layer provides a set of higher level services implemented using the low-level BIOS services. The third layer is the **command interpreter** ( or **shell** ). The shell's job is to display a **command prompt** on the screen to let user to type a command, then to read and interpret the typed command. The user can carry out any assignment e.g. writing/composing documents, graphics and games etc with in the environment of DOS.
+There are actually several levels to DOS. At the lowest level is the **BIOS** ( Basic Input/Output System ) which is responsible for managing devices like the keyboards and disk drives at the simplest possible level. The second layer provides a set of higher level services implemented using the low-level BIOS services. The third layer is the **command interpreter** ( or **shell** ). The shell's job is to display a **command prompt** on the screen to let user to type a command, then to read and interpret the typed command. The user can carry out any assignment e.g. writing/composing documents, graphics and games etc within the environment of DOS.
 
 ***Language Processor***
 

@@ -15,17 +15,17 @@ figures_count: 2
 source_image: ../../../Raw/Mathematics/Unit-05-Kinematics-of-Motion-in-a-Straight-Line/0018.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13h2 (glm-vision)"
-notes: "Review Exercise Q.1 MCQs (ii)-(viii) (continuation from p.156; banner not repeated; exercise id recorded 'Review Exercise' — unnumbered banner, Ch-02 precedent). Book typos preserved verbatim: (ii)/(iii) 'Which of following' (missing 'the'), (v) 'and the lowest speed 40km/h' (missing 'is'), (vi) 'along minor road' (missing 'a'), (viii) 'on the platform of station' (missing 'a') and 'What is length of train?' (missing 'the'). Figures: road-journey schematic and train illustration (small '=' -like symbol printed directly above the child figure — as printed); vehicle count read from 2 zoom passes. No sidebar boxes; dark gutter strip far left (facing-page bleed), no content loss."
+notes: "Review Exercise Q.1 MCQs (ii)-(viii) (continuation from p.156; banner not repeated; exercise id recorded 'Review Exercise' — unnumbered banner, Ch-02 precedent). Book typos preserved verbatim: (ii)/(iii) 'Which of following' (missing 'the'), (v) 'and the lowest speed 40km/h' (missing 'is'), (vi) 'along minor road' (missing 'a'), (viii) 'on the platform of station' (missing 'a') and 'What is length of train?' (missing 'the'). Figures: road-journey schematic and train illustration (small '=' -like symbol printed directly above the child figure — as printed); vehicle count read from 2 zoom passes. No sidebar boxes; dark gutter strip far left (facing-page bleed), no content loss. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 18 — Unit 05: Kinematics of Motion in a Straight Line
 
 > 📄 Original scan: [0018.jpg](../../../Raw/Mathematics/Unit-05-Kinematics-of-Motion-in-a-Straight-Line/0018.jpg) · printed page 157
 
-(ii) Which of following is scalar quantity?
+(ii) Which of the following is scalar quantity?
 (a) Displacement (b) Weight (c) Force (d) Work
 
-(iii) Which of following can be used to determine the magnitude of velocity?
+(iii) Which of the following can be used to determine the magnitude of velocity?
 (a) Area under acceleration-time graph
 (b) Area under velocity-time graph
 (c) Gradient of an acceleration-time graph
@@ -35,10 +35,10 @@ notes: "Review Exercise Q.1 MCQs (ii)-(viii) (continuation from p.156; banner no
 (a) acceleration (b) average speed
 (c) instantaneous speed (d) maximum speed
 
-(v) A car travels $100km$. The journey takes two hours. The highest speed of the car is $80km/h$, and the lowest speed $40km/h$. What is the average speed for the journey?
+(v) A car travels $100km$. The journey takes two hours. The highest speed of the car is $80km/h$, and the lowest speed is $40km/h$. What is the average speed for the journey?
 (a) $40km/h$ (b) $50km/h$ (c) $60km/h$ (d) $120km/h$
 
-(vi) A car travels $6.0km$ along a main road in $6.0$ minutes. It then travels $2km$ along minor road in $6.0$ minutes. Which calculation of average speed for the whole journey is correct?
+(vi) A car travels $6.0km$ along a main road in $6.0$ minutes. It then travels $2km$ along a minor road in $6.0$ minutes. Which calculation of average speed for the whole journey is correct?
 
 [Figure F1]
 
@@ -51,7 +51,7 @@ notes: "Review Exercise Q.1 MCQs (ii)-(viii) (continuation from p.156; banner no
 (c) A shopper in a large store ascending an escalator (moving stairs) at a uniform speed.
 (d) A skydiver that is falling at a constant speed towards the Earth.
 
-(viii) A child is standing on the platform of station. A train travelling at $30m/s$ takes $3.0s$ to pass the child. What is length of train?
+(viii) A child is standing on the platform of the station. A train travelling at $30m/s$ takes $3.0s$ to pass the child. What is the length of train?
 
 [Figure F2]
 

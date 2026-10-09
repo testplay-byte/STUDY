@@ -15,14 +15,14 @@ figures_count: 1
 source_image: ../../../Raw/Statistics/Chapter-16-Association/0011.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-27a (glm-vision)"
-notes: "Offset check: printed p.295 = image 11 + 284 (header folio, top-right; odd page). Page opens mid-example (solution of Example 16.10 typhoid-inoculation table from printed p.294). Book misprints preserved: stray dot in table cell '(α.) = 200' (pixel-verified); 'Let A denotes attacked' grammar as printed; section heading printed '16 14.' with the middle dot MISSING (print defect — pixel-verified at 4x zoom: no ink between 6 and 1; dot after 14 present) — transcribed as printed. Printed Q = 0.65 (72650/112150 = 0.6478 rounded by book). Chi-square curve figure sits to the RIGHT of the 16.14 paragraph, spanning ~4 text lines. No cut-offs."
+notes: "Offset check: printed p.295 = image 11 + 284 (header folio, top-right; odd page). Page opens mid-example (solution of Example 16.10 typhoid-inoculation table from printed p.294). Book misprints preserved: stray dot in table cell '(α.) = 200' (pixel-verified); 'Let A denotes attacked' grammar as printed; section heading printed '16 14.' with the middle dot MISSING (print defect — pixel-verified at 4x zoom: no ink between 6 and 1; dot after 14 present) — transcribed as printed. Printed Q = 0.65 (72650/112150 = 0.6478 rounded by book). Chi-square curve figure sits to the RIGHT of the 16.14 paragraph, spanning ~4 text lines. No cut-offs. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 11 — Association (Chapter 16)
 
 > 📄 Original scan: [0011.jpg](../../../Raw/Statistics/Chapter-16-Association/0011.jpg) · printed page 295
 
-**Solution:** Let A denotes attacked and $\alpha$ denotes not attacked. Also B denotes inoculated and $\beta$ denotes not inoculated, then we can write the table as:
+**Solution:** Let A denote attacked and $\alpha$ denotes not attacked. Also B denotes inoculated and $\beta$ denotes not inoculated, then we can write the table as:
 
 |  | A | $\alpha$ | Total |
 | :--- | :--- | :--- | :--- |

@@ -15,7 +15,7 @@ figures_count: 1
 source_image: ../../../Raw/Mathematics/Unit-06-Analytical-Geometry/0002.jpg
 converted_at: "2026-09-20"
 converted_by: "agent-16a (glm-vision)"
-notes: "Book typo preserved: 'we proceed as follow:'. The printed cross-multiplication scheme after eqs (3)/(4) is an unbracketed 2x6 symbol array with coloured diagonal multiplication arrows drawn over it (transcribed as a plain array). Footer ribbon 161 pixel-verified (blue band y≈3050-3206/3206). No edge crops."
+notes: "Book typo preserved: 'we proceed as follow:'. The printed cross-multiplication scheme after eqs (3)/(4) is an unbracketed 2x6 symbol array with coloured diagonal multiplication arrows drawn over it (transcribed as a plain array). Footer ribbon 161 pixel-verified (blue band y≈3050-3206/3206). No edge crops. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 2 — Unit 06: Analytical Geometry
@@ -32,7 +32,7 @@ be two non-parallel lines and $P(x_1, y_1)$ be the point of intersection of $l_1
 
 $$\begin{aligned} a_1x_1 + b_1y_1 + c_1 &= 0 \quad \ldots\ldots\ldots\ldots (3) \\ a_2x_1 + b_2y_1 + c_2 &= 0 \quad \ldots\ldots\ldots\ldots (4) \end{aligned}$$
 
-For the solution of (3) and (4), we proceed as follow:
+For the solution of (3) and (4), we proceed as follows:
 
 $$\begin{array}{cccccc} a_1 & b_1 & c_1 & a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 & a_2 & b_2 & c_2 \end{array}$$
 

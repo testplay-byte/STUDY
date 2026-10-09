@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/0026.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S3d (glm-vision)"
-notes: "Offset check: printed p.86 = image 26 + 60 (header folio). MCQ Q.26–Q.46 continue the unnumbered MULTIPLE-CHOICE QUESTIONS block from p.85; page ends complete at Q.46. Book misprints preserved: Q.32 option (b) '6/8'; Q.44 option (d) 'neither (a) and (b)' (printed 'and'); Q.38 option (c) 'E[ X^2 - E(X) ]^2' as printed. Q.29 stem contains a printed blank line before 'equal to:'."
+notes: "Offset check: printed p.86 = image 26 + 60 (header folio). MCQ Q.26–Q.46 continue the unnumbered MULTIPLE-CHOICE QUESTIONS block from p.85; page ends complete at Q.46. Book misprints preserved: Q.32 option (b) '6/8'; Q.44 option (d) 'neither (a) and (b)' (printed 'and'); Q.38 option (c) 'E[ X^2 - E(X) ]^2' as printed. Q.29 stem contains a printed blank line before 'equal to:'. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 26 — Random Variable and Probability Distributions (Chapter 10)
@@ -79,7 +79,7 @@ notes: "Offset check: printed p.86 = image 26 + 60 (header folio). MCQ Q.26–Q.
 
 **44.** The height of persons in a country is a random variable of the type:
 (a) discrete random variable (b) continuous random variable
-(c) both (a) and (b) (d) neither (a) and (b)
+(c) both (a) and (b) (d) neither (a) nor (b)
 
 **45.** A random variable may be discrete or:
 (a) experimental (b) functional (c) given (d) continuous

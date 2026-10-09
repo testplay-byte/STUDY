@@ -15,7 +15,7 @@ figures_count: 4
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0034.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13c (glm-vision)"
-notes: "Blue footer ribbon CUT OFF at scan bottom: only the ribbon's top edge visible, no digit readable → page_printed null (offset cross-check: image 34 + 42 = 77, NOT used as value). Book quirks preserved verbatim: item i. prints 'defined only on the closed interval at [1, 2]' (stray 'at'); item iii. ends 'iii:' (colon) and prints 'f(2) = 2' although the graph labels the maximum 4."
+notes: "Blue footer ribbon CUT OFF at scan bottom: only the ribbon's top edge visible, no digit readable → page_printed null (offset cross-check: image 34 + 42 = 77, NOT used as value). Book quirks preserved verbatim: item i. prints 'defined only on the closed interval at [1, 2]' (stray 'at'); item iii. ends 'iii:' (colon) and prints 'f(2) = 2' although the graph labels the maximum 4. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 34 — Unit 02: Limit, Continuity and Derivative
@@ -24,7 +24,7 @@ notes: "Blue footer ribbon CUT OFF at scan bottom: only the ribbon's top edge vi
 
 **Example 44:**
 
-i. $f(x) = x^2$ defined only on the closed interval at $[1, 2]$ has the absolute maximum $f(2) = 4$ and the absolute minimum $f(1) = 1$ [Figure F1]
+i. $f(x) = x^2$ defined only on the closed interval $[1, 2]$ has the absolute maximum $f(2) = 4$ and the absolute minimum $f(1) = 1$ [Figure F1]
 
 ii. On the other hand, if $f(x) = x^2$ is defined on the interval $(1, 2)$. $f$ has no absolute extrema.
 

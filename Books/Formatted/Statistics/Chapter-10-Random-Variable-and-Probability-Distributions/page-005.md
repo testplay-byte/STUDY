@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/0005.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S3a (glm-vision)"
-notes: "Offset check: printed p.65 = image 5 + 60 (header folio). Section heading prints as '10.5.RANDOM VARIABLE' (no space after the dot) - preserved. Book typos preserved: odd-digits table cell prints '5/10.' with trailing period; the 10.5 text prints 'not a random variable If we write' with missing full stop. Grey smudge/tape residue at top centre of scan (not content)."
+notes: "Offset check: printed p.65 = image 5 + 60 (header folio). Section heading prints as '10.5.RANDOM VARIABLE' (no space after the dot) - preserved. Book typos preserved: odd-digits table cell prints '5/10.' with trailing period; the 10.5 text prints 'not a random variable If we write' with missing full stop. Grey smudge/tape residue at top centre of scan (not content). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 5 — Random Variable and Probability Distributions (Chapter 10)
@@ -63,7 +63,7 @@ Select 10 sets of 4 digits each from random number table and find the proportion
 
 ## 10.5.RANDOM VARIABLE
 
-A set of numerical values assigned to the all possible outcomes of the random experiment is called random variable. The random variable can be briefly written as r.v. If we write A, B, ... , F on the six faces of a die, these letters are not a random variable If we write some numerical values on the six faces of a die like 1, 2, 3, ... , 6, we have a set of values called random variable. Suppose we select two bulbs from a certain lot having good and defective bulbs. Let G stand for good and D stand for defective. There are four possible outcomes which are GG, GD, DG and DD. Each outcome can be assigned some numerical value. Let us count number of defective bulbs in each outcome. We can write
+A set of numerical values assigned to the all possible outcomes of the random experiment is called random variable. The random variable can be briefly written as r.v. If we write A, B, ... , F on the six faces of a die, these letters are not a random variable. If we write some numerical values on the six faces of a die like 1, 2, 3, ... , 6, we have a set of values called random variable. Suppose we select two bulbs from a certain lot having good and defective bulbs. Let G stand for good and D stand for defective. There are four possible outcomes which are GG, GD, DG and DD. Each outcome can be assigned some numerical value. Let us count number of defective bulbs in each outcome. We can write
 
 | Outcome | No. of defective bulbs |
 | :---: | :---: |

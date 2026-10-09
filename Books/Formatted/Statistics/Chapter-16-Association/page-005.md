@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-16-Association/0005.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-26a (glm-vision)"
-notes: "Offset check: printed p.289 = image 5 + 284 (header folio, top-right; odd page). Book typo in Example 16.5 item (i): comma printed immediately after (Aβ), i.e. '(Aβ),= 40' — preserved. Stray bullet-like dot printed left of '(β)=145' in the 'Clearly' block under the Example 16.4 table — likely a print mark, not reproduced inside the math block; recorded here. Example 16.4 arithmetic and table totals cross-checked (all consistent with printed cells). Page ends with complete sentence '...the data is inconsistent.' — Example 16.5 cases (ii)-(iv) solutions continue on next page. No figures."
+notes: "Offset check: printed p.289 = image 5 + 284 (header folio, top-right; odd page). Book typo in Example 16.5 item (i): comma printed immediately after (Aβ), i.e. '(Aβ),= 40' — preserved. Stray bullet-like dot printed left of '(β)=145' in the 'Clearly' block under the Example 16.4 table — likely a print mark, not reproduced inside the math block; recorded here. Example 16.4 arithmetic and table totals cross-checked (all consistent with printed cells). Page ends with complete sentence '...the data is inconsistent.' — Example 16.5 cases (ii)-(iv) solutions continue on next page. No figures. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 5 — Association (Chapter 16)
@@ -62,7 +62,7 @@ If the class frequencies are observed in a certain sample data and all class fre
 
 Check whether the data given below in each case is consistent or inconsistent?
 
-(i) $(\text{A}\beta),=40, (\text{AB})=75, (\beta)=108 \text{ and } n=165.$
+(i) $(\text{A}\beta)=40, (\text{AB})=75, (\beta)=108 \text{ and } n=165.$
 
 (ii) $(\alpha)=550, (\alpha\beta)=50, (\text{B})=700 \text{ and } (\text{A}\beta)=250.$
 

@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-03-Integration/0016.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13d2 (glm-vision)"
-notes: "Book typos preserved verbatim: 'we gat:' printed where 'we get' expected (Example 18); equating-coefficients line of Example 19 prints 'A + B, 2B + C = 5, A + 2C = 3' (no '= 3' after A + B); Example 19 final line prints ln(x + 1) where ln(x + 2) would be expected. Top of page continues Example 18 solution from printed p.103. Exercise 3.5 (Q.1-12) starts and completes on this page. No scan-edge crops; no sidebar boxes; no figures."
+notes: "Book typos preserved verbatim: 'we gat:' printed where 'we get' expected (Example 18); equating-coefficients line of Example 19 prints 'A + B, 2B + C = 5, A + 2C = 3' (no '= 3' after A + B); Example 19 final line prints ln(x + 1) where ln(x + 2) would be expected. Top of page continues Example 18 solution from printed p.103. Exercise 3.5 (Q.1-12) starts and completes on this page. No scan-edge crops; no sidebar boxes; no figures. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 16 — Unit 03: Integration
@@ -26,7 +26,7 @@ By equating numerator, we get:
 $$x^2 + 2x + 4 = A(x + 1)^2 + B(x + 1) + C$$
 $$x^2 + 2x + 4 = Ax^2 + (2A + B)x + (A + B + C)$$
 
-Comparing coefficients of like powers of $x$ from both sides, we gat:
+Comparing coefficients of like powers of $x$ from both sides, we get:
 $$A = 1, 2A + B = 2 \text{ and } A + B + C = 4$$
 
 Solving the equations, we have:

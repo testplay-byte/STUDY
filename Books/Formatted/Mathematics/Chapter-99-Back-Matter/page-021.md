@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Back-Matter/0021.jpg
 converted_at: "2026-09-20"
 converted_by: "coordinator-w5 (glm-vision)"
-notes: "Glossary page (running head GRADE-12: GLOSSARY), terms A-E. BOOK TYPO preserved: Continuous function (ii) prints 'lim f(x) exits' (means exists)."
+notes: "Glossary page (running head GRADE-12: GLOSSARY), terms A-E. BOOK TYPO preserved: Continuous function (ii) prints 'lim f(x) exits' (means exists). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 21 — Glossary
@@ -53,7 +53,7 @@ notes: "Glossary page (running head GRADE-12: GLOSSARY), terms A-E. BOOK TYPO pr
 **Continuity on an interval:** A function is said to be continuous on an interval if it is continuous at every number in the interval.
 
 **Continuous function:** A function is said to be continuous at a number $a$ if:
-(i) $f(a)$ is defined, (ii) $\lim_{x \to a} f(x)$ exits, and (iii) $\lim_{x \to a} f(x) = f(a)$
+(i) $f(a)$ is defined, (ii) $\lim_{x \to a} f(x)$ exists, and (iii) $\lim_{x \to a} f(x) = f(a)$
 
 **Covertices of ellipse:** The points where the ellipse cut its minor axis are known as co-vertices of the ellipse.
 

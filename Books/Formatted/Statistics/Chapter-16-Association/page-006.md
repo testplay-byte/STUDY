@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-16-Association/0006.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-26a (glm-vision)"
-notes: "Offset check: printed p.290 = image 6 + 284 (header folio, top-left; even page). Continuation of Example 16.5 cases (ii)-(iv) + Example 16.6 + theory 16.11 → mixed. Book quirks preserved: Example 16.6 opens 'In a certain b.g college' ('b.g' printed exactly so); a stray dot printed after '160 liked Mathematics and Physics.' (print noise — rendered 'Physics. ·'); all three consistency tables cross-checked arithmetically (consistent, incl. printed (AB) = -10 in case iii and n = 1000 in case ii). Example 16.5 case (ii) given-line carried on this page's top; 16.11 theory continues on next page. No figures, no cut-offs."
+notes: "Offset check: printed p.290 = image 6 + 284 (header folio, top-left; even page). Continuation of Example 16.5 cases (ii)-(iv) + Example 16.6 + theory 16.11 → mixed. Book quirks preserved: Example 16.6 opens 'In a certain b.g college' ('b.g' printed exactly so); a stray dot printed after '160 liked Mathematics and Physics.' (print noise — rendered 'Physics. ·'); all three consistency tables cross-checked arithmetically (consistent, incl. printed (AB) = -10 in case iii and n = 1000 in case ii). Example 16.5 case (ii) given-line carried on this page's top; 16.11 theory continues on next page. No figures, no cut-offs. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 6 — Association (Chapter 16)
@@ -61,7 +61,7 @@ In a certain b.g college, 600 students of intermediate level were interviewed. T
 
 340 liked Physics. 130 liked Mathematics and Statistics.
 
-160 liked Mathematics and Physics. · 180 liked Physics and Statistics.
+160 liked Mathematics and Physics. 180 liked Physics and Statistics.
 
 100 liked all the three subjects. Examine the data for consistency.
 

@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/0019.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S4c (glm-vision)"
-notes: "Offset check: printed p.113 = image 19 + 94 (header folio). MULTIPLE – CHOICE QUESTIONS block of the chapter exercise starts here (no printed 'EXERCISE 11' label); Q.1-Q.20 on this page, continues on p.114. Book typos preserved verbatim: Q.3 prints 'In a Bernoulli trials the experiment is performed'; Q.17 prints \"a'binomial\". Options printed on one inline line except Q.1, Q.2, Q.16, Q.17, Q.20 which are printed as 2x2 option grids; transcription follows the printed line breaks."
+notes: "Offset check: printed p.113 = image 19 + 94 (header folio). MULTIPLE – CHOICE QUESTIONS block of the chapter exercise starts here (no printed 'EXERCISE 11' label); Q.1-Q.20 on this page, continues on p.114. Book typos preserved verbatim: Q.3 prints 'In a Bernoulli trials the experiment is performed'; Q.17 prints \"a'binomial\". Options printed on one inline line except Q.1, Q.2, Q.16, Q.17, Q.20 which are printed as 2x2 option grids; transcription follows the printed line breaks. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 19 — Binomial and Hypergeometric Distributions (Chapter 11)
@@ -32,7 +32,7 @@ notes: "Offset check: printed p.113 = image 19 + 94 (header folio). MULTIPLE –
 (a) success and failure (b) variable and constant  
 (c) mean and variance (d) with and without replacement
 
-**3.** In a Bernoulli trials the experiment is performed:
+**3.** In Bernoulli trials the experiment is performed:
 (a) once (b) twice (c) thrice (d) more than once
 
 **4.** Nature of the binomial random variable X is:
@@ -75,7 +75,7 @@ notes: "Offset check: printed p.113 = image 19 + 94 (header folio). MULTIPLE –
 (a) hypergeometric distribution (b) normal distribution  
 (c) uniform distribution (d) Bernoulli distribution
 
-**17.** The mean of a'binomial distribution depends on:
+**17.** The mean of a binomial distribution depends on:
 (a) number of trials (b) probability of success  
 (c) probability of failure (d) number of trials and probability of success
 

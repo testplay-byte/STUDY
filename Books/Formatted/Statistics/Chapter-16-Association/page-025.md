@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-16-Association/0025.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-27b (glm-vision)"
-notes: "Offset check: printed p.309 = image 25 + 284 (header folio, top-right; odd page; running head '[Chapter 16] Association' top-left = furniture). Continuation of the MULTIPLE – CHOICE QUESTIONS block from p.308 (no banner reprinted → section: null), MCQs 9-28, Q.28 last and complete (list continues next page). BOOK STRAY DOTS preserved verbatim after options (pixel-verified): Q.11(d) 'nine .', Q.13(d) '0 and 5 .', Q.15(c) '+1 .', Q.16(b) '+1 .', Q.28(c) 'zero .'. Q.21 missing spaces after (b) and (c) as printed ('(b)positively associated', '(c)independent'). Q.27(b) printed 'less'than 5' with stray apostrophe. Q.10(c) 'consistence' as printed. Q.12 and Q.23 keep printed space before comma ('n} , the'). Q.22 options printed as 2x2 grid — transcribed two per line in printed order. Ragged gaps between options normalized to single spaces. No figures, no cut-offs."
+notes: "Offset check: printed p.309 = image 25 + 284 (header folio, top-right; odd page; running head '[Chapter 16] Association' top-left = furniture). Continuation of the MULTIPLE – CHOICE QUESTIONS block from p.308 (no banner reprinted → section: null), MCQs 9-28, Q.28 last and complete (list continues next page). BOOK STRAY DOTS preserved verbatim after options (pixel-verified): Q.11(d) 'nine .', Q.13(d) '0 and 5 .', Q.15(c) '+1 .', Q.16(b) '+1 .', Q.28(c) 'zero .'. Q.21 missing spaces after (b) and (c) as printed ('(b)positively associated', '(c)independent'). Q.27(b) printed 'less'than 5' with stray apostrophe. Q.10(c) 'consistence' as printed. Q.12 and Q.23 keep printed space before comma ('n} , the'). Q.22 options printed as 2x2 grid — transcribed two per line in printed order. Ragged gaps between options normalized to single spaces. No figures, no cut-offs. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 25 — Association (Chapter 16)
@@ -29,22 +29,22 @@ notes: "Offset check: printed p.309 = image 25 + 284 (header folio, top-right; o
 (a) ultimate (b) positive (c) consistence (d) contrary
 
 **11.** With two attributes A and B, the total number of ultimate frequencies is:
-(a) two (b) four (c) six (d) nine .
+(a) two (b) four (c) six (d) nine.
 
 **12.** If $(AB) = \frac{(A)(B)}{n}$ , the two attributes A and B are:
 (a) independent (b) dependent (c) correlated (d) quantitative
 
 **13.** To calculate the level of association, we can calculate coefficient of association ( Q ), the coefficient of association always lies between:
-(a) $-1$ and $+1$ (b) $0$ and $1$ (c) $-1$ and $0$ (d) $0$ and $5$ .
+(a) $-1$ and $+1$ (b) $0$ and $1$ (c) $-1$ and $0$ (d) $0$ and $5$.
 
 **14.** If the class frequency $( AB ) = 0$, the value of Q is equal to:
 (a) $0$ (b) $1$ (c) $-1$ (d) $0$ to $1$
 
 **15.** If the class frequency $(\alpha B ) = 0$, the value of Q will be:
-(a) $-1$ (b) $0$ (c) $+1$ . (d) $0$ to $-1$
+(a) $-1$ (b) $0$ (c) $+1$. (d) $0$ to $-1$
 
 **16.** If for two attributes the class frequency $( AB ) = (\alpha B ) = 0$, the value of the coefficient of association is:
-(a) $-1$ (b) $+1$ . (c) $0$ (d) $\infty$
+(a) $-1$ (b) $+1$. (c) $0$ (d) $\infty$
 
 **17.** If for two attributes the class frequencies $( AB ) ( \alpha \beta ) = ( A \beta )( \alpha B )$, then Q is equal to:
 (a) $0$ (b) $-1$ (c) $+1$ (d) $\infty$
@@ -59,7 +59,7 @@ notes: "Offset check: printed p.309 = image 25 + 284 (header folio, top-right; o
 (a) independent (b) positively associated (c) negatively associated (d) all of the above
 
 **21.** If $( AB ) ( \alpha \beta ) > ( A \beta )( \alpha B )$, then A and B are said to be:
-(a) negatively associated (b)positively associated (c)independent (d) difficult to tell
+(a) negatively associated (b) positively associated (c) independent (d) difficult to tell
 
 **22.** If two attributes A and B hold the relation $( AB ) ( \alpha \beta ) < ( A \beta )( \alpha B )$, then:
 (a) A and B are positively associated (b) A and B are independent
@@ -78,7 +78,7 @@ notes: "Offset check: printed p.309 = image 25 + 284 (header folio, top-right; o
 (a) less than 10 (b) less than 5 (c) equal to 5 (d) more than 5
 
 **27.** In a Chi-square distribution no expected frequency should be:
-(a) more than 5 (b) less'than 5 (c) equal to 5 (d) both (a) and (b)
+(a) more than 5 (b) less than 5 (c) equal to 5 (d) both (a) and (b)
 
 **28.** The value of Chi-square ($\chi^2$) is always:
-(a) positive (b) negative (c) zero . (d) minimum
+(a) positive (b) negative (c) zero. (d) minimum

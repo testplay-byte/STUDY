@@ -15,14 +15,14 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-17-Orientation-of-Computers/0014.jpg
 converted_at: "2026-10-06"
 converted_by: "coordinator-direct (vision-API 429 outage — direct transcription, no convert-page draft)"
-notes: "Offset check: printed p.332 = image 14 + 318 (header folio, top-left; even page). MCQs 15-37 continuation (options printed in a 2x2 or 4-per-row grid; transcribed in printed left-to-right order). Converted during a sustained vision-API 429 outage by coordinator direct transcription, QA'd against the image by the coordinator. PRINT DAMAGE flagged: Q.15 question stem is TRUNCATED at the top edge of the printed page — the scan shows only 'currently used data and instructions are held in:' after the '15.' label (any preceding words are cut off in the book itself; transcribed as printed, [stem truncated]). Q.21/Q.22/Q.23 labels and the '(a' option letters of Q.21/Q.22 are partially cut at the left edge (labels reconstructed as 21./22./23. and option letters as (a) from the unambiguous pattern; noted). Q.26 blank printed as '-------------' (as printed)."
+notes: "Offset check: printed p.332 = image 14 + 318 (header folio, top-left; even page). MCQs 15-37 continuation (options printed in a 2x2 or 4-per-row grid; transcribed in printed left-to-right order). Converted during a sustained vision-API 429 outage by coordinator direct transcription, QA'd against the image by the coordinator. PRINT DAMAGE flagged: Q.15 question stem is TRUNCATED at the top edge of the printed page — the scan shows only 'currently used data and instructions are held in:' after the '15.' label (any preceding words are cut off in the book itself). USER DECISION (2026-10-06 session): the lost first word is 'The' — restored in the stem, FLAGGED as a reconstruction (everything after 'The' is verbatim printed text). Q.21/Q.22/Q.23 labels and the '(a' option letters of Q.21/Q.22 are partially cut at the left edge (labels reconstructed as 21./22./23. and option letters as (a) from the unambiguous pattern; noted). Q.26 blank printed as '-------------' (as printed)."
 ---
 
 # Page 14 — Orientation of Computers (Chapter 17)
 
 > 📄 Original scan: [0014.jpg](../../../Raw/Statistics/Chapter-17-Orientation-of-Computers/0014.jpg) · printed page 332
 
-**15.** currently used data and instructions are held in: [stem truncated — see notes]
+**15.** The currently used data and instructions are held in: [stem truncated in the printed book — first word 'The' supplied per user decision, see notes]
 (a) main memory (b) control unit (c) arithmetic logic unit (d) hard disk
 
 **16.** Compact disk is an example of:

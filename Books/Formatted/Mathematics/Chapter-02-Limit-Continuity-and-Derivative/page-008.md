@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0008.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13a2 (glm-vision)"
-notes: "Key Facts sidebar box (red-bordered, under running header) transcribed as blockquote. Book typo preserved verbatim: 'are also continues at a' in the Key Facts box; also 'By definition f(1) = 2' as printed. No numbered section heading printed on this page — first real heading is 'Exercise 2.2'."
+notes: "Key Facts sidebar box (red-bordered, under running header) transcribed as blockquote. Book typo preserved verbatim: 'are also continues at a' in the Key Facts box; also 'By definition f(1) = 2' as printed. No numbered section heading printed on this page — first real heading is 'Exercise 2.2'. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 8 — Unit 02: Limit, Continuity and Derivative
@@ -24,7 +24,7 @@ notes: "Key Facts sidebar box (red-bordered, under running header) transcribed a
 
 > **Key Facts**
 >
-> **Continuity of a Sum, Product and Quotient:** If $f$ and $g$ are functions continuous at a number $a$, then $cf$($c$ a constant), $f + g$, $fg$ and $\frac{f}{g}$, $(g(a) \neq 0)$ are also continues at $a$.
+> **Continuity of a Sum, Product and Quotient:** If $f$ and $g$ are functions continuous at a number $a$, then $cf$($c$ a constant), $f + g$, $fg$ and $\frac{f}{g}$, $(g(a) \neq 0)$ are also continuous at $a$.
 >
 > **Removable Discontinuity:** If $\lim_{x \to a} f(x)$ exists but $f$ is either not defined at $a$ or $f(a) \neq \lim_{x \to a} f(x)$, then $f$ is said to have a removable discontinuity at $a$. For example the function $\frac{x^2 - 1}{x - 1}$ is not defined at $1$ but $\lim_{x \to 1} f(x) = 2$. By definition $f(1) = 2$, the new function
 >

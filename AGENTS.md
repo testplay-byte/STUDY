@@ -38,7 +38,10 @@ We are digitizing the user's school textbooks (scanned page images) into a perma
 ## 3. Binding ground rules (short version — full detail in CONVENTIONS.md)
 
 1. **Fidelity first.** Page Markdown is a verbatim transcription. Never solve, correct,
-   translate or summarize. Book typos are preserved and noted.
+   translate or summarize — with the v4.4 typo-correction exception: unambiguous surface
+   typos (spelling/punctuation/single missing word) are corrected and documented in the
+   page notes + `docs/tracking/CORRECTIONS-LOG.md`; math values, notation quirks and
+   anything ambiguous stay verbatim + flagged.
 2. **Figures are sacred.** Every graph/diagram/photo gets a structured description block
    (`### Figure Fk`) + an inline `[Figure Fk]` marker at its position.
 3. **FLAT pages.** Pages live directly in the chapter folder — **never** create

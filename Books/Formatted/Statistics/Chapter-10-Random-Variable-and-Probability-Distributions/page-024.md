@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/0024.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S3d (glm-vision)"
-notes: "Offset check: printed p.84 = image 24 + 60 (header folio). Book misprints preserved: 'The life time of a electric bulb' (21 iv), stray dot in MCQ Q.8 option (d) 'both (a).and (b)', 'The distribution function F(x) have' (25). Unnumbered MULTIPLE-CHOICE QUESTIONS block starts mid-page (Q.1–Q.8) and continues on next page. Two-column: sections 21–23 left, 24–25 + MCQ start right."
+notes: "Offset check: printed p.84 = image 24 + 60 (header folio). Book misprints preserved: 'The life time of a electric bulb' (21 iv), stray dot in MCQ Q.8 option (d) 'both (a).and (b)', 'The distribution function F(x) have' (25). Unnumbered MULTIPLE-CHOICE QUESTIONS block starts mid-page (Q.1–Q.8) and continues on next page. Two-column: sections 21–23 left, 24–25 + MCQ start right. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 24 — Random Variable and Probability Distributions (Chapter 10)
@@ -27,7 +27,7 @@ Some examples of continuous random variable are:
 (i) The price of a car.
 (ii) The weight of a person.
 (iii) The length of a bridge.
-(iv) The life time of a electric bulb.
+(iv) The life time of an electric bulb.
 (v) The area of an office.
 
 ## 22. Probability Density Function
@@ -101,4 +101,4 @@ The distribution function $F(x)$ have the following properties:
    (a) chance variable
    (b) stochastic variable
    (c) constant
-   (d) both (a).and (b)
+   (d) both (a) and (b)

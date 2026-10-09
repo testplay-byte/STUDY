@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0026.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13b2 (glm-vision)"
-notes: "Continuation page: opens with the last three display lines of the xy=1 implicit-differentiation example begun on p.67; first line genuinely prints 'x d(y)/dx + y d(x)/dx = 0' (with d(x)/dx). Book typos preserved verbatim: 'The derivative of exponential is:', 'We find the derivative of common logarithmic which is continuous functions.', 'Taking ln both sides'. Printed formula 'd/dx a^x = a^x . 1/lna' transcribed as printed. No scan-edge cropping, no figures, no sidebar boxes."
+notes: "Continuation page: opens with the last three display lines of the xy=1 implicit-differentiation example begun on p.67; first line genuinely prints 'x d(y)/dx + y d(x)/dx = 0' (with d(x)/dx). Book typos preserved verbatim: 'The derivative of exponential is:', 'We find the derivative of common logarithmic which is continuous functions.', 'Taking ln both sides'. Printed formula 'd/dx a^x = a^x . 1/lna' transcribed as printed. No scan-edge cropping, no figures, no sidebar boxes. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 26 — Unit 02: Limit, Continuity and Derivative
@@ -74,7 +74,7 @@ We will apply the chain rule to find the derivative of parametric equations.
 
 **Example 34:** Differentiate $y = 4^{3x^2+5}$ w.r.t. $x$.
 
-**Solution:** Taking $ln$ both sides
+**Solution:** Taking $ln$ of both sides
 
 $$lny = ln4^{3x^2+5}$$
 

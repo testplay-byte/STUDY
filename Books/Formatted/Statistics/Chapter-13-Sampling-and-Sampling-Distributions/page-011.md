@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/0011.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S6b (glm-vision)"
-notes: "Offset check: printed p.165 = image 11 + 154 (header folio, top-right). Page opens mid-solution — continuation of Example 13.2 (sampling-distribution table and verification); Example 13.3 begins and the page ends after \"...= 20.\" with part (ii) of its Solution continuing on the next page. Book typo preserved verbatim: a stray period after 5.25 in the μ display line (= 5.25. and). No printed section headings on this page."
+notes: "Offset check: printed p.165 = image 11 + 154 (header folio, top-right). Page opens mid-solution — continuation of Example 13.2 (sampling-distribution table and verification); Example 13.3 begins and the page ends after \"...= 20.\" with part (ii) of its Solution continuing on the next page. Book typo preserved verbatim: a stray period after 5.25 in the μ display line (= 5.25. and). No printed section headings on this page. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 11 — Sampling and Sampling Distributions (Chapter 13)
@@ -39,7 +39,7 @@ The mean and standard deviation of the population are:
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | $X^2$ | 16 | 25 | 25 | 49 | $\sum X^2 = 115$ |
 
-$$\mu = \frac{\sum X}{N} = \frac{21}{4} = 5.25. \text{ and } \sigma = \sqrt{\frac{\sum X^2}{N} - (\frac{\sum X}{N})^2} = \sqrt{\frac{115}{4} - (\frac{21}{4})^2} = 1.0897$$
+$$\mu = \frac{\sum X}{N} = \frac{21}{4} = 5.25 \text{ and } \sigma = \sqrt{\frac{\sum X^2}{N} - (\frac{\sum X}{N})^2} = \sqrt{\frac{115}{4} - (\frac{21}{4})^2} = 1.0897$$
 
 $$\frac{\sigma}{\sqrt{n}} \sqrt{\frac{N-n}{N-1}} = \frac{1.0897}{\sqrt{3}} \sqrt{\frac{4-3}{4-1}} = 0.3632. \text{ Hence } \mu_{\bar{x}} = \mu = 5.25 \text{ and } \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}} \sqrt{\frac{N-n}{N-1}} = 0.3632.$$
 

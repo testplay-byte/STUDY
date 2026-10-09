@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-04-Differential-Equations/0014.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13g (glm-vision)"
-notes: "Exercise 4.2 instruction line prints the book typo 'Slove' (preserved). §4.6.1 text prints 'homogenous function of degree n' (typo, preserved) and solution (i) line prints 'is homogeneous function of degree 3/2 ∈ R' (no 'a', as printed). Example 13 (iii) prints '(x,y) = x/2y + 4' without the 'f' — as printed. Exercise items printed side-by-side, kept on shared lines (nbsp separators). No scan-edge cropping, no figures."
+notes: "Exercise 4.2 instruction line prints the book typo 'Slove' (preserved). §4.6.1 text prints 'homogenous function of degree n' (typo, preserved) and solution (i) line prints 'is homogeneous function of degree 3/2 ∈ R' (no 'a', as printed). Example 13 (iii) prints '(x,y) = x/2y + 4' without the 'f' — as printed. Exercise items printed side-by-side, kept on shared lines (nbsp separators). No scan-edge cropping, no figures. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 14 — Unit 04: Differential Equations
@@ -24,7 +24,7 @@ notes: "Exercise 4.2 instruction line prints the book typo 'Slove' (preserved). 
 
 ## Exercise 4.2
 
-Slove the differential equations by separating the variables.
+Solve the differential equations by separating the variables.
 
 1. $\frac{dy}{dx} = -\frac{1}{e^{3x}}$ &nbsp;&nbsp; 2. $x\frac{dy}{dx} = 4y$ &nbsp;&nbsp; 3. $\frac{dy}{dx} = \frac{y^3}{x^2}$
 
@@ -50,7 +50,7 @@ Before considering a homogeneous differential equation of first order, we need t
 
 If a function $f$ has the property that:
 $$f(tx, ty) = t^n f(x, y)$$
-where $t \in R^+$, $n \in R$. Then $f$ is said to be a homogenous function of degree $n$.
+where $t \in R^+$, $n \in R$. Then $f$ is said to be a homogeneous function of degree $n$.
 
 **Example 13:** Check whether the function
 

@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/0012.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S3b (glm-vision)"
-notes: "Offset check: printed p.72 = image 12 + 60 (header folio, top-left). Book misprints preserved: stray dot before 0.15 in the last p(x) cell of the Example 10.13 distribution table ('. 0.15'); stray period printed between 'that' and 'E( 2X + 3 )' in the (i)/(ii) instruction line ('Verify that.E( 2X + 3 )'). Book grammar 'whenever die is rolled' preserved. Laws (ii)/(iii), (iv)/(v), (vi)/(vii) share single printed lines as in scan. C.V. ratio printed as a slash, kept as slash. Page ends cleanly after E(X) = 252/36 = 7 (Example 10.14 complete)."
+notes: "Offset check: printed p.72 = image 12 + 60 (header folio, top-left). Book misprints preserved: stray dot before 0.15 in the last p(x) cell of the Example 10.13 distribution table ('. 0.15'); stray period printed between 'that' and 'E( 2X + 3 )' in the (i)/(ii) instruction line ('Verify that.E( 2X + 3 )'). Book grammar 'whenever die is rolled' preserved. Laws (ii)/(iii), (iv)/(v), (vi)/(vii) share single printed lines as in scan. C.V. ratio printed as a slash, kept as slash. Page ends cleanly after E(X) = 252/36 = 7 (Example 10.14 complete). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 12 — Random Variable and Probability Distributions (Chapter 10)
@@ -26,7 +26,7 @@ notes: "Offset check: printed p.72 = image 12 + 60 (header folio, top-left). Boo
 
 (i) $\text{E(Constant)} = \text{Constant}$
 
-If a constant 'c' is written on all the faces of the die, we shall always get c whenever die is rolled. Thus $\text{E(c)} = \text{c}$
+If a constant 'c' is written on all the faces of the die, we shall always get c whenever a die is rolled. Thus $\text{E(c)} = \text{c}$
 
 (ii) $\text{E(aX)} = \text{aE(X)}$ when $a \neq 0$ $\qquad$ (iii) $\text{E(X + a)} = \text{E(X)} + a$
 
@@ -52,7 +52,7 @@ Let X have the following probability distribution:
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | p(x) | 0.05 | 0.40 | 0.10 | 0.25 | 0.05 | . 0.15 |
 
-(i) Find E( X ), E( X² ) and E( X + 4 ) (ii) Verify that.E( 2X + 3 ) = 2E( X ) + 3
+(i) Find E( X ), E( X² ) and E( X + 4 ) (ii) Verify that E( 2X + 3 ) = 2E( X ) + 3
 
 **Solution:**
 

@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-12-Normal-Distribution/0018.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S5e (glm-vision)"
-notes: "Offset check: printed p.140 = image 18 + 122 (header folio). Book grammar typos preserved verbatim: 'The sampling of many a sample statistic such as the mean has an approximately normal distribution.' (def. 5) and 'If $\\sigma$ is constant the shape of the normal curve will be remain same.' (def. 8)."
+notes: "Offset check: printed p.140 = image 18 + 122 (header folio). Book grammar typos preserved verbatim: 'The sampling of many a sample statistic such as the mean has an approximately normal distribution.' (def. 5) and 'If $\\sigma$ is constant the shape of the normal curve will be remain same.' (def. 8). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 18 — Normal Distribution (Chapter 12)
@@ -64,4 +64,4 @@ The inflection points of the curve occur one standard deviation on either side o
 
 **8. Shape of Normal Distribution**
 
-Normal distribution has two parameters $\mu$ and $\sigma$. The shape of the normal distribution depends on the values of parameters. The location of a normal distribution is determined by the mean $\mu$ and the parameter $\sigma$ controls the relative flatness of the normal curve. If $\sigma$ is increasing the shape of the normal curve will be flatten. If $\sigma$ is decreasing the shape of the normal curve will be more peaked. If $\sigma$ is constant the shape of the normal curve will be remain same.
+Normal distribution has two parameters $\mu$ and $\sigma$. The shape of the normal distribution depends on the values of parameters. The location of a normal distribution is determined by the mean $\mu$ and the parameter $\sigma$ controls the relative flatness of the normal curve. If $\sigma$ is increasing the shape of the normal curve will be flatten. If $\sigma$ is decreasing the shape of the normal curve will be more peaked. If $\sigma$ is constant the shape of the normal curve will remain the same.

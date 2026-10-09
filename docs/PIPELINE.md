@@ -92,15 +92,23 @@ Before any mass conversion:
    API-429 storms.
 3. Integrity sweep: frontmatter complete on every file; `$` balance; `figures_count` ==
    F-blocks; every `source_image` resolves; no page uses a sub-folder.
-4. `bun tools/build-metadata.mjs` (regenerates book.json / chapter.json / indexes).
-5. ~~Digital replica pages~~ **SKIPPED in markdown-only mode (v4.3, CONVENTIONS §1.7):** new
+4. **Typo-correction pass (v4.4, CONVENTIONS §3.11):** classify every noted print error into
+   Tier A (correct: spelling/punctuation) / Tier B (insert documented missing word) /
+   Tier C (keep verbatim + flag: math values, notation, code, anything ambiguous). Apply
+   Tier A/B fixes, record them in the page `notes:` AND append to
+   `docs/tracking/CORRECTIONS-LOG.md`. For numeric tables (statistical tables etc.),
+   cross-check every value computationally against the underlying math function before
+   correcting — correct only digit-corruption-class mismatches, leave rounding-convention
+   wobble as printed and document it.
+5. `bun tools/build-metadata.mjs` (regenerates book.json / chapter.json / indexes).
+6. ~~Digital replica pages~~ **SKIPPED in markdown-only mode (v4.3, CONVENTIONS §1.7):** new
    batches add NO Digital pages — no figure crops, no `gen-digital.mjs`, no HTML. The Digital
    library is frozen at the 112-page v3 edition. (If the user ever re-enables digital for a
    batch, this step returns as: hand-typeset pages per CONVENTIONS §1.5 +
    `check-digital.mjs --strict-figures` ALL GREEN.)
-6. `bun tools/verify-v4.mjs && node tools/check-digital.mjs --frozen --strict-figures` —
+7. `bun tools/verify-v4.mjs && node tools/check-digital.mjs --frozen --strict-figures` —
    must be ALL GREEN.
-7. Update `STATUS.md`, `README.md` (counts), `docs/PLAN.md` (checklist), `WORKLOG.md`
+8. Update `STATUS.md`, `README.md` (counts), `docs/PLAN.md` (checklist), `WORKLOG.md`
    (final section), then **commit + push**.
 
 ## 7. Tracking upkeep (every phase)

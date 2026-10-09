@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-14-Statistical-Inference-Estimation/0034.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-22c (glm-vision)"
-notes: "Offset check: printed p.236 = image 34 + 202 (header folio, top-left; even page). Continuation of the unnumbered 'EXERCISES' block (banner printed on p.234/image 32): Q.22-Q.28, single column; exercise recorded as EXERCISES per repo convention. Page ends complete at Q.28's Ans. Book misprints/oddities preserved verbatim: Q.22 'Find a 96% confidence limits for the true difference.' ('a ... limits' as printed; 96% level confirmed by Z = 2.054 in the printed Ans); Q.27 prints a full stop after 'X2 = 85.' mid-sentence where a comma is expected, and uses Z_alpha/2 = 1.96 notation (as printed). Q.28's Ans lower limit verified at 3x zoom as 2.45 (convert pass had misread 1.5; 2.45 is also the value consistent with 5 - 2.549). Tables (Q.22, Q.25, Q.28) verified cell-by-cell at 3x zoom; all have an empty top-left header cell. Percent spacing as printed: '95 %' (Q.25) with space; '96%' (Q.22), '99%' (Q.23), '95%' (Q.24, Q.26, Q.27), '98%' (Q.28) without. All Ans. values checked numerically. No figures."
+notes: "Offset check: printed p.236 = image 34 + 202 (header folio, top-left; even page). Continuation of the unnumbered 'EXERCISES' block (banner printed on p.234/image 32): Q.22-Q.28, single column; exercise recorded as EXERCISES per repo convention. Page ends complete at Q.28's Ans. Book misprints/oddities preserved verbatim: Q.22 'Find a 96% confidence limits for the true difference.' ('a ... limits' as printed; 96% level confirmed by Z = 2.054 in the printed Ans); Q.27 prints a full stop after 'X2 = 85.' mid-sentence where a comma is expected, and uses Z_alpha/2 = 1.96 notation (as printed). Q.28's Ans lower limit verified at 3x zoom as 2.45 (convert pass had misread 1.5; 2.45 is also the value consistent with 5 - 2.549). Tables (Q.22, Q.25, Q.28) verified cell-by-cell at 3x zoom; all have an empty top-left header cell. Percent spacing as printed: '95 %' (Q.25) with space; '96%' (Q.22), '99%' (Q.23), '95%' (Q.24, Q.26, Q.27), '98%' (Q.28) without. All Ans. values checked numerically. No figures. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 34 — Statistical Inference Estimation (Chapter 14)
@@ -29,7 +29,7 @@ notes: "Offset check: printed p.236 = image 34 + 202 (header folio, top-left; ev
 | Sample size | 64 | 49 |
 | Sample mean | 100 | 90 |
 
-The variances of the hourly outputs for the two departments are known to be $\sigma_1^2 = 256$ and $\sigma_2^2 = 196$ respectively. Find a 96% confidence limits for the true difference.
+The variances of the hourly outputs for the two departments are known to be $\sigma_1^2 = 256$ and $\sigma_2^2 = 196$ respectively. Find the 96% confidence limits for the true difference.
 
 **Ans.** $4.19 < \mu_1 - \mu_2 < 15.81$
 

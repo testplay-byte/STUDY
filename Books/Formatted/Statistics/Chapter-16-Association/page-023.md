@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-16-Association/0023.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-27b (glm-vision)"
-notes: "Offset check: printed p.307 = image 23 + 284 (header folio, top-right; odd page; running head '[Chapter 16] Association' top-left = furniture). Continuation of the end-of-chapter 'SHORT DEFINITIONS' list: numbered items 18-26 (banner not reprinted on this page; the only printed headings are these numbered definition titles — recorded in section). TWO-COLUMN layout, continuous numbering read column 1 then column 2. Book typo preserved: def 23 'The large the value χ²' ('large' for 'larger', as printed). Def 19 formula/range separator is a semicolon (zoom-verified): 'C = √(χ²/(χ²+n)); 0 ≤ C ≤ √((k-1)/k)'. Line ending after def 22 '...directly by using the formula' reads ambiguously at scan resolution (various zooms suggest '/', ':' or no mark); no punctuation transcribed rather than guessed. 2x2 direct formula denominator order as printed: (a+b)(b+d)(c+d)(a+c). No figures, no cut-offs."
+notes: "Offset check: printed p.307 = image 23 + 284 (header folio, top-right; odd page; running head '[Chapter 16] Association' top-left = furniture). Continuation of the end-of-chapter 'SHORT DEFINITIONS' list: numbered items 18-26 (banner not reprinted on this page; the only printed headings are these numbered definition titles — recorded in section). TWO-COLUMN layout, continuous numbering read column 1 then column 2. Book typo preserved: def 23 'The large the value χ²' ('large' for 'larger', as printed). Def 19 formula/range separator is a semicolon (zoom-verified): 'C = √(χ²/(χ²+n)); 0 ≤ C ≤ √((k-1)/k)'. Line ending after def 22 '...directly by using the formula' reads ambiguously at scan resolution (various zooms suggest '/', ':' or no mark); no punctuation transcribed rather than guessed. 2x2 direct formula denominator order as printed: (a+b)(b+d)(c+d)(a+c). No figures, no cut-offs. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 23 — Association (Chapter 16)
@@ -68,7 +68,7 @@ $$\chi^2 = \frac{(a + b + c + d)(ad - bc)^2}{(a + b)(b + d)(c + d)(a + c)}$$
 
 A measure of the discrepancy existing between observed and expected frequencies is supplied by the statistic $\chi^2$ ( read Chi-square ) given by
 
-$\chi^2 = \sum \left[ \frac{(f_o - f_e)^2}{f_e} \right]$. If $\chi^2 = 0$, observed and expected frequencies agree exactly, while if $\chi^2 > 0$, they do not agree exactly. The large the value $\chi^2$, the greater is the discrepancy between observed and expected frequencies.
+$\chi^2 = \sum \left[ \frac{(f_o - f_e)^2}{f_e} \right]$. If $\chi^2 = 0$, observed and expected frequencies agree exactly, while if $\chi^2 > 0$, they do not agree exactly. The larger the value $\chi^2$, the greater is the discrepancy between observed and expected frequencies.
 
 **24. Chi-square Test for Independence**
 

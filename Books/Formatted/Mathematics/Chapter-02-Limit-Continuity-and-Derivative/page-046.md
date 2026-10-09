@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0046.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13c3 (glm-vision)"
-notes: "Final page of Unit 02 — Review Exercise continuation: MCQs viii-x + long questions Q.2-10 (chapter ends; no navigation chip printed). Book typos/misprints preserved verbatim: MCQ ix option b '[0, ∞]' and option d '[0, -∞]' (square brackets both ends, as printed), MCQ x 'If f(t) = 2t³ is absolute minimum at:' (no value specified), Q.6 'Use differential to find an approximate of √65.' (for 'an approximation'), Q.9 statement ends with a comma before the intervals. MCQ ix options printed 2×2 on two lines, others side-by-side on one line (shared lines with &nbsp;&nbsp;). No figures, no edge crops."
+notes: "Final page of Unit 02 — Review Exercise continuation: MCQs viii-x + long questions Q.2-10 (chapter ends; no navigation chip printed). Book typos/misprints preserved verbatim: MCQ ix option b '[0, ∞]' and option d '[0, -∞]' (square brackets both ends, as printed), MCQ x 'If f(t) = 2t³ is absolute minimum at:' (no value specified), Q.6 'Use differential to find an approximate of √65.' (for 'an approximation'), Q.9 statement ends with a comma before the intervals. MCQ ix options printed 2×2 on two lines, others side-by-side on one line (shared lines with &nbsp;&nbsp;). No figures, no edge crops. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 46 — Unit 02: Limit, Continuity and Derivative
@@ -44,7 +44,7 @@ a. 3 &nbsp;&nbsp; b. 0 &nbsp;&nbsp; c. $-1$ &nbsp;&nbsp; d. 1
 
 5. Find $\frac{d^2y}{dx^2}$, when $x^3 + y^3 = 27$
 
-6. Use differential to find an approximate of $\sqrt{65}$.
+6. Use differential to find an approximation of $\sqrt{65}$.
 
 7. An oil storage tank in the form of circular cylinder has a height of 5 m. The radius is measured to be 8 m with a possible error of $\pm 0.25$ m. Use differentials to estimate the maximum error in the volume. Find the approximate relative error and the approximate percentage error.
 

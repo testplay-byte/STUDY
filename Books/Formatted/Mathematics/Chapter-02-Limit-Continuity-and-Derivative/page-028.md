@@ -15,7 +15,7 @@ figures_count: 1
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0028.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13b2 (glm-vision)"
-notes: "Book typos preserved verbatim: 'can be interrupted in dy' (for 'interpreted'); §2.16 opens 'When Δx = 0,' (misprint for ≠ 0); 'From fig if x is changes by an amount'. Page ends mid-sentence ('...then the') — continues on printed p.71. Scan right edge slightly crops the figure's right margin (end of the x-axis line); no text loss. No sidebar boxes."
+notes: "Book typos preserved verbatim: 'can be interrupted in dy' (for 'interpreted'); §2.16 opens 'When Δx = 0,' (misprint for ≠ 0); 'From fig if x is changes by an amount'. Page ends mid-sentence ('...then the') — continues on printed p.71. Scan right edge slightly crops the figure's right margin (end of the x-axis line); no text loss. No sidebar boxes. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 28 — Unit 02: Limit, Continuity and Derivative
@@ -30,7 +30,7 @@ Since the slope of a tangent to graph is
 
 $$m_{\tan} = \frac{rise}{run} = f'(x) = \frac{f'(x)\Delta x}{\Delta x}, \Delta x \neq 0$$
 
-It follows that the rise of the tangent line can be interrupted in $dy$
+It follows that the rise of the tangent line can be interpreted in $dy$
 
 $$\Delta y \cong dy$$
 

@@ -15,7 +15,7 @@ figures_count: 2
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0011.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13a2 (glm-vision)"
-notes: "Key Facts box (red sidebar, graphs (a)(b)(c) INSIDE the box at its bottom) transcribed as blockquote with [Figure F1] at its position in the box. Book numbering quirk preserved as printed: heading '2.5.2 Rate of Change' appears BEFORE '2.4 Instantaneous Velocity' (verified by zoomed crop; follows 2.3.1 on p.51). Book grammar preserved verbatim: Remark ends '...at three points. but is not tangent to the graph.'; 'in-a certain length of time'; '60 mil/hr'; 'the bus slow down'. Scan's far-left margin shows a thin gutter-bleed sliver of the facing page (fragments 'ne/The/2/at/a)/10') — scan artifact, not transcribed; no words of this page's own text are cut."
+notes: "Key Facts box (red sidebar, graphs (a)(b)(c) INSIDE the box at its bottom) transcribed as blockquote with [Figure F1] at its position in the box. Book numbering quirk preserved as printed: heading '2.5.2 Rate of Change' appears BEFORE '2.4 Instantaneous Velocity' (verified by zoomed crop; follows 2.3.1 on p.51). Book grammar preserved verbatim: Remark ends '...at three points. but is not tangent to the graph.'; 'in-a certain length of time'; '60 mil/hr'; 'the bus slow down'. Scan's far-left margin shows a thin gutter-bleed sliver of the facing page (fragments 'ne/The/2/at/a)/10') — scan artifact, not transcribed; no words of this page's own text are cut. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 11 — Unit 02: Limit, Continuity and Derivative
@@ -39,7 +39,7 @@ notes: "Key Facts box (red sidebar, graphs (a)(b)(c) INSIDE the box at its botto
 
 The slope $\frac{\Delta y}{\Delta x}$ of a secant through $(a, f(a))$ is also called the **average rate of change** of $f$ at $a$. The slope $m_{tan} = \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x}$ is said to be the **instantaneous rate of change** of the functions at $a$, if $m_{tan} = \frac{1}{10}$ at a point $(a, f(a))$, we would not expect the values of $f$ to change drastically for $x$ values near $a$.
 
-**Remark:** The line $L$ is tangent at $P$ but intersects the graph of $f$ at three points. but is not tangent to the graph.
+**Remark:** The line $L$ is tangent at $P$ but intersects the graph of $f$ at three points. But is not tangent to the graph.
 
 [Figure F2]
 

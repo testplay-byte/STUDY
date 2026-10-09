@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-16-Association/0026.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-27b (glm-vision)"
-notes: "Offset check: printed p.310 = image 26 + 284 (header folio, top-left; even page; running head 'Basic Statistics Part-II ( Federal Board )' top-right = furniture). Continuation of the MULTIPLE – CHOICE QUESTIONS block (no banner reprinted → section: null), MCQs 29-48; Q.48 last and complete on page. Book typos preserved (pixel-verified): Q.29(a) 'great than zero' (for 'greater'); Q.39 stem 'The eyes colour of 100 women is:'; Q.48 option (d) printed 'αA'; Q.46 printed 'd.f = 6' (no dot after f); Q.41 'r x c' with letter x. Q.40 and Q.47 options printed as 2x2 grids — transcribed two per line in printed order. Minor ink specks/smudges near Q.32-Q.39 are print artifacts, not transcribed. Ragged gaps between options normalized to single spaces. No figures, no cut-offs."
+notes: "Offset check: printed p.310 = image 26 + 284 (header folio, top-left; even page; running head 'Basic Statistics Part-II ( Federal Board )' top-right = furniture). Continuation of the MULTIPLE – CHOICE QUESTIONS block (no banner reprinted → section: null), MCQs 29-48; Q.48 last and complete on page. Book typos preserved (pixel-verified): Q.29(a) 'great than zero' (for 'greater'); Q.39 stem 'The eyes colour of 100 women is:'; Q.48 option (d) printed 'αA'; Q.46 printed 'd.f = 6' (no dot after f); Q.41 'r x c' with letter x. Q.40 and Q.47 options printed as 2x2 grids — transcribed two per line in printed order. Minor ink specks/smudges near Q.32-Q.39 are print artifacts, not transcribed. Ragged gaps between options normalized to single spaces. No figures, no cut-offs. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 26 — Association (Chapter 16)
@@ -23,7 +23,7 @@ notes: "Offset check: printed p.310 = image 26 + 284 (header folio, top-left; ev
 > 📄 Original scan: [0026.jpg](../../../Raw/Statistics/Chapter-16-Association/0026.jpg) · printed page 310
 
 **29.** The value of Chi-square cannot be:
-(a) great than zero (b) equal to zero (c) less than zero (d) equal to 1
+(a) greater than zero (b) equal to zero (c) less than zero (d) equal to 1
 
 **30.** Which of the following value is impossible for a Chi-square statistic?
 (a) greater than zero (b) less than zero (c) equal to zero (d) not equal to zero
@@ -52,7 +52,7 @@ notes: "Offset check: printed p.310 = image 26 + 284 (header folio, top-left; ev
 **38.** A characteristic which varies in quality from one individual to another is called:
 (a) variable (b) constant (c) attribute (d) statistic
 
-**39.** The eyes colour of 100 women is:
+**39.** The eye colour of 100 women is:
 (a) variable (b) constant (c) attribute (d) discrete
 
 **40.** The degrees of freedom for $\chi^2$ are $(r - 1)(c - 1)$ for a contingency table with r-rows and c-columns. So for a $2 \times 2$ contingency table there are:

@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/0031.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S3e (glm-vision)"
-notes: "Offset check: printed p.91 = image 31 + 60 (header folio, top-right). NEW printed heading 'EXERCISES' begins here (numbered exercise block, single full-width column, Q.1-Q.7). Book typos preserved verbatim: Q.4 prints 'suming equal probabilities' (for assuming); Q.2 prints 'urdu' lowercase; Q.6 prints 'If X be the number of defectives'. Q.6 has no printed answer for sub-item (iv) (only Ans. (i) table plus '(ii) 14/33 (iii) 14/33'). Distribution tables print row labels spaced as 'p( x )' / 'p( y )'. Q.1 prints X in quote marks ('X'). Page ends complete after the Q.7 answer table."
+notes: "Offset check: printed p.91 = image 31 + 60 (header folio, top-right). NEW printed heading 'EXERCISES' begins here (numbered exercise block, single full-width column, Q.1-Q.7). Book typos preserved verbatim: Q.4 prints 'suming equal probabilities' (for assuming); Q.2 prints 'urdu' lowercase; Q.6 prints 'If X be the number of defectives'. Q.6 has no printed answer for sub-item (iv) (only Ans. (i) table plus '(ii) 14/33 (iii) 14/33'). Distribution tables print row labels spaced as 'p( x )' / 'p( y )'. Q.1 prints X in quote marks ('X'). Page ends complete after the Q.7 answer table. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 31 — Random Variable and Probability Distributions (Chapter 10)
@@ -32,7 +32,7 @@ notes: "Offset check: printed p.91 = image 31 + 60 (header folio, top-right). NE
 | :--- | :--- | :--- | :--- | :--- |
 | p( x ) | 1/56 | 15/56 | 30/56 | 10/56 |
 
-**Q.2** There are seven candidates for three positions of typist. Four of the candidates know urdu typing, while the other three do not know it. If the three candidates are selected at random, find the probability distribution of the number of persons knowing urdu typing among those selected.
+**Q.2** There are seven candidates for three positions of typist. Four of the candidates know Urdu typing, while the other three do not know it. If the three candidates are selected at random, find the probability distribution of the number of persons knowing Urdu typing among those selected.
 
 **Ans.**
 
@@ -48,7 +48,7 @@ notes: "Offset check: printed p.91 = image 31 + 60 (header folio, top-right). NE
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | p( x ) | 1/16 | 4/16 | 6/16 | 4/16 | 1/16 |
 
-**Q.4** Find the probability distribution of the number of boys in families with three children, suming equal probabilities for boys and girls.
+**Q.4** Find the probability distribution of the number of boys in families with three children, asassuming equal probabilities for boys and girls.
 
 **Ans.**
 

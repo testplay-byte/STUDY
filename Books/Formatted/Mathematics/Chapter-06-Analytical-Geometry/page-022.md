@@ -15,7 +15,7 @@ figures_count: 2
 source_image: ../../../Raw/Mathematics/Unit-06-Analytical-Geometry/0022.jpg
 converted_at: "2026-09-20"
 converted_by: "agent-16k (glm-vision)"
-notes: "Review Exercise continuation (Q.2-Q.11); book typo Q.5 'and ,hence the area' preserved verbatim (comma before 'hence', zoom-verified twice)"
+notes: "Review Exercise continuation (Q.2-Q.11); book typo Q.5 'and ,hence the area' preserved verbatim (comma before 'hence', zoom-verified twice) | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 22 — Unit 06: Analytical Geometry
@@ -30,7 +30,7 @@ notes: "Review Exercise continuation (Q.2-Q.11); book typo Q.5 'and ,hence the a
 4. Find a relation between $x$ and $y$ if the points A$(x, y)$, B$(-4, 6)$ and C$(-2, 3)$ are collinear.
 
 5. The points A $(0, 3)$, B $(a, 0)$ and C $(0, -3)$ are the vertices of a triangle ABC right angled at B.
-   Find the values of $a$ and ,hence the area of $\Delta$ABC.
+   Find the values of $a$ and, hence the area of $\Delta$ABC.
 
 6. A circle has a centre at point P(5, 3) and radius r = 5. This circle intersects the y-axis at one intercept and the x-axis at two intercepts. What is the area of the triangle formed by these three intercepts?
 

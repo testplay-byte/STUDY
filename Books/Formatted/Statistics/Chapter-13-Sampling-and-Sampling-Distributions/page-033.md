@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/0033.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S6e (glm-vision)"
-notes: "Offset check: printed p.187 = image 33 + 154 (header folio, top-right). Continuation of the SHORT DEFINITIONS list (items 34-45) from printed p.186; ends complete with item 45 (no item 46 on this page). Book misprint preserved verbatim: 'in a.sample.' (dot instead of space, item 34). Book grammar preserved verbatim: 'A combination is collection of a group of objects...' (item 36), 'All types of error ... is called non-sampling error' (item 38), 'Bias means a systematic component of error which deprives...' (item 39). In item 43 the italic 'or' is printed on its own line."
+notes: "Offset check: printed p.187 = image 33 + 154 (header folio, top-right). Continuation of the SHORT DEFINITIONS list (items 34-45) from printed p.186; ends complete with item 45 (no item 46 on this page). Book misprint preserved verbatim: 'in a.sample.' (dot instead of space, item 34). Book grammar preserved verbatim: 'A combination is collection of a group of objects...' (item 36), 'All types of error ... is called non-sampling error' (item 38), 'Bias means a systematic component of error which deprives...' (item 39). In item 43 the italic 'or' is printed on its own line. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 33 — Sampling and Sampling Distributions (Chapter 13)
@@ -26,7 +26,7 @@ notes: "Offset check: printed p.187 = image 33 + 154 (header folio, top-right). 
 
 Sampling without replacement is performed when an object is not replaced in the population after it has been selected. *or*
 
-Sampling is said to be without replacement when we draw a sampling unit from a population and do not return it to the population before the next unit is drawn. In sampling without replacement an element cannot be chosen more than once in a.sample.
+Sampling is said to be without replacement when we draw a sampling unit from a population and do not return it to the population before the next unit is drawn. In sampling without replacement an element cannot be chosen more than once in a sample.
 
 **35. Permutation**
 
@@ -36,7 +36,7 @@ A permutation is an ordered arrangement of objects.
 
 **36. Combination**
 
-A combination is collection of a group of objects without regard to order. *or*
+A combination is a collection of a group of objects without regard to order. *or*
 
 A combination is an arrangement of objects without regard to order.
 

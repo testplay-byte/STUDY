@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-10-Numerical-Methods/0006.jpg
 converted_at: "2026-09-20"
 converted_by: "coordinator-w5 (glm-vision)"
-notes: "BOOK MISPRINTS preserved (zoom-verified): 'f(x_2) is negective' (negative); x_4 numerator prints stale (0.4+0.5)/2 instead of (0.5+0.45)/2 (result 0.475 is correct). Bisection Method advantages/limitations box -> blockquote; MATLAB code box -> fenced code block."
+notes: "BOOK MISPRINTS preserved (zoom-verified): 'f(x_2) is negective' (negative); x_4 numerator prints stale (0.4+0.5)/2 instead of (0.5+0.45)/2 (result 0.475 is correct). Bisection Method advantages/limitations box -> blockquote; MATLAB code box -> fenced code block. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 6 — Unit 10: Numerical Methods
@@ -46,7 +46,7 @@ $$f(x_2)=\sin(0.5)-5(0.5)+2=-0.0206$$
 
 Since,
 
-$f(x_0)f(x_2)<0$, ($f(x_0)$ is positive and $f(x_2)$ is negective)
+$f(x_0)f(x_2)<0$, ($f(x_0)$ is positive and $f(x_2)$ is negative)
 
 $$x_3=\frac{x_0+x_2}{2}=\frac{0.4+0.5}{2}=0.45$$
 

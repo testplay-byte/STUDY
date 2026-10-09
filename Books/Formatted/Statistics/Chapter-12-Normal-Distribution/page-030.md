@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-12-Normal-Distribution/0030.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S5g (glm-vision)"
-notes: "Offset check: printed p.152 = image 30 + 122 (header folio, top-left; even page). Continuation of the EXERCISES block: Q.11-Q.21, single column; page ends complete at Q.21 Ans. Book typos/oddities preserved verbatim: Q.13 'is normally distribution with mean of 18 months' ('distribution' for 'distributed', as printed); Q.15 stray printed period after item (iv) 'P( at most 21 ) .(v)'; Q.20 item (vi) misprinted as '( i) at least 227 heads' (Ans correctly keyed '(vi) 0.0040'); Q.16 Ans values printed without space after (iii) and (iv) as '(iii)0.7734' '(iv)0.4013'."
+notes: "Offset check: printed p.152 = image 30 + 122 (header folio, top-left; even page). Continuation of the EXERCISES block: Q.11-Q.21, single column; page ends complete at Q.21 Ans. Book typos/oddities preserved verbatim: Q.13 'is normally distribution with mean of 18 months' ('distribution' for 'distributed', as printed); Q.15 stray printed period after item (iv) 'P( at most 21 ) .(v)'; Q.20 item (vi) misprinted as '( i) at least 227 heads' (Ans correctly keyed '(vi) 0.0040'); Q.16 Ans values printed without space after (iii) and (iv) as '(iii)0.7734' '(iv)0.4013'. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 30 — Normal Distribution (Chapter 12)
@@ -30,7 +30,7 @@ notes: "Offset check: printed p.152 = image 30 + 122 (header folio, top-left; ev
 
 **Ans.** (i) 30.85%    (ii) 69.15%
 
-**Q.13** A large construction firm estimates that the time required to complete a college complex is normally distribution with mean of 18 months and standard deviation of 2 months. What is the probability that it will take (i) at least one year and five months to complete it ? (ii) at most one year and eight months to complete it? (iii) between one year four months and one year ten months?
+**Q.13** A large construction firm estimates that the time required to complete a college complex is normally distributed with mean of 18 months and standard deviation of 2 months. What is the probability that it will take (i) at least one year and five months to complete it ? (ii) at most one year and eight months to complete it? (iii) between one year four months and one year ten months?
 
 **Ans.** (i) 0.6915    (ii) 0.8413    (iii) 0.8185
 
@@ -42,7 +42,7 @@ notes: "Offset check: printed p.152 = image 30 + 122 (header folio, top-left; ev
 
 (i) P( between 11 and 21 )    (ii) P( at least 26 )    (iii) P( less than or equal to 6 )
 
-(iv) P( at most 21 ) .(v) P( less than 10 or more than 18 )
+(iv) P( at most 21 ) (v) P( less than 10 or more than 18 )
 
 **Ans.** (i) 0.6826.    (ii) 0.0228    (iii) 0.0228    (iv) 0.8413    (v) 0.4597
 

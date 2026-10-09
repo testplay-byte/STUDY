@@ -15,7 +15,7 @@ figures_count: 6
 source_image: ../../../Raw/Mathematics/Unit-07-Conic-Section/0015.jpg
 converted_at: "2026-09-20"
 converted_by: "agent-16c (glm-vision)"
-notes: "Book misprint preserved: '...is parallel to x-axis then equation of parabola then:' (doubled 'then'). Example 11 solution ends mid-derivation, continues on next page. Definitions Focal Distance / Latus rectum continue from previous page's Elements list."
+notes: "Book misprint preserved: '...is parallel to x-axis then equation of parabola then:' (doubled 'then'). Example 11 solution ends mid-derivation, continues on next page. Definitions Focal Distance / Latus rectum continue from previous page's Elements list. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 15 — Unit 07: Conic Section
@@ -30,7 +30,7 @@ A focal chord of the parabola which is parallel to the directrix of a parabola i
 
 ### 7.7.3 Standard Equation of Parabola
 
-When the vertex is at any arbitrary point $\text{V}(h, k)$ and the axis of symmetry is parallel to x-axis then equation of parabola then:
+When the vertex is at any arbitrary point $\text{V}(h, k)$ and the axis of symmetry is parallel to x-axis then equation of parabola:
 $$(y - k)^2 = 4a(x - h)$$
 or $(y - k)^2 = -4a(x - h)$
 

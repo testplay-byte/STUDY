@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-14-Statistical-Inference-Estimation/0028.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-22b (glm-vision)"
-notes: "Offset check: printed p.230 = image 28 + 202 (header folio, top-left; even page, running header is the book-title variant). MULTIPLE – CHOICE QUESTIONS continuation from p.229: Q.59-Q.73, ends complete with Q.73; no figures. Book misprints preserved verbatim: Q.65 'if the population standard deviation σ is doubles' (for 'is doubled') and '( i.e, ... )' (comma after i.e); Q.70 stem phrase 'less than or equal to or more than 30' as printed; Q.73 option (d) printed '(d).2.145' (stray period, no space). Q.63 contains the negative value '– 24.3 cents' as printed. Q.66/67 options printed one per line, with option (d) ending in a period. Formula options preserve printed capital S vs lowercase s distinction (Q.70-72)."
+notes: "Offset check: printed p.230 = image 28 + 202 (header folio, top-left; even page, running header is the book-title variant). MULTIPLE – CHOICE QUESTIONS continuation from p.229: Q.59-Q.73, ends complete with Q.73; no figures. Book misprints preserved verbatim: Q.65 'if the population standard deviation σ is doubles' (for 'is doubled') and '( i.e, ... )' (comma after i.e); Q.70 stem phrase 'less than or equal to or more than 30' as printed; Q.73 option (d) printed '(d).2.145' (stray period, no space). Q.63 contains the negative value '– 24.3 cents' as printed. Q.66/67 options printed one per line, with option (d) ending in a period. Formula options preserve printed capital S vs lowercase s distinction (Q.70-72). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 28 — Statistical Inference Estimation (Chapter 14)
@@ -40,7 +40,7 @@ notes: "Offset check: printed p.230 = image 28 + 202 (header folio, top-left; ev
 **64.** A 95 % confidence interval for population proportion p is 32.4 % to 47.6 %, the value of sample proportion $\hat{p}$ is:
 (a) 40 %  (b) 32.4 %  (c) 47.6 %  (d) 80 %
 
-**65.** If the population standard deviation $\sigma$ is doubles, the width of the confidence interval for the population mean $\mu$ ( i.e, the upper limit of the confidence interval – lower limit of the confidence interval ) will be:
+**65.** If the population standard deviation $\sigma$ is doubled, the width of the confidence interval for the population mean $\mu$ ( i.e., the upper limit of the confidence interval – lower limit of the confidence interval ) will be:
 (a) divided by 2  (b) multiplied by $\sqrt{2}$  (c) doubled  (d) decrease
 
 **66.** A confidence interval will be widened if:

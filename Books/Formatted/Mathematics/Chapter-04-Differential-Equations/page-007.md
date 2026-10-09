@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-04-Differential-Equations/0007.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13f (glm-vision)"
-notes: "Book grammar typo preserved in Example 5: 'Is the function y = xe^x is a solution...' (doubled 'is' as printed)."
+notes: "Book grammar typo preserved in Example 5: 'Is the function y = xe^x is a solution...' (doubled 'is' as printed). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 7 — Unit 04: Differential Equations
@@ -64,7 +64,7 @@ Verify that $y = \frac{x^4}{16}$ is a solution of the differential equation $\fr
 
 ### Example 5:
 
-Is the function $y = xe^x$ is a solution of the differential equation $y'' - 2y' + y = 0$ on the interval $(-\infty, +\infty)$?
+Is the function $y = xe^x$ a solution of the differential equation $y'' - 2y' + y = 0$ on the interval $(-\infty, +\infty)$?
 
 **Solution:** Given solution is:
 

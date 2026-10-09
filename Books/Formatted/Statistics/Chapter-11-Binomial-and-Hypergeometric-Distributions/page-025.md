@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-11-Binomial-and-Hypergeometric-Distributions/0025.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S4d (glm-vision)"
-notes: "Offset check: printed p.119 = image 25 + 94 (header folio, top-right; odd page). New 'EXERCISES' heading printed at top of page; exercise numbering restarts at Q.1 (single column, Q.1–Q.11, page ends complete). Book misprints/oddities preserved verbatim: Q.7 'when ever it plays' (two words); Q.9 '(ii) at least one recover' (as printed); Q.2 Ans. '(iii)131/243' with no space after (iii); Q.10 Ans. '(i) 992/3125, (ii) 2072/3125.' with comma and trailing period as printed. All Ans. fraction values checked against the binomial formula. No figures on this page."
+notes: "Offset check: printed p.119 = image 25 + 94 (header folio, top-right; odd page). New 'EXERCISES' heading printed at top of page; exercise numbering restarts at Q.1 (single column, Q.1–Q.11, page ends complete). Book misprints/oddities preserved verbatim: Q.7 'when ever it plays' (two words); Q.9 '(ii) at least one recover' (as printed); Q.2 Ans. '(iii)131/243' with no space after (iii); Q.10 Ans. '(i) 992/3125, (ii) 2072/3125.' with comma and trailing period as printed. All Ans. fraction values checked against the binomial formula. No figures on this page. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 25 — Binomial and Hypergeometric Distributions (Chapter 11)
@@ -32,7 +32,7 @@ notes: "Offset check: printed p.119 = image 25 + 94 (header folio, top-right; od
 
 (i) A will win 3 games　　(ii) A will win at least 3 games　　(iii) A will win at most 3 games.
 
-**Ans.** (i) 80/243　　(ii) 192/243　　(iii)131/243
+**Ans.** (i) 80/243　　(ii) 192/243　　(iii) 131/243
 
 **Q.3** A fair coin is tossed four times. What is the probability of getting:
 
@@ -54,7 +54,7 @@ notes: "Offset check: printed p.119 = image 25 + 94 (header folio, top-right; od
 
 **Ans.** (i) 640/3125　　(ii) 181/3125
 
-**Q.7** Team A has probability 2/3 of winning when ever it plays. If A plays 4 games find the probability that A wins: (i) exactly 2 games　　(ii) at least one game　　(iii) more than half of the games.
+**Q.7** Team A has probability 2/3 of winning whenever it plays. If A plays 4 games find the probability that A wins: (i) exactly 2 games　　(ii) at least one game　　(iii) more than half of the games.
 
 **Ans.** (i) 8/27　　(ii) 80/81　　(iii) 16/27
 

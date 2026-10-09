@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-16-Association/0022.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-27b (glm-vision)"
-notes: "Offset check: printed p.306 = image 22 + 284 (header folio, top-left; even page; running head 'Basic Statistics Part-II ( Federal Board )' top-right = furniture). End-of-chapter 'SHORT DEFINITIONS' review page (unnumbered centered underlined heading recorded in section; 17 numbered definitions). TWO-COLUMN layout — continuous numbering 1-17 read column 1 then column 2. Book typos preserved: def 12 'The classes A, α, B are β are classes of the order one' ('are' for 'and/,' as printed); def 13 'other there will be inconsistency' (for 'otherwise', as printed); def 16 'more than two attributes categories'; def 1 '...is of qualitative nature, is called an attribute' (grammar as printed). Total printed as capital N in defs 4/6/7 (pixel-verified). Stray ink smudge on page below/right of the final period after 'contingency table.' — print artifact, not transcribed. No figures, no cut-offs."
+notes: "Offset check: printed p.306 = image 22 + 284 (header folio, top-left; even page; running head 'Basic Statistics Part-II ( Federal Board )' top-right = furniture). End-of-chapter 'SHORT DEFINITIONS' review page (unnumbered centered underlined heading recorded in section; 17 numbered definitions). TWO-COLUMN layout — continuous numbering 1-17 read column 1 then column 2. Book typos preserved: def 12 'The classes A, α, B are β are classes of the order one' ('are' for 'and/,' as printed); def 13 'other there will be inconsistency' (for 'otherwise', as printed); def 16 'more than two attributes categories'; def 1 '...is of qualitative nature, is called an attribute' (grammar as printed). Total printed as capital N in defs 4/6/7 (pixel-verified). Stray ink smudge on page below/right of the final period after 'contingency table.' — print artifact, not transcribed. No figures, no cut-offs. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 22 — Association (Chapter 16)
@@ -86,7 +86,7 @@ The order of the class depends upon the number of attributes going into that cla
 
 **13. Consistent and Inconsistent Data**
 
-If the class frequencies are observed in a certain sample data and all class frequencies are recorded correctly, then there will be no error in them and they will be called consistent. A simple test of consistency is that all frequencies should be positive, other there will be inconsistency in the sample data.
+If the class frequencies are observed in a certain sample data and all class frequencies are recorded correctly, then there will be no error in them and they will be called consistent. A simple test of consistency is that all frequencies should be positive, otherwise there will be inconsistency in the sample data.
 
 **14. Contrary Classes**
 
@@ -98,7 +98,7 @@ The objects or individuals can be divided into two distinct and mutually exclusi
 
 **16. Multinomial Population**
 
-If each observation of a population is assigned to one and only one of more than two attributes categories, the population is called a multinomial population.
+If each observation of a population is assigned to one and only one of more than two attribute categories, the population is called a multinomial population.
 
 **17. Contingency Table**
 

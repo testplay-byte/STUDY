@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0016.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13a3 (glm-vision)"
-notes: "No printed section heading on this page — section in force carried from p.57 (2.6 / 2.6.1). Right column prints three dotted summary boxes (Derivative of constant function; two Theorems side-by-side with dotted divider; Sum and Difference Rule) — rendered as blockquotes; the two Theorems transcribed sequentially though printed side-by-side. Book typos preserved verbatim: 'differentiable function' (singular), 'equals to the sum', 'c.0x^{0-1}' (period as multiplication dot). No scan-edge crops; footer digit 58 verified."
+notes: "No printed section heading on this page — section in force carried from p.57 (2.6 / 2.6.1). Right column prints three dotted summary boxes (Derivative of constant function; two Theorems side-by-side with dotted divider; Sum and Difference Rule) — rendered as blockquotes; the two Theorems transcribed sequentially though printed side-by-side. Book typos preserved verbatim: 'differentiable function' (singular), 'equals to the sum', 'c.0x^{0-1}' (period as multiplication dot). No scan-edge crops; footer digit 58 verified. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 16 — Unit 02: Limit, Continuity and Derivative
@@ -47,11 +47,11 @@ $$\begin{aligned} \frac{d}{dx}\left[\sqrt{x}\right] &= \frac{d}{dx}\left[x^{\fra
 > $$\frac{d}{dx} [cf(x)] = cf'(x)$$
 
 > **Sum and Difference Rule:**  
-> If $f$ and $g$ are differentiable function, then
+> If $f$ and $g$ are differentiable functions, then
 >
 > $$\frac{d}{dx} [f(x) + g(x)] = f'(x) + g'(x)$$
 >
-> In words, the derivative of a sum equals to the sum of the derivatives and the derivative of difference is equal to the difference of the derivatives.
+> In words, the derivative of a sum equals the sum of the derivatives and the derivative of difference is equal to the difference of the derivatives.
 
 **Example 16:**
 

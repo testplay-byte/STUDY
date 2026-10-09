@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Back-Matter/0022.jpg
 converted_at: "2026-09-20"
 converted_by: "coordinator-w5 (glm-vision)"
-notes: "Glossary terms E-N. BOOK TYPO preserved: Homogeneous function entry prints 'nomogenous function'."
+notes: "Glossary terms E-N. BOOK TYPO preserved: Homogeneous function entry prints 'nomogenous function'. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 22 — Glossary
@@ -36,7 +36,7 @@ notes: "Glossary terms E-N. BOOK TYPO preserved: Homogeneous function entry prin
 
 **Homogeneous differential equations:** A differential equation of the form $M(x,y)dx + N(x, y)dy = 0$ is said to be homogeneous if both $M$ and $N$ are homogeneous functions of the same degree.
 
-**Homogeneous function:** If a function $f$ has the property that $f(tx, ty) = t^n f(x,y)$ for some real number $n$, then $f$ is said to be a nomogenous function of degree $n$.
+**Homogeneous function:** If a function $f$ has the property that $f(tx, ty) = t^n f(x,y)$ for some real number $n$, then $f$ is said to be a homogeneous function of degree $n$.
 
 **Homogeneous linear equation:** An equation of the form $ax + by = 0$, is called a homogeneous linear equation in two variables.
 

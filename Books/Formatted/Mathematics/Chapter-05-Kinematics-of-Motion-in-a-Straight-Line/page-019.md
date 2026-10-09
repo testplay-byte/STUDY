@@ -15,7 +15,7 @@ figures_count: 2
 source_image: ../../../Raw/Mathematics/Unit-05-Kinematics-of-Motion-in-a-Straight-Line/0019.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13h2 (glm-vision)"
-notes: "Review Exercise continuation: MCQ (ix) ends the Q.1 options (started p.156), then long questions Q.2 (car distance-time graph) and Q.3 (athlete velocity-time graph); exercise id recorded 'Review Exercise' (unnumbered banner, Ch-02 precedent). Book typos preserved verbatim: (iii) 'What is speed of car', (v) 'What is average speed of the car for whole journey?', (i) 'acceleration of athlete during the first 4 second', (iii) 'in final stage of the race', stem 'note that there are two slant lines AB and CD' phrasing. Graph axis labels exactly as printed: 'Distance (m)' / 'Time(s)' / 'Velocity(m/s)'. No sidebar boxes; dark gutter strip far left (facing-page bleed), no content loss."
+notes: "Review Exercise continuation: MCQ (ix) ends the Q.1 options (started p.156), then long questions Q.2 (car distance-time graph) and Q.3 (athlete velocity-time graph); exercise id recorded 'Review Exercise' (unnumbered banner, Ch-02 precedent). Book typos preserved verbatim: (iii) 'What is speed of car', (v) 'What is average speed of the car for whole journey?', (i) 'acceleration of athlete during the first 4 second', (iii) 'in final stage of the race', stem 'note that there are two slant lines AB and CD' phrasing. Graph axis labels exactly as printed: 'Distance (m)' / 'Time(s)' / 'Velocity(m/s)'. No sidebar boxes; dark gutter strip far left (facing-page bleed), no content loss. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 19 — Unit 05: Kinematics of Motion in a Straight Line
@@ -35,9 +35,9 @@ notes: "Review Exercise continuation: MCQ (ix) ends the Q.1 options (started p.1
 
 (i) Calculate the speed of car during the first 10 seconds.
 (ii) For how long did the car stop?
-(iii) What is speed of car on its journey from $C$ to $D$?
+(iii) What is the speed of the car on its journey from $C$ to $D$?
 (iv) On which part of the journey did the car travel faster?
-(v) What is average speed of the car for whole journey?
+(v) What is the average speed of the car for the whole journey?
 (vi) What is the average speed of the car for the time it was moving?
 
 3. The graph below shows how the speed of an athlete varies during a race.

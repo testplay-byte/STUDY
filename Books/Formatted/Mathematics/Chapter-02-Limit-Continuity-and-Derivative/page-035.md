@@ -15,7 +15,7 @@ figures_count: 1
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0035.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13c (glm-vision)"
-notes: "Book quirks preserved verbatim: Definition i. prints 'if f(x) ≤ f(c₁) but every x' (for-item i; ii. also uses f(c₁)); 'Result: From fig, we suggest if c is...' (garbled wording as printed); Critical-values box prints 'a number in c in its domain'; 'doesnot' printed as one word; part c. ends 'the any critical values are 0 and 2'; Example 45 items printed in order a., c., b."
+notes: "Book quirks preserved verbatim: Definition i. prints 'if f(x) ≤ f(c₁) but every x' (for-item i; ii. also uses f(c₁)); 'Result: From fig, we suggest if c is...' (garbled wording as printed); Critical-values box prints 'a number in c in its domain'; 'doesnot' printed as one word; part c. ends 'the any critical values are 0 and 2'; Example 45 items printed in order a., c., b. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 35 — Unit 02: Limit, Continuity and Derivative
@@ -32,7 +32,7 @@ ii. A number $f(c_1)$ is a **Relative Minimum** of a function $f$ if $f(x) \geq 
 
 [Figure F1]
 
-> **Critical values:** A critical value of a function $f$ is a number in $c$ in its domain for which $f'(c) = 0$ or $f'(c)$ does not exist.
+> **Critical values:** A critical value of a function $f$ is a number $c$ in its domain for which $f'(c) = 0$ or $f'(c)$ does not exist.
 
 **Example 45:** Find the critical values of
 
@@ -56,7 +56,7 @@ $f'(x) = \frac{2}{3}(x+4)^{\frac{-1}{3}}$
 
 $f'(x) = \frac{2}{3(x+4)^{\frac{1}{3}}}$
 
-We observe that $f'(x)$ doesnot exist, when $x = -4$ since $-4$ is in the domain of $f$. We conclude it is a critical value.
+We observe that $f'(x)$ does not exist, when $x = -4$ since $-4$ is in the domain of $f$. We conclude it is a critical value.
 
 c. $f(x) = \frac{x^2}{x-1}$
 

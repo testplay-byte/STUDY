@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-04-Differential-Equations/0018.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13f2 (glm-vision)"
-notes: "Continuation of Example 16 (from p.136) — no printed section heading; §4.7 in force. Book typos preserved: 'Integrating both sides, se have:' ('se' for 'we') and 'Which is velocity of the ball after 1 second.' (no 'the'). Example 16 prints v = 9.8 × 2.02 = 19.8 m/s (exactly 19.796, rounded as printed). Ends with 'Check Point' sidebar box → blockquote."
+notes: "Continuation of Example 16 (from p.136) — no printed section heading; §4.7 in force. Book typos preserved: 'Integrating both sides, se have:' ('se' for 'we') and 'Which is velocity of the ball after 1 second.' (no 'the'). Example 16 prints v = 9.8 × 2.02 = 19.8 m/s (exactly 19.796, rounded as printed). Ends with 'Check Point' sidebar box → blockquote. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 18 — Unit 04: Differential Equations
@@ -34,7 +34,7 @@ Substituting the values,
 
 $$v = 9.8 \times 1 = 9.8m/s$$
 
-Which is velocity of the ball after 1 second.
+Which is the velocity of the ball after 1 second.
 
 Now from (i)
 
@@ -42,7 +42,7 @@ $$\frac{dS}{dt} = gt \text{ where } S \text{ is the distance covered by the ball
 
 $$dS = gtdt$$
 
-Integrating both sides, se have:
+Integrating both sides, we have:
 
 $$S = g\frac{t^2}{2} + c_2 \text{ ......(ii)}$$
 

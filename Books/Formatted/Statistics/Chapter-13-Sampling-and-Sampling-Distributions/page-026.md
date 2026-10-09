@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-13-Sampling-and-Sampling-Distributions/0026.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S6d (glm-vision)"
-notes: "Offset check: printed p.180 = image 26 + 154 (header folio, top-left; running header is the book-title variant). Page opens mid-Solution of Example 13.19 (its distribution table, probability answers and 'Population proportion = 4/6 = 2/3' complete here); Example 13.20 starts and completes on this page. Recurring book typo preserved verbatim: 'Where X represent the number of even digits in the population.' (missing 's'). Tally cells transcribed with escaped pipes; the 1/2 tally is four strokes crossed by a diagonal slash (bundle of five) followed by three strokes (8 marks). Total rows not printed in bold on this page."
+notes: "Offset check: printed p.180 = image 26 + 154 (header folio, top-left; running header is the book-title variant). Page opens mid-Solution of Example 13.19 (its distribution table, probability answers and 'Population proportion = 4/6 = 2/3' complete here); Example 13.20 starts and completes on this page. Recurring book typo preserved verbatim: 'Where X represent the number of even digits in the population.' (missing 's'). Tally cells transcribed with escaped pipes; the 1/2 tally is four strokes crossed by a diagonal slash (bundle of five) followed by three strokes (8 marks). Total rows not printed in bold on this page. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 26 — Sampling and Sampling Distributions (Chapter 13)
@@ -67,7 +67,7 @@ $S.E(\hat{p}) = \sqrt{\sum \hat{p}^2f(\hat{p}) - [\sum \hat{p}f(\hat{p})]^2} = \
 
 Population proportion $= p = \frac{X}{N} = \frac{2}{4} = 0.5$ and $q = 1 - p = 0.5$.
 
-Where $X$ represent the number of even digits in the population.
+Where $X$ represents the number of even digits in the population.
 
 $\sqrt{\frac{pq}{n}} = \sqrt{\frac{(0.5)(0.5)}{2}} = \sqrt{0.125} = 0.3536$
 

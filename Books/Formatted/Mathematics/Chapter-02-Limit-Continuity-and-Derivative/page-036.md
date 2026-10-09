@@ -15,7 +15,7 @@ figures_count: 4
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0036.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13c (glm-vision)"
-notes: "Book typos preserved verbatim: 'We observe that f''(x) < 0 when 6(-x+3/2) > 0 or x < 3/2' (first inequality sign printed reversed); 'concave downward on (-3/2, ∞)' (bound printed with minus sign); 'The figures (a) and (b) illustrates' (grammar). Figures a. and b. are small concavity sketches, c. the interval graph, F4 the Example 46 graph (bottom right, red curve)."
+notes: "Book typos preserved verbatim: 'We observe that f''(x) < 0 when 6(-x+3/2) > 0 or x < 3/2' (first inequality sign printed reversed); 'concave downward on (-3/2, ∞)' (bound printed with minus sign); 'The figures (a) and (b) illustrates' (grammar). Figures a. and b. are small concavity sketches, c. the interval graph, F4 the Example 46 graph (bottom right, red curve). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 36 — Unit 02: Limit, Continuity and Derivative
@@ -28,7 +28,7 @@ notes: "Book typos preserved verbatim: 'We observe that f''(x) < 0 when 6(-x+3/2
 
 [Figure F1] [Figure F2]
 
-The figures (a) and (b) illustrates geometric shapes that are concave upward and concave downward, respectively. Often a shape that is concave upward is said to “hold water” whereas a shape that is concave downward “spills water”.
+The figures (a) and (b) illustrate geometric shapes that are concave upward and concave downward, respectively. Often a shape that is concave upward is said to “hold water” whereas a shape that is concave downward “spills water”.
 
 [Figure F3]
 

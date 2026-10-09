@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-10-Random-Variable-and-Probability-Distributions/0022.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S3c (glm-vision)"
-notes: "Offset check: printed p.82 = image 22 + 60 (header folio, top-left). End-of-chapter review page: underlined heading SHORT DEFINITIONS with 11 bold numbered definition items. Book typos preserved: item 3 'select a sample is such a way' (for 'in'); item 10 (ii) prints '(ii).'; item 5 (v) 'A countable number of values.' is an odd printed example, kept as printed."
+notes: "Offset check: printed p.82 = image 22 + 60 (header folio, top-left). End-of-chapter review page: underlined heading SHORT DEFINITIONS with 11 bold numbered definition items. Book typos preserved: item 3 'select a sample is such a way' (for 'in'); item 10 (ii) prints '(ii).'; item 5 (v) 'A countable number of values.' is an odd printed example, kept as printed. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 22 — Random Variable and Probability Distributions (Chapter 10)
@@ -36,7 +36,7 @@ Random numbers can be generated manually by drawing numbered cards, slips of pap
 
 **3. Application of Random Numbers**
 
-Random numbers are useful in the selection of a simple random sample from a given finite population. Whenever we want to select a sample is such a way that it is not based on our personal judgement, we can take help of the random numbers to select such a sample.
+Random numbers are useful in the selection of a simple random sample from a given finite population. Whenever we want to select a sample in such a way that it is not based on our personal judgement, we can take help of the random numbers to select such a sample.
 
 **4. Random Variable**
 

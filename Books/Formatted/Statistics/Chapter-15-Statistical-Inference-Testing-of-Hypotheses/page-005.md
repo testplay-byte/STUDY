@@ -15,7 +15,7 @@ figures_count: 1
 source_image: ../../../Raw/Statistics/Chapter-15-Statistical-Inference-Testing-of-Hypotheses/0005.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-23a (glm-vision)"
-notes: "Offset check: printed p.243 = image 5 + 238 (header folio, top-right; odd page). Page opens mid-sentence ('difference between θ0 and θ1 is very large...') — continuation of 15.14 from p.242. Book misprint preserved: unnumbered heading printed 'β ( BETTA )' (for BETA). Body line printed 'Figure-4. has two sampling distributions...' — stray period after Figure-4 in body text (caption 'Figure-4' is a separate centred line under the diagram, zoom-verified). Diagram: two overlapping curves labelled 'Under H0' / 'Under H1', areas (1-α), α, β, (1-β), axis points μ0, X̄ (critical value), μ1."
+notes: "Offset check: printed p.243 = image 5 + 238 (header folio, top-right; odd page). Page opens mid-sentence ('difference between θ0 and θ1 is very large...') — continuation of 15.14 from p.242. Book misprint preserved: unnumbered heading printed 'β ( BETTA )' (for BETA). Body line printed 'Figure-4. has two sampling distributions...' — stray period after Figure-4 in body text (caption 'Figure-4' is a separate centred line under the diagram, zoom-verified). Diagram: two overlapping curves labelled 'Under H0' / 'Under H1', areas (1-α), α, β, (1-β), axis points μ0, X̄ (critical value), μ1. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 5 — Statistical Inference Testing of Hypotheses (Chapter 15)
@@ -24,7 +24,7 @@ notes: "Offset check: printed p.243 = image 5 + 238 (header folio, top-right; od
 
 difference between $\theta_0$ and $\theta_1$ is very large then the chance is very small that $\theta_0$(wrong) will be accepted. In this case the true sampling distribution of the statistic will be quite away from the sampling distribution under $H_0$. There will be hardly any test-statistic which will fall in the acceptance region of $H_0$. When the true distribution of the test-statistic overlaps the acceptance region of $H_0$, then $H_0$ is accepted though $H_0$ is false. If the difference between $\theta_0$ and $\theta_1$ is small, then there is a high chance of accepting $H_0$. This action will be an error of Type II.
 
-## β ( BETTA )
+## β ( BETA )
 
 The probability of making *Type II error* is denoted by β. Type II error is committed when $H_0$ is accepted while $H_1$ is true. The value of β can be calculated only when we happen to know the true value of the population parameter being tested.
 
@@ -34,7 +34,7 @@ Suppose we have to test $H_0$: $\mu = \mu_0$ against the alternative $H_1$: $\mu
 
 [Figure F1]
 
-Figure-4. has two sampling distributions one is on the left side and the other is on the right side. When the null hypothesis $H_0$: $\mu = \mu_0$ is being tested, there are the following four possibilities.
+Figure-4 has two sampling distributions one is on the left side and the other is on the right side. When the null hypothesis $H_0$: $\mu = \mu_0$ is being tested, there are the following four possibilities.
 
 (i) $H_0$ is true and $\bar{X}$ falls in the area marked $(1 - \alpha)$ in the Figure-4. The hypothesis $H_0$ is accepted and this is called correct decision. Probability of this correct decision is $(1 - \alpha)$. We may or may not make this decision.
 

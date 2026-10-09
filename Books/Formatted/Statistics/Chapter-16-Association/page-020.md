@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-16-Association/0020.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-27b (glm-vision)"
-notes: "Offset check: printed p.304 = image 20 + 284 (header folio, top-left; even page; running head 'Basic Statistics Part-II ( Federal Board )' top-right = furniture). Two worked examples (16.17 complete + 16.18 complete with 'Ans:'); no printed section headings (16.17/16.18 are example numbers, not sections) → section: null. Book quirk preserved: 'between students midterm averages' printed without apostrophe; interpretation prints 'final-examination score' hyphenated. Example 16.18 table has a two-level spanning header ('Ranks' over the two rank columns) — GFM flattening keeps both header rows and all 6 columns. All rank/d² arithmetic cross-checked against data (consistent; Σd² = 20 and 8 as printed). No figures, no cut-offs."
+notes: "Offset check: printed p.304 = image 20 + 284 (header folio, top-left; even page; running head 'Basic Statistics Part-II ( Federal Board )' top-right = furniture). Two worked examples (16.17 complete + 16.18 complete with 'Ans:'); no printed section headings (16.17/16.18 are example numbers, not sections) → section: null. Book quirk preserved: 'between students midterm averages' printed without apostrophe; interpretation prints 'final-examination score' hyphenated. Example 16.18 table has a two-level spanning header ('Ranks' over the two rank columns) — GFM flattening keeps both header rows and all 6 columns. All rank/d² arithmetic cross-checked against data (consistent; Σd² = 20 and 8 as printed). No figures, no cut-offs. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 20 — Association (Chapter 16)
@@ -24,7 +24,7 @@ notes: "Offset check: printed p.304 = image 20 + 284 (header folio, top-left; ev
 
 **Example 16.17.**
 
-A Statistics instructor wants to know whether there is a correlation between students midterm averages and their final examination scores. The instructor takes a random sample of nine students from previous Statistics courses and obtains the following data:
+A Statistics instructor wants to know whether there is a correlation between students' midterm averages and their final examination scores. The instructor takes a random sample of nine students from previous Statistics courses and obtains the following data:
 
 | Midterm average X | 72 | 96 | 86 | 77 | 67 | 92 | 90 | 74 | 60 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |

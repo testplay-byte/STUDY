@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-14-Statistical-Inference-Estimation/0026.jpg
 converted_at: "2026-10-06"
 converted_by: "agent-22b (glm-vision)"
-notes: "Offset check: printed p.228 = image 26 + 202 (header folio, top-left; even page, running header is the book-title variant). MULTIPLE – CHOICE QUESTIONS continuation from p.227: Q.16-Q.37, all printed with numbers (no gaps), ends complete with Q.37; no figures. Book wording preserved verbatim: Q.36 option (d) printed 'both (a) or (b)' (expected 'and'). Q.29 printed as ∑X_i/n for i = 1, 2, 3, ..., n (transcribed as LaTeX)."
+notes: "Offset check: printed p.228 = image 26 + 202 (header folio, top-left; even page, running header is the book-title variant). MULTIPLE – CHOICE QUESTIONS continuation from p.227: Q.16-Q.37, all printed with numbers (no gaps), ends complete with Q.37; no figures. Book wording preserved verbatim: Q.36 option (d) printed 'both (a) or (b)' (expected 'and'). Q.29 printed as ∑X_i/n for i = 1, 2, 3, ..., n (transcribed as LaTeX). | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 26 — Statistical Inference Estimation (Chapter 14)
@@ -85,7 +85,7 @@ notes: "Offset check: printed p.228 = image 26 + 202 (header folio, top-left; ev
 (a) bias  (b) sampling error  (c) error of estimation  (d) standard error
 
 **36.** Bias of an estimator can be:
-(a) negative  (b) positive  (c) zero  (d) both (a) or (b)
+(a) negative  (b) positive  (c) zero  (d) both (a) and (b)
 
 **37.** If $\hat{\theta}$ is the estimator of the parameter $\theta$, then $\hat{\theta}$ is called unbiased if:
 (a) $E(\hat{\theta}) > \theta$  (b) $E(\hat{\theta}) < \theta$  (c) $E(\hat{\theta}) \neq \theta$  (d) $E(\hat{\theta}) = \theta$

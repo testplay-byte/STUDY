@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Statistics/Chapter-12-Normal-Distribution/0032.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S5g (glm-vision)"
-notes: "Offset check: printed p.154 = image 32 + 122 (header folio, top-left; even page). Last page of the chapter: EXERCISES block continues (Q.32-Q.37) and ends complete at Q.37 Ans; navigation chip row at page bottom (arrow-in-circle icons + solid '1' '2' medallions) is furniture, not transcribed. Book typos/oddities preserved verbatim: Q.34 stray dot '89 % are .under 63'; Q.36 item (iv) probability printed without the letter P as 'Find ( 56 \\leq X \\leq 68 )'; Q.37 'normal distribution' printed inside quotation marks; Q.35 question ends with a printed period."
+notes: "Offset check: printed p.154 = image 32 + 122 (header folio, top-left; even page). Last page of the chapter: EXERCISES block continues (Q.32-Q.37) and ends complete at Q.37 Ans; navigation chip row at page bottom (arrow-in-circle icons + solid '1' '2' medallions) is furniture, not transcribed. Book typos/oddities preserved verbatim: Q.34 stray dot '89 % are .under 63'; Q.36 item (iv) probability printed without the letter P as 'Find ( 56 \\leq X \\leq 68 )'; Q.37 'normal distribution' printed inside quotation marks; Q.35 question ends with a printed period. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 32 — Normal Distribution (Chapter 12)
@@ -30,7 +30,7 @@ notes: "Offset check: printed p.154 = image 32 + 122 (header folio, top-left; ev
 
 **Ans.** ( 71.82, 17.53 )
 
-**Q.34** In a normal distribution 7 % of the items are under 35 and 89 % are .under 63. What is the mean and standard deviation of the distribution?
+**Q.34** In a normal distribution 7 % of the items are under 35 and 89 % are under 63. What is the mean and standard deviation of the distribution?
 
 **Ans.** 50.29, 10.33
 

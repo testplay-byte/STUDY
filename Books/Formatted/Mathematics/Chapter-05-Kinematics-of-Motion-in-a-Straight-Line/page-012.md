@@ -15,14 +15,14 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-05-Kinematics-of-Motion-in-a-Straight-Line/0012.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13h2 (glm-vision)"
-notes: "Opens with Example 5's tail (max height 50/g, total distance 100/g, continuing from p.150); 'Exercise 5.2' banner (orange tab + purple bar) printed with Q.1-3; Exercise 5.2 continues p.152. Book typos preserved verbatim: 'Meinar-e-Pakistan' (for Minar-e-Pakistan, ×2), Q.1(v) 'the maximum height of projectile' (missing 'the'), 'Now when stone attains its maximum height'. No figures, no sidebar boxes; dark gutter strip far left (facing-page bleed), no content loss."
+notes: "Opens with Example 5's tail (max height 50/g, total distance 100/g, continuing from p.150); 'Exercise 5.2' banner (orange tab + purple bar) printed with Q.1-3; Exercise 5.2 continues p.152. Book typos preserved verbatim: 'Meinar-e-Pakistan' (for Minar-e-Pakistan, ×2), Q.1(v) 'the maximum height of projectile' (missing 'the'), 'Now when stone attains its maximum height'. No figures, no sidebar boxes; dark gutter strip far left (facing-page bleed), no content loss. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 12 — Unit 05: Kinematics of Motion in a Straight Line
 
 > 📄 Original scan: [0012.jpg](../../../Raw/Mathematics/Unit-05-Kinematics-of-Motion-in-a-Straight-Line/0012.jpg) · printed page 151
 
-Which is the height attained by the stone at any time ‘$t$’. Now when stone attains its maximum height its velocity becomes zero. i.e.
+Which is the height attained by the stone at any time ‘$t$’. Now when the stone attains its maximum height its velocity becomes zero. i.e.
 
 $$\begin{aligned} \Rightarrow \qquad -gt + 10 &= 0 \\ t &= \frac{10}{g} \text{sec} \end{aligned}$$
 
@@ -43,14 +43,14 @@ $$= \frac{50}{g} + \frac{50}{g} = \frac{100}{g} m$$
    (ii) When will the projectile hit the ground?
    (iii) What is its impact velocity?
    (iv) When will the projectile reach its maximum height?
-   (v) What is the maximum height of projectile?
+   (v) What is the maximum height of the projectile?
 
 2. An object has its position defined by $S = t^3 - 9t^2 + 24t + 20$ in feet.
    (i) What are the velocity and acceleration functions?
    (ii) What are the position and velocity of the object when its acceleration is $-6.5ft/s^2$?
    (iii) Find the displacement and the total distance travelled by the particle from $t = 1.5s$ to $t = 7s$.
 
-3. A person is standing on top of the Meinar-e-Pakistan and throws a ball directly upward with an initial velocity of $96 \ ft/s$. The Meinar-e-Pakistan is $176 \ ft$ high.
+3. A person is standing on top of the Minar-e-Pakistan and throws a ball directly upward with an initial velocity of $96 \ ft/s$. The Minar-e-Pakistan is $176 \ ft$ high.
    (i) What are the functions for position, velocity, and acceleration of the ball?
    (ii) When does the ball hit the ground and with what velocity?
    (iii) How far does the ball travel during its flight?

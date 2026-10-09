@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0031.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13b2 (glm-vision)"
-notes: "Example 40 parts a/b/c printed side-by-side on one line (nbsp separators). Book typo preserved: 'We denote the third and fourth derivative, by ...' (stray comma). §2.18 heading prints 'Higher Derivatives' (vs §2.17 'Higher Order Derivatives') — as printed. No scan-edge cropping, no figures, no sidebar boxes."
+notes: "Example 40 parts a/b/c printed side-by-side on one line (nbsp separators). Book typo preserved: 'We denote the third and fourth derivative, by ...' (stray comma). §2.18 heading prints 'Higher Derivatives' (vs §2.17 'Higher Order Derivatives') — as printed. No scan-edge cropping, no figures, no sidebar boxes. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 31 — Unit 02: Limit, Continuity and Derivative
@@ -45,7 +45,7 @@ The second derivative is: $y'' = \frac{d^2y}{dx^2} = \frac{d}{dx} (2e^{2x}) = 4e
 
 ## 2.18 Higher Derivatives
 
-Assuming all derivatives exist, we can differentiate a function $y = f(x)$ as many times as we want. The third derivative is the derivative of the second derivative. The fourth derivative is the derivative of the third derivative and so on. We denote the third and fourth derivative, by $\frac{d^3y}{dx^3}$ and $\frac{d^4y}{dx^4}$, respectively and define them by:
+Assuming all derivatives exist, we can differentiate a function $y = f(x)$ as many times as we want. The third derivative is the derivative of the second derivative. The fourth derivative is the derivative of the third derivative and so on. We denote the third and fourth derivative by $\frac{d^3y}{dx^3}$ and $\frac{d^4y}{dx^4}$, respectively and define them by:
 
 $$\frac{d^3y}{dx^3} = \frac{d}{dx}\left(\frac{d^2y}{dx^2}\right)$$
 

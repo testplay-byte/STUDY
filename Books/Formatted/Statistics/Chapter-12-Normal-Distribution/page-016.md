@@ -15,7 +15,7 @@ figures_count: 3
 source_image: ../../../Raw/Statistics/Chapter-12-Normal-Distribution/0016.jpg
 converted_at: "2026-10-01"
 converted_by: "agent-S5d (glm-vision)"
-notes: "Offset check: printed p.138 = image 16 + 122 (header folio, top-left). Page opens mid-solution of Example 12.18 (continued from p.137); Examples 12.19 and 12.20 are stated and fully solved; the page ends with a complete sentence. Book typos preserved verbatim: Example 12.19 prints 'find the value of a such that.(i)' with a stray full stop; part (i) ends on the display equation giving a = 1.645 without a separate concluding sentence. Minor scanning specks."
+notes: "Offset check: printed p.138 = image 16 + 122 (header folio, top-left). Page opens mid-solution of Example 12.18 (continued from p.137); Examples 12.19 and 12.20 are stated and fully solved; the page ends with a complete sentence. Book typos preserved verbatim: Example 12.19 prints 'find the value of a such that.(i)' with a stray full stop; part (i) ends on the display equation giving a = 1.645 without a separate concluding sentence. Minor scanning specks. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 16 — Normal Distribution (Chapter 12)
@@ -52,7 +52,7 @@ Hence, Mean $= 59.74$ and S.D. $= 11.57$.
 
 **Example 12.19.**
 
-If Z is a standard normal random variable with mean zero and variance one, then find the value of a such that. (i) $P( |Z| < a ) = 0.90$ (ii) $P( |Z| > a ) = 0.238$
+If Z is a standard normal random variable with mean zero and variance one, then find the value of a such that (i) $P( |Z| < a ) = 0.90$ (ii) $P( |Z| > a ) = 0.238$
 
 **Solution:**
 

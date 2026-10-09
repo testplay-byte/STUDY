@@ -15,7 +15,7 @@ figures_count: 0
 source_image: ../../../Raw/Mathematics/Unit-02-Limit-Continuity-and-Derivative/0025.jpg
 converted_at: "2026-09-06"
 converted_by: "agent-13b2 (glm-vision)"
-notes: "Book typos preserved verbatim: Theorem: Chain Rule prints 'a differentiable formula of u' (for 'function'); §2.12.1 prints 'y is an implicit of x' (word 'function' missing). Example 30 is printed as two side-by-side solution columns separated by a dashed vertical rule; transcribed sequentially (column a, then column b) per multi-column rule. No scan-edge cropping, no figures, no sidebar boxes."
+notes: "Book typos preserved verbatim: Theorem: Chain Rule prints 'a differentiable formula of u' (for 'function'); §2.12.1 prints 'y is an implicit of x' (word 'function' missing). Example 30 is printed as two side-by-side solution columns separated by a dashed vertical rule; transcribed sequentially (column a, then column b) per multi-column rule. No scan-edge cropping, no figures, no sidebar boxes. | TYPO-CORRECTION PASS (2026-10-06, user mandate): unambiguous surface typo(s) corrected in the body per correction policy v4.4 — printed forms remain documented earlier in this note and itemised in docs/tracking/CORRECTIONS-LOG.md."
 ---
 
 # Page 25 — Unit 02: Limit, Continuity and Derivative
@@ -25,7 +25,7 @@ notes: "Book typos preserved verbatim: Theorem: Chain Rule prints 'a differentia
 **2.11.2 Chain Rule:** A power of a function can be written as a composite function. If $f(x) = x^n$ and $u = g(x)$, then $f(x) = f(g(x)) = [g(x)]^n$ is a special case of the chain rule for differentiating composite function.
 
 > **Theorem: Chain Rule**
-> If $y = f(x)$ is a differentiable formula of $u$ and $u = g(x)$ is a differentiable function, then $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = f'(g(x)).g'(x)$
+> If $y = f(x)$ is a differentiable function of $u$ and $u = g(x)$ is a differentiable function, then $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = f'(g(x)).g'(x)$
 
 **Example 30:** Differentiate w.r.t. $x$.
 
@@ -53,7 +53,7 @@ $$= (9x^3 + 1)[45x^3\cos 5x + 5\cos 5x + 54x^2\sin 5x]$$
 
 ### 2.12.1 Explicit and Implicit Functions
 
-A function in which the dependent variable is expressed solely in terms of the independent variable $x$, namely $y=f(x)$ is said to be an explicit function, for example, $y = \frac{1}{4}x^3 - 1$ is an explicit function, whereas an equivalent equation $3y - x^3 - 4 = 0$ is said to define the function implicitly or y is an implicit of $x$.
+A function in which the dependent variable is expressed solely in terms of the independent variable $x$, namely $y=f(x)$ is said to be an explicit function, for example, $y = \frac{1}{4}x^3 - 1$ is an explicit function, whereas an equivalent equation $3y - x^3 - 4 = 0$ is said to define the function implicitly or y is an implicit function of $x$.
 
 ### 2.12.2 Explicit Differentiation
 

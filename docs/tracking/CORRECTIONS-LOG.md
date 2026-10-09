@@ -593,3 +593,18 @@ TOC "Unit | Title | Page" header rows are editorial (not printed).
 | P-1 `Chapter-01-Ideological-Basis-of-Pakistan/page-003.md` (printed p.8, heading) | `Establishment of British Raj .` (stray period with space before it; sibling headings unpunctuated) | `Establishment of British Raj` | A |
 | P-1 `Chapter-01-Ideological-Basis-of-Pakistan/page-007.md` (printed p.12) | `set off Britain` (missing preposition) | `set off for Britain` | B |
 | P-1 `Chapter-01-Ideological-Basis-of-Pakistan/page-008.md` (printed p.13, continuation of p.12 sentence) | `boarders` | `borders` | A |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-001.md` (printed p.26, Unit 02 opener) | `Soviet- Afghan` (stray space after hyphen) | `Soviet-Afghan` | A |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-002.md` (printed p.27) | `first president of Constituent Assembly` (missing article) | `first president of the Constituent Assembly` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-002.md` (printed p.27) | `adopted as interim constitution` (missing article) | `adopted as the interim constitution` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-003.md` (printed p.28) | `at time of the inauguration ceremony` (missing article) | `at the time of the inauguration ceremony` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-003.md` (printed p.28) | `future structure of economy` (missing article) | `the future structure of the economy` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-003.md` (printed p.28) | `membership of United Nations` (missing article) | `membership of the United Nations` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-003.md` (printed p.28) | `secretary general of All India Muslim League` (missing article) | `secretary general of the All India Muslim League` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-004.md` (printed p.29) | `became guiding principle for our all-future constitutions` (missing article) | `became the guiding principle for our all-future constitutions` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-004.md` (printed p.29) | `to improve economic and security situation` (missing article) | `to improve the economic and security situation` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-004.md` (printed p.29) | `to overcome economic crisis` (missing article) | `to overcome the economic crisis` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-004.md` (printed p.29) | `was even not a member of constituent assembly` (missing article) | `was even not a member of the constituent assembly` | B |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-010.md` (printed p.35) | `Khán` (diacritic — 3× zoom shows none in print; converter artifact) | `Khan` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-001.md` (printed p.44, Unit 03 opener) | `access the significance` (SLO verb misprint) | `assess the significance` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-001.md` (printed p.44, Unit 03 opener) | `on Pakistan's, economic` (stray comma) | `on Pakistan's economic` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-003.md` (printed p.46) | `NE.USA` (missing space) | `NE. USA` | A |

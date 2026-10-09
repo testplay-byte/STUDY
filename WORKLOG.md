@@ -1446,3 +1446,18 @@ Work Log:
 
 Stage Summary:
 - P-0 and P-1 COMPLETE; corrections appended to CORRECTIONS-LOG §6; lesson: cp multiple drafts renames nothing — use per-file target paths (caught by build-metadata count check)
+
+---
+Task ID: 23-wave1-verify
+Agent: coordinator (Z.ai main)
+Task: PHASE 10 wave 1 post-verification — 10 orphaned P-2/P-3 pages QA'd, corrections logged, committed + pushed
+
+Work Log:
+- 10 pages placed by wave agents whose entries were lost to context death found UNTRACKED in sandbox: P-2 001-004/010-012 (converted_by 23-d/23-e), P-3 001-003 — all carry full 17-field frontmatter + detailed QA notes
+- Coordinator verification: structural QA all 10 (frontmatter/H1/scan-line/figure-markers-vs-figures_count/Figures-section/$-parity = PASS) + side-by-side vision spot-checks (P-2 p.004 vs scan: verbatim PASS, folio 29, Liaquat photo F1 + cyan caption, Tier B x4 correct; P-3 p.002 vs scan: folio 45, heading colors pixel-match notes, Survey map F1 w/ legend + Sir Creek + Junagadh & Manavadar insets PASS)
+- 15 Tier A/B rows appended to CORRECTIONS-LOG §6 (5 Tier A incl. 'Khán'->'Khan', 'access the significance'->'assess the significance', 'NE.USA'->'NE. USA'; 10 Tier B article insertions); Tier C keeps live in page notes
+- Gates re-run after append: verify-v4 ALL GREEN (796/796 raw, 593/684 placed) + check-digital --frozen --strict-figures ALL GREEN
+- Committed 10 pages + corrections log; PUSHED to origin (user directive: keep GitHub current)
+
+Stage Summary:
+- P-2 7/18 + P-3 4/22 committed & pushed; clean baseline before the remaining-91-page conversion waves (P-2 11, P-3 18, P-4 14, P-5 23, P-6 25)

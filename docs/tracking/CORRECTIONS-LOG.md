@@ -590,3 +590,6 @@ TOC "Unit | Title | Page" header rows are editorial (not printed).
 | P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-005.md` (printed p.48) | `Turky` | `Turkey` | A |
 | P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-005.md` (printed p.48) | `Siri Lanka` | `Sri Lanka` | A |
 | P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-005.md` (printed p.48) | `established in1985` (missing space) | `established in 1985` | A |
+| P-1 `Chapter-01-Ideological-Basis-of-Pakistan/page-003.md` (printed p.8, heading) | `Establishment of British Raj .` (stray period with space before it; sibling headings unpunctuated) | `Establishment of British Raj` | A |
+| P-1 `Chapter-01-Ideological-Basis-of-Pakistan/page-007.md` (printed p.12) | `set off Britain` (missing preposition) | `set off for Britain` | B |
+| P-1 `Chapter-01-Ideological-Basis-of-Pakistan/page-008.md` (printed p.13, continuation of p.12 sentence) | `boarders` | `borders` | A |

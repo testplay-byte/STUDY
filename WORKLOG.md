@@ -1395,3 +1395,54 @@ Work Log:
 
 Stage Summary:
 - Pakistan Studies Grade 12 intake + recon COMPLETE, 128/128 scans immutable in Books/Raw; batch codes P-0..P-6 registered end-to-end; offsets +5/+25/+43/+65/+79/+102 (front matter unnumbered); pipeline ready for test-first conversion
+---
+Task ID: 23-b
+Agent: 23-b
+Task: Phase 10 wave — Pakistan Studies P-1 imgs 3-9
+
+Work Log:
+- page-003 → Books/Formatted/Pakistan-Studies/Chapter-01-Ideological-Basis-of-Pakistan/page-003.md ✔ (printed p.8, § Historical Background of the Two-Nation Theory; Establishment of British Raj; Aligarh Movement — all maroon ##, theory; Tier A 'Establishment of British Raj .' → 'Establishment of British Raj')
+- page-004 → Books/Formatted/Pakistan-Studies/Chapter-01-Ideological-Basis-of-Pakistan/page-004.md ✔ (printed p.9, 4 blue ### headings under Aligarh Movement, theory; F1 Sir Syed photo + cyan italic caption recovered in QA; starts/ends mid-sentence)
+- page-005 → Books/Formatted/Pakistan-Studies/Chapter-01-Ideological-Basis-of-Pakistan/page-005.md ✔ (printed p.10, AIML maroon ## + 5 blue ### Background subsections, theory; dates 1867/1885/1905/30 Dec 1906 digit-checked; starts mid-sentence)
+- page-006 → Books/Formatted/Pakistan-Studies/Chapter-01-Ideological-Basis-of-Pakistan/page-006.md ✔ (printed p.11, 4 blue ### + Achievements of All India Muslim League maroon ##, theory; 1-2-3 list + * bullets as printed; ends mid-sentence 'It was')
+- page-007 → Books/Formatted/Pakistan-Studies/Chapter-01-Ideological-Basis-of-Pakistan/page-007.md ✔ (printed p.12, Khilafat Movement (1918-1923) maroon ## + 3 blue ###, theory; Tier B 'set off Britain' → 'set off for Britain'; ends mid-sentence '...and economic')
+- page-008 → Books/Formatted/Pakistan-Studies/Chapter-01-Ideological-Basis-of-Pakistan/page-008.md ✔ (printed p.13, Abolition of Khilafat ###/Impact of Khilafat Movement ##/An Escalation of Communal Conflict ###, theory; reading order fixed: p.12 continuation fragment BEFORE Do You Know? box; Gandhi photo F1 + cyan caption; Expand Your Horizon box interrupts 'provided that new Muslim | majority provinces...' as printed; Tier A 'boarders' → 'borders'; 'contested that' kept verbatim Tier C)
+- page-009 → Books/Formatted/Pakistan-Studies/Chapter-01-Ideological-Basis-of-Pakistan/page-009.md ✔ (printed p.14, 5 blue ### headings incl. capital-'Of' 'Establishment Of Congress Ministries', theory; Iqbal blockquote + color photo F1 + cyan caption 'Allama Muhammad Iqbal' recovered in QA; '489 Muslims seats'/'presided the Annual session' kept verbatim Tier C; ends mid-sentence)
+
+Stage Summary:
+- 7/7 pages converted, QA'd (independent VLM line-by-line pass per page + dedicated heading-color and re-verify passes), fixed and placed FLAT in Chapter-01-Ideological-Basis-of-Pakistan; folios 8-14 all read from bottom-center colored circles (= img+5 offset confirmed, never computed into frontmatter)
+- Corrections logged to docs/tracking/CORRECTIONS-LOG.md §6: 'Establishment of British Raj .'→'Establishment of British Raj' (A), 'set off Britain'→'set off for Britain' (B), 'boarders'→'borders' (A); Tier C verbatim keeps flagged in page notes (grammar quirks, '199'-style numeric policy n/a here)
+- VLM QA false positives encountered & dismissed: 2 hallucinated missing spaces (p.8), 1 B&W-vs-color photo description fix (p.9 real), footer-furniture "missing text" claims (correctly excluded); sidebar boxes transcribed as blockquotes at printed positions
+- verify-v4 ALL GREEN after placement (796/796 raw, 576/684 markdown-only placed); no git commits (coordinator does them)
+---
+Task ID: 23-a
+Agent: 23-a
+Task: Phase 10 wave — Pakistan Studies P-0 imgs 1-5 + P-1 img 1
+
+Work Log:
+- page-001 → Books/Formatted/Pakistan-Studies/Chapter-00-Front-Matter/page-001.md ✔ (printed p.null, front cover, type front-matter) — photo cover described as F1 (Minar-e-Pakistan composite art: green crescent w/ 3 white birds + star, flag, trees, flock, clouds) + F2 (bottom green banner: NBF "BOOKS GIVE US WINGS" logo, white publisher lines, State Emblem); grade "12" in green box top-right; strip-by-strip vision QA added the missing banner/logo/emblem
+- page-002 → Books/Formatted/Pakistan-Studies/Chapter-00-Front-Matter/page-002.md ✔ (printed p.null, inner title page, front-matter) — title stack (Textbook of / Pakistan Studies / GRADE / 12), NCF 2022-23 lines, bookseller rubber stamp "Capital Books 2 / Golden Plaza G-11 Markaz / Islamabad Ph: 051-2363324" transcribed as printed content + noted; zoom QA corrected logo description (open book + white bird, blue ring "NATIONAL BOOK FOUNDATION"/"FEDERAL TEXTBOOK BOARD" — converter's "graduation cap" was wrong)
+- page-003 → Books/Formatted/Pakistan-Studies/Chapter-00-Front-Matter/page-003.md ✔ (printed p.null, copyright/approval page, front-matter) — all lines transcribed exactly: Government Approval (NCC letter F.No.1(2)-NCC-TB/NBF-PakStu, Dec 09 2024), © 2025, authors/contributors, NCC + FBISE committees + desk officers, NBF supervision, Printed in Pakistan, First Edition June 2025 | 234 pp | 80000, PKR 320/- STE-734 ISBN 978-969-37-1827-0, printer, contacts, maps-sources Note; red "TEST EDITION" stamp (magenta on white, tilted, right whitespace) = Figure F1 + notes. Tier C kept+flagged: 'Imaran Haider' (name), 'Punjab Curriculum and textbook Board' (lowercase t); NCC Detail base64 token reconstructed via decode-validity (reads decode to clean UUID b2f8de34-b181-4d15-a15b-ba6722a68095) and flagged
+- page-004 → Books/Formatted/Pakistan-Studies/Chapter-00-Front-Matter/page-004.md ✔ (printed p.null, PREFACE, front-matter) — verbatim incl. garbled template wording "this experimentation skills" ×2 (Tier C flagged, no single fix), "experienced author"; right-aligned signature Dr. Kamran Jahangir, Managing Director; decorative full-height green left-margin band = F1
+- page-005 → Books/Formatted/Pakistan-Studies/Chapter-00-Front-Matter/page-005.md ✔ (printed p.null, The Significance of Pakistan Studies, front-matter) — 6 paragraphs verbatim (2 independent vision passes agree word-for-word); Tier B recorded: inserted 'the' → 'citizens of the Islamic Republic of Pakistan'; corner triangle-pattern decorations = F1
+- P-1 page-001 → Books/Formatted/Pakistan-Studies/Chapter-01-Ideological-Basis-of-Pakistan/page-001.md ✔ (printed p.6 in red circle bottom-center, zoom-verified digit 6; Unit 01 opener, chapter-opener) — "UNIT 01" white bubble furniture in body; F1 = Minar-e-Pakistan roundel (black-ring circle, green crescent + white star, city silhouettes, painterly); "Section 1 / History of Pakistan" banner + blue unit title + all 4 "In this unit the students will be able to:" bullets exact; Tier A recorded: full stops added to bullets 1-2 (siblings 3-4 have them)
+- Gates after my pages: bun tools/verify-v4.mjs ALL GREEN (P-0 6/6, P-1 14/20 placed — parallel wave agents own the rest) + node tools/check-digital.mjs --frozen --strict-figures ALL GREEN; every placed file md5-identical to its post-QA draft in /home/z/my-project/study-workspace/drafts-ps/23a-page-0NN.md; QA helper drafts-ps/qa-vision.mjs (neutral-prompt VLM pass) used for every page; no git commits
+- Note: CANON-PS says front matter pages have no printed folios → page_printed null on 001-005; opener folio 6 read from print (recon offset +5 cross-check)
+
+Stage Summary:
+- 6/6 pages converted, QA'd side-by-side (neutral VLM full-page + zoom crops) and placed: 5 P-0 front-matter + 1 P-1 opener; figures_count 2/1/1/1/1/1; verify-v4 + frozen digital gates ALL GREEN
+- Issues: page-003 NCC base64 URL token is beyond reliable VLM glyph reading — resolved by base64-decode validity to a clean UUID, flagged in notes (Tier C); 2 Tier C name/casing flags + 1 Tier B article + 2 Tier A (opener bullet full stops) recorded in notes; parallel wave agents are placing other P-1 pages concurrently — no conflicts
+---
+Task ID: 23-wave1
+Agent: coordinator (Z.ai main)
+Task: PHASE 10 wave 1 — Pakistan Studies P-0 complete (6/6) + P-1 complete (20/20)
+
+Work Log:
+- Agents 23-a (P-0 imgs 1-5 + P-1 img 1 opener: 6/6 ✔) and 23-b (P-1 imgs 3-9: 7/7 ✔) delivered QA'd pages; agent 23-c (P-1 imgs 10-16) died at context deadline but had placed 010-015 with drafts md5-identical to placed files
+- Coordinator QA'd 23-c's draft page-016 against zoom crops: print verified "contagious" (Tier A → 'contiguous'), "Gulab Sing" ×2 (book's name spelling, Tier C kept+flagged), garbled double-predicate sentence (Tier C), map F-block enriched (Line of Control, Working Boundary, FRONTIER UNDEFINED, red border note, caption) → placed
+- Coordinator sweep-audited 23-c's placed 012 + 014 against scans: ALL PASS verbatim (014's Tier A/B corrections — 'form'→'from', 'Radcliff' heading variant, 150-million Tier C flag — verified correct against print; minor inline-bold print variation accepted)
+- Coordinator converted P-1 imgs 017-019 directly: 017 (Tier A 'which in now called'→'which is now called', Tier B 'failed suppress'→'failed to suppress'; blue headings → ###), 018 (EXERCISE banner + MCQ 1-9; section: EXERCISE per corpus convention), 019 (MCQ 10- + brief/detail questions + Learning Activities; blue lead-ins → ###)
+- P-0 = 6/6, P-1 = 20/20 placed; build-metadata regenerated; verify-v4 ALL GREEN 796/796 raw, 583/684 placed; check-digital --frozen --strict-figures ALL GREEN
+
+Stage Summary:
+- P-0 and P-1 COMPLETE; corrections appended to CORRECTIONS-LOG §6; lesson: cp multiple drafts renames nothing — use per-file target paths (caught by build-metadata count check)

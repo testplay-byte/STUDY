@@ -660,3 +660,4 @@ TOC "Unit | Title | Page" header rows are editorial (not printed).
 | P-4 `Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-012.md` (printed p.77) | `“reduce, “followed by “reuse”` (misplaced curly quote) | `“reduce”, followed by “reuse”` | A |
 | P-4 `Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-014.md` (printed p.79, Glossary) | `adding tress` / `live in the costal` (2 typos) | `adding trees` / `live in the coastal` | A |
 | P-4 `Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-014.md` (printed p.79, Glossary) | `in canal irrigated tract` (missing article) | `in the canal irrigated tract` | B |
+| P-5 `Chapter-05-Mineral-Power-Resources-and-Telecommunication/page-011.md` (printed p.90) | `Matiari Solar Power Plantin Sindh` (missing space) | `Matiari Solar Power Plant in Sindh` | A |

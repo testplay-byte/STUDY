@@ -639,3 +639,15 @@ TOC "Unit | Title | Page" header rows are editorial (not printed).
 | P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-018.md` (printed p.61) | `emergency response of federal government` (missing article) | `emergency response of the federal government` | B |
 | P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-019.md` (printed p.62) | `aquifer of other bodies of water` (letter transposition) | `aquifer or other bodies of water` | A |
 | P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-019.md` (printed p.62) | `the liter like plastic` (missing letter) | `the litter like plastic` | A |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-009.md` (printed p.34) | `harsh at it alienated` (at/as) | `harsh as it alienated` | A |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-009.md` (printed p.34) | `21 November 1971 .` (stray space before period) | `21 November 1971.` | A |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-015.md` (printed p.40) | `Tehreek-e- Insaf` / `sit in at Islamabad` / `no- confidence` / `Anwaar -ul Haq- Kakar` (stray hyphen spaces) | `Tehreek-e-Insaf` / `sit-in at Islamabad` / `no-confidence` / `Anwaar-ul-Haq Kakar` | A |
+| P-2 `Chapter-02-Political-Development-in-Pakistan/page-015.md` (printed p.40) | `interim prime minster` (missing i) | `interim prime minister` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-021.md` (printed p.64) | `Quetta Earth quake` (split word) | `Quetta Earthquake` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-021.md` (printed p.64) | `What factors effect the climate change` (effect/affect) | `What factors affect the climate change` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-022.md` (printed p.65, Glossary) | `Thes shifting` (typo) | `The shifting` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-022.md` (printed p.65, Glossary) | `earth quakes` (split word) | `earthquakes` | A |
+| P-4 `Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-002.md` (printed p.67) | `ecosystem system` / `high level- resolution` / `mapping of a aquifers` (3 surface typos) | `ecosystem` / `high-level resolution` / `mapping of the aquifers` | A |
+| P-4 `Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-002.md` (printed p.67) | `Hardware, Software data` (missing 'and') | `Hardware, Software and data` | B |
+| P-4 `Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-003.md` (printed p.68) | `4, 000 meters` (stray space) | `4,000 meters` | A |
+| P-4 `Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-003.md` (printed p.68) | `used in number of ways` / `estimates three-dimensional structure` / `at even higher altitude` (missing words) | `used in a number of ways` / `estimates the three-dimensional structure` / `at an even higher altitude` | B |

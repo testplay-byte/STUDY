@@ -1648,3 +1648,64 @@ Work Log:
 
 Stage Summary:
 - P-2 16/18 + P-3 19/22 placed & verified; committed + pushed; remaining: P-2 009/015, P-3 020-022, P-4/P-5/P-6 all (67 pages)
+---
+Task ID: 29-b
+Agent: 29-b
+Task: Phase 10 wave 29 — P-3 imgs 20,21 (running log)
+Work Log:
+- page-020 → .../page-020.md ✔ (printed p.63 folio disc digit-by-digit '6','3' on both passes, §EXERCISE (cyan-on-purple banner ##) + cyan bold lead-ins 'Answer the following questions…' and 'Choose the correct option.' (###), content_type exercise, starts page with banner (no mid-sentence; p.62 theory ended complete), ends COMPLETE 'd. Pakistan- Iran', figures 1 → F1 unlabelled outline map of Pakistan upper-right beside Q1 with small inset coloured political/admin reference map (no caption); vision Read channel down → 2 VLM full-page passes (verbatim + QA), both fully converged, no crop needed; Tier A ×0, Tier B ×0; Tier C keeps flagged: MCQ2 'c. 29021 km'/'d. 2192 km' (digits double-read 2-9-0-2-1, never fixed), 'Latitude 30N degree'/'Longitude 64E degree', 'North east' two words, 'Pakistan- China'/'Pakistan- India'/'Pakistan- Afghanistan'/'Pakistan- Iran' spacing vs 'Pakistan-China' Q4c, 'Durand line' lc, 'Belt and road initiative' casing, 'is of the:', last bullet no period; MCQ stems+numbers bold as printed, options lowercase a.–d. two per row; ledger row appended to drafts-ps/29-b-corrections.md)
+---
+Task ID: 29-d
+Agent: 29-d
+Task: Phase 10 wave 29 — P-4 imgs 2,3 (running log)
+Work Log:
+- page-002 → .../Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-002.md ✔ (printed p.67 READ from bottom-center circle, matches img+65; §Natural Vegetation of Pakistan (maroon ##, rows 102-156) + Forests + Geographic Tools and Techniques to Annotate and Map different Types of Forests. (blue ###, trailing period as printed), theory, first page of Unit-04, starts with heading (no mid-sentence), ends COMPLETE "…types of plantations and grasslands.", figures 1 → F1 dark false-colour satellite image with purple GIS emblem (right side rows ≈978-1580, no caption); vision Read channel down ('images not available in sub-agent context') → 2 VLM CLI full-page passes (verbatim + targeted QA) + PIL ink/colour bands, engines converged; Tier A ×3: 'ecosystem system'→'ecosystem', 'high level- resolution'→'high-level resolution', 'a aquifers'→'the aquifers'; Tier B ×1: inserted 'and' → 'Hardware, Software and data'; Tier C keeps flagged: 'A Forest' capital F, 'Geo-Spatial technologies include, Satellite images, Drones, Camera traps and Audio records' (comma + capitals as printed), 'This technology, manages…irrigation, also aids' commas, 'predict Forest fires' capital F, (i)/(ii)/(iii) list punctuation, 4.2 million/4.8% never fixed; no bold body runs (GIS/RS/GPS regular — not embellished)
+---
+Task ID: 29-b
+Agent: 29-b
+Task: Phase 10 wave 29 — P-3 imgs 20,21 (running log)
+Work Log:
+- page-021 → .../page-021.md ✔ (printed p.64 folio disc digit-by-digit '6','4' on both passes, §'Answer the following questions briefly' + 'Answer the following questions in detail' (blue/cyan bold ###, NO trailing colons — zoom-verified, unlike Unit-02 lead-ins), content_type exercise, starts mid-SECTION with MCQ 5) (Choose-the-correct-option lead-in printed only on p.63; not mid-sentence), ends COMPLETE '…Elaborate with examples.', figures 0 (no photos/tables/boxes); vision Read channel down → 2 VLM full-page passes (verbatim + QA), fully converged, no crop needed; Tier A ×2: 'Earth quake'→'Earthquake' (Brief Q4 prints 'earthquakes'), 'effect'→'affect' (Detail Q6 verb; p.58 precedent); Tier B ×0 ('due to increase in' — QA confirms no article printed, 'the' vs 'an' ambiguous, insert NOT attempted); Tier C keeps flagged: MCQ8 option '(b)' parenthesised vs 'b)' elsewhere, mixed option casing, distractor year '2024' MCQ10 + years 1935/1960/1950/1945, 'Baluchistan', declarative '?' stems, 'analyse' lc start, 'examples. The effects' full stop, 'Pakistan Elaborate' no punctuation, 'what is Greenhouse Effect.', 'Relate the importance of tourist potential', 'managing the disaster'; MCQ stems+numbers bold, option letters a)–d) two per row; ledger rows appended to drafts-ps/29-b-corrections.md (header added, 3 rows total)
+---
+Task ID: 29-a
+Agent: 29-a
+Task: Phase 10 wave 29 — P-2 imgs 9,15 (running log)
+Work Log:
+- page-009 → study-workspace/STUDY/Books/Formatted/Pakistan-Studies/Chapter-02-Political-Development-in-Pakistan/page-009.md ✔ (printed p.34 READ from bottom-center disc: pass-1 '34', QA full-page misread '84', 5x PIL crop digit-by-digit '3','4' → 34; §War of 1971 (blue ###) + Zulfikar Ali Bhutto Era (1971-1977) (maroon ##), theory, figures 1 → F1 Bhutto portrait top right caption 'Zulfikar Ali Bhutto'; green side-box 'Expand Your Horizon' → blockquote; starts MID-SENTENCE 'Six Points, which…' (completes p.33 '…compromise on his'), ends MID-SENTENCE 'because it was unanimously' → cont. p.35; Tier A ×2: 'harsh at it alienated'→'harsh as it alienated', '1971 .'→'1971.'; Tier B none; Tier C keeps flagged: 'The Mukti Mukti Bahni' duplicated word as printed, 'insisted Mujeeb to yield', 'guerilla', 'Mukti Bahni' spelling, '16 Dec 1971' + '03 December 1971', no-article quirks ('avenge 1965 war', 'faced severe shortage', 'in precarious situation', 'face with majority', 'gave country a new constitution'); ledger rows appended to drafts-ps/29-a-corrections.md)
+---
+Task ID: 29-a
+Agent: 29-a
+Task: Phase 10 wave 29 — P-2 imgs 9,15 (running log)
+Work Log:
+- page-015 → study-workspace/STUDY/Books/Formatted/Pakistan-Studies/Chapter-02-Political-Development-in-Pakistan/page-015.md ✔ (printed p.40 READ from bottom-center disc, both passes agree; §Pakistan Tehreek-e-Insaf Government (2018-2022) (magenta ##), theory, figures 2 → F1 Nawaz Sharif & Shahid Khaqan Abbasi photo top right + F2 Dr. Arif Alvi portrait bottom right (captions verbatim); starts MID-SENTENCE 'is a combination of various developmental projects.' (completes p.39 '…(CPEC) which'), ends COMPLETE '…law and order situation was also improved.'; Tier A ×5: 'Tehreek-e- Insaf'→'Tehreek-e-Insaf', 'sit in at Islamabad'→'sit-in at Islamabad', 'no- confidence'→'no-confidence', 'Anwaar -ul Haq- Kakar'→'Anwaar-ul-Haq Kakar', 'prime minster'→'prime minister'; Tier B none; Tier C keeps flagged: 'cricket turned politician', 'Shahbaz' printed spelling, 'national assembly' lc, 'skilfully' British spelling crop-verified letter-by-letter (full-page passes disagreed), '$56 billion'/'51 agreements'/'126 days'/'150 students and staff' never fixed; ledger rows appended to drafts-ps/29-a-corrections.md)
+---
+Task ID: 29-d
+Agent: 29-d
+Task: Phase 10 wave 29 — P-4 imgs 2,3 (running log)
+Work Log:
+- page-003 → .../Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-003.md ✔ (printed p.68 READ from bottom-center circle digit-by-digit, matches img+65; §Types of forests (maroon ##, rows 912-952, bold stroke-run 16px, lowercase 'f' as printed), theory, starts mid-SECTION continuing p.67 'Geographic Tools…' with new sentence 'LiDAR is another method…' (not mid-sentence), ends COMPLETE '…of around 4,000 meters.' before full-width map, figures 2 → F1 forest-canopy aerial photo top right rows ≈120-630 with cyan italic caption 'Forests of Pakistan' (rows ≈640-700) + F2 Survey-of-Pakistan-style natural-vegetation map rows ≈1310-2488 (TREE SPECIES legend Cedrus deodara/Pinus gerardiana/Quercus ilex/Juniperus S P + 12 vegetation classes incl. printed 'Temperature latifoliate forest' [sic] kept verbatim, red LoC/frontier-undefined note boxes ×3 verbatim, insets SIR CREEK '68° E. OF GREENWICH.' + JUNAGADH & MANAVADAR '70° E. of Greenwich.'); vision Read channel down → 2 VLM CLI full-page passes (verbatim+QA) + 1 crop re-read (insets+legend small print) + PIL ink bands, converged; Tier A ×1: '4, 000'→'4,000'; Tier B ×3: inserted 'a'/'the'/'an' ('a number of ways', 'the three-dimensional structure', 'an even higher altitude'); Tier C keeps flagged: 'an object of a surface' (of/or/on ambiguous, not attempted), 'LiDAR, stands' comma, 'Types of forests' lc f, 'Visualising forest and vegetation LiDAR system can…' garbled, legend 'Temperature latifoliate forest' typo kept, 'Juniperus S P' + species small-print variant reads ('Cedras'/'Pinas' on crop), 1,000/3,000/4,000 never fixed, box 2 no full stop; no bold body runs
+---
+Task ID: 29-c
+Agent: 29-c
+Task: Phase 10 wave 29 — P-3 img 22 (glossary) + P-4 img 1 (opener) (running log)
+Work Log:
+- page-022 → .../Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-022.md ✔ (printed p.65 green disc = img+43, §Learning Activities; Glossary (both cyan banners → ## per Ch-02 unit-final exemplar), content_type summary, figures 0; Learning Activities numbered 1-4 with 2 continuation paras under item 2; Glossary 8 bullet terms ALL bold (PIL stroke 8.55-9.76 vs def 6.6-7.2), mixed colon/is punctuation kept verbatim; write-in table 4 magenta rules → 3 empty rows preserved (Unit-02 parallel prints 8; row count from print); instruction line bold (VLM ×3, stroke ambiguous, flagged); Tier A ×2 'Thes shifting'→'The shifting', 'earth quakes'→'earthquakes'; Tier B none; Tier C keeps flagged incl. stray printed lowercase 'l' in 'frequent l practice' (4x-zoom + PIL narrow-glyph verified, kept verbatim), 'Use Google maps and to observe', 'Hierarchy a system…' no colon, 'between 1850 to 1900', 'prime Meridian', 'photo copied'; native image Read down → 2 full VLM passes + 4 crop passes + PIL band/ink/stroke ASCII map)
+---
+Task ID: 29-c
+Agent: 29-c
+Task: Phase 10 wave 29 — P-3 img 22 (glossary) + P-4 img 1 (opener) (running log)
+Work Log:
+- page-001 → .../Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan/page-001.md ✔ (printed p.66 red disc = img+65, digit-by-digit '6','6'; banner 'Section 2' black + 'Geography of Pakistan' green, unit title cyan — same Section-2 pattern as Unit-03 opener; content_type chapter-opener, figures 1 → F1 roundel coniferous-forest/snow-peak photo top-left, black ring, no caption; NO (A)/(B) lettered sub-groups this opener, 4 SLO bullets follow lead-in directly, no [Case study] bracket; both full VLM passes word-identical → QA clean; Tier A none, Tier B none, Tier C flagged mixed 'Utilize'/'analysing' spellings as printed; PIL band map confirms 10 bullet lines + lead-in + roundel lower arc y≈1573-1657; native image Read down → 2 full VLM passes + PIL band/color check)
+
+---
+Task ID: 29-wave-verify
+Agent: coordinator (Z.ai main)
+Task: PHASE 10 wave 29 QA (P-2 009/015, P-3 020/021/022, P-4 001/002/003) + corrections merge + push
+
+Work Log:
+- Wave 29: ALL FOUR agents delivered (8 pages) — 29-a P-2 009+015 (P-2 COMPLETE 18/18); 29-b P-3 020+021 (exercise pages, vision-CLI fallback); 29-c P-3 022 (glossary, 3 empty rows vs Unit-02's 8 — row count from print) + P-4 001 (opener); 29-d P-4 002+003 (P-3 COMPLETE 22/22)
+- Coordinator side-by-side vision QA ALL 8: page-009 PASS (folio 34; 'The Mukti Mukti Bahni' duplicate kept; Expand Your Horizon blockquote; Bhutto F1); page-015 PASS (folio 40; 5 Tier A hyphen/space fixes match; skilfully crop-verified; Nawaz&Abbasi F1 + Arif Alvi F2); page-020 PASS (folio 63; EXERCISE banner ##; outline map F1 + inset; MCQs 1-4 with '29021 km' + '2192 km' quirks kept); page-021 PASS (folio 64; MCQs 5-10 incl. '(b)' paren quirk; no-colon lead-ins (unlike Unit-02); 'Earthquake'+'affect' Tier A match); page-022 PASS (folio 65; 8 bold glossary terms; 'Thes shifting'/'earth quakes' Tier A match; 3-row write-in table); P-4 001 PASS (folio 66; Section 2 Geography of Pakistan banner; roundel F1; 4 SLO bullets verbatim); 002 PASS (folio 67; GIS emblem F1; 'ecosystem'/'high-level'/'the aquifers' + 'and data' fixes match); 003 PASS (folio 68; LiDAR paras; vegetation map F2 w/ TREE SPECIES legend + 'Temperature latifoliate [sic]' + red boxes + insets)
+- 19 Tier A/B rows merged to CORRECTIONS-LOG §6; gates ALL GREEN
+
+Stage Summary:
+- P-2 COMPLETE (18/18) + P-3 COMPLETE (22/22) + P-4 3/14 placed & verified; committed + pushed; remaining: P-4 004-014 (11), P-5 (23), P-6 (25) = 59 pages

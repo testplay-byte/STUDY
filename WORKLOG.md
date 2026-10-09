@@ -1575,3 +1575,31 @@ Work Log:
 
 Stage Summary:
 - P-2 16/18 + P-3 11/22 placed & verified; committed + pushed; remaining: P-2 009/015/018, P-3 008/011-022, P-4/P-5/P-6 all (74 pages)
+---
+Task ID: 27-c
+Agent: 27-c
+Task: Phase 10 wave 27 — P-3 imgs 11,12 (running log)
+Work Log:
+- page-011 → Books/Formatted/Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-011.md ✔ (printed p.54 in green circle — dark digit read via pixel-mask ASCII render "54", low-zoom crop misread "84"; footer=furniture), §(B) Environmental Hazards (blue → ###, printed ABOVE maroon "Global Warming" ## — inverted hierarchy kept per colour rule + page-002 "(A)" blue precedent) + "Green house effect" (black, larger 63px vs 46px → ## flagged), theory, 1 fig F1 greenhouse-effect diagram (right column y≈1150-2400; labels OCR+VLM: "Energy released back into space", "Greenhouse gases (trap heat)", CH₄/CO₂/SF₆/N₂O [subscripts illegible], sun/cloud/soil colours pixel-verified); vision Read channel down ("images not available in sub-agent context") → multi-pass tesseract psm3/4/6/11 @2x + TSV + 12 crops incl. hue-classified headings + folio mask; VLM CLI recovered from 429 and gave 100%-convergent verbatim QA pass; Tier A ×5: '(IPCC)held'→'(IPCC) held', 'baseline. the'→'baseline. The', '0.8degree'→'0.8 degree', '-20degree'→'-20 degree', 'emit in to'→'emit into'; Tier C keeps flagged: "Ozone layer, protects the earth surface", "Warsaw, Poland. reported", "such as, burning", mid-sentence "Carbon dioxide", heading printed "Green house effect" as 3 words (VLM normalised; print kept); starts new section, ends complete "…Greenhouse effect on the earth."
+- page-012 → Books/Formatted/Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-012.md ✔ (printed p.55 in green circle — footer-line crop "…Hazards 55 National…" + digit pixel-mask two glyphs + VLM "(55)"), §Causes of Global Warming (dark-navy → ## flagged) + §(i) Natural causes (black → ###) + §Pakistan Earthquake Zone Map (black map-title → ###); bold run-in "Earthquakes:" kept as bold body line; theory, 2 figs: F1 volcano-eruption photo top-right x≈1000-2121 y≈396-869 (0 cyan px below = no caption; smooth-gradient vs map verified) + F2 full-width Pakistan Earthquake Zone Map y≈1330-2750 (EXPLANATION legend 9 entries incl. 4 damage swatches green/blue/orange/red + M-6/1947/h-50 annotation samples [partially legible], N arrow, Karakoram Pass, Punjab/Balochistan/Mianwali/Lahore/Multan/Kohlu, SoP J&K plebiscite + FRONTIER UNDEFINED disclaimers, insets JUNAGADH & MANAVADAR + SIR CREEK); vision Read channel down → tesseract psm3/4/6 @2x + TSV + 14 zoom crops (4×, contrast-boosted) + VLM CLI verbatim QA converged on body/legend/insets/folio; Tier B: inserted 'an' → "where there is an intersection of three plates" (3 OCR passes + VLM agree print omits it); no Tier A; Tier C keeps flagged: "eruptions goes very high", "ash, cinder (volcanic ashes)", "Arabian sea plates." lc, legend "severe damage" lc, map "as defined the Constitution Act, 1974" (no 'by'), epicentre micro-annotations [partially illegible]; starts new section "Causes of Global Warming", ends with map (no trailing text); ledger rows appended to drafts-ps/27-c-corrections.md
+---
+Task ID: 27-b
+Agent: 27-b
+Task: Phase 10 wave 27 — P-2 img 18 (glossary) + P-3 img 8 (running log)
+Work Log:
+- page-018 → .../page-018.md ✔ (printed p.43, §Learning Activities+Glossary, summary, 0 figs) — vision Read channel down ('images not available in sub-agent context' ×2), built from 1 full VLM SDK pass + 5 tesseract passes + 8 crops + stroke-bold analysis; 7 glossary terms (all bold incl. IJI/Quaid-e-Azam stroke-verified), LA lead-ins NOT bold as printed; write-in table 9 rules→8 empty rows (VLM draft had 7 — pixel count wins); Tier B 'control of state.'→'control of the state.'; Tier C flags: 'West Pakistan…named Bangladesh' content error AS PRINTED, 'Quaid-e-Azam: Great leader' stub, 'Display/ graffiti board' slash; folio 43 crop-verified (=img+25)
+
+---
+Task ID: 27-wave-verify
+Agent: coordinator (Z.ai main)
+Task: PHASE 10 wave 27 QA + fidelity fixes (P-2 018, P-3 011-014) + corrections merge + push
+
+Work Log:
+- Wave 27 placed 5 pages: 27-b P-2 018 (glossary/summary, vision-channel down — VLM+tesseract cross-built); 27-c P-3 011+012 (tesseract+VLM convergent); 27-d P-3 013+014 (placed but died before logging); 27-a placed nothing (P-2 009/015 still open)
+- Coordinator side-by-side vision QA ALL 5: P-3 013 PASS (folio 56; Tier A '100,000people'/'18.496million'/'In Spite of' + Tier B 'the ground' match print; 3 photo F-blocks verified); P-3 014 PASS after fix (folio 57; printed bold '**Industrial**' restored); P-3 011 PASS after fix (folio 54 vision-confirmed; printed bold '**greenhouse effect**' restored); P-3 012 PASS after fixes (folio 55 vision-confirmed; colon restored on 'Causes of Global Warming:'; cyan 'Earthquakes:' reclassified ### per R2; bold '**Volcanoes**' restored; map red-box micro-text re-read at 3x: box 1 'The red dotted line…accession is yet to be decided…' (agent had dropped the LoC sentence + 'is yet'), box 2 'sovereign authorities' + 'appears. would', box 3 'as defined in the AJK Interim Constitution Act, 1974' — agent's 'by omitted' flag was a misread, legend confirmed correct incl. 'M-6'/'h-50' hyphens); P-2 018 PASS after fixes (folio 43; LA lead-ins ARE bold — stroke-analysis 'not bold' call overturned, bolded; glossary 'West Pakistan:' confirmed NOT bold in print, notes aligned with body; 'West Pakistan→Bangladesh' content error kept verbatim + flagged; 8 empty write-in rows preserved)
+- Lesson reinforced: OCR-pipeline agents reliably drop bold runs and misjudge coloured headings — coordinator side-by-side vision QA remains mandatory for every page
+- 6 Tier A/B rows merged to CORRECTIONS-LOG §6 (4x Tier A spacing/casing on p.54, 1 Tier A in-to→into, 1 Tier B article p.55)
+- Gates: verify-v4 ALL GREEN, check-digital --frozen --strict-figures ALL GREEN
+
+Stage Summary:
+- P-2 17/18 + P-3 15/22 placed & verified; committed + pushed; remaining: P-2 009/015, P-3 008/015-022, P-4/P-5/P-6 all (69 pages)

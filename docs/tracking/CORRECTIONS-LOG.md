@@ -623,3 +623,8 @@ TOC "Unit | Title | Page" header rows are editorial (not printed).
 | P-2 `Chapter-02-Political-Development-in-Pakistan/page-014.md` (printed p.39) | `came into power as result of 2008 elections` (missing article) | `came into power as a result of 2008 elections` | B |
 | P-2 `Chapter-02-Political-Development-in-Pakistan/page-017.md` (printed p.42, first cyan lead-in) | `Answers the following questions briefly:` (verb-form typo; Unit-01's identical lead-ins print 'Answer'; printed colon kept) | `Answer the following questions briefly:` | A |
 | P-2 `Chapter-02-Political-Development-in-Pakistan/page-017.md` (printed p.42, second cyan lead-in) | `Answers the following questions in detail:` (same verb-form typo) | `Answer the following questions in detail:` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-011.md` (printed p.54) | `(IPCC)held` (missing space) | `(IPCC) held` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-011.md` (printed p.54) | `baseline. the average` (lowercase sentence start) | `baseline. The average` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-011.md` (printed p.54) | `0.8degree Celsius` / `-20degree Celsius` (missing spaces) | `0.8 degree Celsius` / `-20 degree Celsius` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-011.md` (printed p.54) | `emit in to the atmosphere` (split preposition) | `emit into the atmosphere` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-012.md` (printed p.55) | `where there is intersection` (missing article) | `where there is an intersection` | B |

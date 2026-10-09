@@ -108,3 +108,32 @@
   11-a..11-g2 + coordinator); per-chapter assets/ optimized (12.2 MB → ~4 MB).
 - Gates: tools/check-digital.mjs --strict-figures ALL GREEN; agent-browser desktop+mobile
   sweep clean; viewer rebuilt as full library browser.
+
+## 2026-10-09 — Phase 10 COMPLETE: Pakistan Studies Grade 12 digitized (128/128)
+
+- Third book registered from FromSmash transfer BOOK-P-1-2-3-4-5-6: "Textbook of Pakistan
+  Studies" Grade 12 (NBF/Federal Textbook Board, NCP 2022-23, First Edition June 2025,
+  TEST EDITION) — batches P-0…P-6 = Front Matter + Units 01-06 (printed pp.6-127; Sections
+  1-3 of the printed 6-section/234-page book; Units 07-12 await a future transfer).
+- Converted in 14 coordinator-verified agent waves (24-a…37-c) + 2 test-first pages + 2
+  coordinator-direct gaps; every page side-by-side vision QA'd against its scan before
+  commit (folios, heading colours, bold runs, table numerals, figure blocks, mid-sentence
+  continuity); safety-rhythm page-by-page worklog appends survived ~6 agent context deaths
+  with zero orphaned work after wave 24.
+- Coordinator QA fixes merged: printed-lead-in verb forms ('Answers…:' Tier A with colons
+  kept), duplicate-print p.33 documented verbatim, restored dropped bold runs (Industrial,
+  greenhouse effect, Volcanoes, copper/Gold/Chromite/Thar coal, jet stream), removed
+  invented bolds (IT/NDMA), corrected map red-box micro-text at 3x, adjudicated disputed
+  folios by crop (81, 91, 111), re-read rotated bar-chart labels (Fig-12.4: 5.1/11.1/14.4/0.1).
+- v4.4 typo policy applied throughout: Tier A surface fixes + Tier B article insertions
+  logged in CORRECTIONS-LOG §6 (~60 rows); Tier C values/dates/name-spellings kept verbatim
+  + flagged (incl. '199' Kargil, 'West Pakistan…named Bangladesh', 'Peoples's', duplicate
+  p.32 block on p.33, 'Huttar', 'Mukti Mukti Bahni').
+- Unit-end conventions honoured: EXERCISE banners, MCQ option-label quirks kept verbatim,
+  Learning Activities boxes, unit glossaries with empty write-in tables (row counts taken
+  from print: 8/3/10/3 per unit), What-I-have-Learned boxes.
+- Metadata regenerated (book.json/chapter.json/indexes/pakistan-studies.md); STATUS.md
+  inventory extended with P-0…P-6. Gates: verify-v4 ALL GREEN 796/796 raw, 684/684
+  markdown-only placed; check-digital --frozen --strict-figures ALL GREEN.
+- Library: 796 pages across three books — Mathematics 317 + Statistics 351 + Pakistan
+  Studies 128 (of the printed 234).

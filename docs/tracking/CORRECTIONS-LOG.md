@@ -665,3 +665,4 @@ TOC "Unit | Title | Page" header rows are editorial (not printed).
 | P-5 `Chapter-05-Mineral-Power-Resources-and-Telecommunication/page-018.md` (printed p.97) | `have same possibilities as their metropolitan peers` (missing article) | `have the same possibilities as their metropolitan peers` | B |
 | P-6 `Chapter-06-Industry-Livestock-and-Fish-Farming/page-019.md` (printed p.121) | `The country exports variety of fish products` (missing article) | `The country exports a variety of fish products` | B |
 | P-6 `Chapter-06-Industry-Livestock-and-Fish-Farming/page-020.md` (printed p.122, Do You Know? box) | `The Makran Coastal Highway, has significantly reduced` (subject-verb comma) | `The Makran Coastal Highway has significantly reduced` | A |
+| P-6 `Chapter-06-Industry-Livestock-and-Fish-Farming/page-022.md` (printed p.124, What I have Learned box) | `capacity of cement is about"` (stray closing quote, no opener) | `capacity of cement is about` | A |

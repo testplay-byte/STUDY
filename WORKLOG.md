@@ -2055,3 +2055,43 @@ Work Log:
 
 Stage Summary:
 - P-6 20/25 placed & verified; committed + pushed; remaining: P-6 021-025 (5 pages — final wave)
+---
+Task ID: 37-a
+Agent: 37-a
+Task: Phase 10 wave 37 — P-6 imgs 21,22 (running log)
+Work Log:
+- page-021 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-021.md ✔ (printed p.123 READ digit-by-digit '1','2','3' both passes, green disc = img+102, consecutive with p.122 ✔; opens with NEW cyan ### 'Capacity Building' at top (p.120 ended COMPLETE), cyan ### 'Infrastructure Investment', closing para 'Adopting these sustainable strategies…' COMPLETE, then unit-end 'What I have Learned' box → blockquote (white tab red border, cyan title regular-weight NO colon, cream bg, • bullets); 15 bullets ×2 passes word-identical (pass-2 self-reported '16' but listed same 15 — count anomaly flagged); ends MID-SENTENCE in box '…while fish farming involves' → continues p.122; theory, figures 0 (no photos/diagrams/tables ×2); bold body runs NONE ×2; Tier A ×0 Tier B ×0 → zero-corrections ledger row; Tier C keeps: 'SEZs', AmE 'fertilizer', mid-sentence bullet cut; method 2 VLM CLI passes, no crops — folio undisputed, text concordant ×2)
+---
+Task ID: 37-b
+Agent: 37-b
+Task: Phase 10 wave 37 — P-6 imgs 23,24 (running log)
+Work Log:
+- page-023 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-023.md ✔ (printed p.125 READ digit-by-digit '1','2','5' both passes, green disc = img+102, consecutive with p.124/p.126; opens mid-MCQ set Q5 (no banner printed, § "EXERCISE" convention); 6 MCQs Q5–Q10 bold stems **N. stem**, 'a.'-style labels no parens, Q6/Q8 two-per-row layout preserved; cyan 'Answer the following questions briefly.' → ###; 3 brief Qs; ends COMPLETE '…cement industry?'; content_type exercise, figures 0; Tier A ×0 Tier B ×0 → zero-corrections ledger row; Tier C keeps 'Karakorum Highway'/'sugar production'/'page 127'; method 2 VLM CLI passes, no crops)
+---
+Task ID: 37-b
+Agent: 37-b
+Task: Phase 10 wave 37 — P-6 imgs 23,24 (running log)
+Work Log:
+- page-024 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-024.md ✔ (printed p.126 READ digit-by-digit '1','2','6' both passes, green disc = img+102, consecutive with p.125; § "EXERCISE"; opens mid-brief-set Q4-Q5, then cyan bold 'Answer the following questions in detail.' → ### + detailed Q1-Q5 tight; cyan bold 'Compare and Contrast'/'Relevance across Time'/'Project'/'Glossary' → ###; Glossary 3 terms bold + colon outside; ends COMPLETE '…businesses and manufacturing.'; content_type exercise, figures 0, MCQs 0; Tier A ×0 Tier B ×0 → zero-corrections ledger row; Tier C keeps 'Gwadar Port, CPEC, Makran Coastal Highway, and fishing markets'; tint bands = print design, not transcribed; method 2 VLM CLI passes, no crops)
+- page-022 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-022.md ✔ (printed p.124 READ digit-by-digit '1','2','4' both passes, green disc = img+102, consecutive with p.123 ✔; opens INSIDE 'What I have Learned' box — plain continuation line 'cultivating fish in controlled environments.' completes p.121's cut bullet '…while fish farming involves' (no bullet marker per targeted pass-2; pass-1 marker refuted), box closes this page; 10 box bullets ALL BOLD ×2 (full text; cross-page style break vs p.121 regular bullets flagged); then unit-end EXERCISE banner (lavender bar cyan caps) → ##, lead-in 'Answer the following questions…A, B, C or D.' → ### (bold dispute pass-2 vs pass-1 flagged, no manual bold invented); MCQs 1-4 stems bold ×2, options regular, Q1-Q3 two-per-row, Q4 one-per-row; ends COMPLETE at Q4 'd. Mining for minerals' (MCQ 5 → p.125/img 0023 other agent); figures 0; Tier A ×1 corrected stray closing quote after 'about' (no opener, ×2); Tier B ×0; Tier C keeps: 2024/39/69/99/129 digit-verified ×2, 'A, B, C or D.' no serial comma, 'socio-economic'; method 2 VLM CLI passes, no crops)
+---
+Task ID: 37-c
+Agent: 37-c
+Task: Phase 10 wave 37 — P-6 img 25 (unit end) (running log)
+Work Log:
+- page-025 → .../Chapter-06-Industry-Livestock-and-Fish-Farming/page-025.md ✔ (printed p.127 READ digit-by-digit '1','2','7' both passes, green disc = img+102, consecutive with p.126; UNIT-FINAL: NO printed heading/banner on page — glossary CONTINUES from p.126 (first line y≈157 full-width entry, PIL colour scan negative) → section null + flagged; brief's expected remaining-questions/Learning-Activities NOT on this page; Glossary = 6 terms ALL bold ×2 VLM + PIL erosion 0.587-0.598 vs 0.526-0.549 — no unbolded term (contrast Unit-02), colon-join 6/6; 'List more words…' line REGULAR (×2 + PIL ≈0.50 vs bold 0.59) = Unit-04 pattern; empty write-in table 4 magenta rules y≈2206/2276/2348/2420 → 3 EMPTY rows ×2 VLM concordant, 2 cols (PIL divider x≈956-961 authoritative — pass-2 missed it, flagged); figure 1 → F1 full-width framed political map of Pakistan (crest + 'PAKISTAN' + red 'Political' pass-2 letter-by-letter — pass-1 'Politieal' = misread not print typo; scale '1:3,000,000' small print; legend partially legible [flagged]; insets SIR CREEK + JUNAGADH & MANAVADAR; neighbours IRAN/Afghanistan/China/India; no compass/caption); Tier A ×0 Tier B ×0 → zero-corrections ledger row; Tier C keeps: 'Animal Husbandry' def no full stop, 'utilize'/'low-wage' AmE, verbless 'Refers to…' openings, non-alphabetical order as printed; method 2 VLM CLI passes + PIL forensics (rule geometry, divider scan, erosion, colour bands, folio disc) — no crops, folio undisputed, wording concordant ×2)
+
+---
+Task ID: 37
+Agent: coordinator (Z.ai main)
+Task: PHASE 10 COMPLETE — Pakistan Studies Grade 12 fully digitized (128/128); library at 796 pages
+
+Work Log:
+- Final wave 37 delivered the last 5 pages: 37-a P-6 021+022 (Capacity Building/Infrastructure Investment + What-I-have-Learned box + EXERCISE MCQs 1-4; 1 Tier A stray-quote fix); 37-b P-6 023+024 (MCQs 5-10 + brief/detail questions; zero corrections); 37-c P-6 025 (glossary tail 6 bold terms + political map F1 + 3-row write-in table; zero corrections)
+- Coordinator QA: structural sweep all 5 (folios 123-127) + deep vision check page-025 PASS (glossary continuation w/ no printed banner → section: null; map w/ emblem + Political subtitle + insets verified; 'List more words' REGULAR per this unit's print; 3-row table confirmed vs scan)
+- Finalization: CORRECTIONS-LOG §6 final row merged; build-metadata regenerated (book.json/chapter.json/indexes for pakistan-studies); STATUS.md updated (header + one-line state + 7 inventory rows P-0…P-6); PROGRESS-LOG Phase 10 completion entry written
+- FINAL GATES: verify-v4 ALL GREEN — 796/796 raw images, 684/684 markdown-only pages placed (112/112 legacy byte-verified); check-digital --frozen --strict-figures ALL GREEN (112 digital pages intact)
+- Committed + PUSHED to origin
+
+Stage Summary:
+- PHASE 10 COMPLETE: Pakistan Studies Grade 12 = 128/128 pages digitized & verified (Front Matter + Units 01-06, printed pp.6-127). Library: Mathematics 317 + Statistics 351 + Pakistan Studies 128 = 796 pages, ALL THREE BOOKS COMPLETE for their transfers. Units 07-12 (printed pp.128-234) await a future transfer from the user.

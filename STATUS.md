@@ -1,6 +1,12 @@
 # STATUS — live snapshot
 
-> **Last updated: 2026-10-06** (Phase 9.1 — issue-resolution + typo-correction session:
+> **Last updated: 2026-10-09** (Phase 10 COMPLETE — Pakistan Studies Grade 12 digitized:
+> third book registered from transfer BOOK-P-1-2-3-4-5-6 (batches P-0…P-6, 128 pages,
+> printed pp.6-127 = front matter + Units 01-06 / Sections 1-3 of 6); converted in 14
+> coordinator-verified agent waves with side-by-side vision QA on every page; v4.4 typo
+> policy applied throughout (Tier A/B corrections in CORRECTIONS-LOG §6). Library now
+> 796 pages — ALL THREE BOOKS COMPLETE (this transfer covers the first 128 of the book's
+> printed 234 pages; Units 07-12 await a future transfer). Both gates ALL GREEN.
 > user-decided reconstructions on printed pp.317/332 applied; p.337 z-table computationally
 > corrected (16 cells); library-wide Tier A/B typo sweep (162 corrections / 104 files) under
 > the new v4.4 correction policy; CORRECTIONS-LOG.md created; both gates ALL GREEN.
@@ -9,12 +15,14 @@
 
 ## One-line state
 
-**668/668 pages digitized & pushed** — the **Mathematics book is COMPLETE** (front matter +
+**796/796 pages digitized & pushed** — the **Mathematics book is COMPLETE** (front matter +
 Units 01–10 + Back Matter = 317 pages) and the **Statistics book is COMPLETE** (front matter +
 Ch. 8–17 + Statistical Tables back matter = 351 pages: FM 9 + Set Theory 10 + Probability 50 +
 Random Variable 34 + Binomial/Hypergeometric 28 + Normal 32 + Sampling 48 + Estimation 36 +
 Testing of Hypotheses 46 + Association 34 + Orientation of Computers 16 + Statistical Tables 8)
-in the three-branch `Books/` library (`Raw/` immutable scans · `Formatted/` canonical markdown ·
+the **Pakistan Studies book is COMPLETE for this transfer** (front matter + Units 01-06 =
+128 pages, printed 6-127; Units 07-12 of the printed 234 pages await a future transfer) in
+the three-branch `Books/` library (`Raw/` immutable scans · `Formatted/` canonical markdown ·
 `Digital/` frozen 112-page replica edition of the legacy library). Everything since Phase 4e is
 digitized in **markdown-only mode (v4.3)** with the scan-edge-crop policy. All gates green.
 NEXT: await user direction (no outstanding chapters).
@@ -47,6 +55,13 @@ NEXT: await user direction (no outstanding chapters).
 | S-9 | statistics | `Statistics/Chapter-16-Association` | `Statistics/Chapter-16-Association` | 34 | 285–318 | +284 | ✅ digitized |
 | S-10 | statistics | `Statistics/Chapter-17-Orientation-of-Computers` | `Statistics/Chapter-17-Orientation-of-Computers` | 16 | 319–334 | +318 | ✅ digitized |
 | S-L | statistics | `Statistics/Statistical-Tables` | `Statistics/Chapter-99-Back-Matter` | 8 | 335–340 (+2 unnumbered) | +334 | ✅ digitized |
+| P-0 | pakistan-studies | `Pakistan-Studies/Front-Matter` | `Pakistan-Studies/Chapter-00-Front-Matter` | 6 | (unnumbered) | — | ✅ digitized |
+| P-1 | pakistan-studies | `Pakistan-Studies/Unit-01-Ideological-Basis-of-Pakistan` | `Pakistan-Studies/Chapter-01-Ideological-Basis-of-Pakistan` | 20 | 6–25 | +5 | ✅ digitized |
+| P-2 | pakistan-studies | `Pakistan-Studies/Unit-02-Political-Development-in-Pakistan` | `Pakistan-Studies/Chapter-02-Political-Development-in-Pakistan` | 18 | 26–43 | +25 | ✅ digitized |
+| P-3 | pakistan-studies | `Pakistan-Studies/Unit-03-Land-of-Pakistan-and-Environmental-Hazards` | `Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards` | 22 | 44–65 | +43 | ✅ digitized |
+| P-4 | pakistan-studies | `Pakistan-Studies/Unit-04-Natural-Vegetation-and-Forests-of-Pakistan` | `Pakistan-Studies/Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan` | 14 | 66–79 | +65 | ✅ digitized |
+| P-5 | pakistan-studies | `Pakistan-Studies/Unit-05-Mineral-Power-Resources-and-Telecommunication` | `Pakistan-Studies/Chapter-05-Mineral-Power-Resources-and-Telecommunication` | 23 | 80–102 | +79 | ✅ digitized |
+| P-6 | pakistan-studies | `Pakistan-Studies/Unit-06-Industry-Livestock-and-Fish-Farming` | `Pakistan-Studies/Chapter-06-Industry-Livestock-and-Fish-Farming` | 25 | 103–127 | +102 | ✅ digitized |
 | | | | **Total** | **668** | | | **668 raw images ⇄ 668 .md pages · Digital Edition v3 (legacy 112) FROZEN ✓** |
 
 Content mix (668 pages): 189 theory · 153 worked-examples · 140 exercise · 113 mixed · 51 front-matter ·

@@ -663,3 +663,5 @@ TOC "Unit | Title | Page" header rows are editorial (not printed).
 | P-5 `Chapter-05-Mineral-Power-Resources-and-Telecommunication/page-011.md` (printed p.90) | `Matiari Solar Power Plantin Sindh` (missing space) | `Matiari Solar Power Plant in Sindh` | A |
 | P-5 `Chapter-05-Mineral-Power-Resources-and-Telecommunication/page-014.md` (printed p.93) | `During Covid 19 pandemic` (missing article) | `During the Covid 19 pandemic` | B |
 | P-5 `Chapter-05-Mineral-Power-Resources-and-Telecommunication/page-018.md` (printed p.97) | `have same possibilities as their metropolitan peers` (missing article) | `have the same possibilities as their metropolitan peers` | B |
+| P-6 `Chapter-06-Industry-Livestock-and-Fish-Farming/page-019.md` (printed p.121) | `The country exports variety of fish products` (missing article) | `The country exports a variety of fish products` | B |
+| P-6 `Chapter-06-Industry-Livestock-and-Fish-Farming/page-020.md` (printed p.122, Do You Know? box) | `The Makran Coastal Highway, has significantly reduced` (subject-verb comma) | `The Makran Coastal Highway has significantly reduced` | A |

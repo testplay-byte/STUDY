@@ -41,7 +41,7 @@ function die(msg) { console.error('ERROR:', msg); process.exit(1); }
 if (!IMAGE || !BATCH || !PAGE || !OUT) {
   die('required: --image, --batch, --page, --out  (also good: --subject, --image-filename, --agent, --source-image-rel)');
 }
-const RESOLVED_SUBJECT = SUBJECT || (/^M-/.test(BATCH) ? 'mathematics' : /^S-/.test(BATCH) ? 'statistics' : null);
+const RESOLVED_SUBJECT = SUBJECT || (/^M-/.test(BATCH) ? 'mathematics' : /^S-/.test(BATCH) ? 'statistics' : /^P-/.test(BATCH) ? 'pakistan-studies' : null);
 if (!RESOLVED_SUBJECT) die(`cannot resolve --subject from batch "${BATCH}" — pass --subject explicitly`);
 
 const promptTemplate = fs.readFileSync(path.join(process.cwd(), 'tools/prompt.txt'), 'utf8');

@@ -1374,3 +1374,24 @@ Stage Summary:
 - All four user-flagged issues CLOSED: p.302 (user-approved restoration verified), p.317 (user-decided fill + flag), p.332 (user-decided 'The' + flag), p.337 (16 computed corrections + 7 documented wobble)
 - Going forward every new book gets the typo-correction pass automatically (prompt R1 + PIPELINE 6.4 + CONVENTIONS 3.11) with the ledger as the single source of truth
 - Ready for the user's next transfer (additional books) under the v4.4 pipeline
+---
+Task ID: 23-recon
+Agent: coordinator (Z.ai main)
+Task: PHASE 10 — new book intake + recon ("BOOK-P-1-2-3-4-5-6" from FromSmash)
+
+Work Log:
+- Downloaded FromSmash transfer via agent-browser signed-URL capture + curl: 167,971,747 bytes = listed 167.97 MB exactly; unzip -t clean; wrapper holds 7 named zips (P-0..P-6) whose inner sizes match the Smash listing
+- Unzipped all 7: direct JPGs 0001..NNNN, zero gaps, zero non-JPGs. Counts: P-0=6, P-1=20, P-2=18, P-3=22, P-4=14, P-5=23, P-6=25 → 128 pages total
+- IDENTIFIED THE BOOK: "Textbook of PAKISTAN STUDIES" Grade 12 — National Book Foundation as Federal Textbook Board, Islamabad; based on National Curriculum of Pakistan (NCP) 2022-23; First Edition June 2025, 234 pages; "TEST EDITION" stamp on copyright page; authors Dr. Imran Shahzad (Managing) + 4 co-authors. Third book in the library, subject = pakistan-studies
+- This transfer = Front Matter + Units 01-06 (printed Sections 1-3 of 6). TOC confirms full book = 12 units across 6 sections, 234 pp; Units 07-12 + back matter presumably in a future transfer
+- Offset recon (folios in bottom-center colored circles; content pages also carry footer "Unit-0N <Running title> ... National Book Foundation"): P-1 img2=7 → +5 (opener img1=6, red dot folio) · P-2 img1=26 → +25 · P-3 img1=44 → +43 · P-4 img1=66 → +65 · P-5 img1=80 → +79 · P-6 img1=103 → +102; chain 6→127 continuous, TOC says Unit 07 starts p.128 ✓
+- Batch mapping: P-0 Front-Matter(6) · P-1 Unit-01-Ideological-Basis-of-Pakistan(20, pp.6-25) · P-2 Unit-02-Political-Development-in-Pakistan(18, pp.26-43) · P-3 Unit-03-Land-of-Pakistan-and-Environmental-Hazards(22, pp.44-65) · P-4 Unit-04-Natural-Vegetation-and-Forests-of-Pakistan(14, pp.66-79) · P-5 Unit-05-Mineral-Power-Resources-and-Telecommunication(23, pp.80-102) · P-6 Unit-06-Industry-Livestock-and-Fish-Farming(25, pp.103-127)
+- TITLE QUIRK (recorded, opener+footer win; TOC variant noted in page notes): Unit 01 opener+running footer = "Ideological Basis of Pakistan", TOC + first content heading = "Ideology of Pakistan and Initial Problems". Unit 02 opener+footer = "Political Development in Pakistan", TOC = "Political Developments in Pakistan"
+- Unit-end structure: exercise (MCQs with (A)(B)(C)(D) options, then "Answer the following questions briefly.", then "Answer the following questions in detail.") + highlighted "Learning Activities" box; final page of each unit = "Glossary" + "List more words and write their meaning..." with an EMPTY write-in table (transcribe as empty GFM table)
+- Content character: humanities/geography — photos with cyan italic captions, full-width Survey of Pakistan maps (legend + insets: Sir Creek, Junagadh & Manavadar), timelines, yellow "Key Words" definition boxes, maroon major headings + blue sub-headings, NO page-top running header, NO navigation chips
+- Misprints already spotted (Tier C — dates/values stay verbatim + flag): P-2 opener "Wars of 1948, 1965, 1971 and 199 between Pakistan and India" (199 → 1999 Kargil, numeric → flag). Tier A (surface): P-3 p.48 "established in1985" (missing space), "Turky"→Turkey, "Siri Lanka"→Sri Lanka
+- Registered: Books/Raw/Pakistan-Studies/{7 folders} (128 imgs copied, md5 spot-verified) + empty Formatted folders; verify-v4.mjs BATCHES + build-metadata.mjs BOOKS extended (new subject pakistan-studies; additive section_label field records printed "Section N: <Title>" grouping); convert-page.mjs now auto-resolves P- → pakistan-studies; tools/prompt.txt widened to Pakistan Studies (maps/photos/timelines/empty-tables rules) with changelog entries (R1 v4.4 entry added retroactively + new R2)
+- Gates after registration: build-metadata OK (P-0..P-6 raw counted), verify-v4 ALL GREEN 796/796 raw imgs (556/684 markdown-only placed), check-digital --frozen --strict-figures ALL GREEN
+
+Stage Summary:
+- Pakistan Studies Grade 12 intake + recon COMPLETE, 128/128 scans immutable in Books/Raw; batch codes P-0..P-6 registered end-to-end; offsets +5/+25/+43/+65/+79/+102 (front matter unnumbered); pipeline ready for test-first conversion

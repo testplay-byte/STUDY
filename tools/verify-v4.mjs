@@ -47,6 +47,15 @@ const BATCHES = [
   { batch: 'S-9', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Chapter-16-Association',                                   oldFolder: null, newFolder: 'Chapter-16-Association',                                   imgs: 34, markdownOnly: true },
   { batch: 'S-10', subject: 'statistics', subjectDir: 'Statistics',  rawName: 'Chapter-17-Orientation-of-Computers',                      oldFolder: null, newFolder: 'Chapter-17-Orientation-of-Computers',                      imgs: 16, markdownOnly: true },
   { batch: 'S-L', subject: 'statistics',  subjectDir: 'Statistics',  rawName: 'Statistical-Tables',                                       oldFolder: null, newFolder: 'Chapter-99-Back-Matter',                                   imgs: 8, markdownOnly: true },
+  // v4.3 markdown-only batches (2026-10-09, user transfer "BOOK-P-1-2-3-4-5-6"): Pakistan Studies Grade 12
+  // (NBF as Federal Textbook Board) — front matter + Units 01-06 (Sections 1-3). Direct JPG scans.
+  { batch: 'P-0', subject: 'pakistan-studies', subjectDir: 'Pakistan-Studies', rawName: 'Front-Matter',                                            oldFolder: null, newFolder: 'Chapter-00-Front-Matter',                                            imgs: 6,  markdownOnly: true },
+  { batch: 'P-1', subject: 'pakistan-studies', subjectDir: 'Pakistan-Studies', rawName: 'Unit-01-Ideological-Basis-of-Pakistan',                    oldFolder: null, newFolder: 'Chapter-01-Ideological-Basis-of-Pakistan',                    imgs: 20, markdownOnly: true },
+  { batch: 'P-2', subject: 'pakistan-studies', subjectDir: 'Pakistan-Studies', rawName: 'Unit-02-Political-Development-in-Pakistan',                oldFolder: null, newFolder: 'Chapter-02-Political-Development-in-Pakistan',                imgs: 18, markdownOnly: true },
+  { batch: 'P-3', subject: 'pakistan-studies', subjectDir: 'Pakistan-Studies', rawName: 'Unit-03-Land-of-Pakistan-and-Environmental-Hazards',       oldFolder: null, newFolder: 'Chapter-03-Land-of-Pakistan-and-Environmental-Hazards',       imgs: 22, markdownOnly: true },
+  { batch: 'P-4', subject: 'pakistan-studies', subjectDir: 'Pakistan-Studies', rawName: 'Unit-04-Natural-Vegetation-and-Forests-of-Pakistan',       oldFolder: null, newFolder: 'Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan',       imgs: 14, markdownOnly: true },
+  { batch: 'P-5', subject: 'pakistan-studies', subjectDir: 'Pakistan-Studies', rawName: 'Unit-05-Mineral-Power-Resources-and-Telecommunication',    oldFolder: null, newFolder: 'Chapter-05-Mineral-Power-Resources-and-Telecommunication',    imgs: 23, markdownOnly: true },
+  { batch: 'P-6', subject: 'pakistan-studies', subjectDir: 'Pakistan-Studies', rawName: 'Unit-06-Industry-Livestock-and-Fish-Farming',              oldFolder: null, newFolder: 'Chapter-06-Industry-Livestock-and-Fish-Farming',              imgs: 25, markdownOnly: true },
 ];
 
 const problems = [];

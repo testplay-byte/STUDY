@@ -1,0 +1,140 @@
+{
+  "subject": "pakistan-studies",
+  "book_title": "Textbook of Pakistan Studies Grade 12",
+  "full_title": "Textbook of Pakistan Studies Grade 12 — National Book Foundation as Federal Textbook Board, Islamabad",
+  "publisher": "National Book Foundation as Federal Textbook Board, Islamabad",
+  "curriculum": "National Curriculum of Pakistan (NCP) 2022-23",
+  "grade": "12",
+  "language": "en",
+  "structure_version": "v4",
+  "raw_root": "Books/Raw/Pakistan-Studies",
+  "html_edition": "Books/Digital/Pakistan-Studies",
+  "parts": [
+    {
+      "folder": "Chapter-00-Front-Matter",
+      "raw_folder": "Books/Raw/Pakistan-Studies/Front-Matter",
+      "batch": "P-0",
+      "kind": "front-matter",
+      "page_count": 0,
+      "printed_page_range": null,
+      "printed_page_offset": null
+    },
+    {
+      "folder": "Chapter-01-Ideological-Basis-of-Pakistan",
+      "raw_folder": "Books/Raw/Pakistan-Studies/Unit-01-Ideological-Basis-of-Pakistan",
+      "batch": "P-1",
+      "kind": "chapter",
+      "chapter_number": 1,
+      "chapter_label": "Unit 01",
+      "title": "Ideological Basis of Pakistan",
+      "section_label": "Section 1: History of Pakistan",
+      "page_count": 0,
+      "printed_page_range": null,
+      "printed_page_offset": "+5"
+    },
+    {
+      "folder": "Chapter-02-Political-Development-in-Pakistan",
+      "raw_folder": "Books/Raw/Pakistan-Studies/Unit-02-Political-Development-in-Pakistan",
+      "batch": "P-2",
+      "kind": "chapter",
+      "chapter_number": 2,
+      "chapter_label": "Unit 02",
+      "title": "Political Development in Pakistan",
+      "section_label": "Section 1: History of Pakistan",
+      "page_count": 0,
+      "printed_page_range": null,
+      "printed_page_offset": "+25"
+    },
+    {
+      "folder": "Chapter-03-Land-of-Pakistan-and-Environmental-Hazards",
+      "raw_folder": "Books/Raw/Pakistan-Studies/Unit-03-Land-of-Pakistan-and-Environmental-Hazards",
+      "batch": "P-3",
+      "kind": "chapter",
+      "chapter_number": 3,
+      "chapter_label": "Unit 03",
+      "title": "Land of Pakistan and Environmental Hazards",
+      "section_label": "Section 2: Geography of Pakistan",
+      "page_count": 0,
+      "printed_page_range": null,
+      "printed_page_offset": "+43"
+    },
+    {
+      "folder": "Chapter-04-Natural-Vegetation-and-Forests-of-Pakistan",
+      "raw_folder": "Books/Raw/Pakistan-Studies/Unit-04-Natural-Vegetation-and-Forests-of-Pakistan",
+      "batch": "P-4",
+      "kind": "chapter",
+      "chapter_number": 4,
+      "chapter_label": "Unit 04",
+      "title": "Natural Vegetation and Forests of Pakistan",
+      "section_label": "Section 2: Geography of Pakistan",
+      "page_count": 0,
+      "printed_page_range": null,
+      "printed_page_offset": "+65"
+    },
+    {
+      "folder": "Chapter-05-Mineral-Power-Resources-and-Telecommunication",
+      "raw_folder": "Books/Raw/Pakistan-Studies/Unit-05-Mineral-Power-Resources-and-Telecommunication",
+      "batch": "P-5",
+      "kind": "chapter",
+      "chapter_number": 5,
+      "chapter_label": "Unit 05",
+      "title": "Mineral, Power Resources & Telecommunication",
+      "section_label": "Section 3: Resources and Economic Development of Pakistan",
+      "page_count": 0,
+      "printed_page_range": null,
+      "printed_page_offset": "+79"
+    },
+    {
+      "folder": "Chapter-06-Industry-Livestock-and-Fish-Farming",
+      "raw_folder": "Books/Raw/Pakistan-Studies/Unit-06-Industry-Livestock-and-Fish-Farming",
+      "batch": "P-6",
+      "kind": "chapter",
+      "chapter_number": 6,
+      "chapter_label": "Unit 06",
+      "title": "Industry, Livestock and Fish Farming",
+      "section_label": "Section 3: Resources and Economic Development of Pakistan",
+      "page_count": 0,
+      "printed_page_range": null,
+      "printed_page_offset": "+102"
+    }
+  ],
+  "raw_batches": [
+    {
+      "batch": "P-0",
+      "folder": "Books/Raw/Pakistan-Studies/Front-Matter",
+      "images": 6
+    },
+    {
+      "batch": "P-1",
+      "folder": "Books/Raw/Pakistan-Studies/Unit-01-Ideological-Basis-of-Pakistan",
+      "images": 20
+    },
+    {
+      "batch": "P-2",
+      "folder": "Books/Raw/Pakistan-Studies/Unit-02-Political-Development-in-Pakistan",
+      "images": 18
+    },
+    {
+      "batch": "P-3",
+      "folder": "Books/Raw/Pakistan-Studies/Unit-03-Land-of-Pakistan-and-Environmental-Hazards",
+      "images": 22
+    },
+    {
+      "batch": "P-4",
+      "folder": "Books/Raw/Pakistan-Studies/Unit-04-Natural-Vegetation-and-Forests-of-Pakistan",
+      "images": 14
+    },
+    {
+      "batch": "P-5",
+      "folder": "Books/Raw/Pakistan-Studies/Unit-05-Mineral-Power-Resources-and-Telecommunication",
+      "images": 23
+    },
+    {
+      "batch": "P-6",
+      "folder": "Books/Raw/Pakistan-Studies/Unit-06-Industry-Livestock-and-Fish-Farming",
+      "images": 25
+    }
+  ],
+  "total_pages_digitized": 0,
+  "note": "Generated by tools/build-metadata.mjs — do not hand-edit. Machine-readable registry for tooling & the future web dashboard."
+}

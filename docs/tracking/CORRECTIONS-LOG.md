@@ -628,3 +628,14 @@ TOC "Unit | Title | Page" header rows are editorial (not printed).
 | P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-011.md` (printed p.54) | `0.8degree Celsius` / `-20degree Celsius` (missing spaces) | `0.8 degree Celsius` / `-20 degree Celsius` | A |
 | P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-011.md` (printed p.54) | `emit in to the atmosphere` (split preposition) | `emit into the atmosphere` | A |
 | P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-012.md` (printed p.55) | `where there is intersection` (missing article) | `where there is an intersection` | B |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-016.md` (printed p.59) | `23.5degree North` (missing space) | `23.5 degree North` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-016.md` (printed p.59) | `Rawal dam,(Korang river)` / `Khanpur dam,(Haro river)` (missing spaces) | `Rawal dam, (Korang river)` / `Khanpur dam, (Haro river)` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-016.md` (printed p.59) | `In spite of the fact the climatic` (missing 'that') | `In spite of the fact that the climatic` | B |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-016.md` (printed p.59) | `north of Tropic of Cancer` (missing article) | `north of the Tropic of Cancer` | B |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-017.md` (printed p.60) | `250mm` / `in term of` / `identity preferred` / `Cholistian` (4 surface typos) | `250 mm` / `in terms of` / `identify preferred` / `Cholistan` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-017.md` (printed p.60) | `weather scenairos` (transposed letters, coordinator zoom-verified) | `weather scenarios` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-017.md` (printed p.60) | `Jet stream flows overhead` / `It also has continental climate` (missing words) | `The Jet stream flows overhead` / `It also has a continental climate` | B |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-018.md` (printed p.61) | `i.e ocean water` / `multi -sectoral` (missing dot/space) | `i.e. ocean water` / `multi-sectoral` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-018.md` (printed p.61) | `emergency response of federal government` (missing article) | `emergency response of the federal government` | B |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-019.md` (printed p.62) | `aquifer of other bodies of water` (letter transposition) | `aquifer or other bodies of water` | A |
+| P-3 `Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-019.md` (printed p.62) | `the liter like plastic` (missing letter) | `the litter like plastic` | A |

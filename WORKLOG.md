@@ -1603,3 +1603,48 @@ Work Log:
 
 Stage Summary:
 - P-2 17/18 + P-3 15/22 placed & verified; committed + pushed; remaining: P-2 009/015, P-3 008/015-022, P-4/P-5/P-6 all (69 pages)
+---
+Task ID: 28-b
+Agent: 28-b
+Task: Phase 10 wave 28 — P-3 imgs 8,15 (running log)
+Work Log:
+- page-008 → Books/Formatted/Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-008.md ✔ (printed p.51 in circle — digit glyph-mask read "5"+"1" directly from pixels, tesseract psm10 agreed on "5"; footer = furniture), §Quetta (cyan → ###), theory, figures 4 (two side-by-side photo bands: F1 "Khyber Pass" + F2 "Islamia College" y≈390-990, F3 "Bolan Pass" + F4 "Ziarat Residency" y≈1860-2410, all 4 cyan italic captions OCR-verified ×2 each); vision Read channel down ("images not available in sub-agent context") → tesseract psm3/6/4 @2x/1.5x + TSV + 10 crops + VLM CLI full-page pass, all engines converged; Tier B: inserted 'a' → "include a wide variety"; Tier C keeps flagged: "bazars", "Baluchistan", "Mohabat Khan Masjid", "for example mirror work" (no comma), "dam facility provides" (no comma), "Hanna lake" lc, "Juniper forest" capital, "Quetta geological museum" lc, "1680 metres"; starts MID-SENTENCE "seeds are the main crops." completing p.50's "…and oil" (=oilseeds), ends complete "…Baluchistan province." then photo band; no bold runs (ink-density uniform); QA re-read: vision channel still down, VLM+3×OCR convergence accepted as QA, 0 discrepancies
+---
+Task ID: 28-c
+Agent: 28-c
+Task: Phase 10 wave 28 — P-3 imgs 16,17 (running log)
+Work Log:
+- page-016 → Books/Formatted/Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-016.md ✔ (printed p.59 crop-verified digit-by-digit after double '49' misread; maroon ## + 2 blue ### headings, 4 paragraphs, 0 figures; Tier A ×3 + Tier B ×2 logged to drafts-ps/28-c-corrections.md)
+---
+Task ID: 28-d
+Agent: 28-d
+Task: Phase 10 wave 28 — P-3 imgs 18,19 (running log)
+Work Log:
+- page-018 → .../page-018.md ✔ (printed p.61 READ from footer line, §The Disaster Management Cycle ×2 (blue ###, duplicated above+below diagram as printed, flagged) + Fresh Water and Ocean Water Pollution (maroon ##) + The distribution of Fresh and Sea water on Earth (cyan ###), theory, starts MID-SENTENCE "anticipation through weather monitoring posts and early warning systems." (completes p.60), ends COMPLETE "…for future needs.", figures 1 → F1 circular disaster-management-cycle diagram (ring ≈rows 470–1140, ~1/3 page width; segments Disaster/Response/Recovery/Preparedness/Mitigation, clockwise arrows; centre text printed "Disaster Managemen Cycle" — final t missing as printed, crop-verified ×2; line below diagram = repeated blue heading, not a caption, flagged); vision Read channel down ('images not available in sub-agent context') → 2 VLM full-page passes (verbatim+QA) + 1 crop pass + PIL ink/size bands (maroon 44px / cyan 32–34px / black 37px / body pitch ~52px); Tier A ×2: 'i.e ocean'→'i.e. ocean', 'multi -sectoral'→'multi-sectoral'; Tier B ×1: inserted 'the' → 'emergency response of the federal government'; Tier C keeps flagged: 'Key preferences to manage…' (as printed), 'strengthening, resilience', 'emergency, Response, rescue and relief', 'Require any government department…', 'disaster risk, reduction frameworks', 'built community resilience', 'that develop', 'national commission' lc, 'continued clear water' (possibly 'clean', ambiguous), 2.5%/97.5%/69%/1% never fixed
+- page-019 → .../page-019.md ✔ (printed p.62 READ from footer line + targeted QA pass, §The distribution of Fresh and Sea water on The Earth (black ###, flagged — sibling cyan '…on Earth' at foot of p.61; capital 'The' as printed; band starts x≈326 not margin x≈145; 37px vs 32–34px cyan / 44px maroon) + Reason for water pollution: + Solutions: (both cyan ###, colon included in heading ink as printed), theory, starts with heading (no mid-sentence), ends COMPLETE "…proper trash cans.", figures 1 → F1 framed pie-chart panel top of page (title inside frame "Water Distribution on Earth"; thin dark-blue sliver = Fresh Water vs large red/orange Salt Water; no % on slices; legend squares Fresh Water/Salt Water); vision Read channel down → 2 VLM full-page passes + 1 crop pass (top strip) + PIL ink/size bands; Tier A ×2: 'aquifer of other bodies'→'aquifer or other bodies', 'the liter like plastic'→'the litter like plastic'; Tier B none; Tier C keeps flagged: 'ecosystems - fresh, coastal and oceans', 'substances often chemicals or microorganisms contaminate' (no apposition punctuation), 'rendering its toxic effect on humans or environment', verbless fragment 'Waste water and nutrient run-off … automobiles and others.', 'some two-billion tons', 'discharged in the water bodies', 'The dumping … are also polluting', '…in the water instead these should be recycled', 'the dire need of the time', mixed 'It is recommended to use biodegradable detergents and limited use of fertilizer and pesticides.'
+---
+Task ID: 28-c
+Agent: 28-c
+Task: Phase 10 wave 28 — P-3 imgs 16,17 (running log)
+Work Log:
+- page-017 → Books/Formatted/Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-017.md ✔ (printed p.60; 4 headings + bold run-in, 1 uncaptioned cyclone photo F1; ends mid-sentence '(HVRAs) and improve risk' cont. p.61; Tier A ×4 + Tier B ×2 logged to drafts-ps/28-c-corrections.md; maroon 'Weather Forecast' → ## per colour rule)
+---
+Task ID: 28-b
+Agent: 28-b
+Task: Phase 10 wave 28 — P-3 imgs 8,15 (running log)
+Work Log:
+- page-015 → Books/Formatted/Pakistan-Studies/Chapter-03-Land-of-Pakistan-and-Environmental-Hazards/page-015.md ✔ (printed p.58 — footer "…Hazards 58 National Book Foundation" read identically by tesseract psm3+psm4+VLM, 3 engine reads; green circle glyph-mask muddy; footer = furniture), §Effects of Global Warming (maroon ink-scan y744-800 → ##), theory, figures 1 (F1 Murree snow-storm photo ≈x1150-2094 y≈1700-2390 right of Murree paragraph, cyan italic caption "Murree Snow Storm (2022)" TSV+cyan-row verified); vision Read channel down → tesseract psm3/6/4 @2x/1.5x + TSV + 14 crops ×5-6 + VLM CLI full-page pass, all engines converged; Tier A ×3: 'amount.of'→'amount of', 'effecting'→'affecting', 'Srilanka'→'Sri Lanka'; Tier B ×2: inserted 'the' → "related to the ongoing coronavirus (COVID-19) pandemic" + "across all levels of the atmosphere"; Tier C keeps flagged: "-air, sea" hyphen, "World" capital, "Flooding" post-colon capital, "livelihood, of" comma, "In 2004, Tsunami in Indian Ocean," articleless, "two million" (never fixed), "jam, The" comma+capital, "-8 degree Celsius", "Pir panjal" lc+no article (Kashmir-earthquake precedent), 7517/5 days/four feet/22/2020 numbers, "heat related" no hyphen; starts MID-SENTENCE "to increase in World population…" (completes p.57 paragraph), ends complete "…local economies."; Murree paragraph wraps photo — [Figure F1] at "…There | was a great traffic jam…" split; bold question: VLM suggested whole P2 bold but stroke metrics show smooth top-bottom scan gradient (9.2→6.0, bg white) no discrete block → kept regular + flagged for coordinator QA; ledger rows appended to drafts-ps/28-b-corrections.md
+
+---
+Task ID: 28-wave-verify
+Agent: coordinator (Z.ai main)
+Task: PHASE 10 wave 28 QA + fidelity fixes (P-3 008/015/016/017/018/019) + corrections merge + push
+
+Work Log:
+- Wave 28 placed 6 pages: 28-b P-3 008+015 (died after logging both); 28-c P-3 016+017 (full report); 28-d P-3 018+019 (full report); 28-a placed nothing (P-2 009/015 still open)
+- Coordinator side-by-side vision QA ALL 6: 008 PASS (folio 51; 4 photo F-blocks Khyber Pass/Islamia College/Bolan Pass/Ziarat Residency; Tier B 'a wide variety' match); 015 PASS (folio 58; Murree snow-storm F1 + caption; Tier A 'amount.of'/'effecting'/'Srilanka' + Tier B x2 match; 'two million' Tier C flag); 016 PASS (folio 59; bold runs Causes:/Monsoons/Depressions/Levees preserved; 4 Tier A/B match); 017 PASS after fixes (folio 60; '**The jet stream**' bold restored (zoom-verified); 'scenairos'->'scenarios' Tier A logged (draft applied but unrecorded)); 018 PASS after fixes (folio 61; duplicated 'The Disaster Management Cycle' heading + 'Disaster Managemen Cycle' centre label kept as printed; bogus bolds on IT/NDMA,/NDMA removed — 2.2x zooms show regular weight); 019 PASS (folio 62; black 'on The Earth' heading variant ###; pie-chart F1 with internal title; Tier A 'aquifer or'/'litter' match)
+- 16 Tier A/B rows merged to CORRECTIONS-LOG §6
+- Gates: verify-v4 ALL GREEN, check-digital --frozen --strict-figures ALL GREEN
+
+Stage Summary:
+- P-2 16/18 + P-3 19/22 placed & verified; committed + pushed; remaining: P-2 009/015, P-3 020-022, P-4/P-5/P-6 all (67 pages)
